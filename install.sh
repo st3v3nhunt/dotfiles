@@ -15,6 +15,7 @@ ln -nfsv "$DOTFILES_DIR/.aliases" ~
 ln -nfsv "$DOTFILES_DIR/.colors" ~
 ln -nfsv "$DOTFILES_DIR/.prompt" ~
 ln -nfsv "$DOTFILES_DIR/.git-prompt.sh" ~
+ln -nfsv "$DOTFILES_DIR/.git-completion.bash" ~
 
 printf "${GREEN}Finished creating symlinks...${NC}\n"
 

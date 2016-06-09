@@ -1,6 +1,7 @@
-source ~/.aliases
-source ~/.prompt
-source ~/.git-prompt.sh
+. ~/.aliases
+. ~/.prompt
+. ~/.git-prompt.sh
+. ~/.git-completion.bash
 
 # git autocomplete
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
