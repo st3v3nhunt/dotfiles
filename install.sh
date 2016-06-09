@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+PURPLE='\033[0;35m'
+GREEN='\033[0;32m'
+NC='\033[0m'
+
+export DOTFILES_DIR
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+printf "${GREEN}Starting to symlink...${NC}\n"
+
+ln -nfsv "$DOTFILES_DIR/.bashrc" ~
+ln -nfsv "$DOTFILES_DIR/.bash_profile" ~
+ln -nfsv "$DOTFILES_DIR/.gitconfig" ~
+ln -nfsv "$DOTFILES_DIR/.aliases" ~
+ln -nfsv "$DOTFILES_DIR/.colors" ~
+ln -nfsv "$DOTFILES_DIR/.prompt" ~
+ln -nfsv "$DOTFILES_DIR/.git-prompt.sh" ~
+
+printf "${GREEN}Finished creating symlinks...${NC}\n"
+
+printf "Run '${PURPLE}sbp${NC}' to reload your environment...\n"
