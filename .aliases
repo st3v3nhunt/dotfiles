@@ -1,4 +1,4 @@
-alias sbp='source ~/.bashrc'
+alias sbp='. ~/.bashrc'
 alias ls='ls -aFhlG'
 alias vi=vim
 alias chrome='open /Applications/Google\ Chrome.app'

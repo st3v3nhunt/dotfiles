@@ -19,4 +19,5 @@ ln -nfsv "$DOTFILES_DIR/.git-completion.bash" ~
 
 printf "${GREEN}Finished creating symlinks...${NC}\n"
 
-printf "Run '${PURPLE}sbp${NC}' to reload your environment...\n"
+# Reload environment
+. ~/.bashrc
