@@ -7,3 +7,8 @@ Clone the repo somewhere on the local disk and run `./install.sh`. This will:
 * Install [Caskroom](https://caskroom.github.io/) and some applications
 
 During the install of Homebrew you will be prompted for your password.
+
+## Setup user gitconfig info
+
+Git user config is held in an ignored file @ `~/.gitconfig.local`. This should
+contain user.name and user.email
