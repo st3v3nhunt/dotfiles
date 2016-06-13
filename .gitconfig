@@ -8,10 +8,11 @@
 	com = checkout master
 	aa = add -A
 	d = diff
-[user]
-	name = steven hunt
-	email = st3v3n.hunt@gmail.com
 [color]
 	ui = true
 [push]
 	default = upstream
+[help]
+	autocorrect = 1
+[include]
+  path = ~/.gitconfig.local
