@@ -8,6 +8,7 @@
 	com = checkout master
 	aa = add -A
 	d = diff
+	rhh = reset HEAD --hard
 [color]
 	ui = true
 [push]
