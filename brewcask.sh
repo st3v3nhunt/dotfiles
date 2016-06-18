@@ -16,6 +16,7 @@ brew cask install evernote
 brew cask install caffeine
 brew cask install vmware-horizon-client
 brew cask install royal-tsx
+brew cask install karabiner
 
 # Editors
 brew cask install atom
