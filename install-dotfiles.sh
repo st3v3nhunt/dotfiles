@@ -15,6 +15,7 @@ ln -nfsv "$DOTFILES_DIR/.gitconfig.local" ~
 ln -nfsv "$DOTFILES_DIR/.aliases" ~
 ln -nfsv "$DOTFILES_DIR/.colors" ~
 ln -nfsv "$DOTFILES_DIR/.prompt" ~
+ln -nfsv "$DOTFILES_DIR/.vimrc" ~
 ln -nfsv "$DOTFILES_DIR/.git-prompt.sh" ~
 ln -nfsv "$DOTFILES_DIR/.git-completion.bash" ~
 
