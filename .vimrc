@@ -1,5 +1,5 @@
-set nocompatible 			"use vim settings
-filetype off 				"required
+set nocompatible 			      " use vim settings
+filetype off 				        " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -24,10 +24,13 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-syntax on 				"syntax highlighting
+syntax on 				            " syntax highlighting
 
-set autoindent 				"auto indent
-set clipboard=unnamed 			"allow copy between instances
-set number 				"line numbers
-set colorcolumn=80 			"80 column guide
-set hls is ic 				"highlight in search, ignoring case
+set autoindent 				        " auto indent
+set clipboard=unnamed 			  " allow copy between instances
+set number 				            " line numbers
+set colorcolumn=80 			      " 80 column guide
+set tabstop=2				          " 2 space tabs
+set expandtab				          " insert spaces with tab
+set shiftwidth=2			        " 2 spaces for tab with >
+set hls is ic 				        " highlight in search, ignoring case
