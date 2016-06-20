@@ -2,3 +2,4 @@
 
 ./install-dotfiles.sh
 ./install-brew.sh
+./install-vundle.sh
