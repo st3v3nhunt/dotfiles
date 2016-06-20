@@ -1,6 +1,6 @@
-set nocompatible 			      " use vim settings
-filetype off 				        " required
-
+set nocompatible            " use vim settings
+filetype off                " required       
+      \t   
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -8,6 +8,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -24,13 +26,17 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-syntax on 				            " syntax highlighting
+syntax on                     " syntax highlighting
 
-set autoindent 				        " auto indent
-set clipboard=unnamed 			  " allow copy between instances
-set number 				            " line numbers
-set colorcolumn=80 			      " 80 column guide
-set tabstop=2				          " 2 space tabs
-set expandtab				          " insert spaces with tab
-set shiftwidth=2			        " 2 spaces for tab with >
-set hls is ic 				        " highlight in search, ignoring case
+set autoindent                " auto indent
+set clipboard=unnamed         " allow copy between instances
+set number                    " line numbers
+set relativenumber            " show relative line numbers
+set colorcolumn=80            " 80 column guide
+set tabstop=2                 " 2 space tabs
+set expandtab                 " insert spaces with tab
+set shiftwidth=2              " 2 spaces for tab with >
+set hls is ic                 " highlight in search, ignoring case
+set t_Co=256                  " 256 colours
+set list
+set listchars=tab:»·,trail:·  " show white chars
