@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,3 +41,11 @@ set hls is ic                 " highlight in search, ignoring case
 set t_Co=256                  " 256 colours
 set list
 set listchars=tab:»·,trail:·  " show white chars
+
+" Plugin specifc settings
+" NERDTree - Open automatically when starting
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" CtrlP - Ignore files in .gitinore
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
