@@ -18,3 +18,4 @@ brew install hub
 brew install heroku
 brew install ruby
 brew install vim
+brew install the_silver_searcher
