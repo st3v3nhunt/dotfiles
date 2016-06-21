@@ -1,6 +1,6 @@
 set nocompatible            " use vim settings
 filetype off                " required       
-      \t   
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -41,7 +41,7 @@ set shiftwidth=2              " 2 spaces for tab with >
 set hls is ic                 " highlight in search, ignoring case
 set t_Co=256                  " 256 colours
 set list
-set listchars=tab:»·,trail:·  " show white chars
+set listchars=tab:▸\ ,eol:¬   " show white chars
 
 " Plugin specifc settings
 " NERDTree - Open automatically when starting
