@@ -4,28 +4,36 @@
 brew tap caskroom/cask
 
 # Browsers
-brew cask install google-chrome
-brew cask install firefox
+casks=(google-chrome firefox)
 
 # Utils
-brew cask install spectacle
-brew cask install iterm2
-brew cask install google-drive
-brew cask install dropbox
-brew cask install evernote
-brew cask install caffeine
-brew cask install vmware-horizon-client
-brew cask install royal-tsx
-brew cask install karabiner
+casks+=(spectacle
+iterm2
+google-drive
+dropbox
+evernote
+caffeine
+vmware-horizon-client
+royal-tsx
+karabiner)
 
 # Editors
-brew cask install atom
-brew cask install sublime-text
+casks+=(atom sublime-text)
 
 # IM
-brew cask install slack
-brew cask install skype
+casks+=(slack skype)
 
 # Miss
-brew cask install sonos
-brew cask install garmin-express
+casks+=(sonos garmin-express)
+
+# Upgrade if already home brew installed else install
+for pkg in "${casks[@]}"; do
+  if brew cask list -1 | grep -q "^${pkg}\$"; then
+    # The update command seems like a global update rather than package specific
+    echo "Updating '$pkg'"
+    brew cask update "{$pkg}"
+  else
+    echo "Installing '$pkg'"
+    brew cask install "{$pkg}"
+  fi
+done

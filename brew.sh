@@ -12,20 +12,24 @@ fi
 sudo chown -R $(whoami):admin /usr/local
 
 # Utils
-brew install git
-brew install bash-completion
-brew install hub
-brew install heroku
-brew install the_silver_searcher
-brew install cmake
+brews=(git bash-completion hub heroku the_silver_searcher cmake)
 
 # THE editor?! 
-brew install vim
+brews+=(vim)
 
 # Languages
-brew install mono
-brew install go
-brew install rust
-brew install python
-brew install ruby
-brew install node
+brews+=(mono go rust python ruby node elixir erlang scala)
+
+# DBs
+brews+=(mongodb postgresql sqlite)
+
+# Upgrade if already home brew installed else install
+for pkg in "${brews[@]}"; do
+  if brew list -1 | grep -q "^${pkg}\$"; then
+    echo "Upgrading '$pkg'"
+    brew upgrade "{$pkg}"
+  else
+    echo "Installing '$pkg'"
+    brew install "{$pkg}"
+  fi
+done
