@@ -56,3 +56,8 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+" Use global, static locations for back,swap and undo
+set backupdir=~/.vim/tmp/backup//
+set directory=~/.vim/tmp/swap//
+set undodir=~/.vim/tmp/undo//

@@ -7,3 +7,8 @@ fi
 
 printf "Installing Vundle Plugins\n"
 vim +PluginInstall +qall
+
+# Create dir for global swap, backup and undo files
+if [[ ! -d ~/.vim/tmp/ ]]; then
+  mkdir -p ~/.vim/tmp/{backup,swap,undo}
+fi
