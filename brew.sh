@@ -11,11 +11,21 @@ fi
 # Sort out permissions
 sudo chown -R $(whoami):admin /usr/local
 
+# Utils
 brew install git
 brew install bash-completion
-brew install node
 brew install hub
 brew install heroku
-brew install ruby
-brew install vim
 brew install the_silver_searcher
+brew install cmake
+
+# THE editor?! 
+brew install vim
+
+# Languages
+brew install mono
+brew install go
+brew install rust
+brew install python
+brew install ruby
+brew install node

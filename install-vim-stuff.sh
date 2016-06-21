@@ -12,3 +12,6 @@ vim +PluginInstall +qall
 if [[ ! -d ~/.vim/tmp/ ]]; then
   mkdir -p ~/.vim/tmp/{backup,swap,undo}
 fi
+
+# Install YouCompleteMe
+ ~/.vim/bundle/YouCompleteMe/install.py --all
