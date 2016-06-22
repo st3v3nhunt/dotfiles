@@ -37,3 +37,6 @@ for pkg in "${casks[@]}"; do
     brew cask install "{$pkg}"
   fi
 done
+
+# Cleaup
+brew cask cleanup

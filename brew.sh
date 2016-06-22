@@ -33,3 +33,6 @@ for pkg in "${brews[@]}"; do
     brew install "{$pkg}"
   fi
 done
+
+# Cleanup
+brew cleanup
