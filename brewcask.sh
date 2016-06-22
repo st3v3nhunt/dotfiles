@@ -26,15 +26,18 @@ casks+=(slack skype)
 # Miss
 casks+=(sonos garmin-express)
 
+# The update does all pkgs so just do it once
+echo "Updating..."
+brew cask update
+
 # Upgrade if already home brew installed else install
 for pkg in "${casks[@]}"; do
-  if brew cask list -1 | grep -q "^${pkg}\$"; then
-    # The update command seems like a global update rather than package specific
-    echo "Updating '$pkg'"
-    brew cask update "{$pkg}"
+  update_pkg="$(brew cask list -1 | grep ${pkg})"
+  if [[ ! "$update_pkg" ]]; then
+    echo "Installing '$pkg'..."
+    brew cask install "$pkg"
   else
-    echo "Installing '$pkg'"
-    brew cask install "{$pkg}"
+    echo "'$update_pkg' already installed"
   fi
 done
 
