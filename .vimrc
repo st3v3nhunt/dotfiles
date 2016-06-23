@@ -15,6 +15,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'tomasr/molokai'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -45,6 +46,7 @@ set hls is ic                 " highlight in search, ignoring case
 set t_Co=256                  " 256 colours
 set list
 set listchars=tab:▸\ ,eol:¬   " show white chars
+colorscheme molokai
 
 " Plugin specifc settings
 " NERDTree - Open automatically when starting
