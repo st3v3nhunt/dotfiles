@@ -56,8 +56,9 @@ let NERDTreeShowHidden=1
 
 map <C-n> :NERDTreeToggle<CR>
 
-" CtrlP - Ignore files in .gitinore
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+" CtrlP - Ignore VCS and node stuff
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_show_hidden = 1
 
 " Ack - use the_silver_searcher if avaiable
 if executable('ag')
