@@ -6,35 +6,25 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-commentary'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'mileszs/ack.vim'
-Plugin 'ternjs/tern_for_vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'tomasr/molokai'
-Plugin 'vim-airline/vim-airline'
+Plugin 'VundleVim/Vundle.vim'             " Vundle
+Plugin 'scrooloose/nerdtree'              " file explorer
+Plugin 'scrooloose/syntastic'             " linting
+Plugin 'tpope/vim-surround'               " word/phrase surrounds
+Plugin 'tpope/vim-commentary'             " comment out lines
+Plugin 'ctrlpvim/ctrlp.vim'               " fuzzy file finder
+Plugin 'mileszs/ack.vim'                  " file searching
+Plugin 'ternjs/tern_for_vim'              " JS autocompletion
+Plugin 'Valloric/YouCompleteMe'           " code completion engine
+Plugin 'ntpeters/vim-better-whitespace'   " better whitespace
+Plugin 'tomasr/molokai'                   " theme
+Plugin 'vim-airline/vim-airline'          " file status bar
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
 syntax on                     " syntax highlighting
+colorscheme molokai           " theme
 
 set autoindent                " auto indent
 set clipboard=unnamed         " allow copy between instances
@@ -49,7 +39,6 @@ set hlsearch                  " highlight searches
 set t_Co=256                  " 256 colours
 set list
 set listchars=tab:▸\ ,eol:¬   " show white chars
-colorscheme molokai
 
 " Plugin specifc settings
 " NERDTree - Open automatically when starting
@@ -86,3 +75,4 @@ let g:syntastic_loc_list_height = 3
 set backupdir=~/.vim/tmp/backup//
 set directory=~/.vim/tmp/swap//
 set undodir=~/.vim/tmp/undo//
+
