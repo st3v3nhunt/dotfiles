@@ -48,7 +48,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 
 " CtrlP - Ignore VCS and node stuff
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](coverage|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let g:ctrlp_show_hidden = 1
 
 
