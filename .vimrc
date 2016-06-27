@@ -8,6 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -56,14 +57,29 @@ let NERDTreeShowHidden=1
 
 map <C-n> :NERDTreeToggle<CR>
 
+
 " CtrlP - Ignore VCS and node stuff
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let g:ctrlp_show_hidden = 1
+
 
 " Ack - use the_silver_searcher if avaiable
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+
+" Syntastic seetings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
 " Use global, static locations for back,swap and undo
 set backupdir=~/.vim/tmp/backup//
