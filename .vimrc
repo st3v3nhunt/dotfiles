@@ -45,7 +45,6 @@ set expandtab                 " insert spaces with tab
 set shiftwidth=2              " 2 spaces for tab with >
 set incsearch                 " incremental search
 set hlsearch                  " highlight searches
-" set hls is ic                 " highlight in search, ignoring case
 set t_Co=256                  " 256 colours
 set list
 set listchars=tab:▸\ ,eol:¬   " show white chars
