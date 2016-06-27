@@ -15,3 +15,6 @@ fi
 
 # Install YouCompleteMe
  ~/.vim/bundle/YouCompleteMe/install.py --all
+
+ # Install eslint_d for syntastic JS linting
+ npm install -g eslint_d
