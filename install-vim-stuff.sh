@@ -16,5 +16,8 @@ fi
 # Install YouCompleteMe
  ~/.vim/bundle/YouCompleteMe/install.py --all
 
+ # Install Tern for Vim
+ (cd ~/.vim/bundle/tern_for_vim && npm install)
+
  # Install eslint_d for syntastic JS linting
  npm install -g eslint_d
