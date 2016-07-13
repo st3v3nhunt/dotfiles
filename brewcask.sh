@@ -15,7 +15,6 @@ evernote
 caffeine
 vmware-horizon-client
 royal-tsx
-gitify
 karabiner)
 
 # Editors
