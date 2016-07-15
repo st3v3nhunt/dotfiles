@@ -6,3 +6,4 @@ alias chrome='open /Applications/Google\ Chrome.app'
 alias atom='open /Applications/Atom.app'
 alias gaac='git add -A && git commit -m'
 alias j=jobs
+alias h=heroku
