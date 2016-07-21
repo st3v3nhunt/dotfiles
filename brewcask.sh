@@ -23,7 +23,7 @@ casks+=(atom sublime-text)
 # IM
 casks+=(slack skype)
 
-# Miss
+# Misc
 casks+=(sonos garmin-express)
 
 # The update does all pkgs so just do it once

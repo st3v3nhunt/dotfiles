@@ -14,7 +14,7 @@ sudo chown -R $(whoami):admin /usr/local
 # Utils
 brews=(git bash-completion hub heroku the_silver_searcher cmake)
 
-# THE editor?! 
+# THE editor?!
 brews+=(vim)
 
 # Languages
