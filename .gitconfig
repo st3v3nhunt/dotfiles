@@ -19,3 +19,5 @@
 	path = ~/.gitconfig.local
 [core]
 	editor = vim
+[credential]
+	helper = osxkeychain
