@@ -18,6 +18,10 @@ Plugin 'Valloric/YouCompleteMe'           " code completion engine
 Plugin 'ntpeters/vim-better-whitespace'   " better whitespace
 Plugin 'tomasr/molokai'                   " theme
 Plugin 'vim-airline/vim-airline'          " file status bar
+Plugin 'matchit.zip'                      " Use % in html
+Plugin 'Townk/vim-autoclose'              " Auto pair/close
+" Plugin 'jiangmiao/auto-pairs'             " Auto pair/close
+" Plugin 'Raimondi/delimitMate'             " Auto pair/close
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
