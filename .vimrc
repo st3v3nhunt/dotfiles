@@ -40,6 +40,8 @@ set t_Co=256                  " 256 colours
 set list
 set listchars=tab:▸\ ,eol:¬   " show white chars
 
+au Bufread,BufNewFile *.nunjucks set filetype=html " set nunjucks files as html
+
 " Plugin specifc settings
 " NERDTree - Open automatically when starting
 let NERDTreeShowHidden=1
