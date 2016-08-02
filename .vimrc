@@ -19,7 +19,8 @@ Plugin 'ntpeters/vim-better-whitespace'   " better whitespace
 Plugin 'tomasr/molokai'                   " theme
 Plugin 'vim-airline/vim-airline'          " file status bar
 Plugin 'matchit.zip'                      " Use % in html
-Plugin 'Townk/vim-autoclose'              " Auto pair/close
+" Plugin 'Townk/vim-autoclose' " Auto pair/close - Disabled as it kept
+" putting Vim into insert mode when there was a thing to auto complete
 " Plugin 'jiangmiao/auto-pairs'             " Auto pair/close
 " Plugin 'Raimondi/delimitMate'             " Auto pair/close
 
