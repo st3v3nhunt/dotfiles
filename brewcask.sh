@@ -24,7 +24,7 @@ casks+=(atom sublime-text)
 casks+=(slack skype)
 
 # Misc
-casks+=(sonos garmin-express)
+casks+=(sonos garmin-express garmin-virb-edit)
 
 # The update does all pkgs so just do it once
 echo "Updating..."
