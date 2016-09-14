@@ -15,6 +15,7 @@ evernote
 caffeine
 vmware-horizon-client
 royal-tsx
+wireshark
 karabiner)
 
 # Editors
