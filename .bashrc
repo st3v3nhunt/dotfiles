@@ -9,3 +9,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 export PATH=$PATH:$(npm -g bin)
+
+# added by travis gem
+[ -f /Users/steve/.travis/travis.sh ] && source /Users/steve/.travis/travis.sh
