@@ -15,8 +15,7 @@ evernote
 caffeine
 vmware-horizon-client
 royal-tsx
-wireshark
-karabiner)
+wireshark)
 
 # Editors
 casks+=(atom sublime-text)
