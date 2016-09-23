@@ -7,3 +7,4 @@ alias atom='open /Applications/Atom.app'
 alias gaac='git add -A && git commit -m'
 alias j=jobs
 alias h=heroku
+alias hist=history
