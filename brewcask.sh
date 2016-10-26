@@ -16,7 +16,8 @@ caffeine
 vmware-horizon-client
 royal-tsx
 microsoft-azure-storage-explorer
-rwireshark)
+java
+wireshark)
 
 # Editors
 casks+=(atom sublime-text)
