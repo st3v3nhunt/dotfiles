@@ -29,7 +29,7 @@
                 "f9": "vk_consumer_next"
             },
             "name": "External keyboard (POK3R)",
-            "selected": true,
+            "selected": false,
             "simple_modifications": {
                 "left_command": "left_option",
                 "left_option": "left_command",
@@ -67,7 +67,7 @@
                 "f11": "volume_down"
             },
             "name": "internal",
-            "selected": false,
+            "selected": true,
             "simple_modifications": {
                 "caps_lock": "left_control"
             }
