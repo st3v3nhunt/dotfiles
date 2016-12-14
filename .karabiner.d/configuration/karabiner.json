@@ -1,15 +1,76 @@
 {
-  "profiles": [
-    {
-      "name": "Default profile",
-      "selected": true,
-      "simple_modifications": {
-        "non_us_backslash": "grave_accent_and_tilde",
-        "left_option": "left_command",
-        "left_command": "left_option",
-        "right_option": "right_command",
-        "pause": "power"
-      }
-    }
-  ]
+    "profiles": [
+        {
+            "devices": [
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 321,
+                        "vendor_id": 1241
+                    },
+                    "ignore": false,
+                    "keyboard_type": 0
+                }
+            ],
+            "fn_function_keys": {
+                "f1": "vk_consumer_brightness_down",
+                "f10": "mute",
+                "f11": "volume_down",
+                "f12": "volume_up",
+                "f2": "vk_consumer_brightness_up",
+                "f3": "vk_mission_control",
+                "f4": "vk_launchpad",
+                "f5": "vk_consumer_illumination_down",
+                "f6": "vk_consumer_illumination_up",
+                "f7": "vk_consumer_previous",
+                "f8": "vk_consumer_play",
+                "f9": "vk_consumer_next"
+            },
+            "name": "External keyboard (POK3R)",
+            "selected": true,
+            "simple_modifications": {
+                "left_command": "left_option",
+                "left_option": "left_command",
+                "non_us_backslash": "grave_accent_and_tilde",
+                "pause": "power",
+                "right_option": "right_command"
+            }
+        },
+        {
+            "devices": [
+                {
+                    "ignore": false,
+                    "identifiers": {
+                        "vendor_id": 1452,
+                        "is_pointing_device": false,
+                        "product_id": 601,
+                        "is_keyboard": true
+                    },
+                    "disable_built_in_keyboard_if_exists": false,
+                    "keyboard_type": 0
+                }
+            ],
+            "fn_function_keys": {
+                "f1": "vk_consumer_brightness_down",
+                "f2": "vk_consumer_brightness_up",
+                "f3": "vk_mission_control",
+                "f4": "vk_launchpad",
+                "f5": "vk_consumer_illumination_down",
+                "f6": "vk_consumer_illumination_up",
+                "f7": "vk_consumer_previous",
+                "f8": "vk_consumer_play",
+                "f9": "vk_consumer_next",
+                "f12": "volume_up",
+                "f10": "mute",
+                "f11": "volume_down"
+            },
+            "name": "internal",
+            "selected": false,
+            "simple_modifications": {
+                "caps_lock": "left_control"
+            }
+        }
+    ]
 }
