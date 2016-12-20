@@ -17,6 +17,7 @@ vmware-horizon-client
 royal-tsx
 microsoft-azure-storage-explorer
 java
+mongochef
 wireshark)
 
 # Editors
