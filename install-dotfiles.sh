@@ -13,6 +13,7 @@ ln -nfsv "$DOTFILES_DIR/.bash_profile" ~
 ln -nfsv "$DOTFILES_DIR/.gitconfig" ~
 ln -nfsv "$DOTFILES_DIR/.gitconfig.local" ~
 ln -nfsv "$DOTFILES_DIR/.aliases" ~
+ln -nfsv "$DOTFILES_DIR/.azure-cli" ~
 ln -nfsv "$DOTFILES_DIR/.colors" ~
 ln -nfsv "$DOTFILES_DIR/.prompt" ~
 ln -nfsv "$DOTFILES_DIR/.vimrc" ~

@@ -1,0 +1,4 @@
+# Hard coded path to Python 2.7 - could probably be figured out dynamically
+export PATH=$PATH:~/Library/Python/2.7/bin
+
+source az.completion.sh
