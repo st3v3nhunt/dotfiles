@@ -2,17 +2,20 @@
 
 which -s brew
 if [[ $? != 0 ]] ; then
-    # Install Homebrew
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  # Install Homebrew
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-    brew update
+  brew update
 fi
+
+# Tap other kegs
+brew tap jmespath/jmespath
 
 # Sort out permissions
 sudo chown -R $(whoami):admin /usr/local
 
 # Utils
-brews=(git bash-completion hub heroku the_silver_searcher cmake)
+brews=(git bash-completion hub heroku the_silver_searcher cmake jq jp)
 
 # THE editor?!
 brews+=(vim)
