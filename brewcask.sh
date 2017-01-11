@@ -32,7 +32,7 @@ casks+=(sonos garmin-express)
 
 # The update does all pkgs so just do it once
 echo "Updating..."
-brew cask update
+brew update
 
 # Upgrade if already home brew installed else install
 for pkg in "${casks[@]}"; do
