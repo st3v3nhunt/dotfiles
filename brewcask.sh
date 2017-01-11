@@ -18,6 +18,7 @@ royal-tsx
 microsoft-azure-storage-explorer
 java
 mongochef
+robomongo
 wireshark)
 
 # Editors
