@@ -7,7 +7,8 @@ brew tap caskroom/cask
 casks=(google-chrome firefox)
 
 # Utils
-casks+=(spectacle
+casks+=(
+spectacle
 iterm2
 google-drive
 dropbox
@@ -19,7 +20,8 @@ java
 mongochef
 robomongo
 docker
-wireshark)
+wireshark
+)
 
 # Editors
 casks+=(atom sublime-text)
