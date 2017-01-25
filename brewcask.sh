@@ -19,6 +19,7 @@ microsoft-azure-storage-explorer
 java
 mongochef
 robomongo
+docker
 wireshark)
 
 # Editors
