@@ -15,7 +15,17 @@ brew tap jmespath/jmespath
 sudo chown -R $(whoami):admin /usr/local
 
 # Utils
-brews=(git bash-completion hub heroku the_silver_searcher cmake jq jp)
+brews=(
+git
+bash-completion
+hub
+heroku
+the_silver_searcher
+cmake
+jq
+jp
+rancher-cli
+)
 
 # THE editor?!
 brews+=(vim)
