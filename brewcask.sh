@@ -11,7 +11,6 @@ casks+=(spectacle
 iterm2
 google-drive
 dropbox
-evernote
 caffeine
 vmware-horizon-client
 royal-tsx
