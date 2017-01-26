@@ -25,6 +25,7 @@ cmake
 jq
 jp
 rancher-cli
+shellcheck
 )
 
 # THE editor?!
