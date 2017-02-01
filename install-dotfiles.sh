@@ -24,7 +24,7 @@ printf "${GREEN}Finished creating symlinks...${NC}\n"
 
 printf "${GREEN}Installing Karabiner-Elements configuration...${NC}\n"
 
-KARABINER_DIR=".karabiner.d/configuration"
+KARABINER_DIR=".config/karabiner"
 
 mkdir -p ~/$KARABINER_DIR && cp $DOTFILES_DIR/$KARABINER_DIR/karabiner.json ~/$KARABINER_DIR/
 
