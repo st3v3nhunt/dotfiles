@@ -21,6 +21,7 @@ mongochef
 robomongo
 docker
 wireshark
+kitematic
 )
 
 # Editors
