@@ -21,6 +21,7 @@ robomongo
 docker
 wireshark
 kitematic
+tableau-public
 )
 
 # Editors
