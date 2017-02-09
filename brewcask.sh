@@ -17,7 +17,6 @@ vmware-horizon-client
 royal-tsx
 microsoft-azure-storage-explorer
 java
-mongochef
 robomongo
 docker
 wireshark
@@ -25,7 +24,7 @@ kitematic
 )
 
 # Editors
-casks+=(atom sublime-text)
+casks+=(sublime-text)
 
 # IM
 casks+=(slack skype)
