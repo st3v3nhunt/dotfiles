@@ -22,4 +22,11 @@ the key remapped to another (pause) it still doesn't work. Which leaves two
 reasonable alternatives for locking the machine (both of which require having
 the password immediately be required once the screen saver starts):
 * Set a hot corner to start the screen saver
-* Have the keychain status show in the menu bar
+* Have the keychain status display in the menu bar
+
+## FAQ
+
+* When using VIM there is no linting happening and no signs being displayed in
+the margin.
+  * Try restarting `eslint_d` (the eslint server running and used by syntastic)
+  with `eslint_d restart`
