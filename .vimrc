@@ -44,6 +44,7 @@ set hlsearch                  " highlight searches
 set t_Co=256                  " 256 colours
 set list
 set listchars=tab:▸\ ,eol:¬   " show white chars
+set showcmd                   " show command on screen
 
 au Bufread,BufNewFile *.nunjucks set filetype=html " set nunjucks files as html
 
