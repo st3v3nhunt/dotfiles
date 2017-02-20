@@ -99,6 +99,9 @@ nnoremap <C-H> <C-W><C-H>
 let mapleader=","
 
 " Leaders
+" Save and close
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+" Send Vim to background
 nnoremap <Leader>z <C-z>
 
