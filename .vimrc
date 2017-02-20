@@ -45,6 +45,10 @@ set t_Co=256                  " 256 colours
 set list
 set listchars=tab:▸\ ,eol:¬   " show white chars
 set showcmd                   " show command on screen
+set ignorecase                " ignore case when searching
+set smartcase                 " ignore case if search term is all lower, else be case sensitive
+set history=500               " remember more stuff
+set undolevels=1000           " undo more stuff
 
 au Bufread,BufNewFile *.nunjucks set filetype=html " set nunjucks files as html
 
