@@ -58,7 +58,8 @@ map <C-n> :NERDTreeToggle<CR>
 " CtrlP - Ignore VCS and node stuff
 let g:ctrlp_custom_ignore = '\v[\/](coverage|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let g:ctrlp_show_hidden = 1
-
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 0
 
 " Ack - use the_silver_searcher if avaiable
 if executable('ag')
