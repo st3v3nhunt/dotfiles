@@ -11,6 +11,7 @@ Plugin 'scrooloose/nerdtree'              " file explorer
 Plugin 'scrooloose/syntastic'             " linting
 Plugin 'tpope/vim-surround'               " word/phrase surrounds
 Plugin 'tpope/vim-commentary'             " comment out lines
+Plugin 'tpope/vim-fugitive'               " Git wrapper
 Plugin 'ctrlpvim/ctrlp.vim'               " fuzzy file finder
 Plugin 'mileszs/ack.vim'                  " file searching
 Plugin 'ternjs/tern_for_vim'              " JS autocompletion
