@@ -1,9 +1,12 @@
 alias sbp='. ~/.bashrc'
 alias ls='ls -aFhlG'
 alias vi=vim
+alias chrome='open /Applications/Google\ Chrome.app'
 alias git=hub
 alias g=git
-alias chrome='open /Applications/Google\ Chrome.app'
+alias gp='git pull'
+alias gd='git diff'
+alias gs='git status'
 alias gaac='git add -A && git commit -m'
 alias j=jobs
 alias h=heroku
