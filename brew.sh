@@ -12,7 +12,7 @@ fi
 brew tap jmespath/jmespath
 
 # Sort out permissions
-sudo chown -R $(whoami):admin /usr/local
+sudo chown -R "$(whoami):admin" /usr/local
 
 # Utils
 brews=(
