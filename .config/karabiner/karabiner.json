@@ -1,7 +1,8 @@
 {
     "global": {
         "check_for_updates_on_startup": true,
-        "show_in_menu_bar": true
+        "show_in_menu_bar": true,
+        "show_profile_name_in_menu_bar": true
     },
     "profiles": [
         {
@@ -31,13 +32,12 @@
                 "f8": "vk_consumer_play",
                 "f9": "vk_consumer_next"
             },
-            "name": "External keyboard (POK3R)",
-            "selected": false,
+            "name": "POK3R",
+            "selected": true,
             "simple_modifications": {
                 "left_command": "left_option",
                 "left_option": "left_command",
                 "non_us_backslash": "grave_accent_and_tilde",
-                "pause": "power",
                 "right_option": "right_command"
             },
             "virtual_hid_keyboard": {
@@ -72,8 +72,8 @@
                 "f8": "vk_consumer_play",
                 "f9": "vk_consumer_next"
             },
-            "name": "internal",
-            "selected": true,
+            "name": "Internal",
+            "selected": false,
             "simple_modifications": {
                 "caps_lock": "left_control"
             },

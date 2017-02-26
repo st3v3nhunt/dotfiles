@@ -26,7 +26,7 @@ printf "${GREEN}Installing Karabiner-Elements configuration...${NC}\n"
 
 KARABINER_DIR=".config/karabiner"
 
-mkdir -p ~/"$KARABINER_DIR" && cp "$DOTFILES_DIR/$KARABINER_DIR/karabiner.json" ~/"$KARABINER_DIR/"
+mkdir -p ~/"$KARABINER_DIR" && cp "$DOTFILES_DIR/$KARABINER_DIR/karabiner.json" ~/"$KARABINER_DIR"
 
 printf "${GREEN}Finished installing Karabiner-Elements configuration...${NC}\n"
 
