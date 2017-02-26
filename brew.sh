@@ -26,6 +26,7 @@ jq
 jp
 rancher-cli
 shellcheck
+htop
 )
 
 # THE editor?!
