@@ -29,6 +29,7 @@ shellcheck
 htop
 tmux
 reattach-to-user-namespace
+gpg
 )
 
 # THE editor?!
