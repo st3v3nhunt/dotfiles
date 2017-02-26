@@ -14,19 +14,24 @@ During the install of Homebrew you will be prompted for your password.
 Git user config is held in an ignored file @ `~/.gitconfig.local`. This should
 contain user.name and user.email
 
+## iTerm2 preferences
+
+iTerm2 perferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within iTerm2
+this setting will need to be enetred before these will be used.
+Go to `Preferences->General` and enter `~/code/dotfiles/plists` into the option
+for `Load preferences from a custom folder or URL:`.
+
 ## Locking the screen
 
 Locking the screen with the internal keyboard is `command + shift + power`.
-This doesn't work on an external keyboard as there is no power key and even with
-the key remapped to another (pause) it still doesn't work. Which leaves two
-reasonable alternatives for locking the machine (both of which require having
-the password immediately be required once the screen saver starts):
-* Set a hot corner to start the screen saver
-* Have the keychain status display in the menu bar
+This isn't possible from an external keyboard. The best option I've found is to
+have the keychain status be displayed in the menu bar and use the shortcut
+to `Lock Screen`.
 
 ## FAQ
 
-* When using VIM there is no linting happening and no signs being displayed in
-the margin.
-  * Try restarting `eslint_d` (the eslint server running and used by syntastic)
-  with `eslint_d restart`
+* No linting in Vim and no lint warning or error symbols in the margin?
+  * Try restarting the eslint server. At the terminal run `eslint_d restart`
+* No completion in VIM?
+  * Try restarting the YouCompleteMe server within Vim `:YcmRestartServer`
+
