@@ -28,6 +28,7 @@ rancher-cli
 shellcheck
 htop
 tmux
+reattach-to-user-namespace
 )
 
 # THE editor?!
