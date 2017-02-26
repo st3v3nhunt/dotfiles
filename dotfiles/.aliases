@@ -8,6 +8,7 @@ alias gs='git status'
 alias h=heroku
 alias hist=history
 alias ls='ls -aFhlG'
+alias tm=tmux
 alias sbp='. ~/.bashrc'
 alias j=jobs
 alias vi=vim
