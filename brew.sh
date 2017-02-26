@@ -27,6 +27,7 @@ jp
 rancher-cli
 shellcheck
 htop
+tmux
 )
 
 # THE editor?!
