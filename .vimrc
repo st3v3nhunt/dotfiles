@@ -17,6 +17,7 @@ Plugin 'ternjs/tern_for_vim'              " JS autocompletion
 Plugin 'tomasr/molokai'                   " theme
 Plugin 'tpope/vim-fugitive'               " Git wrapper
 Plugin 'tpope/vim-commentary'             " comment out lines
+Plugin 'tpope/vim-repeat'                 " repeat plugin commands via .
 Plugin 'tpope/vim-surround'               " word/phrase surrounds
 Plugin 'Valloric/YouCompleteMe'           " code completion engine
 Plugin 'vim-airline/vim-airline'          " file status bar
