@@ -7,6 +7,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'             " Vundle
+Plugin 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
 Plugin 'ctrlpvim/ctrlp.vim'               " fuzzy file finder
 Plugin 'matchit.zip'                      " Use % in html
 Plugin 'mileszs/ack.vim'                  " file searching
@@ -95,10 +96,11 @@ set directory=~/.vim/tmp/swap//
 set undodir=~/.vim/tmp/undo//
 
 " Easier split navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+" This isn't required when 'christoomey/vim-tmux-navigator' is installed
+" nnoremap <C-J> <C-W><C-J>
+" nnoremap <C-K> <C-W><C-K>
+" nnoremap <C-L> <C-W><C-L>
+" nnoremap <C-H> <C-W><C-H>
 
 " Remap leader to comma
 let mapleader=","
