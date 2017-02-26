@@ -35,3 +35,15 @@ to `Lock Screen`.
 * No completion in VIM?
   * Try restarting the YouCompleteMe server within Vim `:YcmRestartServer`
 
+### Useful links
+
+* [nicknisi/dotfiles](https://github.com/nicknisi/dotfiles)
+* [Boost vim productivity (blog)](https://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/)
+* [vim + tmux - OMG!Code (video)](https://www.youtube.com/watch?v=5r6yzFEXajQ)
+* [Seamlessly Navigate Vim and tmux Splits (blog)](https://robots.thoughtbot.com/seamlessly-navigate-vim-and-tmux-splits)
+* [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
+* [A tmux Crash Course (blog)](https://robots.thoughtbot.com/a-tmux-crash-course)
+* [Making the clipboard work between iTerm2, tmux, vim and OS X. (blog)](https://evertpot.com/osx-tmux-vim-copy-paste-clipboard/)
+* [Basic tmux Tutorial - Windows, Panes, and Sessions over SSH (video)](https://www.youtube.com/watch?v=BHhA_ZKjyxo)
+* [tmux Quick Start (video)](https://www.youtube.com/watch?v=wKEGA8oEWXw)
+
