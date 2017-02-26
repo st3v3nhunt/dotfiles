@@ -4,3 +4,5 @@
 ./install-brew.sh
 ./install-vim-stuff.sh
 ./install-pips.sh
+./defaults
+
