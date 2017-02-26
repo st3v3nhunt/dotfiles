@@ -7,19 +7,19 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'             " Vundle
+Plugin 'ctrlpvim/ctrlp.vim'               " fuzzy file finder
+Plugin 'matchit.zip'                      " Use % in html
+Plugin 'mileszs/ack.vim'                  " file searching
+Plugin 'ntpeters/vim-better-whitespace'   " better whitespace
 Plugin 'scrooloose/nerdtree'              " file explorer
 Plugin 'scrooloose/syntastic'             " linting
-Plugin 'tpope/vim-surround'               " word/phrase surrounds
-Plugin 'tpope/vim-commentary'             " comment out lines
-Plugin 'tpope/vim-fugitive'               " Git wrapper
-Plugin 'ctrlpvim/ctrlp.vim'               " fuzzy file finder
-Plugin 'mileszs/ack.vim'                  " file searching
 Plugin 'ternjs/tern_for_vim'              " JS autocompletion
-Plugin 'Valloric/YouCompleteMe'           " code completion engine
-Plugin 'ntpeters/vim-better-whitespace'   " better whitespace
 Plugin 'tomasr/molokai'                   " theme
+Plugin 'tpope/vim-fugitive'               " Git wrapper
+Plugin 'tpope/vim-commentary'             " comment out lines
+Plugin 'tpope/vim-surround'               " word/phrase surrounds
+Plugin 'Valloric/YouCompleteMe'           " code completion engine
 Plugin 'vim-airline/vim-airline'          " file status bar
-Plugin 'matchit.zip'                      " Use % in html
 " Plugin 'Townk/vim-autoclose' " Auto pair/close - Disabled as it kept
 " putting Vim into insert mode when there was a thing to auto complete
 " Plugin 'jiangmiao/auto-pairs'             " Auto pair/close
