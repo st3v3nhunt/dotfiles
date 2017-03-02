@@ -109,6 +109,7 @@ let mapleader=","
 " Save and close
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>x :wq<CR>
 " Send Vim to background
 nnoremap <Leader>z <C-z>
 
