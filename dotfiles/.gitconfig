@@ -22,3 +22,5 @@
 	editor = vim
 [credential]
 	helper = osxkeychain
+[user]
+	email = st3v3n.hunt@gmail.com
