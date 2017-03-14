@@ -22,6 +22,7 @@ Plugin 'tpope/vim-repeat'                 " repeat plugin commands via .
 Plugin 'tpope/vim-surround'               " word/phrase surrounds
 Plugin 'Valloric/YouCompleteMe'           " code completion engine
 Plugin 'vim-airline/vim-airline'          " file status bar
+Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
 " Plugin 'Townk/vim-autoclose' " Auto pair/close - Disabled as it kept
 " putting Vim into insert mode when there was a thing to auto complete
 " Plugin 'jiangmiao/auto-pairs'             " Auto pair/close
