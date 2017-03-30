@@ -22,6 +22,7 @@ docker
 wireshark
 kitematic
 tableau-public
+skype-for-business
 )
 
 # Editors
