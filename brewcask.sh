@@ -23,6 +23,7 @@ wireshark
 kitematic
 tableau-public
 skype-for-business
+flux
 )
 
 # Editors
