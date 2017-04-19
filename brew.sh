@@ -30,6 +30,7 @@ htop
 tmux
 reattach-to-user-namespace
 gpg
+yarn
 )
 
 # THE editor?!
