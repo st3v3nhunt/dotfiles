@@ -53,6 +53,8 @@ set ignorecase                " ignore case when searching
 set smartcase                 " ignore case if search term is all lower, else be case sensitive
 set history=500               " remember more stuff
 set undolevels=1000           " undo more stuff
+set foldmethod=indent         " fold based on indentation
+set foldlevel=5               " default fold level. 5 should be ok to see most contents
 
 au Bufread,BufNewFile *.nunjucks set filetype=html " set nunjucks files as html
 
