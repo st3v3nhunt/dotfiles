@@ -24,6 +24,7 @@ rancher-cli
 shellcheck
 gpg
 yarn
+ghi
 )
 
 # Terminal stuff
