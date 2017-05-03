@@ -24,3 +24,7 @@
 	helper = osxkeychain
 [user]
 	email = st3v3n.hunt@gmail.com
+[github]
+	user = st3v3nhunt
+[ghi]
+	token = !security find-internet-password -a st3v3nhunt -s github.com -l 'ghi token' -w

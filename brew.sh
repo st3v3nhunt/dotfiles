@@ -31,6 +31,7 @@ tmux
 reattach-to-user-namespace
 gpg
 yarn
+ghi
 )
 
 # THE editor?!
