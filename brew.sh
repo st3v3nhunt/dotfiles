@@ -19,7 +19,6 @@ brews=(
 cmake
 heroku
 rancher-cli
-the_silver_searcher
 shellcheck
 gpg
 yarn
@@ -42,6 +41,9 @@ brews+=(mono go rust python ruby node elixir erlang scala)
 
 # DBs
 brews+=(mongodb postgresql sqlite)
+
+# Search stuff
+brews+=(elasticsearch kibana the_silver_searcher)
 
 # Upgrade if already home brew installed else install
 for pkg in "${brews[@]}"; do
