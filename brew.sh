@@ -16,23 +16,23 @@ sudo chown -R "$(whoami):admin" /usr/local
 
 # Utils
 brews=(
-git
-bash-completion
-hub
-heroku
-the_silver_searcher
 cmake
-jq
-jp
+heroku
 rancher-cli
+the_silver_searcher
 shellcheck
-htop
-tmux
-reattach-to-user-namespace
 gpg
 yarn
-ghi
 )
+
+# Terminal stuff
+brews+=(bash-completion htop tmux reattach-to-user-namespace)
+
+# GIT stuff
+brews+=(git hub ghi)
+
+# JSON wrangling
+brews+=(jq jp)
 
 # THE editor?!
 brews+=(vim)
