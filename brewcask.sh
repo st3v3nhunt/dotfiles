@@ -23,6 +23,7 @@ kitematic
 tableau-public
 skype-for-business
 flux
+gimp
 )
 
 # Editors
