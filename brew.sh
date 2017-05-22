@@ -17,6 +17,8 @@ sudo chown -R "$(whoami):admin" /usr/local
 # Utils
 brews=(
 cmake
+docker
+docker-compose
 heroku
 rancher-cli
 shellcheck

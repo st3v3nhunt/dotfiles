@@ -18,7 +18,6 @@ royal-tsx
 microsoft-azure-storage-explorer
 java
 robomongo
-docker
 wireshark
 kitematic
 tableau-public
