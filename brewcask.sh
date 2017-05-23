@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-# Get cask https://caskroom.github.io/
+# Get [Homebrew-Cask](https://caskroom.github.io/), an extension to Homebrew
 brew tap caskroom/cask
+# Tap the cask of [drivers](https://github.com/caskroom/homebrew-drivers)
+brew tap caskroom/drivers
 
 # Browsers
 casks=(google-chrome firefox)
