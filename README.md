@@ -9,6 +9,12 @@ Clone the repo somewhere on the local disk and run `./install.sh`. This will:
 
 During the install of Homebrew you will be prompted for your password.
 
+## Installing Docker for Mac
+
+At the time of writing [Docker of Mac](https://www.docker.com/docker-mac) is
+not available via Homebrew. It can be downloaded from the
+[Docker Store](https://store.docker.com/editions/community/docker-ce-desktop-mac).
+
 ## Setup user gitconfig info
 
 Git user config is held in an ignored file @ `~/.gitconfig.local`. This should
@@ -46,4 +52,3 @@ to `Lock Screen`.
 * [Making the clipboard work between iTerm2, tmux, vim and OS X. (blog)](https://evertpot.com/osx-tmux-vim-copy-paste-clipboard/)
 * [Basic tmux Tutorial - Windows, Panes, and Sessions over SSH (video)](https://www.youtube.com/watch?v=BHhA_ZKjyxo)
 * [tmux Quick Start (video)](https://www.youtube.com/watch?v=wKEGA8oEWXw)
-
