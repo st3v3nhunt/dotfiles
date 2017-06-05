@@ -21,6 +21,7 @@ gpg
 heroku
 rancher-cli
 shellcheck
+vault
 yarn
 )
 
