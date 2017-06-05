@@ -17,34 +17,63 @@ sudo chown -R "$(whoami):admin" /usr/local
 # Utils
 brews=(
 cmake
+gpg
 heroku
 rancher-cli
 shellcheck
-gpg
 yarn
-ghi
 )
 
 # Terminal stuff
-brews+=(bash-completion htop tmux reattach-to-user-namespace)
+brews+=(
+bash-completion
+htop
+reattach-to-user-namespace
+tmux
+)
 
 # GIT stuff
-brews+=(git hub ghi)
+brews+=(
+git
+hub
+ghi
+)
 
 # JSON wrangling
-brews+=(jq jp)
+brews+=(
+jq
+jp
+)
 
 # THE editor?!
 brews+=(vim)
 
 # Languages
-brews+=(mono go rust python ruby node elixir erlang scala)
+brews+=(
+elixir
+erlang
+go
+mono
+node
+python
+rust
+ruby
+scala
+)
 
 # DBs
-brews+=(mongodb postgresql sqlite)
+brews+=(
+mongodb
+postgresql
+sqlite
+)
 
 # Search stuff
-brews+=(elasticsearch kibana the_silver_searcher)
+brews+=(
+elasticsearch
+kibana
+the_silver_searcher
+)
 
 # Upgrade if already home brew installed else install
 for pkg in "${brews[@]}"; do
