@@ -106,6 +106,10 @@ set undodir=~/.vim/tmp/undo//
 " nnoremap <C-L> <C-W><C-L>
 " nnoremap <C-H> <C-W><C-H>
 
+" Use oo and OO for entering new lines without going into insert mode
+nmap oo o<Esc>k
+nmap OO O<Esc>j
+
 " Remap leader to comma
 let mapleader=","
 
@@ -116,4 +120,3 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>x :wq<CR>
 " Send Vim to background
 nnoremap <Leader>z <C-z>
-
