@@ -16,6 +16,7 @@ sudo chown -R "$(whoami):admin" /usr/local
 
 # Utils
 brews=(
+adr-tools
 cmake
 gpg
 heroku
