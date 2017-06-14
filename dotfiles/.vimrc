@@ -56,7 +56,8 @@ set undolevels=1000           " undo more stuff
 set foldmethod=indent         " fold based on indentation
 set foldlevel=5               " default fold level. 5 should be ok to see most contents
 
-au Bufread,BufNewFile *.nunjucks set filetype=html " set nunjucks files as html
+autocmd Bufread,BufNewFile *.nunjucks set filetype=html " set nunjucks files as html
+autocmd BufRead,BufNewFile *.md setlocal spell          " turn spell check on for *.md files
 
 " Plugin specifc settings
 " NERDTree - Open automatically when starting
