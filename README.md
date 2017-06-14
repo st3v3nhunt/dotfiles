@@ -22,8 +22,8 @@ contain user.name and user.email
 
 ## iTerm2 preferences
 
-iTerm2 perferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within iTerm2
-this setting will need to be enetred before these will be used.
+iTerm2 preferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within iTerm2
+this setting will need to be entered before these will be used.
 Go to `Preferences->General` and enter `~/code/dotfiles/plists` into the option
 for `Load preferences from a custom folder or URL:`.
 

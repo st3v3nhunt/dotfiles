@@ -34,4 +34,3 @@ printf "${GREEN}Finished installing Karabiner-Elements configuration...${NC}\n"
 # Reload environment
 # shellcheck source=/dev/null
 . ~/.bashrc
-

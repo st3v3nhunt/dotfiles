@@ -21,3 +21,8 @@ fi
 
  # Install eslint_d for syntastic JS linting
  npm install -g eslint_d
+
+REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+ # Use existing word list for vim spell
+ln -nfsv "$REPO_DIR/vim/en.utf-8.add" ~/.vim/spell
