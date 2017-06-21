@@ -8,21 +8,22 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'             " Vundle
 Plugin 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
-Plugin 'ctrlpvim/ctrlp.vim'               " fuzzy file finder
+Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
 Plugin 'matchit.zip'                      " Use % in html
-Plugin 'mileszs/ack.vim'                  " file searching
-Plugin 'ntpeters/vim-better-whitespace'   " better whitespace
-Plugin 'scrooloose/nerdtree'              " file explorer
-Plugin 'scrooloose/syntastic'             " linting
+Plugin 'mileszs/ack.vim'                  " File searching
+Plugin 'ntpeters/vim-better-whitespace'   " Better whitespace
+Plugin 'scrooloose/nerdtree'              " File explorer
+Plugin 'scrooloose/syntastic'             " Linting
 Plugin 'ternjs/tern_for_vim'              " JS autocompletion
-Plugin 'tomasr/molokai'                   " theme
+Plugin 'tomasr/molokai'                   " Theme
 Plugin 'tpope/vim-fugitive'               " Git wrapper
-Plugin 'tpope/vim-commentary'             " comment out lines
-Plugin 'tpope/vim-repeat'                 " repeat plugin commands via .
-Plugin 'tpope/vim-surround'               " word/phrase surrounds
-Plugin 'Valloric/YouCompleteMe'           " code completion engine
-Plugin 'vim-airline/vim-airline'          " file status bar
+Plugin 'tpope/vim-commentary'             " Comment out lines
+Plugin 'tpope/vim-repeat'                 " Repeat plugin commands via .
+Plugin 'tpope/vim-surround'               " Word/phrase surrounds
+Plugin 'Valloric/YouCompleteMe'           " Code completion engine
+Plugin 'vim-airline/vim-airline'          " File status bar
 Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
+Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
 " Plugin 'Townk/vim-autoclose' " Auto pair/close - Disabled as it kept
 " putting Vim into insert mode when there was a thing to auto complete
 " Plugin 'jiangmiao/auto-pairs'             " Auto pair/close
@@ -56,10 +57,15 @@ set undolevels=1000           " undo more stuff
 set foldmethod=indent         " fold based on indentation
 set foldlevel=5               " default fold level. 5 should be ok to see most contents
 
-autocmd Bufread,BufNewFile *.nunjucks set filetype=html " set nunjucks files as html
+autocmd BufRead,BufNewFile *.nunjucks set filetype=html " set nunjucks files as html
 autocmd BufRead,BufNewFile *.md setlocal spell          " turn spell check on for *.md files
 
 " Plugin specifc settings
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+ xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+ nmap ga <Plug>(EasyAlign)
+
 " NERDTree - Open automatically when starting
 let NERDTreeShowHidden=1
 
