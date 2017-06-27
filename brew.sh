@@ -20,6 +20,7 @@ cmake
 gpg
 heroku
 rancher-cli
+rename
 shellcheck
 vault
 yarn
