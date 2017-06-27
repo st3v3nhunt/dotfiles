@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-which -s brew
-if [[ $? != 0 ]] ; then
+if ! which -s brew; then
   # Install Homebrew
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
@@ -28,6 +27,7 @@ yarn
 
 # Terminal stuff
 brews+=(
+bash
 bash-completion
 htop
 reattach-to-user-namespace
