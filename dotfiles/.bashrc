@@ -7,6 +7,7 @@
 # git autocomplete
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
+  # make autocomplete work with 'g', an alias for git
    __git_complete g __git_main
 fi
 
