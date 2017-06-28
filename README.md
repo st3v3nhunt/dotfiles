@@ -1,5 +1,7 @@
 # Dot files
 
+[![Build Status](https://travis-ci.org/st3v3nhunt/dotfiles.svg?branch=master)](https://travis-ci.org/st3v3nhunt/dotfiles)
+
 Clone the repo somewhere on the local disk and run `./install.sh`. This will:
 
 * Symlink all dotfiles into the user's home directory
