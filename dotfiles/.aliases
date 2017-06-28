@@ -12,4 +12,3 @@ alias tm=tmux
 alias sbp='. ~/.bashrc'
 alias j=jobs
 alias vi=vim
-

@@ -1,5 +1,8 @@
+#!/usr/bin/env bash
+
 # Tab Title
 export PROMPT_COMMAND='echo -ne "\\033]0;${PWD/#$HOME/~}\\007"'
 
 # Main Prompt
 export PROMPT_COMMAND='__posh_git_ps1 "\\[\[\e[0;32m\]\u@\h \[\e[0;33m\]\w" " \[\e[1;34m\]\$\[\e[0m\] ";'$PROMPT_COMMAND
+# PROMPT_COMMAND='__posh_git_ps1 "\u@\h:\w " "\\\$ ";'$PROMPT_COMMAND
