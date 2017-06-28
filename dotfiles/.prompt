@@ -3,6 +3,26 @@
 # Tab Title
 export PROMPT_COMMAND='echo -ne "\\033]0;${PWD/#$HOME/~}\\007"'
 
-# Main Prompt
-export PROMPT_COMMAND='__posh_git_ps1 "\\[\[\e[0;32m\]\t\[$(tput sgr0)\] \[\e[0;33m\]\w " " \[\e[1;34m\]\$\[\e[0m\] ";'$PROMPT_COMMAND
-# PROMPT_COMMAND='__posh_git_ps1 "\u@\h:\w " "\\\$ ";'$PROMPT_COMMAND
+function Color() {
+  tput setaf "$1"
+}
+
+function ResetColor() {
+  tput sgr0
+}
+
+last_exit_code ()
+{
+  local last_status=$?
+
+  if [[ $last_status != 0 ]]; then
+    last_status="$(Color 5)✘$(ResetColor)"
+  else
+    last_status="$(Color 2)✔$(ResetColor)"
+  fi
+
+  echo -n "$last_status "
+}
+
+# Main Prompt. Includes posh git and icon for exit code
+export PROMPT_COMMAND='last_exit_code; __posh_git_ps1 "\\[\[\e[0;32m\]\t\[$(tput sgr0)\] \[\e[0;33m\]\w " " \[\e[1;34m\]\$\[\e[0m\] ";'$PROMPT_COMMAND
