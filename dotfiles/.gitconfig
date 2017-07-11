@@ -1,15 +1,16 @@
 [alias]
-	st = status
-	s = status
-	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	aa = add -A
+	b = branch
+	ci = commit -m
 	co = checkout
 	cob = checkout -b
-	ci = commit -m
-	b = branch
 	com = checkout master
-	aa = add -A
 	d = diff
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	pu = push -u
 	rhh = reset HEAD --hard
+	s = status
+	st = status
 [color]
 	ui = true
 [push]
