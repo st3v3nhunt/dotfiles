@@ -1,16 +1,17 @@
 alias chrome='open /Applications/Google\ Chrome.app'
+alias j=jobs
 alias g=git
 alias gaac='git add -A && git commit -m'
+alias gca='git commit --amend'
+alias gcontributors='git log --format='%aN' | sort -fu'
 alias gd='git diff'
+alias gh='git hist -n'
 alias git=hub
 alias gp='git pull'
 alias gs='git status'
-alias gca='git commit --amend'
-alias gh='git hist -n'
 alias h=heroku
 alias hist=history
 alias ls='ls -aFhlG'
-alias tm=tmux
 alias sbp='. ~/.bashrc'
-alias j=jobs
+alias tm=tmux
 alias vi=vim
