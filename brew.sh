@@ -19,6 +19,7 @@ adr-tools
 cmake
 gpg
 heroku
+jmeter
 rancher-cli
 rename
 shellcheck
