@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+tmux new-session -s 'c2s-npm-repos' -d
+tmux send-keys 'cd ~/code/bunyan-logger' enter
+tmux split-window ; tmux send-keys 'cd ~/code/eslint-config-nhsuk' enter
+tmux split-window ; tmux send-keys 'cd ~/code/moment-opening-times' enter
+tmux select-layout tiled
+
+tmux attach
