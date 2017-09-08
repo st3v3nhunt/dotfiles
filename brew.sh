@@ -24,6 +24,7 @@ rancher-cli
 rename
 shellcheck
 vault
+wget
 yarn
 )
 
