@@ -6,36 +6,47 @@ brew tap caskroom/cask
 brew tap caskroom/drivers
 
 # Browsers
-casks=(google-chrome firefox)
+casks=(
+firefox
+google-chrome
+)
 
 # Utils
 casks+=(
-spectacle
-iterm2
-google-drive
-dropbox
 caffeine
-vmware-horizon-client
-royal-tsx
-microsoft-azure-storage-explorer
-java
-robomongo
-wireshark
-kitematic
-tableau-public
-skype-for-business
+dropbox
 flux
 gimp
+google-drive
+iterm2
+java
+kitematic
+microsoft-azure-storage-explorer
+robomongo
+royal-tsx
+spectacle
+tableau-public
+vmware-horizon-client
+wireshark
 )
 
 # Editors
-casks+=(sublime-text)
+casks+=(
+sublime-text
+)
 
 # IM
-casks+=(slack skype)
+casks+=(
+skype
+skype-for-business
+slack
+)
 
 # Misc
-casks+=(sonos garmin-express)
+casks+=(
+garmin-express
+sonos
+)
 
 # The update does all pkgs so just do it once
 echo "Updating..."
