@@ -6,4 +6,4 @@
 ./install-nvm.sh
 ./install-vim-stuff.sh
 ./install-pips.sh
-./defaults
+./defaults.sh
