@@ -18,6 +18,7 @@ dropbox
 flux
 gimp
 google-drive
+haskell-platform
 iterm2
 java
 kitematic
