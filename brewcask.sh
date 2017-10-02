@@ -23,6 +23,7 @@ iterm2
 java
 kitematic
 microsoft-azure-storage-explorer
+owasp-zap
 robomongo
 royal-tsx
 spectacle
