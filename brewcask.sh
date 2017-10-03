@@ -40,7 +40,6 @@ sublime-text
 # IM
 casks+=(
 skype
-skype-for-business
 slack
 )
 
