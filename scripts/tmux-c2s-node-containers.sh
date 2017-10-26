@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-tmux new-session -s 'c2s-repos' -d
+# Only need to start a new session when not already in a session
+# tmux new-session -s 'c2s-repos' -d
 tmux split-window ; tmux send-keys 'cd ~/code/connecting-to-services' enter
 tmux split-window ; tmux send-keys 'cd ~/code/elasticsearch-updater' enter
 tmux split-window ; tmux send-keys 'cd ~/code/profiles' enter
