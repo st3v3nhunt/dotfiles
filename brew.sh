@@ -40,8 +40,9 @@ tmux
 # GIT stuff
 brews+=(
 git
-hub
+git-secrets
 ghi
+hub
 )
 
 # JSON wrangling
