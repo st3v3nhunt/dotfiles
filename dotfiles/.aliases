@@ -15,5 +15,3 @@ alias ls='ls -aFhlG'
 alias sbp='. ~/.bashrc'
 alias tm=tmux
 alias vi=vim
-# Use the binary from macvim
-alias vim=$(brew ls macvim | head -1 | cut -d'/' -f-6)/MacVim.app/Contents/MacOS/Vim
