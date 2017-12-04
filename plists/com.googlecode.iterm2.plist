@@ -14,6 +14,8 @@
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
 	<integer>1</integer>
+	<key>AppleWindowTabbingMode</key>
+	<string>manual</string>
 	<key>AutoHideTmuxClientSession</key>
 	<false/>
 	<key>CheckTestRelease</key>
@@ -176,6 +178,8 @@
 	<integer>0</integer>
 	<key>HotkeyCode</key>
 	<integer>0</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>0</integer>
 	<key>IRMemory</key>
@@ -236,14 +240,18 @@
 	<string>310 270 228 325 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>707 546 606 456 0 0 1920 1057 </string>
+	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
+	<string>650 662 616 174 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>608 498 700 392 0 0 1920 1057 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>269 94 606 456 0 0 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1016 523 796 473 0 0 1920 1057 </string>
+	<string>409 411 918 512 0 0 1920 1057 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 443 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 130 1410 927 0 0 1920 1057 </string>
+	<string>0 0 1920 1080 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>258 72 570 473 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -996,7 +1004,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>5B5612FF-1016-4DBF-BB06-18987AD9AB77</string>
 	<key>NoSyncLastTipTime</key>
-	<real>500370814.75641799</real>
+	<real>533114925.54660201</real>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -1074,6 +1082,12 @@
 		<string>0063</string>
 		<string>0064</string>
 		<string>0065</string>
+		<string>0066</string>
+		<string>0067</string>
+		<string>0068</string>
+		<string>0069</string>
+		<string>0070</string>
+		<string>0071</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1149,7 +1163,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-04-13T06:54:56Z</date>
+	<date>2017-11-28T14:11:14Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1199,7 +1213,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.14</string>
+	<string>3.1.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
