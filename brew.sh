@@ -52,7 +52,10 @@ jp
 )
 
 # THE editor?!
-brews+=(vim)
+brews+=(
+macvim
+vim
+)
 
 # Languages
 brews+=(
