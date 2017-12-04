@@ -20,6 +20,9 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Save screen captures in location of my choosing
+mkdir "$HOME/screenshots"
+defaults write com.apple.screencapture location "$HOME/screenshots"
 
 ###############################################################################
 # Finder                                                                      #
@@ -59,3 +62,6 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Speed up resize animations
 defaults write -g NSWindowResizeTime -float 0.003
+
+# Restart system server to get changes to take effect
+killall SystemUIServer
