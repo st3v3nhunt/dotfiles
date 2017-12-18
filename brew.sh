@@ -20,6 +20,7 @@ cmake
 gpg
 heroku
 jmeter
+llvm
 rancher-cli
 rename
 shellcheck
