@@ -67,6 +67,7 @@ mono
 node
 python
 rust
+rustup-init
 ruby
 scala
 )
