@@ -19,6 +19,7 @@ adr-tools
 cmake
 gpg
 heroku
+imagemagick
 jmeter
 llvm
 rancher-cli
