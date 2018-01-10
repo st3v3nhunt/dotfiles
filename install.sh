@@ -6,4 +6,5 @@
 ./install-nvm.sh
 ./install-vim-stuff.sh
 ./install-pips.sh
+./install-alacritty.sh
 ./defaults.sh
