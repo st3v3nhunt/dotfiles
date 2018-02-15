@@ -42,6 +42,8 @@ Locking the screen with both internal and external keyboards is done via
 
 ## FAQ
 
+* Python crashing when starting Vim?
+  * Try reinstalling Python, Vim and YCM `brew update; brew uninstall python; brew uninstall vim; brew install python; brew install vim; ~/.vim/bundle/YouCompleteMe/install.sh`
 * No linting in Vim and no lint warning or error symbols in the margin?
   * Try restarting the eslint server. At the terminal run `eslint_d restart`
 * No completion in VIM?
