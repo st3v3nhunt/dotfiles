@@ -55,7 +55,6 @@ jp
 
 # THE editor?!
 brews+=(
-macvim
 vim
 )
 
