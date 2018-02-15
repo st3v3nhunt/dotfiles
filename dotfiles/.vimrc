@@ -24,6 +24,7 @@ Plugin 'Valloric/YouCompleteMe'           " Code completion engine
 Plugin 'vim-airline/vim-airline'          " File status bar
 Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
 Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
+Plugin 'fatih/vim-go'          " Better/easier alignment
 " Plugin 'Townk/vim-autoclose' " Auto pair/close - Disabled as it kept
 " putting Vim into insert mode when there was a thing to auto complete
 " Plugin 'jiangmiao/auto-pairs'             " Auto pair/close

@@ -22,6 +22,12 @@ not available via Homebrew. It can be downloaded from the
 Git user config is held in an ignored file @ `~/.gitconfig.local`. This should
 contain user.name and user.email
 
+## Go language support in Vim
+
+Achieved via [vim-go](https://github.com/fatih/vim-go).
+The plugin will be installed when running `./install-vim-stuff`. Once the
+plugin is installed `:GoInstallBinaries` needs to be run from within Vim.
+
 ## iTerm2 preferences
 
 iTerm2 preferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within iTerm2
