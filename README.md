@@ -31,10 +31,8 @@ for `Load preferences from a custom folder or URL:`.
 
 ## Locking the screen
 
-Locking the screen with the internal keyboard is `command + shift + power`.
-This isn't possible from an external keyboard. The best option I've found is to
-have the keychain status be displayed in the menu bar and use the shortcut
-to `Lock Screen`.
+Locking the screen with both internal and external keyboards is done via
+`CTRL + ALT + q`.
 
 ## FAQ
 
