@@ -2,13 +2,17 @@
 	aa = add -A
 	b = branch
 	ci = commit -m
+	ca = commit --amend
 	co = checkout
 	cob = checkout -b
 	com = checkout master
 	d = diff
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	pu = push -u
+	puo = push -u origin
+	pr = pull-request
 	rhh = reset HEAD --hard
+	rpo = remote prune origin
 	s = status
 	st = status
 [color]
