@@ -24,7 +24,7 @@ java
 kitematic
 microsoft-azure-storage-explorer
 owasp-zap
-robomongo
+robo-3t
 royal-tsx
 spectacle
 tableau-public
