@@ -40,6 +40,13 @@ for `Load preferences from a custom folder or URL:`.
 Locking the screen with both internal and external keyboards is done via
 `CTRL + ALT + q`.
 
+## [Tmux plugin manager](https://github.com/tmux-plugins/tpm)
+
+Tmux plugin manager is installed. Mainly for adding
+[tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect). Usage is
+simple, to save the session run `prefix + Ctrl-s` and restore the session, run
+`prefix + Ctrl-r`. Sessions should be saved prior to machine restart.
+
 ## FAQ
 
 * Python crashing when starting Vim?
