@@ -7,5 +7,4 @@
 ./install-vim-stuff.sh
 ./install-tmux-stuff.sh
 ./install-pips.sh
-./install-alacritty.sh
 ./defaults.sh
