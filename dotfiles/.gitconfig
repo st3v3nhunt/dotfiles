@@ -8,6 +8,7 @@
 	com = checkout master
 	d = diff
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	pfu = push -fu --no-verify
 	pu = push -u
 	puo = push -u origin
 	pr = pull-request
