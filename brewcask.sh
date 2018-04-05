@@ -14,6 +14,7 @@ google-chrome
 # Utils
 casks+=(
 caffeine
+dotnet-sdk
 dropbox
 flux
 gimp
@@ -23,6 +24,7 @@ iterm2
 java
 kitematic
 microsoft-azure-storage-explorer
+mono-mdk
 owasp-zap
 robo-3t
 royal-tsx

@@ -24,7 +24,8 @@ Plugin 'Valloric/YouCompleteMe'           " Code completion engine
 Plugin 'vim-airline/vim-airline'          " File status bar
 Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
 Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
-Plugin 'fatih/vim-go'          " Better/easier alignment
+Plugin 'fatih/vim-go'                     " Better/easier alignment
+Plugin 'OmniSharp/omnisharp-vim'          " Provides IDE like abilities for C#
 " Plugin 'Townk/vim-autoclose' " Auto pair/close - Disabled as it kept
 " putting Vim into insert mode when there was a thing to auto complete
 " Plugin 'jiangmiao/auto-pairs'             " Auto pair/close
@@ -85,7 +86,7 @@ endif
 " vim-airline settings
 let g:airline_section_b = ''
 
-" Syntastic seetings
+" Syntastic settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -128,3 +129,6 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>x :wq<CR>
 " Send Vim to background
 nnoremap <Leader>z <C-z>
+
+" OmniSharp settings
+let g:OmniSharp_server_path = '~/omnisharp.http-osx/omnisharp/OmniSharp.exe'
