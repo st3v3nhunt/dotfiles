@@ -28,6 +28,16 @@ Achieved via [vim-go](https://github.com/fatih/vim-go).
 The plugin will be installed when running `./install-vim-stuff`. Once the
 plugin is installed `:GoInstallBinaries` needs to be run from within Vim.
 
+## C# IDE like abilities
+
+Install OmniSharp as per the
+[instructions](http://www.omnisharp.net/#portfolioModal-vim). Start by
+downloading and extracting the latest version of the
+[OmniSharp-Roslyn](https://github.com/OmniSharp/omnisharp-vim#server) server
+into `~/`. This should result in a path to the executable being
+`~/omnisharp.http-osx/omnisharp/OmniSharp.exe` (this path is specified in
+[dotfiles/.vimrc](dotfiles/.vimrc).
+
 ## iTerm2 preferences
 
 iTerm2 preferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within iTerm2

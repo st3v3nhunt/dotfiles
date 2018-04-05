@@ -63,7 +63,6 @@ brews+=(
 elixir
 erlang
 go
-mono
 node
 python
 rust
