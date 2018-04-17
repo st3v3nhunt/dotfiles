@@ -18,6 +18,7 @@ brews=(
 adr-tools
 cmake
 gpg
+handbrake
 heroku
 imagemagick
 jmeter
