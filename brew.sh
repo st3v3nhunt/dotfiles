@@ -7,9 +7,6 @@ else
   brew update
 fi
 
-# Tap other kegs
-brew tap jmespath/jmespath
-
 # Sort out permissions
 sudo chown -R "$(whoami):admin" /usr/local
 
@@ -51,7 +48,6 @@ hub
 # JSON wrangling
 brews+=(
 jq
-jp
 )
 
 # THE editor?!
