@@ -34,3 +34,5 @@
 	user = st3v3nhunt
 [ghi]
 	token = !security find-internet-password -a st3v3nhunt -s github.com -l 'ghi token' -w
+[gpg]
+	program = gpg
