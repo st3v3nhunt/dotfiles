@@ -19,3 +19,6 @@ export PATH=$PATH:$(npm -g bin)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Fix error 'gpg: signing failed: Inappropriate ioctl for device'
+export GPG_TTY=$(tty)

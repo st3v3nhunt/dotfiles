@@ -17,10 +17,10 @@ At the time of writing [Docker of Mac](https://www.docker.com/docker-mac) is
 not available via Homebrew. It can be downloaded from the
 [Docker Store](https://store.docker.com/editions/community/docker-ce-desktop-mac).
 
-## Setup user gitconfig info
+## Setup user/private gitconfig info
 
 Git user config is held in an ignored file @ `~/.gitconfig.local`. This should
-contain user.name and user.email
+contain `name`, `email`, `signingkey`.
 
 ## Go language support in Vim
 
