@@ -23,13 +23,13 @@
 [help]
 	autocorrect = 1
 [include]
-	path = ~/.gitconfig.local
+	path = .gitconfig.local
 [core]
 	editor = vim
 [credential]
 	helper = osxkeychain
 [user]
-	email = st3v3n.hunt@gmail.com
+	email = st3v3nhunt@users.noreply.github.com
 [github]
 	user = st3v3nhunt
 [ghi]
