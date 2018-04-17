@@ -25,6 +25,7 @@ rename
 shellcheck
 vault
 wget
+wifi-password
 yarn
 )
 
