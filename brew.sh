@@ -7,9 +7,6 @@ else
   brew update
 fi
 
-# Tap other kegs
-brew tap jmespath/jmespath
-
 # Sort out permissions
 sudo chown -R "$(whoami):admin" /usr/local
 
@@ -18,6 +15,7 @@ brews=(
 adr-tools
 cmake
 gpg
+handbrake
 heroku
 imagemagick
 jmeter
@@ -27,6 +25,7 @@ rename
 shellcheck
 vault
 wget
+wifi-password
 yarn
 )
 
@@ -50,7 +49,6 @@ hub
 # JSON wrangling
 brews+=(
 jq
-jp
 )
 
 # THE editor?!
