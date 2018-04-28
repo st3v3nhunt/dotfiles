@@ -1,5 +1,5 @@
 . ~/.aliases
-. ~/.azure-cli
+# . ~/.azure-cli
 . ~/.prompt
 . ~/.git-prompt.sh
 . ~/.git-completion.bash
