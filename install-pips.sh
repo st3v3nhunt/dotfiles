@@ -2,3 +2,4 @@
 
 printf "Installing azure-cli from pip\\n"
 pip install --user azure-cli
+pip install jupyter
