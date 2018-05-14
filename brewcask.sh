@@ -23,6 +23,7 @@ haskell-platform
 iterm2
 java
 kitematic
+little-snitch
 microsoft-azure-storage-explorer
 mono-mdk
 owasp-zap
