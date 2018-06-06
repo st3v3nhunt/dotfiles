@@ -18,7 +18,7 @@ dotnet-sdk
 dropbox
 flux
 gimp
-google-drive
+google-backup-and-sync
 haskell-platform
 iterm2
 java
