@@ -50,6 +50,7 @@ slack
 casks+=(
 garmin-express
 sonos
+zwift
 )
 
 # The update does all pkgs so just do it once
