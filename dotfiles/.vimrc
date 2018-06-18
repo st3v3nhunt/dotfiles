@@ -71,7 +71,7 @@ autocmd BufRead,BufNewFile *.md setlocal spell          " turn spell check on fo
 " NERDTree - Open automatically when starting
 let NERDTreeShowHidden=1
 
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>   " open NERDTree
 
 " CtrlP - Ignore VCS and node stuff
 let g:ctrlp_custom_ignore = '\v[\/](coverage|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
@@ -129,6 +129,8 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>x :wq<CR>
 " Send Vim to background
 nnoremap <Leader>z <C-z>
+" Show file in NERDTree
+nnoremap <Leader>r :NERDTreeFind<CR>
 
 " OmniSharp settings
 let g:OmniSharp_server_path = '~/omnisharp.http-osx/omnisharp/OmniSharp.exe'
