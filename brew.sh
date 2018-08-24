@@ -10,9 +10,13 @@ fi
 # Sort out permissions
 sudo chown -R "$(whoami):admin" /usr/local
 
+# Tap the cask for Azure Functions
+brew tap azure/functions
+
 # Utils
 brews=(
 adr-tools
+azure-functions-core-tools
 cmake
 gpg
 handbrake
