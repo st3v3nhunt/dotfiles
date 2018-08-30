@@ -13,6 +13,7 @@ google-chrome
 
 # Utils
 casks+=(
+burp-suite
 caffeine
 dotnet-sdk
 dropbox
