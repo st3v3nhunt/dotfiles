@@ -48,7 +48,7 @@ for `Load preferences from a custom folder or URL:`.
 ## Locking the screen
 
 Locking the screen with both internal and external keyboards is done via
-`CTRL + ALT + q`.
+`CTRL + CMD + q`.
 
 ## [Tmux plugin manager](https://github.com/tmux-plugins/tpm)
 

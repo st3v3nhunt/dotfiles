@@ -7,6 +7,7 @@ alias gd='git diff'
 alias gh='git hist -n'
 alias git=hub
 alias gp='git pull'
+alias gpfu='git push -fu --no-verify'
 alias gs='git status'
 alias h=heroku
 alias hist=history
