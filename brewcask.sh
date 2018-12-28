@@ -40,6 +40,7 @@ wireshark
 # Editors
 casks+=(
 sublime-text
+visual-studio-code
 )
 
 # IM
