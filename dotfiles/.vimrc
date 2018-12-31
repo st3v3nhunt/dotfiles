@@ -80,8 +80,14 @@ let g:ctrlp_use_caching = 0
 
 " Ack - use the_silver_searcher if avaiable
 if executable('ag')
+  " Use ag in place of ack
   let g:ackprg = 'ag --vimgrep'
 endif
+
+" Bind K to search for word under cursor
+nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>
+" Map Ack! to \
+nnoremap \ :Ack!<space>
 
 " vim-airline settings
 let g:airline_section_b = ''
