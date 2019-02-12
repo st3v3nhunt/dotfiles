@@ -25,6 +25,7 @@ Plugin 'vim-airline/vim-airline'          " File status bar
 Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
 Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
 Plugin 'fatih/vim-go'                     " Better/easier alignment
+Plugin 'pprovost/vim-ps1'                 " Windows PowerShell support
 " Plugin 'OmniSharp/omnisharp-vim'          " Provides IDE like abilities for C#
 " Plugin 'Townk/vim-autoclose' " Auto pair/close - Disabled as it kept
 " putting Vim into insert mode when there was a thing to auto complete
