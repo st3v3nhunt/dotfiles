@@ -29,6 +29,7 @@ microsoft-azure-storage-explorer
 mono-mdk
 owasp-zap
 postman
+powershell
 robo-3t
 royal-tsx
 spectacle
