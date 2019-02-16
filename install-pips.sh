@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 printf "Installing azure-cli from pip\\n"
-pip install --user azure-cli
-pip install jupyter
+pip3 install --user azure-cli
+pip3 install jupyter
