@@ -60,7 +60,7 @@ simple, to save the session run `prefix + Ctrl-s` and restore the session, run
 ## FAQ
 
 * Python crashing when starting Vim?
-  * Try reinstalling Python, Vim and YCM `brew update; brew uninstall python; brew uninstall vim; brew install python; brew install vim; ~/.vim/bundle/YouCompleteMe/install.sh`
+  * Try reinstalling Python, Vim and YCM `brew update; brew uninstall python; brew uninstall vim; brew install python; brew install vim; ~/.vim/bundle/YouCompleteMe/install.py`
 * No linting in Vim and no lint warning or error symbols in the margin?
   * Check the repo's packages have been installed
   * Try restarting the eslint server. At the terminal run `eslint_d restart`
