@@ -67,6 +67,7 @@ erlang
 go
 node
 python
+python@2
 rust
 rustup-init
 ruby
