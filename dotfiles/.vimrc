@@ -1,5 +1,6 @@
 set nocompatible            " use vim settings
 filetype off                " required
+set path+=**                " make :find search everything
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
