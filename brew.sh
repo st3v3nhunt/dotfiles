@@ -18,6 +18,7 @@ brews=(
 adr-tools
 azure-functions-core-tools
 cmake
+ctags
 gpg
 handbrake
 heroku

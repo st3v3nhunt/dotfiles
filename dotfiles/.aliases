@@ -15,3 +15,4 @@ alias ls='ls -aFhlG'
 alias sbp='. ~/.bashrc'
 alias tm=tmux
 alias vi=vim
+alias ctags="`brew --prefix`/bin/ctags"
