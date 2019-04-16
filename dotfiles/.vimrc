@@ -1,6 +1,7 @@
 set nocompatible            " use vim settings
 filetype off                " required
 set path+=**                " make :find search everything
+set tags=tags               " set tags to tags for ctags
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -79,6 +80,7 @@ map <C-n> :NERDTreeToggle<CR>   " open NERDTree
 let g:ctrlp_custom_ignore = '\v[\/](coverage|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_use_caching = 0
+let g:ctrlp_extensions = ['tag']
 
 " Ack - use the_silver_searcher if avaiable
 if executable('ag')
