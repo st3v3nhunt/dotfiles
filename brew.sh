@@ -19,6 +19,7 @@ adr-tools
 azure-functions-core-tools
 cmake
 ctags
+exercism
 gpg
 handbrake
 heroku
