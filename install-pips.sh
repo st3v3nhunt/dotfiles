@@ -7,3 +7,4 @@ pip3 install pylint
 pip3 install pytest
 pip3 install pytest-cache
 pip3 install pytest-pep8
+pip3 install pytest-watch
