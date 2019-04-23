@@ -28,6 +28,7 @@ Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
 Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
 Plugin 'fatih/vim-go'                     " Better/easier alignment
 Plugin 'pprovost/vim-ps1'                 " Windows PowerShell support
+Plugin 'google/yapf'                      " Python formatter
 " Plugin 'OmniSharp/omnisharp-vim'          " Provides IDE like abilities for C#
 " Plugin 'Townk/vim-autoclose' " Auto pair/close - Disabled as it kept
 " putting Vim into insert mode when there was a thing to auto complete
@@ -103,7 +104,7 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=0                    " toggle display of error list
-let g:syntastic_check_on_open=1
+let g:syntastic_check_on_open=0
 let g:syntastic_check_on_wq=0
 let g:syntastic_javascript_checkers=['eslint']
 let g:syntastic_javascript_eslint_exec='eslint_d'
