@@ -74,6 +74,8 @@ autocmd BufRead,BufNewFile *.md setlocal spell          " turn spell check on fo
 
 " NERDTree - Open automatically when starting
 let NERDTreeShowHidden=1
+let g:NERDTreeMapOpenSplit='h'
+let g:NERDTreeMapOpenVSplit='v'
 
 map <C-n> :NERDTreeToggle<CR>   " open NERDTree
 
