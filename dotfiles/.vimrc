@@ -15,7 +15,6 @@ Plugin 'matchit.zip'                      " Use % in html
 Plugin 'mileszs/ack.vim'                  " File searching
 Plugin 'ntpeters/vim-better-whitespace'   " Better whitespace
 Plugin 'scrooloose/nerdtree'              " File explorer
-Plugin 'scrooloose/syntastic'             " Linting
 Plugin 'ternjs/tern_for_vim'              " JS autocompletion
 Plugin 'tomasr/molokai'                   " Theme
 Plugin 'tpope/vim-fugitive'               " Git wrapper
@@ -29,6 +28,7 @@ Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
 Plugin 'fatih/vim-go'                     " Better/easier alignment
 Plugin 'pprovost/vim-ps1'                 " Windows PowerShell support
 Plugin 'google/yapf'                      " Python formatter
+Plugin 'w0rp/ale'                         " Asynchronous Lint Engine aka ALE
 " Plugin 'OmniSharp/omnisharp-vim'          " Provides IDE like abilities for C#
 " Plugin 'Townk/vim-autoclose' " Auto pair/close - Disabled as it kept
 " putting Vim into insert mode when there was a thing to auto complete
@@ -99,22 +99,10 @@ nnoremap \ :Ack!<space>
 " vim-airline settings
 let g:airline_section_b = ''
 
-" Syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=0                    " toggle display of error list
-let g:syntastic_check_on_open=0
-let g:syntastic_check_on_wq=0
-let g:syntastic_javascript_checkers=['eslint']
-let g:syntastic_javascript_eslint_exec='eslint_d'
-let g:syntastic_loc_list_height=3
-let g:syntastic_error_symbol='✗✗'
-let g:syntastic_style_error_symbol='✠✠'
-let g:syntastic_warning_symbol='∆∆'
-let g:syntastic_style_warning_symbol='≈≈'
+" ALE configuration
+let g:ale_sign_error='✗✗'
+let g:ale_sign_warning='∆∆'
+let g:airline#extensions#ale#enabled=1       " error information in the status bar
 
 " Use global, static locations for back,swap and undo
 set backupdir=~/.vim/tmp/backup//
