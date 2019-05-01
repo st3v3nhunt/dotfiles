@@ -5,9 +5,14 @@
 Clone the repo somewhere on the local disk and run `./install.sh`. This will:
 
 * Symlink all dotfiles into the user's home directory
-* Install [Homebrew](http://brew.sh/) and some packages
-* Install [Caskroom](https://caskroom.github.io/) and some applications
+* Install [Homebrew](https://brew.sh/) and some brews
+* Install [Caskroom](https://caskroom.github.io/) and some casks (applications, mostly)
 * Install [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements)
+* Install any useful [Gems](https://rubygems.org)
+* Install any useful [Pips](https://pypi.org/)
+* Install [NMV](https://github.com/nvm-sh/nvm)
+* Install and setup [Vim](https://www.vim.org/) related stuff
+* Install and setup [tmux](https://github.com/tmux/tmux) related stuff
 
 During the install of Homebrew you will be prompted for your password.
 
@@ -31,7 +36,7 @@ plugin is installed `:GoInstallBinaries` needs to be run from within Vim.
 ## C# IDE like abilities
 
 Install OmniSharp as per the
-[instructions](http://www.omnisharp.net/#portfolioModal-vim). Start by
+[instructions](https://www.omnisharp.net/#portfolioModal-vim). Start by
 downloading and extracting the latest version of the
 [OmniSharp-Roslyn](https://github.com/OmniSharp/omnisharp-vim#server) server
 into `~/`. This should result in a path to the executable being
