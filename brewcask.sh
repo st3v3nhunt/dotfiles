@@ -15,6 +15,7 @@ google-chrome
 casks+=(
 burp-suite
 caffeine
+db-browser-for-sqlite
 dotnet-sdk
 dropbox
 flux
@@ -73,5 +74,5 @@ for pkg in "${casks[@]}"; do
   fi
 done
 
-# Cleaup
-brew cask cleanup
+# Complete
+echo "Brew cask updating and installing completed."
