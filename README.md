@@ -71,6 +71,8 @@ simple, to save the session run `prefix + Ctrl-s` and restore the session, run
   * Try restarting the eslint server. At the terminal run `eslint_d restart`
 * No completion in VIM?
   * Try restarting the YouCompleteMe server within Vim `:YcmRestartServer`
+* Command failed and error reported `...can't decompress data; zlib not available`
+  * Run `sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /`
 
 ### Useful links
 

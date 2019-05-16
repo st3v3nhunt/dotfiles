@@ -26,6 +26,7 @@ heroku
 imagemagick
 jmeter
 llvm
+pyenv
 rancher-cli
 rename
 shellcheck

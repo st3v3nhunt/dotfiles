@@ -22,3 +22,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Fix error 'gpg: signing failed: Inappropriate ioctl for device'
 export GPG_TTY=$(tty)
+
+# setup pyenv
+eval "$(pyenv init -)"
