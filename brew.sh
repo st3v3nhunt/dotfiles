@@ -26,6 +26,7 @@ heroku
 imagemagick
 jmeter
 llvm
+pipenv
 pyenv
 rancher-cli
 rename
