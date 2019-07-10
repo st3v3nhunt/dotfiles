@@ -132,6 +132,9 @@ nnoremap <Leader>x :wq<CR>
 nnoremap <Leader>z <C-z>
 " Show file in NERDTree
 nnoremap <Leader>r :NERDTreeFind<CR>
+" Go to previous and next ALE errors
+nnoremap <Leader>j :ALENextWrap<cr>
+nnoremap <Leader>k :ALEPreviousWrap<cr>
 
 " OmniSharp settings
 let g:OmniSharp_server_path = '~/omnisharp.http-osx/omnisharp/OmniSharp.exe'
