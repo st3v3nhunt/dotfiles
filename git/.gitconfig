@@ -38,3 +38,4 @@
 	program = gpg
 [remote "origin"]
 	fetch = +refs/pull/*:refs/remotes/origin/pull/*
+	fetch = +refs/merge-requests/*/head:refs/remotes/origin/merge-requests/*
