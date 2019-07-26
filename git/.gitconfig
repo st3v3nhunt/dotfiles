@@ -36,3 +36,5 @@
 	token = !security find-internet-password -a st3v3nhunt -s github.com -l 'ghi token' -w
 [gpg]
 	program = gpg
+[remote "origin"]
+	fetch = +refs/pull/*:refs/remotes/origin/pull/*
