@@ -1,4 +1,3 @@
 language: bash
 
-script:
- - bash -c 'shopt -s nullglob globstar; shellcheck **/*.{sh,bash}'
+script: ./scripts/test.sh
