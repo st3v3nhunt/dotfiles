@@ -1046,7 +1046,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/stevenhunt/code/dotfiles/plists</string>
+	<string>~/code/dotfiles/plists</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnClose</key>
