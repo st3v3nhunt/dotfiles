@@ -25,3 +25,7 @@ export GPG_TTY=$(tty)
 
 # setup pyenv
 eval "$(pyenv init -)"
+
+# Set vim as default editor
+export EDITOR=vim
+export VISUAL=$EDITOR

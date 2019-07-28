@@ -6,9 +6,8 @@
 
 ## tmux
 
-- [ ] Configure the status bar to get some better differentiation between the windows and status info
-- [ ] Dev template for session start up - this should allow a new window to be created with `prefix N` (specifying the template) and it be created
-- [ ] Theme(s)
+- [ ] tmuxinator
+- [ ] tmate
 
 ## Bash
 
