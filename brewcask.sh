@@ -64,8 +64,7 @@ brew update
 
 # Upgrade if already home brew installed else install
 for pkg in "${casks[@]}"; do
-  # shellcheck disable=2086
-  update_pkg="$(brew cask list -1 | grep ${pkg})"
+  update_pkg="$(brew cask list -1 | grep "${pkg}")"
   if [[ ! "$update_pkg" ]]; then
     echo "Installing '$pkg'..."
     brew cask install "$pkg"
