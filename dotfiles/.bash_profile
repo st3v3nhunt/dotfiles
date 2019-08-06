@@ -1,1 +1,2 @@
+# shellcheck source=.bashrc
 . ~/.bashrc

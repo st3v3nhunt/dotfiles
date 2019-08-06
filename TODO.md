@@ -3,6 +3,7 @@
 ## Vim
 
 - [ ] Bindings for resize of splits
+- [ ] Split [.vimrc](./dotfiles/.vimrc) into multiple files
 
 ## tmux
 
