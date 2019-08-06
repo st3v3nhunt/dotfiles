@@ -16,13 +16,13 @@ fi
 # Install YouCompleteMe
  ~/.vim/bundle/YouCompleteMe/install.py --all
 
- # Install Tern for Vim
- (cd ~/.vim/bundle/tern_for_vim && npm install)
+# Install Tern for Vim
+(cd ~/.vim/bundle/tern_for_vim && npm install)
 
- # Install eslint_d for syntastic JS linting
- npm install -g eslint_d
+# Install eslint_d for syntastic JS linting
+npm install -g eslint_d
 
 REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
- # Use existing word list for vim spell
+# Use existing word list for vim spell
 ln -nfsv "$REPO_DIR/vim/en.utf-8.add" ~/.vim/spell

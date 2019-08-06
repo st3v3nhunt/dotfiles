@@ -1,3 +1,4 @@
+# shellcheck source=/dev/null
 . ~/.aliases
 # . ~/.azure-cli
 . ~/.prompt
@@ -5,13 +6,14 @@
 . ~/.git-completion.bash
 
 # git autocomplete
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+  . "$(brew --prefix)/etc/bash_completion"
   # make autocomplete work with 'g', an alias for git
    __git_complete g __git_main
 fi
 
-export PATH=$PATH:$(npm -g bin)
+PATH=$PATH:$(npm -g bin)
+export PATH
 
 # added by travis gem
 [ -f /Users/steve/.travis/travis.sh ] && source /Users/steve/.travis/travis.sh
@@ -21,7 +23,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Fix error 'gpg: signing failed: Inappropriate ioctl for device'
-export GPG_TTY=$(tty)
+GPG_TTY=$(tty)
+export GPG_TTY
 
 # setup pyenv
 eval "$(pyenv init -)"
