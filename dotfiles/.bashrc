@@ -10,8 +10,9 @@ __git_complete g __git_main
 # bash autocomplete
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-# Kubernetes autocompletion
+# Kubernetes and minikube autocompletion
 source <(kubectl completion bash)
+source <(minikube completion bash)
 
 PATH=$PATH:$(npm -g bin)
 export PATH
