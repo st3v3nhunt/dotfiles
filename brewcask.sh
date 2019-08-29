@@ -27,6 +27,7 @@ java
 kitematic
 little-snitch
 microsoft-azure-storage-explorer
+minikube
 mono-mdk
 owasp-zap
 postman

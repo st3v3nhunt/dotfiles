@@ -25,6 +25,7 @@ handbrake
 heroku
 imagemagick
 jmeter
+kubernetes-cli
 llvm
 pipenv
 pyenv
@@ -40,7 +41,7 @@ yarn
 # Terminal stuff
 brews+=(
 bash
-bash-completion
+bash-completion@2
 htop
 reattach-to-user-namespace
 tmux

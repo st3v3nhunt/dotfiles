@@ -5,6 +5,12 @@
 . ~/.git-prompt.sh
 . ~/.git-completion.bash
 
+# bash autocomplete
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# Kubernetes autocompletion
+source <(kubectl completion bash)
+
 # git autocomplete
 if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
   . "$(brew --prefix)/etc/bash_completion"
