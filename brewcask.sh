@@ -16,12 +16,14 @@ casks+=(
 burp-suite
 caffeine
 db-browser-for-sqlite
+docker-machine-driver-hyperkit
 dotnet-sdk
 dropbox
 flux
 gimp
 google-backup-and-sync
 haskell-platform
+hyperkit
 iterm2
 java
 kitematic
@@ -74,5 +76,8 @@ for pkg in "${casks[@]}"; do
   fi
 done
 
+# Enable the driver to access the hypervisor
+sudo chown root:wheel /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
+sudo chmod u+s /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
 # Complete
 echo "Brew cask updating and installing completed."
