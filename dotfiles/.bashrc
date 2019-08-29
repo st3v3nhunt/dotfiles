@@ -4,19 +4,14 @@
 . ~/.prompt
 . ~/.git-prompt.sh
 . ~/.git-completion.bash
+# make git autocomplete work with 'g', an alias for git
+__git_complete g __git_main
 
 # bash autocomplete
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # Kubernetes autocompletion
 source <(kubectl completion bash)
-
-# git autocomplete
-if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
-  . "$(brew --prefix)/etc/bash_completion"
-  # make autocomplete work with 'g', an alias for git
-   __git_complete g __git_main
-fi
 
 PATH=$PATH:$(npm -g bin)
 export PATH
