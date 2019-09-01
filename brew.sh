@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 
 if ! command -v brew; then
-  # Install Homebrew
+  echo "No Homebrew install found. Install it..."
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
+  echo "Homebrew install found. Update it..."
   brew update
 fi
 
 # Sort out permissions
 sudo chown -R "$(whoami):admin" /usr/local
 
-# Tap the cask for Azure Functions
+# Tap the Azure Functions repo
 brew tap azure/functions
 
 # Utils
@@ -19,10 +20,12 @@ adr-tools
 azure-functions-core-tools
 cmake
 ctags
+docker-machine-driver-hyperkit
 exercism
 gpg
 handbrake
 heroku
+hyperkit
 imagemagick
 jmeter
 kubernetes-cli
@@ -93,16 +96,20 @@ kibana
 the_silver_searcher
 )
 
-# Upgrade if already home brew installed else install
+# Upgrade if already installed via Homebrew otherwise install it
 for pkg in "${brews[@]}"; do
   if brew list -1 | grep -q "^${pkg}\$"; then
     echo "Upgrading '$pkg'"
-    brew upgrade "{$pkg}"
+    brew upgrade "$pkg"
   else
     echo "Installing '$pkg'"
-    brew install "{$pkg}"
+    brew install "$pkg"
   fi
 done
 
-# Cleanup
+# Enable docker-machine-driver to access the hypervisor (hyperkit)
+sudo chown root:wheel /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
+sudo chmod u+s /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
+
+echo "Clean up..."
 brew cleanup

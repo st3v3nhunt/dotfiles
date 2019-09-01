@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 # Get [Homebrew-Cask](https://caskroom.github.io/), an extension to Homebrew
+echo "Tap Homebrew's cask extension..."
 brew tap caskroom/cask
-# Tap the cask of [drivers](https://github.com/caskroom/homebrew-drivers)
+# Tap the cask for [drivers](https://github.com/caskroom/homebrew-drivers)
 brew tap caskroom/drivers
 
 # Browsers
@@ -16,14 +17,12 @@ casks+=(
 burp-suite
 caffeine
 db-browser-for-sqlite
-docker-machine-driver-hyperkit
 dotnet-sdk
 dropbox
 flux
 gimp
 google-backup-and-sync
 haskell-platform
-hyperkit
 iterm2
 java
 kitematic
@@ -61,23 +60,21 @@ sonos
 zwift
 )
 
-# The update does all pkgs so just do it once
-echo "Updating..."
+echo "Updating Homebrew..."
 brew update
 
-# Upgrade if already home brew installed else install
+echo "Updating installed casks..."
+brew cask upgrade
+
+# Install casks if they aren't already
 for pkg in "${casks[@]}"; do
-  update_pkg="$(brew cask list -1 | grep "${pkg}")"
-  if [[ ! "$update_pkg" ]]; then
+  if ! brew cask list -1 | grep -q "^$pkg\$" ; then
     echo "Installing '$pkg'..."
     brew cask install "$pkg"
   else
-    echo "'$update_pkg' already installed"
+    echo "'$pkg' already installed"
   fi
 done
 
-# Enable the driver to access the hypervisor
-sudo chown root:wheel /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
-sudo chmod u+s /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
 # Complete
 echo "Brew cask updating and installing completed."
