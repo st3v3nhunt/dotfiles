@@ -9,7 +9,8 @@ else
 fi
 
 # Sort out permissions
-sudo chown -R "$(whoami):admin" /usr/local
+# This no longer works
+# sudo chown -R "$(whoami):admin" /usr/local
 
 # Tap the Azure Functions repo
 brew tap azure/functions
@@ -108,6 +109,8 @@ for pkg in "${brews[@]}"; do
 done
 
 # Enable docker-machine-driver to access the hypervisor (hyperkit)
+echo "Update permissions for '/usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit'..."
+echo "Password will be required..."
 sudo chown root:wheel /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
 sudo chmod u+s /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
 

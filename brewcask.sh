@@ -19,7 +19,6 @@ caffeine
 db-browser-for-sqlite
 dotnet-sdk
 dropbox
-flux
 gimp
 google-backup-and-sync
 haskell-platform
@@ -50,6 +49,7 @@ visual-studio-code
 # IM
 casks+=(
 skype
+skype-for-business
 slack
 )
 
