@@ -73,6 +73,13 @@ simple, to save the session run `prefix + Ctrl-s` and restore the session, run
   * Try restarting the YouCompleteMe server within Vim `:YcmRestartServer`
 * Command failed and error reported `...can't decompress data; zlib not available`
   * Run `sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /`
+* Want to fetch all PRs from GitHub or MRs from GitLab locally?
+  * Add the following to the repo's `.git/config`:
+  ```
+  [remote "origin"]
+  fetch = +refs/pull/*:refs/remotes/origin/pull/*
+  fetch = +refs/merge-requests/*/head:refs/remotes/origin/merge-requests/*
+  ```
 
 ### Useful links
 
