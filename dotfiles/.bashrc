@@ -10,6 +10,9 @@ __git_complete g __git_main
 # bash autocomplete
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
+# tmux autocomplete
+. "$(brew --prefix tmux)/etc/bash_completion.d/tmux"
+
 # Kubernetes and minikube autocompletion
 source <(kubectl completion bash)
 source <(minikube completion bash)
