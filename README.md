@@ -18,7 +18,7 @@ During the install of Homebrew you will be prompted for your password.
 
 ## Installing Docker for Mac
 
-At the time of writing [Docker of Mac](https://www.docker.com/docker-mac) is
+At the time of writing [Docker for Mac](https://www.docker.com/docker-mac) is
 not available via Homebrew. It can be downloaded from the
 [Docker Store](https://store.docker.com/editions/community/docker-ce-desktop-mac).
 
