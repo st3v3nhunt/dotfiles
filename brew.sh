@@ -18,6 +18,7 @@ brew tap azure/functions
 # Utils
 brews=(
 adr-tools
+akamai
 azure-functions-core-tools
 cmake
 ctags
