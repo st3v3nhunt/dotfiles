@@ -18,3 +18,5 @@ alias sbp='. ~/.bashrc'
 alias tm=tmux
 alias vi=vim
 alias ctags="`brew --prefix`/bin/ctags"
+alias glbd="git branch | grep -v master | xargs git branch -d"
+alias glbD="git branch | grep -v master | xargs git branch -D"
