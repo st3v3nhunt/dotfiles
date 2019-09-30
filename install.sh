@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 ./install-dotfiles.sh
-./install-functions.sh
 ./install-gems.sh
 ./install-brew.sh
 ./install-nvm.sh
