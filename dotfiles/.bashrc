@@ -1,6 +1,7 @@
 # shellcheck source=/dev/null
 . ~/.aliases
 # . ~/.azure-cli
+. ~/.functions
 . ~/.prompt
 . ~/.git-prompt.sh
 . ~/.git-completion.bash
