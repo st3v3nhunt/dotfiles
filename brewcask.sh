@@ -2,9 +2,9 @@
 
 # Get [Homebrew-Cask](https://caskroom.github.io/), an extension to Homebrew
 echo "Tap Homebrew's cask extension..."
-brew tap caskroom/cask
+brew tap homebrew/cask-cask
 # Tap the cask for [drivers](https://github.com/caskroom/homebrew-drivers)
-brew tap caskroom/drivers
+brew tap homebrew/cask-drivers
 
 # Browsers
 casks=(
@@ -14,6 +14,7 @@ google-chrome
 
 # Utils
 casks+=(
+avira-antivirus
 burp-suite
 caffeine
 db-browser-for-sqlite
@@ -24,9 +25,12 @@ google-backup-and-sync
 haskell-platform
 iterm2
 java
+karabiner-elements
 kitematic
+lastpass
 little-snitch
 microsoft-azure-storage-explorer
+microsoft-office
 minikube
 mono-mdk
 owasp-zap
