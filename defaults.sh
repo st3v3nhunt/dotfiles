@@ -7,6 +7,13 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # KeyRepeat settings
 defaults write -g KeyRepeat -int 2
 
+# Menu bar setup
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm:ss"
+defaults write com.apple.menuextra.clock FlashDateSeparators -bool true
+defaults write com.apple.menuextra.clock IsAnalog -bool false
+defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Clock.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/Displays.menu" "/System/Library/CoreServices/Menu Extras/Volume.menu"
+
 # Activity Monitor setup
 defaults write com.apple.ActivityMonitor IconType -int 6
 defaults write com.apple.ActivityMonitor ShowCategory -int 0
@@ -54,7 +61,7 @@ defaults write -g NSWindowResizeTime -float 0.003
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock magnification -bool true
 defaults write com.apple.dock minimize-to-application -bool true
-defaults write com.apple.dock orientation -string right
+defaults write com.apple.dock orientation -string "right"
 defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock tilesize -float 35
 
