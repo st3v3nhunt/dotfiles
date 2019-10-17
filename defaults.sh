@@ -63,5 +63,15 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Speed up resize animations
 defaults write -g NSWindowResizeTime -float 0.003
 
+# Dock setup
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock magnification -bool true
+defaults write com.apple.dock minimize-to-application -bool true
+defaults write com.apple.dock orientation -string right
+defaults write com.apple.dock show-recents -bool false
+defaults write com.apple.dock tilesize -float 35
+# Restart dock
+killall Dock
+
 # Restart system server to get changes to take effect
 killall SystemUIServer
