@@ -1,6 +1,6 @@
 # Dot files
 
-![](https://github.com/st3v3nhunt/dotfiles/workflows/CI/badge.svg)
+[![Build Status](https://github.com/st3v3nhunt/dotfiles/workflows/CI/badge.svg)](https://github.com/st3v3nhunt/dotfiles/actions?workflow=CI)
 
 Clone the repo somewhere on the local disk and run `./install.sh`. This will:
 
