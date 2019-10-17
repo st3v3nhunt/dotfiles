@@ -62,6 +62,11 @@ Tmux plugin manager is installed. Mainly for adding
 simple, to save the session run `prefix + Ctrl-s` and restore the session, run
 `prefix + Ctrl-r`. Sessions should be saved prior to machine restart.
 
+## Manual steps
+
+* Install Bomgar client
+* Set Resolution of display (System Preferences -> Displays -> Display)
+
 ## FAQ
 
 * Python crashing when starting Vim?
