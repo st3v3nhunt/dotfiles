@@ -8,6 +8,12 @@ else
   brew update
 fi
 
+
+echo "Add '/usr/local/bin' to path so brew installed apps will be found"
+echo "Password will be required..."
+sudo launchctl config user path "/usr/local/bin:$PATH"
+# See https://docs.brew.sh/FAQ#my-mac-apps-dont-find-usrlocalbin-utilities for more info
+
 # Sort out permissions
 # This no longer works
 # sudo chown -R "$(whoami):admin" /usr/local
