@@ -73,5 +73,10 @@ defaults write com.apple.dock tilesize -float 35
 # Restart dock
 killall Dock
 
+# Trackpad setup
+defaults write com.apple.AppleMultitouchTrackpad Clicking -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -int 0
+
 # Restart system server to get changes to take effect
 killall SystemUIServer
