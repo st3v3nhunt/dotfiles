@@ -14,6 +14,7 @@ google-chrome
 
 # Utils
 casks+=(
+avira-antivirus
 burp-suite
 caffeine
 db-browser-for-sqlite
@@ -24,9 +25,12 @@ google-backup-and-sync
 haskell-platform
 iterm2
 java
+karabiner-elements
 kitematic
+lastpass
 little-snitch
 microsoft-azure-storage-explorer
+microsoft-office
 minikube
 mono-mdk
 owasp-zap
