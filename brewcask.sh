@@ -2,9 +2,9 @@
 
 # Get [Homebrew-Cask](https://caskroom.github.io/), an extension to Homebrew
 echo "Tap Homebrew's cask extension..."
-brew tap caskroom/cask
+brew tap homebrew/cask-cask
 # Tap the cask for [drivers](https://github.com/caskroom/homebrew-drivers)
-brew tap caskroom/drivers
+brew tap homebrew/cask-drivers
 
 # Browsers
 casks=(
