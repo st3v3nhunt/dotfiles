@@ -13,14 +13,15 @@ ln -nfsv "$DOTFILES_DIR/.aliases" ~
 ln -nfsv "$DOTFILES_DIR/.bash_profile" ~
 ln -nfsv "$DOTFILES_DIR/.bashrc" ~
 ln -nfsv "$DOTFILES_DIR/.functions" ~
-ln -nfsv "$GIT_DIR/.gitconfig" ~
-ln -nfsv "$GIT_DIR/.gitconfig.local" ~
 ln -nfsv "$DOTFILES_DIR/.prompt" ~
 ln -nfsv "$DOTFILES_DIR/.tern-project" ~
 ln -nfsv "$DOTFILES_DIR/.tmux.conf" ~
 ln -nfsv "$DOTFILES_DIR/.vimrc" ~
+ln -nfsv "$DOTFILES_DIR/.zshrc" ~
 ln -nfsv "$GIT_DIR/.git-prompt.sh" ~
 ln -nfsv "$GIT_DIR/.git-completion.bash" ~
+ln -nfsv "$GIT_DIR/.gitconfig" ~
+ln -nfsv "$GIT_DIR/.gitconfig.local" ~
 
 printf "${GREEN}Finished creating symlinks...${NC}\\n"
 
