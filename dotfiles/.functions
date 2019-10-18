@@ -1,2 +1,2 @@
 # Git rebase function
-grh() { git rebase -i head~"$1"; }
+grbh() { git rebase -i head~"$1"; }
