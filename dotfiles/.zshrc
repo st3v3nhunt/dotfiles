@@ -101,3 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # PERSONAL SETUP
 . ~/.aliases
 . ~/.functions
+
+# Prevent PAGER from using LESS. Looks like it falls back to stdout
+unset LESS
