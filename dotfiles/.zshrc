@@ -100,3 +100,4 @@ source $ZSH/oh-my-zsh.sh
 
 # PERSONAL SETUP
 . ~/.aliases
+. ~/.functions
