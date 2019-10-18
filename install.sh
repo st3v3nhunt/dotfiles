@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+./change-shell.sh
 ./defaults.sh
 ./install-oh-my-zsh.sh
 ./install-dotfiles.sh
