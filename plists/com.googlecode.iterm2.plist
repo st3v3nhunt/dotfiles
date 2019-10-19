@@ -258,6 +258,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<false/>
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
@@ -815,7 +817,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>DroidSansMonoSlashedForPowerline 11</string>
+			<string>HackNerdFontComplete-Regular 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -982,6 +984,8 @@
 			<false/>
 			<key>Use Italic Font</key>
 			<false/>
+			<key>Use Non-ASCII Font</key>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -994,28 +998,25 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.0</string>
 		<string>3.3.6</string>
+		<string>3.3.4</string>
 		<string>3.3.1</string>
 		<string>3.3.3</string>
 		<string>3.3.5</string>
+		<string>3.3.0</string>
 		<string>3.2.9</string>
 		<string>3.3.2</string>
-		<string>3.3.4</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
-		<string>Monaco</string>
-		<string>Droid Sans Mono Slashed for Powerline</string>
-		<string>Droid Sans Mono for Powerline</string>
-		<string>Droid Sans Mono Dotted for Powerline</string>
+		<string>Hack Nerd Font</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{-376, 1050}, {2560, 1440}}</string>
+		<string>{{2184, 1410}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{206, 1916}</string>
+		<string>{2379, 2169}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1026,7 +1027,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>579089203.31489301</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>11</integer>
+	<integer>12</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>587205221.42697001</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
