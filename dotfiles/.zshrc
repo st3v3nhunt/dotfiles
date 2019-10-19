@@ -104,3 +104,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Prevent PAGER from using LESS. Looks like it falls back to stdout
 unset LESS
+
+
+# Set vi keybindings for use in prompt
+bindkey -v
+# Reduce the delay for transitioning between modes. Default is 40
+export KEYTIMEOUT=10

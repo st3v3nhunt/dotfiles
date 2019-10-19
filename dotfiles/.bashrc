@@ -1,6 +1,5 @@
 # shellcheck source=/dev/null
 . ~/.aliases
-# . ~/.azure-cli
 . ~/.functions
 . ~/.prompt
 . ~/.git-prompt.sh
@@ -38,3 +37,6 @@ eval "$(pyenv init -)"
 # Set vim as default editor
 export EDITOR=vim
 export VISUAL=$EDITOR
+
+# Set vi keybindings for use in prompt
+set -o vi
