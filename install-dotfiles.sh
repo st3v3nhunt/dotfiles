@@ -14,6 +14,7 @@ ln -nfsv "$DOTFILES_DIR/.bash_profile" ~
 ln -nfsv "$DOTFILES_DIR/.bashrc" ~
 ln -nfsv "$DOTFILES_DIR/.functions" ~
 ln -nfsv "$DOTFILES_DIR/.prompt" ~
+ln -nfsv "$DOTFILES_DIR/.p10k.zsh" ~
 ln -nfsv "$DOTFILES_DIR/.tern-project" ~
 ln -nfsv "$DOTFILES_DIR/.tmux.conf" ~
 ln -nfsv "$DOTFILES_DIR/.vimrc" ~

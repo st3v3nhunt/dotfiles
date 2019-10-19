@@ -51,6 +51,7 @@ bash-completion@2
 htop
 reattach-to-user-namespace
 tmux
+zsh-syntax-highlighting
 )
 
 # GIT stuff

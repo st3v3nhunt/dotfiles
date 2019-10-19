@@ -3,13 +3,14 @@
 # Get [Homebrew-Cask](https://caskroom.github.io/), an extension to Homebrew
 echo "Tap Homebrew's cask extension..."
 brew tap homebrew/cask-cask
-# Tap the cask for [drivers](https://github.com/caskroom/homebrew-drivers)
 brew tap homebrew/cask-drivers
+brew tap homebrew/cask-fonts
 
 # Browsers
 casks=(
 firefox
 google-chrome
+opera
 )
 
 # Utils
@@ -42,6 +43,13 @@ spectacle
 tableau-public
 vmware-horizon-client
 wireshark
+)
+
+# Fonts
+casks+=(
+font-hack-nerd-font
+font-meslo-nerd-font
+font-droidsansmono-nerd-font
 )
 
 # Editors
