@@ -34,13 +34,3 @@ KARABINER_DIR=".config/karabiner"
 mkdir -p ~/"$KARABINER_DIR" && cp "$REPO_DIR/$KARABINER_DIR/karabiner.json" ~/"$KARABINER_DIR"
 
 printf "${GREEN}Finished installing Karabiner-Elements configuration...${NC}\\n"
-
-# Reload environment. Seems to be a bit inconsistent. Might need to be removed.
-# shellcheck source=/dev/null
-if [[ -n $BASH ]]; then
-  echo 'Reloading ~/.bashrc'
-  . ~/.bashrc
-elif [[ -n $ZSH ]]; then
-  echo 'Reloading ~/.zshrc'
-  . ~/.zshrc
-fi
