@@ -38,5 +38,8 @@ eval "$(pyenv init -)"
 export EDITOR=vim
 export VISUAL=$EDITOR
 
+# Source zsh-nvm
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+
 # Set vi keybindings for use in prompt
 set -o vi

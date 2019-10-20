@@ -122,6 +122,9 @@ export KEYTIMEOUT=10
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-#
+
+# Source zsh-nvm
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+
 # Enable zsh syntax highlighting. Must be at the end of the file
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
