@@ -1,0 +1,6 @@
+# Setup pyenv, rbenv
+eval "$(pyenv init -)"
+eval "$(rbenv init -)"
+#
+# Source zsh-nvm
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh

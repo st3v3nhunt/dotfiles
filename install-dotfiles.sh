@@ -16,6 +16,7 @@ ln -nfsv "$DOTFILES_DIR/.functions" ~
 ln -nfsv "$DOTFILES_DIR/.prompt" ~
 ln -nfsv "$DOTFILES_DIR/.p10k.zsh" ~
 ln -nfsv "$DOTFILES_DIR/.tern-project" ~
+ln -nfsv "$DOTFILES_DIR/.shared-shell-setup" ~
 ln -nfsv "$DOTFILES_DIR/.tmux.conf" ~
 ln -nfsv "$DOTFILES_DIR/.vimrc" ~
 ln -nfsv "$DOTFILES_DIR/.zshrc" ~
@@ -34,6 +35,12 @@ mkdir -p ~/"$KARABINER_DIR" && cp "$REPO_DIR/$KARABINER_DIR/karabiner.json" ~/"$
 
 printf "${GREEN}Finished installing Karabiner-Elements configuration...${NC}\\n"
 
-# Reload environment
+# Reload environment. Seems to be a bit inconsistent. Might need to be removed.
 # shellcheck source=/dev/null
-. ~/.bashrc
+if [[ -n $BASH ]]; then
+  echo 'Reloading ~/.bashrc'
+  . ~/.bashrc
+elif [[ -n $ZSH ]]; then
+  echo 'Reloading ~/.zshrc'
+  . ~/.zshrc
+fi

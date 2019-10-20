@@ -4,6 +4,7 @@
 . ~/.prompt
 . ~/.git-prompt.sh
 . ~/.git-completion.bash
+. ~/.shared-shell-setup
 # make git autocomplete work with 'g', an alias for git
 __git_complete g __git_main
 
@@ -31,18 +32,9 @@ export NVM_DIR="$HOME/.nvm"
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# setup pyenv
-eval "$(pyenv init -)"
-
 # Set vim as default editor
 export EDITOR=vim
 export VISUAL=$EDITOR
-
-# Source zsh-nvm
-source ~/.zsh-nvm/zsh-nvm.plugin.zsh
-
-# Load rbenv
-eval "$(rbenv init -)"
 
 # Set vi keybindings for use in prompt
 set -o vi
