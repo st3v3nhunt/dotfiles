@@ -69,6 +69,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  colorize
   git
   kubectl
   minikube
@@ -126,5 +127,8 @@ export KEYTIMEOUT=10
 # Source zsh-nvm
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
+# Load rbenv
+eval "$(rbenv init -)"
+#
 # Enable zsh syntax highlighting. Must be at the end of the file
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

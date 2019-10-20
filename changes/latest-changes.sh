@@ -10,6 +10,14 @@ brew cask install font-hack-nerd-font
 brew cask install font-meslo-nerd-font
 brew cask install font-droidsansmono-nerd-font
 
+brew install rbenv
+szp
+rbenv insall 2.6.5
+brew reinstall pipenv
+brew reinstall pyenv
+szp
+pyenv install Pygments
+
 ../install-oh-my-zsh.sh
 p10k configure
 ln -nfsv "$PWD/../dotfiles/.p10k.zsh" ~
