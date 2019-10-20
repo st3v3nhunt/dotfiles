@@ -125,5 +125,7 @@ export KEYTIMEOUT=10
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
+# Enable zsh-autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Enable zsh syntax highlighting. Must be at the end of the file
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
