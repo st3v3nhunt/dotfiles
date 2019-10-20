@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-printf "Installing nvm (https://github.com/creationix/nvm#installation)\\n"
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+echo "Installing zsh-nvm (https://github.com/lukechilds/zsh-nvm.git)"
+git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm

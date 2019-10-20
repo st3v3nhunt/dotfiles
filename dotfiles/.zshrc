@@ -69,12 +69,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  colorize
   git
-  git-prompt
   kubectl
   minikube
   nvm
-  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -124,6 +123,12 @@ export KEYTIMEOUT=10
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# Source zsh-nvm
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+
+# Load rbenv
+eval "$(rbenv init -)"
 #
 # Enable zsh syntax highlighting. Must be at the end of the file
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

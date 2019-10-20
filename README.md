@@ -10,7 +10,7 @@ Clone the repo somewhere on the local disk and run `./install.sh`. This will:
 * Install [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements)
 * Install any useful [Gems](https://rubygems.org)
 * Install any useful [Pips](https://pypi.org/)
-* Install [NMV](https://github.com/nvm-sh/nvm)
+* Install [NVM](https://github.com/nvm-sh/nvm)
 * Install and setup [Vim](https://www.vim.org/) related stuff
 * Install and setup [tmux](https://github.com/tmux/tmux) related stuff
 

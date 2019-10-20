@@ -38,5 +38,11 @@ eval "$(pyenv init -)"
 export EDITOR=vim
 export VISUAL=$EDITOR
 
+# Source zsh-nvm
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+
+# Load rbenv
+eval "$(rbenv init -)"
+
 # Set vi keybindings for use in prompt
 set -o vi
