@@ -16,7 +16,7 @@ rbenv insall 2.6.5
 brew reinstall pipenv
 brew reinstall pyenv
 szp
-pyenv install Pygments
+pip install Pygments
 
 ../install-oh-my-zsh.sh
 p10k configure
