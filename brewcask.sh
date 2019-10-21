@@ -60,6 +60,7 @@ visual-studio-code
 
 # IM
 casks+=(
+signal
 skype
 skype-for-business
 slack
