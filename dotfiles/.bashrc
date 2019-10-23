@@ -38,3 +38,5 @@ export VISUAL=$EDITOR
 
 # Set vi keybindings for use in prompt
 set -o vi
+
+complete -C /usr/local/bin/vault vault
