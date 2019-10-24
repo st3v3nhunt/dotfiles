@@ -97,7 +97,7 @@ nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>
 nnoremap \ :Ack!<space>
 
 " vim-airline settings
-let g:airline_section_b = ''
+let g:airline_powerline_fonts = 1
 
 " ALE configuration
 let g:ale_sign_error='✗✗'
