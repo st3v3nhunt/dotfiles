@@ -7,15 +7,14 @@ set tags=tags               " set tags to tags for ctags
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'             " Vundle
+Plugin 'VundleVim/Vundle.vim'             " Vundle should manage Vundle
+" generally useful plugins
 Plugin 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
 Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
-Plugin 'matchit.zip'                      " Use % in html
+Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
 Plugin 'mileszs/ack.vim'                  " File searching
 Plugin 'ntpeters/vim-better-whitespace'   " Better whitespace
 Plugin 'scrooloose/nerdtree'              " File explorer
-Plugin 'ternjs/tern_for_vim'              " JS autocompletion
 Plugin 'tomasr/molokai'                   " Theme
 Plugin 'tpope/vim-fugitive'               " Git wrapper
 Plugin 'tpope/vim-commentary'             " Comment out lines
@@ -23,22 +22,19 @@ Plugin 'tpope/vim-repeat'                 " Repeat plugin commands via .
 Plugin 'tpope/vim-surround'               " Word/phrase surrounds
 Plugin 'Valloric/YouCompleteMe'           " Code completion engine
 Plugin 'vim-airline/vim-airline'          " File status bar
-Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
-Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
-Plugin 'fatih/vim-go'                     " Better/easier alignment
-Plugin 'pprovost/vim-ps1'                 " Windows PowerShell support
-Plugin 'google/yapf'                      " Python formatter
 Plugin 'w0rp/ale'                         " Asynchronous Lint Engine aka ALE
+" specific dev/languge plugins
+Plugin 'fatih/vim-go'                     " Go development
+Plugin 'google/yapf'                      " Python formatter
+Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
 " Plugin 'OmniSharp/omnisharp-vim'          " Provides IDE like abilities for C#
-" Plugin 'Townk/vim-autoclose' " Auto pair/close - Disabled as it kept
-" putting Vim into insert mode when there was a thing to auto complete
-" Plugin 'jiangmiao/auto-pairs'             " Auto pair/close
-" Plugin 'Raimondi/delimitMate'             " Auto pair/close
+" Plugin 'pprovost/vim-ps1'                 " Windows PowerShell support
+Plugin 'ternjs/tern_for_vim'              " JS autocompletion
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+" All plugins must be added before this line
+call vundle#end()             " required
 
+filetype plugin indent on     " required
 syntax on                     " syntax highlighting
 colorscheme molokai           " theme
 
@@ -97,7 +93,9 @@ nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>
 nnoremap \ :Ack!<space>
 
 " vim-airline settings
-let g:airline_section_b = ''
+let g:airline_powerline_fonts = 1
+" only load these extensions to speed up loading
+let g:airline_extension = ['ale']
 
 " ALE configuration
 let g:ale_sign_error='✗✗'
