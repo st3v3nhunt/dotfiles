@@ -7,6 +7,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # KeyRepeat settings
 defaults write -g KeyRepeat -int 2
 
+# Set mouse tracking speed
+defaults write -g com.apple.mouse.scaling -float 3
+
 # Menu bar setup
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm:ss"
