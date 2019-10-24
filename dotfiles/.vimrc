@@ -98,6 +98,8 @@ nnoremap \ :Ack!<space>
 
 " vim-airline settings
 let g:airline_powerline_fonts = 1
+" only load these extensions to speed up loading
+let g:airline_extension = ['ale']
 
 " ALE configuration
 let g:ale_sign_error='✗✗'
