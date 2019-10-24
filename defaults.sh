@@ -7,8 +7,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # KeyRepeat settings
 defaults write -g KeyRepeat -int 2
 
-# Set mouse tracking speed
+# Set mouse and trackpad tracking speed
 defaults write -g com.apple.mouse.scaling -float 3
+defaults write -g com.apple.trackpad.scaling -float 3
 
 # Menu bar setup
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
