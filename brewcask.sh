@@ -34,6 +34,7 @@ microsoft-azure-storage-explorer
 microsoft-office
 minikube
 mono-mdk
+ngrok
 owasp-zap
 postman
 powershell
