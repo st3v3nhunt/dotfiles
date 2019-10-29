@@ -125,7 +125,7 @@ export KEYTIMEOUT=10
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-# Hashicorp Vault autocomplete
+# Hashicorp Vault completion
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 

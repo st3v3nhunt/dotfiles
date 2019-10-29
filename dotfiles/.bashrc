@@ -5,13 +5,13 @@
 . ~/.git-prompt.sh
 . ~/.git-completion.bash
 . ~/.shared-shell-setup
-# make git autocomplete work with 'g', an alias for git
+# make git completion work with 'g', an alias for git
 __git_complete g __git_main
 
-# bash autocomplete
+# bash completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-# tmux autocomplete
+# tmux completion
 . "$(brew --prefix tmux)/etc/bash_completion.d/tmux"
 
 # Kubernetes and minikube autocompletion
