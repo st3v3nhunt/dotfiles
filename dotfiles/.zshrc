@@ -118,6 +118,9 @@ export LESS=-iRFXMx4
 
 # Set vi keybindings for use in prompt
 bindkey -v
+# Enable command history search with `Ctrl + r`
+bindkey "^R" history-incremental-search-backward
+
 # Reduce the delay for transitioning between modes. Default is 40
 export KEYTIMEOUT=10
 
