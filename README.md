@@ -62,6 +62,8 @@ Tmux plugin manager is installed. Mainly for adding
 simple, to save the session run `prefix + Ctrl-s` and restore the session, run
 `prefix + Ctrl-r`. Sessions should be saved prior to machine restart.
 
+If it isn't working try reloading tmux config with `prefix + I`.
+
 ## Manual steps
 
 * Install Bomgar client
