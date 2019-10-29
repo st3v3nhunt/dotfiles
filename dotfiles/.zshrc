@@ -73,9 +73,8 @@ plugins=(
   git
   kubectl
   minikube
-  nvm
 )
-
+# Plugins must be loaded prior to sourcing on-my-zsh.sh i.e. the line below
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -131,6 +130,8 @@ complete -o nospace -C /usr/local/bin/vault vault
 
 # Enable zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-#
+# Source nvm plugin (installed in ./install-nvm.sh)
+source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+
 # Enable zsh syntax highlighting. Must be at the end of the file
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
