@@ -16,6 +16,7 @@ opera
 # Utils
 casks+=(
 avira-antivirus
+azure-data-studio
 burp-suite
 caffeine
 db-browser-for-sqlite
