@@ -3,6 +3,8 @@
 
 # Disable PressAndHold to allow key repeat
 defaults write -g ApplePressAndHoldEnabled -bool false
+# Use F1, F2, etc. keys as standard function keys on external keyboards
+defaults write -g com.apple.keyboard.fnState -bool true
 
 # KeyRepeat settings
 defaults write -g KeyRepeat -int 2
