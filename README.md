@@ -89,6 +89,7 @@ If it isn't working try reloading tmux config with `prefix + I`.
   fetch = +refs/pull/*:refs/remotes/origin/pull/*
   fetch = +refs/merge-requests/*/head:refs/remotes/origin/merge-requests/*
   ```
+* Reload `.vimrc` within Vim without restarting Vim - `:so $MYVIMRC`
 
 ### Useful links
 
