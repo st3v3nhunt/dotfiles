@@ -1,6 +1,12 @@
 # Setup pyenv, rbenv
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
-#
+
+PATH=$PATH:$(npm -g bin)
+export PATH
+
+PATH=$PATH:$(go env GOPATH)/bin
+export PATH
+
 # Source zsh-nvm
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
