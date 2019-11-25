@@ -2,6 +2,7 @@ set nocompatible            " use vim settings
 filetype off                " required
 set path+=**                " make :find search everything
 set tags=tags               " set tags to tags for ctags
+set autowrite               " write file
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -103,6 +104,14 @@ let g:airline_extension = ['ale']
 let g:ale_sign_error='✗✗'
 let g:ale_sign_warning='∆∆'
 let g:airline#extensions#ale#enabled=1       " error information in the status bar
+
+" vim-go configuration
+let g:go_fmt_command='goimports'             " format go imports on save
+let g:go_highlight_types=1
+let g:go_highlight_fields=1
+let g:go_highlight_functions=1
+let g:go_highlight_function_calls=1
+let g:go_highlight_operators=1
 
 " Use global, static locations for back,swap and undo
 set backupdir=~/.vim/tmp/backup//
