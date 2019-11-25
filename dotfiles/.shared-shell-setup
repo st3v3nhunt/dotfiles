@@ -7,6 +7,9 @@ export PATH
 
 PATH=$PATH:$(go env GOPATH)/bin
 export PATH
+# Set GOPATH
+GOPATH=$(go env GOPATH)
+export GOPATH
 
 # Source zsh-nvm
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
