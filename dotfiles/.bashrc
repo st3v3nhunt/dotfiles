@@ -18,14 +18,8 @@ __git_complete g __git_main
 source <(kubectl completion bash)
 source <(minikube completion bash)
 
-PATH=$PATH:$(npm -g bin)
-export PATH
-
 # added by travis gem
 [ -f /Users/steve/.travis/travis.sh ] && source /Users/steve/.travis/travis.sh
-
-# Source nvm plugin (installed in ./install-nvm.sh)
-source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
 # Fix error 'gpg: signing failed: Inappropriate ioctl for device'
 GPG_TTY=$(tty)
