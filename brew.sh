@@ -19,6 +19,7 @@ brew tap azure/functions
 brews=(
 adr-tools
 akamai
+asciinema
 azure-cli
 azure-functions-core-tools
 cmake
