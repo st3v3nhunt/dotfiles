@@ -62,6 +62,7 @@ visual-studio-code
 
 # IM
 casks+=(
+microsoft-teams
 signal
 skype
 skype-for-business
