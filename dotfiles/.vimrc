@@ -31,6 +31,7 @@ Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
 " Plugin 'OmniSharp/omnisharp-vim'          " Provides IDE like abilities for C#
 " Plugin 'pprovost/vim-ps1'                 " Windows PowerShell support
 Plugin 'ternjs/tern_for_vim'              " JS autocompletion
+Plugin 'Chiel92/vim-autoformat'           " Generic code formatter
 
 " All plugins must be added before this line
 call vundle#end()             " required
@@ -64,10 +65,12 @@ autocmd BufRead,BufNewFile *.nunjucks set filetype=html " set nunjucks files as 
 autocmd BufRead,BufNewFile *.md setlocal spell          " turn spell check on for *.md files
 
 " Plugin specifc settings
+" Format on save
+autocmd BufWrite * :Autoformat
 " Start interactive EasyAlign in visual mode (e.g. vipga)
- xmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
- nmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 " NERDTree - Open automatically when starting
 let NERDTreeShowHidden=1
@@ -144,6 +147,8 @@ nnoremap <Leader>r :NERDTreeFind<CR>
 " Go to previous and next ALE errors
 nnoremap <Leader>j :ALENextWrap<cr>
 nnoremap <Leader>k :ALEPreviousWrap<cr>
+" Format on key
+nnoremap <Leader>f :Autoformat<cr>
 
 " OmniSharp settings
 let g:OmniSharp_server_path = '~/omnisharp.http-osx/omnisharp/OmniSharp.exe'
