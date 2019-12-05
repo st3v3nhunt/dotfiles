@@ -131,7 +131,7 @@ export KEYTIMEOUT=10
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 
-# Enable zsh-autosuggestions
+# Enable (and configure) zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable zsh syntax highlighting. Must be at the end of the file
