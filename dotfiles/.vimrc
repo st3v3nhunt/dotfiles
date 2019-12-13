@@ -32,6 +32,8 @@ Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
 " Plugin 'pprovost/vim-ps1'                 " Windows PowerShell support
 Plugin 'ternjs/tern_for_vim'              " JS autocompletion
 Plugin 'Chiel92/vim-autoformat'           " Generic code formatter
+Plugin 'SirVer/ultisnips'                 " Snippet engine
+Plugin 'honza/vim-snippets'               " Snippets
 
 " All plugins must be added before this line
 call vundle#end()             " required
@@ -66,7 +68,7 @@ autocmd BufRead,BufNewFile *.md setlocal spell          " turn spell check on fo
 
 " Plugin specifc settings
 " Format on save
-autocmd BufWrite * :Autoformat
+" autocmd BufWrite * :Autoformat
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
