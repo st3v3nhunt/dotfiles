@@ -122,7 +122,7 @@ bindkey -v
 bindkey "^R" history-incremental-search-backward
 
 # Reduce the delay for transitioning between modes. Default is 40
-export KEYTIMEOUT=10
+export KEYTIMEOUT=1
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
