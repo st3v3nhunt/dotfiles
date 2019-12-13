@@ -123,6 +123,8 @@ set backupdir=~/.vim/tmp/backup//
 set directory=~/.vim/tmp/swap//
 set undodir=~/.vim/tmp/undo//
 
+" ultisnips configuration
+let g:UltiSnipsExpandTrigger="<c-space>"
 " Easier split navigation
 " This isn't required when 'christoomey/vim-tmux-navigator' is installed
 " nnoremap <C-J> <C-W><C-J>
