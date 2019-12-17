@@ -153,6 +153,8 @@ nnoremap <Leader>j :ALENextWrap<cr>
 nnoremap <Leader>k :ALEPreviousWrap<cr>
 " Format on key
 nnoremap <Leader>f :Autoformat<cr>
+" Run jq on the current buffer
+nnoremap <Leader>jf :%! jq<cr>
 
 " OmniSharp settings
 let g:OmniSharp_server_path = '~/omnisharp.http-osx/omnisharp/OmniSharp.exe'
