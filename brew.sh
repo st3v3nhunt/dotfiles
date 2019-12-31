@@ -29,6 +29,7 @@ exercism
 gpg
 handbrake
 heroku
+hugo
 hyperkit
 imagemagick
 jmeter
