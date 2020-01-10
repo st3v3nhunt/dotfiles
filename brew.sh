@@ -28,6 +28,7 @@ docker-machine-driver-hyperkit
 exercism
 gpg
 handbrake
+helm
 heroku
 hugo
 hyperkit
