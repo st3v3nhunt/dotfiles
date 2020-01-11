@@ -41,6 +41,7 @@ pyenv
 rancher-cli
 rename
 shellcheck
+terraform
 vault
 wget
 wifi-password
