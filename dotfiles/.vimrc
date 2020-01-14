@@ -69,7 +69,8 @@ autocmd BufRead,BufNewFile *.nunjucks set filetype=html " set nunjucks files as 
 autocmd BufRead,BufNewFile *.md setlocal spell          " turn spell check on for *.md files
 
 " Plugin specifc settings
-" Save Terraform files on save
+" Save Terraform files on save and align with tabular
+let g:terraform_align=1
 let g:terraform_fmt_on_save=1
 " Format on save
 " autocmd BufWrite * :Autoformat
