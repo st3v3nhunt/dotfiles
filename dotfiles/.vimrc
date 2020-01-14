@@ -35,6 +35,7 @@ Plugin 'Chiel92/vim-autoformat'           " Generic code formatter
 Plugin 'SirVer/ultisnips'                 " Snippet engine
 Plugin 'honza/vim-snippets'               " Snippets
 Plugin 'hashivim/vim-terraform'           " Terraform formatter and highlighter
+Plugin 'godlygeek/tabular'                " Tabularisation
 
 " All plugins must be added before this line
 call vundle#end()             " required
