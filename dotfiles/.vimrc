@@ -34,6 +34,8 @@ Plugin 'ternjs/tern_for_vim'              " JS autocompletion
 Plugin 'Chiel92/vim-autoformat'           " Generic code formatter
 Plugin 'SirVer/ultisnips'                 " Snippet engine
 Plugin 'honza/vim-snippets'               " Snippets
+Plugin 'hashivim/vim-terraform'           " Terraform formatter and highlighter
+Plugin 'godlygeek/tabular'                " Tabularisation
 
 " All plugins must be added before this line
 call vundle#end()             " required
@@ -67,6 +69,9 @@ autocmd BufRead,BufNewFile *.nunjucks set filetype=html " set nunjucks files as 
 autocmd BufRead,BufNewFile *.md setlocal spell          " turn spell check on for *.md files
 
 " Plugin specifc settings
+" Save Terraform files on save and align with tabular
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
 " Format on save
 " autocmd BufWrite * :Autoformat
 " Start interactive EasyAlign in visual mode (e.g. vipga)
