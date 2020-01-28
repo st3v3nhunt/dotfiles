@@ -41,6 +41,7 @@ pyenv
 rancher-cli
 rename
 shellcheck
+skaffold
 terraform
 vault
 wget
