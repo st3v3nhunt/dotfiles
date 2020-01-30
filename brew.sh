@@ -42,7 +42,7 @@ rancher-cli
 rename
 shellcheck
 skaffold
-terraform
+tfenv
 vault
 wget
 wifi-password
