@@ -63,6 +63,7 @@ zsh-syntax-highlighting
 brews+=(
 git
 git-secrets
+github/gh/gh
 ghi
 hub
 )
