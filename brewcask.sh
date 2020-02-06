@@ -28,6 +28,7 @@ haskell-platform
 iterm2
 java
 karabiner-elements
+kind
 kitematic
 lastpass
 little-snitch
