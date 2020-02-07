@@ -65,7 +65,6 @@ brews+=(
 git
 git-secrets
 github/gh/gh
-ghi
 hub
 )
 
@@ -102,8 +101,6 @@ sqlite
 
 # Search stuff
 brews+=(
-elasticsearch
-kibana
 the_silver_searcher
 )
 
