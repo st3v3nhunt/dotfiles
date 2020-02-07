@@ -43,7 +43,6 @@ rename
 shellcheck
 skaffold
 tfenv
-github/gh/gh
 vault
 wget
 wifi-password
