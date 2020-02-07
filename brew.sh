@@ -34,6 +34,7 @@ hugo
 hyperkit
 imagemagick
 jmeter
+kind
 kubernetes-cli
 llvm
 pipenv
