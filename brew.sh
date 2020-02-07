@@ -43,6 +43,7 @@ rancher-cli
 rename
 shellcheck
 skaffold
+stern
 tfenv
 vault
 wget
