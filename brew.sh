@@ -34,6 +34,7 @@ hugo
 hyperkit
 imagemagick
 jmeter
+kind
 kubernetes-cli
 llvm
 pipenv
@@ -43,7 +44,6 @@ rename
 shellcheck
 skaffold
 tfenv
-github/gh/gh
 vault
 wget
 wifi-password
@@ -65,7 +65,6 @@ brews+=(
 git
 git-secrets
 github/gh/gh
-ghi
 hub
 )
 
@@ -102,8 +101,6 @@ sqlite
 
 # Search stuff
 brews+=(
-elasticsearch
-kibana
 the_silver_searcher
 )
 
