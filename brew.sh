@@ -24,26 +24,19 @@ azure-cli
 azure-functions-core-tools
 cmake
 ctags
-docker-machine-driver-hyperkit
 exercism
 gpg
 handbrake
-helm
 heroku
 hugo
 hyperkit
 imagemagick
 jmeter
-kind
-kubernetes-cli
 llvm
 pipenv
 pyenv
-rancher-cli
 rename
 shellcheck
-skaffold
-stern
 tfenv
 vault
 wget
@@ -91,6 +84,18 @@ rust
 rustup-init
 ruby
 scala
+)
+
+# Containerisation related e.g. k8s, rancher, docker, etc.
+brews+=(
+docker-machine-driver-hyperkit
+helm
+kind
+kubernetes-cli
+octant
+rancher-cli
+skaffold
+stern
 )
 
 # DBs
