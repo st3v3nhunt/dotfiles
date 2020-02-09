@@ -95,7 +95,6 @@ scala
 
 # DBs
 brews+=(
-mongodb
 postgresql
 sqlite
 )
