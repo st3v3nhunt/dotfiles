@@ -39,6 +39,7 @@ rename
 shellcheck
 tfenv
 vault
+watch
 wget
 wifi-password
 yarn
