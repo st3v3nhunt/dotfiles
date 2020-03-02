@@ -89,6 +89,7 @@ scala
 
 # Containerisation related e.g. k8s, rancher, docker, etc.
 brews+=(
+derailed/k9s/k9s
 docker-machine-driver-hyperkit
 helm
 kind
