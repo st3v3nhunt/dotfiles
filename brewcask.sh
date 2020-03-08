@@ -24,6 +24,7 @@ dotnet-sdk
 dropbox
 gimp
 google-backup-and-sync
+google-cloud-sdk
 haskell-platform
 iterm2
 java
