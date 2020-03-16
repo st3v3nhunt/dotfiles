@@ -10,3 +10,4 @@
 ./install-pips.sh
 ./install-tmux-stuff.sh
 ./install-vim-stuff.sh
+./scripts/install-dotnet-tools.sh
