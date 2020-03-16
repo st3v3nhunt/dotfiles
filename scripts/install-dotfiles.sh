@@ -7,7 +7,6 @@ REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
 DOTFILES_DIR="$REPO_DIR/dotfiles"
 GIT_DIR="$REPO_DIR/git"
 
-echo $REPO_DIR
 printf "${GREEN}Starting to symlink...${NC}\\n"
 
 ln -nfsv "$DOTFILES_DIR/.aliases" ~

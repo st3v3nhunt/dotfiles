@@ -16,3 +16,6 @@ dotnet --version
 # Apply changes
 # shellcheck source=/dev/null
 source ~/.zshrc
+
+echo "Install OpenVPN - https://openvpn.net/downloads/openvpn-connect-v3-macos.dmg"
+echo "Install Cisco Webex Meetings - https://www.webex.com/downloads.html/downloads/downloads-thank-you-meetings.html"
