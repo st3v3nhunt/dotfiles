@@ -7,6 +7,7 @@
 # Get the last commit via `git rev-parse HEAD | pbcopy`
 # Changes applied since 4ecbea9ced22b0c688cc75b0ff4709ab98ea891c
 ./scripts/install-or-upgrade-aws-cli.sh
+brew install aws-iam-authenticator
 
 # Apply changes
 # shellcheck source=/dev/null

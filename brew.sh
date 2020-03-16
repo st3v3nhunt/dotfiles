@@ -22,6 +22,7 @@ akamai
 asciinema
 azure-cli
 azure-functions-core-tools
+aws-iam-authenticator
 cmake
 ctags
 exercism
