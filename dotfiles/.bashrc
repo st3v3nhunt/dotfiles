@@ -33,3 +33,4 @@ export VISUAL=$EDITOR
 set -o vi
 
 complete -C /usr/local/bin/vault vault
+complete -C /usr/local/bin/aws_completer aws
