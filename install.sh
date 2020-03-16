@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
-./change-shell.sh
-./defaults.sh
-./install-oh-my-zsh.sh
-./install-dotfiles.sh
-./install-brew.sh
-./install-gems.sh
-./install-nvm.sh
-./install-pips.sh
-./install-tmux-stuff.sh
-./install-vim-stuff.sh
+./scripts/change-shell.sh
+./scripts/defaults.sh
+./scripts/install-oh-my-zsh.sh
+./scripts/install-dotfiles.sh
+./scripts/install-brew.sh
+./scripts/install-gems.sh
+./scripts/install-nvm.sh
+./scripts/install-pips.sh
+./scripts/install-tmux-stuff.sh
+./scripts/install-vim-stuff.sh
+./scripts/install-dotnet-tools.sh

@@ -3,7 +3,7 @@
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
 DOTFILES_DIR="$REPO_DIR/dotfiles"
 GIT_DIR="$REPO_DIR/git"
 
