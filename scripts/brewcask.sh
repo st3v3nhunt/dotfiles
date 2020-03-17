@@ -72,7 +72,6 @@ slack
 
 # Misc
 casks+=(
-garmin-express
 sonos
 zwift
 )
