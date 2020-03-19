@@ -87,6 +87,7 @@ map <C-n> :NERDTreeToggle<CR>   " open NERDTree
 
 " Better whitespace
 let g:better_whitespace_enabled=1
+let g:better_whitespace_filetypes_blacklist=[]
 
 " CtrlP - Ignore VCS and node stuff
 let g:ctrlp_custom_ignore = '\v[\/](coverage|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
