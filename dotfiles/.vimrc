@@ -65,8 +65,9 @@ set undolevels=1000           " undo more stuff
 set foldmethod=indent         " fold based on indentation
 set foldlevel=5               " default fold level. 5 should be ok to see most contents
 
-autocmd BufRead,BufNewFile *.nunjucks set filetype=html " set nunjucks files as html
-autocmd BufRead,BufNewFile *.md setlocal spell          " turn spell check on for *.md files
+autocmd BufRead,BufNewFile *.nunjucks set filetype=html   " set nunjucks files as html
+autocmd BufRead,BufNewFile *.md setlocal spell            " turn spell check on for *.md files
+autocmd BufRead,BufNewFile Jenkinsfile set syntax=groovy  " Set Jenkinsfile snytax to groovy (for highlighting)
 
 " Plugin specifc settings
 " Save Terraform files on save and align with tabular
