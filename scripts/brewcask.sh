@@ -20,6 +20,7 @@ azure-data-studio
 burp-suite
 caffeine
 db-browser-for-sqlite
+dbeaver-community
 dotnet-sdk
 dropbox
 gimp
