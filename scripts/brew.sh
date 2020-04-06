@@ -27,6 +27,7 @@ cmake
 ctags
 exercism
 gpg
+groovy
 handbrake
 heroku
 hugo
