@@ -90,6 +90,8 @@ If it isn't working try reloading tmux config with `prefix + I`.
   fetch = +refs/merge-requests/*/head:refs/remotes/origin/merge-requests/*
   ```
 * Reload `.vimrc` within Vim without restarting Vim - `:so $MYVIMRC`
+* Sort Vim's dictionary (in place and case insensitively) -
+  `sort -f -c ./vim/en.utf-8.add ./vim/en-utf-8.add`
 
 ### Useful links
 
