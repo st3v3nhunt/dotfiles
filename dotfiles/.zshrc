@@ -140,5 +140,9 @@ complete -C /usr/local/bin/aws_completer aws
 # Enable (and configure) zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+
 # Enable zsh syntax highlighting. Must be at the end of the file
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
