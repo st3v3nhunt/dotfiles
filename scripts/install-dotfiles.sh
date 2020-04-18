@@ -20,16 +20,9 @@ ln -nfsv "$DOTFILES_DIR/.shared-shell-setup" ~
 ln -nfsv "$DOTFILES_DIR/.tmux.conf" ~
 ln -nfsv "$DOTFILES_DIR/.vimrc" ~
 ln -nfsv "$DOTFILES_DIR/.zshrc" ~
+ln -nfsv "$DOTFILES_DIR/.zprofile" ~
 ln -nfsv "$GIT_DIR/.git-prompt.sh" ~
 ln -nfsv "$GIT_DIR/.git-completion.bash" ~
 ln -nfsv "$GIT_DIR/.gitconfig" ~
 
 printf "${GREEN}Finished creating symlinks...${NC}\\n"
-
-printf "${GREEN}Installing Karabiner-Elements configuration...${NC}\\n"
-
-KARABINER_DIR=".config/karabiner"
-
-mkdir -p ~/"$KARABINER_DIR" && cp "$REPO_DIR/$KARABINER_DIR/karabiner.json" ~/"$KARABINER_DIR"
-
-printf "${GREEN}Finished installing Karabiner-Elements configuration...${NC}\\n"
