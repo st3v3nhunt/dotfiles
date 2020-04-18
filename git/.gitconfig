@@ -24,10 +24,6 @@
 	autocorrect = 1
 [core]
 	editor = vim
-[credential]
-	helper = osxkeychain
-[credential]
-	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
 [user]
 	email = st3v3nhunt@users.noreply.github.com
 	name = Steven Hunt
@@ -37,3 +33,5 @@
 	token = !security find-internet-password -a st3v3nhunt -s github.com -l 'ghi token' -w
 [gpg]
 	program = gpg
+[include]
+	path = .gitconfig.local
