@@ -22,12 +22,12 @@
 	default = upstream
 [help]
 	autocorrect = 1
-[include]
-	path = .gitconfig.local
 [core]
 	editor = vim
 [credential]
-	helper = store
+	helper = osxkeychain
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
 [user]
 	email = st3v3nhunt@users.noreply.github.com
 	name = Steven Hunt
