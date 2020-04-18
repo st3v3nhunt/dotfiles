@@ -15,6 +15,17 @@ Clone the repo somewhere on the local disk and run `./install.sh`. This will:
 * Install and setup [tmux](https://github.com/tmux/tmux) related stuff
 
 During the install of Homebrew you will be prompted for your password.
+## .gitconfig.local
+
+There are several reasons why it is a good idea to have a file with git config
+in that doesn't get checked into the repo. It can contain secret information
+such as passwords and it can also contain differences due to the OS. The latter
+is the specific use case with this repo. `credential.helper` should be added to
+a file called `.gitconfig.local` that is stored in the home dir.  Add the
+config as follows. For macOS -
+`git config git config --file ~/.gitconfig.local credential.helper "osxkeychain"`
+and for WSL -
+`git config git config --file ~/.gitconfig.local credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"`.
 
 ## Installing Docker for Mac
 
