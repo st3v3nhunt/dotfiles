@@ -29,3 +29,4 @@
 - [ ] Go through the list of brews and split them into darwin and linux appropriate
 - [ ] Do no install and casks for linux
 - [ ] Install Chocolatey from https://chocolatey.org/docs/installation
+- [ ] Create choco install script with all of the packages
