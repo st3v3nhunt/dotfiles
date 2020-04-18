@@ -1,24 +1,11 @@
 #!/usr/bin/env bash
 
-if ! command -v brew; then
-  echo "No Homebrew install found. Install it..."
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-else
-  echo "Homebrew install found. Update it..."
-  brew update
-fi
-
-# Sort out permissions
-# This no longer works
-# sudo chown -R "$(whoami):admin" /usr/local
-
 # Tap the Azure Functions repo
 brew tap azure/functions
 
 # Utils
 brews=(
 adr-tools
-akamai
 asciinema
 azure-cli
 azure-functions-core-tools
@@ -26,12 +13,10 @@ aws-iam-authenticator
 cmake
 ctags
 exercism
+gcc
 gpg
 groovy
-handbrake
-heroku
 hugo
-hyperkit
 imagemagick
 jmeter
 llvm
@@ -44,7 +29,6 @@ tfenv
 vault
 watch
 wget
-wifi-password
 yarn
 )
 
@@ -53,7 +37,6 @@ brews+=(
 bash
 bash-completion@2
 htop
-reattach-to-user-namespace
 tmux
 )
 
@@ -93,7 +76,6 @@ scala
 # Containerisation related e.g. k8s, rancher, docker, etc.
 brews+=(
 derailed/k9s/k9s
-docker-machine-driver-hyperkit
 helm
 kind
 kubernetes-cli
@@ -124,12 +106,3 @@ for pkg in "${brews[@]}"; do
     brew install "$pkg"
   fi
 done
-
-# Enable docker-machine-driver to access the hypervisor (hyperkit)
-echo "Update permissions for '/usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit'..."
-echo "Password will be required..."
-sudo chown root:wheel /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
-sudo chmod u+s /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
-
-echo "Clean up..."
-brew cleanup

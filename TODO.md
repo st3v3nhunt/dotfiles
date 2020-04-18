@@ -17,17 +17,17 @@
 
 ## Ubuntu / WSL 2 changes
 
-- [ ] Use `$OSTYPE` to vary actions based on OS
-- [ ] Install zsh on `linux-gnu` - `apt install zsh`
-- [ ] Only run `defaults.sh` on darwin
+- [x] Use `$OSTYPE` to vary actions based on OS
+- [x] Install zsh on `linux-gnu` - `apt install zsh`
+- [x] Only run `defaults.sh` on darwin
 - [ ] Install powerline fonts and icons for Ubuntu
-- [ ] Possibly this should be done as brew can work on Linux --> Do not install brew on Ubuntu & create brew-install equivalent for Ubuntu
-- [ ] Need to run `sudo apt-get update` followed by `sudo apt-get install build-essential curl file git` to get everything install for brew to be installed
-- [ ] Update `brew.sh` to have this `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
-- [ ] Run `echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> /home/shunt/.zprofile` and `eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)`. Look at what has been added to `.zprofile` and see if this can be added to dotfiles
-- [ ] Add `gcc` to list of brews to be installed
-- [ ] Go through the list of brews and split them into darwin and linux appropriate
-- [ ] Do no install and casks for linux
+- [x] Possibly this should be done as brew can work on Linux --> Do not install brew on Ubuntu & create brew-install equivalent for Ubuntu
+- [x] Need to run `sudo apt-get update` followed by `sudo apt-get install build-essential curl file git` to get everything install for brew to be installed
+- [x] Update `brew.sh` to have this `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+- [x] Run `echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> /home/shunt/.zprofile` and `eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)`. Look at what has been added to `.zprofile` and see if this can be added to dotfiles
+- [x] Add `gcc` to list of brews to be installed
+- [x] Go through the list of brews and split them into darwin and linux appropriate
+- [x] Do no install and casks for linux
 - [ ] Install Chocolatey from https://chocolatey.org/docs/installation
 - [ ] Create choco install script with all of the packages
 - [ ] Figure out how to get the clipboard to work between tmux panes
