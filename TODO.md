@@ -33,3 +33,4 @@
 - [ ] Figure out how to get the clipboard to work between tmux panes
 - [ ] Figure out how to get the clipboard to work between vim and the system - it currently works when using the mouse and isn't working with the vim keys e.g. `yy`
 - [ ] Sort out the caret to be a block rather than a line in Windows Terminal
+- [ ] See if git config values can be sourced from a separate file so it can be different for different OSes
