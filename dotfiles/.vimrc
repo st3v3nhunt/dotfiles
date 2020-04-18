@@ -45,7 +45,7 @@ syntax on                     " syntax highlighting
 colorscheme molokai           " theme
 
 set autoindent                " auto indent
-set clipboard=unnamed         " allow copy between instances
+set clipboard=unnamedplus     " allow copy between instances
 set number                    " line numbers
 set relativenumber            " show relative line numbers
 set colorcolumn=80            " 80 column guide
