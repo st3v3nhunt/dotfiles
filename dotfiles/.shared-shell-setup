@@ -1,6 +1,6 @@
 # Setup pyenv, rbenv
-eval "$(pyenv init -)"
-eval "$(rbenv init -)"
+# eval "$(pyenv init -)"
+# eval "$(rbenv init -)"
 
 PATH=$PATH:$(npm -g bin)
 export PATH
