@@ -30,3 +30,6 @@
 - [ ] Do no install and casks for linux
 - [ ] Install Chocolatey from https://chocolatey.org/docs/installation
 - [ ] Create choco install script with all of the packages
+- [ ] Figure out how to get the clipboard to work between tmux panes
+- [ ] Figure out how to get the clipboard to work between vim and the system - it currently works when using the mouse and isn't working with the vim keys e.g. `yy`
+- [ ] Sort out the caret to be a block rather than a line in Windows Terminal
