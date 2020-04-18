@@ -27,7 +27,7 @@
 [core]
 	editor = vim
 [credential]
-	helper = osxkeychain
+	helper = store
 [user]
 	email = st3v3nhunt@users.noreply.github.com
 	name = Steven Hunt
