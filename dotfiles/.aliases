@@ -5,7 +5,6 @@ alias gaac='git add -A && git commit -m'
 alias gcontributors='git log --format='%aN' | sort -fu'
 alias gd='git diff'
 alias ghi='git hist -n'
-alias git=hub
 alias glbd="git branch | grep -v master | xargs git branch -d"
 alias glbD="git branch | grep -v master | xargs git branch -D"
 alias gpuo='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
