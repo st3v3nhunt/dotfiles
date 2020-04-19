@@ -35,3 +35,5 @@
 	program = gpg
 [include]
 	path = .gitconfig.local
+[hub]
+	protocol = https
