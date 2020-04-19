@@ -136,7 +136,7 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 
 # AWS CLI completion
-autoload bashcompinit && bashcompinit
+# autoload bashcompinit && bashcompinit
 complete -C /usr/local/bin/aws_completer aws
 
 # Enable (and configure) zsh-autosuggestions
