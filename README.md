@@ -15,6 +15,7 @@ Clone the repo somewhere on the local disk and run `./install.sh`. This will:
 * Install and setup [tmux](https://github.com/tmux/tmux) related stuff
 
 During the install of Homebrew you will be prompted for your password.
+
 ## .gitconfig.local
 
 There are several reasons why it is a good idea to have a file with git config
@@ -26,6 +27,13 @@ config as follows. For macOS -
 `git config git config --file ~/.gitconfig.local credential.helper "osxkeychain"`
 and for WSL -
 `git config git config --file ~/.gitconfig.local credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"`.
+
+## WSL/Windows stuff
+
+[Windows Terminal](https://github.com/microsoft/terminal/blob/master/doc/user-docs/index.md)
+is used. Settings are available in [WSL/profiles.json](WSL/profiles.json). The
+file will need to be manually copied over to
+`C:\Users\st3v3\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`.
 
 ## Installing Docker for Mac
 
