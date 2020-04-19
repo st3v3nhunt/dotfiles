@@ -151,6 +151,17 @@ nmap OO O<Esc>j
 " Remap leader to comma
 let mapleader=","
 
+" Copy into the system clipboard
+let s:clip = '/mnt/c/Windows/System32/clip.exe'
+if executable(s:clip)
+  augroup WSLYank
+    autocmd!
+    autocmd TextYankPost * :call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
+  augroup END
+end
+" Paste from the system clipboard
+map <silent> <Leader>p :r !powershell.exe -Command Get-Clipboard<CR>
+
 " Leaders
 " Save and close
 nnoremap <Leader>w :w<CR>
