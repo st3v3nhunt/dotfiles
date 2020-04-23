@@ -21,5 +21,6 @@ alias ls='ls -aFhlG'
 alias mk=minikube
 alias sbp='. ~/.bashrc'
 alias szp='. ~/.zshrc'
+alias tf=terraform
 alias tm=tmux
 alias vi=vim
