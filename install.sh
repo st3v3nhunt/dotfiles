@@ -18,6 +18,7 @@ fi
 
 ./scripts/install-gems.sh
 ./scripts/install-nvm.sh
+./scripts/install-npms.sh
 ./scripts/install-pips.sh
 ./scripts/install-tmux-stuff.sh
 ./scripts/install-vim-stuff.sh
