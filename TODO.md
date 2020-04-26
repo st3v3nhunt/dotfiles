@@ -32,6 +32,7 @@
 - [x] See if git config values can be sourced from a separate file so it can be different for different OSes
 - [x] Sort out the caret to be a block rather than a line in Windows Terminal
 - [x] Windows Terminal - set initial window size and font size
+- [x] Add colors to ls
 
 - [?] Install Chocolatey from https://chocolatey.org/docs/installation - done, not sure about automating it
 - [?] Install powerline fonts and icons for Ubuntu - done, not sure about automating it
