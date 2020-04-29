@@ -26,7 +26,7 @@ a file called `.gitconfig.local` that is stored in the home dir.  Add the
 config as follows. For macOS -
 `git config git config --file ~/.gitconfig.local credential.helper "osxkeychain"`
 and for WSL -
-`git config git config --file ~/.gitconfig.local credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"`.
+`git config git config --file ~/.gitconfig.local credential.helper "/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"`.
 
 ## WSL/Windows stuff
 
