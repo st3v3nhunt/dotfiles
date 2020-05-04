@@ -5,15 +5,9 @@
 - [ ] Bindings for resize of splits
 - [ ] Split [.vimrc](./dotfiles/.vimrc) into multiple files
 
-## tmux
-
-- [ ] tmuxinator
-- [ ] tmate
-
 ## Bash
 
 - [ ] Install bash version 4 automatically. [Reference](https://gist.github.com/Rican7/44081a9806595704fa7b289c32fcd62c)
-
 
 ## Ubuntu / WSL 2 changes
 
