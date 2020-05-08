@@ -11,8 +11,7 @@
 
 ## Ubuntu / WSL 2 changes
 
-- [ ] Start Alacritty in `$HOME` (using wsl)
-
+- [x] Start Alacritty in `$HOME` (using wsl)
 - [x] Link Terminal settings file with one in repo
 - [x] Save Alacritty settings file in repo
 - [x] Link Alacritty settings file with one in repo
