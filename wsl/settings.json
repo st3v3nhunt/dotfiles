@@ -48,6 +48,30 @@
                 "name": "cmd",
                 "commandline": "cmd.exe",
                 "hidden": false
+            },
+            {
+                "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+                "hidden": false,
+                "name": "kali-linux",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{6f9994f0-4403-5e85-9cce-98e5da3839bb}",
+                "hidden": false,
+                "name": "Ubuntu-16.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },

@@ -12,9 +12,9 @@
 ## Ubuntu / WSL 2 changes
 
 - [ ] Link Terminal settings file with one in repo
-- [ ] Save Alacritty settings file in repo
-- [ ] Link Alacritty settings file with one in repo
-- [ ] Make Tmux synchronize-panes work for both Terminal and Alacritty
+- [x] Save Alacritty settings file in repo
+- [x] Link Alacritty settings file with one in repo
+- [x] Make Tmux synchronize-panes work for both Terminal and Alacritty
 - [ ] Start Alacritty in `$HOME` (using wsl)
 
 - [x] Use `$OSTYPE` to vary actions based on OS
