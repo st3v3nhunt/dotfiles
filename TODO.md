@@ -11,12 +11,12 @@
 
 ## Ubuntu / WSL 2 changes
 
-- [ ] Link Terminal settings file with one in repo
+- [ ] Start Alacritty in `$HOME` (using wsl)
+
+- [x] Link Terminal settings file with one in repo
 - [x] Save Alacritty settings file in repo
 - [x] Link Alacritty settings file with one in repo
 - [x] Make Tmux synchronize-panes work for both Terminal and Alacritty
-- [ ] Start Alacritty in `$HOME` (using wsl)
-
 - [x] Use `$OSTYPE` to vary actions based on OS
 - [x] Install zsh on `linux-gnu` - `apt install zsh`
 - [x] Only run `defaults.sh` on darwin
