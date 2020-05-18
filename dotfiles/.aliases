@@ -13,6 +13,7 @@ alias gp='git pull'
 alias gpfu='git push -fu --no-verify'
 alias gs='git status'
 alias h=heroku
+alias hb='hub browse'
 alias hist=history
 alias j=jobs
 alias k=kubectl
