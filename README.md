@@ -50,6 +50,13 @@ iTerm2 this setting will need to be entered before these will be used.
 Go to `Preferences->General` and enter `~/code/dotfiles/plists` into the option
 for `Load preferences from a custom folder or URL:`.
 
+## iTerm2 / Powerline Fonts
+
+In order to get the icons working for the powerline theme for OhMyZsh follow
+these
+[instructions](https://github.com/romkatv/powerlevel10k#manual-font-installation)
+which involves downloading and installing the MesloLGS font files.
+
 ## Locking the screen
 
 Locking the screen with both internal and external keyboards is done via
