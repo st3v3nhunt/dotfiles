@@ -11,3 +11,4 @@
 ./scripts/install-tmux-stuff.sh
 ./scripts/install-vim-stuff.sh
 ./scripts/install-dotnet-tools.sh
+./scripts/install-fonts.sh
