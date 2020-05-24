@@ -23,7 +23,6 @@ ln -nfsv "$DOTFILES_DIR/.zshrc" ~
 ln -nfsv "$GIT_DIR/.git-prompt.sh" ~
 ln -nfsv "$GIT_DIR/.git-completion.bash" ~
 ln -nfsv "$GIT_DIR/.gitconfig" ~
-ln -nfsv "$GIT_DIR/.gitconfig.local" ~
 
 printf "${GREEN}Finished creating symlinks...${NC}\\n"
 
