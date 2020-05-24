@@ -24,9 +24,9 @@ such as passwords and it can also contain differences due to the OS. The latter
 is the specific use case with this repo. `credential.helper` should be added to
 a file called `.gitconfig.local` that is stored in the home dir.  Add the
 config as follows. For macOS -
-`git config git config --file ~/.gitconfig.local credential.helper "osxkeychain"`
+`git config --file ~/.gitconfig.local credential.helper "osxkeychain"`
 and for WSL -
-`git config git config --file ~/.gitconfig.local credential.helper "/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"`.
+`git config --file ~/.gitconfig.local credential.helper "/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"`.
 
 ## WSL/Windows stuff
 

@@ -17,7 +17,7 @@ alias hb='hub browse'
 alias hist=history
 alias j=jobs
 alias k=kubectl
-alias ls='ls -aFhlG --color=auto'
+alias ls='ls -aFhlG'
 alias mk=minikube
 alias sbp='. ~/.bashrc'
 alias szp='. ~/.zshrc'
