@@ -25,7 +25,6 @@ dropbox
 gimp
 google-backup-and-sync
 google-cloud-sdk
-haskell-platform
 iterm2
 java
 karabiner-elements
@@ -34,7 +33,6 @@ lastpass
 little-snitch
 microsoft-azure-storage-explorer
 microsoft-office
-minikube
 mono-mdk
 ngrok
 owasp-zap
