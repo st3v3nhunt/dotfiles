@@ -107,6 +107,8 @@ If it isn't working try reloading tmux config with `prefix + I`.
 * Reload `.vimrc` within Vim without restarting Vim - `:so $MYVIMRC`
 * Sort Vim's dictionary (in place and case insensitively) -
   `sort -f -c ./vim/en.utf-8.add ./vim/en-utf-8.add`
+* If seeing errors like `nvm is not compatible with the npm config "prefix" option`
+  * Try running `nvm unalias default`
 
 ### Useful links
 
