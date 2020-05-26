@@ -11,4 +11,4 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: Run shellcheck on shell scripts
-      run: ./scripts/test.sh
+      run: ./scripts/utils/test.sh

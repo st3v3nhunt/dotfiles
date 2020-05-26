@@ -5,7 +5,6 @@ alias gaac='git add -A && git commit -m'
 alias gcontributors='git log --format='%aN' | sort -fu'
 alias gd='git diff'
 alias ghi='git hist -n'
-alias git=hub
 alias glbd="git branch | grep -v master | xargs git branch -d"
 alias glbD="git branch | grep -v master | xargs git branch -D"
 alias gpuo='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
@@ -14,13 +13,20 @@ alias gp='git pull'
 alias gpfu='git push -fu --no-verify'
 alias gs='git status'
 alias h=heroku
+alias hb='hub browse'
 alias hist=history
 alias j=jobs
 alias k=kubectl
-alias ls='ls -aFhlG'
 alias mk=minikube
 alias sbp='. ~/.bashrc'
 alias szp='. ~/.zshrc'
 alias tf=terraform
 alias tm=tmux
 alias vi=vim
+
+# Don't set color for macOS
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  alias ls='ls -aFhlG'
+else
+  alias ls='ls -aFhlG --color=auto'
+fi

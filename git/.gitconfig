@@ -22,17 +22,18 @@
 	default = upstream
 [help]
 	autocorrect = 1
-[include]
-	path = .gitconfig.local
 [core]
 	editor = vim
-[credential]
-	helper = osxkeychain
 [user]
 	email = st3v3nhunt@users.noreply.github.com
+	name = Steven Hunt
 [github]
 	user = st3v3nhunt
 [ghi]
 	token = !security find-internet-password -a st3v3nhunt -s github.com -l 'ghi token' -w
 [gpg]
 	program = gpg
+[include]
+	path = .gitconfig.local
+[hub]
+	protocol = https

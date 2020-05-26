@@ -1,6 +1,9 @@
 # Setup pyenv, rbenv
-eval "$(pyenv init -)"
-eval "$(rbenv init -)"
+# eval "$(pyenv init -)"
+# eval "$(rbenv init -)"
+
+# set vim aliases based on what is available
+if [[ -x "$(command -v vim.gtk)" ]]; then alias vim='vim.gtk'; fi
 
 PATH=$PATH:$(npm -g bin)
 export PATH

@@ -68,12 +68,14 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+# zsh-syntax-highlighting must be the last plugin to be loaded
 plugins=(
   colorize
   git
   helm
   kubectl
   minikube
+  zsh-syntax-highlighting
 )
 # Plugins must be loaded prior to sourcing on-my-zsh.sh i.e. the line below
 source $ZSH/oh-my-zsh.sh
@@ -134,7 +136,7 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 
 # AWS CLI completion
-autoload bashcompinit && bashcompinit
+# autoload bashcompinit && bashcompinit
 complete -C /usr/local/bin/aws_completer aws
 
 # Enable (and configure) zsh-autosuggestions
@@ -143,6 +145,3 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
-
-# Enable zsh syntax highlighting. Must be at the end of the file
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

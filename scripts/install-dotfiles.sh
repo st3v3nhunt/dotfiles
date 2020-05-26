@@ -17,19 +17,19 @@ ln -nfsv "$DOTFILES_DIR/.prompt" ~
 ln -nfsv "$DOTFILES_DIR/.p10k.zsh" ~
 ln -nfsv "$DOTFILES_DIR/.tern-project" ~
 ln -nfsv "$DOTFILES_DIR/.shared-shell-setup" ~
-ln -nfsv "$DOTFILES_DIR/.tmux.conf" ~
 ln -nfsv "$DOTFILES_DIR/.vimrc" ~
 ln -nfsv "$DOTFILES_DIR/.zshrc" ~
 ln -nfsv "$GIT_DIR/.git-prompt.sh" ~
 ln -nfsv "$GIT_DIR/.git-completion.bash" ~
 ln -nfsv "$GIT_DIR/.gitconfig" ~
 
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  ln -nfsv "$DOTFILES_DIR/.macos.tmux.conf" ~/.tmux.conf
+fi
+
+if [[ -n "$WSL_DISTRO_NAME" && "$OSTYPE" == "linux-gnu" ]]; then
+  ln -nfsv "$DOTFILES_DIR/.wsl.tmux.conf" ~/.tmux.conf
+  ln -nfsv "$DOTFILES_DIR/.zprofile" ~
+fi
+
 printf "${GREEN}Finished creating symlinks...${NC}\\n"
-
-printf "${GREEN}Installing Karabiner-Elements configuration...${NC}\\n"
-
-KARABINER_DIR=".config/karabiner"
-
-mkdir -p ~/"$KARABINER_DIR" && cp "$REPO_DIR/$KARABINER_DIR/karabiner.json" ~/"$KARABINER_DIR"
-
-printf "${GREEN}Finished installing Karabiner-Elements configuration...${NC}\\n"

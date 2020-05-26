@@ -21,6 +21,7 @@ Plugin 'tpope/vim-fugitive'               " Git wrapper
 Plugin 'tpope/vim-commentary'             " Comment out lines
 Plugin 'tpope/vim-repeat'                 " Repeat plugin commands via .
 Plugin 'tpope/vim-surround'               " Word/phrase surrounds
+Plugin 'tpope/vim-obsession'              " Improve session restoration
 Plugin 'Valloric/YouCompleteMe'           " Code completion engine
 Plugin 'vim-airline/vim-airline'          " File status bar
 Plugin 'w0rp/ale'                         " Asynchronous Lint Engine aka ALE
@@ -150,6 +151,17 @@ nmap OO O<Esc>j
 
 " Remap leader to comma
 let mapleader=","
+
+" Copy into the system clipboard
+let s:clip = '/c/Windows/System32/clip.exe'
+if executable(s:clip)
+  augroup WSLYank
+    autocmd!
+    autocmd TextYankPost * :call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
+  augroup END
+end
+" Paste from the system clipboard
+map <silent> <Leader>p :r !powershell.exe -Command Get-Clipboard<CR>
 
 " Leaders
 " Save and close

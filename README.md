@@ -16,16 +16,30 @@ Clone the repo somewhere on the local disk and run `./install.sh`. This will:
 
 During the install of Homebrew you will be prompted for your password.
 
+## .gitconfig.local
+
+There are several reasons why it is a good idea to have a file with git config
+in that doesn't get checked into the repo. It can contain secret information
+such as passwords and it can also contain differences due to the OS. The latter
+is the specific use case with this repo. `credential.helper` should be added to
+a file called `.gitconfig.local` that is stored in the home dir.  Add the
+config as follows. For macOS -
+`git config --file ~/.gitconfig.local credential.helper "osxkeychain"`
+and for WSL -
+`git config --file ~/.gitconfig.local credential.helper "/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"`.
+
+## WSL/Windows stuff
+
+[Windows Terminal](https://github.com/microsoft/terminal/blob/master/doc/user-docs/index.md)
+is used. Settings are available in [WSL/profiles.json](WSL/profiles.json). The
+file will need to be manually copied over to
+`C:\Users\st3v3\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`.
+
 ## Installing Docker for Mac
 
 At the time of writing [Docker for Mac](https://www.docker.com/docker-mac) is
 not available via Homebrew. It can be downloaded from the
 [Docker Store](https://store.docker.com/editions/community/docker-ce-desktop-mac).
-
-## Setup user/private gitconfig info
-
-Git user config is held in an ignored file @ `~/.gitconfig.local`. This should
-contain `name`, `email`, `signingkey`.
 
 ## Go language support in Vim
 
@@ -56,11 +70,6 @@ In order to get the icons working for the powerline theme for OhMyZsh follow
 these
 [instructions](https://github.com/romkatv/powerlevel10k#manual-font-installation)
 which involves downloading and installing the MesloLGS font files.
-
-## Locking the screen
-
-Locking the screen with both internal and external keyboards is done via
-`CTRL + CMD + q`.
 
 ## [Tmux plugin manager](https://github.com/tmux-plugins/tpm)
 
