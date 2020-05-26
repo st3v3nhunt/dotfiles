@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -201,11 +202,7 @@
 	<key>MaxVertically</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-<<<<<<< HEAD
-	<string>~</string>
-=======
 	<string>~/code/dotfiles/plists</string>
->>>>>>> 121db1f... :up: Save latest iterm changes
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -254,11 +251,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-<<<<<<< HEAD
-	<string>850 807 347 181 0 0 2048 1257 </string>
-=======
 	<string>624 606 799 448 0 0 2048 1257 </string>
->>>>>>> 121db1f... :up: Save latest iterm changes
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 2048 1257 0 0 2048 1257 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -827,11 +820,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-<<<<<<< HEAD
-			<string>MesloLGSForPowerline-Regular 11</string>
-=======
 			<string>MesloLGS-NF-Regular 11</string>
->>>>>>> 121db1f... :up: Save latest iterm changes
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1013,15 +1002,6 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.9</string>
-<<<<<<< HEAD
-	</array>
-	<key>NoSyncBFPRecents</key>
-	<array>
-		<string>Menlo</string>
-		<string>Meslo LG S for Powerline</string>
-		<string>Meslo LG M for Powerline</string>
-		<string>Meslo LG S DZ for Powerline</string>
-=======
 	</array>
 	<key>NoSyncBFPFavorites</key>
 	<array>
@@ -1032,33 +1012,24 @@
 		<string>MesloLGS NF</string>
 		<string>Meslo LG S for Powerline</string>
 		<string>Meslo LG M for Powerline</string>
->>>>>>> 121db1f... :up: Save latest iterm changes
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {2048, 1280}}</string>
 		<key>topLeft</key>
-<<<<<<< HEAD
-		<string>{521, 1034}</string>
-=======
 		<string>{957, 945}</string>
->>>>>>> 121db1f... :up: Save latest iterm changes
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>72482C82-E031-4D0D-8BDB-637B5A9D5CD5</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-<<<<<<< HEAD
-	<integer>2</integer>
-	<key>NoSyncNextAnnoyanceTime</key>
-	<real>611278418.31236994</real>
-=======
 	<integer>5</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>612134712.864393</real>
->>>>>>> 121db1f... :up: Save latest iterm changes
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
 	<true/>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncRecordedVariables</key>
 	<dict>
 		<key>0</key>
