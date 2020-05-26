@@ -71,11 +71,6 @@ these
 [instructions](https://github.com/romkatv/powerlevel10k#manual-font-installation)
 which involves downloading and installing the MesloLGS font files.
 
-## Locking the screen
-
-Locking the screen with both internal and external keyboards is done via
-`CTRL + CMD + q`.
-
 ## [Tmux plugin manager](https://github.com/tmux-plugins/tpm)
 
 Tmux plugin manager is installed. Mainly for adding
