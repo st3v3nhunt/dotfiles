@@ -1,13 +1,14 @@
 # To do:
 
+- [ ] Is it possible to have a base `.tmux.conf` to contain the majority of the
+  settings and then have the OS specific file added to it?
+- [ ] Upgrade Vim on WSL to get rid of ale error disappearing cursor bug
+- [ ] Review `.tmux.conf` and remove any unnecessary config
+
 ## Vim
 
 - [ ] Bindings for resize of splits
 - [ ] Split [.vimrc](./dotfiles/.vimrc) into multiple files
-
-## Bash
-
-- [ ] Install bash version 4 automatically. [Reference](https://gist.github.com/Rican7/44081a9806595704fa7b289c32fcd62c)
 
 ## Ubuntu / WSL 2 changes
 
