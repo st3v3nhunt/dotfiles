@@ -2,7 +2,6 @@
 
 # Get [Homebrew-Cask](https://caskroom.github.io/), an extension to Homebrew
 echo "Tap Homebrew's cask extension..."
-brew tap homebrew/cask-cask
 brew tap homebrew/cask-drivers
 brew tap homebrew/cask-fonts
 
@@ -26,7 +25,6 @@ dropbox
 gimp
 google-backup-and-sync
 google-cloud-sdk
-haskell-platform
 iterm2
 java
 karabiner-elements
@@ -35,7 +33,6 @@ lastpass
 little-snitch
 microsoft-azure-storage-explorer
 microsoft-office
-minikube
 mono-mdk
 ngrok
 owasp-zap

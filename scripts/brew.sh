@@ -35,6 +35,7 @@ hyperkit
 imagemagick
 jmeter
 llvm
+minikube
 pipenv
 pyenv
 rename
@@ -80,6 +81,7 @@ brews+=(
 elixir
 erlang
 go
+haskell-stack
 node
 python
 python@2

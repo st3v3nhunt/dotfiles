@@ -45,10 +45,17 @@ into `~/`. This should result in a path to the executable being
 
 ## iTerm2 preferences
 
-iTerm2 preferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within iTerm2
-this setting will need to be entered before these will be used.
+iTerm2 preferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within
+iTerm2 this setting will need to be entered before these will be used.
 Go to `Preferences->General` and enter `~/code/dotfiles/plists` into the option
 for `Load preferences from a custom folder or URL:`.
+
+## iTerm2 / Powerline Fonts
+
+In order to get the icons working for the powerline theme for OhMyZsh follow
+these
+[instructions](https://github.com/romkatv/powerlevel10k#manual-font-installation)
+which involves downloading and installing the MesloLGS font files.
 
 ## Locking the screen
 
@@ -66,7 +73,6 @@ If it isn't working try reloading tmux config with `prefix + I`.
 
 ## Manual steps
 
-* Install Bomgar client
 * Set Resolution of display (System Preferences -> Displays -> Display)
 
 ## FAQ
