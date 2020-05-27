@@ -13,3 +13,5 @@ Session.vim
 tags
 # log files
 *.log
+# node files
+node_modules
