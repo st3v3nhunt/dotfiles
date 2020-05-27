@@ -4,8 +4,8 @@ if [[ -n "$WSL_DISTRO_NAME" && "$OSTYPE" == "linux-gnu" ]]; then
   ./scripts/install-wsl-stuff.sh
 fi
 
-./scripts/install-oh-my-zsh.sh
 ./scripts/install-dotfiles.sh
+./scripts/install-oh-my-zsh.sh
 ./scripts/install-brew.sh
 ./scripts/install-brews.sh
 
