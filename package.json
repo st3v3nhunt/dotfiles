@@ -1,0 +1,29 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "st3v3nhunt's dotfiles",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "semantic-release": "^17.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/st3v3nhunt/dotfiles.git"
+  },
+  "keywords": [
+    "dotfiles"
+  ],
+  "author": "st3v3nhunt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/st3v3nhunt/dotfiles/issues"
+  },
+  "homepage": "https://github.com/st3v3nhunt/dotfiles#readme"
+}
