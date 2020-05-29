@@ -20,5 +20,8 @@ jobs:
     - name: Run commitlint
       run: npx commitlint --from origin/master --to HEAD --verbose
   shellcheck:
+    name: Shellcheck
+    runs-on: ubuntu-latest
+    steps:
     - name: Shellcheck
       run: ./scripts/utils/test.sh
