@@ -11,6 +11,7 @@ KARABINER_JSON="$KARABINER_DIR/karabiner.json"
 mkdir -p ~/"$KARABINER_DIR" && cp "$REPO_DIR/$KARABINER_JSON" ~/"$KARABINER_DIR"
 ln -nfsv "$KARABINER_JSON" ~/"$KARABINER_JSON"
 printf "${GREEN}Finished installing Karabiner-Elements configuration...${NC}\\n"
+echo "If there are problems with karabiner settings not being loaded try turning on the setting for 'system default configuration'"
 
 brews=(
 docker-machine-driver-hyperkit

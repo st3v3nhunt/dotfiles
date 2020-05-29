@@ -3,6 +3,7 @@
 [![Build Status](https://github.com/st3v3nhunt/dotfiles/workflows/CI/badge.svg)](https://github.com/st3v3nhunt/dotfiles/actions?workflow=CI)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
+> Dotfiles repo for macOS and Linux WSL disros
 
 Clone the repo somewhere on the local disk and run `./install.sh`. This will:
 
@@ -12,6 +13,7 @@ Clone the repo somewhere on the local disk and run `./install.sh`. This will:
 * Install [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements)
 * Install any useful [Gems](https://rubygems.org)
 * Install any useful [Pips](https://pypi.org/)
+* Install (globally) any useful [npm](https://www.npmjs.com/)
 * Install [NVM](https://github.com/nvm-sh/nvm)
 * Install and setup [Vim](https://www.vim.org/) related stuff
 * Install and setup [tmux](https://github.com/tmux/tmux) related stuff
@@ -59,14 +61,16 @@ into `~/`. This should result in a path to the executable being
 `~/omnisharp.http-osx/omnisharp/OmniSharp.exe` (this path is specified in
 [dotfiles/.vimrc](dotfiles/.vimrc).
 
-## iTerm2 preferences
+## iTerm2
+
+### Preferences
 
 iTerm2 preferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within
 iTerm2 this setting will need to be entered before these will be used.
 Go to `Preferences->General` and enter `~/code/dotfiles/plists` into the option
 for `Load preferences from a custom folder or URL:`.
 
-## iTerm2 / Powerline Fonts
+### Powerline Fonts
 
 In order to get the icons working for the powerline theme for OhMyZsh follow
 these
@@ -75,12 +79,13 @@ which involves downloading and installing the MesloLGS font files.
 
 ## [Tmux plugin manager](https://github.com/tmux-plugins/tpm)
 
-Tmux plugin manager is installed. Mainly for adding
-[tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect). Usage is
-simple, to save the session run `prefix + Ctrl-s` and restore the session, run
-`prefix + Ctrl-r`. Sessions should be saved prior to machine restart.
+Tmux plugin manager is installed along with the following plugins:
+* [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) - enables
+  session saving and restoration via `prefix + Ctrl-s` and `prefix + Ctrl-r`
+* [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum) - automates
+  session the actions of `tmux-resurrect`
 
-If it isn't working try reloading tmux config with `prefix + I`.
+If either plugin isn't working try reloading tmux config with `prefix + I`.
 
 ## Manual steps
 
