@@ -55,7 +55,7 @@
         "assets": [
           "CHANGELOG.md"
         ],
-        "message": "chore(release): update CHANGELOG [skip ci]"
+        "message": "chore(release): update CHANGELOG for version ${nextRelease.version} [skip ci]"
       }
     ]
   ],
