@@ -21,11 +21,9 @@
     "dotfiles"
   ],
   "author": "st3v3nhunt",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/st3v3nhunt/dotfiles/issues"
   },
-  "homepage": "https://github.com/st3v3nhunt/dotfiles#readme",
-  "release": {
-  }
+  "homepage": "https://github.com/st3v3nhunt/dotfiles#readme"
 }
