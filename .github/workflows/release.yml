@@ -1,9 +1,8 @@
-name: Release
+name: Release maintenance branches
 
 on:
   push:
     branches:
-    - master
     - '[0-9]+.x'
     - '[0-9]+.[0-9]+.x'
 
