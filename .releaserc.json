@@ -18,8 +18,8 @@
               "package.json",
               "package-lock.json"
             ],
-            "from": "\"semantic-release-test\",\n  \"version\": \".*\"",
-            "to": "\"semantic-release-test\",\n  \"version\": \"${nextRelease.version}\"",
+            "from": "\"dotfiles\",\n  \"version\": \".*\"",
+            "to": "\"dotfiles\",\n  \"version\": \"${nextRelease.version}\"",
             "results": [
               {
                 "file": "package.json",
