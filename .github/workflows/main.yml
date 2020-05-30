@@ -28,7 +28,7 @@ jobs:
     - name: Shellcheck
       run: ./scripts/utils/test.sh
   release:
-    if: success() && github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master'
     name: Release
     runs-on: ubuntu-latest
     steps:
