@@ -29,7 +29,6 @@ tfenv
 vault
 watch
 wget
-yarn
 )
 
 # Terminal stuff
@@ -64,7 +63,6 @@ elixir
 erlang
 go
 haskell-stack
-node
 python
 python@2
 rust
