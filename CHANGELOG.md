@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/st3v3nhunt/dotfiles/compare/1.2.0...1.3.0) (2020-06-03)
+
+
+### Features
+
+* add copy & paste for tmux on wsl ([01caef1](https://github.com/st3v3nhunt/dotfiles/commit/01caef159fab82696bbdf9210934f0cd768e66d0))
+* install snyk globally ([7f1694a](https://github.com/st3v3nhunt/dotfiles/commit/7f1694ad4d3a773392fa17af6c850ac8d5829f68))
+
 # [1.2.0](https://github.com/st3v3nhunt/dotfiles/compare/1.1.0...1.2.0) (2020-05-29)
 
 
