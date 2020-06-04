@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/st3v3nhunt/dotfiles/compare/1.3.0...1.4.0) (2020-06-04)
+
+
+### Features
+
+* install docker completion via zsh ([86bd7a7](https://github.com/st3v3nhunt/dotfiles/commit/86bd7a78ed868546508076e95034696af1248449))
+
 # [1.3.0](https://github.com/st3v3nhunt/dotfiles/compare/1.2.0...1.3.0) (2020-06-03)
 
 
