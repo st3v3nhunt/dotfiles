@@ -71,6 +71,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # zsh-syntax-highlighting must be the last plugin to be loaded
 plugins=(
   colorize
+  docker
+  docker-compose
   git
   helm
   kubectl

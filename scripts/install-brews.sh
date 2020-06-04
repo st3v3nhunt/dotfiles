@@ -34,7 +34,6 @@ wget
 # Terminal stuff
 brews+=(
 bash
-bash-completion@2
 htop
 tmux
 )
