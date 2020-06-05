@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+# zmodload zsh/zprof
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -137,8 +138,12 @@ export KEYTIMEOUT=1
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 
+# Azure CLI completion
+if [[ -n "$WSLENV" ]]; then
+  source /home/linuxbrew/.linuxbrew/etc/bash_completion.d/az
+fi
+
 # AWS CLI completion
-# autoload bashcompinit && bashcompinit
 complete -C /usr/local/bin/aws_completer aws
 
 # Enable (and configure) zsh-autosuggestions
@@ -147,3 +152,4 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+# zprof
