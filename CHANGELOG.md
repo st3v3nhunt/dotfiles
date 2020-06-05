@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/st3v3nhunt/dotfiles/compare/1.4.0...1.5.0) (2020-06-05)
+
+
+### Features
+
+* enable Azure CLI autocomplete in zsh ([4e7e25d](https://github.com/st3v3nhunt/dotfiles/commit/4e7e25d8cf658d3d154ee2e551010a9cb9068338))
+
 # [1.4.0](https://github.com/st3v3nhunt/dotfiles/compare/1.3.0...1.4.0) (2020-06-04)
 
 
