@@ -138,8 +138,12 @@ export KEYTIMEOUT=1
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
 
+# Azure CLI completion
+if [[ -n "$WSLENV" ]]; then
+  source /home/linuxbrew/.linuxbrew/etc/bash_completion.d/az
+fi
+
 # AWS CLI completion
-# autoload bashcompinit && bashcompinit
 complete -C /usr/local/bin/aws_completer aws
 
 # Enable (and configure) zsh-autosuggestions
