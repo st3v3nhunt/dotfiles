@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/st3v3nhunt/dotfiles/compare/1.5.0...1.6.0) (2020-06-07)
+
+
+### Features
+
+* add completion for az in zsh on macos ([aaf0154](https://github.com/st3v3nhunt/dotfiles/commit/aaf0154bf0da37a7dbadfbb10873f3323ddc2f7f))
+
 # [1.5.0](https://github.com/st3v3nhunt/dotfiles/compare/1.4.0...1.5.0) (2020-06-05)
 
 
