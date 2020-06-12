@@ -5,14 +5,13 @@
 # set vim aliases based on what is available
 if [[ -x "$(command -v vim.gtk)" ]]; then alias vim='vim.gtk'; fi
 
-PATH=$PATH:$(npm -g bin)
-export PATH
-
 PATH=$PATH:$(go env GOPATH)/bin
 export PATH
 # Set GOPATH
 GOPATH=$(go env GOPATH)
 export GOPATH
 
+# Load nvm on demand to increase shell start-up (https://github.com/lukechilds/zsh-nvm#lazy-loading)
+export NVM_LAZY_LOAD=true
 # Source zsh-nvm
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
