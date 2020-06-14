@@ -1,3 +1,13 @@
+# [1.7.0](https://github.com/st3v3nhunt/dotfiles/compare/1.6.0...1.7.0) (2020-06-14)
+
+
+### Features
+
+* add global config for git-secrets ([95b3c3f](https://github.com/st3v3nhunt/dotfiles/commit/95b3c3fbccc025094e9ac49fa503dc0babaf9ceb))
+* add vim alias for vim.gtk3 ([3b4c50f](https://github.com/st3v3nhunt/dotfiles/commit/3b4c50fc8651d8da3305abba6b56bb74c49cf0d4))
+* ensure wsl.conf is copied into /etc/ ([fb08ee6](https://github.com/st3v3nhunt/dotfiles/commit/fb08ee69689cbee3429ff9b013615ecb20d0ec43))
+* lazy load nvm ([0385a41](https://github.com/st3v3nhunt/dotfiles/commit/0385a414eefc4a23cd3e25dbb13f58e3f1735812))
+
 # [1.6.0](https://github.com/st3v3nhunt/dotfiles/compare/1.5.0...1.6.0) (2020-06-07)
 
 
