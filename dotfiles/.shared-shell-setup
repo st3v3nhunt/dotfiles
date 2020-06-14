@@ -4,6 +4,7 @@
 
 # set vim aliases based on what is available
 if [[ -x "$(command -v vim.gtk)" ]]; then alias vim='vim.gtk'; fi
+if [[ -x "$(command -v vim.gtk3)" ]]; then alias vim='vim.gtk3'; fi
 
 PATH=$PATH:$(go env GOPATH)/bin
 export PATH
