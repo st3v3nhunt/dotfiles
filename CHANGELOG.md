@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/st3v3nhunt/dotfiles/compare/1.7.0...1.8.0) (2020-06-15)
+
+
+### Features
+
+* add GCloud ([87c54be](https://github.com/st3v3nhunt/dotfiles/commit/87c54bed35cd10be49c68b61d959d0de1e6e6434))
+* automate gcloud installation ([71d7439](https://github.com/st3v3nhunt/dotfiles/commit/71d743947000a881c853e4c05303f8d80a5bfc8d))
+
 # [1.7.0](https://github.com/st3v3nhunt/dotfiles/compare/1.6.0...1.7.0) (2020-06-14)
 
 
