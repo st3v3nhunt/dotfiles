@@ -16,6 +16,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 ./scripts/install-gems.sh
+./scripts/install-gcloud.sh
 ./scripts/install-nvm.sh
 ./scripts/install-npms.sh
 ./scripts/install-pips.sh
