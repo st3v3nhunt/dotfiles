@@ -1,3 +1,11 @@
+# [1.9.0](https://github.com/st3v3nhunt/dotfiles/compare/1.8.0...1.9.0) (2020-06-15)
+
+
+### Features
+
+* do not run CI workflow when release workflow runs ([edf30eb](https://github.com/st3v3nhunt/dotfiles/commit/edf30eb5a875cdfde0c6bfb4cf6af2c70b3a18c4))
+* use PAT for protected branch ([1b0df7f](https://github.com/st3v3nhunt/dotfiles/commit/1b0df7fcd3fbb8262e911c3950e63e5f390c5f5f))
+
 # [1.8.0](https://github.com/st3v3nhunt/dotfiles/compare/1.7.0...1.8.0) (2020-06-15)
 
 
