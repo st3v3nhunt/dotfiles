@@ -18,7 +18,9 @@
                 "hidden": false,
                 "name": "Ubuntu-18.04",
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory" : "//wsl$/Ubuntu-18.04/home/shunt"
+                "startingDirectory" : "//wsl$/Ubuntu-18.04/home/shunt",
+                "suppressApplicationTitle": true,
+                "tabTitle": "Ubuntu-18.04"
             },
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -66,14 +68,19 @@
                 "guid": "{6f9994f0-4403-5e85-9cce-98e5da3839bb}",
                 "hidden": false,
                 "name": "Ubuntu-16.04",
-                "source": "Windows.Terminal.Wsl"
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory" : "//wsl$/Ubuntu-16.04/home/shunt",
+                "suppressApplicationTitle": true,
+                "tabTitle": "Ubuntu-16.04"
             },
             {
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
                 "name": "Ubuntu-20.04",
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory" : "//wsl$/Ubuntu-20.04/home/shunt"
+                "startingDirectory" : "//wsl$/Ubuntu-20.04/home/shunt",
+                "suppressApplicationTitle": true,
+                "tabTitle": "Ubuntu-20.04"
             }
         ]
     },
