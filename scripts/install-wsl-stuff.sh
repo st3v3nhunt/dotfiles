@@ -5,7 +5,7 @@ sudo apt-get install build-essential curl file git zsh vim.gtk
 sudo apt-get install apt-transport-https
 sudo apt-get install dotnet-sdk-3.1
 
-REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
 
 echo "Copying 'wsl.conf' into /etc/. Password will be required"
 sudo ln -nfsv "$REPO_DIR/wsl/wsl.conf" /etc/
