@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/st3v3nhunt/dotfiles/compare/1.11.0...1.12.0) (2020-06-16)
+
+
+### Features
+
+* add new words to Vim dict ([b547404](https://github.com/st3v3nhunt/dotfiles/commit/b547404ba76e9664ffa02fbf3e5a0b880a7644ea))
+
 # [1.11.0](https://github.com/st3v3nhunt/dotfiles/compare/1.10.0...1.11.0) (2020-06-16)
 
 
