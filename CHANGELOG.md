@@ -1,3 +1,13 @@
+# [1.13.0](https://github.com/st3v3nhunt/dotfiles/compare/1.12.0...1.13.0) (2020-06-16)
+
+
+### Features
+
+* add more words ([96eee68](https://github.com/st3v3nhunt/dotfiles/commit/96eee68347467a38fa33721295ef068c670c4662))
+* match font in Alacritty with Terminal ([a7609dd](https://github.com/st3v3nhunt/dotfiles/commit/a7609dd713241061caa2ec82b11f6f8089bad497))
+* set terminal tab title to name of OS ([e62096b](https://github.com/st3v3nhunt/dotfiles/commit/e62096ba4655c05c7f8480712cbf7aba00e9648a))
+* use env var populated in Alacritty ([975dd53](https://github.com/st3v3nhunt/dotfiles/commit/975dd53791fdc74bc55a73a1c4dd31b03e3258d4))
+
 # [1.12.0](https://github.com/st3v3nhunt/dotfiles/compare/1.11.0...1.12.0) (2020-06-16)
 
 
