@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/st3v3nhunt/dotfiles/compare/1.10.0...1.11.0) (2020-06-16)
+
+
+### Features
+
+* fix path to REPO_DIR ([db7541d](https://github.com/st3v3nhunt/dotfiles/commit/db7541d515a909b8a4d7210da0834dbb331cece6))
+
 # [1.10.0](https://github.com/st3v3nhunt/dotfiles/compare/1.9.0...1.10.0) (2020-06-16)
 
 
