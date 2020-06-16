@@ -1,6 +1,6 @@
 {
   "name": "dotfiles",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "st3v3nhunt's dotfiles",
   "main": "index.js",
   "directories": {
