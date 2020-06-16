@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/st3v3nhunt/dotfiles/compare/1.9.0...1.10.0) (2020-06-16)
+
+
+### Features
+
+* install yarn. combine node related installs ([8090bee](https://github.com/st3v3nhunt/dotfiles/commit/8090bee60ae29f8cbef85def47ca3dcc249fb590))
+
 # [1.9.0](https://github.com/st3v3nhunt/dotfiles/compare/1.8.0...1.9.0) (2020-06-15)
 
 
