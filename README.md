@@ -2,23 +2,31 @@
 
 [![Build Status](https://github.com/st3v3nhunt/dotfiles/workflows/CI/badge.svg)](https://github.com/st3v3nhunt/dotfiles/actions?workflow=CI)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Known Vulnerabilities](https://snyk.io/test/github/DEFRA/ffc-demo-web/badge.svg)](https://snyk.io/test/github/DEFRA/ffc-demo-web)
 
 > Dotfiles repo for macOS and Linux WSL distros
 
-Clone the repo somewhere on the local disk and run `./install.sh`. This will:
+Clone the repo somewhere on the local disk and run `./install.sh`. This will do
+most of the following but some installation steps are OS dependent. The details
+can be seen in [install.sh](install.sh).:
 
 * Symlink all dotfiles into the user's home directory
+* Install [Oh My Zsh](https://ohmyz.sh/) and some plugins
 * Install [Homebrew](https://brew.sh/) and some brews
-* Install [Caskroom](https://caskroom.github.io/) and some casks (applications, mostly)
-* Install [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements)
-* Install any useful [Gems](https://rubygems.org)
-* Install any useful [Pips](https://pypi.org/)
-* Install (globally) any useful [npm](https://www.npmjs.com/)
-* Install [NVM](https://github.com/nvm-sh/nvm)
-* Install and setup [Vim](https://www.vim.org/) related stuff
+* Install [Caskroom](https://caskroom.github.io/) and some casks (GUI
+  applications, mostly)
+* Install some [Gems](https://rubygems.org)
+* Install some [Pips](https://pypi.org/)
+* Install some [Node.js](https://nodejs.org/en/) stuff including
+  [nvm](https://github.com/nvm-sh/nvm) and globally installed npm packages
+  including [Yarn](https://yarnpkg.com/)
 * Install and setup [tmux](https://github.com/tmux/tmux) related stuff
+* Install and setup [Vim](https://www.vim.org/) related stuff
+* Install .Net tooling
+* Install [Powerline fonts](https://github.com/powerline/fonts)
 
-During the install of Homebrew you will be prompted for your password.
+At several stages during the running of the installation scripts your password
+will be prompted for.
 
 ## .gitconfig.local
 
@@ -72,7 +80,7 @@ for `Load preferences from a custom folder or URL:`.
 
 ### Powerline Fonts
 
-In order to get the icons working for the Powerline theme for OhMyZsh follow
+In order to get the icons working for the Powerline theme for Oh My Zsh follow
 these
 [instructions](https://github.com/romkatv/powerlevel10k#manual-font-installation)
 which involves downloading and installing the MesloLGS font files.
@@ -116,18 +124,6 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
   `sort -f -c ./vim/en.utf-8.add ./vim/en-utf-8.add`
 * If seeing errors like `nvm is not compatible with the npm config "prefix" option`
   * Try running `nvm unalias default`
-
-### Useful links
-
-* [nicknisi/dotfiles](https://github.com/nicknisi/dotfiles)
-* [Boost vim productivity (blog)](https://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/)
-* [vim + tmux - OMG!Code (video)](https://www.youtube.com/watch?v=5r6yzFEXajQ)
-* [Seamlessly Navigate Vim and tmux Splits (blog)](https://robots.thoughtbot.com/seamlessly-navigate-vim-and-tmux-splits)
-* [christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
-* [A tmux Crash Course (blog)](https://robots.thoughtbot.com/a-tmux-crash-course)
-* [Making the clipboard work between iTerm2, tmux, vim and OS X. (blog)](https://evertpot.com/osx-tmux-vim-copy-paste-clipboard/)
-* [Basic tmux Tutorial - Windows, Panes, and Sessions over SSH (video)](https://www.youtube.com/watch?v=BHhA_ZKjyxo)
-* [tmux Quick Start (video)](https://www.youtube.com/watch?v=wKEGA8oEWXw)
 
 ## Architecture Decision Records
 
