@@ -1,3 +1,12 @@
+# [1.14.0](https://github.com/st3v3nhunt/dotfiles/compare/1.13.0...1.14.0) (2020-06-16)
+
+
+### Features
+
+* add more words ([18cb7af](https://github.com/st3v3nhunt/dotfiles/commit/18cb7afe650fa2ddfef98dfefe59a9f02b56280e))
+* add Snyk badge ([9a6c36a](https://github.com/st3v3nhunt/dotfiles/commit/9a6c36a455b4b7fe3f591d9fdb4dd674f89a1d71))
+* install Yarn via npm as per Yarn 2 docs ([276424a](https://github.com/st3v3nhunt/dotfiles/commit/276424ad1b5b3307c8a72130b081f0d324915d2d))
+
 # [1.13.0](https://github.com/st3v3nhunt/dotfiles/compare/1.12.0...1.13.0) (2020-06-16)
 
 
