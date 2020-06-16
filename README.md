@@ -6,20 +6,27 @@
 
 > Dotfiles repo for macOS and Linux WSL distros
 
-Clone the repo somewhere on the local disk and run `./install.sh`. This will:
+Clone the repo somewhere on the local disk and run `./install.sh`. This will do
+most of the following but some installation steps are OS dependent. The details
+can be seen in [install.sh](install.sh).:
 
 * Symlink all dotfiles into the user's home directory
+* Install [Oh My Zsh](https://ohmyz.sh/) and some plugins
 * Install [Homebrew](https://brew.sh/) and some brews
-* Install [Caskroom](https://caskroom.github.io/) and some casks (applications, mostly)
-* Install [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements)
-* Install any useful [Gems](https://rubygems.org)
-* Install any useful [Pips](https://pypi.org/)
-* Install (globally) any useful [npm](https://www.npmjs.com/)
-* Install [NVM](https://github.com/nvm-sh/nvm)
-* Install and setup [Vim](https://www.vim.org/) related stuff
+* Install [Caskroom](https://caskroom.github.io/) and some casks (GUI
+  applications, mostly)
+* Install some [Gems](https://rubygems.org)
+* Install some [Pips](https://pypi.org/)
+* Install some [Node.js](https://nodejs.org/en/) stuff including
+  [nvm](https://github.com/nvm-sh/nvm) and globally installed npm packages
+  including [Yarn](https://yarnpkg.com/)
 * Install and setup [tmux](https://github.com/tmux/tmux) related stuff
+* Install and setup [Vim](https://www.vim.org/) related stuff
+* Install .Net tooling
+* Install [Powerline fonts](https://github.com/powerline/fonts)
 
-During the install of Homebrew you will be prompted for your password.
+At several stages during the running of the installation scripts your password
+will be prompted for.
 
 ## .gitconfig.local
 
@@ -73,7 +80,7 @@ for `Load preferences from a custom folder or URL:`.
 
 ### Powerline Fonts
 
-In order to get the icons working for the Powerline theme for OhMyZsh follow
+In order to get the icons working for the Powerline theme for Oh My Zsh follow
 these
 [instructions](https://github.com/romkatv/powerlevel10k#manual-font-installation)
 which involves downloading and installing the MesloLGS font files.
