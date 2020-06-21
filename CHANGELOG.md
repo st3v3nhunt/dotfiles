@@ -1,3 +1,15 @@
+# [1.17.0](https://github.com/st3v3nhunt/dotfiles/compare/1.16.0...1.17.0) (2020-06-21)
+
+
+### Bug Fixes
+
+* vim's disappearing cursor is fixed in a later version ([ddea74b](https://github.com/st3v3nhunt/dotfiles/commit/ddea74b2dda4fd45a654868443d53e0c775e0fe4))
+
+
+### Features
+
+* setup Deno autocomplete ([de8e8d8](https://github.com/st3v3nhunt/dotfiles/commit/de8e8d8207ae87c06a0f7dfc87a212919a146543))
+
 # [1.16.0](https://github.com/st3v3nhunt/dotfiles/compare/1.15.0...1.16.0) (2020-06-21)
 
 
