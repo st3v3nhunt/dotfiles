@@ -34,3 +34,10 @@ set -o vi
 
 complete -C /usr/local/bin/vault vault
 complete -C /usr/local/bin/aws_completer aws
+
+# Deno autocomplete
+if [[ -n "$WSL_DISTRO_NAME" ]]; then
+  source /home/linuxbrew/.linuxbrew/etc/bash_completion.d/deno.bash
+else
+  source /usr/local/etc/bash_completion.d/deno.bash
+fi
