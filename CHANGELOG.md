@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/st3v3nhunt/dotfiles/compare/1.15.0...1.16.0) (2020-06-21)
+
+
+### Features
+
+* add Deno to PATH ([3e1fdea](https://github.com/st3v3nhunt/dotfiles/commit/3e1fdea07146903040857e4715e51ff8d3042a9c))
+
 # [1.15.0](https://github.com/st3v3nhunt/dotfiles/compare/1.14.0...1.15.0) (2020-06-21)
 
 
