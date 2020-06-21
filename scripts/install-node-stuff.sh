@@ -7,3 +7,6 @@ echo "Installing global npm packages (serverless, snyk, yarn)..."
 npm install -g serverless
 npm install -g snyk
 npm install -g yarn
+
+echo "Installing deno..."
+curl -fsSL https://deno.land/x/install/install.sh | sh
