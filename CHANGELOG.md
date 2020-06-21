@@ -1,3 +1,16 @@
+# [1.15.0](https://github.com/st3v3nhunt/dotfiles/compare/1.14.0...1.15.0) (2020-06-21)
+
+
+### Bug Fixes
+
+* fix sort options, improve grammar ([5a4ba13](https://github.com/st3v3nhunt/dotfiles/commit/5a4ba13f147c472d316ba8d880bd15241189f9a3))
+* sort vim spellings ([58e1dd2](https://github.com/st3v3nhunt/dotfiles/commit/58e1dd26b016afec481973f5d410c4e565a9d0e3))
+
+
+### Features
+
+* install Deno ([eca563b](https://github.com/st3v3nhunt/dotfiles/commit/eca563bf535585806f463a75f777a653c0b311c1))
+
 # [1.14.0](https://github.com/st3v3nhunt/dotfiles/compare/1.13.0...1.14.0) (2020-06-16)
 
 
