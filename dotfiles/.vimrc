@@ -10,6 +10,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'             " Vundle should manage Vundle
 " generally useful plugins
+Plugin 'airblade/vim-gitgutter'           " Git into in gutter
 Plugin 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
 Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
 Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
@@ -30,13 +31,13 @@ Plugin 'fatih/vim-go'                     " Go development
 Plugin 'google/yapf'                      " Python formatter
 Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
 " Plugin 'OmniSharp/omnisharp-vim'          " Provides IDE like abilities for C#
-" Plugin 'pprovost/vim-ps1'                 " Windows PowerShell support
-Plugin 'ternjs/tern_for_vim'              " JS autocompletion
 Plugin 'Chiel92/vim-autoformat'           " Generic code formatter
-Plugin 'SirVer/ultisnips'                 " Snippet engine
 Plugin 'honza/vim-snippets'               " Snippets
 Plugin 'hashivim/vim-terraform'           " Terraform formatter and highlighter
 Plugin 'godlygeek/tabular'                " Tabularisation
+Plugin 'leafgarland/typescript-vim'       " TS syntax
+Plugin 'pangloss/vim-javascript'          " JS syntax
+Plugin 'SirVer/ultisnips'                 " Snippet engine
 
 " All plugins must be added before this line
 call vundle#end()             " required
@@ -120,8 +121,14 @@ let g:ale_sign_warning='∆∆'
 let g:airline#extensions#ale#enabled=1       " error information in the status bar
 let g:ale_lint_on_save=1
 let g:ale_fix_on_save=1
-let g:ale_linters={'javascript': ['standard']}
-let g:ale_fixers={'javascript': ['standard']}
+let g:ale_linters={
+\   'javascript': ['standard'],
+\}
+let g:ale_fixers={
+\   'javascript': ['standard'],
+\}
+let g:ale_completion_enabled = 1
+let g:ale_completion_tsserver_autoimport = 1
 
 " vim-go configuration
 let g:go_fmt_command='goimports'             " format go imports on save
