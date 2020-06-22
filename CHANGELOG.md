@@ -1,3 +1,13 @@
+# [1.19.0](https://github.com/st3v3nhunt/dotfiles/compare/1.18.0...1.19.0) (2020-06-22)
+
+
+### Features
+
+* add GitGutter Vim plugin ([37344ed](https://github.com/st3v3nhunt/dotfiles/commit/37344ed10e3a01bccc827772703c7b34b877657b))
+* enable auto imports for TS ([0db9fbe](https://github.com/st3v3nhunt/dotfiles/commit/0db9fbe2a947b7a10cfcff254c66130e2424c815))
+* replace tern with TSServer ([8d5bee8](https://github.com/st3v3nhunt/dotfiles/commit/8d5bee8cc00f6165f8ad109f72bc6fada95fa03a))
+* vim plugins for TS and JS file types ([41f34e7](https://github.com/st3v3nhunt/dotfiles/commit/41f34e787bfb6624a12a6429ccd876db610a921b))
+
 # [1.18.0](https://github.com/st3v3nhunt/dotfiles/compare/1.17.0...1.18.0) (2020-06-22)
 
 
