@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/st3v3nhunt/dotfiles/compare/1.17.0...1.18.0) (2020-06-22)
+
+
+### Features
+
+* brew install deno on macOS ([e44dbc9](https://github.com/st3v3nhunt/dotfiles/commit/e44dbc985d3e7608832ed89bd078416cc5afd694))
+
 # [1.17.0](https://github.com/st3v3nhunt/dotfiles/compare/1.16.0...1.17.0) (2020-06-21)
 
 
