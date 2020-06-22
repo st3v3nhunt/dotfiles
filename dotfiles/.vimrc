@@ -10,6 +10,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'             " Vundle should manage Vundle
 " generally useful plugins
+Plugin 'airblade/vim-gitgutter'           " Git into in gutter
 Plugin 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
 Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
 Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
