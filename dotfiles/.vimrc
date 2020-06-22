@@ -31,7 +31,8 @@ Plugin 'google/yapf'                      " Python formatter
 Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
 " Plugin 'OmniSharp/omnisharp-vim'          " Provides IDE like abilities for C#
 " Plugin 'pprovost/vim-ps1'                 " Windows PowerShell support
-Plugin 'ternjs/tern_for_vim'              " JS autocompletion
+Plugin 'pangloss/vim-javascript'          " JS snytax
+Plugin 'leafgarland/typescript-vim'       " TS syntax
 Plugin 'Chiel92/vim-autoformat'           " Generic code formatter
 Plugin 'SirVer/ultisnips'                 " Snippet engine
 Plugin 'honza/vim-snippets'               " Snippets
