@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/st3v3nhunt/dotfiles/compare/1.19.0...1.20.0) (2020-06-22)
+
+
+### Features
+
+* add script to clone work repos ([8316dfd](https://github.com/st3v3nhunt/dotfiles/commit/8316dfd99755a51a1c2c21904c79e60b92a14f60))
+
 # [1.19.0](https://github.com/st3v3nhunt/dotfiles/compare/1.18.0...1.19.0) (2020-06-22)
 
 
