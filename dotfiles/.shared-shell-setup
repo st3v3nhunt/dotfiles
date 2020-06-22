@@ -17,6 +17,8 @@ export NVM_LAZY_LOAD=true
 # Source zsh-nvm
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
-# Set Deno options
-export DENO_INSTALL="/home/shunt/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
+# Add Deno to PATH
+if [[ "$OSTYPE" != "darwin*" ]]; then
+  export DENO_INSTALL="/home/shunt/.deno"
+  export PATH="$DENO_INSTALL/bin:$PATH"
+fi

@@ -5,6 +5,25 @@ sudo apt-get install build-essential curl file git zsh vim.gtk
 sudo apt-get install apt-transport-https
 sudo apt-get install dotnet-sdk-3.1
 
+echo "Installing Deno..."
+curl -fsSL https://deno.land/x/install/install.sh | sh
+
+echo "Installing Deno autocompletion..."
+if [[ -n "$ZSH" ]]; then
+  # shellcheck disable=1090
+  source ~/.zshrc
+  mkdir ~/.oh-my-zsh/custom/plugins/deno
+  deno completions zsh > ~/.oh-my-zsh/custom/plugins/deno/_deno
+  # shellcheck disable=1090
+  source ~/.zshrc
+else
+  # shellcheck disable=1090
+  source ~/.bashrc
+    deno completions bash > /home/linuxbrew/.linuxbrew/etc/bash_completion.d/deno.bash
+  # shellcheck disable=1090
+  source ~/.bashrc
+fi
+
 REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
 
 echo "Copying 'wsl.conf' into /etc/. Password will be required"

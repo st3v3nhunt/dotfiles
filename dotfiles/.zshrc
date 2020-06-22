@@ -112,9 +112,9 @@ export PATH="$PATH:~/.dotnet/tools"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # PERSONAL SETUP
-. ~/.aliases
-. ~/.functions
-. ~/.shared-shell-setup
+source ~/.aliases
+source ~/.functions
+source ~/.shared-shell-setup
 
 #   -i   case-insensitive search unless search string contains uppercase letters
 #   -R   color
@@ -154,13 +154,13 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # tabtab source for packages
 # uninstall by removing these lines
-[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && source ~/.config/tabtab/__tabtab.zsh || true
 # zprof
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/shunt/google-cloud-sdk/path.zsh.inc' ]; then . '/home/shunt/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/home/shunt/google-cloud-sdk/path.zsh.inc' ]; then source '/home/shunt/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/shunt/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/shunt/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/home/shunt/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/shunt/google-cloud-sdk/completion.zsh.inc'; fi
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
