@@ -1,3 +1,16 @@
+# [1.22.0](https://github.com/st3v3nhunt/dotfiles/compare/1.21.0...1.22.0) (2020-06-23)
+
+
+### Bug Fixes
+
+* general tidy up ([baa1913](https://github.com/st3v3nhunt/dotfiles/commit/baa1913d0dd12c930839251a97e8f74b2168ee30))
+
+
+### Features
+
+* expand snippets with accessible key combo ([7b9f5f5](https://github.com/st3v3nhunt/dotfiles/commit/7b9f5f544f619ecfb381aeb25c45fffdb5e2bb76))
+* include dotfiles insearch by default ([0f7e716](https://github.com/st3v3nhunt/dotfiles/commit/0f7e71642b164fba2d156f4d3e10098a1e2bedbe))
+
 # [1.21.0](https://github.com/st3v3nhunt/dotfiles/compare/1.20.0...1.21.0) (2020-06-23)
 
 
