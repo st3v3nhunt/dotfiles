@@ -19,6 +19,7 @@ groovy
 hugo
 imagemagick
 jmeter
+jq
 llvm
 minikube
 pipenv
@@ -29,6 +30,7 @@ tfenv
 vault
 watch
 wget
+yq
 )
 
 # Terminal stuff
@@ -44,11 +46,6 @@ git
 git-secrets
 github/gh/gh
 hub
-)
-
-# JSON wrangling
-brews+=(
-jq
 )
 
 # THE editor?!
