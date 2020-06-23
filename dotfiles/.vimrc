@@ -102,7 +102,7 @@ let g:ctrlp_extensions = ['tag']
 " Ack - use the_silver_searcher if avaiable
 if executable('ag')
   " Use ag in place of ack
-  let g:ackprg = 'ag --vimgrep'
+  let g:ackprg = 'ag --vimgrep --hidden'
 endif
 
 " Bind K to search for word under cursor
