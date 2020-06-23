@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/st3v3nhunt/dotfiles/compare/1.23.0...1.24.0) (2020-06-23)
+
+
+### Features
+
+* use prettier for typescript linting ([2b90222](https://github.com/st3v3nhunt/dotfiles/commit/2b902222c3926942de4f32ab5ed256018039571b))
+
 # [1.23.0](https://github.com/st3v3nhunt/dotfiles/compare/1.22.0...1.23.0) (2020-06-23)
 
 
