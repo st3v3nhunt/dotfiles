@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/st3v3nhunt/dotfiles/compare/1.22.0...1.23.0) (2020-06-23)
+
+
+### Features
+
+* install deno autocomplete for all OSes ([0100e3f](https://github.com/st3v3nhunt/dotfiles/commit/0100e3f31fa2f68c27c30bf8ed3ea4c339f0bf01))
+
 # [1.22.0](https://github.com/st3v3nhunt/dotfiles/compare/1.21.0...1.22.0) (2020-06-23)
 
 
