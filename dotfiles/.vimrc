@@ -82,11 +82,11 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-" NERDTree - Open automatically when starting
+" NERDTree settings
 let NERDTreeShowHidden=1
 let g:NERDTreeMapOpenSplit='h'
 let g:NERDTreeMapOpenVSplit='v'
-map <C-n> :NERDTreeToggle<CR>   " open NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
 " Better whitespace
 let g:better_whitespace_enabled=1
@@ -121,6 +121,7 @@ let g:ale_sign_warning='∆∆'
 let g:airline#extensions#ale#enabled=1       " error information in the status bar
 let g:ale_lint_on_save=1
 let g:ale_fix_on_save=1
+" Set standard as the only JS linter and fixer
 let g:ale_linters={
 \   'javascript': ['standard'],
 \}
@@ -145,12 +146,6 @@ set undodir=~/.vim/tmp/undo//
 
 " ultisnips configuration
 let g:UltiSnipsExpandTrigger="<c-e>"
-" Easier split navigation
-" This isn't required when 'christoomey/vim-tmux-navigator' is installed
-" nnoremap <C-J> <C-W><C-J>
-" nnoremap <C-K> <C-W><C-K>
-" nnoremap <C-L> <C-W><C-L>
-" nnoremap <C-H> <C-W><C-H>
 
 " Use oo and OO for entering new lines without going into insert mode
 nmap oo o<Esc>k
