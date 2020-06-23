@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/st3v3nhunt/dotfiles/compare/1.20.0...1.21.0) (2020-06-23)
+
+
+### Features
+
+* install yq ([3367f52](https://github.com/st3v3nhunt/dotfiles/commit/3367f52723b1f48ab5275cfbf7a963caf72deaa3))
+
 # [1.20.0](https://github.com/st3v3nhunt/dotfiles/compare/1.19.0...1.20.0) (2020-06-22)
 
 
