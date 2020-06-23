@@ -124,15 +124,17 @@ let g:ale_fix_on_save=1
 " Set standard as the only JS linter and fixer
 let g:ale_linters={
 \   'javascript': ['standard'],
+\   'typescript': ['prettier'],
 \}
 let g:ale_fixers={
 \   'javascript': ['standard'],
+\   'typescript': ['prettier'],
 \}
 let g:ale_completion_enabled = 1
 let g:ale_completion_tsserver_autoimport = 1
 
 " vim-go configuration
-let g:go_fmt_command='goimports'             " format go imports on save
+let g:go_fmt_command='goimports'
 let g:go_highlight_types=1
 let g:go_highlight_fields=1
 let g:go_highlight_functions=1
