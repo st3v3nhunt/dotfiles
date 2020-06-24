@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/st3v3nhunt/dotfiles/compare/1.26.0...1.27.0) (2020-06-24)
+
+
+### Features
+
+* use monokai soda for Windows Terminal ([4247921](https://github.com/st3v3nhunt/dotfiles/commit/4247921da3774bcc207b8bc3d076508a1364008c))
+
 # [1.26.0](https://github.com/st3v3nhunt/dotfiles/compare/1.25.0...1.26.0) (2020-06-24)
 
 
