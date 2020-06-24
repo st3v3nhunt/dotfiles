@@ -1,7 +1,11 @@
 API
+AWS
 Caskroom
+CloudFormation
 config
 DEFRA
+Deno
+dir
 dotfiles
 Elasticsearch
 env
@@ -14,7 +18,7 @@ Homebrew
 Hotjar
 iTerm2
 js
-JSON
+json
 Karabiner
 keychain
 kubernetes
@@ -25,10 +29,14 @@ NHSUK
 npm
 nvm
 OMG
+POC
 Powerline
 SemVer
-SHA
+serverless
+sha
 snyk
+SonarCloud
+SonarQube
 submodules
 tmux
 Webtrends
@@ -36,4 +44,3 @@ WSL
 YCM
 YouCompleteMe
 Zsh
-Deno
