@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/st3v3nhunt/dotfiles/compare/1.24.0...1.25.0) (2020-06-24)
+
+
+### Features
+
+* use monokai theme for Vim and Windows Terminal ([84f1c34](https://github.com/st3v3nhunt/dotfiles/commit/84f1c34334a94f5ea0933665f387fe9ca9e8091a))
+
 # [1.24.0](https://github.com/st3v3nhunt/dotfiles/compare/1.23.0...1.24.0) (2020-06-23)
 
 
