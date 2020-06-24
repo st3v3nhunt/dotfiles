@@ -1,6 +1,6 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
     "launchMode": "maximized",
     "profiles":
     {
@@ -13,6 +13,15 @@
         },
         "list":
         [
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory" : "//wsl$/Ubuntu-20.04/home/shunt",
+                "suppressApplicationTitle": true,
+                "tabTitle": "Ubuntu-20.04"
+            },
             {
                 "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
                 "hidden": false,
@@ -72,15 +81,6 @@
                 "startingDirectory" : "//wsl$/Ubuntu-16.04/home/shunt",
                 "suppressApplicationTitle": true,
                 "tabTitle": "Ubuntu-16.04"
-            },
-            {
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "hidden": false,
-                "name": "Ubuntu-20.04",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory" : "//wsl$/Ubuntu-20.04/home/shunt",
-                "suppressApplicationTitle": true,
-                "tabTitle": "Ubuntu-20.04"
             }
         ]
     },
