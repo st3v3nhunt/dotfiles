@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/st3v3nhunt/dotfiles/compare/1.25.0...1.26.0) (2020-06-24)
+
+
+### Features
+
+* use Ubuntu-20.04 as default in Windows Terminal ([650a156](https://github.com/st3v3nhunt/dotfiles/commit/650a15697b4aceb27af7d3f60ca37d1603852dce))
+
 # [1.25.0](https://github.com/st3v3nhunt/dotfiles/compare/1.24.0...1.25.0) (2020-06-24)
 
 
