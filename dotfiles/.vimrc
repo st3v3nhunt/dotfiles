@@ -12,12 +12,12 @@ Plugin 'VundleVim/Vundle.vim'             " Vundle should manage Vundle
 " generally useful plugins
 Plugin 'airblade/vim-gitgutter'           " Git into in gutter
 Plugin 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
+Plugin 'crusoexia/vim-monokai'            " Theme
 Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
 Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
 Plugin 'mileszs/ack.vim'                  " File searching
 Plugin 'ntpeters/vim-better-whitespace'   " Better whitespace
 Plugin 'scrooloose/nerdtree'              " File explorer
-Plugin 'tomasr/molokai'                   " Theme
 Plugin 'tpope/vim-fugitive'               " Git wrapper
 Plugin 'tpope/vim-commentary'             " Comment out lines
 Plugin 'tpope/vim-repeat'                 " Repeat plugin commands via .
@@ -44,7 +44,7 @@ call vundle#end()             " required
 
 filetype plugin indent on     " required
 syntax on                     " syntax highlighting
-colorscheme molokai           " theme
+colorscheme monokai           " theme
 
 set autoindent                " auto indent
 set clipboard=unnamed         " allow copy between instances
