@@ -9,10 +9,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'             " Vundle should manage Vundle
+" Themes
+Plugin 'crusoexia/vim-monokai'
 " generally useful plugins
 Plugin 'airblade/vim-gitgutter'           " Git into in gutter
 Plugin 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
-Plugin 'crusoexia/vim-monokai'            " Theme
 Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
 Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
 Plugin 'mileszs/ack.vim'                  " File searching
@@ -44,7 +45,7 @@ call vundle#end()             " required
 
 filetype plugin indent on     " required
 syntax on                     " syntax highlighting
-colorscheme monokai           " theme
+colorscheme monokai
 
 set autoindent                " auto indent
 set clipboard=unnamed         " allow copy between instances
