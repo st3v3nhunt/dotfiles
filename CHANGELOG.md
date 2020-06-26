@@ -1,3 +1,13 @@
+# [1.29.0](https://github.com/st3v3nhunt/dotfiles/compare/1.28.0...1.29.0) (2020-06-26)
+
+
+### Features
+
+* do not automatically search hidden files ([1009b2e](https://github.com/st3v3nhunt/dotfiles/commit/1009b2ee381a4edac43ed7768e6666b80a69dfd5))
+* link windows files from within WSL ([47b6b44](https://github.com/st3v3nhunt/dotfiles/commit/47b6b44a98407e681e34785f594b3c3ed06e4c99))
+* more spellings ([5f3d173](https://github.com/st3v3nhunt/dotfiles/commit/5f3d17380646adeeee2db727c438098b9b6801e1))
+* more spellings ([3a9ee2d](https://github.com/st3v3nhunt/dotfiles/commit/3a9ee2d60d495957ef8bffabc6b54689b54df176))
+
 # [1.28.0](https://github.com/st3v3nhunt/dotfiles/compare/1.27.0...1.28.0) (2020-06-24)
 
 
