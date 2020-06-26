@@ -3,7 +3,7 @@ AWS
 Caskroom
 CloudFormation
 config
-DEFRA
+defra
 Deno
 dir
 dotfiles
@@ -17,6 +17,7 @@ GitLab
 Homebrew
 Hotjar
 iTerm2
+Jenkinsfile
 js
 json
 Karabiner
