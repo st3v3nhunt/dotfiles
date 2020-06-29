@@ -24,6 +24,7 @@ can be seen in [install.sh](install.sh).:
 * Install and setup [Vim](https://www.vim.org/) related stuff
 * Install .Net tooling
 * Install [Powerline fonts](https://github.com/powerline/fonts)
+* Install [Rust](https://www.rust-lang.org/)
 
 At several stages during the running of the installation scripts your password
 will be prompted for.
@@ -40,26 +41,40 @@ config as follows. For macOS -
 and for WSL -
 `git config --file ~/.gitconfig.local credential.helper "/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"`.
 
-## WSL/Windows stuff
+## WSL/Windows
 
 [Windows Terminal](https://github.com/microsoft/terminal/blob/master/doc/user-docs/index.md)
-is used. Settings are available in [WSL/profiles.json](WSL/profiles.json). The
-file will need to be manually copied over to
-`C:\Users\st3v3\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`.
+is used, settings are available in [WSL/profiles.json](WSL/profiles.json). See
+[install-wsl-stuff](./scripts/install-wsl-stuff.sh) for details.
 
-## Installing Docker for Mac
+## macOS
+
+### Manual steps
+
+* Set Resolution of display (System Preferences -> Displays -> Display)
+
+### iTerm2 preferences
+
+iTerm2 preferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within
+iTerm2 this setting will need to be entered before these will be used.
+Go to `Preferences->General` and enter `~/code/dotfiles/plists` into the option
+for `Load preferences from a custom folder or URL:`.
+
+### Installing Docker for Mac
 
 At the time of writing [Docker for Mac](https://www.docker.com/docker-mac) is
 not available via Homebrew. It can be downloaded from the
 [Docker Store](https://store.docker.com/editions/community/docker-ce-desktop-mac).
 
-## Go language support in Vim
+## Language specifics
 
-Achieved via [vim-go](https://github.com/fatih/vim-go).
+### Go language support in Vim
+
+Install [vim-go](https://github.com/fatih/vim-go).
 The plugin will be installed when running `./install-vim-stuff`. Once the
 plugin is installed `:GoInstallBinaries` needs to be run from within Vim.
 
-## C# IDE like abilities
+### C# IDE like abilities
 
 Install OmniSharp as per the
 [instructions](https://www.omnisharp.net/#portfolioModal-vim). Start by
@@ -69,14 +84,7 @@ into `~/`. This should result in a path to the executable being
 `~/omnisharp.http-osx/omnisharp/OmniSharp.exe` (this path is specified in
 [dotfiles/.vimrc](dotfiles/.vimrc).
 
-## iTerm2
-
-### Preferences
-
-iTerm2 preferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within
-iTerm2 this setting will need to be entered before these will be used.
-Go to `Preferences->General` and enter `~/code/dotfiles/plists` into the option
-for `Load preferences from a custom folder or URL:`.
+## Terminal
 
 ### Powerline Fonts
 
@@ -85,7 +93,7 @@ these
 [instructions](https://github.com/romkatv/powerlevel10k#manual-font-installation)
 which involves downloading and installing the MesloLGS font files.
 
-## [Tmux plugin manager](https://github.com/tmux-plugins/tpm)
+### [Tmux plugin manager](https://github.com/tmux-plugins/tpm)
 
 Tmux plugin manager is installed along with the following plugins:
 * [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) - enables
@@ -94,10 +102,6 @@ Tmux plugin manager is installed along with the following plugins:
   session the actions of `tmux-resurrect`
 
 If either plugin isn't working try reloading tmux config with `prefix + I`.
-
-## Manual steps
-
-* Set Resolution of display (System Preferences -> Displays -> Display)
 
 ## FAQ
 
