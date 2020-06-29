@@ -11,18 +11,12 @@ npm install -g snyk
 npm install -g typescript
 npm install -g yarn
 
-echo "Installing Deno autocompletion..."
-if [[ -n "$ZSH" ]]; then
-  mkdir ~/.oh-my-zsh/custom/plugins/deno
-  deno completions zsh > ~/.oh-my-zsh/custom/plugins/deno/_deno
-  # shellcheck disable=1090
-  source ~/.zshrc
+echo "Installing Deno autocompletion. Reload shell once complete..."
+mkdir ~/.oh-my-zsh/custom/plugins/deno
+deno completions zsh > ~/.oh-my-zsh/custom/plugins/deno/_deno
+
+if [[ -n "$WSL_DISTRO_NAME" ]]; then
+  deno completions bash > /home/linuxbrew/.linuxbrew/etc/bash_completion.d/deno.bash
 else
-  if [[ -n "$WSL_DISTRO_NAME" ]]; then
-    deno completions bash > /home/linuxbrew/.linuxbrew/etc/bash_completion.d/deno.bash
-  else
-    deno completions bash > /usr/local/etc/bash_completion.d/deno.bash
-  fi
-  # shellcheck disable=1090
-  source ~/.bashrc
+  deno completions bash > /usr/local/etc/bash_completion.d/deno.bash
 fi
