@@ -31,6 +31,7 @@ Plugin 'w0rp/ale'                         " Asynchronous Lint Engine aka ALE
 Plugin 'fatih/vim-go'                     " Go development
 Plugin 'google/yapf'                      " Python formatter
 Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
+Plugin 'rust-lang/rust.vim'               " rust.vim
 " Plugin 'OmniSharp/omnisharp-vim'          " Provides IDE like abilities for C#
 Plugin 'Chiel92/vim-autoformat'           " Generic code formatter
 Plugin 'honza/vim-snippets'               " Snippets
