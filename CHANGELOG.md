@@ -1,3 +1,10 @@
+# [1.31.0](https://github.com/st3v3nhunt/dotfiles/compare/1.30.0...1.31.0) (2020-06-29)
+
+
+### Features
+
+* rust plugin for vim ([fe22fcd](https://github.com/st3v3nhunt/dotfiles/commit/fe22fcda49ef1b7743b9991a2f0b883b3b3a5dfc))
+
 # [1.30.0](https://github.com/st3v3nhunt/dotfiles/compare/1.29.0...1.30.0) (2020-06-29)
 
 
