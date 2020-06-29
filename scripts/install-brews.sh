@@ -61,8 +61,6 @@ go
 haskell-stack
 python
 python@2
-rust
-rustup-init
 ruby
 scala
 )
