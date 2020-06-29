@@ -1,3 +1,12 @@
+# [1.30.0](https://github.com/st3v3nhunt/dotfiles/compare/1.29.0...1.30.0) (2020-06-29)
+
+
+### Features
+
+* do not install rust via brew ([b200904](https://github.com/st3v3nhunt/dotfiles/commit/b200904bce35cc0a2cffe44bd9e6973a588e6614))
+* install deno autocomplete for bash and zsh ([20d511a](https://github.com/st3v3nhunt/dotfiles/commit/20d511afa3a5a3dc91da6299e78592509f823e81))
+* install rust ([191dd05](https://github.com/st3v3nhunt/dotfiles/commit/191dd0515547c637a426abc167f88a00485a9f61))
+
 # [1.29.0](https://github.com/st3v3nhunt/dotfiles/compare/1.28.0...1.29.0) (2020-06-26)
 
 
