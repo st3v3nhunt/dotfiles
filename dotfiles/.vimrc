@@ -16,6 +16,7 @@ Plugin 'airblade/vim-gitgutter'           " Git into in gutter
 Plugin 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
 Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
 Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
+Plugin 'majutsushi/tagbar'                " A ctag viewer
 Plugin 'mileszs/ack.vim'                  " File searching
 Plugin 'ntpeters/vim-better-whitespace'   " Better whitespace
 Plugin 'scrooloose/nerdtree'              " File explorer
@@ -152,6 +153,9 @@ set undodir=~/.vim/tmp/undo//
 
 " ultisnips configuration
 let g:UltiSnipsExpandTrigger="<c-e>"
+
+" Toggle tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " Use oo and OO for entering new lines without going into insert mode
 nmap oo o<Esc>k
