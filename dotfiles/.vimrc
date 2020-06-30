@@ -190,3 +190,8 @@ nnoremap <Leader>jf :%! jq<cr>
 
 " OmniSharp settings
 let g:OmniSharp_server_path = '~/omnisharp.http-osx/omnisharp/OmniSharp.exe'
+
+" Add all plugins to the runtimepath and then load all helptags, ignoring any
+" errors as the command will continue to run
+packloadall
+silent! helptags ALL
