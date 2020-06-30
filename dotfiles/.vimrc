@@ -16,6 +16,7 @@ Plugin 'airblade/vim-gitgutter'           " Git into in gutter
 Plugin 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
 Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
 Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
+Plugin 'majutsushi/tagbar'                " A ctag viewer
 Plugin 'mileszs/ack.vim'                  " File searching
 Plugin 'ntpeters/vim-better-whitespace'   " Better whitespace
 Plugin 'scrooloose/nerdtree'              " File explorer
@@ -77,6 +78,8 @@ autocmd BufRead,BufNewFile Jenkinsfile set syntax=groovy  " Set Jenkinsfile snyt
 " Save Terraform files on save and align with tabular
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
+" Run rustfmt on save
+let g:rustfmt_autosave=1
 " Format on save
 " autocmd BufWrite * :Autoformat
 " Start interactive EasyAlign in visual mode (e.g. vipga)
@@ -151,6 +154,9 @@ set undodir=~/.vim/tmp/undo//
 " ultisnips configuration
 let g:UltiSnipsExpandTrigger="<c-e>"
 
+" Toggle tagbar
+nmap <F8> :TagbarToggle<CR>
+
 " Use oo and OO for entering new lines without going into insert mode
 nmap oo o<Esc>k
 nmap OO O<Esc>j
@@ -188,3 +194,8 @@ nnoremap <Leader>jf :%! jq<cr>
 
 " OmniSharp settings
 let g:OmniSharp_server_path = '~/omnisharp.http-osx/omnisharp/OmniSharp.exe'
+
+" Add all plugins to the runtimepath and then load all helptags, ignoring any
+" errors as the command will continue to run
+packloadall
+silent! helptags ALL

@@ -11,7 +11,6 @@ azure-cli
 azure-functions-core-tools
 aws-iam-authenticator
 cmake
-ctags
 exercism
 gcc
 gpg
@@ -27,6 +26,7 @@ pyenv
 rename
 shellcheck
 tfenv
+universal-ctags/universal-ctags/universal-ctags
 vault
 watch
 wget
