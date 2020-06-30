@@ -1,3 +1,13 @@
+# [1.33.0](https://github.com/st3v3nhunt/dotfiles/compare/1.32.0...1.33.0) (2020-06-30)
+
+
+### Features
+
+* fmt rust files on save ([574ad73](https://github.com/st3v3nhunt/dotfiles/commit/574ad73fd332e9d7756c774785678af11660a728))
+* generate help files for plugins ([5ffefdb](https://github.com/st3v3nhunt/dotfiles/commit/5ffefdb156b843b38a095bbbe9efe63990dbc022))
+* install tagbar and add mapping for toggling ([8730fbb](https://github.com/st3v3nhunt/dotfiles/commit/8730fbbe193456d1d58ac0ed8c1be3c58d797979))
+* use universal ctags rather than exuberant ctags ([974edc7](https://github.com/st3v3nhunt/dotfiles/commit/974edc7345b0203e2317a4189d0a8d2500ea6258))
+
 # [1.32.0](https://github.com/st3v3nhunt/dotfiles/compare/1.31.0...1.32.0) (2020-06-30)
 
 
