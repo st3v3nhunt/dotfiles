@@ -19,11 +19,11 @@ Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
 Plugin 'mileszs/ack.vim'                  " File searching
 Plugin 'ntpeters/vim-better-whitespace'   " Better whitespace
 Plugin 'scrooloose/nerdtree'              " File explorer
-Plugin 'tpope/vim-fugitive'               " Git wrapper
 Plugin 'tpope/vim-commentary'             " Comment out lines
+Plugin 'tpope/vim-fugitive'               " Git wrapper
+Plugin 'tpope/vim-obsession'              " Improve session restoration
 Plugin 'tpope/vim-repeat'                 " Repeat plugin commands via .
 Plugin 'tpope/vim-surround'               " Word/phrase surrounds
-Plugin 'tpope/vim-obsession'              " Improve session restoration
 Plugin 'Valloric/YouCompleteMe'           " Code completion engine
 Plugin 'vim-airline/vim-airline'          " File status bar
 Plugin 'w0rp/ale'                         " Asynchronous Lint Engine aka ALE
