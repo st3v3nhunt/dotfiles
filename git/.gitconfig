@@ -18,26 +18,25 @@
 	st = status
 [color]
 	ui = true
-[push]
-	default = upstream
-[help]
-	autocorrect = 1
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
-[user]
-	email = st3v3nhunt@users.noreply.github.com
-	name = Steven Hunt
-[github]
-	user = st3v3nhunt
+[help]
+	autocorrect = 1
 [ghi]
 	token = !security find-internet-password -a st3v3nhunt -s github.com -l 'ghi token' -w
+[github]
+	user = st3v3nhunt
 [gpg]
 	program = gpg
-[include]
-	path = .gitconfig.local
 [hub]
 	protocol = https
+[include]
+	path = .gitconfig.local
+[pull]
+	ff = only
+[push]
+	default = upstream
 [secrets]
 	providers = git secrets --aws-provider
 	patterns = (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
@@ -45,3 +44,6 @@
 	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
 	allowed = AKIAIOSFODNN7EXAMPLE
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+[user]
+	email = st3v3nhunt@users.noreply.github.com
+	name = Steven Hunt
