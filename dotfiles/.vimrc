@@ -16,6 +16,7 @@ Plugin 'airblade/vim-gitgutter'           " Git into in gutter
 Plugin 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
 Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
 Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
+Plugin 'ludovicchabant/vim-gutentags'     " Tag management
 Plugin 'majutsushi/tagbar'                " A ctag viewer
 Plugin 'mileszs/ack.vim'                  " File searching
 Plugin 'ntpeters/vim-better-whitespace'   " Better whitespace
