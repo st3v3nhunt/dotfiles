@@ -1,3 +1,11 @@
+# [1.34.0](https://github.com/st3v3nhunt/dotfiles/compare/1.33.0...1.34.0) (2020-07-01)
+
+
+### Features
+
+* add vim plugin for tag management ([3d1a029](https://github.com/st3v3nhunt/dotfiles/commit/3d1a0297602a6857cf63aa018253f6aa09ba55d5))
+* use global .gitignore ([7d051bd](https://github.com/st3v3nhunt/dotfiles/commit/7d051bd4470b4d3fa1b714b9ac9d2473f35ce5d8))
+
 # [1.33.0](https://github.com/st3v3nhunt/dotfiles/compare/1.32.0...1.33.0) (2020-06-30)
 
 
