@@ -139,6 +139,13 @@ let g:ale_fixers={
 let g:ale_completion_enabled = 1
 let g:ale_completion_tsserver_autoimport = 1
 
+" YouCompleteMe configuration
+nnoremap <leader>gd :YcmCompleter GoTo<CR>
+nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+nnoremap <leader>gi :YcmCompleter GoToImplementation<CR>
+nnoremap <leader>gt :YcmCompleter GoToType<CR>
+nnoremap <leader>rr :YcmCompleter RefactorRename
+
 " vim-go configuration
 let g:go_fmt_command='goimports'
 let g:go_highlight_types=1
