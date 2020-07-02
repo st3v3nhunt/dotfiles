@@ -181,24 +181,24 @@ if executable(s:clip)
   augroup END
 end
 " Paste from the system clipboard
-map <silent> <Leader>p :r !powershell.exe -Command Get-Clipboard<CR>
+map <silent> <leader>p :r !powershell.exe -Command Get-Clipboard<CR>
 
 " Leaders
 " Save and close
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>x :wq<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>x :wq<CR>
 " Send Vim to background
-nnoremap <Leader>z <C-z>
+nnoremap <leader>z <C-z>
 " Show file in NERDTree
-nnoremap <Leader>r :NERDTreeFind<CR>
+nnoremap <leader>r :NERDTreeFind<CR>
 " Go to previous and next ALE errors
-nnoremap <Leader>j :ALENextWrap<cr>
-nnoremap <Leader>k :ALEPreviousWrap<cr>
+nnoremap <leader>j :ALENextWrap<CR>
+nnoremap <leader>k :ALEPreviousWrap<CR>
 " Format on key
-nnoremap <Leader>f :Autoformat<cr>
+nnoremap <leader>f :Autoformat<CR>
 " Run jq on the current buffer
-nnoremap <Leader>jf :%! jq<cr>
+nnoremap <leader>jf :%! jq<CR>
 
 " OmniSharp settings
 let g:OmniSharp_server_path = '~/omnisharp.http-osx/omnisharp/OmniSharp.exe'
