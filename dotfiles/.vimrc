@@ -139,6 +139,13 @@ let g:ale_fixers={
 let g:ale_completion_enabled = 1
 let g:ale_completion_tsserver_autoimport = 1
 
+" YouCompleteMe configuration
+nnoremap <leader>gd :YcmCompleter GoTo<CR>
+nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+nnoremap <leader>gi :YcmCompleter GoToImplementation<CR>
+nnoremap <leader>gt :YcmCompleter GoToType<CR>
+nnoremap <leader>rr :YcmCompleter RefactorRename
+
 " vim-go configuration
 let g:go_fmt_command='goimports'
 let g:go_highlight_types=1
@@ -174,24 +181,24 @@ if executable(s:clip)
   augroup END
 end
 " Paste from the system clipboard
-map <silent> <Leader>p :r !powershell.exe -Command Get-Clipboard<CR>
+map <silent> <leader>p :r !powershell.exe -Command Get-Clipboard<CR>
 
 " Leaders
 " Save and close
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>x :wq<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>x :wq<CR>
 " Send Vim to background
-nnoremap <Leader>z <C-z>
+nnoremap <leader>z <C-z>
 " Show file in NERDTree
-nnoremap <Leader>r :NERDTreeFind<CR>
+nnoremap <leader>r :NERDTreeFind<CR>
 " Go to previous and next ALE errors
-nnoremap <Leader>j :ALENextWrap<cr>
-nnoremap <Leader>k :ALEPreviousWrap<cr>
+nnoremap <leader>j :ALENextWrap<CR>
+nnoremap <leader>k :ALEPreviousWrap<CR>
 " Format on key
-nnoremap <Leader>f :Autoformat<cr>
+nnoremap <leader>f :Autoformat<CR>
 " Run jq on the current buffer
-nnoremap <Leader>jf :%! jq<cr>
+nnoremap <leader>jf :%! jq<CR>
 
 " OmniSharp settings
 let g:OmniSharp_server_path = '~/omnisharp.http-osx/omnisharp/OmniSharp.exe'

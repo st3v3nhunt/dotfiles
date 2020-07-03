@@ -8,7 +8,7 @@ CNAME
 config
 css
 defra
-Deno
+deno
 dir
 dotfiles
 Elasticsearch
