@@ -1,3 +1,12 @@
+# [1.35.0](https://github.com/st3v3nhunt/dotfiles/compare/1.34.0...1.35.0) (2020-07-03)
+
+
+### Features
+
+* add default pull merge strategy. alphabetise file ([e618729](https://github.com/st3v3nhunt/dotfiles/commit/e61872906d21890c75ceb5a09db5a783553c1434))
+* better code navigation and refactoring ([0574115](https://github.com/st3v3nhunt/dotfiles/commit/05741156381bf31f0a985ae5ff027608497112dd))
+* more spellings ([6a935ec](https://github.com/st3v3nhunt/dotfiles/commit/6a935ec1314134e562ef817d1b400ef779ee91d3))
+
 # [1.34.0](https://github.com/st3v3nhunt/dotfiles/compare/1.33.0...1.34.0) (2020-07-01)
 
 
