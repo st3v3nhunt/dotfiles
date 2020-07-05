@@ -1,3 +1,10 @@
+## [1.35.1](https://github.com/st3v3nhunt/dotfiles/compare/1.35.0...1.35.1) (2020-07-05)
+
+
+### Bug Fixes
+
+* use remaps with leader after leader has been remapped ([a76d147](https://github.com/st3v3nhunt/dotfiles/commit/a76d147212b8880f6d8f8575a5d7842d96b16d17))
+
 # [1.35.0](https://github.com/st3v3nhunt/dotfiles/compare/1.34.0...1.35.0) (2020-07-03)
 
 
