@@ -139,13 +139,6 @@ let g:ale_fixers={
 let g:ale_completion_enabled = 1
 let g:ale_completion_tsserver_autoimport = 1
 
-" YouCompleteMe configuration
-nnoremap <leader>gd :YcmCompleter GoTo<CR>
-nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
-nnoremap <leader>gi :YcmCompleter GoToImplementation<CR>
-nnoremap <leader>gt :YcmCompleter GoToType<CR>
-nnoremap <leader>rr :YcmCompleter RefactorRename
-
 " vim-go configuration
 let g:go_fmt_command='goimports'
 let g:go_highlight_types=1
@@ -169,8 +162,15 @@ nmap <F8> :TagbarToggle<CR>
 nmap oo o<Esc>k
 nmap OO O<Esc>j
 
-" Remap leader to comma
+" Remap leader to comma, all remaps using leader must be below this
 let mapleader=","
+
+" YouCompleteMe configuration
+nnoremap <leader>gd :YcmCompleter GoTo<CR>
+nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+nnoremap <leader>gi :YcmCompleter GoToImplementation<CR>
+nnoremap <leader>gt :YcmCompleter GoToType<CR>
+nnoremap <leader>rr :YcmCompleter RefactorRename
 
 " Copy into the system clipboard
 let s:clip = '/c/Windows/System32/clip.exe'
