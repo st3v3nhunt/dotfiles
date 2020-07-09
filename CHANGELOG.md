@@ -1,3 +1,10 @@
+# [1.36.0](https://github.com/st3v3nhunt/dotfiles/compare/1.35.1...1.36.0) (2020-07-09)
+
+
+### Features
+
+* run shellcheck in precommit hook ([0e1cf77](https://github.com/st3v3nhunt/dotfiles/commit/0e1cf77a8a274e43df09e4da05093540be00c621))
+
 ## [1.35.1](https://github.com/st3v3nhunt/dotfiles/compare/1.35.0...1.35.1) (2020-07-05)
 
 
