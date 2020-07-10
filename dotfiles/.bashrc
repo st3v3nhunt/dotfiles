@@ -18,9 +18,6 @@ source "$(brew --prefix tmux)/etc/bash_completion.d/tmux"
 source <(kubectl completion bash)
 source <(minikube completion bash)
 
-# added by travis gem
-[ -f /Users/steve/.travis/travis.sh ] && source /Users/steve/.travis/travis.sh
-
 # Fix error 'gpg: signing failed: Inappropriate ioctl for device'
 GPG_TTY=$(tty)
 export GPG_TTY
