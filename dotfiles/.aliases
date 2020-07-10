@@ -1,5 +1,9 @@
 alias chrome='open /Applications/Google\ Chrome.app'
 alias ctags="`brew --prefix`/bin/ctags"
+alias c=cargo
+alias cb='cargo build'
+alias cr='cargo run'
+alias cw='cargo watch'
 alias g=git
 alias gaac='git add -A && git commit -m'
 alias gcontributors='git log --format='%aN' | sort -fu'
