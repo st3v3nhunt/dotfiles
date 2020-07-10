@@ -1,3 +1,18 @@
+# [1.37.0](https://github.com/st3v3nhunt/dotfiles/compare/1.36.0...1.37.0) (2020-07-10)
+
+
+### Bug Fixes
+
+* path to bash_completion script ([f7249c6](https://github.com/st3v3nhunt/dotfiles/commit/f7249c699274bbbac9e55b0c9225159152518634))
+* remove unused travis script ([98b9e91](https://github.com/st3v3nhunt/dotfiles/commit/98b9e91ce02593885c5c3c08f48a1fa4ad0dc3e3))
+
+
+### Features
+
+* add some aliases for cargo ([1e0c916](https://github.com/st3v3nhunt/dotfiles/commit/1e0c91616dad582bc9bedefd4a55590214be654c))
+* consistently source with source for better legibility ([8a91cea](https://github.com/st3v3nhunt/dotfiles/commit/8a91ceae660a59e0b0dd2a7143ee559882ef21e1))
+* install rust related completions ([9f2bb74](https://github.com/st3v3nhunt/dotfiles/commit/9f2bb74b82049241ef207fa99adc1e3176bdfa98))
+
 # [1.36.0](https://github.com/st3v3nhunt/dotfiles/compare/1.35.1...1.36.0) (2020-07-09)
 
 
