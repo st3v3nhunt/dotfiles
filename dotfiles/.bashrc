@@ -1,18 +1,18 @@
 # shellcheck source=/dev/null
-. ~/.aliases
-. ~/.functions
-. ~/.prompt
-. ~/.git-prompt.sh
-. ~/.git-completion.bash
-. ~/.shared-shell-setup
+source ~/.aliases
+source ~/.functions
+source ~/.prompt
+source ~/.git-prompt.sh
+source ~/.git-completion.bash
+source ~/.shared-shell-setup
 # make git completion work with 'g', an alias for git
 __git_complete g __git_main
 
 # bash completion
-[[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
+[[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && source "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 
 # tmux completion
-. "$(brew --prefix tmux)/etc/bash_completion.d/tmux"
+source "$(brew --prefix tmux)/etc/bash_completion.d/tmux"
 
 # Kubernetes and minikube autocompletion
 source <(kubectl completion bash)
@@ -37,7 +37,7 @@ complete -C /usr/local/bin/aws_completer aws
 
 # Deno autocomplete
 if [[ -n "$WSL_DISTRO_NAME" ]]; then
-  source /home/linuxbrew/.linuxbrew/etc/bash_completion.d/deno.bash
+  source "$(brew --prefix)/etc/bash_completion.d/deno.bash"
 else
   source /usr/local/etc/bash_completion.d/deno.bash
 fi
