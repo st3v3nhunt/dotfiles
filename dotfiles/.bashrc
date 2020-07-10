@@ -9,7 +9,7 @@
 __git_complete g __git_main
 
 # bash completion
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+[[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 
 # tmux completion
 . "$(brew --prefix tmux)/etc/bash_completion.d/tmux"
