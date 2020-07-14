@@ -47,3 +47,5 @@
 [user]
 	email = st3v3nhunt@users.noreply.github.com
 	name = Steven Hunt
+[init]
+	templateDir = ~/.git-template
