@@ -106,15 +106,22 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
 ## FAQ
 
 * Python crashing when starting Vim?
-  * Try reinstalling Python, Vim and YCM `brew update; brew uninstall python; brew uninstall vim; brew install python; brew install vim; ~/.vim/bundle/YouCompleteMe/install.py`
+  * Try reinstalling Python, Vim and YCM `brew update; brew uninstall python;
+    brew uninstall vim; brew install python; brew install vim;
+    ~/.vim/bundle/YouCompleteMe/install.py`
 * No linting in Vim and no lint warning or error symbols in the margin?
   * Check the repo's packages have been installed
   * Try restarting the eslint server. At the terminal run `eslint_d restart`
 * No completion in VIM?
-  * Try restarting the YouCompleteMe server within Vim `:YcmRestartServer`
+  * Try restarting the YCM server within Vim `:YcmRestartServer`
+  * If there are errors when running `:YcmRestartServer` try reinstalling YCM,
+    `cd ~/.vim/bundle/YouCompleteMe && ./install.py --all` (to install _all_
+    language completions
 * Command failed and error reported `...can't decompress data; zlib not available`
-  * Run `sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /`
-* If an error like this occurs - `Warning: Unexpected method 'license' called on Cask <cask_name>.` it might be because the cask is old and out of date. Try:
+  * Run `sudo installer -pkg
+    /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /`
+* If an error like this occurs - `Warning: Unexpected method 'license' called
+  on Cask <cask_name>.` it might be because the cask is old and out of date, try:
   * Removing the cask via `rm -rf $(brew --prefix)/Caskroom/<cask_name>`
 * Want to fetch all PRs from GitHub or MRs from GitLab locally?
   * Add the following to the repo's `.git/config`:
