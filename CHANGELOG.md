@@ -1,3 +1,11 @@
+# [1.38.0](https://github.com/st3v3nhunt/dotfiles/compare/1.37.0...1.38.0) (2020-07-14)
+
+
+### Features
+
+* add git template dir ([6d9cc86](https://github.com/st3v3nhunt/dotfiles/commit/6d9cc8610c69123704da6fd8765b7b0567c83cca))
+* install pre-commit and detect-secrets ([28de7c3](https://github.com/st3v3nhunt/dotfiles/commit/28de7c3a95987f756a1d50918429e9f56faded0a))
+
 # [1.37.0](https://github.com/st3v3nhunt/dotfiles/compare/1.36.0...1.37.0) (2020-07-10)
 
 
