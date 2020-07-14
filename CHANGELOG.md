@@ -1,3 +1,10 @@
+# [1.39.0](https://github.com/st3v3nhunt/dotfiles/compare/1.38.0...1.39.0) (2020-07-14)
+
+
+### Features
+
+* add instructions for YCM re-install ([411f5a5](https://github.com/st3v3nhunt/dotfiles/commit/411f5a5da4e01cb08a3996d34d70bd7218c4bb65))
+
 # [1.38.0](https://github.com/st3v3nhunt/dotfiles/compare/1.37.0...1.38.0) (2020-07-14)
 
 
