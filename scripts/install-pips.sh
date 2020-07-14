@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 echo "Installing pips"
+pip3 install detect-secrets
 pip3 install jupyter
+pip3 install pre-commit
 pip3 install pylint
 pip3 install pytest
 pip3 install pytest-cache
