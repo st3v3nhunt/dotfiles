@@ -1,3 +1,10 @@
+# [1.40.0](https://github.com/st3v3nhunt/dotfiles/compare/1.39.0...1.40.0) (2020-07-15)
+
+
+### Features
+
+* add info about removing YCM tern install ([0a39831](https://github.com/st3v3nhunt/dotfiles/commit/0a398319b8c4d3b2b6ccb59bc4919887805a08bb))
+
 # [1.39.0](https://github.com/st3v3nhunt/dotfiles/compare/1.38.0...1.39.0) (2020-07-14)
 
 
