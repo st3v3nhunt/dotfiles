@@ -1,3 +1,10 @@
+# [1.41.0](https://github.com/st3v3nhunt/dotfiles/compare/1.40.0...1.41.0) (2020-07-15)
+
+
+### Features
+
+* limit WSL memory to prevent Vmmen from taking everything ([ab32898](https://github.com/st3v3nhunt/dotfiles/commit/ab32898a2151fa9e18a91cf99f58a2da9e712c92))
+
 # [1.40.0](https://github.com/st3v3nhunt/dotfiles/compare/1.39.0...1.40.0) (2020-07-15)
 
 
