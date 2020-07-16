@@ -1,3 +1,11 @@
+# [1.43.0](https://github.com/st3v3nhunt/dotfiles/compare/1.42.0...1.43.0) (2020-07-16)
+
+
+### Features
+
+* update commitlint deps ([d4646bf](https://github.com/st3v3nhunt/dotfiles/commit/d4646bf591d31ecf198e449cf3032e60c8872b48))
+* update deps after npm audit ([84202ba](https://github.com/st3v3nhunt/dotfiles/commit/84202bac22cc211be08d1d44dbfdb624a9eab6fb))
+
 # [1.42.0](https://github.com/st3v3nhunt/dotfiles/compare/1.41.0...1.42.0) (2020-07-16)
 
 
