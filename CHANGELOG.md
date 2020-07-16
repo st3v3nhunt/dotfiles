@@ -1,3 +1,13 @@
+# [1.44.0](https://github.com/st3v3nhunt/dotfiles/compare/1.43.0...1.44.0) (2020-07-16)
+
+
+### Features
+
+* add NGINX to dictionary ([ea834c3](https://github.com/st3v3nhunt/dotfiles/commit/ea834c31d492769aa63bafe2293aa3d9ba551977))
+* add settings for Windows Terminal Preview ([2eb3361](https://github.com/st3v3nhunt/dotfiles/commit/2eb33617bb02b4dbbd6c6c4aa30e4b516ce92007))
+* use preview feature to start on login ([739152f](https://github.com/st3v3nhunt/dotfiles/commit/739152fbdd133171e7df5a4bf773662460103147))
+* use tmux-256color ([224a5bd](https://github.com/st3v3nhunt/dotfiles/commit/224a5bde0ca8b90b16a85b17b2b05b756a786364))
+
 # [1.43.0](https://github.com/st3v3nhunt/dotfiles/compare/1.42.0...1.43.0) (2020-07-16)
 
 
