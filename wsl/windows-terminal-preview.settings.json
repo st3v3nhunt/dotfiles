@@ -1,7 +1,8 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+    "defaultProfile": "Ubuntu-20.04",
     "launchMode": "maximized",
+    "startOnUserLogin": true,
     "profiles":
     {
         "defaults":
