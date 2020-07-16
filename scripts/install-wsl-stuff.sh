@@ -25,4 +25,7 @@ echo "Linking alacritty.yml"
 cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Roaming\\alacritty\\alacritty.yml" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\alacritty.yml"
 
 echo "Linking Windows Terminal settings.json"
-cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\settings.json" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\settings.json"
+cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\settings.json" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\windows-terminal.settings.json"
+
+echo "Linking Windows Terminal Preview settings.json"
+cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Local\\Packages\\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\\LocalState\\settings.json" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\windows-terminal-preview.settings.json"
