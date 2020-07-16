@@ -1,3 +1,15 @@
+# [1.42.0](https://github.com/st3v3nhunt/dotfiles/compare/1.41.0...1.42.0) (2020-07-16)
+
+
+### Bug Fixes
+
+* remove incorrect use of default option ([71e2ecd](https://github.com/st3v3nhunt/dotfiles/commit/71e2ecd07a4830e4a28a2e3b0883b8f07d5ab5eb))
+
+
+### Features
+
+* use Monokai Soda theme in Alacritty ([fb7984b](https://github.com/st3v3nhunt/dotfiles/commit/fb7984be526181515f1a460a1fd501e8fd4a5d3e))
+
 # [1.41.0](https://github.com/st3v3nhunt/dotfiles/compare/1.40.0...1.41.0) (2020-07-15)
 
 
