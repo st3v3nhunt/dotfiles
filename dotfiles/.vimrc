@@ -28,6 +28,7 @@ Plugin 'tpope/vim-repeat'                 " Repeat plugin commands via .
 Plugin 'tpope/vim-surround'               " Word/phrase surrounds
 Plugin 'Valloric/YouCompleteMe'           " Code completion engine
 Plugin 'vim-airline/vim-airline'          " File status bar
+Plugin 'vim-airline/vim-airline-themes'   " Themes for vim-airline
 Plugin 'w0rp/ale'                         " Asynchronous Lint Engine aka ALE
 " specific dev/languge plugins
 Plugin 'fatih/vim-go'                     " Go development
@@ -120,6 +121,7 @@ nnoremap \ :Ack!<space>
 let g:airline_powerline_fonts = 1
 " only load these extensions to speed up loading
 let g:airline_extension = ['ale']
+let g:airline_theme='base16_isotope'
 
 " ALE configuration
 let g:ale_sign_error='✗✗'
