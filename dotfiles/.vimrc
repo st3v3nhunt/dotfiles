@@ -168,11 +168,13 @@ nmap OO O<Esc>j
 let mapleader=","
 
 " YouCompleteMe configuration
-nnoremap <leader>gd :YcmCompleter GoTo<CR>
-nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
-nnoremap <leader>gi :YcmCompleter GoToImplementation<CR>
-nnoremap <leader>gt :YcmCompleter GoToType<CR>
-nnoremap <leader>rr :YcmCompleter RefactorRename
+nnoremap <leader>yg :YcmCompleter GoTo<CR>
+nnoremap <leader>yr :YcmCompleter GoToReferences<CR>
+nnoremap <leader>yi :YcmCompleter GoToImplementation<CR>
+nnoremap <leader>yt :YcmCompleter GoToType<CR>
+nnoremap <leader>rr :YcmCompleter RefactorRename<Space>
+" Prevent the QuickFix window from closing
+autocmd User YcmQuickFixOpened autocmd! ycmquickfix WinLeave
 
 " Copy into the system clipboard
 let s:clip = '/c/Windows/System32/clip.exe'
