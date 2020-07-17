@@ -1,3 +1,11 @@
+# [1.45.0](https://github.com/st3v3nhunt/dotfiles/compare/1.44.0...1.45.0) (2020-07-17)
+
+
+### Features
+
+* add and set theme for vim airline ([7191371](https://github.com/st3v3nhunt/dotfiles/commit/719137125e0dd134290a40980d153d6b3269308f))
+* update YCM key bindings. Keep QuickFix open ([28c49c6](https://github.com/st3v3nhunt/dotfiles/commit/28c49c617e76aa6afd42d843f05982e58d8728e2))
+
 # [1.44.0](https://github.com/st3v3nhunt/dotfiles/compare/1.43.0...1.44.0) (2020-07-16)
 
 
