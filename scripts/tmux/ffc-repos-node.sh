@@ -9,4 +9,3 @@ tmux select-layout tiled
 tmux rename-window 'ffc-node-apps'
 tmux setw synchronize-panes; tmux send-keys 'clear' enter
 tmux setw synchronize-panes
-# tmux send-keys C-a C-a
