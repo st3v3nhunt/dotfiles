@@ -35,7 +35,7 @@ Plugin 'fatih/vim-go'                     " Go development
 Plugin 'google/yapf'                      " Python formatter
 Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks highlighting
 Plugin 'rust-lang/rust.vim'               " rust.vim
-" Plugin 'OmniSharp/omnisharp-vim'          " Provides IDE like abilities for C#
+Plugin 'OmniSharp/omnisharp-vim'          " Provides IDE like abilities for C#
 Plugin 'Chiel92/vim-autoformat'           " Generic code formatter
 Plugin 'honza/vim-snippets'               " Snippets
 Plugin 'hashivim/vim-terraform'           " Terraform formatter and highlighter
@@ -131,6 +131,7 @@ let g:ale_lint_on_save=1
 let g:ale_fix_on_save=1
 " Set standard as the only JS linter and fixer
 let g:ale_linters={
+\   'cs': ['OmniSharp'],
 \   'javascript': ['standard'],
 \   'typescript': ['prettier'],
 \}
@@ -205,7 +206,6 @@ nnoremap <leader>f :Autoformat<CR>
 nnoremap <leader>jf :%! jq<CR>
 
 " OmniSharp settings
-let g:OmniSharp_server_path = '~/omnisharp.http-osx/omnisharp/OmniSharp.exe'
 
 " Add all plugins to the runtimepath and then load all helptags, ignoring any
 " errors as the command will continue to run

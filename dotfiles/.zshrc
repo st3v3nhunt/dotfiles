@@ -87,6 +87,16 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH="$PATH:~/.dotnet/tools"
+
+# zsh parameter completion for the dotnet CLI
+_dotnet_zsh_complete()
+{
+  local completions=("$(dotnet complete "$words")")
+
+  reply=( "${(ps:\n:)completions}" )
+}
+
+compctl -K _dotnet_zsh_complete dotnet
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

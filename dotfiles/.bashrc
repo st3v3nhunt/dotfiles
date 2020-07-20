@@ -38,3 +38,21 @@ if [[ -n "$WSL_DISTRO_NAME" ]]; then
 else
   source /usr/local/etc/bash_completion.d/deno.bash
 fi
+
+# bash parameter completion for the dotnet CLI
+_dotnet_bash_complete()
+{
+  local word=${COMP_WORDS[COMP_CWORD]}
+
+  local completions
+  completions="$(dotnet complete --position "${COMP_POINT}" "${COMP_LINE}" 2>/dev/null)"
+  # shellcheck disable=SC2181
+  if [ $? -ne 0 ]; then
+    completions=""
+  fi
+
+  # shellcheck disable=SC2207
+  COMPREPLY=( $(compgen -W "$completions" -- "$word") )
+}
+
+complete -f -F _dotnet_bash_complete dotnet
