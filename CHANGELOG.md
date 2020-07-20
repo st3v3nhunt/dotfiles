@@ -1,3 +1,20 @@
+# [1.46.0](https://github.com/st3v3nhunt/dotfiles/compare/1.45.0...1.46.0) (2020-07-20)
+
+
+### Bug Fixes
+
+* remove unnecessary comment ([fbd60ae](https://github.com/st3v3nhunt/dotfiles/commit/fbd60ae67e79c650d03ee777e0ab3da05e09e380))
+
+
+### Features
+
+* add dotnet completion to bash ([30c10bd](https://github.com/st3v3nhunt/dotfiles/commit/30c10bd5dffac4ff813b06cda4fcb578e6bd5d05))
+* add dotnet completion to zsh ([a911472](https://github.com/st3v3nhunt/dotfiles/commit/a91147224535e74c053fb5580a248ab94fb2120f))
+* enable OmniSharp ([8d485a9](https://github.com/st3v3nhunt/dotfiles/commit/8d485a96665602499a5a40090ba1b6a74101761d))
+* more spellings ([3a7a7ff](https://github.com/st3v3nhunt/dotfiles/commit/3a7a7ffa9aca1d181779cbad8f2edb625a47113e))
+* non-functioning script to window all ffc repos ([6d99c7a](https://github.com/st3v3nhunt/dotfiles/commit/6d99c7af33398555e8aaf91c46bd33c12f466479))
+* script tmux window for main ffc repos ([553372e](https://github.com/st3v3nhunt/dotfiles/commit/553372e5546a5bbee619d24e9460a4de643c5200))
+
 # [1.45.0](https://github.com/st3v3nhunt/dotfiles/compare/1.44.0...1.45.0) (2020-07-17)
 
 
