@@ -1,3 +1,10 @@
+# [1.48.0](https://github.com/st3v3nhunt/dotfiles/compare/1.47.0...1.48.0) (2020-07-21)
+
+
+### Features
+
+* better tmux pane navigation ([021887d](https://github.com/st3v3nhunt/dotfiles/commit/021887d5831033fe82390b4d08beb7ce5bec2847))
+
 # [1.47.0](https://github.com/st3v3nhunt/dotfiles/compare/1.46.0...1.47.0) (2020-07-21)
 
 
