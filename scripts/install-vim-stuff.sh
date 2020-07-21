@@ -14,17 +14,10 @@ if [[ ! -d ~/.vim/tmp/ ]]; then
 fi
 
 # Install YouCompleteMe
- ~/.vim/bundle/YouCompleteMe/install.py --all
-
-# Use existing word list for vim spell
-if [[ ! -d ~/.vim/spell/ ]]; then
-  mkdir ~/.vim/spell
-fi
+~/.vim/bundle/YouCompleteMe/install.py --all
 
 REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
 
-# mkdir ~/.vim/spell
-ln -fsv "$REPO_DIR/vim/spell" ~/.vim/
-
-# Link ftplugin
+# Link ftplugin and spell dirs
 ln -fsv "$REPO_DIR/vim/ftplugin" ~/.vim/
+ln -fsv "$REPO_DIR/vim/spell" ~/.vim/
