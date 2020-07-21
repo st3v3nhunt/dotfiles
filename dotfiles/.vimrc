@@ -122,25 +122,15 @@ let g:airline_powerline_fonts = 1
 " only load these extensions to speed up loading
 let g:airline_extension = ['ale']
 let g:airline_theme='base16_isotope'
+let g:airline#extensions#ale#enabled=1       " error information in the status bar
 
 " ALE configuration
-let g:ale_sign_error='✗✗'
-let g:ale_sign_warning='∆∆'
-let g:airline#extensions#ale#enabled=1       " error information in the status bar
-let g:ale_lint_on_save=1
-let g:ale_fix_on_save=1
-" Set standard as the only JS linter and fixer
-let g:ale_linters={
-\   'cs': ['OmniSharp'],
-\   'javascript': ['standard'],
-\   'typescript': ['prettier'],
-\}
-let g:ale_fixers={
-\   'javascript': ['standard'],
-\   'typescript': ['prettier'],
-\}
 let g:ale_completion_enabled = 1
 let g:ale_completion_tsserver_autoimport = 1
+let g:ale_lint_on_save=1
+let g:ale_fix_on_save=1
+let g:ale_sign_error='❌❌'
+let g:ale_sign_warning='😑😑'
 
 " vim-go configuration
 let g:go_fmt_command='goimports'
@@ -168,14 +158,15 @@ nmap OO O<Esc>j
 " Remap leader to comma, all remaps using leader must be below this
 let mapleader=","
 
-" YouCompleteMe configuration
-nnoremap <leader>yg :YcmCompleter GoTo<CR>
-nnoremap <leader>yr :YcmCompleter GoToReferences<CR>
-nnoremap <leader>yi :YcmCompleter GoToImplementation<CR>
-nnoremap <leader>yt :YcmCompleter GoToType<CR>
-nnoremap <leader>rr :YcmCompleter RefactorRename<Space>
 " Prevent the QuickFix window from closing
 autocmd User YcmQuickFixOpened autocmd! ycmquickfix WinLeave
+" YouCompleteMe configuration
+nnoremap <leader>fi :YcmCompleter FixIt<CR>
+nnoremap <leader>gg :YcmCompleter GoTo<CR>
+nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+nnoremap <leader>gi :YcmCompleter GoToImplementation<CR>
+nnoremap <leader>gt :YcmCompleter GoToType<CR>
+nnoremap <leader>rr :YcmCompleter RefactorRename<space>
 
 " Copy into the system clipboard
 let s:clip = '/c/Windows/System32/clip.exe'
@@ -188,7 +179,6 @@ end
 " Paste from the system clipboard
 map <silent> <leader>p :r !powershell.exe -Command Get-Clipboard<CR>
 
-" Leaders
 " Save and close
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
@@ -204,8 +194,6 @@ nnoremap <leader>k :ALEPreviousWrap<CR>
 nnoremap <leader>f :Autoformat<CR>
 " Run jq on the current buffer
 nnoremap <leader>jf :%! jq<CR>
-
-" OmniSharp settings
 
 " Add all plugins to the runtimepath and then load all helptags, ignoring any
 " errors as the command will continue to run

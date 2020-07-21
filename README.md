@@ -76,13 +76,13 @@ plugin is installed `:GoInstallBinaries` needs to be run from within Vim.
 
 ### C# IDE like abilities
 
-Install OmniSharp as per the
-[instructions](https://www.omnisharp.net/#portfolioModal-vim). Start by
-downloading and extracting the latest version of the
-[OmniSharp-Roslyn](https://github.com/OmniSharp/omnisharp-vim#server) server
-into `~/`. This should result in a path to the executable being
-`~/omnisharp.http-osx/omnisharp/OmniSharp.exe` (this path is specified in
-[dotfiles/.vimrc](dotfiles/.vimrc).
+[OmniSharp](https://github.com/OmniSharp/omnisharp-roslyn) will provide IDE
+like capabilities within Vim. The easiest way to do that is to install the
+[OmniSharp-vim](https://github.com/OmniSharp/omnisharp-vim) plugin which will
+happen using the [`.vimrc`](./dotfiles/.vimrc) in this repo.
+Once installed, autocomplete is available in insert mode using `<C-x><C-o>`.
+There are a number of shortcuts available for frequently used commands,
+available for review in [cs.vim[(./vim/ftplugin/cs.vim).
 
 ## Terminal
 
