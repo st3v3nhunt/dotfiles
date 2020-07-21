@@ -33,6 +33,7 @@ macOS
 Mongo
 Mongodb
 NHSUK
+NGINX
 npm
 nvm
 OGL
@@ -57,4 +58,3 @@ yaml
 YCM
 YouCompleteMe
 Zsh
-NGINX
