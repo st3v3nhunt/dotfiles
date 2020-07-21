@@ -1,3 +1,16 @@
+# [1.47.0](https://github.com/st3v3nhunt/dotfiles/compare/1.46.0...1.47.0) (2020-07-21)
+
+
+### Features
+
+* add mappings for OmniSharp functions in C# files ([c1ccc4c](https://github.com/st3v3nhunt/dotfiles/commit/c1ccc4cd09564f5c2cb3cac249d6df3b59684a0d))
+* better file naming, improved consistency ([0897376](https://github.com/st3v3nhunt/dotfiles/commit/089737649a6f648f9b768affe7fe5141d2cb1070))
+* better gutter signs ([71f6e8b](https://github.com/st3v3nhunt/dotfiles/commit/71f6e8b0aa7847809dc8796177c4f899e6504170))
+* reduce duplication in tmux conf files ([654f141](https://github.com/st3v3nhunt/dotfiles/commit/654f141b6ebb315c406f9ad3b0c50c9c3c2942dc))
+* simplify tmux configs ([326c8a3](https://github.com/st3v3nhunt/dotfiles/commit/326c8a33b43ca5750fee55f37062dac94ee55cef))
+* simplify vim installation ([f8c87e7](https://github.com/st3v3nhunt/dotfiles/commit/f8c87e72a4ce5f35655d6d5fca11d6068b13edd2))
+* use ftplugin files for simpler .vimrc ([406d3ab](https://github.com/st3v3nhunt/dotfiles/commit/406d3ab06e13401dea19b992b02ffb8f50b0e993))
+
 # [1.46.0](https://github.com/st3v3nhunt/dotfiles/compare/1.45.0...1.46.0) (2020-07-20)
 
 
