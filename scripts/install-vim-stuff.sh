@@ -16,8 +16,15 @@ fi
 # Install YouCompleteMe
  ~/.vim/bundle/YouCompleteMe/install.py --all
 
+# Use existing word list for vim spell
+if [[ ! -d ~/.vim/spell/ ]]; then
+  mkdir ~/.vim/spell
+fi
+
 REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
 
-# Use existing word list for vim spell
-mkdir ~/.vim/spell
-ln -nfsv "$REPO_DIR/vim/en.utf-8.add" ~/.vim/spell/
+# mkdir ~/.vim/spell
+ln -fsv "$REPO_DIR/vim/spell" ~/.vim/
+
+# Link ftplugin
+ln -fsv "$REPO_DIR/vim/ftplugin" ~/.vim/
