@@ -136,6 +136,7 @@ let g:ale_linters={
 \   'typescript': ['prettier'],
 \}
 let g:ale_fixers={
+\   'cs': ['OmniSharp'],
 \   'javascript': ['standard'],
 \   'typescript': ['prettier'],
 \}
@@ -168,14 +169,21 @@ nmap OO O<Esc>j
 " Remap leader to comma, all remaps using leader must be below this
 let mapleader=","
 
-" YouCompleteMe configuration
-nnoremap <leader>yg :YcmCompleter GoTo<CR>
-nnoremap <leader>yr :YcmCompleter GoToReferences<CR>
-nnoremap <leader>yi :YcmCompleter GoToImplementation<CR>
-nnoremap <leader>yt :YcmCompleter GoToType<CR>
-nnoremap <leader>rr :YcmCompleter RefactorRename<Space>
 " Prevent the QuickFix window from closing
 autocmd User YcmQuickFixOpened autocmd! ycmquickfix WinLeave
+" YouCompleteMe configuration
+nnoremap <leader>fi :YcmCompleter FixIt<CR>
+nnoremap <leader>gg :YcmCompleter GoTo<CR>
+nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+nnoremap <leader>gi :YcmCompleter GoToImplementation<CR>
+nnoremap <leader>gt :YcmCompleter GoToType<CR>
+nnoremap <leader>rr :YcmCompleter RefactorRename<Space>
+" Specific mappings for C# files
+autocmd FileType cs nmap <buffer> <leader>fi :OmniSharpFindUsages<CR>
+autocmd FileType cs nmap <buffer> <leader>gg :OmniSharpFindUsages<CR>
+autocmd FileType cs nmap <buffer> <leader>gi :OmniSharpFindImplementations<CR>
+autocmd FileType cs nmap <buffer> <leader>gt :OmniSharpFindType<CR>
+autocmd FileType cs nmap <buffer> <leader>rr :OmniSharpRenameTo<Space>
 
 " Copy into the system clipboard
 let s:clip = '/c/Windows/System32/clip.exe'
