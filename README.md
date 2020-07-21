@@ -80,9 +80,9 @@ plugin is installed `:GoInstallBinaries` needs to be run from within Vim.
 like capabilities within Vim. The easiest way to do that is to install the
 [OmniSharp-vim](https://github.com/OmniSharp/omnisharp-vim) plugin which will
 happen using the [`.vimrc`](./dotfiles/.vimrc) in this repo.
-Once installed autocomplete is available in insert mode using `<C-x><C-o>`.
-There are a number of shortcuts available for frequently used commands, rather
-than repeat them here, it is best to review `.vimrc` for the details.
+Once installed, autocomplete is available in insert mode using `<C-x><C-o>`.
+There are a number of shortcuts available for frequently used commands,
+available for review in [cs.vim[(./vim/ftplugin/cs.vim).
 
 ## Terminal
 
