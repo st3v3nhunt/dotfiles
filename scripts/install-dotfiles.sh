@@ -17,8 +17,8 @@ ln -nfsv "$DOTFILES_DIR/.prompt" ~
 ln -nfsv "$DOTFILES_DIR/.p10k.zsh" ~
 ln -nfsv "$DOTFILES_DIR/.shared-shell-setup" ~
 ln -nfsv "$DOTFILES_DIR/.tmux.conf" ~
-ln -nfsv "$DOTFILES_DIR/.macos.tmux.conf" ~
-ln -nfsv "$DOTFILES_DIR/.wsl.tmux.conf" ~
+ln -nfsv "$DOTFILES_DIR/.tmux.macos.conf" ~
+ln -nfsv "$DOTFILES_DIR/.tmux.wsl.conf" ~
 ln -nfsv "$DOTFILES_DIR/.vimrc" ~
 ln -nfsv "$DOTFILES_DIR/.zshrc" ~
 ln -nfsv "$GIT_DIR/.git-prompt.sh" ~
