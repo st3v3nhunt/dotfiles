@@ -1,3 +1,10 @@
+## [1.48.1](https://github.com/st3v3nhunt/dotfiles/compare/1.48.0...1.48.1) (2020-07-21)
+
+
+### Bug Fixes
+
+* revert to simple gutter signs ([6fee9e3](https://github.com/st3v3nhunt/dotfiles/commit/6fee9e35ae570e1622c9c4421da92ae92e72b38c))
+
 # [1.48.0](https://github.com/st3v3nhunt/dotfiles/compare/1.47.0...1.48.0) (2020-07-21)
 
 
