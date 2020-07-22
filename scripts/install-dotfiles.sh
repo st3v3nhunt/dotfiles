@@ -30,4 +30,9 @@ if [[ -n "$WSL_DISTRO_NAME" && "$OSTYPE" == "linux-gnu" ]]; then
   ln -nfsv "$DOTFILES_DIR/.zprofile" ~
 fi
 
+if [[ ! -d ~/.omnisharp ]]; then
+  mkdir ~/.omnisharp
+fi
+ln -nfsv "$REPO_DIR/omnisharp/omnisharp.json" ~/.omnisharp/
+
 printf "${GREEN}Finished creating symlinks...${NC}\\n"
