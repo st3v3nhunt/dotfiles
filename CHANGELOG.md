@@ -1,3 +1,10 @@
+# [1.49.0](https://github.com/st3v3nhunt/dotfiles/compare/1.48.1...1.49.0) (2020-07-22)
+
+
+### Features
+
+* add global OmniSharp config file ([e2a6b56](https://github.com/st3v3nhunt/dotfiles/commit/e2a6b563cada8bfe4fe77ffec8db6290606055a1))
+
 ## [1.48.1](https://github.com/st3v3nhunt/dotfiles/compare/1.48.0...1.48.1) (2020-07-21)
 
 
