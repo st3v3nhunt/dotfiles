@@ -1,3 +1,10 @@
+# [1.50.0](https://github.com/st3v3nhunt/dotfiles/compare/1.49.0...1.50.0) (2020-07-23)
+
+
+### Features
+
+* add new word, remove and ignore binary spl file ([ae44b63](https://github.com/st3v3nhunt/dotfiles/commit/ae44b631682a64c08cc9abf422324c6c22e02a00))
+
 # [1.49.0](https://github.com/st3v3nhunt/dotfiles/compare/1.48.1...1.49.0) (2020-07-22)
 
 
