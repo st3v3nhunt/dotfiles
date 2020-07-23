@@ -6,3 +6,5 @@
 *.log
 # node files
 node_modules
+# Vim binary spell files
+*.spl
