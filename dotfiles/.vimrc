@@ -167,6 +167,7 @@ nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <leader>gi :YcmCompleter GoToImplementation<CR>
 nnoremap <leader>gt :YcmCompleter GoToType<CR>
 nnoremap <leader>rr :YcmCompleter RefactorRename<space>
+nnoremap <leader>yy :YcmRestartServer<CR>
 
 " Copy into the system clipboard
 let s:clip = '/c/Windows/System32/clip.exe'
