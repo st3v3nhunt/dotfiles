@@ -1,3 +1,12 @@
+# [1.51.0](https://github.com/st3v3nhunt/dotfiles/compare/1.50.0...1.51.0) (2020-07-25)
+
+
+### Features
+
+* add shortcut for restarting YCM server ([b3ffd79](https://github.com/st3v3nhunt/dotfiles/commit/b3ffd792f0c84f3f50a6f8b5ad7a40bcbb13ae60))
+* add shortcuts for OmniSharp code fixes ([ab8a483](https://github.com/st3v3nhunt/dotfiles/commit/ab8a4834fca40b54457094c3fff3274a5b81c196))
+* correct casing for Kubernetes ([72aea2a](https://github.com/st3v3nhunt/dotfiles/commit/72aea2a83db8784fd90e390bc9e9409d5d2e3921))
+
 # [1.50.0](https://github.com/st3v3nhunt/dotfiles/compare/1.49.0...1.50.0) (2020-07-23)
 
 
