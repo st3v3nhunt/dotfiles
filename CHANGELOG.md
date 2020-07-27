@@ -1,3 +1,10 @@
+# [1.52.0](https://github.com/st3v3nhunt/dotfiles/compare/1.51.0...1.52.0) (2020-07-27)
+
+
+### Features
+
+* use ALE to remove unwanted whitespace ([611c26f](https://github.com/st3v3nhunt/dotfiles/commit/611c26fcbb9e43c97ec52a368eef220a9182cbfe))
+
 # [1.51.0](https://github.com/st3v3nhunt/dotfiles/compare/1.50.0...1.51.0) (2020-07-25)
 
 
