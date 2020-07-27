@@ -98,7 +98,6 @@ map <C-n> :NERDTreeToggle<CR>
 " Better whitespace
 let g:better_whitespace_enabled=1
 let g:better_whitespace_filetypes_blacklist=[]
-let g:strip_whitespace_on_save=1
 
 " CtrlP - Ignore VCS and node stuff
 let g:ctrlp_custom_ignore = '\v[\/](coverage|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
@@ -131,6 +130,9 @@ let g:ale_lint_on_save=1
 let g:ale_fix_on_save=1
 let g:ale_sign_error='✗✗'
 let g:ale_sign_warning='∆∆'
+let g:ale_fixers={
+\  '*': ['remove_trailing_lines', 'trim_whitespace'],
+\}
 
 " vim-go configuration
 let g:go_fmt_command='goimports'
