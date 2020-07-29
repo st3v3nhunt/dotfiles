@@ -1,3 +1,10 @@
+# [1.53.0](https://github.com/st3v3nhunt/dotfiles/compare/1.52.0...1.53.0) (2020-07-29)
+
+
+### Features
+
+* limit WSL to 6GB memory ([53cc652](https://github.com/st3v3nhunt/dotfiles/commit/53cc652c4054aa8e343c88ee9732f3be2b2a49f3))
+
 # [1.52.0](https://github.com/st3v3nhunt/dotfiles/compare/1.51.0...1.52.0) (2020-07-27)
 
 
