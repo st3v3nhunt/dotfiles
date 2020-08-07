@@ -2,6 +2,7 @@
 
 # Tap the Azure Functions repo
 brew tap azure/functions
+brew tap johanhaleby/kubetail
 
 # Utils
 brews=(
@@ -20,7 +21,6 @@ imagemagick
 jmeter
 jq
 llvm
-minikube
 pipenv
 pyenv
 rename
@@ -71,6 +71,8 @@ derailed/k9s/k9s
 helm
 kind
 kubernetes-cli
+kubetail
+minikube
 rancher-cli
 skaffold
 stern
