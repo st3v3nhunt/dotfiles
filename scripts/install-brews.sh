@@ -71,7 +71,6 @@ derailed/k9s/k9s
 helm
 kind
 kubernetes-cli
-octant
 rancher-cli
 skaffold
 stern
