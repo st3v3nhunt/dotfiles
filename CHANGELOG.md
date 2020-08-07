@@ -1,3 +1,10 @@
+# [1.55.0](https://github.com/st3v3nhunt/dotfiles/compare/1.54.0...1.55.0) (2020-08-07)
+
+
+### Features
+
+* renumber-windows tmux option turned on ([8136181](https://github.com/st3v3nhunt/dotfiles/commit/81361816aeff184aacc587e30033e01e6a74cc18))
+
 # [1.54.0](https://github.com/st3v3nhunt/dotfiles/compare/1.53.0...1.54.0) (2020-08-07)
 
 
