@@ -1,3 +1,12 @@
+# [1.54.0](https://github.com/st3v3nhunt/dotfiles/compare/1.53.0...1.54.0) (2020-08-07)
+
+
+### Features
+
+* install @vue/cli ([3a05591](https://github.com/st3v3nhunt/dotfiles/commit/3a05591d98221ca5422caf4c99afe20ffff95489))
+* install kubetail ([925af7b](https://github.com/st3v3nhunt/dotfiles/commit/925af7bd7df4842c7662f4d3d179347f39a0c885))
+* octant has a GUI, doesn't work on WSL ([78c208e](https://github.com/st3v3nhunt/dotfiles/commit/78c208ef62acec80dc11cb2a3117a7b3283ea65d))
+
 # [1.53.0](https://github.com/st3v3nhunt/dotfiles/compare/1.52.0...1.53.0) (2020-07-29)
 
 
