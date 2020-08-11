@@ -20,6 +20,7 @@ Plugin 'ludovicchabant/vim-gutentags'     " Tag management
 Plugin 'majutsushi/tagbar'                " A ctag viewer
 Plugin 'mileszs/ack.vim'                  " File searching
 Plugin 'ntpeters/vim-better-whitespace'   " Better whitespace
+Plugin 'posva/vim-vue'                    " Vue component highlighter
 Plugin 'scrooloose/nerdtree'              " File explorer
 Plugin 'tpope/vim-commentary'             " Comment out lines
 Plugin 'tpope/vim-fugitive'               " Git wrapper
