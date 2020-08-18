@@ -1,3 +1,20 @@
+# [1.56.0](https://github.com/st3v3nhunt/dotfiles/compare/1.55.0...1.56.0) (2020-08-18)
+
+
+### Bug Fixes
+
+* ordering of Vim plugins ([f80747e](https://github.com/st3v3nhunt/dotfiles/commit/f80747efa924e41ab2f8b942f333d713f2efde5d))
+
+
+### Features
+
+* add Vim plugin for Vue components ([f87e7f3](https://github.com/st3v3nhunt/dotfiles/commit/f87e7f3508e5e64d0d3989b51cc75248d2637c4c))
+* install serve ([c1c637c](https://github.com/st3v3nhunt/dotfiles/commit/c1c637ced171481be1bc39be31e754a5b4ce9b0c))
+* install standard globally ([494701e](https://github.com/st3v3nhunt/dotfiles/commit/494701e046678d27a9c0a6fb33011f22deb39638))
+* new word - AKS ([dacdc65](https://github.com/st3v3nhunt/dotfiles/commit/dacdc654ed80616173fb28d72b25e199032cc372))
+* new words to Vim dictionary ([7aa6007](https://github.com/st3v3nhunt/dotfiles/commit/7aa6007c7d3aad8435ecfaea2acea89e99d1347b))
+* use standard formatter for JS files ([7181dfa](https://github.com/st3v3nhunt/dotfiles/commit/7181dfa587e9aeb11d1cc1a49be5329845029591))
+
 # [1.55.0](https://github.com/st3v3nhunt/dotfiles/compare/1.54.0...1.55.0) (2020-08-07)
 
 
