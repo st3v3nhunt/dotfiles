@@ -7,7 +7,9 @@ echo "Installing global npm packages (serverless, snyk, yarn)..."
 npm install -g @vue/cli
 npm install -g eslint_d
 npm install -g prettier
+npm install -g serve
 npm install -g serverless
+npm install -g standard
 npm install -g snyk
 npm install -g typescript
 npm install -g yarn
