@@ -1,3 +1,16 @@
+# [1.57.0](https://github.com/st3v3nhunt/dotfiles/compare/1.56.0...1.57.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* use compatible terminal for macos ([6e32526](https://github.com/st3v3nhunt/dotfiles/commit/6e32526f288d9cb592529fab90f686811548d22d))
+
+
+### Features
+
+* update deps to latest versions ([b500bb4](https://github.com/st3v3nhunt/dotfiles/commit/b500bb430861fd6091fb47b8346780ac7ef04e41))
+* update to latest commitlint version ([632de28](https://github.com/st3v3nhunt/dotfiles/commit/632de289e9d94fd8a60c3e825b709528ebfc4196))
+
 # [1.56.0](https://github.com/st3v3nhunt/dotfiles/compare/1.55.0...1.56.0) (2020-08-18)
 
 
