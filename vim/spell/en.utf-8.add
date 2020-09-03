@@ -1,3 +1,4 @@
+adr
 AKS
 Alacritty
 AMQP
@@ -36,6 +37,7 @@ localhost
 macOS
 Mongo
 Mongodb
+Netlify
 NGINX
 NHSUK
 npm
@@ -44,6 +46,7 @@ OGL
 OMG
 POC
 Powerline
+PR
 Redis
 SemVer
 serverless
@@ -56,6 +59,7 @@ struct
 submodules
 tcp
 tmux
+Vue
 Webtrends
 WSL
 yaml
