@@ -1,3 +1,11 @@
+# [1.59.0](https://github.com/st3v3nhunt/dotfiles/compare/1.58.0...1.59.0) (2020-09-03)
+
+
+### Features
+
+* more spellings ([ce44db1](https://github.com/st3v3nhunt/dotfiles/commit/ce44db12a7748ad68327aa61a276a662bd0494d3))
+* octant works ok on WSL - install it ([6611ea4](https://github.com/st3v3nhunt/dotfiles/commit/6611ea46c69e90543fdda9cb9a99a2cbd0d1ea56))
+
 # [1.58.0](https://github.com/st3v3nhunt/dotfiles/compare/1.57.0...1.58.0) (2020-09-03)
 
 
