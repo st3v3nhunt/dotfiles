@@ -73,6 +73,7 @@ kind
 kubernetes-cli
 kubetail
 minikube
+octant
 rancher-cli
 skaffold
 stern
