@@ -17,7 +17,6 @@ brews=(
 deno
 docker-machine-driver-hyperkit
 hyperkit
-octant
 reattach-to-user-namespace
 wifi-password
 )
