@@ -1,3 +1,10 @@
+# [1.58.0](https://github.com/st3v3nhunt/dotfiles/compare/1.57.0...1.58.0) (2020-09-03)
+
+
+### Features
+
+* additional spellings ([615a2a2](https://github.com/st3v3nhunt/dotfiles/commit/615a2a2c152a3cec9822fd40137a643ab562c757))
+
 # [1.57.0](https://github.com/st3v3nhunt/dotfiles/compare/1.56.0...1.57.0) (2020-09-01)
 
 
