@@ -11,6 +11,7 @@ alias gd='git diff'
 alias ghi='git hist -n'
 alias glbd="git branch | grep -v master | xargs git branch -d"
 alias glbD="git branch | grep -v master | xargs git branch -D"
+alias gmpc='g com && gp && glbd && g rpo'
 alias gpuo='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpuon='gpuo --no-verify'
 alias gp='git pull'
