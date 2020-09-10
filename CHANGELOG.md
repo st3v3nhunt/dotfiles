@@ -1,3 +1,10 @@
+# [1.60.0](https://github.com/st3v3nhunt/dotfiles/compare/1.59.0...1.60.0) (2020-09-10)
+
+
+### Features
+
+* alias for updating git repo inc. clean up ([81e7a7f](https://github.com/st3v3nhunt/dotfiles/commit/81e7a7f2e2e4e749387b7be8b0b3de8c126f3a9f))
+
 # [1.59.0](https://github.com/st3v3nhunt/dotfiles/compare/1.58.0...1.59.0) (2020-09-03)
 
 
