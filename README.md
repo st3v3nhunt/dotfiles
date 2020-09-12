@@ -1,9 +1,9 @@
 # Dot files
 
-[![Build Status](https://github.com/st3v3nhunt/dotfiles/workflows/CI/badge.svg)](https://github.com/st3v3nhunt/dotfiles/actions?workflow=CI)
+[![Build Status](https://github.com/st3v3nhunt/dotfiles/workflows/Release/badge.svg)](https://github.com/st3v3nhunt/dotfiles/actions?workflow=Release)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![Known Vulnerabilities](https://snyk.io/test/github/DEFRA/ffc-demo-web/badge.svg)](https://snyk.io/test/github/DEFRA/ffc-demo-web)
-[![GitHub Super-Linter](https://github.com/st3v3nhunt/dotfiles/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![Known Vulnerabilities](https://snyk.io/test/github/st3v3nhunt/dotfiles/badge.svg)](https://snyk.io/test/github/st3v3nhunt/dotfiles)
+[![GitHub Super-Linter](https://github.com/st3v3nhunt/dotfiles/workflows/Release/badge.svg)](https://github.com/st3v3nhunt/dotfiles/actions?query=workflow%3ARelease)
 
 > Dotfiles repo for macOS and Linux WSL distros
 
