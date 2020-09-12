@@ -1,3 +1,10 @@
+## [1.60.1](https://github.com/st3v3nhunt/dotfiles/compare/1.60.0...1.60.1) (2020-09-12)
+
+
+### Bug Fixes
+
+* correct link ([9fb4801](https://github.com/st3v3nhunt/dotfiles/commit/9fb48018fb3ad4db114f68f8f699c3b97f5f9bd4))
+
 # [1.60.0](https://github.com/st3v3nhunt/dotfiles/compare/1.59.0...1.60.0) (2020-09-10)
 
 
