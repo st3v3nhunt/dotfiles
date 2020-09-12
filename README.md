@@ -132,7 +132,7 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
   * Removing the cask via `rm -rf $(brew --prefix)/Caskroom/<cask_name>`
 * Want to fetch all PRs from GitHub or MRs from GitLab locally?
   * Add the following to the repo's `.git/config`:
-  ```
+  ```ini
   [remote "origin"]
   fetch = +refs/pull/*:refs/remotes/origin/pull/*
   fetch = +refs/merge-requests/*/head:refs/remotes/origin/merge-requests/*
