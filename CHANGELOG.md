@@ -1,3 +1,28 @@
+# [1.61.0](https://github.com/st3v3nhunt/dotfiles/compare/1.60.1...1.61.0) (2020-09-12)
+
+
+### Bug Fixes
+
+* attempt to ignore linting CHANGELOG ([28fe156](https://github.com/st3v3nhunt/dotfiles/commit/28fe1564bf08a00f178be48f46abf113e0c16ccd))
+* change to pass markdown linting ([c09d1bd](https://github.com/st3v3nhunt/dotfiles/commit/c09d1bdadf258d1bfedc63b962eaca52f53d1360))
+* do not lint MD files as unable to ignore CHANGELOG ([de3515f](https://github.com/st3v3nhunt/dotfiles/commit/de3515f1a8765e1c9d420195ebdb9f03af2c7967))
+* ignore third-party scripts ([b07ca6a](https://github.com/st3v3nhunt/dotfiles/commit/b07ca6aa81c6e7dd79ab360e468905938d43c6bb))
+* no bare URLs allowed in markdown ([578535d](https://github.com/st3v3nhunt/dotfiles/commit/578535daeaf813c00594b03ca1a40e537ccca6e3))
+* npm audit run ([3bbc963](https://github.com/st3v3nhunt/dotfiles/commit/3bbc963c2f3e0c6a69c9fd110e55d7a9438dc47d))
+* set code fence language ([810d785](https://github.com/st3v3nhunt/dotfiles/commit/810d785bb456b8fa00a191ae53d411bb283a538b))
+
+
+### Features
+
+* add GitHub Super Linter ([c69d31c](https://github.com/st3v3nhunt/dotfiles/commit/c69d31caf89ff8a52cb64b05824bc2d7ce7d1683))
+* escape literal period ([8faedca](https://github.com/st3v3nhunt/dotfiles/commit/8faedca1277d995494fcaca6ce85af9fc0e88724))
+* exclude bash linting as covered by shellcheck ([ca4fa9e](https://github.com/st3v3nhunt/dotfiles/commit/ca4fa9ed17fe25283e6330c5b04a3a699af49bf7))
+* ignore CHANGELOG from linting ([e19ab36](https://github.com/st3v3nhunt/dotfiles/commit/e19ab36f71ffdab11946841acb0c141979b0c888))
+* lint entire code base ([bc1aecd](https://github.com/st3v3nhunt/dotfiles/commit/bc1aecd3b980aabe08727488086e7c7625712059))
+* run SuperLinter on merge to main branch ([6a2e811](https://github.com/st3v3nhunt/dotfiles/commit/6a2e811909b2e3daa94af16b5e2ab6b3c8c1845e))
+* set scripts as executable ([e0c7121](https://github.com/st3v3nhunt/dotfiles/commit/e0c7121b8ce8957974a87d230f30194f95e25353))
+* update husky ([2b56ccb](https://github.com/st3v3nhunt/dotfiles/commit/2b56ccb925750ebb37ca098cbc31e7398363137c))
+
 ## [1.60.1](https://github.com/st3v3nhunt/dotfiles/compare/1.60.0...1.60.1) (2020-09-12)
 
 
