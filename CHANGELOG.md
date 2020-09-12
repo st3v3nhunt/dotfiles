@@ -1,3 +1,10 @@
+## [1.61.1](https://github.com/st3v3nhunt/dotfiles/compare/1.61.0...1.61.1) (2020-09-12)
+
+
+### Bug Fixes
+
+* badges ([f74b2c0](https://github.com/st3v3nhunt/dotfiles/commit/f74b2c0864e47b4b674761231dd4ab0eada793d9))
+
 # [1.61.0](https://github.com/st3v3nhunt/dotfiles/compare/1.60.1...1.61.0) (2020-09-12)
 
 
