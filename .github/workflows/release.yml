@@ -32,6 +32,20 @@ jobs:
       uses: actions/checkout@v2
     - name: Shellcheck
       run: ./scripts/utils/test.sh
+  superlinter:
+    name: Lint Code Base
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Lint Code Base
+      uses: github/super-linter@v3
+      env:
+        DEFAULT_BRANCH: master
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        VALIDATE_ALL_CODEBASE: false
+        VALIDATE_BASH: false
+        VALIDATE_MD: false
   release:
     name: Create semantic-release
     runs-on: ubuntu-latest
