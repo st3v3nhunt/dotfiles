@@ -1,3 +1,10 @@
+## [1.61.2](https://github.com/st3v3nhunt/dotfiles/compare/1.61.1...1.61.2) (2020-09-12)
+
+
+### Bug Fixes
+
+* badgers ([9f6cf0b](https://github.com/st3v3nhunt/dotfiles/commit/9f6cf0b11a7944a8b9aa5b3a2f7f5ae43de1a00b))
+
 ## [1.61.1](https://github.com/st3v3nhunt/dotfiles/compare/1.61.0...1.61.1) (2020-09-12)
 
 
