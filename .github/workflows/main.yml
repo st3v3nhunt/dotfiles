@@ -32,3 +32,18 @@ jobs:
       uses: actions/checkout@v2
     - name: Shellcheck
       run: ./scripts/utils/test.sh
+  superlinter:
+    name: Lint Code Base
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Lint Code Base
+      uses: github/super-linter@v3
+      env:
+        DEFAULT_BRANCH: master
+        FILTER_REGEX_EXCLUDE: CHANGELOG.md
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        VALIDATE_ALL_CODEBASE: true
+        VALIDATE_BASH: false
+        VALIDATE_MD: false

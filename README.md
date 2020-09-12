@@ -3,6 +3,7 @@
 [![Build Status](https://github.com/st3v3nhunt/dotfiles/workflows/CI/badge.svg)](https://github.com/st3v3nhunt/dotfiles/actions?workflow=CI)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Known Vulnerabilities](https://snyk.io/test/github/DEFRA/ffc-demo-web/badge.svg)](https://snyk.io/test/github/DEFRA/ffc-demo-web)
+[![GitHub Super-Linter](https://github.com/st3v3nhunt/dotfiles/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 > Dotfiles repo for macOS and Linux WSL distros
 
@@ -131,7 +132,7 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
   * Removing the cask via `rm -rf $(brew --prefix)/Caskroom/<cask_name>`
 * Want to fetch all PRs from GitHub or MRs from GitLab locally?
   * Add the following to the repo's `.git/config`:
-  ```
+  ```ini
   [remote "origin"]
   fetch = +refs/pull/*:refs/remotes/origin/pull/*
   fetch = +refs/merge-requests/*/head:refs/remotes/origin/merge-requests/*

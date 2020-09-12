@@ -1,4 +1,4 @@
-# To do:
+# To do
 
 - [X] Split [.vimrc](./dotfiles/.vimrc) into multiple files
 - [X] Is it possible to have a base `.tmux.conf` to contain the majority of the
