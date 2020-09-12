@@ -46,3 +46,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         VALIDATE_ALL_CODEBASE: true
         VALIDATE_BASH: false
+        VALIDATE_MD: false
