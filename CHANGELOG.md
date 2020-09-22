@@ -1,3 +1,10 @@
+## [1.61.3](https://github.com/st3v3nhunt/dotfiles/compare/1.61.2...1.61.3) (2020-09-22)
+
+
+### Bug Fixes
+
+* make alias recognised by autocomplete ([ead8475](https://github.com/st3v3nhunt/dotfiles/commit/ead8475114aea98170e402d9e79fd3b813e1ca20))
+
 ## [1.61.2](https://github.com/st3v3nhunt/dotfiles/compare/1.61.1...1.61.2) (2020-09-12)
 
 
