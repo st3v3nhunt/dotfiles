@@ -1,3 +1,13 @@
+# [1.62.0](https://github.com/st3v3nhunt/dotfiles/compare/1.61.3...1.62.0) (2020-09-24)
+
+
+### Features
+
+* install mkcert for local certs ([d4a9924](https://github.com/st3v3nhunt/dotfiles/commit/d4a992480261fa119aed3c3e43022665fd65b809))
+* run GitHub Super-Linter locally ([6e4aee0](https://github.com/st3v3nhunt/dotfiles/commit/6e4aee0d8047596ca69a22d18958e48a15f1144e))
+* run linter on pre-push ([6122649](https://github.com/st3v3nhunt/dotfiles/commit/612264918d159282d5de49cac5ca3970be2b9cd9))
+* simplify GitHub Super-Linter config, remove bash specific lint ([f92a9ee](https://github.com/st3v3nhunt/dotfiles/commit/f92a9ee1a8f905884dbfa1bb59bf6bfa2dd8044b))
+
 ## [1.61.3](https://github.com/st3v3nhunt/dotfiles/compare/1.61.2...1.61.3) (2020-09-22)
 
 
