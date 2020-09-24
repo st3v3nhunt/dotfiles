@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+# Run [GitHub Super-Linter](https://github.com/github/super-linter/blob/master/docs/run-linter-locally.md) locally to lint Groovy code
+docker run -e RUN_LOCAL=true -e FILTER_REGEX_EXCLUDE="(CHANGELOG.md|.git-completion.bash|.git-prompt.sh)" "$@" -v "$(pwd)"/:/tmp/lint github/super-linter

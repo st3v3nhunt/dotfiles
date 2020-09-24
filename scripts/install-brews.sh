@@ -21,6 +21,7 @@ imagemagick
 jmeter
 jq
 llvm
+mkcert
 pipenv
 pyenv
 rename
