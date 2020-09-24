@@ -1,6 +1,6 @@
 {
   "hooks": {
     "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-    "pre-commit": "./scripts/utils/test.sh"
+    "pre-commit": "./scripts/utils/run-github-super-linter"
   }
 }
