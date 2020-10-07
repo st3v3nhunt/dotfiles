@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Check for existance of executable $file. If present, execute it otherwise
+# print out message. Exit code will be 0 if the $file does not exist, else it
+# will be the exit code from the execution of the $file
+
+file=./scripts/commitlint
+if [ -x $file ]; then
+  $file
+else
+  echo "File $file not found."
+fi
