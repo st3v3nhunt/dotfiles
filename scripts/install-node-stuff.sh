@@ -4,6 +4,8 @@ echo "Installing zsh-nvm (https://github.com/lukechilds/zsh-nvm.git)..."
 git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
 
 echo "Installing global npm packages (serverless, snyk, yarn)..."
+npm install -g @commitlint/cli
+npm install -g @commitlint/config-conventional
 npm install -g @vue/cli
 npm install -g eslint_d
 npm install -g prettier
