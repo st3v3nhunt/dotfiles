@@ -1,3 +1,17 @@
+# [1.63.0](https://github.com/st3v3nhunt/dotfiles/compare/1.62.0...1.63.0) (2020-10-12)
+
+
+### Bug Fixes
+
+* add new spelling ([ddc72be](https://github.com/st3v3nhunt/dotfiles/commit/ddc72be5c519ca452b46b280b01288170da03119))
+
+
+### Features
+
+* add git hook for running commit lint ([e5562b0](https://github.com/st3v3nhunt/dotfiles/commit/e5562b090cf6befa1fb8c4aaf139f819ab548860))
+* identify Dockerfile.<purpose> as dockerfile. improve ordering ([3a619ad](https://github.com/st3v3nhunt/dotfiles/commit/3a619ada2ba0fb038a66a3b1ba2a9a1be53ebcd1))
+* install @commitlint/{cli,config-conventional} for commit linting ([67c1053](https://github.com/st3v3nhunt/dotfiles/commit/67c10536ba7820ccfc65e2d8c0c0401729155e54))
+
 # [1.62.0](https://github.com/st3v3nhunt/dotfiles/compare/1.61.3...1.62.0) (2020-09-24)
 
 
