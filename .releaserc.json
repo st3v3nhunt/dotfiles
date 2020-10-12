@@ -14,10 +14,7 @@
       {
         "replacements": [
           {
-            "files": [
-              "package.json",
-              "package-lock.json"
-            ],
+            "files": ["package.json", "package-lock.json"],
             "from": "\"dotfiles\",\n  \"version\": \".*\"",
             "to": "\"dotfiles\",\n  \"version\": \"${nextRelease.version}\"",
             "results": [
@@ -42,19 +39,14 @@
     [
       "@semantic-release/git",
       {
-        "assets": [
-          "package.json",
-          "package-lock.json"
-        ],
+        "assets": ["package.json", "package-lock.json"],
         "message": "chore(release): update version from ${lastRelease.version} to ${nextRelease.version} [skip ci]"
       }
     ],
     [
       "@semantic-release/git",
       {
-        "assets": [
-          "CHANGELOG.md"
-        ],
+        "assets": ["CHANGELOG.md"],
         "message": "chore(release): update CHANGELOG for version ${nextRelease.version} [skip ci]"
       }
     ]
