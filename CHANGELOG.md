@@ -1,3 +1,11 @@
+# [1.64.0](https://github.com/st3v3nhunt/dotfiles/compare/1.63.0...1.64.0) (2020-10-18)
+
+
+### Features
+
+* add alias for asciicast2gif docker image ([6b53088](https://github.com/st3v3nhunt/dotfiles/commit/6b530880156b2dfc2b25beaa54aa87fc292d0f46))
+* install glow - markdown viewer ([87f6be9](https://github.com/st3v3nhunt/dotfiles/commit/87f6be995bca49dd3f3a3150be7d44affdba90c2))
+
 # [1.63.0](https://github.com/st3v3nhunt/dotfiles/compare/1.62.0...1.63.0) (2020-10-12)
 
 
