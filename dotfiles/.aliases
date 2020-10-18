@@ -1,3 +1,4 @@
+alias asciicast2gif='docker run --rm -v $PWD:/data asciinema/asciicast2gif'
 alias chrome='open /Applications/Google\ Chrome.app'
 alias ctags="`brew --prefix`/bin/ctags"
 alias c=cargo

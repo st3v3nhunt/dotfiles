@@ -14,6 +14,7 @@ aws-iam-authenticator
 cmake
 exercism
 gcc
+glow
 gpg
 groovy
 hugo
