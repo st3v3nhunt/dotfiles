@@ -57,14 +57,14 @@ set clipboard=unnamed         " allow copy between instances
 set number                    " line numbers
 set relativenumber            " show relative line numbers
 set colorcolumn=80            " 80 column guide
-set tabstop=2                 " 2 space tabs
+set tabstop=2                 " number of spaces for a tab
 set expandtab                 " insert spaces with tab
-set shiftwidth=2              " 2 spaces for tab with >
+set shiftwidth=2              " number of spaces for each step of (auto)indent
 set incsearch                 " incremental search
 set hlsearch                  " highlight searches
 set t_Co=256                  " 256 colours
-set list
-set listchars=tab:▸\ ,eol:¬   " show white chars
+set list                      " show listchars
+set listchars=tab:▸\ ,eol:¬   " override default listchars
 set showcmd                   " show command on screen
 set ignorecase                " ignore case when searching
 set smartcase                 " ignore case if search term is all lower, else be case sensitive
