@@ -1,3 +1,11 @@
+# [1.65.0](https://github.com/st3v3nhunt/dotfiles/compare/1.64.0...1.65.0) (2020-10-19)
+
+
+### Features
+
+* add Go specific vim config ([094ae79](https://github.com/st3v3nhunt/dotfiles/commit/094ae79d0b1e71e2111ba8a79f756d2eca5c083e))
+* improve comments for vim options ([7694b25](https://github.com/st3v3nhunt/dotfiles/commit/7694b251b847149c0879db2e1cebe86d9af3837a))
+
 # [1.64.0](https://github.com/st3v3nhunt/dotfiles/compare/1.63.0...1.64.0) (2020-10-18)
 
 
