@@ -1,3 +1,10 @@
+# [1.67.0](https://github.com/st3v3nhunt/dotfiles/compare/1.66.0...1.67.0) (2020-10-22)
+
+
+### Features
+
+* add microservice to dictionary ([6d57db9](https://github.com/st3v3nhunt/dotfiles/commit/6d57db9f7524b8e0ab463eccae5e6c2dd765024e))
+
 # [1.66.0](https://github.com/st3v3nhunt/dotfiles/compare/1.65.0...1.66.0) (2020-10-22)
 
 
