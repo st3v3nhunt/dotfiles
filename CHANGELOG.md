@@ -1,3 +1,10 @@
+# [1.66.0](https://github.com/st3v3nhunt/dotfiles/compare/1.65.0...1.66.0) (2020-10-22)
+
+
+### Features
+
+* add Rust specific vim config ([66a4979](https://github.com/st3v3nhunt/dotfiles/commit/66a49796d0d468602a910ec086e2b35a101e7b21))
+
 # [1.65.0](https://github.com/st3v3nhunt/dotfiles/compare/1.64.0...1.65.0) (2020-10-19)
 
 
