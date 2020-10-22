@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Check for existance of executable $file. If present, execute it otherwise
 # print out message. Exit code will be 0 if the $file does not exist, else it
