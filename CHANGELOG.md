@@ -1,3 +1,15 @@
+# [1.68.0](https://github.com/st3v3nhunt/dotfiles/compare/1.67.0...1.68.0) (2020-10-27)
+
+
+### Bug Fixes
+
+* use standard formatter for JS files ([b2131a6](https://github.com/st3v3nhunt/dotfiles/commit/b2131a6a4a879e6f430ff8e6b565836720356461))
+
+
+### Features
+
+* include more pertinent into in zsh prompt ([42a9b21](https://github.com/st3v3nhunt/dotfiles/commit/42a9b211be7392fa513d993c4560d9f5cbf71754))
+
 # [1.67.0](https://github.com/st3v3nhunt/dotfiles/compare/1.66.0...1.67.0) (2020-10-22)
 
 
