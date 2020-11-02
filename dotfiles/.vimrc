@@ -3,6 +3,7 @@ filetype off                " required
 set path+=**                " make :find search everything
 set tags=tags               " set tags to tags for ctags
 set autowrite               " write file
+set timeoutlen=500          " reduce amount of time to wait for second key
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
