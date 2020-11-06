@@ -17,6 +17,7 @@ fi
 
 ./scripts/install-gems.sh
 ./scripts/install-gcloud.sh
+./scripts/install-misc.sh
 ./scripts/install-node-stuff.sh
 ./scripts/install-pips.sh
 ./scripts/install-tmux-stuff.sh
