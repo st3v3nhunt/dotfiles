@@ -1,3 +1,11 @@
+# [1.69.0](https://github.com/st3v3nhunt/dotfiles/compare/1.68.0...1.69.0) (2020-11-06)
+
+
+### Features
+
+* install Heroku CLI ([9bdd81b](https://github.com/st3v3nhunt/dotfiles/commit/9bdd81bd3155d2d3728eab03272b5b55c7e06b5a))
+* reduce timeout for better vim experience ([67d913e](https://github.com/st3v3nhunt/dotfiles/commit/67d913ec7e346997d7f162ef428e31cb401583bb))
+
 # [1.68.0](https://github.com/st3v3nhunt/dotfiles/compare/1.67.0...1.68.0) (2020-10-27)
 
 
