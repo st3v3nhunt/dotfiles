@@ -1,3 +1,10 @@
+# [1.70.0](https://github.com/st3v3nhunt/dotfiles/compare/1.69.0...1.70.0) (2020-11-14)
+
+
+### Features
+
+* ignore all tags assets ([6e51954](https://github.com/st3v3nhunt/dotfiles/commit/6e519541158eb14bf02ef2f3daa0833db55a8727))
+
 # [1.69.0](https://github.com/st3v3nhunt/dotfiles/compare/1.68.0...1.69.0) (2020-11-06)
 
 
