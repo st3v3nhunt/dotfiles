@@ -1,3 +1,11 @@
+# [1.71.0](https://github.com/st3v3nhunt/dotfiles/compare/1.70.0...1.71.0) (2020-11-16)
+
+
+### Features
+
+* install alt-tab for better macOS switching ([b58ad53](https://github.com/st3v3nhunt/dotfiles/commit/b58ad53b0f3c819bde8a8e0f184f7ddc0036d9ef))
+* remove unused brews ([396b3d3](https://github.com/st3v3nhunt/dotfiles/commit/396b3d3f1f55d9d1ee643f06e7ba4850d387e6c4))
+
 # [1.70.0](https://github.com/st3v3nhunt/dotfiles/compare/1.69.0...1.70.0) (2020-11-14)
 
 
