@@ -22,7 +22,6 @@ caffeine
 db-browser-for-sqlite
 dbeaver-community
 dotnet-sdk
-dropbox
 gimp
 google-backup-and-sync
 google-cloud-sdk
@@ -67,12 +66,6 @@ signal
 skype
 skype-for-business
 slack
-)
-
-# Misc
-casks+=(
-sonos
-zwift
 )
 
 echo "Updating Homebrew..."
