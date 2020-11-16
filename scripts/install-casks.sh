@@ -14,6 +14,7 @@ opera
 
 # Utils
 casks+=(
+alt-tab
 avira-antivirus
 azure-data-studio
 burp-suite
