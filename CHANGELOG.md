@@ -1,3 +1,11 @@
+# [1.72.0](https://github.com/st3v3nhunt/dotfiles/compare/1.71.0...1.72.0) (2020-11-16)
+
+
+### Features
+
+* add iTerm2 shell integration ([cb055f4](https://github.com/st3v3nhunt/dotfiles/commit/cb055f448d217d74ec338c7fa0d3e7d4396e2326))
+* exclude main from branches to delete ([dbf712d](https://github.com/st3v3nhunt/dotfiles/commit/dbf712deec5daf1e3afab2866fdd85f69f27a371))
+
 # [1.71.0](https://github.com/st3v3nhunt/dotfiles/compare/1.70.0...1.71.0) (2020-11-16)
 
 
