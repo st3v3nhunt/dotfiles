@@ -1,3 +1,12 @@
+# [1.73.0](https://github.com/st3v3nhunt/dotfiles/compare/1.72.0...1.73.0) (2020-11-17)
+
+
+### Features
+
+* create releases from main branch ([b35d5a3](https://github.com/st3v3nhunt/dotfiles/commit/b35d5a36ca2198888d511dcbb1137843cb2fa6a4))
+* remove changes dir - no longer required ([e858e68](https://github.com/st3v3nhunt/dotfiles/commit/e858e689754281c6d221b9d25a148c1107234953))
+* update GitHub actions to work with main branch ([0146a61](https://github.com/st3v3nhunt/dotfiles/commit/0146a61b21fedf9390b2b5dbe858b679cd22315b))
+
 # [1.72.0](https://github.com/st3v3nhunt/dotfiles/compare/1.71.0...1.72.0) (2020-11-16)
 
 
