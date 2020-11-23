@@ -1,3 +1,10 @@
+# [1.74.0](https://github.com/st3v3nhunt/dotfiles/compare/1.73.1...1.74.0) (2020-11-23)
+
+
+### Features
+
+* turn off auto hover and add toggle ([f383a85](https://github.com/st3v3nhunt/dotfiles/commit/f383a85d46f713ed891c99478817d03c25ebffa6))
+
 ## [1.73.1](https://github.com/st3v3nhunt/dotfiles/compare/1.73.0...1.73.1) (2020-11-23)
 
 
