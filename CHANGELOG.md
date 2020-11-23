@@ -1,3 +1,10 @@
+## [1.73.1](https://github.com/st3v3nhunt/dotfiles/compare/1.73.0...1.73.1) (2020-11-23)
+
+
+### Bug Fixes
+
+* use noinsert to prevent unwanted word completion ([331624b](https://github.com/st3v3nhunt/dotfiles/commit/331624b557cc81b6ffc74fed2de65f991108e760))
+
 # [1.73.0](https://github.com/st3v3nhunt/dotfiles/compare/1.72.0...1.73.0) (2020-11-17)
 
 
