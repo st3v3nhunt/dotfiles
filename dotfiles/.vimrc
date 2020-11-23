@@ -134,6 +134,7 @@ let g:ale_fix_on_save=1
 let g:ale_fixers={
 \  '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
+let g:ale_hover_cursor=0
 let g:ale_lint_on_save=1
 let g:ale_sign_error='✗✗'
 let g:ale_sign_warning='∆∆'
@@ -164,9 +165,13 @@ nmap OO O<Esc>j
 " Remap leader to comma, all remaps using leader must be below this
 let mapleader=","
 
+" Prevent popup being displayed on CursorHold
+let g:ycm_auto_hover=''
 " Prevent the QuickFix window from closing
 autocmd User YcmQuickFixOpened autocmd! ycmquickfix WinLeave
 " YouCompleteMe configuration
+" Toggle YCM hover
+nmap <leader>h <plug>(YCMHover)
 nnoremap <leader>fi :YcmCompleter FixIt<CR>
 nnoremap <leader>gg :YcmCompleter GoTo<CR>
 nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
