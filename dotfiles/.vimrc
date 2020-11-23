@@ -105,9 +105,9 @@ let g:better_whitespace_filetypes_blacklist=[]
 
 " CtrlP - Ignore VCS and node stuff
 let g:ctrlp_custom_ignore = '\v[\/](coverage|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_extensions = ['tag']
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_use_caching = 1
-let g:ctrlp_extensions = ['tag']
 
 " Ack - use the_silver_searcher if avaiable
 if executable('ag')
@@ -121,30 +121,31 @@ nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>
 nnoremap \ :Ack!<space>
 
 " vim-airline settings
-let g:airline_powerline_fonts = 1
 " only load these extensions to speed up loading
 let g:airline_extension = ['ale']
+let g:airline_powerline_fonts = 1
 let g:airline_theme='base16_isotope'
 let g:airline#extensions#ale#enabled=1       " error information in the status bar
 
 " ALE configuration
 let g:ale_completion_enabled = 1
 let g:ale_completion_tsserver_autoimport = 1
-let g:ale_lint_on_save=1
 let g:ale_fix_on_save=1
-let g:ale_sign_error='✗✗'
-let g:ale_sign_warning='∆∆'
 let g:ale_fixers={
 \  '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
+let g:ale_hover_cursor=0
+let g:ale_lint_on_save=1
+let g:ale_sign_error='✗✗'
+let g:ale_sign_warning='∆∆'
 
 " vim-go configuration
 let g:go_fmt_command='goimports'
-let g:go_highlight_types=1
 let g:go_highlight_fields=1
-let g:go_highlight_functions=1
 let g:go_highlight_function_calls=1
+let g:go_highlight_functions=1
 let g:go_highlight_operators=1
+let g:go_highlight_types=1
 
 " Use global, static locations for back,swap and undo
 set backupdir=~/.vim/tmp/backup//
@@ -164,9 +165,13 @@ nmap OO O<Esc>j
 " Remap leader to comma, all remaps using leader must be below this
 let mapleader=","
 
+" Prevent popup being displayed on CursorHold
+let g:ycm_auto_hover=''
 " Prevent the QuickFix window from closing
 autocmd User YcmQuickFixOpened autocmd! ycmquickfix WinLeave
 " YouCompleteMe configuration
+" Toggle YCM hover
+nmap <leader>h <plug>(YCMHover)
 nnoremap <leader>fi :YcmCompleter FixIt<CR>
 nnoremap <leader>gg :YcmCompleter GoTo<CR>
 nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
