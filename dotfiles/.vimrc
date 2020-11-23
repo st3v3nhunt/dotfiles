@@ -53,26 +53,27 @@ colorscheme monokai
 filetype plugin indent on     " required
 syntax on                     " syntax highlighting
 
-set autoindent                " auto indent
-set clipboard=unnamed         " allow copy between instances
-set colorcolumn=80            " 80 column guide
-set expandtab                 " insert spaces with tab
-set foldmethod=indent         " fold based on indentation
-set foldlevel=5               " default fold level. 5 should be ok to see most contents
-set history=500               " remember more stuff
-set hlsearch                  " highlight searches
-set ignorecase                " ignore case when searching
-set incsearch                 " incremental search
-set list                      " show listchars
-set listchars=tab:▸\ ,eol:¬   " override default listchars
-set number                    " line numbers
-set relativenumber            " show relative line numbers
-set shiftwidth=2              " number of spaces for each step of (auto)indent
-set showcmd                   " show command on screen
-set smartcase                 " ignore case if search term is all lower, else be case sensitive
-set t_Co=256                  " 256 colours
-set tabstop=2                 " number of spaces for a tab
-set undolevels=1000           " undo more stuff
+set autoindent                                       " auto indent
+set clipboard=unnamed                                " allow copy between instances
+set colorcolumn=80                                   " 80 column guide
+set expandtab                                        " insert spaces with tab
+set foldmethod=indent                                " fold based on indentation
+set foldlevel=5                                      " default fold level. 5 should be ok to see most contents
+set history=500                                      " remember more stuff
+set hlsearch                                         " highlight searches
+set ignorecase                                       " ignore case when searching
+set incsearch                                        " incremental search
+set list                                             " show listchars
+set listchars=tab:▸\ ,eol:¬                          " override default listchars
+set number                                           " line numbers
+set completeopt=menu,menuone,popup,noselect,noinsert " fixes issue with automatically completing autocomplete options (noinsert) and switches to popup rather than preview window
+set relativenumber                                   " show relative line numbers
+set shiftwidth=2                                     " number of spaces for each step of (auto)indent
+set showcmd                                          " show command on screen
+set smartcase                                        " ignore case if search term is all lower, else be case sensitive
+set t_Co=256                                         " 256 colours
+set tabstop=2                                        " number of spaces for a tab
+set undolevels=1000                                  " undo more stuff
 
 autocmd BufRead,BufNewFile *.md setlocal spell                    " turn spell check on for *.md files
 autocmd BufRead,BufNewFile *.nunjucks set filetype=html           " identify nunjucks files as html
