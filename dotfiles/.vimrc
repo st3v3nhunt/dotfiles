@@ -104,15 +104,15 @@ let g:better_whitespace_enabled=1
 let g:better_whitespace_filetypes_blacklist=[]
 
 " CtrlP - Ignore VCS and node stuff
-let g:ctrlp_custom_ignore = '\v[\/](coverage|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
-let g:ctrlp_extensions = ['tag']
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_use_caching = 1
+let g:ctrlp_custom_ignore='\v[\/](coverage|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_extensions=['tag']
+let g:ctrlp_show_hidden=1
+let g:ctrlp_use_caching=1
 
 " Ack - use the_silver_searcher if avaiable
 if executable('ag')
   " Use ag in place of ack
-  let g:ackprg = 'ag --vimgrep'
+  let g:ackprg='ag --vimgrep'
 endif
 
 " Bind K to search for word under cursor
@@ -122,14 +122,13 @@ nnoremap \ :Ack!<space>
 
 " vim-airline settings
 " only load these extensions to speed up loading
-let g:airline_extension = ['ale']
-let g:airline_powerline_fonts = 1
+let g:airline_extension=['ale']
+let g:airline_powerline_fonts=1
 let g:airline_theme='base16_isotope'
 let g:airline#extensions#ale#enabled=1       " error information in the status bar
 
 " ALE configuration
-let g:ale_completion_enabled = 1
-let g:ale_completion_tsserver_autoimport = 1
+let g:ale_completion_tsserver_autoimport=1
 let g:ale_fix_on_save=1
 let g:ale_fixers={
 \  '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -181,7 +180,7 @@ nnoremap <leader>rr :YcmCompleter RefactorRename<space>
 nnoremap <leader>yy :YcmRestartServer<CR>
 
 " Copy into the system clipboard
-let s:clip = '/c/Windows/System32/clip.exe'
+let s:clip='/c/Windows/System32/clip.exe'
 if executable(s:clip)
   augroup WSLYank
     autocmd!
