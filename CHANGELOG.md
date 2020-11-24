@@ -1,3 +1,10 @@
+# [1.75.0](https://github.com/st3v3nhunt/dotfiles/compare/1.74.0...1.75.0) (2020-11-24)
+
+
+### Features
+
+* make preview window larger for rust ([#265](https://github.com/st3v3nhunt/dotfiles/issues/265)) ([aefd89f](https://github.com/st3v3nhunt/dotfiles/commit/aefd89f3298d113caccd4ce8a1cbf0afa21fb45e))
+
 # [1.74.0](https://github.com/st3v3nhunt/dotfiles/compare/1.73.1...1.74.0) (2020-11-23)
 
 
