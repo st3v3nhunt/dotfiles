@@ -5,7 +5,7 @@
 	ca = commit --amend
 	co = checkout
 	cob = checkout -b
-	com = checkout master
+	com = checkout main
 	d = diff
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 	pfu = push -fu --no-verify
