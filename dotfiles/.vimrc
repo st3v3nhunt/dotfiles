@@ -126,6 +126,7 @@ let g:airline_extension=['ale']
 let g:airline_powerline_fonts=1
 let g:airline_theme='base16_isotope'
 let g:airline#extensions#ale#enabled=1       " error information in the status bar
+let g:airline_section_b=''
 
 " ALE configuration
 let g:ale_completion_tsserver_autoimport=1
