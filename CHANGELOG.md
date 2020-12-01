@@ -1,3 +1,10 @@
+## [1.75.1](https://github.com/st3v3nhunt/dotfiles/compare/1.75.0...1.75.1) (2020-12-01)
+
+
+### Bug Fixes
+
+* remove git info from vim airline (section b) ([#268](https://github.com/st3v3nhunt/dotfiles/issues/268)) ([6bda723](https://github.com/st3v3nhunt/dotfiles/commit/6bda723f817634e955fe8997876477f15ca9d600))
+
 # [1.75.0](https://github.com/st3v3nhunt/dotfiles/compare/1.74.0...1.75.0) (2020-11-24)
 
 
