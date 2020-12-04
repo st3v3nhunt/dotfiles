@@ -1,3 +1,10 @@
+# [1.76.0](https://github.com/st3v3nhunt/dotfiles/compare/1.75.1...1.76.0) (2020-12-04)
+
+
+### Features
+
+* change Alacritty theme ([#270](https://github.com/st3v3nhunt/dotfiles/issues/270)) ([a81e8ac](https://github.com/st3v3nhunt/dotfiles/commit/a81e8acb7d2a90cc06ca2f2f30941ffb160078dd))
+
 ## [1.75.1](https://github.com/st3v3nhunt/dotfiles/compare/1.75.0...1.75.1) (2020-12-01)
 
 
