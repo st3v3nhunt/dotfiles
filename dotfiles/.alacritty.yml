@@ -282,59 +282,59 @@ font:
   #
   #indexed_colors: []
 
-# # Colors (Molokai Dark)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '#1B1D1E'
-#     foreground: '#F8F8F2'
-#   # Normal colors
-#   normal:
-#     black:   '#333333'
-#     red:     '#C4265E'
-#     green:   '#86B42B'
-#     yellow:  '#B3B42B'
-#     blue:    '#6A7EC8'
-#     magenta: '#8C6BC8'
-#     cyan:    '#56ADBC'
-#     white:   '#E3E3DD'
-#   # Bright colors
-#   bright:
-#     black:   '#666666'
-#     red:     '#F92672'
-#     green:   '#A6E22E'
-#     yellow:  '#E2E22E'
-#     blue:    '#819AFF'
-#     magenta: '#AE81FF'
-#     cyan:    '#66D9EF'
-#     white:   '#F8F8F2'
-
-# Colors (Monokai Soda)
+# Colors (Molokai Dark)
 colors:
   # Default colors
   primary:
-    background: '#1A1A1A'
-    foreground: '#C4C5B5'
+    background: '#1B1D1E'
+    foreground: '#F8F8F2'
   # Normal colors
   normal:
-    black:   '#1A1A1A'
-    red:     '#F4005F'
-    green:   '#98E024'
-    yellow:  '#FA8419'
-    blue:    '#9D65FF'
-    magenta: '#F4005F'
-    cyan:    '#58D1EB'
-    white:   '#C4C5B5'
+    black:   '#333333'
+    red:     '#C4265E'
+    green:   '#86B42B'
+    yellow:  '#B3B42B'
+    blue:    '#6A7EC8'
+    magenta: '#8C6BC8'
+    cyan:    '#56ADBC'
+    white:   '#E3E3DD'
   # Bright colors
   bright:
-    black:   '#625E4C'
-    red:     '#F4005F'
-    green:   '#98E024'
-    yellow:  '#E0D561'
-    blue:    '#9D65FF'
-    magenta: '#F4005F'
-    cyan:    '#58D1EB'
-    white:   '#F6F6EF'
+    black:   '#666666'
+    red:     '#F92672'
+    green:   '#A6E22E'
+    yellow:  '#E2E22E'
+    blue:    '#819AFF'
+    magenta: '#AE81FF'
+    cyan:    '#66D9EF'
+    white:   '#F8F8F2'
+
+# # Colors (Monokai Soda)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '#1A1A1A'
+#     foreground: '#C4C5B5'
+#   # Normal colors
+#   normal:
+#     black:   '#1A1A1A'
+#     red:     '#F4005F'
+#     green:   '#98E024'
+#     yellow:  '#FA8419'
+#     blue:    '#9D65FF'
+#     magenta: '#F4005F'
+#     cyan:    '#58D1EB'
+#     white:   '#C4C5B5'
+#   # Bright colors
+#   bright:
+#     black:   '#625E4C'
+#     red:     '#F4005F'
+#     green:   '#98E024'
+#     yellow:  '#E0D561'
+#     blue:    '#9D65FF'
+#     magenta: '#F4005F'
+#     cyan:    '#58D1EB'
+#     white:   '#F6F6EF'
 
 # Bell
 #
