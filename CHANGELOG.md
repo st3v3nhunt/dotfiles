@@ -1,3 +1,10 @@
+# [1.77.0](https://github.com/st3v3nhunt/dotfiles/compare/1.76.0...1.77.0) (2020-12-06)
+
+
+### Features
+
+* **win-terminal:** switch to Konsolas theme ([#271](https://github.com/st3v3nhunt/dotfiles/issues/271)) ([5007c06](https://github.com/st3v3nhunt/dotfiles/commit/5007c06b6d133c0a840d59031aaaacb5b70f98ef))
+
 # [1.76.0](https://github.com/st3v3nhunt/dotfiles/compare/1.75.1...1.76.0) (2020-12-04)
 
 
