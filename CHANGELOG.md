@@ -1,3 +1,10 @@
+# [1.78.0](https://github.com/st3v3nhunt/dotfiles/compare/1.77.0...1.78.0) (2020-12-08)
+
+
+### Features
+
+* **spelling:** add JS ([#272](https://github.com/st3v3nhunt/dotfiles/issues/272)) ([b2a95f8](https://github.com/st3v3nhunt/dotfiles/commit/b2a95f8876e3978fcf0488c1ce1c1e14ad673cd6))
+
 # [1.77.0](https://github.com/st3v3nhunt/dotfiles/compare/1.76.0...1.77.0) (2020-12-06)
 
 
