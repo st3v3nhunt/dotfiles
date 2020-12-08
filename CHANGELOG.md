@@ -1,3 +1,10 @@
+# [1.79.0](https://github.com/st3v3nhunt/dotfiles/compare/1.78.0...1.79.0) (2020-12-08)
+
+
+### Features
+
+* **iterm:** new iterm settings ([#273](https://github.com/st3v3nhunt/dotfiles/issues/273)) ([0fb7ce3](https://github.com/st3v3nhunt/dotfiles/commit/0fb7ce34f93729ef4e078d66840a59e682970975))
+
 # [1.78.0](https://github.com/st3v3nhunt/dotfiles/compare/1.77.0...1.78.0) (2020-12-08)
 
 
