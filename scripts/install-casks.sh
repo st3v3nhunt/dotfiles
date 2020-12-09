@@ -14,6 +14,7 @@ opera
 
 # Utils
 casks+=(
+alacritty
 alt-tab
 avira-antivirus
 azure-data-studio
@@ -28,6 +29,7 @@ google-cloud-sdk
 iterm2
 java
 karabiner-elements
+keycastr
 kitematic
 lastpass
 little-snitch

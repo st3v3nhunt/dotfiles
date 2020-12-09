@@ -14,7 +14,6 @@ printf "${GREEN}Finished installing Karabiner-Elements configuration...${NC}\\n"
 echo "If there are problems with karabiner settings not being loaded try turning on the setting for 'system default configuration'"
 
 brews=(
-alacritty
 deno
 docker-machine-driver-hyperkit
 hyperkit
