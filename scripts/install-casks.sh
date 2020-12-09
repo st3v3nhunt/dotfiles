@@ -14,6 +14,7 @@ opera
 
 # Utils
 casks+=(
+alacritty
 alt-tab
 avira-antivirus
 azure-data-studio
