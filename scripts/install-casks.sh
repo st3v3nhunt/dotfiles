@@ -66,8 +66,6 @@ visual-studio-code
 casks+=(
 microsoft-teams
 signal
-skype
-skype-for-business
 slack
 )
 
