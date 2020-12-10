@@ -32,6 +32,7 @@ karabiner-elements
 keycastr
 kitematic
 lastpass
+lens
 little-snitch
 microsoft-azure-storage-explorer
 microsoft-office
