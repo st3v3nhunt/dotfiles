@@ -9,7 +9,6 @@ brew tap homebrew/cask-fonts
 casks=(
 firefox
 google-chrome
-opera
 )
 
 # Utils
