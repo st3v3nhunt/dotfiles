@@ -9,7 +9,6 @@ brew tap homebrew/cask-fonts
 casks=(
 firefox
 google-chrome
-opera
 )
 
 # Utils
@@ -32,6 +31,7 @@ karabiner-elements
 keycastr
 kitematic
 lastpass
+lens
 little-snitch
 microsoft-azure-storage-explorer
 microsoft-office
@@ -65,8 +65,6 @@ visual-studio-code
 casks+=(
 microsoft-teams
 signal
-skype
-skype-for-business
 slack
 )
 
