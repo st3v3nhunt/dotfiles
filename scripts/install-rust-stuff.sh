@@ -8,7 +8,7 @@ cargo install cargo-watch
 
 echo "Install rustup and cargo shell completion for bash..."
 rustup completions bash > "$(brew --prefix)/etc/bash_completion.d/rustup.bash-completion"
-rustup completions bash cagro > "$(brew --prefix)/etc/bash_completion.d/cargo.bash-completion"
+rustup completions bash cargo > "$(brew --prefix)/etc/bash_completion.d/cargo.bash-completion"
 
 echo "Install rustup and cargo shell completion for zsh..."
 mkdir ~/.zfunc
