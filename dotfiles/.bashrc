@@ -56,3 +56,6 @@ _dotnet_bash_complete()
 }
 
 complete -f -F _dotnet_bash_complete dotnet
+
+# Rust (Cargo)
+source "$HOME/.cargo/env"
