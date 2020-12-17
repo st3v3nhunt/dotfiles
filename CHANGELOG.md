@@ -1,3 +1,10 @@
+## [1.79.1](https://github.com/st3v3nhunt/dotfiles/compare/1.79.0...1.79.1) (2020-12-17)
+
+
+### Bug Fixes
+
+* **rust:** ensure rust completions work ([#277](https://github.com/st3v3nhunt/dotfiles/issues/277)) ([f14cbd0](https://github.com/st3v3nhunt/dotfiles/commit/f14cbd0d4e2279c40ecc8ba76f982bf84f432204))
+
 # [1.79.0](https://github.com/st3v3nhunt/dotfiles/compare/1.78.0...1.79.0) (2020-12-08)
 
 
