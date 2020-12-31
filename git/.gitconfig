@@ -49,3 +49,4 @@
 	name = Steven Hunt
 [init]
 	templateDir = ~/.git-template
+	defaultBranch = main
