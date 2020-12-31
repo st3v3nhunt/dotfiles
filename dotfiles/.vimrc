@@ -112,7 +112,7 @@ let g:ctrlp_use_caching=1
 " Ack - use ripgrep if available
 if executable('rg')
   " Use rg in place of ack
-  let g:ackprg='ag --vimgrep'
+  let g:ackprg='rg --vimgrep'
 endif
 
 " Bind K to search for word under cursor
