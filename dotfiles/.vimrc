@@ -109,9 +109,9 @@ let g:ctrlp_extensions=['tag']
 let g:ctrlp_show_hidden=1
 let g:ctrlp_use_caching=1
 
-" Ack - use the_silver_searcher if avaiable
-if executable('ag')
-  " Use ag in place of ack
+" Ack - use ripgrep if available
+if executable('rg')
+  " Use rg in place of ack
   let g:ackprg='ag --vimgrep'
 endif
 

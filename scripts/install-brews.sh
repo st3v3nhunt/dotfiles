@@ -89,7 +89,7 @@ sqlite
 
 # Search stuff
 brews+=(
-the_silver_searcher
+ripgrep
 )
 
 # Upgrade if already installed via Homebrew otherwise install it
