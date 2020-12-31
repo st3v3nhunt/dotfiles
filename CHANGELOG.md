@@ -1,3 +1,10 @@
+# [1.80.0](https://github.com/st3v3nhunt/dotfiles/compare/1.79.1...1.80.0) (2020-12-31)
+
+
+### Features
+
+* **git:** set default branch to 'main' ([#279](https://github.com/st3v3nhunt/dotfiles/issues/279)) ([5ce6559](https://github.com/st3v3nhunt/dotfiles/commit/5ce65598ac7a1d742a21231cd7395182cce35343))
+
 ## [1.79.1](https://github.com/st3v3nhunt/dotfiles/compare/1.79.0...1.79.1) (2020-12-17)
 
 
