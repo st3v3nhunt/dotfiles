@@ -9,4 +9,4 @@ let b:ycm_language_server =
 \   }
 \ ]
 
-set previewheight=25
+set previewheight=30
