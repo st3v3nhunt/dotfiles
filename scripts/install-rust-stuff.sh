@@ -8,6 +8,9 @@ cargo install cargo-watch
 cargo install cargo-generate
 cargo install cargo-benchcmp
 
+echo "Install nightly..."
+rustup toolchain install nightly
+
 echo "Install rustup and cargo shell completion for bash..."
 rustup completions bash > "$(brew --prefix)/etc/bash_completion.d/rustup.bash-completion"
 rustup completions bash cargo > "$(brew --prefix)/etc/bash_completion.d/cargo.bash-completion"
