@@ -1,3 +1,10 @@
+# [1.81.0](https://github.com/st3v3nhunt/dotfiles/compare/1.80.0...1.81.0) (2021-01-04)
+
+
+### Features
+
+* **vim:** wrap all au in augroup. make preview window height global ([#281](https://github.com/st3v3nhunt/dotfiles/issues/281)) ([a895320](https://github.com/st3v3nhunt/dotfiles/commit/a895320e718023d0499be0fa3731a42ff9f2b7d3))
+
 # [1.80.0](https://github.com/st3v3nhunt/dotfiles/compare/1.79.1...1.80.0) (2020-12-31)
 
 
