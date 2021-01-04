@@ -8,5 +8,3 @@ let b:ycm_language_server =
 \     'project_root_files': ['Cargo.toml']
 \   }
 \ ]
-
-set previewheight=30
