@@ -75,10 +75,15 @@ set t_Co=256                                                      " 256 colours
 set tabstop=2                                                     " number of spaces for a tab
 set undolevels=1000                                               " undo more stuff
 
-autocmd BufRead,BufNewFile *.md setlocal spell                    " turn spell check on for *.md files
-autocmd BufRead,BufNewFile *.nunjucks set filetype=html           " identify nunjucks files as html
-autocmd BufRead,BufNewFile Dockerfile.* set filetype=dockerfile   " identify Dockerfiles.<purpose> as dockerfile
-autocmd BufRead,BufNewFile Jenkinsfile set syntax=groovy          " identify Jenkinsfile as groovy
+" Use single grouping for all autocmds in file
+augroup vimrc
+  autocmd!
+augroup END
+
+autocmd vimrc BufRead,BufNewFile *.md setlocal spell                    " turn spell check on for *.md files
+autocmd vimrc BufRead,BufNewFile *.nunjucks set filetype=html           " identify nunjucks files as html
+autocmd vimrc BufRead,BufNewFile Dockerfile.* set filetype=dockerfile   " identify Dockerfiles.<purpose> as dockerfile
+autocmd vimrc BufRead,BufNewFile Jenkinsfile set syntax=groovy          " identify Jenkinsfile as groovy
 
 " Plugin specifc settings
 " Save Terraform files on save and align with tabular
@@ -87,7 +92,7 @@ let g:terraform_fmt_on_save=1
 " Run rustfmt on save
 let g:rustfmt_autosave=1
 " Format on save
-" autocmd BufWrite * :Autoformat
+" autocmd vimrc BufWrite * :Autoformat
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
@@ -165,11 +170,16 @@ nmap OO O<Esc>j
 " Remap leader to comma, all remaps using leader must be below this
 let mapleader=","
 
+" Make preview window display (upto 100) lines of content
+set previewheight=100
+
+" YouCompleteMe configuration
+" Autoclose preview window when insert mode is exited
+let g:ycm_autoclose_preview_window_after_insertion=1
 " Prevent popup being displayed on CursorHold
 let g:ycm_auto_hover=''
 " Prevent the QuickFix window from closing
-autocmd User YcmQuickFixOpened autocmd! ycmquickfix WinLeave
-" YouCompleteMe configuration
+autocmd vimrc User YcmQuickFixOpened ycmquickfix WinLeave
 " Toggle YCM hover
 nmap <leader>h <plug>(YCMHover)
 nnoremap <leader>fi :YcmCompleter FixIt<CR>
@@ -183,10 +193,11 @@ nnoremap <leader>yy :YcmRestartServer<CR>
 " Copy into the system clipboard
 let s:clip='/c/Windows/System32/clip.exe'
 if executable(s:clip)
-  augroup WSLYank
-    autocmd!
-    autocmd TextYankPost * :call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
-  augroup END
+  autocmd vimrc TextYankPost * :call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
+  " augroup WSLYank
+  "   autocmd!
+  "   autocmd TextYankPost * :call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
+  " augroup END
 end
 " Paste from the system clipboard
 map <silent> <leader>p :r !powershell.exe -Command Get-Clipboard<CR>
