@@ -80,10 +80,11 @@ augroup vimrc
   autocmd!
 augroup END
 
-autocmd vimrc BufRead,BufNewFile *.md setlocal spell                    " turn spell check on for *.md files
-autocmd vimrc BufRead,BufNewFile *.nunjucks set filetype=html           " identify nunjucks files as html
-autocmd vimrc BufRead,BufNewFile Dockerfile.* set filetype=dockerfile   " identify Dockerfiles.<purpose> as dockerfile
-autocmd vimrc BufRead,BufNewFile Jenkinsfile set syntax=groovy          " identify Jenkinsfile as groovy
+autocmd vimrc BufNewFile,BufRead *.md setlocal spell                    " turn spell check on for *.md files
+autocmd vimrc BufNewFile,BufRead *.nunjucks set filetype=html           " identify nunjucks files as html
+autocmd vimrc BufNewFile,BufRead *.svelte set filetype=html             " identify Svelte files as html
+autocmd vimrc BufNewFile,BufRead Dockerfile.* set filetype=dockerfile   " identify Dockerfiles.<purpose> as dockerfile
+autocmd vimrc BufNewFile,BufRead Jenkinsfile set syntax=groovy          " identify Jenkinsfile as groovy
 
 " Plugin specifc settings
 " Save Terraform files on save and align with tabular
