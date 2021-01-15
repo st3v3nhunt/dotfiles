@@ -1,3 +1,10 @@
+# [1.82.0](https://github.com/st3v3nhunt/dotfiles/compare/1.81.0...1.82.0) (2021-01-15)
+
+
+### Features
+
+* alias kubetail ([#283](https://github.com/st3v3nhunt/dotfiles/issues/283)) ([014da22](https://github.com/st3v3nhunt/dotfiles/commit/014da224f5bf0ce3a88c8a93b1e1f8bbcbb06831))
+
 # [1.81.0](https://github.com/st3v3nhunt/dotfiles/compare/1.80.0...1.81.0) (2021-01-04)
 
 
