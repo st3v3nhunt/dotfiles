@@ -23,6 +23,7 @@ alias hb='hub browse'
 alias hist=history
 alias j=jobs
 alias k=kubectl
+alias kt=kubetail
 alias mk=minikube
 alias sbp='. ~/.bashrc'
 alias szp='. ~/.zshrc'
