@@ -4,6 +4,7 @@ set path+=**                " make :find search everything
 set tags=tags               " set tags to tags for ctags
 set autowrite               " write file
 set timeoutlen=500          " reduce amount of time to wait for second key
+set showtabline=2           " always show tab bar
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -218,6 +219,18 @@ nnoremap <leader>k :ALEPreviousWrap<CR>
 nnoremap <leader>f :Autoformat<CR>
 " Run jq on the current buffer
 nnoremap <leader>jf :%! jq<CR>
+
+" Tab options
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabprev<CR>
+nnoremap tk  :tabnext<CR>
+nnoremap tl  :tablast<CR>
+nnoremap ts  :tab split<CR>
+nnoremap to  :tabnew<CR>
+" nnoremap tt  :tabedit<Space>
+" nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap tc  :tabclose<CR>
 
 " Add all plugins to the runtimepath and then load all helptags, ignoring any
 " errors as the command will continue to run
