@@ -4872,5 +4872,8 @@
       "foreground": "#dcdccc"
     }
   ],
-  "keybindings": []
+  "actions": [
+    { "command": "unbound", "keys": "ctrl+tab" },
+    { "command": "unbound", "keys": "ctrl+shift+tab" }
+  ]
 }
