@@ -136,6 +136,7 @@ let g:airline#extensions#ale#enabled=1       " error information in the status b
 let g:airline_section_b=''
 
 " ALE configuration
+let g:ale_typescript_standard_executable='ts-standard'
 let g:ale_completion_tsserver_autoimport=1
 let g:ale_fix_on_save=1
 let g:ale_fixers={
