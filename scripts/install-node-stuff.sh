@@ -13,6 +13,7 @@ npm install -g serve
 npm install -g serverless
 npm install -g standard
 npm install -g snyk
+npm install -g ts-standard
 npm install -g typescript
 npm install -g yarn
 
