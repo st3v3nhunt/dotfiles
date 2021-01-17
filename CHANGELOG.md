@@ -1,3 +1,10 @@
+# [1.83.0](https://github.com/st3v3nhunt/dotfiles/compare/1.82.0...1.83.0) (2021-01-17)
+
+
+### Features
+
+* **typescript:** install ts-standard and use for linting ([#285](https://github.com/st3v3nhunt/dotfiles/issues/285)) ([38726a4](https://github.com/st3v3nhunt/dotfiles/commit/38726a4d7b8ba6abe6bffff99495d6a277c3fd1e))
+
 # [1.82.0](https://github.com/st3v3nhunt/dotfiles/compare/1.81.0...1.82.0) (2021-01-15)
 
 
