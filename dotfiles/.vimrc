@@ -1,58 +1,59 @@
 set nocompatible            " use vim settings
-filetype off                " required
 set path+=**                " make :find search everything
 set tags=tags               " set tags to tags for ctags
 set autowrite               " write file
 set timeoutlen=500          " reduce amount of time to wait for second key
 set showtabline=2           " always show tab bar
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
 
-Plugin 'VundleVim/Vundle.vim'             " Vundle should manage Vundle
-" Themes
-Plugin 'crusoexia/vim-monokai'
+call plug#begin()
+" themes
+Plug 'crusoexia/vim-monokai'
 " generally useful plugins
-Plugin 'airblade/vim-gitgutter'           " Git into in gutter
-Plugin 'Chiel92/vim-autoformat'           " Generic code formatter
-Plugin 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
-Plugin 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
-Plugin 'godlygeek/tabular'                " Tabularisation
-Plugin 'honza/vim-snippets'               " Snippets
-Plugin 'junegunn/vim-easy-align'          " Better/easier alignment
-Plugin 'ludovicchabant/vim-gutentags'     " Tag management
-Plugin 'majutsushi/tagbar'                " A ctag viewer
-Plugin 'mileszs/ack.vim'                  " File searching
-Plugin 'ntpeters/vim-better-whitespace'   " Better whitespace
-Plugin 'scrooloose/nerdtree'              " File explorer
-Plugin 'SirVer/ultisnips'                 " Snippet engine
-Plugin 'tpope/vim-commentary'             " Comment out lines
-Plugin 'tpope/vim-fugitive'               " Git wrapper
-Plugin 'tpope/vim-obsession'              " Improve session restoration
-Plugin 'tpope/vim-repeat'                 " Repeat plugin commands via .
-Plugin 'tpope/vim-surround'               " Word/phrase surrounds
-Plugin 'Valloric/YouCompleteMe'           " Code completion engine
-Plugin 'vim-airline/vim-airline'          " File status bar
-Plugin 'vim-airline/vim-airline-themes'   " Themes for vim-airline
-Plugin 'w0rp/ale'                         " Asynchronous Lint Engine aka ALE
+Plug 'airblade/vim-gitgutter'                               " Git , { 'do': './install.py' }into in gutter
+Plug 'Chiel92/vim-autoformat'           " Generic code formatter
+Plug 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
+Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
+Plug 'godlygeek/tabular'                " Tabularisation
+Plug 'honza/vim-snippets'               " Snippets
+Plug 'junegunn/vim-easy-align'          " Better/easier alignment
+Plug 'ludovicchabant/vim-gutentags'     " Tag management
+Plug 'majutsushi/tagbar'                " A ctag viewer
+Plug 'mileszs/ack.vim'                  " File searching
+Plug 'ntpeters/vim-better-whitespace'   " Better whitespace
+Plug 'scrooloose/nerdtree'              " File explorer
+Plug 'SirVer/ultisnips'                 " Snippet engine
+Plug 'tpope/vim-commentary'             " Comment out lines
+Plug 'tpope/vim-fugitive'               " Git wrapper
+Plug 'tpope/vim-obsession'              " Improve session restoration
+Plug 'tpope/vim-repeat'                 " Repeat plugin commands via '.'
+Plug 'tpope/vim-surround'               " Word/phrase surrounds
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }     " Code completion engine
+Plug 'vim-airline/vim-airline'                                    " File status bar
+Plug 'vim-airline/vim-airline-themes'                             " Themes for vim-airline
+Plug 'w0rp/ale'                                                   " Asynchronous Lint Engine aka ALE
 " specific languge plugins
-Plugin 'fatih/vim-go'                     " Golang
-Plugin 'hashivim/vim-terraform'           " Terraform
-Plugin 'google/yapf'                      " Python
-Plugin 'leafgarland/typescript-vim'       " TypeScript
-Plugin 'lepture/vim-jinja'                " Jinja/Nunjucks
-Plugin 'OmniSharp/omnisharp-vim'          " C#
-Plugin 'pangloss/vim-javascript'          " JavaScript
-Plugin 'posva/vim-vue'                    " Vue
-Plugin 'rust-lang/rust.vim'               " Rust
-
-" All plugins must be added before this line
-call vundle#end()             " required
+Plug 'fatih/vim-go'                                               " Golang
+Plug 'hashivim/vim-terraform'                                     " Terraform
+Plug 'google/yapf'                                                " Python
+Plug 'leafgarland/typescript-vim'                                 " TypeScript
+Plug 'lepture/vim-jinja'                                          " Jinja/Nunjucks
+Plug 'OmniSharp/omnisharp-vim'                                    " C#
+Plug 'pangloss/vim-javascript'                                    " JavaScript
+Plug 'posva/vim-vue'                                              " Vue
+Plug 'rust-lang/rust.vim'                                         " Rust
+call plug#end()                                                   " all plugins must be added before this line
 
 colorscheme monokai
-filetype plugin indent on     " required
-syntax on                     " syntax highlighting
 
 set autoindent                                                    " auto indent
 set clipboard=unnamed                                             " allow copy between instances
