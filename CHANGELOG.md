@@ -1,3 +1,10 @@
+# [1.85.0](https://github.com/st3v3nhunt/dotfiles/compare/1.84.0...1.85.0) (2021-01-18)
+
+
+### Features
+
+* **vim:** replace Vundle with vim-plug for plugin management ([#287](https://github.com/st3v3nhunt/dotfiles/issues/287)) ([73a4f3d](https://github.com/st3v3nhunt/dotfiles/commit/73a4f3df764640dada291d9461df537f75d8fc95))
+
 # [1.84.0](https://github.com/st3v3nhunt/dotfiles/compare/1.83.0...1.84.0) (2021-01-17)
 
 
