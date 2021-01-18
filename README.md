@@ -108,21 +108,21 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
 * Python crashing when starting Vim?
   * Try reinstalling Python, Vim and YCM `brew update; brew uninstall python;
     brew uninstall vim; brew install python; brew install vim;
-    ~/.vim/bundle/YouCompleteMe/install.py`
+    ~/.vim/plugged/YouCompleteMe/install.py --all`
 * No linting in Vim and no lint warning or error symbols in the margin?
   * Check the repo's packages have been installed
   * Try restarting the eslint server. At the terminal run `eslint_d restart`
 * No completion in VIM?
   * Try restarting the YCM server within Vim `:YcmRestartServer`
   * If there are errors when running `:YcmRestartServer` try reinstalling YCM,
-    `cd ~/.vim/bundle/YouCompleteMe && ./install.py --all` (to install _all_
+    `cd ~/.vim/plugged/YouCompleteMe && ./install.py --all` (to install _all_
     language completions. The reinstallation of YCM has probably caused `tern`
     to also be installed.
     [TSServer](https://github.com/Microsoft/TypeScript/tree/master/src/server)
     is used in preference to tern as covered
     [here](https://github.com/ycm-core/YouCompleteMe#javascript-and-typescript-semantic-completion)
     accordingly, tern should be removed by deleting
-    `~/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/tern_runtime/node_modules`
+    `~/.vim/plugged/YouCompleteMe/third_party/ycmd/third_party/tern_runtime/node_modules`
 * Command failed and error reported `...can't decompress data; zlib not available`
   * Run `sudo installer -pkg
     /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /`
