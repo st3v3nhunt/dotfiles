@@ -20,24 +20,24 @@ call plug#begin()
 " themes
 Plug 'crusoexia/vim-monokai'
 " generally useful plugins
-Plug 'airblade/vim-gitgutter'                               " Git , { 'do': './install.py' }into in gutter
-Plug 'Chiel92/vim-autoformat'           " Generic code formatter
-Plug 'christoomey/vim-tmux-navigator'   " Same split shortcuts in vim and tmux
-Plug 'ctrlpvim/ctrlp.vim'               " Fuzzy file finder
-Plug 'godlygeek/tabular'                " Tabularisation
-Plug 'honza/vim-snippets'               " Snippets
-Plug 'junegunn/vim-easy-align'          " Better/easier alignment
-Plug 'ludovicchabant/vim-gutentags'     " Tag management
-Plug 'majutsushi/tagbar'                " A ctag viewer
-Plug 'mileszs/ack.vim'                  " File searching
-Plug 'ntpeters/vim-better-whitespace'   " Better whitespace
-Plug 'scrooloose/nerdtree'              " File explorer
-Plug 'SirVer/ultisnips'                 " Snippet engine
-Plug 'tpope/vim-commentary'             " Comment out lines
-Plug 'tpope/vim-fugitive'               " Git wrapper
-Plug 'tpope/vim-obsession'              " Improve session restoration
-Plug 'tpope/vim-repeat'                 " Repeat plugin commands via '.'
-Plug 'tpope/vim-surround'               " Word/phrase surrounds
+Plug 'airblade/vim-gitgutter'                                     " Git in gutter
+Plug 'Chiel92/vim-autoformat'                                     " Generic code formatter
+Plug 'christoomey/vim-tmux-navigator'                             " Same split shortcuts in vim and tmux
+Plug 'ctrlpvim/ctrlp.vim'                                         " Fuzzy file finder
+Plug 'godlygeek/tabular'                                          " Tabularisation
+Plug 'honza/vim-snippets'                                         " Snippets
+Plug 'junegunn/vim-easy-align'                                    " Better/easier alignment
+Plug 'ludovicchabant/vim-gutentags'                               " Tag management
+Plug 'majutsushi/tagbar'                                          " A ctag viewer
+Plug 'mileszs/ack.vim'                                            " File searching
+Plug 'ntpeters/vim-better-whitespace'                             " Better whitespace
+Plug 'scrooloose/nerdtree'                                        " File explorer
+Plug 'SirVer/ultisnips'                                           " Snippet engine
+Plug 'tpope/vim-commentary'                                       " Comment out lines
+Plug 'tpope/vim-fugitive'                                         " Git wrapper
+Plug 'tpope/vim-obsession'                                        " Improve session restoration
+Plug 'tpope/vim-repeat'                                           " Repeat plugin commands via '.'
+Plug 'tpope/vim-surround'                                         " Word/phrase surrounds
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }     " Code completion engine
 Plug 'vim-airline/vim-airline'                                    " File status bar
 Plug 'vim-airline/vim-airline-themes'                             " Themes for vim-airline
