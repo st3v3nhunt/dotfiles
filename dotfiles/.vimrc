@@ -84,6 +84,7 @@ augroup vimrc
   autocmd!
 augroup END
 
+" special cases for filetypes
 autocmd vimrc BufNewFile,BufRead *.md setlocal spell
 autocmd vimrc BufNewFile,BufRead *.nunjucks set filetype=html
 autocmd vimrc BufNewFile,BufRead *.svelte set filetype=html
@@ -91,10 +92,10 @@ autocmd vimrc BufNewFile,BufRead Dockerfile.* set filetype=dockerfile
 autocmd vimrc BufNewFile,BufRead Jenkinsfile set syntax=groovy
 
 " Plugin specifc settings
-" Save Terraform files on save and align with tabular
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
 let g:rustfmt_autosave=1
+
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
@@ -121,8 +122,10 @@ if executable('rg')
   let g:ackprg='rg --vimgrep'
 endif
 
-nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>  " Bind K to search for word under cursor
-nnoremap \ :Ack!<space>                       " Map Ack! to \
+" Bind K to search for word under cursor
+nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>
+" Map Ack! to \
+nnoremap \ :Ack!<space>
 
 " vim-airline settings
 let g:airline_extension=['ale']
@@ -232,7 +235,8 @@ let s:clip='/c/Windows/System32/clip.exe'
 if executable(s:clip)
   autocmd vimrc TextYankPost * :call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
 end
-map <silent><leader>p :r !powershell.exe -Command Get-Clipboard<CR>            " Paste from the system clipboard
+" Paste from the system clipboard
+map <silent><leader>p :r !powershell.exe -Command Get-Clipboard<CR>
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>

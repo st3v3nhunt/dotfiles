@@ -96,6 +96,7 @@ which involves downloading and installing the MesloLGS font files.
 ### [Tmux plugin manager](https://github.com/tmux-plugins/tpm)
 
 Tmux plugin manager is installed along with the following plugins:
+
 * [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) - enables
   session saving and restoration via `prefix + Ctrl-s` and `prefix + Ctrl-r`
 * [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum) - automates
@@ -125,17 +126,20 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
     `~/.vim/plugged/YouCompleteMe/third_party/ycmd/third_party/tern_runtime/node_modules`
 * Command failed and error reported `...can't decompress data; zlib not available`
   * Run `sudo installer -pkg
-    /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /`
+    /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
+    -target /`
 * If an error like this occurs - `Warning: Unexpected method 'license' called
   on Cask <cask_name>.` it might be because the cask is old and out of date, try:
   * Removing the cask via `rm -rf $(brew --prefix)/Caskroom/<cask_name>`
 * Want to fetch all PRs from GitHub or MRs from GitLab locally?
   * Add the following to the repo's `.git/config`:
+
   ```ini
   [remote "origin"]
   fetch = +refs/pull/*:refs/remotes/origin/pull/*
   fetch = +refs/merge-requests/*/head:refs/remotes/origin/merge-requests/*
   ```
+
 * Reload `.vimrc` within Vim without restarting Vim - `:so $MYVIMRC`
 * Sort Vim's dictionary in place (`-o`) and case insensitively (`-f`) -
   `sort -f -o vim/en.utf-8.add vim/en-utf-8.add`
