@@ -189,15 +189,16 @@ endfunction
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-nmap <silent><leader>j <Plug>(coc-diagnostic-prev)
-nmap <silent><leader>k <Plug>(coc-diagnostic-next)
-nmap <silent>gd <Plug>(coc-definition)
-nmap <silent>gy <Plug>(coc-type-definition)
-nmap <silent>gi <Plug>(coc-implementation)
-nmap <silent>gr <Plug>(coc-references)
+nmap <leader>j <Plug>(coc-diagnostic-prev)
+nmap <leader>k <Plug>(coc-diagnostic-next)
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gy <Plug>(coc-type-definition)
+nmap <leader>gi <Plug>(coc-implementation)
+nmap <leader>gr <Plug>(coc-references)
 nmap <leader>ca <Plug>(coc-codeaction)
 nmap <leader>fi <Plug>(coc-fix-current)
-nnoremap <silent><leader>h :call <SID>show_documentation()<CR>
+nmap <leader>rr <Plug>(coc-rename)
+nnoremap <leader>h :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
@@ -207,7 +208,6 @@ function! s:show_documentation()
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
-nmap <leader>rr <Plug>(coc-rename)
 " Remap <C-f> and <C-b> for scroll float windows/popups.
 if has('nvim-0.4.0') || has('patch-8.2.0750')
   nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
