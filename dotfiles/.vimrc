@@ -219,6 +219,7 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
 endif
 " installed extensions
 let g:coc_global_extensions=[
+\  'coc-go',
 \  'coc-json',
 \  'coc-marketplace',
 \  'coc-markdownlint',
