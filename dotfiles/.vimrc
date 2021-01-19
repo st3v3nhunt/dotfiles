@@ -4,6 +4,7 @@ set tags=tags               " set tags to tags for ctags
 set autowrite               " write file
 set timeoutlen=500          " reduce amount of time to wait for second key
 set showtabline=2           " always show tab bar
+set signcolumn=yes          " combine sign column - prevent interface moving around
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
