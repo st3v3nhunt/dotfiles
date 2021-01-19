@@ -30,6 +30,7 @@ Plug 'junegunn/vim-easy-align'                                    " Better/easie
 Plug 'ludovicchabant/vim-gutentags'                               " Tag management
 Plug 'majutsushi/tagbar'                                          " A ctag viewer
 Plug 'mileszs/ack.vim'                                            " File searching
+Plug 'neoclide/coc.nvim'                                          " Conquer of Completion
 Plug 'ntpeters/vim-better-whitespace'                             " Better whitespace
 Plug 'scrooloose/nerdtree'                                        " File explorer
 Plug 'SirVer/ultisnips'                                           " Snippet engine
@@ -38,7 +39,7 @@ Plug 'tpope/vim-fugitive'                                         " Git wrapper
 Plug 'tpope/vim-obsession'                                        " Improve session restoration
 Plug 'tpope/vim-repeat'                                           " Repeat plugin commands via '.'
 Plug 'tpope/vim-surround'                                         " Word/phrase surrounds
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }     " Code completion engine
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }     " Code completion engine
 Plug 'vim-airline/vim-airline'                                    " File status bar
 Plug 'vim-airline/vim-airline-themes'                             " Themes for vim-airline
 Plug 'w0rp/ale'                                                   " Asynchronous Lint Engine aka ALE
@@ -176,24 +177,78 @@ nmap OO O<Esc>j
 let mapleader=","
 
 " Make preview window display (upto 100) lines of content
-set previewheight=100
+set previewheight=50
 
 " YouCompleteMe configuration
 " Autoclose preview window when insert mode is exited
-let g:ycm_autoclose_preview_window_after_insertion=1
-" Prevent popup being displayed on CursorHold
-let g:ycm_auto_hover=''
-" Prevent the QuickFix window from closing
-autocmd vimrc User YcmQuickFixOpened ycmquickfix WinLeave
-" Toggle YCM hover
-nmap <leader>h <plug>(YCMHover)
-nnoremap <leader>fi :YcmCompleter FixIt<CR>
-nnoremap <leader>gg :YcmCompleter GoTo<CR>
-nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
-nnoremap <leader>gi :YcmCompleter GoToImplementation<CR>
-nnoremap <leader>gt :YcmCompleter GoToType<CR>
-nnoremap <leader>rr :YcmCompleter RefactorRename<space>
-nnoremap <leader>yy :YcmRestartServer<CR>
+" let g:ycm_autoclose_preview_window_after_insertion=1
+" " Prevent popup being displayed on CursorHold
+" let g:ycm_auto_hover=''
+" " Prevent the QuickFix window from closing
+" autocmd vimrc User YcmQuickFixOpened ycmquickfix WinLeave
+" " Toggle YCM hover
+" nmap <leader>h <plug>(YCMHover)
+" nnoremap <leader>fi :YcmCompleter FixIt<CR>
+" nnoremap <leader>gg :YcmCompleter GoTo<CR>
+" nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+" nnoremap <leader>gi :YcmCompleter GoToImplementation<CR>
+" nnoremap <leader>gt :YcmCompleter GoToType<CR>
+" nnoremap <leader>rr :YcmCompleter RefactorRename<space>
+" nnoremap <leader>yy :YcmRestartServer<CR>
+
+" <coc-config>
+set hidden
+set cmdheight=2        " more space for messages
+set updatetime=300     " decrease delays
+set shortmess+=c       " don't pass messages to |ins-completion-menu|
+" Use tab for trigger completion with characters ahead and navigate.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+" Make <CR> auto-select the first completion item and notify coc.nvim to
+" format on enter, <cr> could be remapped by other vim plugin
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+" Go to previous and next Coc errors
+nmap <silent><leader>j <Plug>(coc-diagnostic-prev)
+nmap <silent><leader>k <Plug>(coc-diagnostic-next)
+" GoTo code navigation.
+nmap <silent>gd <Plug>(coc-definition)
+nmap <silent>gy <Plug>(coc-type-definition)
+nmap <silent>gi <Plug>(coc-implementation)
+nmap <silent>gr <Plug>(coc-references)
+" Use h to show documentation in preview window.
+nnoremap <silent><leader>h :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction
+" Symbol renaming.
+nmap <leader>rr <Plug>(coc-rename)
+" installed extensions
+let g:coc_global_extensions=[
+\  'coc-json',
+\  'coc-marketplace',
+\  'coc-markdownlint',
+\  'coc-omnisharp',
+\  'coc-rust-analyzer',
+\  'coc-sh',
+\  'coc-tsserver',
+\  'coc-yaml',
+\]
+" </coc-config>
 
 " Copy into the system clipboard
 let s:clip='/c/Windows/System32/clip.exe'
@@ -205,7 +260,7 @@ if executable(s:clip)
   " augroup END
 end
 " Paste from the system clipboard
-map <silent> <leader>p :r !powershell.exe -Command Get-Clipboard<CR>
+map <silent><leader>p :r !powershell.exe -Command Get-Clipboard<CR>
 
 " Save and close
 nnoremap <leader>w :w<CR>
@@ -214,26 +269,26 @@ nnoremap <leader>x :wq<CR>
 " Send Vim to background
 nnoremap <leader>z <C-z>
 " Show file in NERDTree
-nnoremap <leader>r :NERDTreeFind<CR>
+nnoremap <leader>re :NERDTreeFind<CR>
 " Go to previous and next ALE errors
-nnoremap <leader>j :ALENextWrap<CR>
-nnoremap <leader>k :ALEPreviousWrap<CR>
+" nnoremap <leader>j :ALENextWrap<CR>
+" nnoremap <leader>k :ALEPreviousWrap<CR>
 " Format on key
 nnoremap <leader>f :Autoformat<CR>
 " Run jq on the current buffer
 nnoremap <leader>jf :%! jq<CR>
 
 " Tab options
-nnoremap th  :tabfirst<CR>
-nnoremap tj  :tabprev<CR>
-nnoremap tk  :tabnext<CR>
-nnoremap tl  :tablast<CR>
-nnoremap ts  :tab split<CR>
-nnoremap to  :tabnew<CR>
+nnoremap th :tabfirst<CR>
+nnoremap tj :tabprev<CR>
+nnoremap tk :tabnext<CR>
+nnoremap tl :tablast<CR>
+nnoremap ts :tab split<CR>
+nnoremap to :tabnew<CR>
 " nnoremap tt  :tabedit<Space>
 " nnoremap tn  :tabnext<Space>
-nnoremap tm  :tabm<Space>
-nnoremap tc  :tabclose<CR>
+nnoremap tm :tabm<Space>
+nnoremap tc :tabclose<CR>
 
 " Add all plugins to the runtimepath and then load all helptags, ignoring any
 " errors as the command will continue to run
