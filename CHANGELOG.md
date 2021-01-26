@@ -1,3 +1,10 @@
+# [1.86.0](https://github.com/st3v3nhunt/dotfiles/compare/1.85.0...1.86.0) (2021-01-26)
+
+
+### Features
+
+* **vim|coc:** add coc-settings ([#289](https://github.com/st3v3nhunt/dotfiles/issues/289)) ([edfa8f6](https://github.com/st3v3nhunt/dotfiles/commit/edfa8f6a4c850630cefe4a049dc17110f25537c3))
+
 # [1.85.0](https://github.com/st3v3nhunt/dotfiles/compare/1.84.0...1.85.0) (2021-01-18)
 
 
