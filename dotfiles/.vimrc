@@ -256,6 +256,12 @@ nnoremap to :tabnew<CR>
 nnoremap tm :tabm<Space>
 nnoremap tc :tabclose<CR>
 
+" Remap arrow keys to not work, in any mode
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
 " Add all plugins to the runtimepath and then load all helptags, ignoring any
 " errors as the command will continue to run
 packloadall
