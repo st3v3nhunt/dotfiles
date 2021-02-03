@@ -1,3 +1,10 @@
+# [1.87.0](https://github.com/st3v3nhunt/dotfiles/compare/1.86.0...1.87.0) (2021-02-03)
+
+
+### Features
+
+* add ninja build system to install ([#291](https://github.com/st3v3nhunt/dotfiles/issues/291)) ([4462c2d](https://github.com/st3v3nhunt/dotfiles/commit/4462c2d601aefcf91837ef2d0836e96baab64592))
+
 # [1.86.0](https://github.com/st3v3nhunt/dotfiles/compare/1.85.0...1.86.0) (2021-01-26)
 
 
