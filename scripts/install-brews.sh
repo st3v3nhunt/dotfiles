@@ -23,6 +23,7 @@ jmeter
 jq
 llvm
 mkcert
+ninja
 pipenv
 pyenv
 rename
