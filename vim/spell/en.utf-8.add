@@ -4,6 +4,7 @@ Alacritty
 AMQP
 API
 AWS
+backend
 Bulma
 Caskroom
 CDN
@@ -22,6 +23,7 @@ env
 eslint
 ETL
 ffc
+frontend
 GitHub
 GitLab
 Homebrew
@@ -38,6 +40,7 @@ Kubernetes
 localhost
 macOS
 microservice
+microservices
 Mongo
 Mongodb
 netlify
