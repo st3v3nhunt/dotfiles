@@ -1,3 +1,10 @@
+# [1.88.0](https://github.com/st3v3nhunt/dotfiles/compare/1.87.0...1.88.0) (2021-03-03)
+
+
+### Features
+
+* improve vis of Coc's floating error on dark color schemes ([#293](https://github.com/st3v3nhunt/dotfiles/issues/293)) ([7eeff6c](https://github.com/st3v3nhunt/dotfiles/commit/7eeff6cc2429bd9ccbe4d464520f7805a6ae840b))
+
 # [1.87.0](https://github.com/st3v3nhunt/dotfiles/compare/1.86.0...1.87.0) (2021-02-03)
 
 
