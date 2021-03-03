@@ -57,10 +57,6 @@ call plug#end()                                                                "
 
 colorscheme monokai
 
-" set Coc floating error window to light grey for visiblility on dark schemes
-hi Pmenu ctermbg=250
-hi CocErrorFloat ctermbg=250
-
 set autoindent                                                                 " auto indent
 set clipboard=unnamed                                                          " allow copy between instances
 set colorcolumn=80                                                             " 80 column guide
@@ -174,6 +170,9 @@ nmap OO O<Esc>j
 let mapleader=","
 
 " <coc-config>
+" improve contrast for readability on dark backgrounds
+hi CocErrorFloat ctermfg=196
+
 set hidden
 set cmdheight=2                                                                " more space for messages
 set updatetime=300                                                             " decrease delays
