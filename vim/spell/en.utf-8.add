@@ -47,12 +47,15 @@ netlify
 NGINX
 NHSUK
 npm
+NuGet
 nvm
 OGL
 OMG
 POC
 Powerline
+PowerShell
 PR
+rebase
 Redis
 SemVer
 serverless
@@ -61,9 +64,11 @@ snyk
 SonarCloud
 SonarQube
 ssl
+st3v3nhunt
 struct
 submodules
 tcp
+TeamCity
 toml
 tmux
 Vue
