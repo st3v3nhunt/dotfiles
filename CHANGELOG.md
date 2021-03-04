@@ -1,3 +1,10 @@
+# [1.89.0](https://github.com/st3v3nhunt/dotfiles/compare/1.88.0...1.89.0) (2021-03-04)
+
+
+### Features
+
+* additional spellings ([#295](https://github.com/st3v3nhunt/dotfiles/issues/295)) ([3bb0a15](https://github.com/st3v3nhunt/dotfiles/commit/3bb0a15f5194bcb9c28296e4570f7d59c1305b28))
+
 # [1.88.0](https://github.com/st3v3nhunt/dotfiles/compare/1.87.0...1.88.0) (2021-03-03)
 
 
