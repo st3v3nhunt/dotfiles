@@ -75,6 +75,7 @@ helm
 kind
 kubernetes-cli
 kubetail
+linkerd
 minikube
 octant
 rancher-cli
