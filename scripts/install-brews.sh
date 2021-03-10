@@ -12,6 +12,7 @@ azure-cli
 azure-functions-core-tools
 aws-iam-authenticator
 cmake
+drawio
 exercism
 gcc
 glow
