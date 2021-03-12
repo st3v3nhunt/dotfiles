@@ -1,3 +1,10 @@
+## [1.89.1](https://github.com/st3v3nhunt/dotfiles/compare/1.89.0...1.89.1) (2021-03-12)
+
+
+### Bug Fixes
+
+* link snyk badge to correct repo ([#296](https://github.com/st3v3nhunt/dotfiles/issues/296)) ([fb7166f](https://github.com/st3v3nhunt/dotfiles/commit/fb7166fbbed9b6bc8366fb650f9ea5ccf513342b))
+
 # [1.89.0](https://github.com/st3v3nhunt/dotfiles/compare/1.88.0...1.89.0) (2021-03-04)
 
 
