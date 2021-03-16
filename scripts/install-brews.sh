@@ -12,6 +12,7 @@ azure-cli
 azure-functions-core-tools
 aws-iam-authenticator
 cmake
+drawio
 exercism
 gcc
 glow
@@ -75,6 +76,7 @@ helm
 kind
 kubernetes-cli
 kubetail
+linkerd
 minikube
 octant
 rancher-cli
