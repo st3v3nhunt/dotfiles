@@ -51,6 +51,7 @@ NuGet
 nvm
 OGL
 OMG
+OWASP
 POC
 Powerline
 PowerShell
@@ -73,7 +74,9 @@ toml
 tmux
 typescript
 Vue
+webpack
 Webtrends
+WIP
 WSL
 yaml
 YCM
