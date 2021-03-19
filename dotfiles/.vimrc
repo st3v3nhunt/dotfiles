@@ -44,6 +44,7 @@ Plug 'vim-airline/vim-airline'                                                 "
 Plug 'vim-airline/vim-airline-themes'                                          " Themes for vim-airline
 Plug 'w0rp/ale'                                                                " Asynchronous Lint Engine aka ALE
 " specific languge plugins
+Plug 'evanleck/vim-svelte'                                                     " Svelte
 Plug 'fatih/vim-go'                                                            " Golang
 Plug 'hashivim/vim-terraform'                                                  " Terraform
 Plug 'google/yapf'                                                             " Python
@@ -87,7 +88,6 @@ augroup END
 " special cases for filetypes
 autocmd vimrc BufNewFile,BufRead *.md setlocal spell
 autocmd vimrc BufNewFile,BufRead *.nunjucks set filetype=html
-autocmd vimrc BufNewFile,BufRead *.svelte set filetype=html
 autocmd vimrc BufNewFile,BufRead Dockerfile.* set filetype=dockerfile
 autocmd vimrc BufNewFile,BufRead Jenkinsfile set syntax=groovy
 
@@ -229,6 +229,7 @@ let g:coc_global_extensions=[
 \  'coc-omnisharp',
 \  'coc-rust-analyzer',
 \  'coc-sh',
+\  'coc-svelte',
 \  'coc-tsserver',
 \  'coc-yaml',
 \]
