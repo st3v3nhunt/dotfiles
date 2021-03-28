@@ -5,6 +5,7 @@ alias c=cargo
 alias cb='cargo build'
 alias cr='cargo run'
 alias cw='cargo watch'
+alias fb=firebase
 alias g=git
 alias gaac='git add -A && git commit -m'
 alias gcontributors='git log --format='%aN' | sort -fu'
