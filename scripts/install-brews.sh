@@ -9,7 +9,7 @@ brews=(
 adr-tools
 asciinema
 azure-cli
-azure-functions-core-tools
+azure-functions-core-tools@3
 aws-iam-authenticator
 cmake
 drawio
