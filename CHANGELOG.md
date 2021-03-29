@@ -1,3 +1,10 @@
+# [1.90.0](https://github.com/st3v3nhunt/dotfiles/compare/1.89.3...1.90.0) (2021-03-29)
+
+
+### Features
+
+* install latest version of Azure functions tooling ([#302](https://github.com/st3v3nhunt/dotfiles/issues/302)) ([7067988](https://github.com/st3v3nhunt/dotfiles/commit/70679887a51cb344e621cf473b9db60ea53a640a))
+
 ## [1.89.3](https://github.com/st3v3nhunt/dotfiles/compare/1.89.2...1.89.3) (2021-03-12)
 
 
