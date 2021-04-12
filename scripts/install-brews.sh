@@ -63,6 +63,7 @@ elixir
 erlang
 go
 haskell-stack
+node
 python
 python@2
 ruby
