@@ -17,6 +17,7 @@ exercism
 gcc
 glow
 gpg
+gpg-suite-no-mail
 groovy
 hugo
 imagemagick
