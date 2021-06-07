@@ -47,6 +47,9 @@
 [user]
 	email = st3v3nhunt@users.noreply.github.com
 	name = Steven Hunt
+	signingKey = DB67B788A37A2A41
 [init]
 	templateDir = ~/.git-template
 	defaultBranch = main
+[commit]
+	gpgsign = true

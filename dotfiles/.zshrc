@@ -179,3 +179,4 @@ if [ -f '/home/shunt/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export GPG_TTY=$(tty)
