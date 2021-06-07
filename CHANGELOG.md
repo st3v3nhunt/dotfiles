@@ -1,3 +1,10 @@
+# [1.91.0](https://github.com/st3v3nhunt/dotfiles/compare/1.90.0...1.91.0) (2021-06-07)
+
+
+### Features
+
+* only format on C# save, more vim tab shortcuts ([#308](https://github.com/st3v3nhunt/dotfiles/issues/308)) ([b3a6fe1](https://github.com/st3v3nhunt/dotfiles/commit/b3a6fe1219d6809968f09dcc3152a4603a33cef9))
+
 # [1.90.0](https://github.com/st3v3nhunt/dotfiles/compare/1.89.3...1.90.0) (2021-03-29)
 
 
