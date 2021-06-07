@@ -9,4 +9,4 @@ nmap <buffer> <leader>gi :OmniSharpFindImplementations<CR>
 nmap <buffer> <leader>gt :OmniSharpFindType<CR>
 nmap <buffer> <leader>rr :OmniSharpRenameTo<space>
 
-autocmd BufWritePost <buffer> :OmniSharpFixUsings | :OmniSharpCodeFormat
+autocmd BufWritePost <buffer> :OmniSharpCodeFormat

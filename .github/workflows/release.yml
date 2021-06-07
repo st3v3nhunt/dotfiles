@@ -31,7 +31,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Lint Code Base
-      uses: github/super-linter@v3
+      uses: docker://ghcr.io/github/super-linter:slim-v4
       env:
         FILTER_REGEX_EXCLUDE: (CHANGELOG.md|.git-completion.bash|.git-prompt.sh)
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

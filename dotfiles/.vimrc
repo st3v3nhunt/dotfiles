@@ -259,6 +259,8 @@ nnoremap ts :tab split<CR>
 nnoremap to :tabnew<CR>
 nnoremap tm :tabm<Space>
 nnoremap tc :tabclose<CR>
+" Move existing split into new tab
+nnoremap tt <C-W>T
 
 " Remap arrow keys to not work, in any mode
 noremap <Up> <Nop>
