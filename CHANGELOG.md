@@ -1,3 +1,10 @@
+# [1.92.0](https://github.com/st3v3nhunt/dotfiles/compare/1.91.0...1.92.0) (2021-06-07)
+
+
+### Features
+
+* sign all commits ([#309](https://github.com/st3v3nhunt/dotfiles/issues/309)) ([60be0af](https://github.com/st3v3nhunt/dotfiles/commit/60be0afca3339763af8123ce853d49f7b56c201b))
+
 # [1.91.0](https://github.com/st3v3nhunt/dotfiles/compare/1.90.0...1.91.0) (2021-06-07)
 
 
