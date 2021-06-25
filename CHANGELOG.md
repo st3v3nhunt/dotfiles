@@ -1,3 +1,10 @@
+# [1.93.0](https://github.com/st3v3nhunt/dotfiles/compare/1.92.0...1.93.0) (2021-06-25)
+
+
+### Features
+
+* deno setup ([#313](https://github.com/st3v3nhunt/dotfiles/issues/313)) ([2beb442](https://github.com/st3v3nhunt/dotfiles/commit/2beb442deece6abff09409355588fddb694a60cd))
+
 # [1.92.0](https://github.com/st3v3nhunt/dotfiles/compare/1.91.0...1.92.0) (2021-06-07)
 
 
