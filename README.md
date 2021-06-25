@@ -68,6 +68,12 @@ not available via Homebrew. It can be downloaded from the
 
 ## Language specifics
 
+### Deno setup in Vim
+
+Setup Vim for a Deno project by running `:CocCommand deno.initializeWorkspace`
+as per
+[these instructions](https://deno.land/manual/getting_started/setup_your_environment#coc).
+
 ### Go language support in Vim
 
 Install [vim-go](https://github.com/fatih/vim-go).
@@ -131,7 +137,7 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
   `sort -f -o vim/en.utf-8.add vim/en-utf-8.add`
 * Errors like `nvm is not compatible with the npm config "prefix" option`
   * Try running `nvm unalias default`
-* No `deno` autocompletion?
+* No `deno` shell autocompletion?
   * They probably failed to be created after `deno` had been installed. Re-run
     the commands as shown in the
     [docs](https://deno.land/manual/getting_started/setup_your_environment#shell-autocomplete)
