@@ -142,6 +142,8 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
     the commands as shown in the
     [docs](https://deno.land/manual/getting_started/setup_your_environment#shell-autocomplete)
     and re-source the shell
+* Problems with Vim plugins? Try updating them with `:PlugUpdate`
+* Problems with CoC plugins? Try updating them with `:CocUpdate`
 
 ## Architecture Decision Records
 
