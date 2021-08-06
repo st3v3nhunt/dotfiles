@@ -1,3 +1,10 @@
+# [1.94.0](https://github.com/st3v3nhunt/dotfiles/compare/1.93.0...1.94.0) (2021-08-06)
+
+
+### Features
+
+* vim tweaking ([#314](https://github.com/st3v3nhunt/dotfiles/issues/314)) ([d44b9e0](https://github.com/st3v3nhunt/dotfiles/commit/d44b9e0dd21c37feb1559ddd3243fc318cc23c6d))
+
 # [1.93.0](https://github.com/st3v3nhunt/dotfiles/compare/1.92.0...1.93.0) (2021-06-25)
 
 
