@@ -16,20 +16,25 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 0
+
     - name: Setup Node.js
       uses: actions/setup-node@v1
       with:
         node-version: 12
+
     - name: Install dependencies
       run: npm ci
+
     - name: Run commitlint
       run: npx commitlint --from origin/main --to HEAD --verbose
+
   superlinter:
     name: Lint Code Base
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+
     - name: Lint Code Base
       uses: docker://ghcr.io/github/super-linter:slim-v4
       env:

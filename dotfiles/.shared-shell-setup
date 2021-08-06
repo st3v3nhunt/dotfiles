@@ -12,7 +12,7 @@ source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
 # Add Deno to PATH
 if [[ "$OSTYPE" != "darwin*" ]]; then
-  export DENO_INSTALL="/home/shunt/.deno"
+  export DENO_INSTALL="$HOME/.deno"
   export PATH="$DENO_INSTALL/bin:$PATH"
 fi
 
