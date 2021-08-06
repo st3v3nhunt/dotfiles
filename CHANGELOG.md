@@ -1,3 +1,10 @@
+# [1.95.0](https://github.com/st3v3nhunt/dotfiles/compare/1.94.0...1.95.0) (2021-08-06)
+
+
+### Features
+
+* deno paths, deps and improved readability ([#315](https://github.com/st3v3nhunt/dotfiles/issues/315)) ([88785cf](https://github.com/st3v3nhunt/dotfiles/commit/88785cf5d563908864cf7c63550cb705e7bd2b99))
+
 # [1.94.0](https://github.com/st3v3nhunt/dotfiles/compare/1.93.0...1.94.0) (2021-08-06)
 
 
