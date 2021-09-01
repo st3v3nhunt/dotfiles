@@ -55,6 +55,7 @@ hub
 
 # THE editor?!
 brews+=(
+neovim
 vim
 )
 
