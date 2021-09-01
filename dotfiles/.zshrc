@@ -86,6 +86,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Add .NET Core SDK tools
 export PATH="$PATH:~/.dotnet/tools"
 
 # zsh parameter completion for the dotnet CLI
