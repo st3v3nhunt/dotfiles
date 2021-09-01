@@ -1,3 +1,10 @@
+# [1.96.0](https://github.com/st3v3nhunt/dotfiles/compare/1.95.0...1.96.0) (2021-09-01)
+
+
+### Features
+
+* dotnet tooling tweaks ([#316](https://github.com/st3v3nhunt/dotfiles/issues/316)) ([4767c18](https://github.com/st3v3nhunt/dotfiles/commit/4767c18406c81fefba679a80357184494d6a580b))
+
 # [1.95.0](https://github.com/st3v3nhunt/dotfiles/compare/1.94.0...1.95.0) (2021-08-06)
 
 
