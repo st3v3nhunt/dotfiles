@@ -9,6 +9,7 @@ npm install -g @commitlint/config-conventional
 npm install -g @vue/cli
 npm install -g eslint_d
 npm install -g firebase-tools
+npm install -g neovim
 npm install -g prettier
 npm install -g serve
 npm install -g serverless
