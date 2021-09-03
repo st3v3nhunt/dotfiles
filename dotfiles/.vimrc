@@ -1,17 +1,19 @@
 set nocompatible                                                               " use vim settings
-set path+=**                                                                   " make :find search everything
-set tags=tags                                                                  " set tags to tags for ctags
 set autowrite                                                                  " write file
-set timeoutlen=500                                                             " reduce amount of time to wait for second key
+set path+=**                                                                   " make :find search everything
+set previewheight=50                                                           " make preview window larger
 set showtabline=2                                                              " always show tab bar
 set signcolumn=yes                                                             " combine sign column - prevent interface moving around
-set previewheight=50                                                           " make preview window larger
+set tags=tags                                                                  " set tags to tags for ctags
+set timeoutlen=500                                                             " reduce amount of time to wait for second key
 
 " Install vim-plug if not found
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
+
 " Run PlugInstall if there are missing plugins
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source $MYVIMRC
@@ -61,17 +63,17 @@ colorscheme monokai
 set autoindent                                                                 " auto indent
 set clipboard=unnamed                                                          " allow copy between instances
 set colorcolumn=80                                                             " 80 column guide
+set completeopt=menu,menuone,preview,noselect,noinsert                         " fixes issue with automatically completing autocomplete options (noinsert) and switches to popup rather than preview window
 set expandtab                                                                  " insert spaces with tab
 set foldmethod=indent                                                          " fold based on indentation
 set foldlevel=5                                                                " default fold level. 5 should be ok to see most contents
-set history=500                                                                " remember more stuff
+set history=10000                                                              " remember more stuff
 set hlsearch                                                                   " highlight searches
 set ignorecase                                                                 " ignore case when searching
 set incsearch                                                                  " incremental search
 set list                                                                       " show listchars
 set listchars=tab:▸\ ,eol:¬                                                    " override default listchars
 set number                                                                     " line numbers
-set completeopt=menu,menuone,preview,noselect,noinsert                         " fixes issue with automatically completing autocomplete options (noinsert) and switches to popup rather than preview window
 set relativenumber                                                             " show relative line numbers
 set shiftwidth=2                                                               " number of spaces for each step of (auto)indent
 set showcmd                                                                    " show command on screen
@@ -225,8 +227,8 @@ let g:coc_global_extensions=[
 \  'coc-deno',
 \  'coc-go',
 \  'coc-json',
-\  'coc-marketplace',
 \  'coc-markdownlint',
+\  'coc-marketplace',
 \  'coc-omnisharp',
 \  'coc-rust-analyzer',
 \  'coc-sh',
