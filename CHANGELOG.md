@@ -1,3 +1,10 @@
+# [1.97.0](https://github.com/st3v3nhunt/dotfiles/compare/1.96.0...1.97.0) (2021-09-03)
+
+
+### Features
+
+* install and config Neovim ([#317](https://github.com/st3v3nhunt/dotfiles/issues/317)) ([b67b9d8](https://github.com/st3v3nhunt/dotfiles/commit/b67b9d87cce7d1506d7a911771991914e55d0234))
+
 # [1.96.0](https://github.com/st3v3nhunt/dotfiles/compare/1.95.0...1.96.0) (2021-09-01)
 
 
