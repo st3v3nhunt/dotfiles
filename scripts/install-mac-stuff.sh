@@ -4,7 +4,6 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 
 REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
-echo "Repo directory is $REPO_DIR"
 
 printf "${GREEN}Installing Karabiner-Elements configuration...${NC}\\n"
 KARABINER_DIR=".config/karabiner"
