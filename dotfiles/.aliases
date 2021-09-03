@@ -32,6 +32,10 @@ alias tf=terraform
 alias tm=tmux
 alias vi=vim
 
+if type nvim > /dev/null; then
+  alias vim=nvim
+fi
+
 # Don't set color for macOS
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias ls='ls -aFhlG'
