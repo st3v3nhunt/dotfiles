@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
 echo "Installing zsh-nvm (https://github.com/lukechilds/zsh-nvm.git)..."
-git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
+ZSH_NVM_DIR=~/.zsh-nvm
+if [[ ! -d $ZSH_NVM_DIR ]]; then
+  git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
+elif [[ -d $ZSH_NVM_DIR ]]; then
+  pushd $ZSH_NVM_DIR && git pull
+  popd || exit
+fi
 
 echo "Installing global npm packages (serverless, snyk, yarn)..."
 npm install -g @commitlint/cli
