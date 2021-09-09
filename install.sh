@@ -19,7 +19,7 @@ fi
 ./scripts/install-gcloud.sh
 ./scripts/install-misc.sh
 ./scripts/install-node-stuff.sh
-./scripts/install-pips.sh
+./scripts/install-python-stuff.sh
 ./scripts/install-tmux-stuff.sh
 ./scripts/install-vim-stuff.sh
 ./scripts/install-dotnet-tools.sh

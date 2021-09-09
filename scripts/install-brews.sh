@@ -28,6 +28,7 @@ mkcert
 ninja
 pipenv
 pyenv
+pyenv-virtualenv
 rename
 shellcheck
 tfenv

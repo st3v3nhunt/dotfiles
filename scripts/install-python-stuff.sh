@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+echo "Install Python3 virtual env for Neovim"
+PY3_VER=3.9.7
+pyenv install -s $PY3_VER
+pyenv virtualenv -f $PY3_VER nvim
+
 echo "Installing latest version of pip3"
 python3 -m pip install --upgrade pip
 
