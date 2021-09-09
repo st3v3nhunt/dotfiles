@@ -1,3 +1,10 @@
+# [1.98.0](https://github.com/st3v3nhunt/dotfiles/compare/1.97.0...1.98.0) (2021-09-09)
+
+
+### Features
+
+* neovim tweaks ([#318](https://github.com/st3v3nhunt/dotfiles/issues/318)) ([c164680](https://github.com/st3v3nhunt/dotfiles/commit/c164680c672e0a5db5f5ff57f2af93824c31754a))
+
 # [1.97.0](https://github.com/st3v3nhunt/dotfiles/compare/1.96.0...1.97.0) (2021-09-03)
 
 
