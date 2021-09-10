@@ -1,3 +1,10 @@
+## [1.98.1](https://github.com/st3v3nhunt/dotfiles/compare/1.98.0...1.98.1) (2021-09-10)
+
+
+### Bug Fixes
+
+* coc recommends release branch for install ([#319](https://github.com/st3v3nhunt/dotfiles/issues/319)) ([21c4ec9](https://github.com/st3v3nhunt/dotfiles/commit/21c4ec98d947a581a6f94b0c57b05c6fe6697cec))
+
 # [1.98.0](https://github.com/st3v3nhunt/dotfiles/compare/1.97.0...1.98.0) (2021-09-09)
 
 
