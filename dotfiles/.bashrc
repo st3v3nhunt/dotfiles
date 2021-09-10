@@ -59,3 +59,5 @@ complete -f -F _dotnet_bash_complete dotnet
 
 # Rust (Cargo)
 source "$HOME/.cargo/env"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

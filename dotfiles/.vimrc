@@ -29,6 +29,8 @@ Plug 'christoomey/vim-tmux-navigator'                                          "
 Plug 'ctrlpvim/ctrlp.vim'                                                      " Fuzzy file finder
 Plug 'godlygeek/tabular'                                                       " Tabularisation
 Plug 'honza/vim-snippets'                                                      " Snippets
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                            " Fuzzy file finder (executable)
+Plug 'junegunn/fzf.vim'                                                        " Fuzzy file finder (for Vim)
 Plug 'junegunn/vim-easy-align'                                                 " Better/easier alignment
 Plug 'ludovicchabant/vim-gutentags'                                            " Tag management
 Plug 'majutsushi/tagbar'                                                       " A ctag viewer
