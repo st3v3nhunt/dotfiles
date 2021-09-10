@@ -33,7 +33,7 @@ Plug 'junegunn/vim-easy-align'                                                 "
 Plug 'ludovicchabant/vim-gutentags'                                            " Tag management
 Plug 'majutsushi/tagbar'                                                       " A ctag viewer
 Plug 'mileszs/ack.vim'                                                         " File searching
-Plug 'neoclide/coc.nvim'                                                       " Conquer of Completion
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }                              " Conquer of Completion
 Plug 'ntpeters/vim-better-whitespace'                                          " Better whitespace
 Plug 'scrooloose/nerdtree'                                                     " File explorer
 Plug 'SirVer/ultisnips'                                                        " Snippet engine
