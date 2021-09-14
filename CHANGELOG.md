@@ -1,3 +1,10 @@
+# [1.99.0](https://github.com/st3v3nhunt/dotfiles/compare/1.98.1...1.99.0) (2021-09-14)
+
+
+### Features
+
+* install fzf ([#320](https://github.com/st3v3nhunt/dotfiles/issues/320)) ([614eeb9](https://github.com/st3v3nhunt/dotfiles/commit/614eeb976f5939149878e6eac36620a0e04506d6))
+
 ## [1.98.1](https://github.com/st3v3nhunt/dotfiles/compare/1.98.0...1.98.1) (2021-09-10)
 
 
