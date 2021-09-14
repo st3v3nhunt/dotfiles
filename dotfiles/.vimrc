@@ -29,6 +29,8 @@ Plug 'christoomey/vim-tmux-navigator'                                          "
 Plug 'ctrlpvim/ctrlp.vim'                                                      " Fuzzy file finder
 Plug 'godlygeek/tabular'                                                       " Tabularisation
 Plug 'honza/vim-snippets'                                                      " Snippets
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                            " Fuzzy file finder (executable)
+Plug 'junegunn/fzf.vim'                                                        " Fuzzy file finder (for Vim)
 Plug 'junegunn/vim-easy-align'                                                 " Better/easier alignment
 Plug 'ludovicchabant/vim-gutentags'                                            " Tag management
 Plug 'majutsushi/tagbar'                                                       " A ctag viewer
@@ -134,6 +136,8 @@ let g:airline_extension=['ale']
 let g:airline_powerline_fonts=1
 let g:airline_theme='base16_isotope'
 let g:airline#extensions#ale#enabled=1
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#formatter='unique_tail_improved'
 let g:airline_section_b=''
 
 " ALE configuration
