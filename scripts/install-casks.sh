@@ -17,6 +17,7 @@ alacritty
 alt-tab
 avira-antivirus
 azure-data-studio
+beekeeper-studio
 burp-suite
 caffeine
 db-browser-for-sqlite
