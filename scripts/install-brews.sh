@@ -90,6 +90,7 @@ stern
 # DBs
 brews+=(
 postgresql
+redis
 sqlite
 )
 
