@@ -1,3 +1,10 @@
+# [1.100.0](https://github.com/st3v3nhunt/dotfiles/compare/1.99.0...1.100.0) (2021-09-24)
+
+
+### Features
+
+* ffc-sfi related stuff ([#321](https://github.com/st3v3nhunt/dotfiles/issues/321)) ([5f74ddd](https://github.com/st3v3nhunt/dotfiles/commit/5f74ddd247f31ff376b4b27de0bff6020b5f8927))
+
 # [1.99.0](https://github.com/st3v3nhunt/dotfiles/compare/1.98.1...1.99.0) (2021-09-14)
 
 
