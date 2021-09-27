@@ -6,16 +6,19 @@ script_name=$(basename "$0")
 ShowHelp()
 {
   echo "Open a new tmux window and split it into as many panes as there are FFC-SFI
-repos. Choose the option to select the command (if any) to run in each pane.
+repos, starting in the repo's root dir. Choose the option to select the
+predetermined command to run in each pane or supply your own with the '-c'
+option.
 
 USAGE:
-  $script_name [OPTIONS]
+  $script_name [OPTIONS] [ARGS]
 
 OPTIONS:
   -h  Display this help text.
 
-  -l  Show logs.
-  -n  Do not run any command.
+  -c  Run [ARG] in repo root dir.
+  -l  Follow Docker Compose logs.
+  -n  Do not run any command, just open the repo root dir.
   -s  Run './scripts/start -d' in all repos.
 "
 }
@@ -42,8 +45,15 @@ SetupPanes()
 
 FollowLogs()
 {
-  # Follow logs and show timestamps
+  # Follow logs and show timestamps.
   tmux send-keys 'dclf ffc-sfi' C-i ' -t' enter
+  tmux setw synchronize-panes
+}
+
+RunCommand()
+{
+  # Run whatever was supplied in the ARG to the script.
+  tmux send-keys "$1" enter
   tmux setw synchronize-panes
 }
 
@@ -54,8 +64,11 @@ RunStartScript()
   tmux setw synchronize-panes
 }
 
-while getopts ":hlos" option; do
+while getopts "c:hlos" option; do
   case $option in
+    c) SetupPanes
+      RunCommand "$OPTARG"
+      exit;;
     h) ShowHelp
       exit;;
     l) SetupPanes
