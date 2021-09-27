@@ -1,3 +1,10 @@
+# [1.101.0](https://github.com/st3v3nhunt/dotfiles/compare/1.100.0...1.101.0) (2021-09-27)
+
+
+### Features
+
+* extend sfi script to run user supplied commands ([#322](https://github.com/st3v3nhunt/dotfiles/issues/322)) ([4686a05](https://github.com/st3v3nhunt/dotfiles/commit/4686a05989179c505722a6a21707834bb26bc8cc))
+
 # [1.100.0](https://github.com/st3v3nhunt/dotfiles/compare/1.99.0...1.100.0) (2021-09-24)
 
 
