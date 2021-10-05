@@ -401,6 +401,10 @@
 	<integer>2</integer>
 	<key>MaxVertically</key>
 	<true/>
+	<key>NeverWarnAboutShortLivedSessions_1C8D4F32-E886-4D55-A5F8-7F61086D5AD2</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_1C8D4F32-E886-4D55-A5F8-7F61086D5AD2_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>

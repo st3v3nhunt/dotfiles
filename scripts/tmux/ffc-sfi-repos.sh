@@ -46,7 +46,7 @@ SetupPanes()
 FollowLogs()
 {
   # Follow logs and show timestamps.
-  tmux send-keys 'dclf ffc-sfi' C-i ' -t' enter
+  tmux send-keys 'dclf -t ffc-sfi' C-i  enter
   tmux setw synchronize-panes
 }
 

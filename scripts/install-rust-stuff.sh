@@ -3,6 +3,9 @@
 echo "Installing rust..."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+echo "Installing Rustlings..."
+curl -L https://git.io/install-rustlings | bash
+
 echo "Installing some useful cargo based utils..."
 cargo install cargo-watch
 cargo install cargo-generate
