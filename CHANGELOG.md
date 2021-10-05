@@ -1,3 +1,10 @@
+# [1.102.0](https://github.com/st3v3nhunt/dotfiles/compare/1.101.0...1.102.0) (2021-10-05)
+
+
+### Features
+
+* misc improvements ([#323](https://github.com/st3v3nhunt/dotfiles/issues/323)) ([3ddb466](https://github.com/st3v3nhunt/dotfiles/commit/3ddb466047fd8fa2bf750611db4de08eceb86916))
+
 # [1.101.0](https://github.com/st3v3nhunt/dotfiles/compare/1.100.0...1.101.0) (2021-09-27)
 
 
