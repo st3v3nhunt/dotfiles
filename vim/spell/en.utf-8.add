@@ -6,6 +6,7 @@ API
 AWS
 Azurite
 backend
+BrowserStack
 Bulma
 Caskroom
 CDN
@@ -61,6 +62,7 @@ rebase
 Redis
 SemVer
 serverless
+SFI
 sha
 snyk
 SonarCloud

@@ -12,6 +12,7 @@ azure-cli
 azure-functions-core-tools@3
 aws-iam-authenticator
 cmake
+cloudfoundry/tap/cf-cli@7
 drawio
 exercism
 gcc
