@@ -798,6 +798,7 @@ key_bindings:
   #- { key: F,              mods: Command,            action: SearchForward    }
   #- { key: B,              mods: Command,            action: SearchBackward   }
   - { key: 36,              mods: Command,            action: ToggleFullscreen }
+  - { key: Key3,            mods: Alt,                chars: "#" }
 
 #debug:
   # Display the time it takes to redraw each frame.
