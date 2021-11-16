@@ -13,8 +13,8 @@ going to be generally available on
 [2019-11-13](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/).
 They are a thing that will have a long term future. It is likely GitHub Actions
 will become the default CI mechanism (and possibly more) for projects hosted on
-GitHub. Using them in this repo which has a very basic use case will provide
-some exposure to the service.
+GitHub. Using them in this repository which has a very basic use case will
+provide some exposure to the service.
 
 ## Decision
 

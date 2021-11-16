@@ -4,11 +4,11 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Known Vulnerabilities](https://snyk.io/test/github/st3v3nhunt/dotfiles/badge.svg)](https://snyk.io/test/github/st3v3nhunt/dotfiles)
 
-> Dotfiles repo for macOS and Linux WSL distros
+> Dotfiles repository for macOS and Linux WSL distros
 
-Clone the repo somewhere on the local disk and run `./install.sh`. This will do
-most of the following but some installation steps are OS dependent. The details
-can be seen in [install.sh](install.sh).:
+Clone the repository somewhere on the local disk and run `./install.sh`. This
+will do most of the following but some installation steps are OS dependent. The
+details can be seen in [install.sh](install.sh).:
 
 * Symlink all dotfiles into the user's home directory
 * Install [Oh My Zsh](https://ohmyz.sh/) and some plugins
@@ -32,11 +32,11 @@ will be prompted for.
 ## .gitconfig.local
 
 There are several reasons why it is a good idea to have a file with git config
-in that doesn't get checked into the repo. It can contain secret information
-such as passwords and it can also contain differences due to the OS. The latter
-is the specific use case with this repo. `credential.helper` should be added to
-a file called `.gitconfig.local` that is stored in the home dir.  Add the
-config as follows. For macOS -
+in that doesn't get checked into the repository. It can contain secret
+information such as passwords and it can also contain differences due to the
+OS. The latter is the specific use case with this repository.
+`credential.helper` should be added to a file called `.gitconfig.local` that is
+stored in the home dir.  Add the config as follows. For macOS -
 `git config --file ~/.gitconfig.local credential.helper "osxkeychain"`
 and for WSL -
 `git config --file ~/.gitconfig.local credential.helper "/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"`.
@@ -85,7 +85,7 @@ plugin is installed `:GoInstallBinaries` needs to be run from within Vim.
 [OmniSharp](https://github.com/OmniSharp/omnisharp-roslyn) will provide IDE
 like capabilities within Vim. The easiest way to do that is to install the
 [OmniSharp-vim](https://github.com/OmniSharp/omnisharp-vim) plugin which will
-happen using the [.vimrc](./dotfiles/.vimrc) in this repo.
+happen using the [.vimrc](./dotfiles/.vimrc) in this repository.
 Once installed, autocomplete is available in insert mode using `<C-x><C-o>`.
 There are a number of shortcuts available for frequently used commands,
 available for review in [cs.vim](./vim/ftplugin/cs.vim).
@@ -113,7 +113,7 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
 ## FAQ
 
 * No linting in Vim and no lint warning or error symbols in the margin?
-  * Check the repo's packages have been installed
+  * Check the repository's packages have been installed
   * Try restarting the eslint server. At the terminal run `eslint_d restart`
 * No completion in VIM?
 * Command failed and error reported `...can't decompress data; zlib not available`
@@ -124,7 +124,7 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
   on Cask <cask_name>.` it might be because the cask is old and out of date, try:
   * Removing the cask via `rm -rf $(brew --prefix)/Caskroom/<cask_name>`
 * Want to fetch all PRs from GitHub or MRs from GitLab locally?
-  * Add the following to the repo's `.git/config`:
+  * Add the following to the repository's `.git/config`:
 
   ```ini
   [remote "origin"]
@@ -147,7 +147,7 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
 
 ## Architecture Decision Records
 
-This repo uses
+This repository uses
 [Architecture Decision Records](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
 to record architectural decisions for this project.
 They are stored in [doc/architecture/decisions](doc/architecture/decisions).
