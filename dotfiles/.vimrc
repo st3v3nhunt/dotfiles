@@ -256,6 +256,7 @@ nnoremap <leader>z <C-z>
 nnoremap <leader>re :NERDTreeFind<CR>
 nnoremap <leader>f :Autoformat<CR>
 nnoremap <leader>jf :%! jq<CR>
+nnoremap <leader>b :Git blame<CR>
 
 " Tab options
 nnoremap th :tabfirst<CR>
