@@ -114,7 +114,7 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
 
 * No linting in Vim and no lint warning or error symbols in the margin?
   * Check the repository's packages have been installed
-  * Try restarting the eslint server. At the terminal run `eslint_d restart`
+  * Try restarting the ESLint server. At the terminal run `eslint_d restart`
 * No completion in VIM?
 * Command failed and error reported `...can't decompress data; zlib not available`
   * Run `sudo installer -pkg
