@@ -57,8 +57,8 @@ is used, settings are available in [WSL/profiles.json](WSL/profiles.json). See
 
 iTerm2 preferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within
 iTerm2 this setting will need to be entered before these will be used.
-Go to `Preferences->General` and enter `~/code/dotfiles/plists` into the option
-for `Load preferences from a custom folder or URL:`.
+Go to `Preferences->General->Preferences` and enter `~/code/dotfiles/plists`
+into the option for `Load preferences from a custom folder or URL:`.
 
 ### Installing Docker for Mac
 
