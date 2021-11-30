@@ -29,6 +29,7 @@ Plug 'christoomey/vim-tmux-navigator'                                          "
 Plug 'ctrlpvim/ctrlp.vim'                                                      " Fuzzy file finder
 Plug 'godlygeek/tabular'                                                       " Tabularisation
 Plug 'honza/vim-snippets'                                                      " Snippets
+Plug 'kevinoid/vim-jsonc'                                                      " JSON-C syntax
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                            " Fuzzy file finder (executable)
 Plug 'junegunn/fzf.vim'                                                        " Fuzzy file finder (for Vim)
 Plug 'junegunn/vim-easy-align'                                                 " Better/easier alignment
