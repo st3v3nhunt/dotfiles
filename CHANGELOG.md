@@ -1,3 +1,12 @@
+# [1.104.0](https://github.com/st3v3nhunt/dotfiles/compare/1.103.0...1.104.0) (2021-12-01)
+
+
+### Features
+
+* add jsonc syntax plugin ([#328](https://github.com/st3v3nhunt/dotfiles/issues/328)) ([c732efa](https://github.com/st3v3nhunt/dotfiles/commit/c732efaca5ef30b2012890f787f9864b07a6de85))
+* update iTerm2 profile ([#327](https://github.com/st3v3nhunt/dotfiles/issues/327)) ([78921ec](https://github.com/st3v3nhunt/dotfiles/commit/78921ec29b0aaf04824a796e4833e366fad3f5ff))
+* use node 16 in CI ([#329](https://github.com/st3v3nhunt/dotfiles/issues/329)) ([e4b54f6](https://github.com/st3v3nhunt/dotfiles/commit/e4b54f65b4074aa68a228dfe89a7460cef61351a))
+
 # [1.103.0](https://github.com/st3v3nhunt/dotfiles/compare/1.102.0...1.103.0) (2021-11-16)
 
 
