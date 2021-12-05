@@ -37,8 +37,10 @@ Plug 'ludovicchabant/vim-gutentags'                                            "
 Plug 'majutsushi/tagbar'                                                       " A ctag viewer
 Plug 'mileszs/ack.vim'                                                         " File searching
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }                              " Conquer of Completion
+" Plug 'neovim/nvim-lspconfig'                                                   " Common configs for Neovim's built-in LSP
 Plug 'ntpeters/vim-better-whitespace'                                          " Better whitespace
 Plug 'scrooloose/nerdtree'                                                     " File explorer
+Plug 'rodrigore/coc-tailwind-intellisense', { 'do': 'npm install' }            " Tailwind CSS intellisense
 Plug 'SirVer/ultisnips'                                                        " Snippet engine
 Plug 'tpope/vim-commentary'                                                    " Comment out lines
 Plug 'tpope/vim-fugitive'                                                      " Git wrapper
