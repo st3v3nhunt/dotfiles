@@ -16,8 +16,8 @@ endif
 
 " Run PlugInstall if there are missing plugins
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \| PlugInstall --sync | source $MYVIMRC
-\| endif
+      \| PlugInstall --sync | source $MYVIMRC
+      \| endif
 
 call plug#begin()
 " theme(s)
@@ -37,8 +37,10 @@ Plug 'ludovicchabant/vim-gutentags'                                            "
 Plug 'majutsushi/tagbar'                                                       " A ctag viewer
 Plug 'mileszs/ack.vim'                                                         " File searching
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }                              " Conquer of Completion
+" Plug 'neovim/nvim-lspconfig'                                                   " Common configs for Neovim's built-in LSP
 Plug 'ntpeters/vim-better-whitespace'                                          " Better whitespace
 Plug 'scrooloose/nerdtree'                                                     " File explorer
+Plug 'rodrigore/coc-tailwind-intellisense', { 'do': 'npm install' }            " Tailwind CSS intellisense
 Plug 'SirVer/ultisnips'                                                        " Snippet engine
 Plug 'tpope/vim-commentary'                                                    " Comment out lines
 Plug 'tpope/vim-fugitive'                                                      " Git wrapper
@@ -146,8 +148,8 @@ let g:ale_typescript_standard_executable='ts-standard'
 let g:ale_completion_tsserver_autoimport=1
 let g:ale_fix_on_save=1
 let g:ale_fixers={
-\  '*': ['remove_trailing_lines', 'trim_whitespace'],
-\}
+      \  '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \}
 let g:ale_hover_cursor=0
 let g:ale_lint_on_save=1
 let g:ale_sign_error='✗✗'
@@ -198,7 +200,7 @@ endfunction
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
+      \: "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
 nmap <leader>j <Plug>(coc-diagnostic-prev)
 nmap <leader>k <Plug>(coc-diagnostic-next)
 nmap <leader>gd <Plug>(coc-definition)
@@ -229,18 +231,18 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
 endif
 " installed extensions
 let g:coc_global_extensions=[
-\  'coc-deno',
-\  'coc-go',
-\  'coc-json',
-\  'coc-markdownlint',
-\  'coc-marketplace',
-\  'coc-omnisharp',
-\  'coc-rust-analyzer',
-\  'coc-sh',
-\  'coc-svelte',
-\  'coc-tsserver',
-\  'coc-yaml',
-\]
+      \  'coc-deno',
+      \  'coc-go',
+      \  'coc-json',
+      \  'coc-markdownlint',
+      \  'coc-marketplace',
+      \  'coc-omnisharp',
+      \  'coc-rust-analyzer',
+      \  'coc-sh',
+      \  'coc-svelte',
+      \  'coc-tsserver',
+      \  'coc-yaml',
+      \]
 " </coc-config>
 
 " Copy into the system clipboard
