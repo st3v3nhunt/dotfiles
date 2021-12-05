@@ -1,3 +1,10 @@
+# [1.105.0](https://github.com/st3v3nhunt/dotfiles/compare/1.104.0...1.105.0) (2021-12-05)
+
+
+### Features
+
+* add tailwind css intellisense and format .vimrc ([#330](https://github.com/st3v3nhunt/dotfiles/issues/330)) ([6a072af](https://github.com/st3v3nhunt/dotfiles/commit/6a072af0664ad116c4e80d063248e82bb10895f6))
+
 # [1.104.0](https://github.com/st3v3nhunt/dotfiles/compare/1.103.0...1.104.0) (2021-12-01)
 
 
