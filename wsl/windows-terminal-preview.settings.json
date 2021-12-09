@@ -8,7 +8,7 @@
       "cursorShape": "vintage",
       "fontFace": "MesloLGS NF",
       "fontSize": 8,
-      "colorScheme": "Konsolas"
+      "colorScheme": "MolokaiDark"
     },
     "list": [
       {
@@ -16,7 +16,7 @@
         "hidden": false,
         "name": "Ubuntu-20.04",
         "source": "Windows.Terminal.Wsl",
-        "startingDirectory": "//wsl$/Ubuntu-20.04/home/shunt",
+        "startingDirectory": "/home/shunt",
         "suppressApplicationTitle": true,
         "tabTitle": "Ubuntu-20.04"
       },
@@ -25,7 +25,7 @@
         "hidden": false,
         "name": "Ubuntu-18.04",
         "source": "Windows.Terminal.Wsl",
-        "startingDirectory": "//wsl$/Ubuntu-18.04/home/shunt",
+        "startingDirectory": "/home/shunt",
         "suppressApplicationTitle": true,
         "tabTitle": "Ubuntu-18.04"
       },
@@ -76,7 +76,7 @@
         "hidden": false,
         "name": "Ubuntu-16.04",
         "source": "Windows.Terminal.Wsl",
-        "startingDirectory": "//wsl$/Ubuntu-16.04/home/shunt",
+        "startingDirectory": "/home/shunt",
         "suppressApplicationTitle": true,
         "tabTitle": "Ubuntu-16.04"
       }
@@ -2749,6 +2749,27 @@
       "brightWhite": "#ffffff",
       "background": "#121212",
       "foreground": "#bbbbbb"
+    },
+    {
+      "name": "MolokaiDark",
+      "black": "#333333",
+      "red": "#C4265E",
+      "green": "#86B42B",
+      "yellow": "#B3B42B",
+      "blue": "#6A7EC8",
+      "purple": "#8C6BC8",
+      "cyan": "#56ADBC",
+      "white": "#E3E3DD",
+      "brightBlack": "#666666",
+      "brightRed": "#F92672",
+      "brightGreen": "#A6E22E",
+      "brightYellow": "#E2E22E",
+      "brightBlue": "#819AFF",
+      "brightPurple": "#AE81FF",
+      "brightCyan": "#66D9EF",
+      "brightWhite": "#F8F8F2",
+      "background": "#1B1D1E",
+      "foreground": "#F8F8F2"
     },
     {
       "name": "MonaLisa",
