@@ -94,6 +94,7 @@ augroup END
 
 " special cases for filetypes
 autocmd vimrc BufNewFile,BufRead *.md setlocal spell
+autocmd vimrc BufNewFile,BufRead *.gitconfig set filetype=gitconfig
 autocmd vimrc BufNewFile,BufRead *.nunjucks set filetype=html
 autocmd vimrc BufNewFile,BufRead Dockerfile.* set filetype=dockerfile
 autocmd vimrc BufNewFile,BufRead Jenkinsfile set syntax=groovy
