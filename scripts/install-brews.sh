@@ -49,14 +49,15 @@ tmux
 
 # GIT stuff
 brews+=(
+gh
 git
 git-secrets
-github/gh/gh
 hub
 )
 
 # THE editor?!
 brews+=(
+neovim
 vim
 )
 
