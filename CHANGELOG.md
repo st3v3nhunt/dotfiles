@@ -1,3 +1,10 @@
+# [1.106.0](https://github.com/st3v3nhunt/dotfiles/compare/1.105.0...1.106.0) (2021-12-10)
+
+
+### Features
+
+* improvements to handle mac/win machines ([#331](https://github.com/st3v3nhunt/dotfiles/issues/331)) ([2ee22da](https://github.com/st3v3nhunt/dotfiles/commit/2ee22da280bcbd555d6a3875c88761209a61d0b8))
+
 # [1.105.0](https://github.com/st3v3nhunt/dotfiles/compare/1.104.0...1.105.0) (2021-12-05)
 
 
