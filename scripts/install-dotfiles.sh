@@ -26,6 +26,8 @@ ln -nfsv "$GIT_DIR/.git-prompt.sh" ~
 ln -nfsv "$GIT_DIR/.git-completion.bash" ~
 ln -nfsv "$GIT_DIR/.gitconfig" ~
 ln -nfsv "$GIT_DIR/.gitignore" ~
+ln -nfsv "$GIT_DIR/.mac.gitconfig" ~
+ln -nfsv "$GIT_DIR/.pc.gitconfig" ~
 
 if [[ -n "$WSL_DISTRO_NAME" && "$OSTYPE" == "linux-gnu" ]]; then
   ln -nfsv "$DOTFILES_DIR/.zprofile" ~
