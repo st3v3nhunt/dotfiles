@@ -13,18 +13,10 @@ ln -nfsv "$REPO_DIR/$KARABINER_JSON" ~/"$KARABINER_JSON"
 printf "${GREEN}Finished installing Karabiner-Elements configuration...${NC}\\n"
 echo "If there are problems with karabiner settings not being loaded try turning on the setting for 'system default configuration'"
 
-printf "${GREEN}Installing Neovim configuration...${NC}\\n"
-NEOVIM_DIR=".config/nvim"
-NEOVIM_INIT="$NEOVIM_DIR/init.vim"
-mkdir -p ~/"$NEOVIM_DIR" && cp "$REPO_DIR/$NEOVIM_INIT" ~/"$NEOVIM_DIR"
-ln -nfsv "$REPO_DIR/$NEOVIM_INIT" ~/"$NEOVIM_INIT"
-printf "${GREEN}Finished installing Neovim configuration...${NC}\\n"
-
 brews=(
 deno
 docker-machine-driver-hyperkit
 hyperkit
-neovim
 reattach-to-user-namespace
 wifi-password
 )

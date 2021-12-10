@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# shellcheck disable=2059
+GREEN='\033[0;32m'
+NC='\033[0m'
 
 # Create dir for global swap, backup and undo files
 if [[ ! -d ~/.vim/tmp/ ]]; then
@@ -6,6 +9,13 @@ if [[ ! -d ~/.vim/tmp/ ]]; then
 fi
 
 REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
+
+printf "${GREEN}Installing Neovim configuration...${NC}\\n"
+NEOVIM_DIR=".config/nvim"
+NEOVIM_INIT="$NEOVIM_DIR/init.vim"
+mkdir -p ~/"$NEOVIM_DIR" && cp "$REPO_DIR/$NEOVIM_INIT" ~/"$NEOVIM_DIR"
+ln -nfsv "$REPO_DIR/$NEOVIM_INIT" ~/"$NEOVIM_INIT"
+printf "${GREEN}Finished installing Neovim configuration...${NC}\\n"
 
 # Link ftplugin and spell dirs
 ln -fsv "$REPO_DIR/vim/ftplugin" ~/.vim/

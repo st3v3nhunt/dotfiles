@@ -44,10 +44,10 @@
 	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
 	allowed = AKIAIOSFODNN7EXAMPLE
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-[user]
-	email = st3v3nhunt@users.noreply.github.com
-	name = Steven Hunt
-	signingKey = DB67B788A37A2A41
+[includeIf "gitdir:/home/shunt/"]
+	path = ~/.pc.gitconfig
+[includeIf "gitdir:~/mac/"]
+	path = ~/.mac.gitconfig
 [init]
 	templateDir = ~/.git-template
 	defaultBranch = main
