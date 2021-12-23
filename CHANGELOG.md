@@ -1,3 +1,10 @@
+# [1.108.0](https://github.com/st3v3nhunt/dotfiles/compare/1.107.0...1.108.0) (2021-12-23)
+
+
+### Features
+
+* brew maintenance ([#333](https://github.com/st3v3nhunt/dotfiles/issues/333)) ([1702c4d](https://github.com/st3v3nhunt/dotfiles/commit/1702c4d33ff720c9e9ff497ea18952c2de4002fd))
+
 # [1.107.0](https://github.com/st3v3nhunt/dotfiles/compare/1.106.0...1.107.0) (2021-12-23)
 
 
