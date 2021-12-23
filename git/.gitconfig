@@ -31,8 +31,6 @@
 	program = gpg
 [hub]
 	protocol = https
-[include]
-	path = .gitconfig.local
 [pull]
 	ff = only
 [push]
@@ -46,7 +44,7 @@
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 [includeIf "gitdir:/home/shunt/"]
 	path = ~/.pc.gitconfig
-[includeIf "gitdir:~/mac/"]
+[includeIf "gitdir:~/"]
 	path = ~/.mac.gitconfig
 [init]
 	templateDir = ~/.git-template

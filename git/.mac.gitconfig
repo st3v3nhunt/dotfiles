@@ -1,3 +1,5 @@
+[credential]
+	helper = osxkeychain
 [user]
 	comment = MAC
 	email = st3v3nhunt@users.noreply.github.com
