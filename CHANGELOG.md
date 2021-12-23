@@ -1,3 +1,10 @@
+# [1.107.0](https://github.com/st3v3nhunt/dotfiles/compare/1.106.0...1.107.0) (2021-12-23)
+
+
+### Features
+
+* simplify local git config ([#332](https://github.com/st3v3nhunt/dotfiles/issues/332)) ([94eadce](https://github.com/st3v3nhunt/dotfiles/commit/94eadce6f766327403efb794db4ff09864a98028))
+
 # [1.106.0](https://github.com/st3v3nhunt/dotfiles/compare/1.105.0...1.106.0) (2021-12-10)
 
 
