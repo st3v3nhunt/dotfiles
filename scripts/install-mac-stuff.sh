@@ -15,7 +15,6 @@ echo "If there are problems with karabiner settings not being loaded try turning
 
 brews=(
 deno
-docker-machine-driver-hyperkit
 hyperkit
 reattach-to-user-namespace
 wifi-password
