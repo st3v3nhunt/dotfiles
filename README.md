@@ -29,17 +29,21 @@ details can be seen in [install.sh](install.sh).:
 At several stages during the running of the installation scripts your password
 will be prompted for.
 
-## .gitconfig.local
+## Git Config
 
-There are several reasons why it is a good idea to have a file with git config
-in that doesn't get checked into the repository. It can contain secret
-information such as passwords and it can also contain differences due to the
-OS. The latter is the specific use case with this repository.
-`credential.helper` should be added to a file called `.gitconfig.local` that is
-stored in the home dir.  Add the config as follows. For macOS -
-`git config --file ~/.gitconfig.local credential.helper "osxkeychain"`
-and for WSL -
-`git config --file ~/.gitconfig.local credential.helper "/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"`.
+### Machine specific Git signing key
+
+In order to
+[sign commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits)
+(a good idea) a signing key needs to be associated to your GitHub profile. A
+key is specific to the machine where it was generated. Multiple keys are easily
+associated to a single profile but there is no really simple way to specify
+which key is to be used for a specific machine. To that end, having a machine
+specific `.gitconfig` is a good compromise. Within `.gitconfig`, using an
+`includeIf` directive additional files can be included. The `includeIf` ideally
+works automatically based on the directory structure of the machine, however,
+if this didn't work there might need to be some manual editing to ensure the
+file with the required key would be included.
 
 ## WSL/Windows
 
