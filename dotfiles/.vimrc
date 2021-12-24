@@ -6,6 +6,7 @@ set showtabline=2                                                              "
 set signcolumn=yes                                                             " combine sign column - prevent interface moving around
 set tags=tags                                                                  " set tags to tags for ctags
 set timeoutlen=500                                                             " reduce amount of time to wait for second key
+set shortmess-=F                                                               " ensure messages from ftplugins are shown
 
 " Install vim-plug if not found
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
