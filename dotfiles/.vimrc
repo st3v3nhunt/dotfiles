@@ -1,11 +1,12 @@
-set nocompatible                                                               " use vim settings
-set autowrite                                                                  " write file
-set path+=**                                                                   " make :find search everything
-set previewheight=50                                                           " make preview window larger
-set showtabline=2                                                              " always show tab bar
-set signcolumn=yes                                                             " combine sign column - prevent interface moving around
-set tags=tags                                                                  " set tags to tags for ctags
-set timeoutlen=500                                                             " reduce amount of time to wait for second key
+set nocompatible                                                               " Use vim settings
+set autowrite                                                                  " Write file
+set path+=**                                                                   " Make :find search everything
+set previewheight=50                                                           " Make preview window larger
+set showtabline=2                                                              " Always show tab bar
+set signcolumn=yes                                                             " Combine sign column - prevent interface moving around
+set tags=tags                                                                  " Set tags to tags for ctags
+set timeoutlen=500                                                             " Reduce amount of time to wait for second key
+set shortmess-=F                                                               " Ensure messages from ftplugins are shown
 
 " Install vim-plug if not found
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -66,34 +67,34 @@ call plug#end()                                                                "
 
 colorscheme monokai
 
-set autoindent                                                                 " auto indent
-set clipboard=unnamed                                                          " allow copy between instances
+set autoindent                                                                 " Auto indent
+set clipboard=unnamed                                                          " Allow copy between instances
 set colorcolumn=80                                                             " 80 column guide
-set completeopt=menu,menuone,preview,noselect,noinsert                         " fixes issue with automatically completing autocomplete options (noinsert) and switches to popup rather than preview window
-set expandtab                                                                  " insert spaces with tab
-set foldmethod=indent                                                          " fold based on indentation
-set foldlevel=5                                                                " default fold level. 5 should be ok to see most contents
-set history=10000                                                              " remember more stuff
-set hlsearch                                                                   " highlight searches
-set ignorecase                                                                 " ignore case when searching
-set incsearch                                                                  " incremental search
-set list                                                                       " show listchars
-set listchars=tab:▸\ ,eol:¬                                                    " override default listchars
-set number                                                                     " line numbers
-set relativenumber                                                             " show relative line numbers
-set shiftwidth=2                                                               " number of spaces for each step of (auto)indent
-set showcmd                                                                    " show command on screen
-set smartcase                                                                  " ignore case if search term is all lower, else be case sensitive
+set completeopt=menu,menuone,preview,noselect,noinsert                         " Fixes issue with automatically completing autocomplete options (noinsert) and switches to popup rather than preview window
+set expandtab                                                                  " Insert spaces with tab
+set foldmethod=indent                                                          " Fold based on indentation
+set foldlevel=5                                                                " Default fold level. 5 should be ok to see most contents
+set history=10000                                                              " Remember more stuff
+set hlsearch                                                                   " Highlight searches
+set ignorecase                                                                 " Ignore case when searching
+set incsearch                                                                  " Incremental search
+set list                                                                       " Show listchars
+set listchars=tab:▸\ ,eol:¬                                                    " Override default listchars
+set number                                                                     " Line numbers
+set relativenumber                                                             " Show relative line numbers
+set shiftwidth=2                                                               " Number of spaces for each step of (auto)indent
+set showcmd                                                                    " Show command on screen
+set smartcase                                                                  " Ignore case if search term is all lower, else be case sensitive
 set t_Co=256                                                                   " 256 colours
-set tabstop=2                                                                  " number of spaces for a tab
-set undolevels=1000                                                            " undo more stuff
+set tabstop=2                                                                  " Number of spaces for a tab
+set undolevels=1000                                                            " Undo more stuff
 
 " Use single grouping for all autocmds in file
 augroup vimrc
   autocmd!
 augroup END
 
-" special cases for filetypes
+" Special cases for filetypes
 autocmd vimrc BufNewFile,BufRead *.md setlocal spell
 autocmd vimrc BufNewFile,BufRead *.gitconfig set filetype=gitconfig
 autocmd vimrc BufNewFile,BufRead *.nunjucks set filetype=html
@@ -185,10 +186,10 @@ let mapleader=","
 hi CocErrorFloat ctermfg=196
 
 set hidden
-set cmdheight=2                                                                " more space for messages
-set updatetime=300                                                             " decrease delays
-set shortmess+=c                                                               " don't pass messages to |ins-completion-menu|
-" use tab for trigger completion with characters ahead and navigate.
+set cmdheight=2                                                                " More space for messages
+set updatetime=300                                                             " Decrease delays
+set shortmess+=c                                                               " Don't pass messages to |ins-completion-menu|
+" Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
