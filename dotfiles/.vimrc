@@ -27,6 +27,7 @@ Plug 'airblade/vim-gitgutter'                                                  "
 Plug 'Chiel92/vim-autoformat'                                                  " Generic code formatter
 Plug 'christoomey/vim-tmux-navigator'                                          " Same split shortcuts in vim and tmux
 Plug 'ctrlpvim/ctrlp.vim'                                                      " Fuzzy file finder
+Plug 'editorconfig/editorconfig-vim'                                           " Make .editorconfig work
 Plug 'godlygeek/tabular'                                                       " Tabularisation
 Plug 'honza/vim-snippets'                                                      " Snippets
 Plug 'kevinoid/vim-jsonc'                                                      " JSON-C syntax
