@@ -1,3 +1,10 @@
+# [1.109.0](https://github.com/st3v3nhunt/dotfiles/compare/1.108.0...1.109.0) (2021-12-24)
+
+
+### Features
+
+* vim config improvements ([#335](https://github.com/st3v3nhunt/dotfiles/issues/335)) ([16856f0](https://github.com/st3v3nhunt/dotfiles/commit/16856f06a3c63329052eb76cd0263584d8b961fd))
+
 # [1.108.0](https://github.com/st3v3nhunt/dotfiles/compare/1.107.0...1.108.0) (2021-12-23)
 
 
