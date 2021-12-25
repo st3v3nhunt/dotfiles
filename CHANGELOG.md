@@ -1,3 +1,10 @@
+# [1.110.0](https://github.com/st3v3nhunt/dotfiles/compare/1.109.0...1.110.0) (2021-12-25)
+
+
+### Features
+
+* use prettier for svelte and JS formatting ([#336](https://github.com/st3v3nhunt/dotfiles/issues/336)) ([5d2c984](https://github.com/st3v3nhunt/dotfiles/commit/5d2c984065c14a40ec3ff194d362f61747625387))
+
 # [1.109.0](https://github.com/st3v3nhunt/dotfiles/compare/1.108.0...1.109.0) (2021-12-24)
 
 
