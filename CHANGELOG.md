@@ -1,3 +1,10 @@
+## [1.111.1](https://github.com/st3v3nhunt/dotfiles/compare/1.111.0...1.111.1) (2022-01-07)
+
+
+### Bug Fixes
+
+* wsl credential helper path ([#338](https://github.com/st3v3nhunt/dotfiles/issues/338)) ([65d493a](https://github.com/st3v3nhunt/dotfiles/commit/65d493aa8ccb57f98b851336d0f2bd1d5a268a16))
+
 # [1.111.0](https://github.com/st3v3nhunt/dotfiles/compare/1.110.0...1.111.0) (2022-01-07)
 
 
