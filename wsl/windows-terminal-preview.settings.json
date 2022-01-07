@@ -6,7 +6,7 @@
   "profiles": {
     "defaults": {
       "cursorShape": "vintage",
-      "fontFace": "MesloLGS NF",
+      "fontFace": "JetBrainsMono Nerd Font",
       "fontSize": 8,
       "colorScheme": "MolokaiDark"
     },
