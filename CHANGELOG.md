@@ -1,3 +1,10 @@
+# [1.112.0](https://github.com/st3v3nhunt/dotfiles/compare/1.111.1...1.112.0) (2022-01-07)
+
+
+### Features
+
+* configure JetBrain Mono (Nerd Font) font ([#339](https://github.com/st3v3nhunt/dotfiles/issues/339)) ([da3e711](https://github.com/st3v3nhunt/dotfiles/commit/da3e711ba58e7dc7e380dd5599f68a545cb13255))
+
 ## [1.111.1](https://github.com/st3v3nhunt/dotfiles/compare/1.111.0...1.111.1) (2022-01-07)
 
 
