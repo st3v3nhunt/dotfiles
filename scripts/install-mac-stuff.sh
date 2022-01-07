@@ -4,6 +4,9 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 
 REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
+GIT_DIR="$REPO_DIR/git"
+
+ln -nfsv "$GIT_DIR/.mac.gitconfig" ~
 
 printf "${GREEN}Installing Karabiner-Elements configuration...${NC}\\n"
 KARABINER_DIR=".config/karabiner"
