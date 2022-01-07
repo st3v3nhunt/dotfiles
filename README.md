@@ -23,7 +23,7 @@ details can be seen in [install.sh](install.sh).:
 * Install and setup [tmux](https://github.com/tmux/tmux) related stuff
 * Install and setup [Vim](https://www.vim.org/) related stuff
 * Install .Net tooling
-* Install [Powerline fonts](https://github.com/powerline/fonts)
+* Install [Nerd Fonts](https://www.nerdfonts.com/)
 * Install [Rust](https://www.rust-lang.org/)
 
 At several stages during the running of the installation scripts your password
@@ -96,12 +96,18 @@ available for review in [cs.vim](./vim/ftplugin/cs.vim).
 
 ## Terminal
 
-### Powerline Fonts
+### Nerd Fonts for Powerline
 
-In order to get the icons working for the Powerline theme for Oh My Zsh follow
-these
-[instructions](https://github.com/romkatv/powerlevel10k#manual-font-installation)
-which involves downloading and installing the MesloLGS font files.
+In order to get the icons (glyphs) working for the Powerline theme for Oh My
+Zsh follow these
+[instructions](https://github.com/romkatv/powerlevel10k#manual-font-installation).
+It involves downloading and installing your favourite Nerd Font from
+[font-downloads](https://www.nerdfonts.com/font-downloads).
+
+[JetBrains Mono]( https://www.jetbrains.com/lp/mono/) is a good choice and the
+configuration within this repository has been setup expecting it to be
+installed.
+Once installed the terminal(s) will need to be restarted.
 
 ### [Tmux plugin manager](https://github.com/tmux-plugins/tpm)
 
