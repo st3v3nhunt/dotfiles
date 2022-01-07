@@ -35,15 +35,15 @@ will be prompted for.
 
 In order to
 [sign commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits)
-(a good idea) a signing key needs to be associated to your GitHub profile. A
-key is specific to the machine where it was generated. Multiple keys are easily
-associated to a single profile but there is no really simple way to specify
-which key is to be used for a specific machine. To that end, having a machine
-specific `.gitconfig` is a good compromise. Within `.gitconfig`, using an
-`includeIf` directive additional files can be included. The `includeIf` ideally
-works automatically based on the directory structure of the machine, however,
-if this didn't work there might need to be some manual editing to ensure the
-file with the required key would be included.
+(a good idea) a signing key needs to be associated to your Git profile. A
+key is specific to the machine where it was generated. Working on multiple
+machines will result in multiple keys. Managing which key is used on which
+machine is achieved by having machine specific `.gitconfig` files. The files
+are symlinked into the user's home directory during the installation of
+dotfiles. Within the main `.gitconfig` an `include` directive is used to load
+the files, therefore relying on the symlinking process to have correctly linked
+the file into the directory. If this isn't completed correctly it is likely an
+error will be encountered by Git when it tries to identify the user.
 
 ## WSL/Windows
 

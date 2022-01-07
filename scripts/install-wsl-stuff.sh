@@ -12,6 +12,9 @@ echo "Installing Deno..."
 curl -fsSL https://deno.land/x/install/install.sh | sh
 
 REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
+GIT_DIR="$REPO_DIR/git"
+
+ln -nfsv "$GIT_DIR/.pc.gitconfig" ~
 
 echo "Copying 'wsl.conf' into /etc/. Password will be required"
 sudo ln -nfsv "$REPO_DIR/wsl/wsl.conf" /etc/
