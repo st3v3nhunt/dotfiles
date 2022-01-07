@@ -1,3 +1,10 @@
+# [1.111.0](https://github.com/st3v3nhunt/dotfiles/compare/1.110.0...1.111.0) (2022-01-07)
+
+
+### Features
+
+* mainly git config simplifications ([#337](https://github.com/st3v3nhunt/dotfiles/issues/337)) ([e52ecc0](https://github.com/st3v3nhunt/dotfiles/commit/e52ecc03cf17a1f84e646e320c566dd6f77a90a1))
+
 # [1.110.0](https://github.com/st3v3nhunt/dotfiles/compare/1.109.0...1.110.0) (2021-12-25)
 
 
