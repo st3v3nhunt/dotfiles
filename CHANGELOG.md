@@ -1,3 +1,10 @@
+# [1.113.0](https://github.com/st3v3nhunt/dotfiles/compare/1.112.0...1.113.0) (2022-01-09)
+
+
+### Features
+
+* use maintained nerdtree repo ([#340](https://github.com/st3v3nhunt/dotfiles/issues/340)) ([d29aafe](https://github.com/st3v3nhunt/dotfiles/commit/d29aafef05d0ec34323cda749ae5cf7354dbde20))
+
 # [1.112.0](https://github.com/st3v3nhunt/dotfiles/compare/1.111.1...1.112.0) (2022-01-07)
 
 
