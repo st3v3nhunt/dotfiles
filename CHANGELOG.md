@@ -1,3 +1,10 @@
+# [1.115.0](https://github.com/st3v3nhunt/dotfiles/compare/1.114.0...1.115.0) (2022-01-10)
+
+
+### Features
+
+* use JetBrains Mono font in iterm ([#342](https://github.com/st3v3nhunt/dotfiles/issues/342)) ([b7555b1](https://github.com/st3v3nhunt/dotfiles/commit/b7555b19b87add0dfd6c39793ec61810bbea268a))
+
 # [1.114.0](https://github.com/st3v3nhunt/dotfiles/compare/1.113.0...1.114.0) (2022-01-10)
 
 
