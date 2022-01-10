@@ -1,3 +1,10 @@
+# [1.114.0](https://github.com/st3v3nhunt/dotfiles/compare/1.113.0...1.114.0) (2022-01-10)
+
+
+### Features
+
+* swap vim svelte plugin ([#341](https://github.com/st3v3nhunt/dotfiles/issues/341)) ([325b040](https://github.com/st3v3nhunt/dotfiles/commit/325b040e0c6f8fba7d51de3fe1780cd73bb32c4b))
+
 # [1.113.0](https://github.com/st3v3nhunt/dotfiles/compare/1.112.0...1.113.0) (2022-01-09)
 
 
