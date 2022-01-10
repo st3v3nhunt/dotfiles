@@ -104,7 +104,7 @@ Zsh follow these
 It involves downloading and installing your favourite Nerd Font from
 [font-downloads](https://www.nerdfonts.com/font-downloads).
 
-[JetBrains Mono]( https://www.jetbrains.com/lp/mono/) is a good choice and the
+[JetBrains Mono](https://www.jetbrains.com/lp/mono/) is a good choice and the
 configuration within this repository has been setup expecting it to be
 installed.
 Once installed the terminal(s) will need to be restarted.
