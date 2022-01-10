@@ -53,11 +53,11 @@ Plug 'vim-airline/vim-airline'                                                 "
 Plug 'vim-airline/vim-airline-themes'                                          " Themes for vim-airline
 Plug 'w0rp/ale'                                                                " Asynchronous Lint Engine aka ALE
 " specific languge plugins
-Plug 'evanleck/vim-svelte'                                                     " Svelte
 Plug 'fatih/vim-go'                                                            " Golang
 Plug 'hashivim/vim-terraform'                                                  " Terraform
 Plug 'google/yapf'                                                             " Python
 Plug 'leafgarland/typescript-vim'                                              " TypeScript
+Plug 'leafOfTree/vim-svelte-plugin'                                            " Svelte
 Plug 'lepture/vim-jinja'                                                       " Jinja/Nunjucks
 Plug 'OmniSharp/omnisharp-vim'                                                 " C#
 Plug 'pangloss/vim-javascript'                                                 " JavaScript
