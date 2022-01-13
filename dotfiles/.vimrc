@@ -246,6 +246,7 @@ let g:coc_global_extensions=[
       \  'coc-tsserver',
       \  'coc-yaml',
       \]
+nnoremap <leader>cr :CocRestart<CR>
 " </coc-config>
 
 " Copy into the system clipboard
