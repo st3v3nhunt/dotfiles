@@ -1,3 +1,10 @@
+# [1.116.0](https://github.com/st3v3nhunt/dotfiles/compare/1.115.0...1.116.0) (2022-01-13)
+
+
+### Features
+
+* general tweaking ([#343](https://github.com/st3v3nhunt/dotfiles/issues/343)) ([3de1939](https://github.com/st3v3nhunt/dotfiles/commit/3de1939d74cd831ae3da5f76863ea9ef7d762896))
+
 # [1.115.0](https://github.com/st3v3nhunt/dotfiles/compare/1.114.0...1.115.0) (2022-01-10)
 
 
