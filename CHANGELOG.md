@@ -1,3 +1,10 @@
+# [1.117.0](https://github.com/st3v3nhunt/dotfiles/compare/1.116.0...1.117.0) (2022-02-13)
+
+
+### Features
+
+* add vim plugin for Helm syntax ([#344](https://github.com/st3v3nhunt/dotfiles/issues/344)) ([ef7a68b](https://github.com/st3v3nhunt/dotfiles/commit/ef7a68bf55e98bfd0f6d8999a2a53fe69fc95a73))
+
 # [1.116.0](https://github.com/st3v3nhunt/dotfiles/compare/1.115.0...1.116.0) (2022-01-13)
 
 
