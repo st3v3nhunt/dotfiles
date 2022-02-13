@@ -44,6 +44,7 @@ Plug 'ntpeters/vim-better-whitespace'                                          "
 Plug 'preservim/nerdtree'                                                      " File explorer
 Plug 'rodrigore/coc-tailwind-intellisense', { 'do': 'npm install' }            " Tailwind CSS intellisense
 Plug 'SirVer/ultisnips'                                                        " Snippet engine
+Plug 'towolf/vim-helm'                                                         " Helm template highlighting
 Plug 'tpope/vim-commentary'                                                    " Comment out lines
 Plug 'tpope/vim-fugitive'                                                      " Git wrapper
 Plug 'tpope/vim-obsession'                                                     " Improve session restoration
