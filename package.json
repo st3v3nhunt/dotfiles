@@ -7,13 +7,13 @@
     "doc": "doc"
   },
   "devDependencies": {
-    "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
     "@google/semantic-release-replace-plugin": "^1.0.2",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "husky": "^4.3.8",
-    "semantic-release": "^18.0.0"
+    "semantic-release": "^19.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
