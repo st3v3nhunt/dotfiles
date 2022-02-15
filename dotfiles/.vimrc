@@ -59,7 +59,7 @@ Plug 'hashivim/vim-terraform'                                                  "
 Plug 'google/yapf'                                                             " Python
 Plug 'leafgarland/typescript-vim'                                              " TypeScript
 Plug 'leafOfTree/vim-svelte-plugin'                                            " Svelte
-Plug 'lepture/vim-jinja'                                                       " Jinja/Nunjucks
+Plug 'Glench/Vim-Jinja2-Syntax'                                                " Jinja/Nunjucks
 Plug 'OmniSharp/omnisharp-vim'                                                 " C#
 Plug 'pangloss/vim-javascript'                                                 " JavaScript
 Plug 'posva/vim-vue'                                                           " Vue
