@@ -116,7 +116,7 @@ nmap ga <Plug>(EasyAlign)
 let NERDTreeShowHidden=1
 let g:NERDTreeMapOpenSplit='h'
 let g:NERDTreeMapOpenVSplit='v'
-map <C-n> :NERDTreeToggle<CR>
+noremap <C-n> :NERDTreeToggle<CR>
 
 " Better whitespace
 let g:better_whitespace_enabled=1
@@ -173,11 +173,11 @@ set directory=~/.vim/tmp/swap//
 set undodir=~/.vim/tmp/undo//
 
 let g:UltiSnipsExpandTrigger="<C-e>"
-nmap <F8> :TagbarToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
 
 " Use oo and OO for entering new lines without going into insert mode
-nmap oo o<Esc>k
-nmap OO O<Esc>j
+nnoremap oo o<Esc>k
+nnoremap OO O<Esc>j
 
 " Remap leader to comma, all remaps using leader must be below this
 let mapleader=","
@@ -256,14 +256,14 @@ if executable(s:clip)
   autocmd vimrc TextYankPost * :call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
 end
 " Paste from the system clipboard
-map <silent><leader>p :r !powershell.exe -Command Get-Clipboard<CR>
+noremap <silent><leader>p :r !powershell.exe -Command Get-Clipboard<CR>
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>z <C-z>
 nnoremap <leader>re :NERDTreeFind<CR>
 nnoremap <leader>ff :Autoformat<CR>
-nnoremap <leader>jf :%! jq<CR>
+nnoremap <leader>fj :%! jq<CR>
 nnoremap <leader>b :Git blame<CR>
 
 " Tab options
