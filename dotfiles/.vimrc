@@ -262,7 +262,7 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>z <C-z>
 nnoremap <leader>re :NERDTreeFind<CR>
-nnoremap <leader>f :Autoformat<CR>
+nnoremap <leader>ff :Autoformat<CR>
 nnoremap <leader>jf :%! jq<CR>
 nnoremap <leader>b :Git blame<CR>
 
