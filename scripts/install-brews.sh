@@ -9,7 +9,7 @@ brews=(
 adr-tools
 asciinema
 azure-cli
-azure-functions-core-tools@3
+azure-functions-core-tools@4
 aws-iam-authenticator
 cmake
 cloudfoundry/tap/cf-cli@7
