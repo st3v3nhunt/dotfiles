@@ -89,8 +89,9 @@ skaffold
 stern
 )
 
-# DBs
+# DB stuff
 brews+=(
+pgadmin4
 postgresql
 redis
 sqlite
