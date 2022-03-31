@@ -8,6 +8,7 @@ brew tap johanhaleby/kubetail
 brews=(
 adr-tools
 asciinema
+azcopy
 azure-cli
 azure-functions-core-tools@4
 aws-iam-authenticator
@@ -43,6 +44,7 @@ yq
 # Terminal stuff
 brews+=(
 bash
+fig
 htop
 tmux
 )
