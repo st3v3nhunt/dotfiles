@@ -1,0 +1,65 @@
+k9s:
+  refreshRate: 2
+  maxConnRetry: 5
+  enableMouse: false
+  headless: false
+  logoless: false
+  crumbsless: false
+  readOnly: false
+  noIcons: false
+  logger:
+    tail: 200
+    buffer: 5000
+    sinceSeconds: -1
+    fullScreenLogs: false
+    textWrap: true
+    showTime: true
+  currentContext: SNDFFCAKSCL1001
+  currentCluster: SNDFFCAKSCL1001
+  clusters:
+    SNDFFCAKSCL1001:
+      namespace:
+        active: default
+        favorites:
+        - ffc-ahwr
+        - all
+        - default
+      view:
+        active: pod
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        command: []
+        args: []
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+    rancher-desktop:
+      namespace:
+        active: default
+        favorites:
+        - default
+      view:
+        active: pod
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        command: []
+        args: []
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+  thresholds:
+    cpu:
+      critical: 90
+      warn: 70
+    memory:
+      critical: 90
+      warn: 70
+  screenDumpDir: /var/folders/g3/5f2r2q3n3t9cybmqpxqrdf7h0000gn/T/k9s-screens-shunt

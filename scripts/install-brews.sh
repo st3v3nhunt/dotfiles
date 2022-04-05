@@ -8,8 +8,9 @@ brew tap johanhaleby/kubetail
 brews=(
 adr-tools
 asciinema
+azcopy
 azure-cli
-azure-functions-core-tools@3
+azure-functions-core-tools@4
 aws-iam-authenticator
 cmake
 cloudfoundry/tap/cf-cli@7
@@ -43,6 +44,7 @@ yq
 # Terminal stuff
 brews+=(
 bash
+fig
 htop
 tmux
 )
@@ -89,8 +91,9 @@ skaffold
 stern
 )
 
-# DBs
+# DB stuff
 brews+=(
+pgadmin4
 postgresql
 redis
 sqlite
