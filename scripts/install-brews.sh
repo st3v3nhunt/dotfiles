@@ -96,6 +96,7 @@ brews+=(
 pgadmin4
 postgresql
 redis
+redisinsight
 sqlite
 )
 
