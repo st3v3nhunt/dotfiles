@@ -19,13 +19,13 @@ k9s:
   clusters:
     SNDFFCAKSCL1001:
       namespace:
-        active: default
+        active: ffc-ahwr
         favorites:
         - ffc-ahwr
         - all
         - default
       view:
-        active: pod
+        active: deploy
       featureGates:
         nodeShell: false
       shellPod:
