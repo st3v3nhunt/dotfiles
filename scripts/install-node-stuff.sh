@@ -30,9 +30,6 @@ echo "Installing Deno autocompletion. Reload shell once complete..."
 mkdir ~/.oh-my-zsh/custom/plugins/deno
 deno completions zsh > ~/.oh-my-zsh/custom/plugins/deno/_deno
 
-echo "Installing deployctl so Deno Deploy scripts can run locally..."
-deno install --allow-read --allow-write --allow-env --allow-net --allow-run --no-check -f https://deno.land/x/deploy/deployctl.ts
-
 if [[ -n "$WSL_DISTRO_NAME" ]]; then
   deno completions bash > /home/linuxbrew/.linuxbrew/etc/bash_completion.d/deno.bash
 else
