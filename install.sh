@@ -17,6 +17,7 @@ fi
 
 ./scripts/install-gems.sh
 ./scripts/install-gcloud.sh
+./scripts/install-go-stuff.sh
 ./scripts/install-misc.sh
 ./scripts/install-node-stuff.sh
 ./scripts/install-python-stuff.sh
