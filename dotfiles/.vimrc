@@ -241,6 +241,7 @@ let g:coc_global_extensions=[
       \  'coc-markdownlint',
       \  'coc-marketplace',
       \  'coc-omnisharp',
+      \  'coc-pyright',
       \  'coc-rust-analyzer',
       \  'coc-sh',
       \  'coc-svelte',
@@ -262,7 +263,12 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>z <C-z>
 nnoremap <leader>re :NERDTreeFind<CR>
-nnoremap <leader>ff :Autoformat<CR>
+if filereadable(findfile('deno.jsonc', '.;'))
+  echom "Using deno fmt"
+  nnoremap <leader>ff :%! deno fmt -<CR>
+else
+  nnoremap <leader>ff :Autoformat<CR>
+endif
 nnoremap <leader>fj :%! jq<CR>
 nnoremap <leader>b :Git blame<CR>
 

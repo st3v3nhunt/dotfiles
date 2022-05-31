@@ -44,6 +44,7 @@ yq
 # Terminal stuff
 brews+=(
 bash
+cmatrix
 fig
 htop
 tmux
