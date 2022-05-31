@@ -1,3 +1,19 @@
+# [1.118.0](https://github.com/st3v3nhunt/dotfiles/compare/1.117.0...1.118.0) (2022-05-31)
+
+
+### Bug Fixes
+
+* use GH repo token in place of specific SR token ([#356](https://github.com/st3v3nhunt/dotfiles/issues/356)) ([ff8f5d9](https://github.com/st3v3nhunt/dotfiles/commit/ff8f5d92fbbcdc438b837132b4265d4ff0805bd1))
+* use specific SR token to enable push to repo ([#357](https://github.com/st3v3nhunt/dotfiles/issues/357)) ([232fd75](https://github.com/st3v3nhunt/dotfiles/commit/232fd75c13332c980ce828c311a4e0ec21792a75))
+
+
+### Features
+
+* install redis insight ([5bf906a](https://github.com/st3v3nhunt/dotfiles/commit/5bf906a634654f5dcdb599d33a75c9762e0b21da))
+* k9s config, deps updated ([#351](https://github.com/st3v3nhunt/dotfiles/issues/351)) ([f79f337](https://github.com/st3v3nhunt/dotfiles/commit/f79f337f5b9b0a66ed10c3e18ae5d04fefe2c2df))
+* moar go ([#354](https://github.com/st3v3nhunt/dotfiles/issues/354)) ([9d9fb30](https://github.com/st3v3nhunt/dotfiles/commit/9d9fb30f2a44bf83fc3b477eabc83af07e4b55fc))
+* set commonly used k8s config ([7a0e7c6](https://github.com/st3v3nhunt/dotfiles/commit/7a0e7c6496dd12bafbe59ed56ef35e91e60676fb))
+
 # [1.117.0](https://github.com/st3v3nhunt/dotfiles/compare/1.116.0...1.117.0) (2022-02-13)
 
 
