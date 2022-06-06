@@ -11,6 +11,6 @@ else
   let b:formatters_javascript=['standard_javascript']
 endif
 
-# Override the equivalent coc key bindings
+" Override the equivalent coc key bindings
 nmap <leader>j <Plug>(ale_previous_wrap)
 nmap <leader>k <Plug>(ale_next_wrap)
