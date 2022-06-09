@@ -55,7 +55,13 @@ is used, settings are available in [WSL/profiles.json](WSL/profiles.json). See
 
 ### Manual steps
 
-* Set Resolution of display (System Preferences -> Displays -> Display)
+* Set Resolution of display (System Preferences -> Displays -> Display Settings...)
+* Set Text shortcuts (System Preferences -> Keyboard -> Text). Useful shortcuts:
+| Replace | With                   |
+| ------- | ----                   |
+| @p      | personal email address |
+| @w      | work email address     |
+| mob     | mobile phone number    |
 
 ### iTerm2 preferences
 
