@@ -35,15 +35,18 @@ will be prompted for.
 
 In order to
 [sign commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits)
-(a good idea) a signing key needs to be associated to your Git profile. A
-key is specific to the machine where it was generated. Working on multiple
-machines will result in multiple keys. Managing which key is used on which
-machine is achieved by having machine specific `.gitconfig` files. The files
-are symlinked into the user's home directory during the installation of
-dotfiles. Within the main `.gitconfig` an `include` directive is used to load
-the files, therefore relying on the symlinking process to have correctly linked
-the file into the directory. If this isn't completed correctly it is likely an
-error will be encountered by Git when it tries to identify the user.
+(a good idea) a signing key needs to be associated to your Git profile.
+
+The easiest way to manage this is to use the same key on each machine where the
+signing needs to happen. Once a key has been generated it can be exported and
+imported
+([details](https://makandracards.com/makandra-orga/37763-gpg-extract-private-key-and-import-on-different-machine)).
+
+If this isn't possible (or desirable) there are other ways around this, most
+notably using Git's
+[`includeIf`](https://git-scm.com/docs/git-config#_includes). However, this
+would likely introduce additional complexity and worse ergonomics (e.g. using a
+specifically named directory to determine which key to use).
 
 ## WSL/Windows
 
@@ -57,20 +60,29 @@ is used, settings are available in [WSL/profiles.json](WSL/profiles.json). See
 
 * Set Resolution of display (System Preferences -> Displays -> Display Settings...)
 * Set Text shortcuts (System Preferences -> Keyboard -> Text). Useful shortcuts:
+
 | Replace | With                   |
 | ------- | ----                   |
 | @p      | personal email address |
 | @w      | work email address     |
 | mob     | mobile phone number    |
 
-### iTerm2 preferences
+### iTerm2
+
+#### Preferences
 
 iTerm2 preferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within
 iTerm2 this setting will need to be entered before these will be used.
 Go to `Preferences->General->Preferences` and enter `~/code/dotfiles/plists`
 into the option for `Load preferences from a custom folder or URL:`.
 
-### Installing Docker for Mac
+#### Themes
+
+The iterm preference file uses `Monokai-Dark` for the theme. This can be
+downloaded from
+[iterm2colorschemes](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Molokai.itermcolors)
+
+#### Installing Docker for Mac
 
 At the time of writing [Docker for Mac](https://www.docker.com/docker-mac) is
 not available via Homebrew. It can be downloaded from the
@@ -109,11 +121,9 @@ Zsh follow these
 [instructions](https://github.com/romkatv/powerlevel10k#manual-font-installation).
 It involves downloading and installing your favourite Nerd Font from
 [font-downloads](https://www.nerdfonts.com/font-downloads).
-
-[JetBrains Mono](https://www.jetbrains.com/lp/mono/) is a good choice and the
-configuration within this repository has been setup expecting it to be
-installed.
-Once installed the terminal(s) will need to be restarted.
+Use [JetBrains Mono](https://www.jetbrains.com/lp/mono/), it is a very good
+choice and the configuration within this repository has been setup expecting it
+to be installed. Once installed the terminal(s) will need to be restarted.
 
 ### [Tmux plugin manager](https://github.com/tmux-plugins/tpm)
 
