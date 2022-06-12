@@ -65,13 +65,13 @@ echo "Updating Homebrew..."
 brew update
 
 echo "Updating installed casks..."
-brew cask upgrade
+brew upgrade --cask
 
 # Install casks if they aren't already
 for pkg in "${casks[@]}"; do
-  if ! brew cask list -1 | grep -q "^$pkg\$" ; then
+  if ! brew list --cask -1 | grep -q "^$pkg\$" ; then
     echo "Installing '$pkg'..."
-    brew cask install "$pkg"
+    brew install "$pkg" --cask
   else
     echo "'$pkg' already installed"
   fi
