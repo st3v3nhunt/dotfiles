@@ -41,9 +41,6 @@ for pkg in "${brews[@]}"; do
   fi
 done
 
-# Start services
-brew services start yabai
-
 # Enable docker-machine-driver to access the hypervisor (hyperkit)
 echo "Update permissions for '/usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit'..."
 echo "Password will be required..."
