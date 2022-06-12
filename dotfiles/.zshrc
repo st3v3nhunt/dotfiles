@@ -194,19 +194,13 @@ export KEYTIMEOUT=1
 # Add function dir path
 fpath+=~/.zfunc
 
-# Hashicorp Vault completion
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/vault vault
-
+# Hashicorp Vault completion
+complete -o nospace -C $HOMEBREW_PREFIX/bin/vault vault
 # Azure CLI completion
-if [[ -n "$WSL_DISTRO_NAME" ]]; then
-  source /home/linuxbrew/.linuxbrew/etc/bash_completion.d/az
-else
-  source /usr/local/etc/bash_completion.d/az
-fi
-
+source $HOMEBREW_PREFIX/etc/bash_completion.d/az
 # AWS CLI completion
-complete -C /usr/local/bin/aws_completer aws
+complete -C $HOMEBREW_PREFIX/bin/aws_completer aws
 
 # Enable (and configure) zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
