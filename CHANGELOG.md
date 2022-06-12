@@ -1,3 +1,10 @@
+## [1.119.1](https://github.com/st3v3nhunt/dotfiles/compare/1.119.0...1.119.1) (2022-06-12)
+
+
+### Bug Fixes
+
+* updates to install ([#362](https://github.com/st3v3nhunt/dotfiles/issues/362)) ([e6b0dbe](https://github.com/st3v3nhunt/dotfiles/commit/e6b0dbee72d38bdc2029127be11470721775c4ee))
+
 # [1.119.0](https://github.com/st3v3nhunt/dotfiles/compare/1.118.1...1.119.0) (2022-06-12)
 
 
