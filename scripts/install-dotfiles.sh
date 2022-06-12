@@ -21,19 +21,17 @@ ln -nfsv "$DOTFILES_DIR/.tmux.conf" ~
 ln -nfsv "$DOTFILES_DIR/.tmux.macos.conf" ~
 ln -nfsv "$DOTFILES_DIR/.tmux.wsl.conf" ~
 ln -nfsv "$DOTFILES_DIR/.vimrc" ~
+ln -nfsv "$DOTFILES_DIR/.zprofile" ~
 ln -nfsv "$DOTFILES_DIR/.zshrc" ~
 ln -nfsv "$GIT_DIR/.git-prompt.sh" ~
 ln -nfsv "$GIT_DIR/.git-completion.bash" ~
 ln -nfsv "$GIT_DIR/.gitconfig" ~
 ln -nfsv "$GIT_DIR/.gitignore" ~
 
-if [[ -n "$WSL_DISTRO_NAME" && "$OSTYPE" == "linux-gnu" ]]; then
-  ln -nfsv "$DOTFILES_DIR/.zprofile" ~
-fi
 
 if [[ ! -d ~/.omnisharp ]]; then
   mkdir ~/.omnisharp
 fi
-ln -nfsv "$REPO_DIR/omnisharp/omnisharp.json" ~/.omnisharp/
+ln -nfsv "$REPO_DIR/omnisharp/omnisharp.json" ~/.omnisharp
 
 printf "${GREEN}Finished creating symlinks...${NC}\\n"
