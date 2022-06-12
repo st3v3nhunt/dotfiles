@@ -1,3 +1,10 @@
+# [1.120.0](https://github.com/st3v3nhunt/dotfiles/compare/1.119.1...1.120.0) (2022-06-12)
+
+
+### Features
+
+* update iterm prefs ([#363](https://github.com/st3v3nhunt/dotfiles/issues/363)) ([ec56312](https://github.com/st3v3nhunt/dotfiles/commit/ec563129761541bcbf062eff8b5c3d8906f60bc9))
+
 ## [1.119.1](https://github.com/st3v3nhunt/dotfiles/compare/1.119.0...1.119.1) (2022-06-12)
 
 
