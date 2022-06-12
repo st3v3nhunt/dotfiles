@@ -9,17 +9,17 @@ GIT_DIR="$REPO_DIR/git"
 ln -nfsv "$GIT_DIR/.mac.gitconfig" ~
 
 printf "${GREEN}Installing Karabiner-Elements configuration...${NC}\\n"
-KARABINER_DIR=".config/karabiner"
-KARABINER_JSON="$KARABINER_DIR/karabiner.json"
-mkdir -p ~/"$KARABINER_DIR" && cp "$REPO_DIR/$KARABINER_JSON" ~/"$KARABINER_DIR"
-ln -nfsv "$REPO_DIR/$KARABINER_JSON" ~/"$KARABINER_JSON"
+KARABINER_CONFIG_DIR=".config/karabiner"
+KARABINER_CONFIG="$KARABINER_CONFIG_DIR/karabiner.json"
+mkdir -p ~/"$KARABINER_CONFIG_DIR"
+ln -nfsv "$REPO_DIR/$KARABINER_CONFIG" ~/"$KARABINER_CONFIG_DIR"
 printf "${GREEN}Finished installing Karabiner-Elements configuration...${NC}\\n"
 echo "If there are problems with karabiner settings not being loaded try turning on the setting for 'system default configuration'"
 
 printf "${GREEN}k9s configuration...${NC}\\n"
 K9S_CONFIG_DIR=~/"Library/Application Support/k9s"
 K9S_CONFIG=".config/k9s/config.yml"
-mkdir -p "$K9S_CONFIG_DIR" && cp "$REPO_DIR/$K9S_CONFIG" "$K9S_CONFIG_DIR"
+mkdir -p "$K9S_CONFIG_DIR"
 ln -nfsv "$REPO_DIR/$K9S_CONFIG" "$K9S_CONFIG_DIR"
 printf "${GREEN}Finished installing k9s configuration...${NC}\\n"
 

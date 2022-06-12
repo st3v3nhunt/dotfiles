@@ -11,7 +11,8 @@ cargo install cargo-watch
 cargo install cargo-generate
 cargo install cargo-benchcmp
 
-echo "Install nightly..."
+echo "Install additional toolchain versions..."
+rustup toolchain install beta
 rustup toolchain install nightly
 
 echo "Install rustup and cargo shell completion for bash..."

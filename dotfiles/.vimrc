@@ -31,6 +31,7 @@ Plug 'ctrlpvim/ctrlp.vim'                                                      "
 Plug 'editorconfig/editorconfig-vim'                                           " Make .editorconfig work
 Plug 'godlygeek/tabular'                                                       " Tabularisation
 Plug 'honza/vim-snippets'                                                      " Snippets
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }        " Markdown preview
 Plug 'kevinoid/vim-jsonc'                                                      " JSON-C syntax
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                            " Fuzzy file finder (executable)
 Plug 'junegunn/fzf.vim'                                                        " Fuzzy file finder (for Vim)
@@ -39,7 +40,8 @@ Plug 'ludovicchabant/vim-gutentags'                                            "
 Plug 'majutsushi/tagbar'                                                       " A ctag viewer
 Plug 'mileszs/ack.vim'                                                         " File searching
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }                              " Conquer of Completion
-" Plug 'neovim/nvim-lspconfig'                                                   " Common configs for Neovim's built-in LSP
+Plug 'neovim/nvim-lspconfig'                                                   " Common configs for Neovim's built-in LSP
+Plug 'williamboman/nvim-lsp-installer'                                         " Installer for LSs used by Neovim's built-in LSP
 Plug 'ntpeters/vim-better-whitespace'                                          " Better whitespace
 Plug 'preservim/nerdtree'                                                      " File explorer
 Plug 'rodrigore/coc-tailwind-intellisense', { 'do': 'npm install' }            " Tailwind CSS intellisense
