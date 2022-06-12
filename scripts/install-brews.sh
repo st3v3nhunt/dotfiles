@@ -34,7 +34,7 @@ pyenv-virtualenv
 rename
 shellcheck
 tfenv
-universal-ctags/universal-ctags/universal-ctags
+--HEAD universal-ctags/universal-ctags/universal-ctags
 vault
 watch
 wget
@@ -45,7 +45,6 @@ yq
 brews+=(
 bash
 cmatrix
-fig
 htop
 tmux
 )
