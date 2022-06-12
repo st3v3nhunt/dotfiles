@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 # shellcheck disable=2059
+echo "Installing rosetta..."
+softwareupdate --install-rosetta
+
 GREEN='\033[0;32m'
 NC='\033[0m'
 
@@ -23,9 +26,19 @@ mkdir -p "$K9S_CONFIG_DIR"
 ln -nfsv "$REPO_DIR/$K9S_CONFIG" "$K9S_CONFIG_DIR"
 printf "${GREEN}Finished installing k9s configuration...${NC}\\n"
 
+printf "${GREEN}yabai configuration...${NC}\\n"
+YABAI_CONFIG_DIR=".config/yabai"
+YABAI_CONFIG="$YABAI_CONFIG_DIR/yabairc"
+mkdir -p ~/"$YABAI_CONFIG_DIR"
+ln -nfsv "$REPO_DIR/$YABAI_CONFIG" ~/"$YABAI_CONFIG_DIR"
+printf "${GREEN}Finished installing yabai configuration...${NC}\\n"
+echo $YABAI_CONFIG
+
 brews=(
 deno
 hyperkit
+koekeishiya/formulae/yabai
+koekeishiya/formulae/skhd
 reattach-to-user-namespace
 wifi-password
 )
@@ -40,6 +53,9 @@ for pkg in "${brews[@]}"; do
     brew install "$pkg"
   fi
 done
+
+# Start services
+brew services start yabai
 
 # Enable docker-machine-driver to access the hypervisor (hyperkit)
 echo "Update permissions for '/usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit'..."
