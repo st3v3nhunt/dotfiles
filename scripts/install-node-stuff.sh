@@ -24,6 +24,7 @@ npm install -g standard
 npm install -g snyk
 npm install -g ts-standard
 npm install -g typescript
+npm install -g typescript-languge-server
 npm install -g yarn
 
 echo "Installing Deno autocompletion. Reload shell once complete..."
