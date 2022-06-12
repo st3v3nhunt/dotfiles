@@ -1,3 +1,10 @@
+# [1.121.0](https://github.com/st3v3nhunt/dotfiles/compare/1.120.0...1.121.0) (2022-06-12)
+
+
+### Features
+
+* improve install instructions ([#364](https://github.com/st3v3nhunt/dotfiles/issues/364)) ([7eeec15](https://github.com/st3v3nhunt/dotfiles/commit/7eeec15b6bf1ef3cf81a028868bf6dcb189b649f))
+
 # [1.120.0](https://github.com/st3v3nhunt/dotfiles/compare/1.119.1...1.120.0) (2022-06-12)
 
 
