@@ -1,3 +1,10 @@
+# [1.119.0](https://github.com/st3v3nhunt/dotfiles/compare/1.118.1...1.119.0) (2022-06-12)
+
+
+### Features
+
+* simplify install paths with HOMEBREW_PREFIX ([#361](https://github.com/st3v3nhunt/dotfiles/issues/361)) ([9229a93](https://github.com/st3v3nhunt/dotfiles/commit/9229a939370634d25f16b44b1f3562aed8fe0415))
+
 ## [1.118.1](https://github.com/st3v3nhunt/dotfiles/compare/1.118.0...1.118.1) (2022-06-12)
 
 
