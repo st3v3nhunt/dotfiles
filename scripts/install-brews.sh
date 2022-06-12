@@ -26,6 +26,7 @@ imagemagick
 jmeter
 jq
 llvm
+luarocks
 mkcert
 ninja
 pipenv
@@ -34,7 +35,7 @@ pyenv-virtualenv
 rename
 shellcheck
 tfenv
---HEAD universal-ctags/universal-ctags/universal-ctags
+"--HEAD universal-ctags/universal-ctags/universal-ctags"
 vault
 watch
 wget
@@ -71,7 +72,6 @@ go
 haskell-stack
 node
 python
-python@2
 ruby
 scala
 )
