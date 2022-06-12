@@ -25,3 +25,5 @@ fi
 ./scripts/install-vim-stuff.sh
 ./scripts/install-dotnet-tools.sh
 ./scripts/install-rust-stuff.sh
+./scripts/install-or-upgrade-aws-cli.sh
+./scripts/install-wasm-stuff.sh
