@@ -13,44 +13,35 @@ google-chrome
 # Utils
 casks+=(
 alacritty
-alt-tab
-avira-antivirus
 azure-data-studio
-beekeeper-studio
 burp-suite
 caffeine
 db-browser-for-sqlite
-dbeaver-community
 dotnet-sdk
 gimp
-google-backup-and-sync
+google-drive
 google-cloud-sdk
 iterm2
 java
 karabiner-elements
 keycastr
-kitematic
-lastpass
 lens
 little-snitch
 microsoft-azure-storage-explorer
 microsoft-office
-mono-mdk
 ngrok
 owasp-zap
 postman
 powershell
-robo-3t
 royal-tsx
 spectacle
-tableau-public
+studio-3t
 vmware-horizon-client
 wireshark
 )
 
 # Editors
 casks+=(
-sublime-text
 visual-studio-code
 )
 
