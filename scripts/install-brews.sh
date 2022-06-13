@@ -20,7 +20,6 @@ gcc
 glow
 gpg
 gpg-suite-no-mail
-groovy
 hugo
 imagemagick
 jmeter
@@ -47,6 +46,7 @@ brews+=(
 bash
 cmatrix
 htop
+ripgrep
 tmux
 )
 
@@ -69,6 +69,7 @@ brews+=(
 elixir
 erlang
 go
+groovy
 haskell-stack
 node
 python
@@ -85,7 +86,6 @@ kubernetes-cli
 kubetail
 linkerd
 minikube
-octant
 rancher-cli
 skaffold
 stern
@@ -98,11 +98,6 @@ postgresql
 redis
 redisinsight
 sqlite
-)
-
-# Search stuff
-brews+=(
-ripgrep
 )
 
 # Upgrade if already installed via Homebrew otherwise install it
