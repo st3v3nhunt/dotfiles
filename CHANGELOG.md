@@ -1,3 +1,10 @@
+# [1.123.0](https://github.com/st3v3nhunt/dotfiles/compare/1.122.0...1.123.0) (2022-06-13)
+
+
+### Features
+
+* remove hub - use gh for opening repo website ([#366](https://github.com/st3v3nhunt/dotfiles/issues/366)) ([43a1c18](https://github.com/st3v3nhunt/dotfiles/commit/43a1c18b48bf3788ca1a95b02b42139416f198df))
+
 # [1.122.0](https://github.com/st3v3nhunt/dotfiles/compare/1.121.0...1.122.0) (2022-06-13)
 
 
