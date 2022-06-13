@@ -29,8 +29,6 @@
 	user = st3v3nhunt
 [gpg]
 	program = gpg
-[hub]
-	protocol = https
 [pull]
 	ff = only
 [push]

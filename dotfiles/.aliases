@@ -11,6 +11,7 @@ alias g=git
 alias gaac='git add -A && git commit -m'
 alias gcontributors='git log --format='%aN' | sort -fu'
 alias gd='git diff'
+alias ghb='gh repo view -w'
 alias ghi='git hist -n'
 alias glbd="git branch | grep -v -e master -e main | xargs git branch -d"
 alias glbD="git branch | grep -v -e master -e main | xargs git branch -D"
@@ -21,7 +22,6 @@ alias gp='git pull'
 alias gpfu='git push -fu --no-verify'
 alias gs='git status'
 alias h=heroku
-alias hb='hub browse'
 alias hist=history
 alias j=jobs
 alias k=kubectl
