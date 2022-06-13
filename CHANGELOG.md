@@ -1,3 +1,10 @@
+# [1.122.0](https://github.com/st3v3nhunt/dotfiles/compare/1.121.0...1.122.0) (2022-06-13)
+
+
+### Features
+
+* remove unused brews & casks ([#365](https://github.com/st3v3nhunt/dotfiles/issues/365)) ([5d9a702](https://github.com/st3v3nhunt/dotfiles/commit/5d9a7029db43c9b2c9f5baa88104534ff5028f02))
+
 # [1.121.0](https://github.com/st3v3nhunt/dotfiles/compare/1.120.0...1.121.0) (2022-06-12)
 
 
