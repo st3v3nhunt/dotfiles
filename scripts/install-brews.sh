@@ -55,7 +55,6 @@ brews+=(
 gh
 git
 git-secrets
-hub
 )
 
 # THE editor?!
