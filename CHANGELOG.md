@@ -1,3 +1,10 @@
+# [1.124.0](https://github.com/st3v3nhunt/dotfiles/compare/1.123.0...1.124.0) (2022-06-15)
+
+
+### Features
+
+* install yabai window tiling manager ([#367](https://github.com/st3v3nhunt/dotfiles/issues/367)) ([2871ae4](https://github.com/st3v3nhunt/dotfiles/commit/2871ae447322ad14ff1a82d8378c2db3ff457328))
+
 # [1.123.0](https://github.com/st3v3nhunt/dotfiles/compare/1.122.0...1.123.0) (2022-06-13)
 
 
