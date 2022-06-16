@@ -287,10 +287,10 @@ nnoremap tc :tabclose<CR>
 nnoremap tt <C-W>T
 
 " Remap arrow keys to not work, in any mode
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 " Add all plugins to the runtimepath and then load all helptags, ignoring any
 " errors as the command will continue to run
