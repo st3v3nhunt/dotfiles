@@ -1,3 +1,10 @@
+# [1.127.0](https://github.com/st3v3nhunt/dotfiles/compare/1.126.0...1.127.0) (2022-06-16)
+
+
+### Features
+
+* set filetype for syntax highlighting ([#370](https://github.com/st3v3nhunt/dotfiles/issues/370)) ([26b87ef](https://github.com/st3v3nhunt/dotfiles/commit/26b87ef950fb6ca147f565d716ac506661e27fa3))
+
 # [1.126.0](https://github.com/st3v3nhunt/dotfiles/compare/1.125.0...1.126.0) (2022-06-16)
 
 
