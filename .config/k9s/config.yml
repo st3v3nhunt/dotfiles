@@ -40,7 +40,6 @@ k9s:
       namespace:
         active: all
         favorites:
-        - ffc-ahwr-frontend-pr80
         - ffc-ahwr
         - all
         - default
