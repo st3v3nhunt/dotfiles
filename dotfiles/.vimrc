@@ -292,6 +292,10 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+" vimrc file mappings
+nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
+
 " Add all plugins to the runtimepath and then load all helptags, ignoring any
 " errors as the command will continue to run
 packloadall
