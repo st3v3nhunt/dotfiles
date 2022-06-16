@@ -1,3 +1,10 @@
+# [1.125.0](https://github.com/st3v3nhunt/dotfiles/compare/1.124.0...1.125.0) (2022-06-16)
+
+
+### Features
+
+* alias for opening browser with current branch ([#368](https://github.com/st3v3nhunt/dotfiles/issues/368)) ([00a556a](https://github.com/st3v3nhunt/dotfiles/commit/00a556a95ef59fa68369b080b48613de22c27b78))
+
 # [1.124.0](https://github.com/st3v3nhunt/dotfiles/compare/1.123.0...1.124.0) (2022-06-15)
 
 
