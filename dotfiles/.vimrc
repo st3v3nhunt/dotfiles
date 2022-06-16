@@ -98,6 +98,7 @@ set tabstop=2                                                                  "
 set undolevels=1000                                                            " Undo more stuff
 
 " Special cases for filetypes
+autocmd vimrc BufNewFile,BufRead .aliases set filetype=sh
 autocmd vimrc BufNewFile,BufRead *.md setlocal spell
 autocmd vimrc BufNewFile,BufRead *.gitconfig set filetype=gitconfig
 autocmd vimrc BufNewFile,BufRead *.nunjucks set filetype=html
