@@ -8,15 +8,20 @@ set tags=tags                                                                  "
 set timeoutlen=500                                                             " Reduce amount of time to wait for second key
 set shortmess-=F                                                               " Ensure messages from ftplugins are shown
 
+" Use single grouping for all autocmds in file
+augroup vimrc
+  autocmd!
+augroup END
+
 " Install vim-plug if not found
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  autocmd vimrc VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 " Run PlugInstall if there are missing plugins
-autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+autocmd vimrc VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
       \| PlugInstall --sync | source $MYVIMRC
       \| endif
 
@@ -92,11 +97,6 @@ set t_Co=256                                                                   "
 set tabstop=2                                                                  " Number of spaces for a tab
 set undolevels=1000                                                            " Undo more stuff
 
-" Use single grouping for all autocmds in file
-augroup vimrc
-  autocmd!
-augroup END
-
 " Special cases for filetypes
 autocmd vimrc BufNewFile,BufRead *.md setlocal spell
 autocmd vimrc BufNewFile,BufRead *.gitconfig set filetype=gitconfig
@@ -110,9 +110,9 @@ let g:terraform_fmt_on_save=1
 let g:rustfmt_autosave=1
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
+xnoremap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
+nnoremap ga <Plug>(EasyAlign)
 
 " NERDTree settings
 let NERDTreeShowHidden=1
@@ -207,15 +207,15 @@ endfunction
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
       \: "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
-nmap <leader>j <Plug>(coc-diagnostic-prev)
-nmap <leader>k <Plug>(coc-diagnostic-next)
-nmap <leader>gd <Plug>(coc-definition)
-nmap <leader>gy <Plug>(coc-type-definition)
-nmap <leader>gi <Plug>(coc-implementation)
-nmap <leader>gr <Plug>(coc-references)
-nmap <leader>ca <Plug>(coc-codeaction)
-nmap <leader>fi <Plug>(coc-fix-current)
-nmap <leader>rr <Plug>(coc-rename)
+nnoremap <leader>j <Plug>(coc-diagnostic-prev)
+nnoremap <leader>k <Plug>(coc-diagnostic-next)
+nnoremap <leader>gd <Plug>(coc-definition)
+nnoremap <leader>gy <Plug>(coc-type-definition)
+nnoremap <leader>gi <Plug>(coc-implementation)
+nnoremap <leader>gr <Plug>(coc-references)
+nnoremap <leader>ca <Plug>(coc-codeaction)
+nnoremap <leader>fi <Plug>(coc-fix-current)
+nnoremap <leader>rr <Plug>(coc-rename)
 nnoremap <leader>h :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -272,7 +272,13 @@ else
   nnoremap <leader>ff :Autoformat<CR>
 endif
 nnoremap <leader>fj :%! jq<CR>
-nnoremap <leader>b :Git blame<CR>
+
+" Fugitive mappings
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gvd :Gvdiffsplit!<CR>
+nnoremap <leader>ghd :Ghdiffsplit!<CR>
+nnoremap <leader>gvdm :Gvdiffsplit! main<CR>
+nnoremap <leader>ghdm :Ghdiffsplit! main<CR>
 
 " Tab options
 nnoremap th :tabfirst<CR>
@@ -287,10 +293,18 @@ nnoremap tc :tabclose<CR>
 nnoremap tt <C-W>T
 
 " Remap arrow keys to not work, in any mode
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+" vimrc file mappings
+nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
+
+" use jk in for esc to save finger stretch!
+inoremap jk <ESC>
+inoremap <ESC> <NOP>
 
 " Add all plugins to the runtimepath and then load all helptags, ignoring any
 " errors as the command will continue to run
