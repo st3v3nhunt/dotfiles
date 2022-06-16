@@ -1,3 +1,10 @@
+# [1.126.0](https://github.com/st3v3nhunt/dotfiles/compare/1.125.0...1.126.0) (2022-06-16)
+
+
+### Features
+
+* add some mappings for vim-fugitive ([#369](https://github.com/st3v3nhunt/dotfiles/issues/369)) ([c42cd72](https://github.com/st3v3nhunt/dotfiles/commit/c42cd72a95cd466f7f14f028ac805aaeba540b51))
+
 # [1.125.0](https://github.com/st3v3nhunt/dotfiles/compare/1.124.0...1.125.0) (2022-06-16)
 
 
