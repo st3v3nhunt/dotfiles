@@ -12,6 +12,7 @@ alias gaac='git add -A && git commit -m'
 alias gcontributors='git log --format='%aN' | sort -fu'
 alias gd='git diff'
 alias ghb='gh repo view -w'
+alias ghbb='gh repo view -w -b $(git rev-parse --abbrev-ref HEAD)'
 alias ghi='git hist -n'
 alias glbd="git branch | grep -v -e master -e main | xargs git branch -d"
 alias glbD="git branch | grep -v -e master -e main | xargs git branch -D"
