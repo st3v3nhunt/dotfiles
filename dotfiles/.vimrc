@@ -8,15 +8,20 @@ set tags=tags                                                                  "
 set timeoutlen=500                                                             " Reduce amount of time to wait for second key
 set shortmess-=F                                                               " Ensure messages from ftplugins are shown
 
+" Use single grouping for all autocmds in file
+augroup vimrc
+  autocmd!
+augroup END
+
 " Install vim-plug if not found
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  autocmd vimrc VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 " Run PlugInstall if there are missing plugins
-autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+autocmd vimrc VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
       \| PlugInstall --sync | source $MYVIMRC
       \| endif
 
@@ -91,11 +96,6 @@ set smartcase                                                                  "
 set t_Co=256                                                                   " 256 colours
 set tabstop=2                                                                  " Number of spaces for a tab
 set undolevels=1000                                                            " Undo more stuff
-
-" Use single grouping for all autocmds in file
-augroup vimrc
-  autocmd!
-augroup END
 
 " Special cases for filetypes
 autocmd vimrc BufNewFile,BufRead *.md setlocal spell
