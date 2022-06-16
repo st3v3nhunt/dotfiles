@@ -272,7 +272,13 @@ else
   nnoremap <leader>ff :Autoformat<CR>
 endif
 nnoremap <leader>fj :%! jq<CR>
-nnoremap <leader>b :Git blame<CR>
+
+" Fugitive mappings
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gvd :Gvdiffsplit!<CR>
+nnoremap <leader>ghd :Ghdiffsplit!<CR>
+nnoremap <leader>gvdm :Gvdiffsplit! main<CR>
+nnoremap <leader>ghdm :Ghdiffsplit! main<CR>
 
 " Tab options
 nnoremap th :tabfirst<CR>
