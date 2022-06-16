@@ -110,9 +110,9 @@ let g:terraform_fmt_on_save=1
 let g:rustfmt_autosave=1
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
+xnoremap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
+nnoremap ga <Plug>(EasyAlign)
 
 " NERDTree settings
 let NERDTreeShowHidden=1
@@ -207,15 +207,15 @@ endfunction
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
       \: "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
-nmap <leader>j <Plug>(coc-diagnostic-prev)
-nmap <leader>k <Plug>(coc-diagnostic-next)
-nmap <leader>gd <Plug>(coc-definition)
-nmap <leader>gy <Plug>(coc-type-definition)
-nmap <leader>gi <Plug>(coc-implementation)
-nmap <leader>gr <Plug>(coc-references)
-nmap <leader>ca <Plug>(coc-codeaction)
-nmap <leader>fi <Plug>(coc-fix-current)
-nmap <leader>rr <Plug>(coc-rename)
+nnoremap <leader>j <Plug>(coc-diagnostic-prev)
+nnoremap <leader>k <Plug>(coc-diagnostic-next)
+nnoremap <leader>gd <Plug>(coc-definition)
+nnoremap <leader>gy <Plug>(coc-type-definition)
+nnoremap <leader>gi <Plug>(coc-implementation)
+nnoremap <leader>gr <Plug>(coc-references)
+nnoremap <leader>ca <Plug>(coc-codeaction)
+nnoremap <leader>fi <Plug>(coc-fix-current)
+nnoremap <leader>rr <Plug>(coc-rename)
 nnoremap <leader>h :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
