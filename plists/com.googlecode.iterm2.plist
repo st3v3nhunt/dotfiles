@@ -868,6 +868,8 @@
 	</array>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>UseLionStyleFullscreen</key>
+	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 </dict>
