@@ -38,7 +38,7 @@ deno
 hyperkit
 reattach-to-user-namespace
 wifi-password
-yabai
+koekeishiya/formulae/yabai
 )
 
 # Upgrade if already installed via Homebrew otherwise install it
