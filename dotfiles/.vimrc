@@ -305,7 +305,7 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 
 " use jk in for esc to save finger stretch!
 inoremap jk <ESC>
-inoremap <ESC> <NOP>
+" inoremap <ESC> <NOP>
 
 " Add all plugins to the runtimepath and then load all helptags, ignoring any
 " errors as the command will continue to run
