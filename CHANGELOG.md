@@ -1,3 +1,10 @@
+## [1.127.2](https://github.com/st3v3nhunt/dotfiles/compare/1.127.1...1.127.2) (2022-06-17)
+
+
+### Bug Fixes
+
+* allow esc to esc, for the time being ([#372](https://github.com/st3v3nhunt/dotfiles/issues/372)) ([f7ba9fb](https://github.com/st3v3nhunt/dotfiles/commit/f7ba9fb794290447cc7343f199a7bf8d6be52f7c))
+
 ## [1.127.1](https://github.com/st3v3nhunt/dotfiles/compare/1.127.0...1.127.1) (2022-06-17)
 
 
