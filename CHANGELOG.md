@@ -1,3 +1,10 @@
+## [1.127.1](https://github.com/st3v3nhunt/dotfiles/compare/1.127.0...1.127.1) (2022-06-17)
+
+
+### Bug Fixes
+
+* correct name of yabai brew ([#371](https://github.com/st3v3nhunt/dotfiles/issues/371)) ([b49f86f](https://github.com/st3v3nhunt/dotfiles/commit/b49f86fe4f2e94cece95d7c35e2ed9ddba724e1a))
+
 # [1.127.0](https://github.com/st3v3nhunt/dotfiles/compare/1.126.0...1.127.0) (2022-06-16)
 
 
