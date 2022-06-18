@@ -1,3 +1,10 @@
+## [1.129.1](https://github.com/st3v3nhunt/dotfiles/compare/1.129.0...1.129.1) (2022-06-18)
+
+
+### Bug Fixes
+
+* install pre-commit hook script ([#376](https://github.com/st3v3nhunt/dotfiles/issues/376)) ([ee18f09](https://github.com/st3v3nhunt/dotfiles/commit/ee18f0974f77a74820901c003a6c4a8458f55e99))
+
 # [1.129.0](https://github.com/st3v3nhunt/dotfiles/compare/1.128.0...1.129.0) (2022-06-18)
 
 
