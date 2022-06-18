@@ -55,11 +55,5 @@ done
 # start brew services
 brew services start yabai
 
-# Enable docker-machine-driver to access the hypervisor (hyperkit)
-echo "Update permissions for '$HOMEBREW_PREFIX/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit'..."
-echo "Password will be required..."
-sudo chown root:wheel "$HOMEBREW_PREFIX/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit"
-sudo chmod u+s "$HOMEBREW_PREFIX/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit"
-
 echo "Clean up..."
 brew cleanup
