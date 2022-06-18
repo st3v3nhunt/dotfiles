@@ -1,3 +1,10 @@
+## [1.127.3](https://github.com/st3v3nhunt/dotfiles/compare/1.127.2...1.127.3) (2022-06-18)
+
+
+### Bug Fixes
+
+* brew install for m1 mac ([#373](https://github.com/st3v3nhunt/dotfiles/issues/373)) ([f9c82e9](https://github.com/st3v3nhunt/dotfiles/commit/f9c82e96a8fcb77af34524e398bdb597b75a3a8d))
+
 ## [1.127.2](https://github.com/st3v3nhunt/dotfiles/compare/1.127.1...1.127.2) (2022-06-17)
 
 
