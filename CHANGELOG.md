@@ -1,3 +1,10 @@
+# [1.128.0](https://github.com/st3v3nhunt/dotfiles/compare/1.127.3...1.128.0) (2022-06-18)
+
+
+### Features
+
+* nvim tweaks ([#374](https://github.com/st3v3nhunt/dotfiles/issues/374)) ([18af3eb](https://github.com/st3v3nhunt/dotfiles/commit/18af3eb8455e9d8fa4c1e2b9a72357abbe330d92))
+
 ## [1.127.3](https://github.com/st3v3nhunt/dotfiles/compare/1.127.2...1.127.3) (2022-06-18)
 
 
