@@ -11,6 +11,11 @@ GIT_DIR="$REPO_DIR/git"
 
 ln -nfsv "$GIT_DIR/.mac.gitconfig" ~
 
+printf "${GREEN}Installing GnuPG configuration...${NC}\\n"
+mkdir -p ~/.gnupg
+ln -nfsv "$REPO_DIR/.config/gpg-agent.conf" ~/.gnupg/gpg-agent.conf
+printf "${GREEN}Finished installing GnuPG configuration...${NC}\\n"
+
 printf "${GREEN}Installing Karabiner-Elements configuration...${NC}\\n"
 KARABINER_CONFIG_DIR=".config/karabiner"
 KARABINER_CONFIG="$KARABINER_CONFIG_DIR/karabiner.json"
