@@ -1,3 +1,10 @@
+# [1.129.0](https://github.com/st3v3nhunt/dotfiles/compare/1.128.0...1.129.0) (2022-06-18)
+
+
+### Features
+
+* increase gpg cache ttl to reduce number of password prompts ([#375](https://github.com/st3v3nhunt/dotfiles/issues/375)) ([0c71c99](https://github.com/st3v3nhunt/dotfiles/commit/0c71c9982a0ac036f3e8eacb4017f3a6aef2a223))
+
 # [1.128.0](https://github.com/st3v3nhunt/dotfiles/compare/1.127.3...1.128.0) (2022-06-18)
 
 
