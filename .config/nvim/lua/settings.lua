@@ -29,13 +29,8 @@ o.shortmess='filnxtToOc'                                                       -
 o.signcolumn='yes'                                                             -- Combine sign column - prevent interface moving around
 o.smartcase=true                                                               -- Ignore case if search term is all lower, else be case sensitive
 o.tabstop=2                                                                    -- Number of spaces for a tab
-o.tags=tags                                                                    -- o.tags to tags for ctags
+o.tags='tags'                                                                  -- Set tags to tags for ctags
 o.timeoutlen=500                                                               -- Reduce amount of time to wait for second key
 -- o.t_Co=256                                                                  -- 256 colours
 o.undolevels=1000                                                              -- Undo more stuff
 o.updatetime=300                                                               -- Decrease delays
-
--- " use global, static locations for back,swap and undo
-o.backupdir='~/.vim/tmp/backup//'
-o.directory='~/.vim/tmp/swap//'
-o.undodir='~/.vim/tmp/undo//'
