@@ -27,3 +27,4 @@ fi
 ./scripts/install-rust-stuff.sh
 ./scripts/install-or-upgrade-aws-cli.sh
 ./scripts/install-wasm-stuff.sh
+./scripts/install-languge-servers.sh
