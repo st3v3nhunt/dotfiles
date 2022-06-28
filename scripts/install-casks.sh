@@ -13,6 +13,7 @@ google-chrome
 # Utils
 casks+=(
 alacritty
+another-redis-desktop-manager
 azure-data-studio
 burp-suite
 caffeine
