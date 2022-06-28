@@ -1,2 +1,1 @@
-print('test')
-require("nvim-lsp-installer").setup {}
+require('./plugins/lsp')
