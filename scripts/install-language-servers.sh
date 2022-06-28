@@ -8,6 +8,14 @@ echo "Install Docker Language Server"
 # https://github.com/rcjsuen/dockerfile-language-server-nodejs
 npm install -g dockerfile-language-server-nodejs
 
+echo "Install JSON Language Server"
+# https://github.com/hrsh7th/vscode-langservers-extracted
+npm install -g vscode-langservers-extracted
+
+echo "Install Lua Language Server"
+# https://github.com/sumneko/lua-language-server
+brew install lua-language-server
+
 # Remark doesn't work unless copy is available in project -
 # https://github.com/remarkjs/remark-language-server/issues/6
 # echo "Install Markdown Language Server"
