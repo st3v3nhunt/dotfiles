@@ -198,7 +198,7 @@ nnoremap <leader>cr :CocRestart<CR>
 let s:clip='/c/Windows/System32/clip.exe'
 if executable(s:clip)
   autocmd vimrc TextYankPost * :call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
-end
+endif
 " Paste from the system clipboard
 noremap <silent><leader>p :r !powershell.exe -Command Get-Clipboard<CR>
 
