@@ -37,13 +37,19 @@ g.markdown_fenced_languages = {
 }
 
 local nvim_lsp = require'lspconfig'
-nvim_lsp.bashls.setup{}
+nvim_lsp.bashls.setup{
+  on_attach = on_attach,
+}
 nvim_lsp.denols.setup {
   on_attach = on_attach,
   root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
 }
-nvim_lsp.dockerls.setup{}
-nvim_lsp.jsonls.setup{}
+nvim_lsp.dockerls.setup{
+  on_attach = on_attach,
+}
+nvim_lsp.jsonls.setup{
+  on_attach = on_attach,
+}
 -- Issue with not having a local copy of remark and not able to default to
 -- global install - https://github.com/remarkjs/remark-language-server/issues/6
 -- nvim_lsp.remark_ls.setup{}
@@ -64,9 +70,16 @@ nvim_lsp.rust_analyzer.setup {
     }
   }
 }
-nvim_lsp.taplo.setup{}
+nvim_lsp.sumneko_lua.setup{
+  on_attach = on_attach,
+}
+nvim_lsp.taplo.setup{
+  on_attach = on_attach,
+}
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   root_dir = nvim_lsp.util.root_pattern("package.json"),
 }
-nvim_lsp.yamlls.setup{}
+nvim_lsp.yamlls.setup{
+  on_attach = on_attach,
+}
