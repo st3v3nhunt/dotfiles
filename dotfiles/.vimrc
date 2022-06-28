@@ -45,8 +45,6 @@ Plug 'ludovicchabant/vim-gutentags'                                            "
 Plug 'majutsushi/tagbar'                                                       " A ctag viewer
 Plug 'mileszs/ack.vim'                                                         " File searching
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }                              " Conquer of Completion
-Plug 'neovim/nvim-lspconfig'                                                   " Common configs for Neovim's built-in LSP
-Plug 'williamboman/nvim-lsp-installer'                                         " Installer for LSs used by Neovim's built-in LSP
 Plug 'ntpeters/vim-better-whitespace'                                          " Better whitespace
 Plug 'preservim/nerdtree'                                                      " File explorer
 Plug 'rodrigore/coc-tailwind-intellisense', { 'do': 'npm install' }            " Tailwind CSS intellisense
@@ -71,6 +69,11 @@ Plug 'OmniSharp/omnisharp-vim'                                                 "
 Plug 'pangloss/vim-javascript'                                                 " JavaScript
 Plug 'posva/vim-vue'                                                           " Vue
 Plug 'rust-lang/rust.vim'                                                      " Rust
+" Neovim specific plugins
+if has('nvim')
+  Plug 'williamboman/nvim-lsp-installer'                                       " Installer for Language Servers used by Neovim's built-in LSP
+  Plug 'neovim/nvim-lspconfig'                                                 " Common configs for Neovim's built-in LSP
+endif
 call plug#end()                                                                " all plugins must be added before this line
 
 colorscheme monokai
