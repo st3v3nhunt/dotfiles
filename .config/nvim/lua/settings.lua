@@ -2,8 +2,8 @@ local g = vim.g
 local o = vim.opt
 
 -- Get path to node which should be where global npms are installed
-fh = io.popen("which node")
-node_host_prog = fh:read("*a")
+local fh = io.popen("which node")
+local node_host_prog = fh:read("*a")
 fh:close()
 g.node_host_prog=node_host_prog
 
