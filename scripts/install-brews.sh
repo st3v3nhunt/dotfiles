@@ -38,6 +38,7 @@ tfenv
 vault
 watch
 wget
+wireguard-tools
 yq
 )
 
