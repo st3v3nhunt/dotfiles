@@ -3,7 +3,10 @@ local km = vim.keymap
 km.set('x', 'ga', '<Plug>(EasyAlign)')
 km.set('n', 'ga', '<Plug>(EasyAlign)')
 
+-- NERDTree mappings
+km.set('n', '<leader>re', ':NERDTreeFind<CR>')
 km.set('n', '<C-n>', ':NERDTreeToggle<CR>')
+
 -- km.set('n', 'K', ':Ack! \'\b<C-R><C-W>\b\'<CR>:cw<CR>')                          -- Bind K to search for word under cursor
 km.set('n', '\\', ':Ack!<space>')
 km.set('n', '<F8>', ':TagbarToggle<CR>')
@@ -39,11 +42,12 @@ km.set('n', '<leader>ghd', ':Ghdiffsplit!<CR>')
 km.set('n', '<leader>gvdm', ':Gvdiffsplit! main<CR>')
 km.set('n', '<leader>ghdm', ':Ghdiffsplit! main<CR>')
 
--- Misc, helpers
+-- Interface mappings
 km.set('n', '<leader>w', ':w<CR>')
 km.set('n', '<leader>q', ':q<CR>')
 km.set('n', '<leader>z', '<C-z>')
-km.set('n', '<leader>re', ':NERDTreeFind<CR>')
+
+-- Formatting mappings
 km.set('n', '<leader>ff', ':Autoformat<CR>')
 km.set('n', '<leader>fj', ':%! jq<CR>')
 
