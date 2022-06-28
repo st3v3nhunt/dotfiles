@@ -184,18 +184,12 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
 endif
 " installed extensions
 let g:coc_global_extensions=[
-      \  'coc-deno',
       \  'coc-go',
-      \  'coc-json',
       \  'coc-markdownlint',
       \  'coc-marketplace',
       \  'coc-omnisharp',
       \  'coc-pyright',
-      \  'coc-rust-analyzer',
-      \  'coc-sh',
       \  'coc-svelte',
-      \  'coc-tsserver',
-      \  'coc-yaml',
       \]
 nnoremap <leader>cr :CocRestart<CR>
 " </coc-config>
