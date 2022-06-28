@@ -9,8 +9,9 @@ elif [[ -d $ZSH_NVM_DIR ]]; then
   popd || exit
 fi
 
-echo "Install latest Node LTS version..."
-nmv install --lts
+echo "Install latest Node LTS version and set to default version..."
+nvm install --lts
+nvm alias default lts
 
 echo "Installing global npm packages (serverless, snyk, yarn)..."
 npm install -g @commitlint/cli
@@ -27,11 +28,10 @@ npm install -g standard
 npm install -g snyk
 npm install -g ts-standard
 npm install -g typescript
-npm install -g typescript-languge-server
 npm install -g yarn
 
 echo "Installing Deno autocompletion. Reload shell once complete..."
 mkdir -pm~/.oh-my-zsh/custom/plugins/deno
-deno completions zsh > ~/.oh-my-zsh/custom/plugins/deno/_deno
+deno completions zsh > ~/.zfunc/_deno
 
-deno completions bash > "$HOMEBREW_PREFIX/etc/bash_completion.d/deno.bash"
+deno completions bash > "$(brew --prefix)/etc/bash_completion.d/deno.bash"
