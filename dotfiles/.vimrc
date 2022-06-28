@@ -1,13 +1,3 @@
-set nocompatible                                                               " Use vim settings
-set autowrite                                                                  " Write file
-set path+=**                                                                   " Make :find search everything
-set previewheight=50                                                           " Make preview window larger
-set showtabline=2                                                              " Always show tab bar
-set signcolumn=yes                                                             " Combine sign column - prevent interface moving around
-set tags=tags                                                                  " Set tags to tags for ctags
-set timeoutlen=500                                                             " Reduce amount of time to wait for second key
-set shortmess-=F                                                               " Ensure messages from ftplugins are shown
-
 " Use single grouping for all autocmds in file
 augroup vimrc
   autocmd!
@@ -78,28 +68,6 @@ call plug#end()                                                                "
 
 colorscheme monokai
 
-set autoindent                                                                 " Auto indent
-set clipboard=unnamed                                                          " Allow copy between instances
-set colorcolumn=80                                                             " 80 column guide
-set completeopt=menu,menuone,preview,noselect,noinsert                         " Fixes issue with automatically completing autocomplete options (noinsert) and switches to popup rather than preview window
-set expandtab                                                                  " Insert spaces with tab
-set foldmethod=indent                                                          " Fold based on indentation
-set foldlevel=5                                                                " Default fold level. 5 should be ok to see most contents
-set history=10000                                                              " Remember more stuff
-set hlsearch                                                                   " Highlight searches
-set ignorecase                                                                 " Ignore case when searching
-set incsearch                                                                  " Incremental search
-set list                                                                       " Show listchars
-set listchars=tab:▸\ ,eol:¬                                                    " Override default listchars
-set number                                                                     " Line numbers
-set relativenumber                                                             " Show relative line numbers
-set shiftwidth=2                                                               " Number of spaces for each step of (auto)indent
-set showcmd                                                                    " Show command on screen
-set smartcase                                                                  " Ignore case if search term is all lower, else be case sensitive
-set t_Co=256                                                                   " 256 colours
-set tabstop=2                                                                  " Number of spaces for a tab
-set undolevels=1000                                                            " Undo more stuff
-
 " Special cases for filetypes
 autocmd vimrc BufNewFile,BufRead .aliases set filetype=sh
 autocmd vimrc BufNewFile,BufRead *.md setlocal spell
@@ -113,16 +81,10 @@ let g:terraform_align=1
 let g:terraform_fmt_on_save=1
 let g:rustfmt_autosave=1
 
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xnoremap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nnoremap ga <Plug>(EasyAlign)
-
 " NERDTree settings
 let NERDTreeShowHidden=1
 let g:NERDTreeMapOpenSplit='h'
 let g:NERDTreeMapOpenVSplit='v'
-noremap <C-n> :NERDTreeToggle<CR>
 
 " Better whitespace
 let g:better_whitespace_enabled=1
@@ -139,10 +101,8 @@ if executable('rg')
   let g:ackprg='rg --vimgrep'
 endif
 
-" Bind K to search for word under cursor
+" " Bind K to search for word under cursor
 nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>
-" Map Ack! to \
-nnoremap \ :Ack!<space>
 
 " vim-airline settings
 let g:airline_extension=['ale']
@@ -173,29 +133,12 @@ let g:go_highlight_functions=1
 let g:go_highlight_operators=1
 let g:go_highlight_types=1
 
-" use global, static locations for back,swap and undo
-set backupdir=~/.vim/tmp/backup//
-set directory=~/.vim/tmp/swap//
-set undodir=~/.vim/tmp/undo//
-
 let g:UltiSnipsExpandTrigger="<C-e>"
-nnoremap <F8> :TagbarToggle<CR>
-
-" Use oo and OO for entering new lines without going into insert mode
-nnoremap oo o<Esc>k
-nnoremap OO O<Esc>j
-
-" Remap leader to comma, all remaps using leader must be below this
-let mapleader=","
 
 " <coc-config>
 " improve contrast for readability on dark backgrounds
 hi CocErrorFloat ctermfg=196
 
-set hidden
-set cmdheight=2                                                                " More space for messages
-set updatetime=300                                                             " Decrease delays
-set shortmess+=c                                                               " Don't pass messages to |ins-completion-menu|
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -264,51 +207,6 @@ if executable(s:clip)
 end
 " Paste from the system clipboard
 noremap <silent><leader>p :r !powershell.exe -Command Get-Clipboard<CR>
-
-nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
-nnoremap <leader>z <C-z>
-nnoremap <leader>re :NERDTreeFind<CR>
-if filereadable(findfile('deno.jsonc', '.;'))
-  echom "Using deno fmt"
-  nnoremap <leader>ff :%! deno fmt -<CR>
-else
-  nnoremap <leader>ff :Autoformat<CR>
-endif
-nnoremap <leader>fj :%! jq<CR>
-
-" Fugitive mappings
-nnoremap <leader>gb :Gblame<CR>
-nnoremap <leader>gvd :Gvdiffsplit!<CR>
-nnoremap <leader>ghd :Ghdiffsplit!<CR>
-nnoremap <leader>gvdm :Gvdiffsplit! main<CR>
-nnoremap <leader>ghdm :Ghdiffsplit! main<CR>
-
-" Tab options
-nnoremap th :tabfirst<CR>
-nnoremap tj :tabprev<CR>
-nnoremap tk :tabnext<CR>
-nnoremap tl :tablast<CR>
-nnoremap ts :tab split<CR>
-nnoremap to :tabnew<CR>
-nnoremap tm :tabm<Space>
-nnoremap tc :tabclose<CR>
-" Move existing split into new tab
-nnoremap tt <C-W>T
-
-" Remap arrow keys to not work, in any mode
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-
-" vimrc file mappings
-nnoremap <leader>ev :vsplit $MYVIMRC<CR>
-nnoremap <leader>sv :source $MYVIMRC<CR>
-
-" use jk in for esc to save finger stretch!
-inoremap jk <ESC>
-" inoremap <ESC> <NOP>
 
 " Add all plugins to the runtimepath and then load all helptags, ignoring any
 " errors as the command will continue to run
