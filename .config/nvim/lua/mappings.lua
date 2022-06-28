@@ -38,3 +38,15 @@ km.set('n', '<leader>gvd', ':Gvdiffsplit!<CR>')
 km.set('n', '<leader>ghd', ':Ghdiffsplit!<CR>')
 km.set('n', '<leader>gvdm', ':Gvdiffsplit! main<CR>')
 km.set('n', '<leader>ghdm', ':Ghdiffsplit! main<CR>')
+
+-- Misc, helpers
+km.set('n', '<leader>w', ':w<CR>')
+km.set('n', '<leader>q', ':q<CR>')
+km.set('n', '<leader>z', '<C-z>')
+km.set('n', '<leader>re', ':NERDTreeFind<CR>')
+km.set('n', '<leader>ff', ':Autoformat<CR>')
+km.set('n', '<leader>fj', ':%! jq<CR>')
+
+-- vimrc file mappings
+km.set('n', '<leader>ev', ':vsplit $MYVIMRC<CR>')
+km.set('n', '<leader>sv', ':source $MYVIMRC<CR>')
