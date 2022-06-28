@@ -21,7 +21,8 @@ details can be seen in [install.sh](install.sh).:
   [nvm](https://github.com/nvm-sh/nvm) and globally installed npm packages
   including [Yarn](https://yarnpkg.com/)
 * Install and setup [tmux](https://github.com/tmux/tmux) related stuff
-* Install and setup [Vim](https://www.vim.org/) related stuff
+* Install and setup [Vim](https://www.vim.org/) and
+  [neovim](https://neovim.io/) and other related stuff
 * Install .Net tooling
 * Install [Nerd Fonts](https://www.nerdfonts.com/)
 * Install [Rust](https://www.rust-lang.org/)
