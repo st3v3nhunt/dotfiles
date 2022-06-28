@@ -2,6 +2,9 @@ vim.cmd([[set runtimepath^=~/.vim runtimepath+=~/.vim/after]])
 vim.cmd([[let &packpath=&runtimepath]])
 vim.cmd([[source ~/.vimrc]])
 
+-- Map leader early so it takes affect in other files
+vim.g.mapleader=","
+
 require('abbrev')
 require('mappings')
 require('plugins')
