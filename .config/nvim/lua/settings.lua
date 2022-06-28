@@ -1,13 +1,18 @@
 local g = vim.g
 local o = vim.opt
 
+-- Get path to node which should be where global npms are installed
+fh = io.popen("which node")
+node_host_prog = fh:read("*a")
+fh:close()
+g.node_host_prog=node_host_prog
+
 g.loaded_perl_provider=0
 g.loaded_python_provider=0
 g.loaded_ruby_provider=0
 g.python3_host_prog='~/.pyenv/shims/python3'
-g.node_host_prog='/usr/local/bin/node'
 
--- Set options {{{1
+-- Set options
 o.autowrite=true                                                               -- Write file
 o.clipboard = 'unnamed'
 o.colorcolumn = '80'
