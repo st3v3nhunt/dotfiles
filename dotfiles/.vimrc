@@ -37,7 +37,7 @@ Plug 'mileszs/ack.vim'                                                         "
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }                              " Conquer of Completion
 Plug 'ntpeters/vim-better-whitespace'                                          " Better whitespace
 Plug 'preservim/nerdtree'                                                      " File explorer
-Plug 'rodrigore/coc-tailwind-intellisense', { 'do': 'npm install' }            " Tailwind CSS intellisense
+" Plug 'rodrigore/coc-tailwind-intellisense', { 'do': 'npm install' }            " Tailwind CSS intellisense
 Plug 'SirVer/ultisnips'                                                        " Snippet engine
 Plug 'towolf/vim-helm'                                                         " Helm template highlighting
 Plug 'tpope/vim-commentary'                                                    " Comment out lines
@@ -189,7 +189,6 @@ let g:coc_global_extensions=[
       \  'coc-marketplace',
       \  'coc-omnisharp',
       \  'coc-pyright',
-      \  'coc-svelte',
       \]
 nnoremap <leader>cr :CocRestart<CR>
 " </coc-config>
