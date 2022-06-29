@@ -1,9 +1,10 @@
 print('loading lsp plugin')
--- require("nvim-lsp-installer").setup {}
 local km = vim.keymap
 
 km.set('n', '<leader>j', vim.diagnostic.goto_prev)
 km.set('n', '<leader>k', vim.diagnostic.goto_next)
+km.set('n', '<space>e', vim.diagnostic.open_float)
+km.set('n', '<space>q', vim.diagnostic.setloclist)
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -18,7 +19,7 @@ local on_attach = function(client, bufnr)
   km.set('n', 'gd', vim.lsp.buf.definition, bufopts)
   km.set('n', '<leader>h', vim.lsp.buf.hover, bufopts)
   km.set('n', '<leader>gi', vim.lsp.buf.implementation, bufopts)
-  km.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
+  -- km.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
   km.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
   km.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
   km.set('n', '<space>wl', function()
@@ -36,24 +37,33 @@ g.markdown_fenced_languages = {
   "ts=typescript"
 }
 
+-- Add additional capabilities supported by nvim-cmp
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
 local nvim_lsp = require'lspconfig'
 nvim_lsp.bashls.setup{
+  capabilities = capabilities,
   on_attach = on_attach,
 }
 nvim_lsp.denols.setup {
+  capabilities = capabilities,
   on_attach = on_attach,
   root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
 }
 nvim_lsp.dockerls.setup{
+  capabilities = capabilities,
   on_attach = on_attach,
 }
 nvim_lsp.jsonls.setup{
+  capabilities = capabilities,
   on_attach = on_attach,
 }
 -- Issue with not having a local copy of remark and not able to default to
 -- global install - https://github.com/remarkjs/remark-language-server/issues/6
 -- nvim_lsp.remark_ls.setup{}
 nvim_lsp.rust_analyzer.setup {
+  capabilities = capabilities,
   on_attach = on_attach,
   settings = {
     ["rust-analyzer"] = {
@@ -71,21 +81,27 @@ nvim_lsp.rust_analyzer.setup {
   }
 }
 nvim_lsp.sumneko_lua.setup{
+  capabilities = capabilities,
   on_attach = on_attach,
 }
 nvim_lsp.svelte.setup{
+  capabilities = capabilities,
   on_attach = on_attach,
 }
 nvim_lsp.tailwindcss.setup{
+  capabilities = capabilities,
   on_attach = on_attach,
 }
 nvim_lsp.taplo.setup{
+  capabilities = capabilities,
   on_attach = on_attach,
 }
 nvim_lsp.tsserver.setup {
+  capabilities = capabilities,
   on_attach = on_attach,
   root_dir = nvim_lsp.util.root_pattern("package.json"),
 }
 nvim_lsp.yamlls.setup{
+  capabilities = capabilities,
   on_attach = on_attach,
 }
