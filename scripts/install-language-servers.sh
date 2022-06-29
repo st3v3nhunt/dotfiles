@@ -26,13 +26,21 @@ echo "Install rust-analyzer"
 # https://github.com/rust-analyzer/lsp-server
 brew install rust-analyzer
 
+echo "Install Svelte Language Server"
+# https://github.com/sveltejs/language-tools/tree/master/packages/language-server
+npm install -g svelte-language-server
+
+echo "Install TailwindCSS Language Server"
+# https://github.com/tailwindlabs/tailwindcss-intellisense
+npm install -g @tailwindcss/language-server
+
 echo "Install TOML LSP"
 # https://github.com/rust-analyzer/lsp-server
 cargo install --features lsp --locked taplo-cli
 
 echo "Install TypeScript Language Server"
 # https://github.com/typescript-language-server/typescript-language-server
-npm install -g typescript-languge-server
+npm install -g typescript typescript-language-server
 
 echo "Install YAML Language Server"
 # https://github.com/redhat-developer/yaml-language-server
