@@ -62,7 +62,11 @@ Plug 'posva/vim-vue'                                                           "
 Plug 'rust-lang/rust.vim'                                                      " Rust
 " Neovim specific plugins
 if has('nvim')
-  Plug 'williamboman/nvim-lsp-installer'                                       " Installer for Language Servers used by Neovim's built-in LSP
+  Plug 'hrsh7th/nvim-cmp'                                                      " Autocompletion
+  Plug 'hrsh7th/cmp-nvim-lsp'                                                  " LSP source for nvim-cmp
+  Plug 'saadparwaiz1/cmp_luasnip'                                              " Snippets source for nvim-cmp
+  Plug 'L3MON4D3/LuaSnip'                                                      " Snippets plugin
+  " Plug 'williamboman/nvim-lsp-installer'                                       " Installer for Language Servers used by Neovim's built-in LSP
   Plug 'neovim/nvim-lspconfig'                                                 " Common configs for Neovim's built-in LSP
 endif
 call plug#end()                                                                " all plugins must be added before this line
