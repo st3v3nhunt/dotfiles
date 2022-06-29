@@ -28,8 +28,8 @@ Plug 'godlygeek/tabular'                                                       "
 Plug 'honza/vim-snippets'                                                      " Snippets
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }        " Markdown preview
 Plug 'kevinoid/vim-jsonc'                                                      " JSON-C syntax
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                            " Fuzzy file finder (executable)
-Plug 'junegunn/fzf.vim'                                                        " Fuzzy file finder (for Vim)
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                            " Fuzzy file finder (executable)
+" Plug 'junegunn/fzf.vim'                                                        " Fuzzy file finder (for Vim)
 Plug 'junegunn/gv.vim'                                                         " Git commit browser
 Plug 'junegunn/vim-easy-align'                                                 " Better/easier alignment
 Plug 'ludovicchabant/vim-gutentags'                                            " Tag management
