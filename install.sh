@@ -22,9 +22,8 @@ fi
 ./scripts/install-node-stuff.sh
 ./scripts/install-python-stuff.sh
 ./scripts/install-tmux-stuff.sh
-./scripts/install-vim-stuff.sh
 ./scripts/install-dotnet-tools.sh
 ./scripts/install-rust-stuff.sh
 ./scripts/install-or-upgrade-aws-cli.sh
 ./scripts/install-wasm-stuff.sh
-./scripts/install-languge-servers.sh
+./scripts/install-vim-stuff.sh
