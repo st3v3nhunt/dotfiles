@@ -1,7 +1,11 @@
--- luasnip setup
-local luasnip = require('luasnip')
+-- Pictograms for 'kind' symbols
+local lspkind = require('lspkind')
+
+-- Load VSCode style snippets (from 'rafamadriz/friendly-snippets')
+require("luasnip/loaders/from_vscode").lazy_load()
 
 -- nvim-cmp setup
+local luasnip = require('luasnip')
 local cmp = require('cmp')
 cmp.setup {
   snippet = {
@@ -36,9 +40,31 @@ cmp.setup {
       end
     end, { 'i', 's' }),
   }),
+  formatting = {
+    fields = { "kind", "abbr", "menu" },
+    format = lspkind.cmp_format({
+      mode = 'symbol_text',
+      menu = ({
+        buffer = "[Buffer]",
+        nvim_lsp = "[LSP]",
+        luasnip = "[LuaSnip]",
+        nvim_lua = "[Lua]",
+        latex_symbols = "[Latex]",
+      }),
+    })
+  },
+  -- Order here determines order of suggestions
   sources = {
-    { name = 'emoji' },
-    { name = 'luasnip' },
     { name = 'nvim_lsp' },
+    { name = 'luasnip' },
+    { name = 'buffer' },
+    { name = 'emoji' },
+    { name = 'path' },
+    { name = 'cmdline' },
+    { name = 'nvim_lua' },
+  },
+  window = {
+    -- completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
   },
 }
