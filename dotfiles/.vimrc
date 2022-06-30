@@ -63,6 +63,7 @@ Plug 'rust-lang/rust.vim'                                                      "
 " Neovim specific plugins
 if has('nvim')
   Plug 'hrsh7th/nvim-cmp'                                                      " Autocompletion
+  Plug 'hrsh7th/cmp-emoji'                                                     " Emoji source for nvim-cmp
   Plug 'hrsh7th/cmp-nvim-lsp'                                                  " LSP source for nvim-cmp
   Plug 'saadparwaiz1/cmp_luasnip'                                              " Snippets source for nvim-cmp
   Plug 'L3MON4D3/LuaSnip'                                                      " Snippets plugin
