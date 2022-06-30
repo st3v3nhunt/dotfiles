@@ -1,56 +1,56 @@
-local km = vim.keymap
+local setKeyMap = vim.keymap.set
 
-km.set('x', 'ga', '<Plug>(EasyAlign)')
-km.set('n', 'ga', '<Plug>(EasyAlign)')
+setKeyMap('x', 'ga', '<Plug>(EasyAlign)')
+setKeyMap('n', 'ga', '<Plug>(EasyAlign)')
 
 -- NERDTree mappings
-km.set('n', '<leader>re', ':NERDTreeFind<CR>')
-km.set('n', '<C-n>', ':NERDTreeToggle<CR>')
+setKeyMap('n', '<leader>re', ':NERDTreeFind<CR>')
+setKeyMap('n', '<C-n>', ':NERDTreeToggle<CR>')
 
--- km.set('n', 'K', ':Ack! \'\b<C-R><C-W>\b\'<CR>:cw<CR>')                          -- Bind K to search for word under cursor
-km.set('n', '\\', ':Ack!<space>')
-km.set('n', '<F8>', ':TagbarToggle<CR>')
+-- km('n', 'K', ':Ack! \'\b<C-R><C-W>\b\'<CR>:cw<CR>')                          -- Bind K to search for word under cursor
+setKeyMap('n', '\\', ':Ack!<space>')
+setKeyMap('n', '<F8>', ':TagbarToggle<CR>')
 
 -- Use oo and OO for entering new lines without going into insert mode
-km.set('n', 'oo', 'o<Esc>k')
-km.set('n', 'OO', 'O<Esc>j')
+setKeyMap('n', 'oo', 'o<Esc>k')
+setKeyMap('n', 'OO', 'O<Esc>j')
 
 -- Use jk to exist insert more
-km.set('i', 'jk', '<ESC>')
+setKeyMap('i', 'jk', '<ESC>')
 
 -- Turn arrow keys off
-km.set('n', '<up>', '<NOP>')
-km.set('n', '<down>', '<NOP>')
-km.set('n', '<left>', '<NOP>')
-km.set('n', '<right>', '<NOP>')
+setKeyMap('n', '<up>', '<NOP>')
+setKeyMap('n', '<down>', '<NOP>')
+setKeyMap('n', '<left>', '<NOP>')
+setKeyMap('n', '<right>', '<NOP>')
 
 -- Tab mappings
-km.set('n', 'th', ':tabfirst<CR>')
-km.set('n', 'tj', ':tabprev<CR>')
-km.set('n', 'tk', ':tabnext<CR>')
-km.set('n', 'tl', ':tablast<CR>')
-km.set('n', 'ts', ':tab split<CR>')
-km.set('n', 'to', ':tabnew<CR>')
-km.set('n', 'tm', ':tabm<Space>')
-km.set('n', 'tc', ':tabclose<CR>')
-km.set('n', 'tt', '<C-W>T')
+setKeyMap('n', 'th', ':tabfirst<CR>')
+setKeyMap('n', 'tj', ':tabprev<CR>')
+setKeyMap('n', 'tk', ':tabnext<CR>')
+setKeyMap('n', 'tl', ':tablast<CR>')
+setKeyMap('n', 'ts', ':tab split<CR>')
+setKeyMap('n', 'to', ':tabnew<CR>')
+setKeyMap('n', 'tm', ':tabm<Space>')
+setKeyMap('n', 'tc', ':tabclose<CR>')
+setKeyMap('n', 'tt', '<C-W>T')
 
 -- Fugitive mappings
-km.set('n', '<leader>gb', ':Gblame<CR>')
-km.set('n', '<leader>gvd', ':Gvdiffsplit!<CR>')
-km.set('n', '<leader>ghd', ':Ghdiffsplit!<CR>')
-km.set('n', '<leader>gvdm', ':Gvdiffsplit! main<CR>')
-km.set('n', '<leader>ghdm', ':Ghdiffsplit! main<CR>')
+setKeyMap('n', '<leader>gb', ':Gblame<CR>')
+setKeyMap('n', '<leader>gvd', ':Gvdiffsplit!<CR>')
+setKeyMap('n', '<leader>ghd', ':Ghdiffsplit!<CR>')
+setKeyMap('n', '<leader>gvdm', ':Gvdiffsplit! main<CR>')
+setKeyMap('n', '<leader>ghdm', ':Ghdiffsplit! main<CR>')
 
 -- Interface mappings
-km.set('n', '<leader>w', ':w<CR>')
-km.set('n', '<leader>q', ':q<CR>')
-km.set('n', '<leader>z', '<C-z>')
+setKeyMap('n', '<leader>w', ':w<CR>')
+setKeyMap('n', '<leader>q', ':q<CR>')
+setKeyMap('n', '<leader>z', '<C-z>')
 
 -- Formatting mappings
-km.set('n', '<leader>ff', ':Autoformat<CR>')
-km.set('n', '<leader>fj', ':%! jq<CR>')
+setKeyMap('n', '<leader>ff', ':Autoformat<CR>')
+setKeyMap('n', '<leader>fj', ':%! jq<CR>')
 
 -- vimrc file mappings
-km.set('n', '<leader>ev', ':vsplit $MYVIMRC<CR>')
-km.set('n', '<leader>sv', ':source $MYVIMRC<CR>')
+setKeyMap('n', '<leader>ev', ':vsplit $MYVIMRC<CR>')
+setKeyMap('n', '<leader>sv', ':source $MYVIMRC<CR>')
