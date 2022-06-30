@@ -25,7 +25,6 @@ Plug 'christoomey/vim-tmux-navigator'                                          "
 Plug 'ctrlpvim/ctrlp.vim'                                                      " Fuzzy file finder
 Plug 'editorconfig/editorconfig-vim'                                           " Make .editorconfig work
 Plug 'godlygeek/tabular'                                                       " Tabularisation
-" Plug 'honza/vim-snippets'                                                      " Snippets
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }        " Markdown preview
 Plug 'kevinoid/vim-jsonc'                                                      " JSON-C syntax
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                            " Fuzzy file finder (executable)
@@ -39,7 +38,6 @@ Plug 'mileszs/ack.vim'                                                         "
 Plug 'ntpeters/vim-better-whitespace'                                          " Better whitespace
 Plug 'preservim/nerdtree'                                                      " File explorer
 " Plug 'rodrigore/coc-tailwind-intellisense', { 'do': 'npm install' }            " Tailwind CSS intellisense
-" Plug 'SirVer/ultisnips'                                                        " Snippet engine
 Plug 'towolf/vim-helm'                                                         " Helm template highlighting
 Plug 'tpope/vim-commentary'                                                    " Comment out lines
 Plug 'tpope/vim-fugitive'                                                      " Git wrapper
@@ -153,66 +151,6 @@ let g:go_highlight_function_calls=1
 let g:go_highlight_functions=1
 let g:go_highlight_operators=1
 let g:go_highlight_types=1
-
-" let g:UltiSnipsExpandTrigger="<C-e>"
-
-" " <coc-config>
-" " improve contrast for readability on dark backgrounds
-" hi CocErrorFloat ctermfg=196
-
-" " Use tab for trigger completion with characters ahead and navigate.
-" inoremap <silent><expr> <TAB>
-"       \ pumvisible() ? "\<C-n>" :
-"       \ <SID>check_back_space() ? "\<TAB>" :
-"       \ coc#refresh()
-" inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-" function! s:check_back_space() abort
-"   let col = col('.') - 1
-"   return !col || getline('.')[col - 1]  =~# '\s'
-" endfunction
-" " Make <CR> auto-select the first completion item and notify coc.nvim to
-" " format on enter, <cr> could be remapped by other vim plugin
-" inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-"       \: "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
-" nnoremap <leader>j <Plug>(coc-diagnostic-prev)
-" nnoremap <leader>k <Plug>(coc-diagnostic-next)
-" nnoremap <leader>gd <Plug>(coc-definition)
-" nnoremap <leader>gy <Plug>(coc-type-definition)
-" nnoremap <leader>gi <Plug>(coc-implementation)
-" nnoremap <leader>gr <Plug>(coc-references)
-" nnoremap <leader>ca <Plug>(coc-codeaction)
-" nnoremap <leader>fi <Plug>(coc-fix-current)
-" nnoremap <leader>rr <Plug>(coc-rename)
-" nnoremap <leader>h :call <SID>show_documentation()<CR>
-" function! s:show_documentation()
-"   if (index(['vim','help'], &filetype) >= 0)
-"     execute 'h '.expand('<cword>')
-"   elseif (coc#rpc#ready())
-"     call CocActionAsync('doHover')
-"   else
-"     execute '!' . &keywordprg . " " . expand('<cword>')
-"   endif
-" endfunction
-" " Remap <C-f> and <C-b> for scroll float windows/popups.
-" if has('nvim-0.4.0') || has('patch-8.2.0750')
-"   nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-"   nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-"   inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<C-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-"   inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<C-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
-"   vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-"   vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-" endif
-" " installed extensions
-" let g:coc_global_extensions=[
-"       \  'coc-go',
-"       \  'coc-markdownlint',
-"       \  'coc-marketplace',
-"       \  'coc-omnisharp',
-"       \  'coc-pyright',
-"       \]
-" nnoremap <leader>cr :CocRestart<CR>
-" " </coc-config>
 
 " Copy into the system clipboard
 let s:clip='/c/Windows/System32/clip.exe'
