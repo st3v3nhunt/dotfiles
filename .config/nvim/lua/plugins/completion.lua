@@ -37,7 +37,8 @@ cmp.setup {
     end, { 'i', 's' }),
   }),
   sources = {
-    { name = 'nvim_lsp' },
+    { name = 'emoji' },
     { name = 'luasnip' },
+    { name = 'nvim_lsp' },
   },
 }
