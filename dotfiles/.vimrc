@@ -63,13 +63,27 @@ Plug 'rust-lang/rust.vim'                                                      "
 " Neovim specific plugins
 if has('nvim')
   Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'                                  " Utils for TS LSP
+
+  " cmp and sources
   Plug 'hrsh7th/nvim-cmp'                                                      " Autocompletion
+  Plug 'hrsh7th/cmp-buffer'                                                    " Buffer source for nvim-cmp
+  Plug 'hrsh7th/cmp-cmdline'                                                   " CMD line source for nvim-cmp
   Plug 'hrsh7th/cmp-emoji'                                                     " Emoji source for nvim-cmp
-  Plug 'hrsh7th/cmp-nvim-lsp'                                                  " LSP source for nvim-cmp
+  Plug 'hrsh7th/cmp-nvim-lua'                                                  " nvim lua source for nvim-cmp
   Plug 'saadparwaiz1/cmp_luasnip'                                              " Snippets source for nvim-cmp
+  Plug 'hrsh7th/cmp-nvim-lsp'                                                  " LSP source for nvim-cmp
+  Plug 'hrsh7th/cmp-path'                                                      " Path source for nvim-cmp
+  Plug 'onsails/lspkind.nvim'                                                  " Pictograms for nvim-cmp menu
+
+  Plug 'jose-elias-alvarez/null-ls.nvim'                                       " LS diagnostics, code actions and more
+
+  " snippets
   Plug 'L3MON4D3/LuaSnip'                                                      " Snippets plugin
+  Plug 'rafamadriz/friendly-snippets'                                          " VSCode style snippets
+
   " Plug 'williamboman/nvim-lsp-installer'                                       " Installer for Language Servers used by Neovim's built-in LSP
   Plug 'neovim/nvim-lspconfig'                                                 " Common configs for Neovim's built-in LSP
+  Plug 'nvim-lua/plenary.nvim'                                                 " Lua functions
 endif
 call plug#end()                                                                " all plugins must be added before this line
 
