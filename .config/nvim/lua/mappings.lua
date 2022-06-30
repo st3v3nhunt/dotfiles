@@ -48,8 +48,8 @@ setKeyMap('n', '<leader>q', ':q<CR>')
 setKeyMap('n', '<leader>z', '<C-z>')
 
 -- Formatting mappings
-setKeyMap('n', '<leader>ff', ':Autoformat<CR>')
-setKeyMap('n', '<leader>fj', ':%! jq<CR>')
+setKeyMap('n', '<leader>f', ':Autoformat<CR>')
+setKeyMap('n', '<leader>jq', ':%! jq<CR>')
 
 -- vimrc file mappings
 setKeyMap('n', '<leader>ev', ':vsplit $MYVIMRC<CR>')

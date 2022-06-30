@@ -17,20 +17,25 @@ local on_attach = function(client, bufnr)
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
   km.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
   km.set('n', 'gd', vim.lsp.buf.definition, bufopts)
-  km.set('n', '<leader>h', vim.lsp.buf.hover, bufopts)
-  km.set('n', '<leader>gi', vim.lsp.buf.implementation, bufopts)
+  km.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
+  km.set('n', '<space>h', vim.lsp.buf.hover, bufopts)
+  km.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
   -- Clashes with move to split above and signature_help seems empty
   -- km.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
-  km.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
-  km.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
-  km.set('n', '<space>wl', function()
-    print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-  end, bufopts)
-  km.set('n', '<leader>D', vim.lsp.buf.type_definition, bufopts)
-  km.set('n', '<leader>rr', vim.lsp.buf.rename, bufopts)
-  km.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
-  km.set('n', '<leader>gr', vim.lsp.buf.references, bufopts)
-  km.set('n', '<leader>ff', vim.lsp.buf.formatting, bufopts)
+  -- km.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
+  -- km.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
+  -- km.set('n', '<space>wl', function()
+  --   print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+  -- end, bufopts)
+  km.set('n', '<space>rr', vim.lsp.buf.rename, bufopts)
+  km.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
+  km.set('n', '<space>gr', vim.lsp.buf.references, bufopts)
+  km.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+
+  -- Turn off formatting for tsserver to prevent clash for nullls
+  if client.name == "tsserver" then
+    client.resolved_capabilities.document_formatting = false
+  end
 end
 
 local g = vim.g

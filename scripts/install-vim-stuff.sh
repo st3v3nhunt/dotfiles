@@ -22,3 +22,6 @@ printf "${GREEN}Finished installing Neovim configuration...${NC}\\n"
 # Link ftplugin and spell dirs
 ln -fsv "$REPO_DIR/vim/ftplugin" ~/.vim
 ln -fsv "$REPO_DIR/vim/spell" ~/.vim
+
+# Install additional tools for Neovim
+./scripts/install-nvim-tooling.sh
