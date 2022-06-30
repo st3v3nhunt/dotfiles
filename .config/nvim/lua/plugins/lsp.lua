@@ -10,7 +10,7 @@ km.set('n', '<space>q', vim.diagnostic.setloclist)
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
-  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+  -- vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
@@ -19,6 +19,7 @@ local on_attach = function(client, bufnr)
   km.set('n', 'gd', vim.lsp.buf.definition, bufopts)
   km.set('n', '<leader>h', vim.lsp.buf.hover, bufopts)
   km.set('n', '<leader>gi', vim.lsp.buf.implementation, bufopts)
+  -- Clashes with move to split above and signature_help seems empty
   -- km.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
   km.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
   km.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
