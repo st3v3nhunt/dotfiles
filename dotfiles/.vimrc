@@ -62,6 +62,7 @@ Plug 'posva/vim-vue'                                                           "
 Plug 'rust-lang/rust.vim'                                                      " Rust
 " Neovim specific plugins
 if has('nvim')
+  Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'                                  " Utils for TS LSP
   Plug 'hrsh7th/nvim-cmp'                                                      " Autocompletion
   Plug 'hrsh7th/cmp-emoji'                                                     " Emoji source for nvim-cmp
   Plug 'hrsh7th/cmp-nvim-lsp'                                                  " LSP source for nvim-cmp

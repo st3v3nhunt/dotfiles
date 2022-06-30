@@ -97,9 +97,16 @@ nvim_lsp.taplo.setup{
   capabilities = capabilities,
   on_attach = on_attach,
 }
+local ts_utils = require('nvim-lsp-ts-utils')
 nvim_lsp.tsserver.setup {
   capabilities = capabilities,
-  on_attach = on_attach,
+  on_attach = function(client, bufnr)
+    ts_utils.setup({
+      filter_out_diagnostics_by_code = { 80001 },
+    })
+    ts_utils.setup_client(client)
+    on_attach(client, bufnr)
+  end,
   root_dir = nvim_lsp.util.root_pattern("package.json"),
 }
 nvim_lsp.yamlls.setup{
