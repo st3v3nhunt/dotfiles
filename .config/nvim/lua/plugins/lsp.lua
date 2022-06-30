@@ -14,7 +14,7 @@ local on_attach = function(client, bufnr)
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
-  local bufopts = { noremap=true, silent=true, buffer=bufnr }
+  local bufopts = { noremap = true, silent = true, buffer = bufnr }
   km.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
   km.set('n', 'gd', vim.lsp.buf.definition, bufopts)
   km.set('n', '<leader>h', vim.lsp.buf.hover, bufopts)
@@ -42,8 +42,8 @@ g.markdown_fenced_languages = {
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
-local nvim_lsp = require'lspconfig'
-nvim_lsp.bashls.setup{
+local nvim_lsp = require 'lspconfig'
+nvim_lsp.bashls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
@@ -52,11 +52,11 @@ nvim_lsp.denols.setup {
   on_attach = on_attach,
   root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
 }
-nvim_lsp.dockerls.setup{
+nvim_lsp.dockerls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
-nvim_lsp.jsonls.setup{
+nvim_lsp.jsonls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
@@ -81,19 +81,19 @@ nvim_lsp.rust_analyzer.setup {
     }
   }
 }
-nvim_lsp.sumneko_lua.setup{
+nvim_lsp.sumneko_lua.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
-nvim_lsp.svelte.setup{
+nvim_lsp.svelte.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
-nvim_lsp.tailwindcss.setup{
+nvim_lsp.tailwindcss.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
-nvim_lsp.taplo.setup{
+nvim_lsp.taplo.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
@@ -109,7 +109,7 @@ nvim_lsp.tsserver.setup {
   end,
   root_dir = nvim_lsp.util.root_pattern("package.json"),
 }
-nvim_lsp.yamlls.setup{
+nvim_lsp.yamlls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
