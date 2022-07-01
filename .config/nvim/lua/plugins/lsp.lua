@@ -21,7 +21,7 @@ local on_attach = function(client, bufnr)
   km.set('n', '<space>h', vim.lsp.buf.hover, bufopts)
   km.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
   -- Clashes with move to split above and signature_help seems empty
-  -- km.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
+  km.set('n', '<leader>s', vim.lsp.buf.signature_help, bufopts)
   -- km.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
   -- km.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
   -- km.set('n', '<space>wl', function()
