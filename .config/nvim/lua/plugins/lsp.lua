@@ -32,10 +32,13 @@ local on_attach = function(client, bufnr)
   km.set('n', '<space>gr', vim.lsp.buf.references, bufopts)
   km.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
 
-  -- Turn off formatting for tsserver to prevent clash for nullls
+  -- Turn off formatting for tsserver to prevent allow nullls config
   if client.name == "tsserver" then
     client.resolved_capabilities.document_formatting = false
   end
+  -- if client.name == "denols" then
+  --   client.resolved_capabilities.document_formatting = false
+  -- end
 end
 
 local g = vim.g
@@ -61,13 +64,10 @@ nvim_lsp.dockerls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
-nvim_lsp.jsonls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
--- Issue with not having a local copy of remark and not able to default to
--- global install - https://github.com/remarkjs/remark-language-server/issues/6
--- nvim_lsp.remark_ls.setup{}
+-- nvim_lsp.jsonls.setup {
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+-- }
 nvim_lsp.rust_analyzer.setup {
   capabilities = capabilities,
   on_attach = on_attach,
