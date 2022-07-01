@@ -134,14 +134,14 @@ let g:airline#extensions#tabline#formatter='unique_tail_improved'
 let g:airline_section_b=''
 
 " ALE configuration
-let g:ale_typescript_standard_executable='ts-standard'
+" let g:ale_typescript_standard_executable='ts-standard'
 " let g:ale_completion_tsserver_autoimport=1
-let g:ale_fix_on_save=1
-let g:ale_fixers={
-      \  '*': ['remove_trailing_lines', 'trim_whitespace'],
-      \}
-let g:ale_hover_cursor=0
-let g:ale_lint_on_save=1
+" let g:ale_fix_on_save=1
+" let g:ale_fixers={
+"       \  '*': ['remove_trailing_lines', 'trim_whitespace'],
+"       \}
+" let g:ale_hover_cursor=0
+" let g:ale_lint_on_save=1
 let g:ale_sign_error='✗✗'
 let g:ale_sign_warning='∆∆'
 
