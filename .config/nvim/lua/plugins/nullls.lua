@@ -4,17 +4,26 @@ local diagnostics = null_ls.builtins.diagnostics
 local formatting = null_ls.builtins.formatting
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+local not_deno = function(utils)
+  return not utils.root_has_file({ "deno.json", "deno.jsonc" })
+end
 
 null_ls.setup({
   debug = true,
   sources = {
-    diagnostics.actionlint,
+    -- codeactions.eslint_d.with({ condition = not_deno }),
     codeactions.shellcheck,
-    diagnostics.shellcheck,
+
+    diagnostics.actionlint,
+    diagnostics.standardjs.with({ condition = not_deno }),
     diagnostics.markdownlint,
+    diagnostics.shellcheck,
+    diagnostics.selene,
+
     formatting.markdownlint,
-    diagnostics.standardjs,
-    formatting.standardjs,
+    formatting.standardjs.with({ condition = not_deno }),
+    formatting.trim_newlines.with({ condition = not_deno }),
+    formatting.trim_whitespace.with({ condition = not_deno }),
   },
   on_attach = function(client, bufnr)
     -- Run formatting on save
