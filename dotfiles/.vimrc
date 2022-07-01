@@ -68,6 +68,7 @@ if has('nvim')
   Plug 'hrsh7th/cmp-cmdline'                                                   " CMD line source for nvim-cmp
   Plug 'hrsh7th/cmp-emoji'                                                     " Emoji source for nvim-cmp
   Plug 'hrsh7th/cmp-nvim-lua'                                                  " nvim lua source for nvim-cmp
+  Plug 'hrsh7th/cmp-nvim-lsp-signature-help'                                   " Signature help source for nvim-cmp
   Plug 'saadparwaiz1/cmp_luasnip'                                              " Snippets source for nvim-cmp
   Plug 'hrsh7th/cmp-nvim-lsp'                                                  " LSP source for nvim-cmp
   Plug 'hrsh7th/cmp-path'                                                      " Path source for nvim-cmp
