@@ -55,9 +55,9 @@ cmp.setup {
   },
   -- Order here determines order of suggestions
   sources = {
+    { name = 'buffer' },
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
-    { name = 'buffer' },
     { name = 'emoji' },
     { name = 'path' },
     { name = 'cmdline' },
