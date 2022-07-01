@@ -20,6 +20,8 @@ alias glbD="git branch | grep -v -e master -e main | xargs git branch -D"
 alias gmpc='git com && gp && glbd && g rpo'
 alias gpuo='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpuon='gpuo --no-verify'
+alias gpuopr='gpuo && gh pr create -b "" -t "$(g log -1 --pretty=%B)" -d && gh pr view --web'
+alias gpuonpr='gpuon && gh pr create -b "" -t "$(g log -1 --pretty=%B)" -d && gh pr view --web'
 alias gp='git pull'
 alias gpfu='git push -fu --no-verify'
 alias gs='git status'
