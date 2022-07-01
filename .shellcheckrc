@@ -1,0 +1,2 @@
+# Don't worry about not having an executable specified in files
+disable=SC2148
