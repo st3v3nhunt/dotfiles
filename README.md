@@ -159,7 +159,8 @@ If either plugin isn't working try reloading tmux config with `prefix + I`.
   fetch = +refs/merge-requests/*/head:refs/remotes/origin/merge-requests/*
   ```
 
-* Reload `.vimrc` within Vim without restarting Vim - `:so $MYVIMRC`
+* Reload `.vimrc` within Vim without restarting Vim - `:so $MYVIMRC` or just
+  `<leader>sv`
 * Sort Vim's dictionary in place (`-o`) and case insensitively (`-f`) -
   `sort -f -o vim/en.utf-8.add vim/en-utf-8.add`
 * Errors like `nvm is not compatible with the npm config "prefix" option`
