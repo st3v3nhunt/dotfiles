@@ -11,15 +11,17 @@ end
 null_ls.setup({
   debug = true,
   sources = {
-    -- codeactions.eslint_d.with({ condition = not_deno }),
+    codeactions.eslint_d.with({ condition = not_deno }),
     codeactions.shellcheck,
 
     diagnostics.actionlint,
-    diagnostics.standardjs.with({ condition = not_deno }),
+    diagnostics.djlint,
     diagnostics.markdownlint,
     diagnostics.shellcheck,
     diagnostics.selene,
+    diagnostics.standardjs.with({ condition = not_deno }),
 
+    -- formatting.djlint.with({ extra_args = { "--profile", "nunjucks" } }),
     formatting.markdownlint,
     formatting.standardjs.with({ condition = not_deno }),
     formatting.trim_newlines.with({ condition = not_deno }),
