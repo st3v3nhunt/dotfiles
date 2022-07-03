@@ -60,6 +60,16 @@ cmp.setup {
       option = {
         get_bufnrs = function()
           return vim.api.nvim_list_bufs()
+          -- local bfs = vim.api.nvim_list_bufs()
+          -- for a, b in ipairs(bfs) do
+          --   print('a', a, b)
+          -- end
+          -- local bufs = {}
+          -- for _, win in ipairs(vim.api.nvim_list_wins()) do
+          --   bufs[vim.api.nvim_win_get_buf(win)] = true
+          -- end
+          -- print(bufs)
+          -- return vim.tbl_keys(bufs)
         end
       },
     },
