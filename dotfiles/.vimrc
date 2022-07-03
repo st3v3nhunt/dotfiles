@@ -25,24 +25,15 @@ Plug 'christoomey/vim-tmux-navigator'                                          "
 Plug 'ctrlpvim/ctrlp.vim'                                                      " Fuzzy file finder
 Plug 'editorconfig/editorconfig-vim'                                           " Make .editorconfig work
 Plug 'godlygeek/tabular'                                                       " Tabularisation
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }        " Markdown preview
 Plug 'kevinoid/vim-jsonc'                                                      " JSON-C syntax
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }                            " Fuzzy file finder (executable)
-" Plug 'junegunn/fzf.vim'                                                        " Fuzzy file finder (for Vim)
 Plug 'junegunn/gv.vim'                                                         " Git commit browser
 Plug 'junegunn/vim-easy-align'                                                 " Better/easier alignment
 Plug 'ludovicchabant/vim-gutentags'                                            " Tag management
 Plug 'majutsushi/tagbar'                                                       " A ctag viewer
 Plug 'mileszs/ack.vim'                                                         " File searching
-" Plug 'neoclide/coc.nvim', { 'branch': 'release' }                              " Conquer of Completion
 Plug 'ntpeters/vim-better-whitespace'                                          " Better whitespace
 Plug 'preservim/nerdtree'                                                      " File explorer
-" Plug 'rodrigore/coc-tailwind-intellisense', { 'do': 'npm install' }            " Tailwind CSS intellisense
 Plug 'towolf/vim-helm'                                                         " Helm template highlighting
-
-
-
-
 Plug 'tpope/vim-commentary'                                                    " Comment out lines
 Plug 'tpope/vim-fugitive'                                                      " Git wrapper
 Plug 'tpope/vim-obsession'                                                     " Improve session restoration
@@ -145,8 +136,8 @@ let g:airline_section_b=''
 " let g:ale_fix_on_save=1
 " let g:ale_hover_cursor=0
 " let g:ale_lint_on_save=1
-let g:ale_sign_error='✗✗'
-let g:ale_sign_warning='∆∆'
+" let g:ale_sign_error='✗✗'
+" let g:ale_sign_warning='∆∆'
 
 " vim-go configuration
 let g:go_fmt_command='goimports'
