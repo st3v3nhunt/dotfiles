@@ -7,7 +7,8 @@ setKeyMap('n', 'ga', '<Plug>(EasyAlign)')
 setKeyMap('n', '<leader>re', ':NERDTreeFind<CR>')
 setKeyMap('n', '<C-n>', ':NERDTreeToggle<CR>')
 
--- km('n', 'K', ':Ack! \'\b<C-R><C-W>\b\'<CR>:cw<CR>')                          -- Bind K to search for word under cursor
+-- Bind K to search for word under cursor
+-- setKeyMap('n', 'K', ':Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>')
 setKeyMap('n', '\\', ':Ack!<space>')
 setKeyMap('n', '<F8>', ':TagbarToggle<CR>')
 
