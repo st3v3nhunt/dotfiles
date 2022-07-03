@@ -5,9 +5,7 @@ vim.cmd([[source ~/.vimrc]])
 -- Map leader early so it takes affect in other files
 vim.g.mapleader=","
 
-require('abbrev')
-require('mappings')
 require('plugins')
-require('settings')
+require('user')
 
 vim.api.nvim_set_option('inccommand','split')                                  -- show split preview of all changes

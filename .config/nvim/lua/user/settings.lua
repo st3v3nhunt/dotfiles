@@ -7,6 +7,8 @@ local node_host_prog = fh:read("*a")
 fh:close()
 g.node_host_prog = node_host_prog
 
+g.markdown_folding = 1
+g.markdown_fenced_languages = { 'bash=sh', 'javascript' }
 g.loaded_perl_provider = 0
 g.loaded_python_provider = 0
 g.loaded_ruby_provider = 0
