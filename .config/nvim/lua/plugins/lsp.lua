@@ -64,10 +64,20 @@ nvim_lsp.dockerls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
--- nvim_lsp.jsonls.setup {
---   capabilities = capabilities,
---   on_attach = on_attach,
--- }
+nvim_lsp.gopls.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+}
+nvim_lsp.jsonls.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+  settings = {
+    json = {
+      schemas = require('schemastore').json.schemas(),
+      validate = { enable = true },
+    },
+  },
+}
 nvim_lsp.rust_analyzer.setup {
   capabilities = capabilities,
   on_attach = on_attach,
