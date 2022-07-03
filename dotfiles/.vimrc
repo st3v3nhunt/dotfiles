@@ -39,6 +39,10 @@ Plug 'ntpeters/vim-better-whitespace'                                          "
 Plug 'preservim/nerdtree'                                                      " File explorer
 " Plug 'rodrigore/coc-tailwind-intellisense', { 'do': 'npm install' }            " Tailwind CSS intellisense
 Plug 'towolf/vim-helm'                                                         " Helm template highlighting
+
+
+
+
 Plug 'tpope/vim-commentary'                                                    " Comment out lines
 Plug 'tpope/vim-fugitive'                                                      " Git wrapper
 Plug 'tpope/vim-obsession'                                                     " Improve session restoration
@@ -95,6 +99,8 @@ autocmd vimrc BufNewFile,BufRead *.gitconfig set filetype=gitconfig
 autocmd vimrc BufNewFile,BufRead *.nunjucks set filetype=html
 autocmd vimrc BufNewFile,BufRead Dockerfile.* set filetype=dockerfile
 autocmd vimrc BufNewFile,BufRead Jenkinsfile set syntax=groovy
+autocmd vimrc BufWritePre * :silent! %s/\s\+$//e                               " Trim trailing whitespace on save, ignoring errors and messages
+autocmd vimrc BufWritePre * :silent! %s#\($\n\s*\)\+\%$##                      " Trim trailing empty lines on save, ignoring errors and messages
 
 " Plugin specifc settings
 let g:terraform_align=1
@@ -137,9 +143,6 @@ let g:airline_section_b=''
 " let g:ale_typescript_standard_executable='ts-standard'
 " let g:ale_completion_tsserver_autoimport=1
 " let g:ale_fix_on_save=1
-" let g:ale_fixers={
-"       \  '*': ['remove_trailing_lines', 'trim_whitespace'],
-"       \}
 " let g:ale_hover_cursor=0
 " let g:ale_lint_on_save=1
 let g:ale_sign_error='✗✗'

@@ -24,8 +24,6 @@ null_ls.setup({
     -- formatting.djlint.with({ extra_args = { "--profile", "nunjucks" } }),
     formatting.markdownlint,
     formatting.standardjs.with({ condition = not_deno }),
-    formatting.trim_newlines.with({ condition = not_deno }),
-    formatting.trim_whitespace.with({ condition = not_deno }),
   },
   on_attach = function(client, bufnr)
     -- Run formatting on save
