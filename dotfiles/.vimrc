@@ -42,6 +42,7 @@ Plug 'tpope/vim-surround'                                                      "
 Plug 'vim-airline/vim-airline'                                                 " File status bar
 Plug 'vim-airline/vim-airline-themes'                                          " Themes for vim-airline
 Plug 'w0rp/ale'                                                                " Asynchronous Lint Engine aka ALE
+Plug 'Yggdroot/indentLine'                                                     " Better visual indentation
 " specific languge plugins
 Plug 'fatih/vim-go'                                                            " Golang
 Plug 'hashivim/vim-terraform'                                                  " Terraform
