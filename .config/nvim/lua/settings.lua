@@ -16,7 +16,8 @@ g.python3_host_prog = '~/.pyenv/shims/python3'
 o.autowrite = true
 o.clipboard = 'unnamed'
 o.colorcolumn = '80'
--- Fixes issue with automatically completing autocomplete options (noinsert) and switches to popup rather than preview window
+-- Fixes issue with automatically completing autocomplete options (noinsert)
+-- and switches to popup rather than preview window
 o.completeopt = 'menu,menuone,preview,noselect,noinsert'
 -- More space for messages
 o.cmdheight = 2
