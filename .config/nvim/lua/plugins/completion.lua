@@ -55,6 +55,7 @@ cmp.setup {
   },
   -- Order here determines order of suggestions
   sources = {
+    { name = 'nvim_lsp' },
     {
       name = 'buffer',
       option = {
@@ -73,13 +74,12 @@ cmp.setup {
         end
       },
     },
-    { name = 'nvim_lsp' },
-    { name = 'nvim_lsp_signature_help' },
     { name = 'luasnip' },
     { name = 'emoji' },
     { name = 'path' },
     { name = 'cmdline' },
     { name = 'nvim_lua' },
+    { name = 'nvim_lsp_signature_help' },
   },
   window = {
     -- completion = cmp.config.window.bordered(),
