@@ -130,6 +130,10 @@ nvim_lsp.tsserver.setup {
   end,
   root_dir = nvim_lsp.util.root_pattern("package.json"),
 }
+nvim_lsp.vuels.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+}
 nvim_lsp.yamlls.setup {
   capabilities = capabilities,
   on_attach = on_attach,

@@ -30,6 +30,9 @@ cargo install --features lsp --locked taplo-cli
 # https://github.com/typescript-language-server/typescript-language-server
 npm i -g typescript typescript-language-server
 
+# https://github.com/vuejs/vetur/tree/master/server
+npm i -g vls
+
 # https://github.com/redhat-developer/yaml-language-server
 npm i -g yaml-language-server
 
