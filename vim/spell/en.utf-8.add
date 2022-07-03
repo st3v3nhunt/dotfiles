@@ -41,6 +41,7 @@ Karabiner
 keychain
 Kubernetes
 localhost
+lua
 macOS
 microservice
 microservices
@@ -52,6 +53,7 @@ NGINX
 NHSUK
 npm
 NuGet
+nvim
 nvm
 OGL
 OMG
@@ -81,6 +83,7 @@ toml
 tmux
 TypeScript
 unmute
+vimrc
 Vue
 webpack
 Webtrends
