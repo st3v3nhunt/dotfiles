@@ -20,5 +20,8 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
+export VISUAL=nvim
+export EDITOR=$VISUAL
+
 # Ensure HOMEBREW_PREFIX is set (differs by OS and processor)
 HOMEBREW_PREFIX="$(brew --prefix)"
