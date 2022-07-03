@@ -58,6 +58,7 @@ if has('nvim')
   Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'                                  " Utils for TS LSP
 
   " cmp and sources
+  Plug 'b0o/schemastore.nvim'                                                  " JSON Schema Store access
   Plug 'hrsh7th/nvim-cmp'                                                      " Autocompletion
   Plug 'hrsh7th/cmp-buffer'                                                    " Buffer source for nvim-cmp
   Plug 'hrsh7th/cmp-cmdline'                                                   " CMD line source for nvim-cmp
