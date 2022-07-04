@@ -1,3 +1,10 @@
+# [1.131.0](https://github.com/st3v3nhunt/dotfiles/compare/1.130.0...1.131.0) (2022-07-04)
+
+
+### Features
+
+* use new heroku cli ([#379](https://github.com/st3v3nhunt/dotfiles/issues/379)) ([b0ed97d](https://github.com/st3v3nhunt/dotfiles/commit/b0ed97de5c0dccc5c134e50788d06d423c079503))
+
 # [1.130.0](https://github.com/st3v3nhunt/dotfiles/compare/1.129.1...1.130.0) (2022-07-03)
 
 
