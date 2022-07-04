@@ -2,6 +2,7 @@
 
 # Tap the Azure Functions repo
 brew tap azure/functions
+brew tap heroku/brew
 brew tap johanhaleby/kubetail
 
 # Utils
@@ -82,6 +83,7 @@ brews+=(
 derailed/k9s/k9s
 flyctl
 helm
+heroku
 kind
 kubernetes-cli
 kubetail
