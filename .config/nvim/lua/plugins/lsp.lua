@@ -32,13 +32,11 @@ local on_attach = function(client, bufnr)
   km.set('n', '<space>gr', vim.lsp.buf.references, bufopts)
   km.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
 
-  -- Turn off formatting for tsserver to prevent allow nullls config
+  -- Turn off formatting for servers where there is a formatter setup with nullls
+  -- if client.name == "tsserver" or client.name == "sumneko_lua" then
   if client.name == "tsserver" then
     client.resolved_capabilities.document_formatting = false
   end
-  -- if client.name == "denols" then
-  --   client.resolved_capabilities.document_formatting = false
-  -- end
 end
 
 local g = vim.g
