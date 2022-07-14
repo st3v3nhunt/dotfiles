@@ -2,10 +2,13 @@
 local lspkind = require('lspkind')
 
 -- Load VSCode style snippets (from 'rafamadriz/friendly-snippets')
-require("luasnip/loaders/from_vscode").lazy_load()
+require("luasnip.loaders.from_vscode").lazy_load()
+
+local luasnip = require('luasnip')
+-- include html snippets in tsx files
+luasnip.filetype_extend("typescriptreact", { "html" })
 
 -- nvim-cmp setup
-local luasnip = require('luasnip')
 local cmp = require('cmp')
 cmp.setup {
   snippet = {
