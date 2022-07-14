@@ -9,12 +9,14 @@ if handle ~= nil then
   handle:close()
 end
 
-g.markdown_folding = 1
-g.markdown_fenced_languages = { 'bash=sh', 'javascript' }
 g.loaded_perl_provider = 0
 g.loaded_python_provider = 0
 g.loaded_ruby_provider = 0
+g.markdown_folding = 1
+g.markdown_fenced_languages = { 'bash=sh', 'javascript' }
+g.markdown_syntax_conceal = 0
 g.python3_host_prog = '~/.pyenv/shims/python3'
+g.vim_json_conceal = 0
 
 -- Set options
 o.autowrite = true
