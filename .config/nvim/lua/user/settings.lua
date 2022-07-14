@@ -2,10 +2,12 @@ local g = vim.g
 local o = vim.opt
 
 -- Get path to node which should be where global npms are installed
-local fh = io.popen("which node")
-local node_host_prog = fh:read("*a")
-fh:close()
-g.node_host_prog = node_host_prog
+local handle = io.popen("which node")
+if handle ~= nil then
+  local node_host_prog = handle:read("*a")
+  g.node_host_prog = node_host_prog
+  handle:close()
+end
 
 g.markdown_folding = 1
 g.markdown_fenced_languages = { 'bash=sh', 'javascript' }
