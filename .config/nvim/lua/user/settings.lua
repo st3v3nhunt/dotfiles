@@ -2,17 +2,21 @@ local g = vim.g
 local o = vim.opt
 
 -- Get path to node which should be where global npms are installed
-local fh = io.popen("which node")
-local node_host_prog = fh:read("*a")
-fh:close()
-g.node_host_prog = node_host_prog
+local handle = io.popen("which node")
+if handle ~= nil then
+  local node_host_prog = handle:read("*a")
+  g.node_host_prog = node_host_prog
+  handle:close()
+end
 
-g.markdown_folding = 1
-g.markdown_fenced_languages = { 'bash=sh', 'javascript' }
 g.loaded_perl_provider = 0
 g.loaded_python_provider = 0
 g.loaded_ruby_provider = 0
+g.markdown_folding = 1
+g.markdown_fenced_languages = { 'bash=sh', 'javascript' }
+g.markdown_syntax_conceal = 0
 g.python3_host_prog = '~/.pyenv/shims/python3'
+g.vim_json_conceal = 0
 
 -- Set options
 o.autowrite = true

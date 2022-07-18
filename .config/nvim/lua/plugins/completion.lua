@@ -2,10 +2,13 @@
 local lspkind = require('lspkind')
 
 -- Load VSCode style snippets (from 'rafamadriz/friendly-snippets')
-require("luasnip/loaders/from_vscode").lazy_load()
+require("luasnip.loaders.from_vscode").lazy_load()
+
+local luasnip = require('luasnip')
+-- include html snippets in tsx files
+luasnip.filetype_extend("typescriptreact", { "html" })
 
 -- nvim-cmp setup
-local luasnip = require('luasnip')
 local cmp = require('cmp')
 cmp.setup {
   snippet = {
@@ -17,10 +20,10 @@ cmp.setup {
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
-    ['<CR>'] = cmp.mapping.confirm {
+    ['<CR>'] = cmp.mapping.confirm({
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,
-    },
+    }),
     ['<Tab>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()

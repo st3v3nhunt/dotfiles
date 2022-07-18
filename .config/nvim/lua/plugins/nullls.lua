@@ -4,14 +4,38 @@ local diagnostics = null_ls.builtins.diagnostics
 local formatting = null_ls.builtins.formatting
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-local not_deno = function(utils)
-  return not utils.root_has_file({ "deno.json", "deno.jsonc" })
+
+local property_exists_in_package_json = function(utils, property)
+  local file_exists = utils.root_has_file({ "package.json" })
+  if not file_exists then
+    return false
+  end
+  local handle = io.popen("jq -j '." .. property .. " | length' package.json")
+  if handle == nil then
+    return false
+  end
+  local output = handle:read("*a")
+  handle:close()
+  return tonumber(output, 10) > 0
+end
+
+local uses_eslint = function(utils)
+  return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs", ".eslintrc.yaml", ".eslintrc.yml", ".eslintrc.json" })
+  or property_exists_in_package_json(utils, "eslintConfig")
+end
+
+local uses_standardjs = function(utils)
+  return property_exists_in_package_json(utils, "standard")
+end
+
+local uses_prettier = function(utils)
+  return utils.root_has_file({ ".prettierrc" })
 end
 
 null_ls.setup({
   debug = true,
   sources = {
-    codeactions.eslint_d.with({ condition = not_deno }),
+    codeactions.eslint_d.with({ condition = uses_eslint }),
     codeactions.shellcheck,
 
     diagnostics.actionlint,
@@ -19,11 +43,12 @@ null_ls.setup({
     diagnostics.markdownlint,
     diagnostics.shellcheck,
     diagnostics.selene,
-    diagnostics.standardjs.with({ condition = not_deno }),
+    diagnostics.standardjs.with({ condition = uses_standardjs }),
 
     -- formatting.djlint.with({ extra_args = { "--profile", "nunjucks" } }),
     formatting.markdownlint,
-    formatting.standardjs.with({ condition = not_deno }),
+    formatting.prettierd.with({ condition = uses_prettier }),
+    formatting.standardjs.with({ condition = uses_standardjs }),
   },
   on_attach = function(client, bufnr)
     -- Run formatting on save
