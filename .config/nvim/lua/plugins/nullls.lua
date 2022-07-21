@@ -1,31 +1,19 @@
 local null_ls = require("null-ls")
+local my_utils = require("utils.utils")
+
 local codeactions = null_ls.builtins.code_actions
 local diagnostics = null_ls.builtins.diagnostics
 local formatting = null_ls.builtins.formatting
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
-local property_exists_in_package_json = function(utils, property)
-  local file_exists = utils.root_has_file({ "package.json" })
-  if not file_exists then
-    return false
-  end
-  local handle = io.popen("jq -j '." .. property .. " | length' package.json")
-  if handle == nil then
-    return false
-  end
-  local output = handle:read("*a")
-  handle:close()
-  return tonumber(output, 10) > 0
-end
-
 local uses_eslint = function(utils)
   return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs", ".eslintrc.yaml", ".eslintrc.yml", ".eslintrc.json" })
-  or property_exists_in_package_json(utils, "eslintConfig")
+  or my_utils.propertyExistsInPackageJson(utils, "eslintConfig")
 end
 
 local uses_standardjs = function(utils)
-  return property_exists_in_package_json(utils, "standard")
+  return my_utils.propertyExistsInPackageJson(utils, "standard")
 end
 
 local uses_prettier = function(utils)
