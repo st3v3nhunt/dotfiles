@@ -5,7 +5,7 @@ local M = {}
 --@param utils (table) containing `root_has_file` function
 --@param property (string) name of property to search for
 --@return (boolean)
-function M:propertyExistsInPackageJson(utils, property)
+function M.propertyExistsInPackageJson(utils, property)
   local file_exists = utils.root_has_file({ "package.json" })
   if not file_exists then
     return false

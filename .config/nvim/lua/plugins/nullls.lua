@@ -9,11 +9,11 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local uses_eslint = function(utils)
   return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs", ".eslintrc.yaml", ".eslintrc.yml", ".eslintrc.json" })
-  or my_utils:propertyExistsInPackageJson(utils, "eslintConfig")
+  or my_utils.propertyExistsInPackageJson(utils, "eslintConfig")
 end
 
 local uses_standardjs = function(utils)
-  return my_utils:propertyExistsInPackageJson(utils, "standard")
+  return my_utils.propertyExistsInPackageJson(utils, "standard")
 end
 
 local uses_prettier = function(utils)
