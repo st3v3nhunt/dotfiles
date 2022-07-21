@@ -1,3 +1,10 @@
+# [1.132.0](https://github.com/st3v3nhunt/dotfiles/compare/1.131.0...1.132.0) (2022-07-21)
+
+
+### Features
+
+* introduce util for easier sharing of functions ([#381](https://github.com/st3v3nhunt/dotfiles/issues/381)) ([93c6108](https://github.com/st3v3nhunt/dotfiles/commit/93c610845a05056af6244c3d6a44add746afdf40))
+
 # [1.131.0](https://github.com/st3v3nhunt/dotfiles/compare/1.130.0...1.131.0) (2022-07-04)
 
 
