@@ -35,7 +35,10 @@ null_ls.setup({
 
     -- formatting.djlint.with({ extra_args = { "--profile", "nunjucks" } }),
     formatting.markdownlint,
-    formatting.prettierd.with({ condition = uses_prettier }),
+    formatting.prettierd.with({
+      condition = uses_prettier,
+      extra_filetypes = { "svelte" }
+    }),
     formatting.standardjs.with({ condition = uses_standardjs }),
   },
   on_attach = function(client, bufnr)
