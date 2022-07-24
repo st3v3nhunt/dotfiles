@@ -16,6 +16,9 @@ npm i -g vscode-langservers-extracted
 # https://github.com/sumneko/lua-language-server
 brew install lua-language-server
 
+# https://github.com/fsouza/prettierd
+npm install -g @fsouza/prettierd
+
 # https://github.com/rust-analyzer/lsp-server
 brew install rust-analyzer
 
