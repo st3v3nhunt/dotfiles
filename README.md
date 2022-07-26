@@ -144,7 +144,8 @@ Tmux plugin manager is installed along with the following plugins:
 * [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum) - automates
   session the actions of `tmux-resurrect`
 
-If either plugin isn't working try reloading tmux config with `prefix + I`.
+In order to have the plugins installed, reload the config with `prefix + I`.
+This can also fix problems with the plugins not working.
 
 ## FAQ
 
