@@ -43,6 +43,15 @@ signing needs to happen. Once a key has been generated it can be exported and
 imported
 ([details](https://makandracards.com/makandra-orga/37763-gpg-extract-private-key-and-import-on-different-machine)).
 
+```sh
+# List the keys and get id of the one of interest (in braces in the output)
+gpg --list-secret-keys [--keyid-format=long]
+# Export the key of interest to a file called `private.key`
+gpg --export-secret-keys <key-id> > private.key
+# Move the file to the machine where it is to be imported
+gpg --import private.key
+```
+
 If this isn't possible (or desirable) there are other ways around this, most
 notably using Git's
 [`includeIf`](https://git-scm.com/docs/git-config#_includes). However, this
