@@ -40,10 +40,9 @@ printf "${GREEN}Finished installing yabai configuration...${NC}\\n"
 
 brews=(
 deno
-hyperkit
+koekeishiya/formulae/yabai
 reattach-to-user-namespace
 wifi-password
-koekeishiya/formulae/yabai
 )
 
 # Upgrade if already installed via Homebrew otherwise install it
