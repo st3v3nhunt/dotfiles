@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # shellcheck disable=2059
-echo "Installing rosetta..."
-softwareupdate --install-rosetta
+if [ "$(/usr/bin/pgrep oahd >/dev/null 2>&1;echo $?)" -ne 0 ]; then
+  echo "Installing Rosetta..."
+  softwareupdate --install-rosetta --agree-to-license
+fi
 
 GREEN='\033[0;32m'
 NC='\033[0m'
