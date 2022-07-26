@@ -1,3 +1,10 @@
+# [1.133.0](https://github.com/st3v3nhunt/dotfiles/compare/1.132.0...1.133.0) (2022-07-26)
+
+
+### Features
+
+* remove unused brews ([#383](https://github.com/st3v3nhunt/dotfiles/issues/383)) ([2608f7e](https://github.com/st3v3nhunt/dotfiles/commit/2608f7ec42d20ac7a1fbc2bc3032af4f4b3cc3d6))
+
 # [1.132.0](https://github.com/st3v3nhunt/dotfiles/compare/1.131.0...1.132.0) (2022-07-21)
 
 
