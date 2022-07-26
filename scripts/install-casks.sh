@@ -14,8 +14,6 @@ google-chrome
 casks+=(
 alacritty
 another-redis-desktop-manager
-azure-data-studio
-burp-suite
 caffeine
 db-browser-for-sqlite
 dotnet-sdk
@@ -27,7 +25,6 @@ java
 karabiner-elements
 keycastr
 lens
-little-snitch
 microsoft-azure-storage-explorer
 microsoft-office
 ngrok
@@ -36,8 +33,6 @@ postman
 powershell
 royal-tsx
 spectacle
-studio-3t
-vmware-horizon-client
 wireshark
 )
 

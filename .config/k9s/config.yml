@@ -14,55 +14,17 @@ k9s:
     fullScreenLogs: false
     textWrap: true
     showTime: true
-  currentContext: SNDFFCAKSCL1001
-  currentCluster: SNDFFCAKSCL1001
+  currentContext: ""
+  currentCluster: ""
   clusters:
-    DEVFFCINFAKS1001:
-      namespace:
-        active: all
-        favorites:
-        - all
-        - default
-      view:
-        active: deploy
-      featureGates:
-        nodeShell: false
-      shellPod:
-        image: busybox:1.31
-        command: []
-        args: []
-        namespace: default
-        limits:
-          cpu: 100m
-          memory: 100Mi
-      portForwardAddress: localhost
-    SNDFFCAKSCL1001:
-      namespace:
-        active: all
-        favorites:
-        - ffc-ahwr
-        - all
-        - default
-      view:
-        active: deploy
-      featureGates:
-        nodeShell: false
-      shellPod:
-        image: busybox:1.31
-        command: []
-        args: []
-        namespace: default
-        limits:
-          cpu: 100m
-          memory: 100Mi
-      portForwardAddress: localhost
-    rancher-desktop:
+    "":
       namespace:
         active: default
+        lockFavorites: false
         favorites:
         - default
       view:
-        active: pod
+        active: po
       featureGates:
         nodeShell: false
       shellPod:
