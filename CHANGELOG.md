@@ -1,3 +1,10 @@
+# [1.134.0](https://github.com/st3v3nhunt/dotfiles/compare/1.133.0...1.134.0) (2022-07-31)
+
+
+### Features
+
+* eval brew env vars where installed ([#384](https://github.com/st3v3nhunt/dotfiles/issues/384)) ([9b9edea](https://github.com/st3v3nhunt/dotfiles/commit/9b9edea7601ace365f9656bdaf5bc05cc718914a))
+
 # [1.133.0](https://github.com/st3v3nhunt/dotfiles/compare/1.132.0...1.133.0) (2022-07-26)
 
 
