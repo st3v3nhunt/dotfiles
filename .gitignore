@@ -8,3 +8,4 @@
 node_modules
 # Vim binary spell files
 *.spl
+.config/gpg-agent.conf
