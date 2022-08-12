@@ -56,6 +56,7 @@ nvim_lsp.denols.setup {
   capabilities = capabilities,
   on_attach = on_attach,
   root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
+  single_file_support = false,
 }
 nvim_lsp.dockerls.setup {
   capabilities = capabilities,
