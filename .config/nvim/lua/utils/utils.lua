@@ -10,13 +10,13 @@ function M.propertyExistsInPackageJson(utils, property)
   if not file_exists then
     return false
   end
-  local handle = io.popen("jq -j '." .. property .. " | length' package.json")
+  local handle = io.popen("jq -j 'has(\"" .. property .. "\")' package.json")
   if handle == nil then
     return false
   end
   local output = handle:read("*a")
   handle:close()
-  return tonumber(output, 10) > 0
+  return output
 end
 
 return M
