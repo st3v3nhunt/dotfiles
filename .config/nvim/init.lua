@@ -1,6 +1,6 @@
-vim.cmd([[set runtimepath^=~/.vim runtimepath+=~/.vim/after]])
+vim.cmd([[set runtimepath^=$HOME/.vim runtimepath+=$HOME/.vim/after]])
 vim.cmd([[let &packpath=&runtimepath]])
-vim.cmd([[source ~/.vimrc]])
+vim.cmd([[source $HOME/.vimrc]])
 
 -- Map leader early so it takes affect in other files
 vim.g.mapleader=","
