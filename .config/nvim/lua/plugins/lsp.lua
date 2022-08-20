@@ -1,4 +1,6 @@
 print('loading lsp plugin')
+-- Turn on for debug ouput
+-- vim.lsp.set_log_level("debug")
 local km = vim.keymap
 
 km.set('n', '<leader>j', vim.diagnostic.goto_prev)
@@ -56,6 +58,7 @@ nvim_lsp.denols.setup {
   capabilities = capabilities,
   on_attach = on_attach,
   root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
+  single_file_support = false,
 }
 nvim_lsp.dockerls.setup {
   capabilities = capabilities,

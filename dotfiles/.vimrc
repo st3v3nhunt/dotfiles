@@ -18,32 +18,40 @@ autocmd vimrc VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)
 call plug#begin()
 " theme(s)
 Plug 'crusoexia/vim-monokai'
+
 " generally useful plugins
-Plug 'airblade/vim-gitgutter'                                                  " Git in gutter
+if exists('g:vscode')
+  echo "Load VSCode specific plugins..."
+else
+  Plug 'airblade/vim-gitgutter'                                                  " Git in gutter
+  Plug 'christoomey/vim-tmux-navigator'                                          " Same split shortcuts in vim and tmux
+  Plug 'ctrlpvim/ctrlp.vim'                                                      " Fuzzy file finder
+  Plug 'junegunn/gv.vim'                                                         " Git commit browser
+  Plug 'ludovicchabant/vim-gutentags'                                            " Tag management
+  Plug 'majutsushi/tagbar'                                                       " A ctag viewer
+  Plug 'preservim/nerdtree'                                                      " File explorer
+  Plug 'tpope/vim-fugitive'                                                      " Git wrapper
+  Plug 'vim-airline/vim-airline'                                                 " File status bar
+  Plug 'vim-airline/vim-airline-themes'                                          " Themes for vim-airline
+  Plug 'w0rp/ale'                                                                " Asynchronous Lint Engine aka ALE
+endif
+
 Plug 'Chiel92/vim-autoformat'                                                  " Generic code formatter
-Plug 'christoomey/vim-tmux-navigator'                                          " Same split shortcuts in vim and tmux
-Plug 'ctrlpvim/ctrlp.vim'                                                      " Fuzzy file finder
 Plug 'editorconfig/editorconfig-vim'                                           " Make .editorconfig work
 Plug 'godlygeek/tabular'                                                       " Tabularisation
 Plug 'kevinoid/vim-jsonc'                                                      " JSON-C syntax
-Plug 'junegunn/gv.vim'                                                         " Git commit browser
 Plug 'junegunn/vim-easy-align'                                                 " Better/easier alignment
-Plug 'ludovicchabant/vim-gutentags'                                            " Tag management
-Plug 'majutsushi/tagbar'                                                       " A ctag viewer
 Plug 'mileszs/ack.vim'                                                         " File searching
 Plug 'ntpeters/vim-better-whitespace'                                          " Better whitespace
-Plug 'preservim/nerdtree'                                                      " File explorer
 Plug 'towolf/vim-helm'                                                         " Helm template highlighting
 Plug 'tpope/vim-commentary'                                                    " Comment out lines
-Plug 'tpope/vim-fugitive'                                                      " Git wrapper
 Plug 'tpope/vim-obsession'                                                     " Improve session restoration
 Plug 'tpope/vim-repeat'                                                        " Repeat plugin commands via '.'
 Plug 'tpope/vim-surround'                                                      " Word/phrase surrounds
-Plug 'vim-airline/vim-airline'                                                 " File status bar
-Plug 'vim-airline/vim-airline-themes'                                          " Themes for vim-airline
-Plug 'w0rp/ale'                                                                " Asynchronous Lint Engine aka ALE
 Plug 'Yggdroot/indentLine'                                                     " Better visual indentation
+
 " specific languge plugins
+Plug 'elixir-editors/vim-elixir'                                               " Elixir
 Plug 'fatih/vim-go'                                                            " Golang
 Plug 'hashivim/vim-terraform'                                                  " Terraform
 Plug 'google/yapf'                                                             " Python
@@ -54,6 +62,7 @@ Plug 'OmniSharp/omnisharp-vim'                                                 "
 Plug 'pangloss/vim-javascript'                                                 " JavaScript
 Plug 'posva/vim-vue'                                                           " Vue
 Plug 'rust-lang/rust.vim'                                                      " Rust
+
 " Neovim specific plugins
 if has('nvim')
   Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'                                  " Utils for TS LSP
