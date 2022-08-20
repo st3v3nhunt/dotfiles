@@ -11,12 +11,10 @@ fi
 REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
 
 printf "${GREEN}Installing Neovim configuration...${NC}\\n"
-NEOVIM_DIR=".config/nvim"
-NEOVIM_INIT="$NEOVIM_DIR/init.lua"
-NEOVIM_LUA_DIR="$NEOVIM_DIR/lua/"
+CONFIG_DIR=".config"
+NEOVIM_DIR="$CONFIG_DIR/nvim"
 mkdir -p ~/"$NEOVIM_DIR"
-ln -nfsv "$REPO_DIR/$NEOVIM_INIT" ~/"$NEOVIM_DIR"
-ln -fsv "$REPO_DIR/$NEOVIM_LUA_DIR" ~/"$NEOVIM_DIR"
+ln -nfsv "$REPO_DIR/$NEOVIM_DIR" ~/"$CONFIG_DIR"
 printf "${GREEN}Finished installing Neovim configuration...${NC}\\n"
 
 # Link ftplugin and spell dirs
