@@ -20,9 +20,7 @@ call plug#begin()
 Plug 'crusoexia/vim-monokai'
 
 " generally useful plugins
-if exists('g:vscode')
-  echo "Load VSCode specific plugins..."
-else
+if !exists('g:vscode')
   Plug 'airblade/vim-gitgutter'                                                  " Git in gutter
   Plug 'christoomey/vim-tmux-navigator'                                          " Same split shortcuts in vim and tmux
   Plug 'ctrlpvim/ctrlp.vim'                                                      " Fuzzy file finder
