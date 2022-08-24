@@ -16,7 +16,7 @@ setKeyMap('n', '<F8>', ':TagbarToggle<CR>')
 setKeyMap('n', 'oo', 'o<Esc>k')
 setKeyMap('n', 'OO', 'O<Esc>j')
 
--- Use jk to exist insert more
+-- Use jk to exit insert mode
 setKeyMap('i', 'jk', '<ESC>')
 
 -- Turn arrow keys off
