@@ -63,6 +63,8 @@ Plug 'rust-lang/rust.vim'                                                      "
 
 " Neovim specific plugins
 if has('nvim') && !exists('g:vscode')
+  Plug 'phaazon/hop.nvim', { 'branch': 'v2' }                                  " Better motions - only supports neovim
+
   Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'                                  " Utils for TS LSP
 
   " cmp and sources
