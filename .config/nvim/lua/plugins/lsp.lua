@@ -64,6 +64,11 @@ nvim_lsp.dockerls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
 }
+nvim_lsp.elixirls.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+  cmd = { vim.env.HOMEBREW_PREFIX .. "/bin/elixir-ls" },
+}
 nvim_lsp.gopls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
