@@ -1,4 +1,5 @@
 print('loading lsp plugin')
+
 -- Turn on for debug ouput
 -- vim.lsp.set_log_level("debug")
 local km = vim.keymap
