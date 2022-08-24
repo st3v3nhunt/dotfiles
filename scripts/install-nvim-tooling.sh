@@ -9,6 +9,9 @@ npm i -g bash-language-server
 # https://github.com/rcjsuen/dockerfile-language-server-nodejs
 npm i -g dockerfile-language-server-nodejs
 
+# https://github.com/elixir-lsp/elixir-ls
+brew install elixir-ls
+
 # JSON
 # https://github.com/hrsh7th/vscode-langservers-extracted
 npm i -g vscode-langservers-extracted

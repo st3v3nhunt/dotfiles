@@ -64,7 +64,7 @@ Plug 'posva/vim-vue'                                                           "
 Plug 'rust-lang/rust.vim'                                                      " Rust
 
 " Neovim specific plugins
-if has('nvim')
+if has('nvim') && !exists('g:vscode')
   Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'                                  " Utils for TS LSP
 
   " cmp and sources
