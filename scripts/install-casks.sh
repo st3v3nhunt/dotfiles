@@ -21,7 +21,6 @@ gimp
 google-drive
 google-cloud-sdk
 iterm2
-java
 karabiner-elements
 keycastr
 lens

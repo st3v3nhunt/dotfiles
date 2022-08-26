@@ -73,6 +73,7 @@ erlang
 go
 groovy
 haskell-stack
+java
 node
 python
 ruby
