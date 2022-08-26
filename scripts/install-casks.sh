@@ -21,7 +21,6 @@ gimp
 google-drive
 google-cloud-sdk
 iterm2
-java
 karabiner-elements
 keycastr
 lens
@@ -58,7 +57,7 @@ brew upgrade --cask
 for pkg in "${casks[@]}"; do
   if ! brew list --cask -1 | grep -q "^$pkg\$" ; then
     echo "Installing '$pkg'..."
-    brew install "$pkg" --cask
+    brew install --appdir=~/Applications "$pkg" --cask
   else
     echo "'$pkg' already installed"
   fi

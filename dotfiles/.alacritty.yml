@@ -102,7 +102,7 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: MesloLGS NF
+    family: JetBrainsMono Nerd Font
     # Font family
     #
     # Default:
