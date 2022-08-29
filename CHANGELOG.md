@@ -1,3 +1,10 @@
+# [1.135.0](https://github.com/st3v3nhunt/dotfiles/compare/1.134.0...1.135.0) (2022-08-29)
+
+
+### Features
+
+* better vim search ([#390](https://github.com/st3v3nhunt/dotfiles/issues/390)) ([35708a5](https://github.com/st3v3nhunt/dotfiles/commit/35708a5e0e58847c7197f249af2ac6ff111f1b14))
+
 # [1.134.0](https://github.com/st3v3nhunt/dotfiles/compare/1.133.0...1.134.0) (2022-07-31)
 
 
