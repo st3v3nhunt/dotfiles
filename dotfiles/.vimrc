@@ -126,7 +126,7 @@ let g:ctrlp_use_caching=1
 
 " Ack - use ripgrep if available
 if executable('rg')
-  let g:ackprg='rg --vimgrep'
+  let g:ackprg='rg --vimgrep --smart-case --hidden -g "!.git/"'
 endif
 
 " " Bind K to search for word under cursor
