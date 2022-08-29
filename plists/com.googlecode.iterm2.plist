@@ -470,6 +470,8 @@
 			<string>No</string>
 			<key>Description</key>
 			<string>Default</string>
+			<key>Disable Printing</key>
+			<false/>
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
@@ -801,7 +803,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>JetBrainsMonoNerdFontCompleteM-Regular 11</string>
+			<string>JetBrainsMonoNerdFontCompleteM-Regular 10.5</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -870,16 +872,8 @@
 			<string>/Users/shunt</string>
 		</dict>
 	</array>
-	<key>OpenArrangementAtStartup</key>
-	<false/>
 	<key>OpenBookmark</key>
 	<false/>
-	<key>OpenNoWindowsAtStartup</key>
-	<false/>
-	<key>PMPrintingExpandedStateForPrint2</key>
-	<false/>
-	<key>Print In Black And White</key>
-	<true/>
 	<key>PromptOnQuitEvenIfThereAreNoWindows</key>
 	<true/>
 	<key>SoundForEsc</key>
