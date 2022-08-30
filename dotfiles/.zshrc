@@ -132,7 +132,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # Add .NET Core SDK tools
-export PATH="$PATH:~/.dotnet/tools"
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
 
 # zsh parameter completion for the dotnet CLI
 _dotnet_zsh_complete()

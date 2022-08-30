@@ -68,6 +68,7 @@ vim
 
 # Languages
 brews+=(
+dotnet
 elixir
 erlang
 go
