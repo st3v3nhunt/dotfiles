@@ -13,7 +13,7 @@ km.set('n', '<space>q', vim.diagnostic.setloclist)
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
-  -- vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
@@ -23,14 +23,13 @@ local on_attach = function(client, bufnr)
   km.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
   km.set('n', '<space>h', vim.lsp.buf.hover, bufopts)
   km.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
-  -- Clashes with move to split above and signature_help seems empty
   km.set('n', '<leader>s', vim.lsp.buf.signature_help, bufopts)
   -- km.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
   -- km.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, bufopts)
   -- km.set('n', '<space>wl', function()
   --   print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
   -- end, bufopts)
-  km.set('n', '<space>rr', vim.lsp.buf.rename, bufopts)
+  km.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
   km.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
   km.set('n', '<space>gr', vim.lsp.buf.references, bufopts)
   km.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
@@ -83,6 +82,13 @@ nvim_lsp.jsonls.setup {
       validate = { enable = true },
     },
   },
+}
+nvim_lsp.omnisharp.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+  cmd = { vim.env.HOME .. "/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp" },
+  enable_roslyn_analyzers = true,
+  organize_imports_on_format = true,
 }
 nvim_lsp.rust_analyzer.setup {
   capabilities = capabilities,

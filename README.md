@@ -115,12 +115,22 @@ plugin is installed `:GoInstallBinaries` needs to be run from within Vim.
 ### C# IDE like abilities
 
 [OmniSharp](https://github.com/OmniSharp/omnisharp-roslyn) will provide IDE
-like capabilities within Vim. The easiest way to do that is to install the
+like capabilities within (Neo)Vim. The easiest way to do that is to install the
 [OmniSharp-vim](https://github.com/OmniSharp/omnisharp-vim) plugin which will
 happen using the [.vimrc](./dotfiles/.vimrc) in this repository.
-Once installed, autocomplete is available in insert mode using `<C-x><C-o>`.
-There are a number of shortcuts available for frequently used commands,
-available for review in [cs.vim](./vim/ftplugin/cs.vim).
+
+When a `.cs` file is opened, the plugin will check for an existing installation
+of OmniSharp, if none can be found you will be prompted to install it. Based on
+experience it is best to install it manually. Follow the instructions for
+[downloading OmniSharp](https://github.com/omnisharp/omnisharp-roslyn#downloading-omnisharp).
+Unpack the download and add it to the same directory specified in `.vimrc`
+(currently `~/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp)`.
+
+OmniSharp is setup to be used with the native LSP in Neovim and as such should
+use the majority of the same keybindings as other LSP clients, additional `C#`
+keybindings and shortcuts can be found in [cs.vim](./vim/ftplugin/cs.vim).
+
+#### Install gt
 
 ## Terminal
 

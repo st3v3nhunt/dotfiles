@@ -109,6 +109,10 @@ let g:terraform_align=1
 let g:terraform_fmt_on_save=1
 let g:rustfmt_autosave=1
 
+" OmniSharp settings
+let g:OmniSharp_server_use_net6=1
+let g:OmniSharp_server_path='~/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp' " Default path for OmniSharp install
+
 " NERDTree settings
 let NERDTreeShowHidden=1
 let g:NERDTreeMapOpenSplit='h'
