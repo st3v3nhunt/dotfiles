@@ -23,7 +23,6 @@ Plug 'crusoexia/vim-monokai'
 if !exists('g:vscode')
   Plug 'airblade/vim-gitgutter'                                                  " Git in gutter
   Plug 'christoomey/vim-tmux-navigator'                                          " Same split shortcuts in vim and tmux
-  Plug 'ctrlpvim/ctrlp.vim'                                                      " Fuzzy file finder
   Plug 'junegunn/gv.vim'                                                         " Git commit browser
   Plug 'ludovicchabant/vim-gutentags'                                            " Tag management
   Plug 'majutsushi/tagbar'                                                       " A ctag viewer
@@ -39,7 +38,6 @@ Plug 'editorconfig/editorconfig-vim'                                           "
 Plug 'godlygeek/tabular'                                                       " Tabularisation
 Plug 'kevinoid/vim-jsonc'                                                      " JSON-C syntax
 Plug 'junegunn/vim-easy-align'                                                 " Better/easier alignment
-Plug 'mileszs/ack.vim'                                                         " File searching
 Plug 'ntpeters/vim-better-whitespace'                                          " Better whitespace
 Plug 'towolf/vim-helm'                                                         " Helm template highlighting
 Plug 'tpope/vim-commentary'                                                    " Comment out lines
@@ -56,7 +54,6 @@ Plug 'google/yapf'                                                             "
 Plug 'leafgarland/typescript-vim'                                              " TypeScript
 Plug 'leafOfTree/vim-svelte-plugin'                                            " Svelte
 Plug 'Glench/Vim-Jinja2-Syntax'                                                " Jinja/Nunjucks
-Plug 'OmniSharp/omnisharp-vim'                                                 " C#
 Plug 'pangloss/vim-javascript'                                                 " JavaScript
 Plug 'posva/vim-vue'                                                           " Vue
 Plug 'rust-lang/rust.vim'                                                      " Rust
@@ -89,6 +86,8 @@ if has('nvim') && !exists('g:vscode')
   " Plug 'williamboman/nvim-lsp-installer'                                       " Installer for Language Servers used by Neovim's built-in LSP
   Plug 'neovim/nvim-lspconfig'                                                 " Common configs for Neovim's built-in LSP
   Plug 'nvim-lua/plenary.nvim'                                                 " Lua functions
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }                     " Fuzzy finder over lists
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}                  " Treesitter interface
 endif
 call plug#end()                                                                " all plugins must be added before this line
 
@@ -109,10 +108,6 @@ let g:terraform_align=1
 let g:terraform_fmt_on_save=1
 let g:rustfmt_autosave=1
 
-" OmniSharp settings
-let g:OmniSharp_server_use_net6=1
-let g:OmniSharp_server_path='~/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp' " Default path for OmniSharp install
-
 " NERDTree settings
 let NERDTreeShowHidden=1
 let g:NERDTreeMapOpenSplit='h'
@@ -122,20 +117,6 @@ let g:NERDTreeMapOpenVSplit='v'
 let g:better_whitespace_enabled=1
 let g:better_whitespace_filetypes_blacklist=[]
 
-" CtrlP - Ignore VCS and node stuff
-let g:ctrlp_custom_ignore='\v[\/](coverage|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
-let g:ctrlp_extensions=['tag']
-let g:ctrlp_show_hidden=1
-let g:ctrlp_use_caching=1
-
-" Ack - use ripgrep if available
-if executable('rg')
-  let g:ackprg='rg --vimgrep --smart-case --hidden -g "!.git/"'
-endif
-
-" " Bind K to search for word under cursor
-nnoremap K :Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>
-
 " vim-airline settings
 let g:airline_extension=['ale']
 let g:airline_powerline_fonts=1
@@ -144,15 +125,6 @@ let g:airline#extensions#ale#enabled=1
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='unique_tail_improved'
 let g:airline_section_b=''
-
-" ALE configuration
-" let g:ale_typescript_standard_executable='ts-standard'
-" let g:ale_completion_tsserver_autoimport=1
-" let g:ale_fix_on_save=1
-" let g:ale_hover_cursor=0
-" let g:ale_lint_on_save=1
-" let g:ale_sign_error='✗✗'
-" let g:ale_sign_warning='∆∆'
 
 " vim-go configuration
 let g:go_fmt_command='goimports'
