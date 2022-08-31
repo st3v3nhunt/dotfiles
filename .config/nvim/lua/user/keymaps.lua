@@ -49,7 +49,7 @@ setKeyMap('n', '<leader>q', ':q<CR>')
 setKeyMap('n', '<leader>z', '<C-z>')
 
 -- Formatting mappings
-setKeyMap('n', '<leader>f', ':Autoformat<CR>')
+setKeyMap('n', '<space>f', ':Autoformat<CR>')
 setKeyMap('n', '<leader>jq', ':%! jq<CR>')
 
 -- vimrc file mappings
