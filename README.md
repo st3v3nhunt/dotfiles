@@ -115,20 +115,19 @@ plugin is installed `:GoInstallBinaries` needs to be run from within Vim.
 ### C# IDE like abilities
 
 [OmniSharp](https://github.com/OmniSharp/omnisharp-roslyn) will provide IDE
-like capabilities within (Neo)Vim. The easiest way to do that is to install the
-[OmniSharp-vim](https://github.com/OmniSharp/omnisharp-vim) plugin which will
-happen using the [.vimrc](./dotfiles/.vimrc) in this repository.
+like capabilities within (Neo)Vim in collaboration with Nvim's
+[LSP](https://neovim.io/doc/user/lsp.html) using the
+[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) plugin.
 
 When a `.cs` file is opened, the plugin will check for an existing installation
-of OmniSharp, if none can be found you will be prompted to install it. Based on
-experience it is best to install it manually. Follow the instructions for
-[downloading OmniSharp](https://github.com/omnisharp/omnisharp-roslyn#downloading-omnisharp).
-Unpack the download and add it to the same directory specified in `.vimrc`
-(currently `~/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp)`.
+of OmniSharp, if none can be found you will be prompted to install it.
 
-OmniSharp is setup to be used with the native LSP in Neovim and as such should
-use the majority of the same keybindings as other LSP clients, additional `C#`
-keybindings and shortcuts can be found in [cs.vim](./vim/ftplugin/cs.vim).
+OmniSharp needs to be installed as per the
+[instructions](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#omnisharp).
+It will need to be downloaded from the
+[OmniSharp GitHub releases](https://github.com/OmniSharp/omnisharp-roslyn/releases).
+Unpack the download and add it to the same directory specified in
+[lsp.lua](.config/nvim/lua/plugins/lsp.lua).
 
 #### Install gt
 

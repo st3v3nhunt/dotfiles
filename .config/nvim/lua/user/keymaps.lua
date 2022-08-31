@@ -3,13 +3,6 @@ local setKeyMap = vim.keymap.set
 setKeyMap('x', 'ga', '<Plug>(EasyAlign)')
 setKeyMap('n', 'ga', '<Plug>(EasyAlign)')
 
--- NERDTree mappings
-setKeyMap('n', '<leader>re', ':NERDTreeFind<CR>')
-setKeyMap('n', '<C-n>', ':NERDTreeToggle<CR>')
-
--- Bind K to search for word under cursor
--- setKeyMap('n', 'K', ':Ack! "\b<C-R><C-W>\b"<CR>:cw<CR>')
-setKeyMap('n', '\\', ':Ack!<space>')
 setKeyMap('n', '<F8>', ':TagbarToggle<CR>')
 
 -- Use oo and OO for entering new lines without going into insert mode
@@ -49,7 +42,7 @@ setKeyMap('n', '<leader>q', ':q<CR>')
 setKeyMap('n', '<leader>z', '<C-z>')
 
 -- Formatting mappings
-setKeyMap('n', '<leader>f', ':Autoformat<CR>')
+setKeyMap('n', '<space>f', ':Autoformat<CR>')
 setKeyMap('n', '<leader>jq', ':%! jq<CR>')
 
 -- vimrc file mappings

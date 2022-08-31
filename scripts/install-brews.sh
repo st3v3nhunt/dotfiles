@@ -7,6 +7,7 @@ brew tap johanhaleby/kubetail
 
 # Utils
 brews=(
+actionlint
 adr-tools
 asciinema
 azcopy
@@ -18,6 +19,7 @@ cmake
 cloudfoundry/tap/cf-cli@7
 drawio
 exercism
+fd
 gcc
 glow
 gpg
