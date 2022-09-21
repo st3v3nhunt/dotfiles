@@ -1,3 +1,10 @@
+# [1.136.0](https://github.com/st3v3nhunt/dotfiles/compare/1.135.0...1.136.0) (2022-09-21)
+
+
+### Features
+
+* install brew casks into user app dir ([#393](https://github.com/st3v3nhunt/dotfiles/issues/393)) ([4829310](https://github.com/st3v3nhunt/dotfiles/commit/482931039c877db05adcbfeb567f2c7ec0ea50c9))
+
 # [1.135.0](https://github.com/st3v3nhunt/dotfiles/compare/1.134.0...1.135.0) (2022-08-29)
 
 
