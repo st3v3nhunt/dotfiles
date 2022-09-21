@@ -30,7 +30,7 @@ local on_attach = function(client, bufnr)
   --   print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
   -- end, bufopts)
   km.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
-  km.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
+  km.set('n', '<leader>.', vim.lsp.buf.code_action, bufopts)
   km.set('n', '<space>gr', vim.lsp.buf.references, bufopts)
   km.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
 

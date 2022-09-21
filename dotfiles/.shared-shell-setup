@@ -24,4 +24,8 @@ export VISUAL=nvim
 export EDITOR=$VISUAL
 
 # Ensure HOMEBREW_PREFIX is set (differs by OS and processor)
-HOMEBREW_PREFIX="$(brew --prefix)"
+export HOMEBREW_PREFIX="$(brew --prefix)"
+
+# Install HOMEBREW casks (apps) into user specific application directory,
+# avoids need for `sudo`
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
