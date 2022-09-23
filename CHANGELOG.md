@@ -1,3 +1,10 @@
+# [1.137.0](https://github.com/st3v3nhunt/dotfiles/compare/1.136.0...1.137.0) (2022-09-23)
+
+
+### Features
+
+* move hop to less used key ([#394](https://github.com/st3v3nhunt/dotfiles/issues/394)) ([1918da3](https://github.com/st3v3nhunt/dotfiles/commit/1918da35a9c31822b586ea7eaf2f5597073f0740))
+
 # [1.136.0](https://github.com/st3v3nhunt/dotfiles/compare/1.135.0...1.136.0) (2022-09-21)
 
 
