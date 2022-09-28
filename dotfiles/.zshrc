@@ -195,12 +195,14 @@ export KEYTIMEOUT=1
 fpath+=~/.zfunc
 
 autoload -U +X bashcompinit && bashcompinit
-# Hashicorp Vault completion
-complete -o nospace -C $HOMEBREW_PREFIX/bin/vault vault
-# Azure CLI completion
-source $HOMEBREW_PREFIX/etc/bash_completion.d/az
 # AWS CLI completion
 complete -C $HOMEBREW_PREFIX/bin/aws_completer aws
+# Azure CLI completion
+source $HOMEBREW_PREFIX/etc/bash_completion.d/az
+# Hashicorp Terraform completion
+complete -o nospace -C $HOMEBREW_PREFIX/bin/terraform terraform
+# Hashicorp Vault completion
+complete -o nospace -C $HOMEBREW_PREFIX/bin/vault vault
 
 # Enable (and configure) zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
