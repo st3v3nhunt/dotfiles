@@ -29,8 +29,10 @@ export VISUAL=$EDITOR
 # Set vi keybindings for use in prompt
 set -o vi
 
-complete -C /usr/local/bin/vault vault
-complete -C /usr/local/bin/aws_completer aws
+# completions
+complete -C "$(which vault)" vault
+complete -C "$(which aws_completer)" aws
+complete -C "$(which terraform)" terraform
 
 # Deno autocomplete
 if [[ -n "$WSL_DISTRO_NAME" ]]; then
@@ -54,7 +56,6 @@ _dotnet_bash_complete()
   # shellcheck disable=SC2207
   COMPREPLY=( $(compgen -W "$completions" -- "$word") )
 }
-
 complete -f -F _dotnet_bash_complete dotnet
 
 # Rust (Cargo)

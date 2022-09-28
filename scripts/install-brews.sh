@@ -2,6 +2,7 @@
 
 # Tap the Azure Functions repo
 brew tap azure/functions
+brew tap hashicorp/tap
 brew tap heroku/brew
 brew tap johanhaleby/kubetail
 
@@ -24,6 +25,7 @@ gcc
 glow
 gpg
 gpg-suite-no-mail
+hashicorp/tap/terraform
 hugo
 imagemagick
 jmeter
