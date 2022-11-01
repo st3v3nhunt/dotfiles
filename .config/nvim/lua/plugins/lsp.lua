@@ -47,7 +47,7 @@ g.markdown_fenced_languages = {
 
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 local nvim_lsp = require('lspconfig')
 nvim_lsp.bashls.setup {
