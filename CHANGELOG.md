@@ -1,3 +1,10 @@
+# [1.138.0](https://github.com/st3v3nhunt/dotfiles/compare/1.137.0...1.138.0) (2022-11-01)
+
+
+### Features
+
+* neovim updates ([#396](https://github.com/st3v3nhunt/dotfiles/issues/396)) ([bbecb85](https://github.com/st3v3nhunt/dotfiles/commit/bbecb85e5a34d96ec5413a77ed6a47f2835e66a0))
+
 # [1.137.0](https://github.com/st3v3nhunt/dotfiles/compare/1.136.0...1.137.0) (2022-09-23)
 
 
