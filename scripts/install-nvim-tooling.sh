@@ -12,6 +12,9 @@ npm i -g dockerfile-language-server-nodejs
 # https://github.com/elixir-lsp/elixir-ls
 brew install elixir-ls
 
+# https://github.com/golang/tools/tree/master/gopls
+go install golang.org/x/tools/gopls@latest
+
 # JSON
 # https://github.com/hrsh7th/vscode-langservers-extracted
 npm i -g vscode-langservers-extracted

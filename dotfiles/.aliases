@@ -31,6 +31,7 @@ alias j=jobs
 alias k=kubectl
 alias kt=kubetail
 alias mk=minikube
+alias sed=gsed
 alias sbp='. ~/.bashrc'
 alias szp='. ~/.zshrc'
 alias tf=terraform
