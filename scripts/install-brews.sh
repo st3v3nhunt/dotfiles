@@ -25,6 +25,7 @@ gcc
 glow
 gpg
 gpg-suite-no-mail
+gnu-sed
 hashicorp/tap/terraform
 hugo
 imagemagick
