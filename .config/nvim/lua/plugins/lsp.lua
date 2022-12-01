@@ -36,7 +36,7 @@ local on_attach = function(client, bufnr)
 
   -- Turn off formatting for servers where there is a formatter setup with nullls
   if client.name == "tsserver" or client.name == "jsonls" or client.name == "svelte" then
-    client.resolved_capabilities.document_formatting = false
+    client.server_capabilities.document_formatting = false
   end
 end
 
