@@ -1,3 +1,10 @@
+## [1.138.1](https://github.com/st3v3nhunt/dotfiles/compare/1.138.0...1.138.1) (2022-12-01)
+
+
+### Bug Fixes
+
+* updates for latest nvim version ([#398](https://github.com/st3v3nhunt/dotfiles/issues/398)) ([6194b04](https://github.com/st3v3nhunt/dotfiles/commit/6194b04ba359269a1f6e42847022f2f6d8845a0b))
+
 # [1.138.0](https://github.com/st3v3nhunt/dotfiles/compare/1.137.0...1.138.0) (2022-11-01)
 
 
