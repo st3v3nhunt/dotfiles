@@ -32,7 +32,7 @@ local on_attach = function(client, bufnr)
   km.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
   km.set('n', '<leader>.', vim.lsp.buf.code_action, bufopts)
   km.set('n', '<space>gr', vim.lsp.buf.references, bufopts)
-  km.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+  km.set('n', '<space>f', vim.lsp.buf.format, bufopts)
 
   -- Turn off formatting for servers where there is a formatter setup with nullls
   if client.name == "tsserver" or client.name == "jsonls" or client.name == "svelte" then
