@@ -68,7 +68,6 @@ if has('nvim') && !exists('g:vscode')
   Plug 'b0o/schemastore.nvim'                                                  " JSON Schema Store access
   Plug 'hrsh7th/nvim-cmp'                                                      " Autocompletion
   Plug 'hrsh7th/cmp-buffer'                                                    " Buffer source for nvim-cmp
-  Plug 'hrsh7th/cmp-cmdline'                                                   " CMD line source for nvim-cmp
   Plug 'hrsh7th/cmp-emoji'                                                     " Emoji source for nvim-cmp
   Plug 'hrsh7th/cmp-nvim-lua'                                                  " nvim lua source for nvim-cmp
   Plug 'hrsh7th/cmp-nvim-lsp-signature-help'                                   " Signature help source for nvim-cmp
