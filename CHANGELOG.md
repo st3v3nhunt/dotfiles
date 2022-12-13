@@ -1,3 +1,10 @@
+# [1.139.0](https://github.com/st3v3nhunt/dotfiles/compare/1.138.1...1.139.0) (2022-12-13)
+
+
+### Features
+
+* disable mouse for nvim ([#400](https://github.com/st3v3nhunt/dotfiles/issues/400)) ([8793150](https://github.com/st3v3nhunt/dotfiles/commit/879315047678cfae00ecd7099cdab9c65ebe5257))
+
 ## [1.138.1](https://github.com/st3v3nhunt/dotfiles/compare/1.138.0...1.138.1) (2022-12-01)
 
 
