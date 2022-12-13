@@ -50,3 +50,4 @@ o.timeoutlen = 500
 -- o.t_Co=256
 o.undolevels = 1000
 o.updatetime = 300
+o.mouse = ''
