@@ -29,3 +29,6 @@ export HOMEBREW_PREFIX="$(brew --prefix)"
 # Install HOMEBREW casks (apps) into user specific application directory,
 # avoids need for `sudo`
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+
+# Add Poetry to PATH
+export PATH="/Users/steven.hunt/.local/bin:$PATH"
