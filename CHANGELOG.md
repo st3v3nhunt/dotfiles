@@ -1,3 +1,10 @@
+# [1.140.0](https://github.com/st3v3nhunt/dotfiles/compare/1.139.0...1.140.0) (2023-01-10)
+
+
+### Features
+
+* include poerty bin to path ([#402](https://github.com/st3v3nhunt/dotfiles/issues/402)) ([a22ac4b](https://github.com/st3v3nhunt/dotfiles/commit/a22ac4b303715e9be301428fc6d393d609898836))
+
 # [1.139.0](https://github.com/st3v3nhunt/dotfiles/compare/1.138.1...1.139.0) (2022-12-13)
 
 
