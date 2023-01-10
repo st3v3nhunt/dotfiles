@@ -28,6 +28,9 @@ done
 echo "Installing ansible"
 pip3 install --user ansible
 
+echo "Installing poetry package manager"
+curl -sSL https://install.python-poetry.org | python3 -
+
 # Install pre-commit hook script
 pre-commit init-templatedir ~/.git-template
 
