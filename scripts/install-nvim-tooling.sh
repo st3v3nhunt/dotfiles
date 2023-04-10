@@ -55,4 +55,4 @@ npm i -g markdownlint-cli
 # https://github.com/mantoni/eslint_d.js
 npm i -g eslint_d
 # https://github.com/Riverside-Healthcare/djLint
-pip install djlint
+pip3 install djlint
