@@ -1,3 +1,10 @@
+# [1.141.0](https://github.com/st3v3nhunt/dotfiles/compare/1.140.0...1.141.0) (2023-04-11)
+
+
+### Features
+
+* tweaks for WSL2 ([#403](https://github.com/st3v3nhunt/dotfiles/issues/403)) ([086b015](https://github.com/st3v3nhunt/dotfiles/commit/086b01546ad23a26e2de93970171fe988ed90b43))
+
 # [1.140.0](https://github.com/st3v3nhunt/dotfiles/compare/1.139.0...1.140.0) (2023-01-10)
 
 
