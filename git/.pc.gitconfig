@@ -1,5 +1,5 @@
 [credential]
-	helper = "/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
+	helper = "/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe"
 [user]
 	comment = PC
 	email = st3v3nhunt@users.noreply.github.com
