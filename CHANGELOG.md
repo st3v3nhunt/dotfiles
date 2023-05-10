@@ -1,3 +1,10 @@
+# [1.142.0](https://github.com/st3v3nhunt/dotfiles/compare/1.141.0...1.142.0) (2023-05-10)
+
+
+### Features
+
+* delete nvim swap files ([#405](https://github.com/st3v3nhunt/dotfiles/issues/405)) ([34a3cdc](https://github.com/st3v3nhunt/dotfiles/commit/34a3cdc61f06417bf1fdf5378219a47d1763718b))
+
 # [1.141.0](https://github.com/st3v3nhunt/dotfiles/compare/1.140.0...1.141.0) (2023-04-11)
 
 
