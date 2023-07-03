@@ -167,6 +167,12 @@ compctl -K _dotnet_zsh_complete dotnet
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Add Brew's Ruby to path (Apple silicon - might need moving for WSL)
+if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
+  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+  export PATH=`gem environment gemdir`/bin:$PATH
+fi
+
 # PERSONAL SETUP
 source ~/.aliases
 source ~/.functions
