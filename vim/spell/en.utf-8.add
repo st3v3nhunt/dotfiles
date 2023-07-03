@@ -25,9 +25,11 @@ env
 eslint
 ETL
 ffc
+FHIR
 frontend
 GitHub
 GitLab
+GUID
 Homebrew
 hostname
 Hotjar
@@ -36,6 +38,7 @@ Jenkinsfile
 js
 JS
 json
+JWT
 k8s
 Karabiner
 keychain
@@ -58,6 +61,7 @@ nvm
 OGL
 OMG
 OWASP
+PDS
 POC
 PostgreSQL
 Powerline
@@ -83,6 +87,7 @@ toml
 tmux
 TypeScript
 unmute
+UUID
 vimrc
 Vue
 webpack
