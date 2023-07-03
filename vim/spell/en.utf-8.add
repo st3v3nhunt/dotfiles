@@ -24,7 +24,6 @@ enum
 env
 eslint
 ETL
-ffc
 FHIR
 frontend
 GitHub
@@ -32,7 +31,6 @@ GitLab
 GUID
 Homebrew
 hostname
-Hotjar
 iTerm2
 Jenkinsfile
 js
@@ -71,7 +69,6 @@ rebase
 Redis
 SemVer
 serverless
-SFI
 sha
 snyk
 SonarCloud
@@ -91,7 +88,6 @@ UUID
 vimrc
 Vue
 webpack
-Webtrends
 WIP
 WSL
 yaml
