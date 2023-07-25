@@ -13,6 +13,7 @@ CDN
 CloudFormation
 CNAME
 config
+conformant
 css
 defra
 deno
@@ -23,12 +24,14 @@ Elasticsearch
 enum
 env
 eslint
+ETag
 ETL
 FHIR
 frontend
 GitHub
 GitLab
 GUID
+HL7
 Homebrew
 hostname
 iTerm2
@@ -56,6 +59,7 @@ npm
 NuGet
 nvim
 nvm
+OAuth
 OGL
 OMG
 OWASP
@@ -67,6 +71,7 @@ PowerShell
 PR
 rebase
 Redis
+RESTful
 SemVer
 serverless
 sha
@@ -74,8 +79,10 @@ snyk
 SonarCloud
 SonarQube
 ssl
+SSP
 st3v3nhunt
 struct
+STU3
 submodules
 tcp
 TeamCity
