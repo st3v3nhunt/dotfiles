@@ -85,7 +85,7 @@ if has('nvim') && !exists('g:vscode')
   " Plug 'williamboman/nvim-lsp-installer'                                       " Installer for Language Servers used by Neovim's built-in LSP
   Plug 'neovim/nvim-lspconfig'                                                 " Common configs for Neovim's built-in LSP
   Plug 'nvim-lua/plenary.nvim'                                                 " Lua functions
-  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }                     " Fuzzy finder over lists
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }                     " Fuzzy finder over lists
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}                  " Treesitter interface
 endif
 call plug#end()                                                                " all plugins must be added before this line
