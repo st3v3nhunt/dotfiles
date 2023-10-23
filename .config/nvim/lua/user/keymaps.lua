@@ -30,7 +30,7 @@ setKeyMap('n', 'tc', ':tabclose<CR>')
 setKeyMap('n', 'tt', '<C-W>T')
 
 -- Fugitive mappings
-setKeyMap('n', '<leader>gb', ':Gblame<CR>')
+setKeyMap('n', '<leader>gb', ':Git blame<CR>')
 setKeyMap('n', '<leader>gvd', ':Gvdiffsplit!<CR>')
 setKeyMap('n', '<leader>ghd', ':Ghdiffsplit!<CR>')
 setKeyMap('n', '<leader>gvdm', ':Gvdiffsplit! main<CR>')
