@@ -42,7 +42,6 @@ rename
 shellcheck
 tfenv
 "--HEAD universal-ctags/universal-ctags/universal-ctags"
-vault
 watch
 wget
 wireguard-tools
