@@ -93,12 +93,14 @@ call plug#end()                                                                "
 colorscheme monokai
 
 " Special cases for filetypes
-autocmd vimrc BufNewFile,BufRead .aliases,.env.* set filetype=sh
 autocmd vimrc BufNewFile,BufRead *.md setlocal spell
+autocmd vimrc BufNewFile,BufRead .aliases,.env.* set filetype=sh
+autocmd vimrc BufNewFile,BufRead Dockerfile.* set filetype=dockerfile
+autocmd vimrc BufNewFile,BufRead *.eex,*.heex,*.leex,*.sface,*.lexs set filetype=eelixir
 autocmd vimrc BufNewFile,BufRead *.gitconfig set filetype=gitconfig
 autocmd vimrc BufNewFile,BufRead *.nunjucks set filetype=html
-autocmd vimrc BufNewFile,BufRead Dockerfile.* set filetype=dockerfile
 autocmd vimrc BufNewFile,BufRead Jenkinsfile set syntax=groovy
+" autocmd vimrc BufWritePost *.ex,*.exs execute "!mix format %"
 autocmd vimrc BufWritePre * :silent! %s/\s\+$//e                               " Trim trailing whitespace on save, ignoring errors and messages
 autocmd vimrc BufWritePre * :silent! %s#\($\n\s*\)\+\%$##                      " Trim trailing empty lines on save, ignoring errors and messages
 
