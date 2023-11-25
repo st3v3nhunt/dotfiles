@@ -61,6 +61,7 @@ tmux
 brews+=(
 gh
 git
+git-lfs
 git-secrets
 )
 

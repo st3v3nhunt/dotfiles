@@ -78,7 +78,7 @@ cmp.setup {
       },
     },
     { name = 'luasnip' },
-    { name = 'emoji' },
+    -- { name = 'emoji' },
     { name = 'path' },
     { name = 'nvim_lua' },
     { name = 'nvim_lsp_signature_help' },

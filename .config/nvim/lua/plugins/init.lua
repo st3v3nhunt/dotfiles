@@ -5,4 +5,4 @@ require('./plugins/nullls')
 require('./plugins/nerdtree')
 require('./plugins/telescope')
 -- treesitter does not load consistently
--- require('./plugins/treesitter')
+require('./plugins/treesitter')

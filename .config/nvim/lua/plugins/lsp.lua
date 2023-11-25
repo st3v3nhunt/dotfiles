@@ -69,6 +69,11 @@ nvim_lsp.elixirls.setup {
   on_attach = on_attach,
   cmd = { vim.env.HOMEBREW_PREFIX .. "/bin/elixir-ls" },
 }
+-- nvim_lsp.lexical.setup {
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+--   cmd = { vim.env.HOME .. "/code/lexical/_build/dev/package/lexical/bin/start_lexical.sh" },
+-- }
 nvim_lsp.gopls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
