@@ -51,9 +51,12 @@ yq
 # Terminal stuff
 brews+=(
 bash
+btop
 cmatrix
+fzf
 htop
 ripgrep
+tldr
 tmux
 )
 
@@ -73,7 +76,6 @@ vim
 
 # Languages
 brews+=(
-dotnet
 elixir
 erlang
 go
