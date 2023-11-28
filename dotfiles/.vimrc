@@ -21,16 +21,17 @@ Plug 'crusoexia/vim-monokai'
 
 " generally useful plugins
 if !exists('g:vscode')
-  Plug 'airblade/vim-gitgutter'                                                  " Git in gutter
-  Plug 'christoomey/vim-tmux-navigator'                                          " Same split shortcuts in vim and tmux
-  Plug 'junegunn/gv.vim'                                                         " Git commit browser
-  Plug 'ludovicchabant/vim-gutentags'                                            " Tag management
-  Plug 'majutsushi/tagbar'                                                       " A ctag viewer
-  Plug 'preservim/nerdtree'                                                      " File explorer
-  Plug 'tpope/vim-fugitive'                                                      " Git wrapper
-  Plug 'vim-airline/vim-airline'                                                 " File status bar
-  Plug 'vim-airline/vim-airline-themes'                                          " Themes for vim-airline
-  Plug 'w0rp/ale'                                                                " Asynchronous Lint Engine aka ALE
+  Plug 'airblade/vim-gitgutter'                                                " Git in gutter
+  Plug 'christoomey/vim-tmux-navigator'                                        " Same split shortcuts in vim and tmux
+  Plug 'junegunn/gv.vim'                                                       " Git commit browser
+  Plug 'ludovicchabant/vim-gutentags'                                          " Tag management
+  Plug 'majutsushi/tagbar'                                                     " A ctag viewer
+  Plug 'mattn/emmet-vim'                                                       " Emmet
+  Plug 'preservim/nerdtree'                                                    " File explorer
+  Plug 'tpope/vim-fugitive'                                                    " Git wrapper
+  Plug 'vim-airline/vim-airline'                                               " File status bar
+  Plug 'vim-airline/vim-airline-themes'                                        " Themes for vim-airline
+  Plug 'w0rp/ale'                                                              " Asynchronous Lint Engine aka ALE
 endif
 
 Plug 'Chiel92/vim-autoformat'                                                  " Generic code formatter
@@ -134,6 +135,9 @@ let g:go_highlight_function_calls=1
 let g:go_highlight_functions=1
 let g:go_highlight_operators=1
 let g:go_highlight_types=1
+
+" Emmet configuration
+let g:user_emmet_leader_key='<C-C>'
 
 " Copy into the system clipboard
 let s:clip='/c/Windows/System32/clip.exe'
