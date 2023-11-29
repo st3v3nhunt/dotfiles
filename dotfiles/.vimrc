@@ -17,7 +17,8 @@ autocmd vimrc VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)
 
 call plug#begin()
 " theme(s)
-Plug 'crusoexia/vim-monokai'
+" Plug 'crusoexia/vim-monokai'
+Plug 'tanvirtin/monokai.nvim'
 
 " generally useful plugins
 if !exists('g:vscode')
@@ -91,7 +92,7 @@ if has('nvim') && !exists('g:vscode')
 endif
 call plug#end()                                                                " all plugins must be added before this line
 
-colorscheme monokai
+colorscheme monokai_soda
 
 " Special cases for filetypes
 autocmd vimrc BufNewFile,BufRead *.md setlocal spell
