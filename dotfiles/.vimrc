@@ -79,6 +79,7 @@ if has('nvim') && !exists('g:vscode')
   Plug 'onsails/lspkind.nvim'                                                  " Pictograms for nvim-cmp menu
   Plug 'folke/trouble.nvim'                                                    " Pretty diagnostics, referecens, search results, etc.
   Plug 'nvim-tree/nvim-web-devicons'                                           " Pretty icons
+  Plug 'roobert/tailwindcss-colorizer-cmp.nvim'                                " Colorise tailwind suggestions
 
   Plug 'nvimtools/none-ls.nvim'                                                " LS diagnostics, code actions and more
 
