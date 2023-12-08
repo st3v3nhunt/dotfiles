@@ -32,3 +32,8 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 # Add Poetry to PATH
 export PATH="/Users/steven.hunt/.local/bin:$PATH"
+
+# Add shell history for iex
+export ERL_AFLAGS="-kernel shell_history enabled"
+
+export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
