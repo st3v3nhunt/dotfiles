@@ -54,6 +54,10 @@ cmp.setup {
         nvim_lua = "[Lua]",
         latex_symbols = "[Latex]",
       }),
+      before = function (entry, vim_item)
+        vim_item = require('tailwindcss-colorizer-cmp').formatter(entry, vim_item)
+        return vim_item
+      end
     })
   },
   -- Order here determines order of suggestions
