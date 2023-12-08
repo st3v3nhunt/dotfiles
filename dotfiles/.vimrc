@@ -77,6 +77,8 @@ if has('nvim') && !exists('g:vscode')
   Plug 'hrsh7th/cmp-nvim-lsp'                                                  " LSP source for nvim-cmp
   Plug 'hrsh7th/cmp-path'                                                      " Path source for nvim-cmp
   Plug 'onsails/lspkind.nvim'                                                  " Pictograms for nvim-cmp menu
+  Plug 'folke/trouble.nvim'                                                    " Pretty diagnostics, referecens, search results, etc.
+  Plug 'nvim-tree/nvim-web-devicons'                                           " Pretty icons
 
   Plug 'jose-elias-alvarez/null-ls.nvim'                                       " LS diagnostics, code actions and more
 
