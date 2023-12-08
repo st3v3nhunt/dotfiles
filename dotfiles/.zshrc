@@ -132,7 +132,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # Add .NET Core SDK tools
-export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+export DOTNET_ROOT=$HOMEBREW_PREFIX/dotnet/libexec
 
 # zsh parameter completion for the dotnet CLI
 _dotnet_zsh_complete()
@@ -212,6 +212,9 @@ complete -o nospace -C $HOMEBREW_PREFIX/bin/vault vault
 
 # Enable (and configure) zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# asdf
+source $(brew --prefix asdf)/libexec/asdf.sh
 
 # tabtab source for packages
 # uninstall by removing these lines

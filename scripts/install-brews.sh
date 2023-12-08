@@ -11,6 +11,7 @@ brews=(
 actionlint
 adr-tools
 asciinema
+asdf
 azcopy
 azure-cli
 azure-functions-core-tools@4
@@ -18,9 +19,12 @@ aws-iam-authenticator
 aws-vault
 cmake
 cloudfoundry/tap/cf-cli@7
+coreutils
+curl
 drawio
 exercism
 fd
+gawk
 gcc
 glow
 gpg
