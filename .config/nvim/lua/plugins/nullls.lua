@@ -27,6 +27,7 @@ null_ls.setup({
     codeactions.shellcheck,
 
     diagnostics.actionlint,
+    diagnostics.credo,
     diagnostics.djlint,
     diagnostics.markdownlint,
     diagnostics.shellcheck,
@@ -34,6 +35,7 @@ null_ls.setup({
     diagnostics.standardjs.with({ condition = uses_standardjs }),
 
     -- formatting.djlint.with({ extra_args = { "--profile", "nunjucks" } }),
+    formatting.mix,
     formatting.markdownlint,
     formatting.prettierd.with({
       condition = uses_prettier,
