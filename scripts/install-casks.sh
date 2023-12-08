@@ -30,8 +30,8 @@ ngrok
 owasp-zap
 postman
 powershell
+rectangle
 royal-tsx
-spectacle
 wireshark
 )
 
