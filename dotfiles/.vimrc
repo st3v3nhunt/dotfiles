@@ -80,7 +80,7 @@ if has('nvim') && !exists('g:vscode')
   Plug 'folke/trouble.nvim'                                                    " Pretty diagnostics, referecens, search results, etc.
   Plug 'nvim-tree/nvim-web-devicons'                                           " Pretty icons
 
-  Plug 'jose-elias-alvarez/null-ls.nvim'                                       " LS diagnostics, code actions and more
+  Plug 'nvimtools/none-ls.nvim'                                                " LS diagnostics, code actions and more
 
   " snippets
   Plug 'L3MON4D3/LuaSnip'                                                      " Snippets plugin
