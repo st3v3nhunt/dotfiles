@@ -69,6 +69,7 @@ nvim_lsp.elixirls.setup {
   on_attach = on_attach,
   cmd = { vim.env.HOMEBREW_PREFIX .. "/bin/elixir-ls" },
 }
+-- lexical didn't seem to be working...
 -- nvim_lsp.lexical.setup {
 --   capabilities = capabilities,
 --   on_attach = on_attach,
@@ -140,11 +141,18 @@ nvim_lsp.svelte.setup {
 nvim_lsp.tailwindcss.setup {
   capabilities = capabilities,
   on_attach = on_attach,
+  init_options = {
+    userLanguages = {
+      elixir = "html-eex",
+      eelixir = "html-eex",
+      heex = "html-eex",
+    },
+  },
 }
-nvim_lsp.taplo.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
+-- nvim_lsp.taplo.setup {
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+-- }
 local ts_utils = require('nvim-lsp-ts-utils')
 nvim_lsp.tsserver.setup {
   capabilities = capabilities,
