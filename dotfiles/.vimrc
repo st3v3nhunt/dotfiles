@@ -17,7 +17,6 @@ autocmd vimrc VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)
 
 call plug#begin()
 " theme(s)
-" Plug 'crusoexia/vim-monokai'
 Plug 'tanvirtin/monokai.nvim'
 
 " generally useful plugins
@@ -87,11 +86,10 @@ if has('nvim') && !exists('g:vscode')
   Plug 'L3MON4D3/LuaSnip'                                                      " Snippets plugin
   Plug 'rafamadriz/friendly-snippets'                                          " VSCode style snippets
 
-  " Plug 'williamboman/nvim-lsp-installer'                                       " Installer for Language Servers used by Neovim's built-in LSP
   Plug 'neovim/nvim-lspconfig'                                                 " Common configs for Neovim's built-in LSP
   Plug 'nvim-lua/plenary.nvim'                                                 " Lua functions
-  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }                     " Fuzzy finder over lists
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}                  " Treesitter interface
+  Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }                     " Fuzzy finder over lists
+  Plug 'nvim-treesitter/nvim-treesitter', { 'branch': 'master', 'do': ':TSUpdate' } " Treesitter interface
 endif
 call plug#end()                                                                " all plugins must be added before this line
 
