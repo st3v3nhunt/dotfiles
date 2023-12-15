@@ -35,11 +35,7 @@ complete -C "$(which aws_completer)" aws
 complete -C "$(which terraform)" terraform
 
 # Deno autocomplete
-if [[ -n "$WSL_DISTRO_NAME" ]]; then
-  source "$(brew --prefix)/etc/bash_completion.d/deno.bash"
-else
-  source /usr/local/etc/bash_completion.d/deno.bash
-fi
+source "$(brew --prefix)/etc/bash_completion.d/deno.bash"
 
 # bash parameter completion for the dotnet CLI
 _dotnet_bash_complete()
