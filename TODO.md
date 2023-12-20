@@ -1,11 +1,14 @@
 # Todo
 
-- [ ] Investigate [Telescope](https://github.com/nvim-telescope/telescope.nvim)
-- [ ] Investigate [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [ ] Investigate [Trouble](https://github.com/folke/trouble.nvim)
 - [ ] Investigate [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 - [ ] Investigate [lua-line](https://github.com/nvim-lualine/lualine.nvim)
-- [ ] Investigate maintaining a `.vimrc` along with a nvim setup
+
+## Done
+
+- [X] Investigate [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [X] Investigate [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [X] Investigate [Trouble](https://github.com/folke/trouble.nvim)
+- [X] Investigate maintaining a `.vimrc` along with a nvim setup
 - [X] Add completions
 - [X] Add snippets
 - [X] Split [.vimrc](./dotfiles/.vimrc) into multiple files
