@@ -190,7 +190,8 @@ This can also fix problems with the plugins not working.
     [docs](https://deno.land/manual/getting_started/setup_your_environment#shell-autocomplete)
     and re-source the shell
 * Problems with Vim plugins? Try updating them with `:PlugUpdate`
-* Problems with CoC plugins? Try updating them with `:CocUpdate`
+* Toggle Windows Terminal focus mode with `Ctrl+Shift+Enter`
+* Open Windows Terminal settings with `Ctrl+,`
 
 ## Architecture Decision Records
 

@@ -1,7 +1,7 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema-preview",
-    "actions": 
+    "actions":
     [
         {
             "command": "unbound",
@@ -10,31 +10,42 @@
         {
             "command": "unbound",
             "keys": "ctrl+shift+tab"
+        },
+        {
+            "command": "toggleFocusMode",
+            "keys": "ctrl+shift+enter"
         }
     ],
+    "alwaysShowNotificationIcon": true,
+    "alwaysShowTabs": false,
     "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-    "launchMode": "maximizedFocus",
-    "newTabMenu": 
+    "launchMode": "focus",
+    "minimizeToNotificationArea": true,
+    "newTabMenu":
     [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
+    "profiles":
     {
-        "defaults": 
+        "defaults":
         {
             "colorScheme": "MolokaiDark",
             "cursorShape": "vintage",
-            "font": 
+            "font":
             {
                 "face": "JetBrainsMono Nerd Font",
                 "size": 8.0
             }
         },
-        "list": 
+        "list":
         [
             {
+                "font":
+                {
+                    "size": 10.0
+                },
                 "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
                 "name": "Ubuntu-20.04",
@@ -103,7 +114,7 @@
             }
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
             "background": "#F7F7F7",
@@ -5557,6 +5568,7 @@
             "yellow": "#FEDE5D"
         }
     ],
+    "showTabsInTitlebar": false,
     "startOnUserLogin": true,
     "themes": []
 }
