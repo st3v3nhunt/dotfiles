@@ -76,7 +76,7 @@ if has('nvim') && !exists('g:vscode')
   Plug 'hrsh7th/cmp-nvim-lsp'                                                  " LSP source for nvim-cmp
   Plug 'hrsh7th/cmp-path'                                                      " Path source for nvim-cmp
   Plug 'onsails/lspkind.nvim'                                                  " Pictograms for nvim-cmp menu
-  Plug 'folke/trouble.nvim'                                                    " Pretty diagnostics, referecens, search results, etc.
+  Plug 'folke/trouble.nvim'                                                    " Pretty diagnostics, references, search results, etc.
   Plug 'nvim-tree/nvim-web-devicons'                                           " Pretty icons
   Plug 'roobert/tailwindcss-colorizer-cmp.nvim'                                " Colorise tailwind suggestions
 
@@ -140,6 +140,15 @@ let g:go_highlight_types=1
 
 " Emmet configuration
 let g:user_emmet_leader_key='<C-C>'
+
+" autopair common pairing
+inoremap ( ()<left>
+inoremap { {}<left>
+inoremap [ []<left>
+" skip over end of pairing to avoid doubling up
+inoremap <expr> ) getline('.')[col('.') - 1] == ")" ? "\<Right>" : ")"
+inoremap <expr> } getline('.')[col('.') - 1] == "}" ? "\<Right>" : "}"
+inoremap <expr> ] getline('.')[col('.') - 1] == "]" ? "\<Right>" : "]"
 
 " Copy into the system clipboard
 let s:clip='/c/Windows/System32/clip.exe'
