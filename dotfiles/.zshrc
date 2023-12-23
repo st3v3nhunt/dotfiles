@@ -237,3 +237,6 @@ export PATH="/usr/local/sbin:$PATH"
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
+# Export postgresql path
+export PATH=$HOMEBREW_PREFIX/opt/postgresql@16/bin:$PATH

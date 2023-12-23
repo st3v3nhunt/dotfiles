@@ -111,7 +111,7 @@ stern
 # DB stuff
 brews+=(
 pgadmin4
-postgresql
+postgresql@16
 redis
 sqlite
 )
