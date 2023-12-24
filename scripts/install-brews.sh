@@ -110,6 +110,7 @@ stern
 
 # DB stuff
 brews+=(
+beekeeper-studio
 pgadmin4
 postgresql@16
 redis
