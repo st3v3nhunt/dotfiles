@@ -111,6 +111,18 @@
                 "startingDirectory": "/home/shunt",
                 "suppressApplicationTitle": true,
                 "tabTitle": "Ubuntu-16.04"
+            },
+            {
+                "guid": "{fb2c81d6-4e69-539a-91c5-32ff820d1b27}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{f66f1fa1-de86-5ef2-9d3b-5c4cf4b32031}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
