@@ -25,8 +25,8 @@ WINDOWS_USER=st3v3
 WSL_OS="Ubuntu-20.04"
 WSL_USER=shunt
 
-echo "Linking alacritty.yml"
-cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Roaming\\alacritty\\alacritty.yml" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\alacritty.yml"
+echo "Linking alacritty.toml"
+cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Roaming\\alacritty\\alacritty.toml" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\alacritty.toml"
 
 echo "Linking Windows Terminal settings.json"
 cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\settings.json" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\windows-terminal.settings.json"
