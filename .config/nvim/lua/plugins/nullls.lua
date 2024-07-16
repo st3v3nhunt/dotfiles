@@ -23,16 +23,11 @@ end
 null_ls.setup({
   debug = true,
   sources = {
-    codeactions.eslint_d.with({ condition = uses_eslint }),
-    codeactions.shellcheck,
-
     diagnostics.actionlint,
     diagnostics.credo,
     diagnostics.djlint,
     diagnostics.markdownlint,
-    diagnostics.shellcheck,
     diagnostics.selene,
-    diagnostics.standardjs.with({ condition = uses_standardjs }),
 
     -- formatting.djlint.with({ extra_args = { "--profile", "nunjucks" } }),
     formatting.mix,
@@ -41,7 +36,6 @@ null_ls.setup({
       condition = uses_prettier,
       extra_filetypes = { "svelte" }
     }),
-    formatting.standardjs.with({ condition = uses_standardjs }),
   },
   on_attach = function(client, bufnr)
     -- Run formatting on save
