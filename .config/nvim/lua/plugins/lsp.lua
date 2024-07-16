@@ -69,6 +69,10 @@ nvim_lsp.elixirls.setup {
   on_attach = on_attach,
   cmd = { vim.env.HOMEBREW_PREFIX .. "/bin/elixir-ls" },
 }
+nvim_lsp.eslint.setup {
+  capabilities = capabilities,
+  on_attach = on_attach,
+}
 -- lexical didn't seem to be working...
 -- nvim_lsp.lexical.setup {
 --   capabilities = capabilities,
