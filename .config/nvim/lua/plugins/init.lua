@@ -1,5 +1,6 @@
 require('./plugins/completion')
 require('./plugins/hop')
+require('./plugins/ibl')
 require('./plugins/lsp')
 require('./plugins/nullls')
 require('./plugins/nerdtree')
