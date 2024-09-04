@@ -45,7 +45,6 @@ Plug 'tpope/vim-commentary'                                                    "
 Plug 'tpope/vim-obsession'                                                     " Improve session restoration
 Plug 'tpope/vim-repeat'                                                        " Repeat plugin commands via '.'
 Plug 'tpope/vim-surround'                                                      " Word/phrase surrounds
-Plug 'Yggdroot/indentLine'                                                     " Better visual indentation
 
 " specific languge plugins
 Plug 'elixir-editors/vim-elixir'                                               " Elixir
@@ -90,6 +89,7 @@ if has('nvim') && !exists('g:vscode')
   Plug 'nvim-lua/plenary.nvim'                                                 " Lua functions
   Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }                     " Fuzzy finder over lists
   Plug 'nvim-treesitter/nvim-treesitter', { 'branch': 'master', 'do': ':TSUpdate' } " Treesitter interface
+  Plug 'lukas-reineke/indent-blankline.nvim'                                   " Indent guides
 endif
 call plug#end()                                                                " all plugins must be added before this line
 

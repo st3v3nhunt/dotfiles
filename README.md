@@ -27,8 +27,7 @@ details can be seen in [install.sh](install.sh).:
 * Install [Nerd Fonts](https://www.nerdfonts.com/)
 * Install [Rust](https://www.rust-lang.org/)
 
-At several stages during the running of the installation scripts your password
-will be prompted for.
+At several stages during the running of the installation scripts your password will be prompted for.
 
 ## Git Config
 
