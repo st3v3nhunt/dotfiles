@@ -43,6 +43,7 @@ printf "${GREEN}Finished installing yabai configuration...${NC}\\n"
 brews=(
 deno
 koekeishiya/formulae/yabai
+python
 reattach-to-user-namespace
 wifi-password
 )
