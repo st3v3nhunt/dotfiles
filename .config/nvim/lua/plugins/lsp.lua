@@ -35,7 +35,7 @@ local on_attach = function(client, bufnr)
   km.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 
   -- Turn off formatting for servers where there is a formatter setup with nullls
-  if client.name == "tsserver" or client.name == "jsonls" or client.name == "svelte" then
+  if client.name == "ts_ls" or client.name == "jsonls" or client.name == "svelte" then
     client.server_capabilities.document_formatting = false
   end
 end
@@ -158,7 +158,7 @@ nvim_lsp.tailwindcss.setup {
 --   on_attach = on_attach,
 -- }
 local ts_utils = require('nvim-lsp-ts-utils')
-nvim_lsp.tsserver.setup {
+nvim_lsp.ts_ls.setup {
   capabilities = capabilities,
   on_attach = function(client, bufnr)
     ts_utils.setup({
