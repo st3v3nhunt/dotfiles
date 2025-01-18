@@ -10,7 +10,7 @@ python3 -m pip install --upgrade pip
 
 pips=(
 detect-secrets
-jupyter
+
 pre-commit
 pylint
 pynvim

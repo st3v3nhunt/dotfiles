@@ -35,6 +35,7 @@ hugo
 imagemagick
 jmeter
 jq
+jupyterlab
 llvm
 luarocks
 mkcert
@@ -87,7 +88,6 @@ groovy
 haskell-stack
 java
 node
-python
 ruby
 scala
 )
