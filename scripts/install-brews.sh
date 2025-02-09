@@ -17,6 +17,7 @@ azure-cli
 azure-functions-core-tools@4
 aws-iam-authenticator
 aws-vault
+black
 cmake
 cloudfoundry/tap/cf-cli@7
 coreutils
