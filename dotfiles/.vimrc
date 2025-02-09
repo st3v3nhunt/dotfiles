@@ -34,7 +34,7 @@ if !exists('g:vscode')
   Plug 'w0rp/ale'                                                              " Asynchronous Lint Engine aka ALE
 endif
 
-Plug 'Chiel92/vim-autoformat'                                                  " Generic code formatter
+Plug 'vim-autoformat/vim-autoformat'                                           " Generic code formatter
 Plug 'editorconfig/editorconfig-vim'                                           " Make .editorconfig work
 Plug 'godlygeek/tabular'                                                       " Tabularisation
 Plug 'kevinoid/vim-jsonc'                                                      " JSON-C syntax
