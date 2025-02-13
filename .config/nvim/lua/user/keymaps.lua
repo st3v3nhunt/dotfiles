@@ -48,3 +48,10 @@ setKeyMap('n', '<leader>jq', ':%! jq<CR>')
 -- vimrc file mappings
 setKeyMap('n', '<leader>ev', ':vsplit $MYVIMRC<CR>')
 setKeyMap('n', '<leader>sv', ':source $MYVIMRC<CR>')
+
+-- GitHub Copilot mappings
+setKeyMap('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false
+})
+-- vim.g.copilot_no_tab_map = true

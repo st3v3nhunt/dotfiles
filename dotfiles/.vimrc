@@ -23,6 +23,7 @@ Plug 'tanvirtin/monokai.nvim'
 if !exists('g:vscode')
   Plug 'airblade/vim-gitgutter'                                                " Git in gutter
   Plug 'christoomey/vim-tmux-navigator'                                        " Same split shortcuts in vim and tmux
+  Plug 'github/copilot.vim'                                                    " GitHub Copilot
   Plug 'junegunn/gv.vim'                                                       " Git commit browser
   Plug 'ludovicchabant/vim-gutentags'                                          " Tag management
   Plug 'majutsushi/tagbar'                                                     " A ctag viewer
