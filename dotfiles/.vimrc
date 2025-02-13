@@ -23,6 +23,7 @@ Plug 'tanvirtin/monokai.nvim'
 if !exists('g:vscode')
   Plug 'airblade/vim-gitgutter'                                                " Git in gutter
   Plug 'christoomey/vim-tmux-navigator'                                        " Same split shortcuts in vim and tmux
+  Plug 'github/copilot.vim'                                                    " GitHub Copilot
   Plug 'junegunn/gv.vim'                                                       " Git commit browser
   Plug 'ludovicchabant/vim-gutentags'                                          " Tag management
   Plug 'majutsushi/tagbar'                                                     " A ctag viewer
@@ -34,7 +35,7 @@ if !exists('g:vscode')
   Plug 'w0rp/ale'                                                              " Asynchronous Lint Engine aka ALE
 endif
 
-Plug 'Chiel92/vim-autoformat'                                                  " Generic code formatter
+Plug 'vim-autoformat/vim-autoformat'                                           " Generic code formatter
 Plug 'editorconfig/editorconfig-vim'                                           " Make .editorconfig work
 Plug 'godlygeek/tabular'                                                       " Tabularisation
 Plug 'kevinoid/vim-jsonc'                                                      " JSON-C syntax
