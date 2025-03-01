@@ -19,6 +19,7 @@ null_ls.setup({
     diagnostics.selene,
 
     -- formatting.djlint.with({ extra_args = { "--profile", "nunjucks" } }),
+    formatting.black,
     formatting.mix,
     formatting.markdownlint,
     formatting.prettierd.with({
