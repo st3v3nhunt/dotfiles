@@ -80,7 +80,7 @@ if has('nvim') && !exists('g:vscode')
   Plug 'nvim-tree/nvim-web-devicons'                                           " Pretty icons
   Plug 'roobert/tailwindcss-colorizer-cmp.nvim'                                " Colorise tailwind suggestions
 
-  Plug 'nvimtools/none-ls.nvim'                                                " LS diagnostics, code actions and more
+  Plug 'nvimtools/none-ls.nvim'                                                " LS diagnostics, code actions and more, replacement for null-ls
 
   " snippets
   Plug 'L3MON4D3/LuaSnip'                                                      " Snippets plugin
