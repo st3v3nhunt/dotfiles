@@ -33,6 +33,7 @@ powershell
 rectangle
 royal-tsx
 wireshark
+xcodes
 )
 
 # Editors
