@@ -6,6 +6,7 @@ brew tap homebrew/cask-drivers
 
 # Browsers
 casks=(
+finicky
 firefox
 google-chrome
 )
