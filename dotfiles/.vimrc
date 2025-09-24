@@ -58,6 +58,8 @@ Plug 'Glench/Vim-Jinja2-Syntax'                                                "
 Plug 'pangloss/vim-javascript'                                                 " JavaScript
 Plug 'posva/vim-vue'                                                           " Vue
 Plug 'rust-lang/rust.vim'                                                      " Rust
+Plug 'vim-ruby/vim-ruby'                                                       " Ruby
+Plug 'tpope/vim-rails'                                                         " Rails
 
 " Neovim specific plugins
 if has('nvim') && !exists('g:vscode')

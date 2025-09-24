@@ -49,60 +49,40 @@ g.markdown_fenced_languages = {
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
-local nvim_lsp = require('lspconfig')
-nvim_lsp.bashls.setup {
+-- apply config to all lsp
+vim.lsp.config('*', {
   capabilities = capabilities,
   on_attach = on_attach,
-}
-nvim_lsp.denols.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
+})
+-- enable the language servers
+vim.lsp.enable({'bashls', 'dockerls', 'eslint', 'gopls', 'rubocop', 'ruby_lsp', 'svelte', 'vuels', 'yamlls'})
+
+-- local nvim_lsp = vim.lsp.config
+vim.lsp.config('denols', {
   root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
   single_file_support = false,
-}
-nvim_lsp.dockerls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
-nvim_lsp.elixirls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
+})
+vim.lsp.config('elixirls', {
   cmd = { vim.env.HOMEBREW_PREFIX .. "/bin/elixir-ls" },
-}
-nvim_lsp.eslint.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
+})
 -- lexical didn't seem to be working...
--- nvim_lsp.lexical.setup {
---   capabilities = capabilities,
---   on_attach = on_attach,
+-- vim.lsp.config().lexical.setup {
 --   cmd = { vim.env.HOME .. "/code/lexical/_build/dev/package/lexical/bin/start_lexical.sh" },
 -- }
-nvim_lsp.gopls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
-nvim_lsp.jsonls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
+vim.lsp.config('jsonls', {
   settings = {
     json = {
       schemas = require('schemastore').json.schemas(),
       validate = { enable = true },
     },
   },
-}
-nvim_lsp.omnisharp.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
+})
+vim.lsp.config('omnisharp', {
   cmd = { vim.env.HOME .. "/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp" },
   enable_roslyn_analyzers = true,
   organize_imports_on_format = true,
-}
-nvim_lsp.rust_analyzer.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
+})
+vim.lsp.config('rust_analyzer', {
   settings = {
     ["rust-analyzer"] = {
       assist = {
@@ -117,10 +97,8 @@ nvim_lsp.rust_analyzer.setup {
       },
     }
   }
-}
-nvim_lsp.lua_ls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
+})
+vim.lsp.config('lua_ls', {
   settings = {
     Lua = {
       runtime = {
@@ -137,14 +115,8 @@ nvim_lsp.lua_ls.setup {
       },
     },
   },
-}
-nvim_lsp.svelte.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
-nvim_lsp.tailwindcss.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
+})
+vim.lsp.config('tailwindcss', {
   init_options = {
     userLanguages = {
       elixir = "html-eex",
@@ -152,14 +124,9 @@ nvim_lsp.tailwindcss.setup {
       heex = "html-eex",
     },
   },
-}
--- nvim_lsp.taplo.setup {
---   capabilities = capabilities,
---   on_attach = on_attach,
--- }
+})
 local ts_utils = require('nvim-lsp-ts-utils')
-nvim_lsp.ts_ls.setup {
-  capabilities = capabilities,
+vim.lsp.config('ts_ls', {
   on_attach = function(client, bufnr)
     ts_utils.setup({
       filter_out_diagnostics_by_code = { 80001 },
@@ -167,13 +134,5 @@ nvim_lsp.ts_ls.setup {
     ts_utils.setup_client(client)
     on_attach(client, bufnr)
   end,
-  root_dir = nvim_lsp.util.root_pattern("package.json"),
-}
-nvim_lsp.vuels.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
-nvim_lsp.yamlls.setup {
-  capabilities = capabilities,
-  on_attach = on_attach,
-}
+  root_dir = vim.lsp.config().util.root_pattern("package.json"),
+})
