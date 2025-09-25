@@ -197,16 +197,24 @@ export KEYTIMEOUT=1
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
+# Add oh-my-zsh completions - https://github.com/zsh-users/zsh-completions
+# fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+# autoload -U compinit && compinit
+
 # Add function dir path
 fpath+=~/.zfunc
 
 autoload -U +X bashcompinit && bashcompinit
+
 # AWS CLI completion
 complete -C $HOMEBREW_PREFIX/bin/aws_completer aws
+
 # Azure CLI completion
-source $HOMEBREW_PREFIX/etc/bash_completion.d/az
+# source $HOMEBREW_PREFIX/etc/bash_completion.d/az
+
 # Hashicorp Terraform completion
 complete -o nospace -C $HOMEBREW_PREFIX/bin/terraform terraform
+
 # Hashicorp Vault completion
 complete -o nospace -C $HOMEBREW_PREFIX/bin/vault vault
 
@@ -241,8 +249,16 @@ HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test 
 # Export postgresql path
 export PATH=$HOMEBREW_PREFIX/opt/postgresql@16/bin:$PATH
 
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+# TODO: prevent errors when no pyenv available
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 
-. "$HOME/.local/bin/env"
+# TODO: prevent errors when no poetry available
+# . "$HOME/.local/bin/env"
+
+# Export AWS config
+export AWS_SDK_LOAD_CONFIG=true
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
