@@ -57,9 +57,8 @@ vim.lsp.config('*', {
 -- enable the language servers
 vim.lsp.enable({'bashls', 'dockerls', 'eslint', 'gopls', 'rubocop', 'ruby_lsp', 'svelte', 'vuels', 'yamlls'})
 
--- local nvim_lsp = vim.lsp.config
 vim.lsp.config('denols', {
-  root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
+  root_dir = vim.lsp.util.root_pattern("deno.json", "deno.jsonc"),
   single_file_support = false,
 })
 vim.lsp.config('elixirls', {
