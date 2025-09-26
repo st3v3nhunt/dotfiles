@@ -40,13 +40,6 @@ mkdir -p ~/"$YABAI_CONFIG_DIR"
 ln -nfsv "$REPO_DIR/$YABAI_CONFIG" ~/"$YABAI_CONFIG_DIR"
 printf "${GREEN}Finished installing yabai configuration...${NC}\\n"
 
-printf "${GREEN}finicky configuration...${NC}\\n"
-FINICKY_CONFIG_DIR=".config/finicky"
-FINICKY_CONFIG="$FINICKY_CONFIG_DIR/finicky.js"
-mkdir -p ~/"$FINICKY_CONFIG_DIR"
-ln -nfsv "$REPO_DIR/$FINICKY_CONFIG" ~/"$FINICKY_CONFIG_DIR"
-printf "${GREEN}Finished installing finicky configuration...${NC}\\n"
-
 brews=(
 deno
 koekeishiya/formulae/yabai
