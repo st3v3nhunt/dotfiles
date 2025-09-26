@@ -6,6 +6,7 @@ brew tap homebrew/cask-drivers
 
 # Browsers
 casks=(
+finicky
 firefox
 google-chrome
 )
@@ -33,6 +34,7 @@ powershell
 rectangle
 royal-tsx
 wireshark
+xcodes
 )
 
 # Editors
