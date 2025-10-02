@@ -52,11 +52,13 @@ vim.lsp.config('*', {
   on_attach = on_attach,
 })
 -- enable the language servers
-vim.lsp.enable({'bashls', 'dockerls', 'eslint', 'gopls', 'rubocop', 'ruby_lsp', 'svelte', 'vuels', 'yamlls'})
+vim.lsp.enable({'bashls', 'dockerls', 'eslint', 'gopls', 'rubocop', 'svelte', 'vuels', 'yamlls'})
 
 vim.lsp.config('denols', {
-  root_dir = vim.lsp.util.root_pattern("deno.json", "deno.jsonc"),
   single_file_support = false,
+})
+vim.lsp.config('ruby_lsp', {
+  root_markers = { "Gemfile" },
 })
 vim.lsp.config('elixirls', {
   cmd = { vim.env.HOMEBREW_PREFIX .. "/bin/elixir-ls" },
@@ -130,5 +132,4 @@ vim.lsp.config('ts_ls', {
     ts_utils.setup_client(client)
     on_attach(client, bufnr)
   end,
-  root_dir = vim.lsp.config().util.root_pattern("package.json"),
 })

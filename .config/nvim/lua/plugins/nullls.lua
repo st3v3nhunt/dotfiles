@@ -17,6 +17,7 @@ null_ls.setup({
     diagnostics.djlint,
     diagnostics.markdownlint,
     diagnostics.selene,
+    diagnostics.rubocop,
 
     -- formatting.djlint.with({ extra_args = { "--profile", "nunjucks" } }),
     formatting.black,
