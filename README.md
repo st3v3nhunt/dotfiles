@@ -192,6 +192,18 @@ This can also fix problems with the plugins not working.
 * Toggle Windows Terminal focus mode with `Ctrl+Shift+Enter`
 * Open Windows Terminal settings with `Ctrl+,`
 
+### Key bindings to remember
+
+#### Diagnostics
+
+[source](https://neovim.io/doc/user/diagnostic.html#diagnostic-defaults)
+
+* `]d` jumps to the next diagnostic in the buffer
+* `[d` jumps to the previous diagnostic in the buffer
+* `]D` jumps to the last diagnostic in the buffer
+* `[D` jumps to the first diagnostic in the buffer
+* `<C-w>d` shows diagnostic at cursor in a floating window
+
 ## Architecture Decision Records
 
 This repository uses

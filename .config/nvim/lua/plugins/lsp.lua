@@ -4,9 +4,6 @@ print('loading lsp plugin')
 -- vim.lsp.set_log_level("debug")
 local km = vim.keymap
 
-km.set('n', '<leader>j', vim.diagnostic.goto_prev)
-km.set('n', '<leader>k', vim.diagnostic.goto_next)
-km.set('n', '<space>e', vim.diagnostic.open_float)
 km.set('n', '<space>q', vim.diagnostic.setloclist)
 
 -- Use an on_attach function to only map the following keys
