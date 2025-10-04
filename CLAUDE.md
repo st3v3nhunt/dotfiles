@@ -18,7 +18,7 @@ The main installation entry point is `./install.sh`, which orchestrates platform
 ### Dotfile Symlinking
 
 `scripts/install-dotfiles.sh` creates symlinks from `dotfiles/` and `git/` directories to the home directory. All
-dotfiles are versioned in this repo and symlinked into place rather than copied.
+dotfiles are versioned in this repository and symlinked into place rather than copied.
 
 ## Key Directories
 
@@ -96,7 +96,7 @@ The configuration is entirely in Lua using lazy.nvim for plugin management:
 - **Rust**: rustfmt
 - **Go**: goimports, gofmt
 - **Shell**: shfmt (2-space indent)
-- Format on save enabled (3s timeout for markdown, 1s for others)
+- Format on save enabled (3s timeout for Markdown, 1s for others)
 
 ### Linters Configured (nvim-lint)
 
