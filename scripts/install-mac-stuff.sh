@@ -33,16 +33,8 @@ mkdir -p "$K9S_CONFIG_DIR"
 ln -nfsv "$REPO_DIR/$K9S_CONFIG" "$K9S_CONFIG_DIR"
 printf "${GREEN}Finished installing k9s configuration...${NC}\\n"
 
-printf "${GREEN}yabai configuration...${NC}\\n"
-YABAI_CONFIG_DIR=".config/yabai"
-YABAI_CONFIG="$YABAI_CONFIG_DIR/yabairc"
-mkdir -p ~/"$YABAI_CONFIG_DIR"
-ln -nfsv "$REPO_DIR/$YABAI_CONFIG" ~/"$YABAI_CONFIG_DIR"
-printf "${GREEN}Finished installing yabai configuration...${NC}\\n"
-
 brews=(
 deno
-koekeishiya/formulae/yabai
 python
 reattach-to-user-namespace
 wifi-password
@@ -58,9 +50,6 @@ for pkg in "${brews[@]}"; do
     brew install "$pkg"
   fi
 done
-
-# start brew services
-brew services start yabai
 
 echo "Clean up..."
 brew cleanup
