@@ -57,6 +57,9 @@ return {
         prettier = {
           prepend_args = { '--prose-wrap', 'always', '--print-width', '120' },
         },
+        stylua = {
+          prepend_args = { '--indent-type', 'Spaces', '--indent-width', '2' },
+        },
       },
     },
   },

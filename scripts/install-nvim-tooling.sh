@@ -33,6 +33,8 @@ brew install rust-analyzer
 
 # https://kampfkarren.github.io/selene/
 cargo install selene
+# https://github.com/JohnnyMorganz/StyLua
+brew install stylua
 
 # https://github.com/sveltejs/language-tools/tree/master/packages/language-server
 npm i -g svelte-language-server
