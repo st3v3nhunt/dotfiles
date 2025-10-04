@@ -8,6 +8,7 @@ return {
       lint.linters_by_ft = {
         fish = { "fish" },
         lua = { "selene" },
+        markdown = { "markdownlint" }
       }
 
       -- Create autocommand to trigger linting
