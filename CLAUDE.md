@@ -4,18 +4,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a dotfiles repository for macOS and Linux WSL environments. It manages configuration files, shell setup, editor configurations (Vim/Neovim), and automated installation scripts for development tools and applications.
+This is a dotfiles repository for macOS and Linux WSL environments. It manages configuration files, shell setup, editor
+configurations (Vim/Neovim), and automated installation scripts for development tools and applications.
 
 ## Installation
 
 The main installation entry point is `./install.sh`, which orchestrates platform-specific setup:
+
 - WSL: Runs `scripts/install-wsl-stuff.sh` first
 - macOS: Runs `scripts/defaults.sh`, `install-mac-stuff.sh`, and `install-casks.sh`
 - Both: Executes language-specific installers (Go, Node, Python, Rust, etc.)
 
 ### Dotfile Symlinking
 
-`scripts/install-dotfiles.sh` creates symlinks from `dotfiles/` and `git/` directories to the home directory. All dotfiles are versioned in this repo and symlinked into place rather than copied.
+`scripts/install-dotfiles.sh` creates symlinks from `dotfiles/` and `git/` directories to the home directory. All
+dotfiles are versioned in this repo and symlinked into place rather than copied.
 
 ## Key Directories
 
@@ -31,6 +34,7 @@ The main installation entry point is `./install.sh`, which orchestrates platform
 ## Shell Configuration Architecture
 
 Shell setup is modular and shared between bash and zsh:
+
 - **`.shared-shell-setup`**: Common environment variables (PATH, EDITOR, HOMEBREW_PREFIX)
 - **`.aliases`**: Command aliases (git shortcuts, tool shortcuts)
 - **`.functions`**: Custom shell functions
@@ -44,6 +48,7 @@ Both shells source `.aliases`, `.functions`, and `.shared-shell-setup` for consi
 The configuration is entirely in Lua using lazy.nvim for plugin management:
 
 ### Structure
+
 - **`init.lua`**: Entry point, bootstraps lazy.nvim, loads plugins and user config
 - **`lua/plugins/`**: Plugin specifications for lazy.nvim (auto-loaded)
   - `lsp.lua`: LSP configuration for multiple languages
@@ -55,6 +60,7 @@ The configuration is entirely in Lua using lazy.nvim for plugin management:
 - **`vscode/settings.lua`**: VS Code Neovim integration (loaded when `vim.g.vscode` is true)
 
 ### Modern Plugin Stack
+
 - **Plugin manager**: lazy.nvim (Lua-native, lazy-loading)
 - **File tree**: nvim-tree (replaces NERDTree)
 - **Statusline**: lualine (replaces vim-airline)
@@ -70,6 +76,7 @@ The configuration is entirely in Lua using lazy.nvim for plugin management:
 - **Vimscript plugins**: Copilot, vim-go, fugitive, vim-surround, vim-commentary (work with Lua config)
 
 ### LSP Servers Configured
+
 - JavaScript/TypeScript: `ts_ls` with nvim-lsp-ts-utils
 - Go: `gopls`
 - Rust: `rust_analyzer`
@@ -80,6 +87,7 @@ The configuration is entirely in Lua using lazy.nvim for plugin management:
 - Others: `bashls`, `dockerls`, `eslint`, `lua_ls`, `jsonls`, `svelte`, `vuels`, `yamlls`, `tailwindcss`
 
 ### Formatters Configured (conform.nvim)
+
 - **Lua**: stylua
 - **Python**: black
 - **JavaScript/TypeScript/JSON/YAML/HTML/CSS**: prettierd (with prettier fallback)
@@ -91,13 +99,16 @@ The configuration is entirely in Lua using lazy.nvim for plugin management:
 - Format on save enabled (3s timeout for markdown, 1s for others)
 
 ### Linters Configured (nvim-lint)
+
 - **Lua**: selene
 - **Markdown**: markdownlint
 - **Fish**: fish
 
 ### Key Neovim Keybindings
+
 - Leader key: `,`
-- LSP: `gd` (definition), `gD` (declaration), `gi` (implementation), `<space>gr` (references), `<space>rn` (rename), `<leader>.` (code action), `<space>f` (format)
+- LSP: `gd` (definition), `gD` (declaration), `gi` (implementation), `<space>gr` (references), `<space>rn` (rename),
+  `<leader>.` (code action), `<space>f` (format)
 - Formatting: `<leader>f` (format buffer with conform.nvim)
 - Diagnostics: `]d` (next), `[d` (previous), `]D` (last), `[D` (first), `<C-w>d` (show in float)
 - File tree: `<C-n>` (toggle NvimTree), `<leader>re` (reveal current file)
@@ -108,6 +119,7 @@ The configuration is entirely in Lua using lazy.nvim for plugin management:
 ## Git Configuration
 
 `.gitconfig` includes:
+
 - Extensive aliases (see `[alias]` section)
 - GPG commit signing enabled
 - git-secrets integration for AWS credential detection
@@ -129,12 +141,14 @@ The configuration is entirely in Lua using lazy.nvim for plugin management:
 ## Platform Differences
 
 ### macOS
+
 - Homebrew prefix: `/opt/homebrew` (Apple Silicon) or `/usr/local` (Intel)
 - iTerm2 preferences loaded from `plists/com.googlecode.iterm2.plist`
 - Cask installation to `~/Applications`
 - Uses JetBrains Mono Nerd Font for terminal
 
 ### WSL
+
 - Windows Terminal settings in `wsl/windows-terminal.settings.json`
 - Alacritty config in `wsl/alacritty.toml`
 - Deno installed to `~/.deno`
@@ -150,6 +164,7 @@ The configuration is entirely in Lua using lazy.nvim for plugin management:
 ## Common Development Commands
 
 ### Testing Configuration Changes
+
 ```bash
 # Reload zsh configuration
 source ~/.zshrc  # or use alias: szp
@@ -162,6 +177,7 @@ source ~/.bashrc  # or use alias: sbp
 ```
 
 ### Git Workflow Aliases
+
 - `g` → `git`
 - `gs` → `git status`
 - `gd` → `git diff`
@@ -171,6 +187,7 @@ source ~/.bashrc  # or use alias: sbp
 - `gmpc` → checkout main, pull, delete local branches, prune
 
 ### Neovim Plugin Management (lazy.nvim)
+
 ```vim
 :Lazy            " Open lazy.nvim UI
 :Lazy install    " Install missing plugins
@@ -180,6 +197,7 @@ source ~/.bashrc  # or use alias: sbp
 ```
 
 ### Language-Specific Setup
+
 - **Deno in Vim**: Run `:CocCommand deno.initializeWorkspace` (for coc.nvim projects)
 - **Go in Vim**: Run `:GoInstallBinaries` after vim-go installation
 - **C# OmniSharp**: Download from GitHub releases, extract to `~/.cache/omnisharp-vim/omnisharp-roslyn/`
@@ -187,6 +205,7 @@ source ~/.bashrc  # or use alias: sbp
 ## Semantic Release
 
 This repository uses semantic-release with:
+
 - Conventional commits via commitlint (`.commitlintrc.json`)
 - Automated changelog generation
 - Version bumping in `package.json` and `CHANGELOG.md`
@@ -194,7 +213,8 @@ This repository uses semantic-release with:
 
 ## Architecture Decision Records
 
-ADRs are stored in `doc/adr/` (though the README mentions `doc/architecture/decisions`). Use ADRs to document significant architectural decisions.
+ADRs are stored in `doc/adr/` (though the README mentions `doc/architecture/decisions`). Use ADRs to document
+significant architectural decisions.
 
 ## Notes
 
