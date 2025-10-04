@@ -21,6 +21,9 @@ npm i -g vscode-langservers-extracted
 
 # https://github.com/sumneko/lua-language-server
 brew install lua-language-server
+# luarock should be installed during install-brews.sh, but just in case
+brew install luarocks
+luarocks install luacheck
 
 # https://github.com/fsouza/prettierd
 npm install -g @fsouza/prettierd
@@ -30,6 +33,8 @@ brew install rust-analyzer
 
 # https://kampfkarren.github.io/selene/
 cargo install selene
+# https://github.com/JohnnyMorganz/StyLua
+brew install stylua
 
 # https://github.com/sveltejs/language-tools/tree/master/packages/language-server
 npm i -g svelte-language-server
@@ -52,6 +57,7 @@ npm i -g yaml-language-server
 echo "Install other tools used by Neovim"
 # https://github.com/igorshubovych/markdownlint-cli
 npm i -g markdownlint-cli
+npm i -g markdownlint-cli2
 # https://github.com/mantoni/eslint_d.js
 npm i -g eslint_d
 # https://github.com/Riverside-Healthcare/djLint

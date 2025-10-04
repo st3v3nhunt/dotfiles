@@ -54,4 +54,10 @@ setKeyMap('i', '<C-J>', 'copilot#Accept("\\<CR>")', {
   expr = true,
   replace_keycodes = false
 })
--- vim.g.copilot_no_tab_map = true
+
+-- WSL clipboard paste mapping
+setKeyMap('n', '<leader>p', ':r !powershell.exe -Command Get-Clipboard<CR>', { silent = true })
+
+-- NvimTree toggle
+setKeyMap('n', '<C-n>', ':NvimTreeToggle<CR>', { silent = true })
+setKeyMap('n', '<leader>re', ':NvimTreeFindFile<CR>', { silent = true })

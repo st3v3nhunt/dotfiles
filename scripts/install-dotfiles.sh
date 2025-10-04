@@ -20,7 +20,6 @@ ln -nfsv "$DOTFILES_DIR/.shared-shell-setup" ~
 ln -nfsv "$DOTFILES_DIR/.tmux.conf" ~
 ln -nfsv "$DOTFILES_DIR/.tmux.macos.conf" ~
 ln -nfsv "$DOTFILES_DIR/.tmux.wsl.conf" ~
-ln -nfsv "$DOTFILES_DIR/.vimrc" ~
 ln -nfsv "$DOTFILES_DIR/.zprofile" ~
 ln -nfsv "$DOTFILES_DIR/.zshrc" ~
 ln -nfsv "$GIT_DIR/.git-prompt.sh" ~

@@ -1,23 +1,39 @@
-vim.cmd([[set runtimepath^=$HOME/.vim runtimepath+=$HOME/.vim/after]])
-vim.cmd([[let &packpath=&runtimepath]])
-vim.cmd([[source $HOME/.vimrc]])
-
--- Map leader early so it takes affect in other files
+-- Map leader early so it takes effect in all files
 vim.g.mapleader = ","
 
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable",
+    lazypath,
+  })
+end
+vim.opt.runtimepath:prepend(lazypath)
+
+-- VS Code specific configuration
 if vim.g.vscode then
-  print('Loading VS Code settings...')
-  vim.cmd([[source $HOME/.config/nvim/vscode/settings.vim]])
+  require('vscode.settings')
 else
-  require('plugins')
+  -- Load plugins with lazy.nvim
+  require("lazy").setup("plugins", {
+    change_detection = {
+      notify = false,
+    },
+  })
 end
 
+-- Load user configuration
 require('user')
 
--- show split preview of all changes
-vim.api.nvim_set_option('inccommand', 'split')
--- use internal formatting for bindings like gq.
--- [source](https://github.com/jose-elias-alvarez/null-ls.nvim/issues/1131#issuecomment-1268760653)
+-- Show split preview of all changes
+vim.api.nvim_set_option_value('inccommand', 'split', {})
+
+-- Use internal formatting for bindings like gq
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(args)
     vim.bo[args.buf].formatexpr = nil
