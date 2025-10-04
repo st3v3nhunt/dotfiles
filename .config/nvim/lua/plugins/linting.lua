@@ -1,29 +1,21 @@
 return {
-  { "mfussenegger/nvim-lint" },
-  opts = {
-  -- Event to trigger linters
-  events = { "BufWritePost", "BufReadPost", "InsertLeave" },
-  linters_by_ft = {
-    fish = { "fish" },
-    -- markdown = { "markdownlint" },
-    -- Use the "*" filetype to run linters on all filetypes.
-    -- ['*'] = { 'global linter' },
-    -- Use the "_" filetype to run linters on filetypes that don't have other linters configured.
-    -- ['_'] = { 'fallback linter' },
-    -- ["*"] = { "typos" },
-  },
-  -- LazyVim extension to easily override linter options
-  -- or add custom linters.
-  ---@type table<string,table>
-  linters = {
-    -- -- Example of using selene only when a selene.toml file is present
-    -- selene = {
-    --   -- `condition` is another LazyVim extension that allows you to
-    --   -- dynamically enable/disable linters based on the context.
-    --   condition = function(ctx)
-    --     return vim.fs.find({ "selene.toml" }, { path = ctx.filename, upward = true })[1]
-    --   end,
-    -- },
-  },
-}
+  {
+    "mfussenegger/nvim-lint",
+    event = { "BufWritePost", "BufReadPost", "InsertLeave" },
+    config = function()
+      local lint = require("lint")
+
+      lint.linters_by_ft = {
+        fish = { "fish" },
+        lua = { "selene" },
+      }
+
+      -- Create autocommand to trigger linting
+      vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost", "InsertLeave" }, {
+        callback = function()
+          require("lint").try_lint()
+        end,
+      })
+    end,
+  }
 }

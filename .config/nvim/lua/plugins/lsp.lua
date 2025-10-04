@@ -8,8 +8,6 @@ return {
       'jose-elias-alvarez/nvim-lsp-ts-utils',
     },
     config = function()
-      print('loading lsp plugin')
-
       local km = vim.keymap
 
       km.set('n', '<space>q', vim.diagnostic.setloclist)

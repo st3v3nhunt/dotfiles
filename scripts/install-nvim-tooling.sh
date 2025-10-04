@@ -21,6 +21,9 @@ npm i -g vscode-langservers-extracted
 
 # https://github.com/sumneko/lua-language-server
 brew install lua-language-server
+# luarock should be installed during install-brews.sh, but just in case
+brew install luarocks
+luarocks install luacheck
 
 # https://github.com/fsouza/prettierd
 npm install -g @fsouza/prettierd
