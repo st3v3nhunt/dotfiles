@@ -1,24 +1,29 @@
 return {
   {
-    'nvim-treesitter/nvim-treesitter',
-    build = ':TSUpdate',
-    event = { 'BufReadPost', 'BufNewFile' },
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    event = { "BufReadPost", "BufNewFile" },
     config = function()
-      require('nvim-treesitter.configs').setup({
+      require("nvim-treesitter.configs").setup({
         ensure_installed = {
           "bash",
-          "c_sharp", "css",
+          "c_sharp",
+          "css",
           "dockerfile",
-          "eex", "elixir",
-          "heex", "html",
+          "eex",
+          "elixir",
+          "heex",
+          "html",
           "javascript",
           "lua",
           "markdown",
           "python",
-          "ruby", "rust",
-          "toml", "typescript",
+          "ruby",
+          "rust",
+          "toml",
+          "typescript",
           "vim",
-          "yaml"
+          "yaml",
         },
 
         sync_install = false,

@@ -1,35 +1,35 @@
 return {
   {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    "nvim-lualine/lualine.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-      require('lualine').setup({
+      require("lualine").setup({
         options = {
-          theme = 'auto',
-          section_separators = { left = '', right = '' },
-          component_separators = { left = '', right = '' },
+          theme = "auto",
+          section_separators = { left = "", right = "" },
+          component_separators = { left = "", right = "" },
         },
         sections = {
-          lualine_a = { 'mode' },
+          lualine_a = { "mode" },
           lualine_b = {},
-          lualine_c = { { 'filename', path = 1 } },
-          lualine_x = { 'encoding', 'fileformat', 'filetype' },
-          lualine_y = { 'progress' },
-          lualine_z = { 'location' },
+          lualine_c = { { "filename", path = 1 } },
+          lualine_x = { "encoding", "fileformat", "filetype" },
+          lualine_y = { "progress" },
+          lualine_z = { "location" },
         },
         tabline = {
-          lualine_a = { { 'buffers', mode = 2 } },
-          lualine_z = { 'tabs' },
+          lualine_a = { { "buffers", mode = 2 } },
+          lualine_z = { "tabs" },
         },
       })
     end,
   },
   {
-    'nvim-tree/nvim-tree.lua',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    cmd = { 'NvimTreeToggle', 'NvimTreeFocus', 'NvimTreeFindFile' },
+    "nvim-tree/nvim-tree.lua",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    cmd = { "NvimTreeToggle", "NvimTreeFocus", "NvimTreeFindFile" },
     config = function()
-      require('nvim-tree').setup({
+      require("nvim-tree").setup({
         filters = {
           dotfiles = false,
         },
@@ -50,5 +50,5 @@ return {
       })
     end,
   },
-  { 'majutsushi/tagbar' },
+  { "majutsushi/tagbar" },
 }
