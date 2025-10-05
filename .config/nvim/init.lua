@@ -17,7 +17,7 @@ vim.opt.runtimepath:prepend(lazypath)
 
 -- VS Code specific configuration
 if vim.g.vscode then
-  require('vscode.settings')
+  require("vscode.settings")
 else
   -- Load plugins with lazy.nvim
   require("lazy").setup("plugins", {
@@ -28,13 +28,13 @@ else
 end
 
 -- Load user configuration
-require('user')
+require("user")
 
 -- Show split preview of all changes
-vim.api.nvim_set_option_value('inccommand', 'split', {})
+vim.api.nvim_set_option_value("inccommand", "split", {})
 
 -- Use internal formatting for bindings like gq
-vim.api.nvim_create_autocmd('LspAttach', {
+vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(args)
     vim.bo[args.buf].formatexpr = nil
   end,
