@@ -7,7 +7,7 @@
 	cob = checkout -b
 	com = checkout main
 	d = diff
-	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	hist = log --pretty=format:'%G? %GS %GK %GT | %h %ad | %s%d [%an]' --graph --date=short
 	pfu = push -fu --no-verify
 	pu = push -u
 	puo = push -u origin
@@ -18,9 +18,16 @@
 	st = status
 [color]
 	ui = true
+[commit]
+	gpgsign = true
 [core]
 	editor = nvim
 	excludesfile = ~/.gitignore
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [help]
 	autocorrect = 1
 [ghi]
@@ -40,16 +47,13 @@
 	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
 	allowed = AKIAIOSFODNN7EXAMPLE
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-[include]
-	path = ~/.pc.gitconfig
+
+[includeIf "gitdir:~/code/dvla/"]
+	path = ~/.gitconfig-work
+
+[includeIf "gitdir:~/code/dotfiles/"]
 	path = ~/.mac.gitconfig
+
 [init]
-	templateDir = ~/.git-template
-	defaultBranch = main
-[commit]
-	gpgsign = true
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  templateDir = ~/.git-template
+  defaultBranch = main
