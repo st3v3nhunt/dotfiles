@@ -36,6 +36,7 @@ return {
     end,
   },
   { "vim-ruby/vim-ruby" },
+  { "tpope/vim-cucumber" },
   { "tpope/vim-rails" },
   {
     "mattn/emmet-vim",
