@@ -262,3 +262,5 @@ export AWS_SDK_LOAD_CONFIG=true
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+# Add more executables to the path e.g. claude
+export PATH="$HOME/.local/bin:$PATH"
