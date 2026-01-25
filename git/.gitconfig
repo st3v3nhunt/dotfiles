@@ -50,7 +50,7 @@
 
 [includeIf "gitdir:~/code/dvla/"]
 	path = ~/.gitconfig-work
-
+# includeIf logic requires path update based on pc/mac use
 [includeIf "gitdir:~/code/dotfiles/"]
 	path = ~/.mac.gitconfig
 
