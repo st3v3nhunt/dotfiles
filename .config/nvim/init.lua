@@ -39,3 +39,13 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.bo[args.buf].formatexpr = nil
   end,
 })
+
+-- Ensure nvim opens in git root
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    local git_root = vim.fn.system("git rev-parse --show-toplevel 2>/dev/null"):gsub("\n", "")
+    if vim.v.shell_error == 0 then
+      vim.cmd("cd " .. git_root)
+    end
+  end,
+})
