@@ -22,10 +22,6 @@ source <(minikube completion bash)
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# Set vim as default editor
-export EDITOR=vim
-export VISUAL=$EDITOR
-
 # Set vi keybindings for use in prompt
 set -o vi
 
