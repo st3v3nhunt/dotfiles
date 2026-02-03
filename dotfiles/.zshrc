@@ -212,12 +212,13 @@ HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test 
 export PATH=$HOMEBREW_PREFIX/opt/postgresql@16/bin:$PATH
 
 # TODO: prevent errors when no pyenv available
-# export PYENV_ROOT="$HOME/.pyenv"
-# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+command -v pyenv &> /dev/null && eval "$(pyenv init -)"
 
-# TODO: prevent errors when no poetry available
-# . "$HOME/.local/bin/env"
+# Poetry
+[[ -f "$HOME/.local/bin/env" ]] && . "$HOME/.local/bin/env"
 
 # Export AWS config
 export AWS_SDK_LOAD_CONFIG=true
