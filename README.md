@@ -196,6 +196,14 @@ on Cask <cask_name>.` it might be because the cask is old and out of date, try:
 - `[D` jumps to the first diagnostic in the buffer
 - `<C-w>d` shows diagnostic at cursor in a floating window
 
+#### NvimTree
+
+- `g?` shows help/keybindings menu
+
+#### Ghostty
+
+- `Cmd+Shift+,` reload config
+
 ## Architecture Decision Records
 
 This repository uses
