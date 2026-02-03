@@ -32,7 +32,7 @@ export HOMEBREW_PREFIX="$(brew --prefix)"
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 # Add Poetry to PATH
-export PATH="/Users/steven.hunt/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Add shell history for iex
 export ERL_AFLAGS="-kernel shell_history enabled"
