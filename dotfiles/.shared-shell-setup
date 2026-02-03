@@ -1,9 +1,8 @@
-# TODO: prevent errors when no go available
-# PATH=$PATH:$(go env GOPATH)/bin
-# export PATH
-# # Set GOPATH
-# GOPATH=$(go env GOPATH)
-# export GOPATH
+# Go PATH setup
+if command -v go &> /dev/null; then
+  export GOPATH="$(go env GOPATH)"
+  export PATH="$PATH:$GOPATH/bin"
+fi
 
 # Load nvm on demand to increase shell start-up (https://github.com/lukechilds/zsh-nvm#lazy-loading)
 export NVM_LAZY_LOAD=true
