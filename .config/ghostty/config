@@ -1,0 +1,5 @@
+scrollback-limit = 100000000
+theme = Molokai
+macos-non-native-fullscreen = true
+# bold text
+font-thicken = true

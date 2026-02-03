@@ -117,13 +117,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # zsh-syntax-highlighting must be the last plugin to be loaded
 plugins=(
   colorize
-  deno
+  # deno
   docker
   docker-compose
   git
-  helm
-  kubectl
-  minikube
+  # helm
+  # kubectl
+  # minikube
   zsh-syntax-highlighting
 )
 # Plugins must be loaded prior to sourcing on-my-zsh.sh i.e. the line below
@@ -259,8 +259,9 @@ export PATH=$HOMEBREW_PREFIX/opt/postgresql@16/bin:$PATH
 
 # Export AWS config
 export AWS_SDK_LOAD_CONFIG=true
-
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # Enable Ghostty as CLI
+  export PATH="/Applications/Ghostty.app/Contents/MacOS:$PATH"
+fi
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-# Add more executables to the path e.g. claude
-export PATH="$HOME/.local/bin:$PATH"
