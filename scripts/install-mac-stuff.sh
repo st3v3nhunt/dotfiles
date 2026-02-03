@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # shellcheck disable=2059
-if [ "$(/usr/bin/pgrep oahd >/dev/null 2>&1;echo $?)" -ne 0 ]; then
+if [ "$(
+  /usr/bin/pgrep oahd >/dev/null 2>&1
+  echo $?
+)" -ne 0 ]; then
   echo "Installing Rosetta..."
   softwareupdate --install-rosetta --agree-to-license
 fi
@@ -8,7 +11,7 @@ fi
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
+REPO_DIR="$(cd "$(dirname "$(dirname "${BASH_SOURCE[0]}")")" && pwd)"
 GIT_DIR="$REPO_DIR/git"
 
 ln -nfsv "$GIT_DIR/.mac.gitconfig" ~
@@ -33,11 +36,18 @@ mkdir -p "$K9S_CONFIG_DIR"
 ln -nfsv "$REPO_DIR/$K9S_CONFIG" "$K9S_CONFIG_DIR"
 printf "${GREEN}Finished installing k9s configuration...${NC}\\n"
 
+printf "${GREEN}Installing Ghostty configuration...${NC}\\n"
+GHOSTTY_CONFIG_DIR=".config/ghostty"
+GHOSTTY_CONFIG="$GHOSTTY_CONFIG_DIR/config"
+mkdir -p "$GHOSTTY_CONFIG_DIR"
+ln -nfsv "$REPO_DIR/$GHOSTTY_CONFIG" ~/"$GHOSTTY_CONFIG_DIR"
+printf "${GREEN}Finished installing Ghostty configuration...${NC}\\n"
+
 brews=(
-deno
-python
-reattach-to-user-namespace
-wifi-password
+  deno
+  python
+  reattach-to-user-namespace
+  wifi-password
 )
 
 # Upgrade if already installed via Homebrew otherwise install it
