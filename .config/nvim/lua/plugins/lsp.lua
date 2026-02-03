@@ -13,7 +13,7 @@ return {
       km.set("n", "<space>q", vim.diagnostic.setloclist)
 
       local on_attach = function(client, bufnr)
-        vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
+        vim.bo[bufnr].omnifunc = "v:lua.vim.lsp.omnifunc"
 
         local bufopts = { noremap = true, silent = true, buffer = bufnr }
         km.set("n", "gD", vim.lsp.buf.declaration, bufopts)
