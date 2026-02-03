@@ -10,12 +10,11 @@ fi
 ./scripts/install-dotfiles.sh
 ./scripts/install-oh-my-zsh.sh
 ./scripts/install-brew.sh
-./scripts/install-brews.sh
+brew bundle --file=Brewfile
 
 if is_macos; then
   ./scripts/defaults.sh
   ./scripts/install-mac-stuff.sh
-  ./scripts/install-casks.sh
 fi
 
 ./scripts/install-gems.sh
