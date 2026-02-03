@@ -14,7 +14,7 @@ export NVM_LAZY_LOAD_EXTRA_COMMANDS=('nvim' 'vi' 'vim' 'which')
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
 # Add Deno to PATH
-if [[ "$OSTYPE" != "darwin*" ]]; then
+if [[ "$OSTYPE" != darwin* ]]; then
   export DENO_INSTALL="$HOME/.deno"
   export PATH="$DENO_INSTALL/bin:$PATH"
 fi
