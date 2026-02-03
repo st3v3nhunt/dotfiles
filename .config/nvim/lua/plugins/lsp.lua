@@ -5,7 +5,6 @@ return {
     dependencies = {
       "hrsh7th/cmp-nvim-lsp",
       "b0o/schemastore.nvim",
-      "jose-elias-alvarez/nvim-lsp-ts-utils",
     },
     config = function()
       local km = vim.keymap
@@ -114,15 +113,12 @@ return {
           },
         },
       })
-      local ts_utils = require("nvim-lsp-ts-utils")
       vim.lsp.config("ts_ls", {
-        on_attach = function(client, bufnr)
-          ts_utils.setup({
-            filter_out_diagnostics_by_code = { 80001 },
-          })
-          ts_utils.setup_client(client)
-          on_attach(client, bufnr)
-        end,
+        settings = {
+          diagnostics = {
+            ignoredCodes = { 80001 }, -- File is a CommonJS module
+          },
+        },
       })
     end,
   },
