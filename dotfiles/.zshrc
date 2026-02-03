@@ -259,6 +259,9 @@ export PATH=$HOMEBREW_PREFIX/opt/postgresql@16/bin:$PATH
 
 # Export AWS config
 export AWS_SDK_LOAD_CONFIG=true
-
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # Enable Ghostty as CLI
+  export PATH="/Applications/Ghostty.app/Contents/MacOS:$PATH"
+fi
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
