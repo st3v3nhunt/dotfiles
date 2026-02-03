@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 if [[ -n "$WSL_DISTRO_NAME" && "$OSTYPE" == "linux-gnu" ]]; then
   ./scripts/install-wsl-stuff.sh
