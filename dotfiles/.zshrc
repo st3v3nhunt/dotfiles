@@ -17,45 +17,7 @@ export ZSH=~/.oh-my-zsh
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-# ZSH_THEME="spaceship"
 
-# Just comment a section if you want to disable it
-# SPACESHIP_PROMPT_ORDER=(
-#   time        # Time stamps section (Disabled)
-#   user          # Username section
-#   dir           # Current directory section
-#   host          # Hostname section
-#   git           # Git section (git_branch + git_status)
-#   # hg            # Mercurial section (hg_branch  + hg_status)
-#   # package     # Package version (Disabled)
-#   # node          # Node.js section
-#   # ruby          # Ruby section
-#   # elixir        # Elixir section
-#   # xcode       # Xcode section (Disabled)
-#   # swift         # Swift section
-#   golang        # Go section
-#   # php           # PHP section
-#   rust          # Rust section
-#   # haskell       # Haskell Stack section
-#   # julia       # Julia section (Disabled)
-#   docker      # Docker section (Disabled)
-#   # aws           # Amazon Web Services section
-#   # gcloud        # Google Cloud Platform section
-#   venv          # virtualenv section
-#   # conda         # conda virtualenv section
-#   pyenv         # Pyenv section
-#   dotnet        # .NET section
-#   # ember       # Ember.js section (Disabled)
-#   kubectl       # Kubectl context section
-#   # terraform     # Terraform workspace section
-#   exec_time     # Execution time
-#   line_sep      # Line break
-#   battery       # Battery level and status
-#   vi_mode     # Vi-mode indicator (Disabled)
-#   jobs          # Background jobs indicator
-#   exit_code     # Exit code section
-#   char          # Prompt character
-# )
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -230,10 +192,10 @@ source $(brew --prefix asdf)/libexec/asdf.sh
 # zprof
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/shunt/google-cloud-sdk/path.zsh.inc' ]; then source '/home/shunt/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/shunt/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/shunt/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -250,12 +212,13 @@ HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test 
 export PATH=$HOMEBREW_PREFIX/opt/postgresql@16/bin:$PATH
 
 # TODO: prevent errors when no pyenv available
-# export PYENV_ROOT="$HOME/.pyenv"
-# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+command -v pyenv &> /dev/null && eval "$(pyenv init -)"
 
-# TODO: prevent errors when no poetry available
-# . "$HOME/.local/bin/env"
+# Poetry
+[[ -f "$HOME/.local/bin/env" ]] && . "$HOME/.local/bin/env"
 
 # Export AWS config
 export AWS_SDK_LOAD_CONFIG=true

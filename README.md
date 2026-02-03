@@ -12,9 +12,7 @@ details can be seen in [install.sh](install.sh).:
 
 - Symlink all dotfiles into the user's home directory
 - Install [Oh My Zsh](https://ohmyz.sh/) and some plugins
-- Install [Homebrew](https://brew.sh/) and some brews
-- Install [Caskroom](https://caskroom.github.io/) and some casks (GUI
-  applications, mostly)
+- Install [Homebrew](https://brew.sh/) packages via [Brewfile](Brewfile)
 - Install some [Gems](https://rubygems.org)
 - Install some [Pips](https://pypi.org/)
 - Install some [Node.js](https://nodejs.org/en/) stuff including
@@ -27,6 +25,17 @@ details can be seen in [install.sh](install.sh).:
 - Install [Rust](https://www.rust-lang.org/)
 
 At several stages during the running of the installation scripts your password will be prompted for.
+
+## Homebrew Packages
+
+Packages are managed declaratively via [Brewfile](Brewfile). Common commands:
+
+```sh
+brew bundle              # Install all packages from Brewfile
+brew bundle check        # Check which packages are missing
+brew bundle cleanup      # Remove packages not in Brewfile
+brew bundle dump --force # Regenerate Brewfile from installed packages
+```
 
 ## Git Config
 

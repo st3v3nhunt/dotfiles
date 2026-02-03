@@ -50,7 +50,6 @@
                 "hidden": false,
                 "name": "Ubuntu-20.04",
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "/home/shunt",
                 "suppressApplicationTitle": true,
                 "tabTitle": "Ubuntu-20.04"
             },
@@ -59,7 +58,6 @@
                 "hidden": false,
                 "name": "Ubuntu-18.04",
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "/home/shunt",
                 "suppressApplicationTitle": true,
                 "tabTitle": "Ubuntu-18.04"
             },
@@ -108,7 +106,6 @@
                 "hidden": false,
                 "name": "Ubuntu-16.04",
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "/home/shunt",
                 "suppressApplicationTitle": true,
                 "tabTitle": "Ubuntu-16.04"
             },

@@ -1,18 +1,20 @@
 #!/usr/bin/env bash
+set -e
 
-if [[ -n "$WSL_DISTRO_NAME" && "$OSTYPE" == "linux-gnu" ]]; then
+source "$(dirname "$0")/scripts/utils/detect-os.sh"
+
+if is_wsl; then
   ./scripts/install-wsl-stuff.sh
 fi
 
 ./scripts/install-dotfiles.sh
 ./scripts/install-oh-my-zsh.sh
 ./scripts/install-brew.sh
-./scripts/install-brews.sh
+brew bundle --file=Brewfile
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
+if is_macos; then
   ./scripts/defaults.sh
   ./scripts/install-mac-stuff.sh
-  ./scripts/install-casks.sh
 fi
 
 ./scripts/install-gems.sh

@@ -22,9 +22,9 @@ echo "Copying 'wsl.conf' into /etc/. Password will be required"
 sudo ln -nfsv "$REPO_DIR/wsl/wsl.conf" /etc/
 
 echo "Linking files in Windows to those in the dotfiles repo on the specific WSL distro"
-WINDOWS_USER=st3v3
-WSL_OS="Ubuntu-20.04"
-WSL_USER=shunt
+WINDOWS_USER="${WINDOWS_USER:-$USER}"
+WSL_OS="${WSL_OS:-$(lsb_release -d | cut -f2 | tr ' ' '-')}"
+WSL_USER="${WSL_USER:-$USER}"
 
 echo "Linking alacritty.toml"
 cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Roaming\\alacritty\\alacritty.toml" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\alacritty.toml"

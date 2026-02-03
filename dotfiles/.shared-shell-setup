@@ -1,9 +1,8 @@
-# TODO: prevent errors when no go available
-# PATH=$PATH:$(go env GOPATH)/bin
-# export PATH
-# # Set GOPATH
-# GOPATH=$(go env GOPATH)
-# export GOPATH
+# Go PATH setup
+if command -v go &> /dev/null; then
+  export GOPATH="$(go env GOPATH)"
+  export PATH="$PATH:$GOPATH/bin"
+fi
 
 # Load nvm on demand to increase shell start-up (https://github.com/lukechilds/zsh-nvm#lazy-loading)
 export NVM_LAZY_LOAD=true
@@ -14,7 +13,7 @@ export NVM_LAZY_LOAD_EXTRA_COMMANDS=('nvim' 'vi' 'vim' 'which')
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
 # Add Deno to PATH
-if [[ "$OSTYPE" != "darwin*" ]]; then
+if [[ "$OSTYPE" != darwin* ]]; then
   export DENO_INSTALL="$HOME/.deno"
   export PATH="$DENO_INSTALL/bin:$PATH"
 fi
@@ -32,7 +31,7 @@ export HOMEBREW_PREFIX="$(brew --prefix)"
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 # Add Poetry to PATH
-export PATH="/Users/steven.hunt/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Add shell history for iex
 export ERL_AFLAGS="-kernel shell_history enabled"

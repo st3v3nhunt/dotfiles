@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
-echo "Installing rust..."
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+if ! command -v rustup &> /dev/null; then
+  echo "Installing rust..."
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+else
+  echo "Rust already installed, skipping..."
+fi
 
 echo "Installing Rustlings..."
 curl -L https://git.io/install-rustlings | bash
