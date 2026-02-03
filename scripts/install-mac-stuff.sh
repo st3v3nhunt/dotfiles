@@ -45,6 +45,7 @@ printf "${GREEN}Finished installing Ghostty configuration...${NC}\\n"
 
 brews=(
   deno
+  ghostty
   python
   reattach-to-user-namespace
   wifi-password
