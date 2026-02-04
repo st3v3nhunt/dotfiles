@@ -32,14 +32,14 @@ echo "If there are problems with karabiner settings not being loaded try turning
 printf "${GREEN}k9s configuration...${NC}\\n"
 K9S_CONFIG_DIR=~/"Library/Application Support/k9s"
 K9S_CONFIG=".config/k9s/config.yml"
-mkdir -p "$K9S_CONFIG_DIR"
+mkdir -p ~/"$K9S_CONFIG_DIR"
 ln -nfsv "$REPO_DIR/$K9S_CONFIG" "$K9S_CONFIG_DIR"
 printf "${GREEN}Finished installing k9s configuration...${NC}\\n"
 
 printf "${GREEN}Installing Ghostty configuration...${NC}\\n"
 GHOSTTY_CONFIG_DIR=".config/ghostty"
 GHOSTTY_CONFIG="$GHOSTTY_CONFIG_DIR/config"
-mkdir -p "$GHOSTTY_CONFIG_DIR"
+mkdir -p ~/"$GHOSTTY_CONFIG_DIR"
 ln -nfsv "$REPO_DIR/$GHOSTTY_CONFIG" ~/"$GHOSTTY_CONFIG_DIR"
 printf "${GREEN}Finished installing Ghostty configuration...${NC}\\n"
 
