@@ -66,6 +66,7 @@ brew "gh"
 brew "git"
 brew "git-lfs"
 brew "git-secrets"
+brew "lazygit"
 
 # Editors
 brew "neovim"
