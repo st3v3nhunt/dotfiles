@@ -30,6 +30,8 @@ alias hist=history
 alias j=jobs
 alias k=kubectl
 alias kt=kubetail
+alias lzd=lazydocker
+alias lzg=lazygit
 alias mk=minikube
 alias sed=gsed
 alias sbp='. ~/.bashrc'
@@ -38,7 +40,7 @@ alias tf=terraform
 alias tm=tmux
 alias vi=vim
 
-if type nvim > /dev/null; then
+if type nvim >/dev/null; then
   alias vim=nvim
 fi
 
