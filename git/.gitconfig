@@ -48,11 +48,12 @@
 	allowed = AKIAIOSFODNN7EXAMPLE
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
-[includeIf "gitdir:~/code/dvla/"]
-	path = ~/.gitconfig-work
 # includeIf logic requires path update based on pc/mac use
 [includeIf "gitdir:~/code/"]
 	path = ~/.mac.gitconfig
+
+[includeIf "gitdir:~/code/dvla/"]
+	path = ~/.gitconfig-work
 
 [init]
   templateDir = ~/.git-template
