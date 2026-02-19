@@ -22,8 +22,11 @@ return {
             "--column",
             "--smart-case",
             "--hidden",
+            "--no-ignore",
             "--iglob",
             "!.git",
+            "--iglob",
+            "!node_modules",
           },
         },
       })
@@ -32,7 +35,7 @@ return {
       setKeyMap(
         "n",
         "<C-p>",
-        "<cmd>lua require'telescope.builtin'.find_files({find_command={'rg','--hidden','--files','--iglob','!.git'}})<cr>"
+        "<cmd>lua require'telescope.builtin'.find_files({find_command={'rg','--hidden','--no-ignore','--files','--iglob','!.git','--iglob','!node_modules'}})<cr>"
       )
       setKeyMap("n", "\\", "<cmd>lua require'telescope.builtin'.live_grep()<cr>")
       setKeyMap("n", "K", "<cmd>lua require'telescope.builtin'.grep_string()<cr>")
