@@ -27,10 +27,14 @@ ln -nfsv "$GIT_DIR/.git-completion.bash" ~
 ln -nfsv "$GIT_DIR/.gitconfig" ~
 ln -nfsv "$GIT_DIR/.gitignore" ~
 
+printf "${GREEN}Installing ctags configuration...${NC}\\n"
 mkdir -p ~/.ctags.d
 ln -nfsv "$REPO_DIR/ctags/exclude.ctags" ~/.ctags.d
+printf "${GREEN}Finished installing ctags configuration...${NC}\\n"
 
+printf "${GREEN}Installing OmniSharp configuration...${NC}\\n"
 mkdir -p ~/.omnisharp
 ln -nfsv "$REPO_DIR/omnisharp/omnisharp.json" ~/.omnisharp
+printf "${GREEN}Finished installing OmniSharp configuration...${NC}\\n"
 
 printf "${GREEN}Finished creating symlinks...${NC}\\n"
