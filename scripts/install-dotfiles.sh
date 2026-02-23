@@ -3,7 +3,7 @@
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
+REPO_DIR="$(cd "$(dirname "$(dirname "${BASH_SOURCE[0]}")")" && pwd)"
 DOTFILES_DIR="$REPO_DIR/dotfiles"
 GIT_DIR="$REPO_DIR/git"
 
@@ -27,10 +27,7 @@ ln -nfsv "$GIT_DIR/.git-completion.bash" ~
 ln -nfsv "$GIT_DIR/.gitconfig" ~
 ln -nfsv "$GIT_DIR/.gitignore" ~
 
-
-if [[ ! -d ~/.omnisharp ]]; then
-  mkdir ~/.omnisharp
-fi
+mkdir -p ~/.omnisharp
 ln -nfsv "$REPO_DIR/omnisharp/omnisharp.json" ~/.omnisharp
 
 printf "${GREEN}Finished creating symlinks...${NC}\\n"
