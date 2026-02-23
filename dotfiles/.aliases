@@ -29,6 +29,7 @@ alias h=heroku
 alias hist=history
 alias j=jobs
 alias k=kubectl
+alias kc=kiro-cli
 alias kt=kubetail
 alias lzd=lazydocker
 alias lzg=lazygit

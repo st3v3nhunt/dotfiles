@@ -1,0 +1,4 @@
+--exclude=node_modules
+--exclude=.git
+--exclude=dist
+--exclude=coverage

@@ -20,6 +20,9 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# Explicitly set path
+export XDG_CONFIG_HOME="$HOME/.config"
+
 export VISUAL=nvim
 export EDITOR=$VISUAL
 

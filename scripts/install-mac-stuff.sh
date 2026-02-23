@@ -36,6 +36,13 @@ mkdir -p ~/"$K9S_CONFIG_DIR"
 ln -nfsv "$REPO_DIR/$K9S_CONFIG" "$K9S_CONFIG_DIR"
 printf "${GREEN}Finished installing k9s configuration...${NC}\\n"
 
+printf "${GREEN}Installing lazygit configuration...${NC}\\n"
+LAZYGIT_CONFIG_DIR=".config/lazygit"
+LAZYGIT_CONFIG="$LAZYGIT_CONFIG_DIR/config.yml"
+mkdir -p ~/"$LAZYGIT_CONFIG_DIR"
+ln -nfsv "$REPO_DIR/$LAZYGIT_CONFIG" ~/"$LAZYGIT_CONFIG_DIR"
+printf "${GREEN}Finished installing lazygit configuration...${NC}\\n"
+
 printf "${GREEN}Installing Ghostty configuration...${NC}\\n"
 GHOSTTY_CONFIG_DIR=".config/ghostty"
 GHOSTTY_CONFIG="$GHOSTTY_CONFIG_DIR/config"
