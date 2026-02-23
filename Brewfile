@@ -64,6 +64,7 @@ brew "tmux"
 # Git
 brew "gh"
 brew "git"
+brew "git-delta"
 brew "git-lfs"
 brew "git-secrets"
 brew "lazygit"
