@@ -27,6 +27,9 @@ ln -nfsv "$GIT_DIR/.git-completion.bash" ~
 ln -nfsv "$GIT_DIR/.gitconfig" ~
 ln -nfsv "$GIT_DIR/.gitignore" ~
 
+mkdir -p ~/.ctags.d
+ln -nfsv "$REPO_DIR/ctags/exclude.ctags" ~/.ctags.d
+
 mkdir -p ~/.omnisharp
 ln -nfsv "$REPO_DIR/omnisharp/omnisharp.json" ~/.omnisharp
 
