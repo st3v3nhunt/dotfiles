@@ -89,6 +89,8 @@ plugins=(
   zsh-syntax-highlighting
 )
 # Plugins must be loaded prior to sourcing on-my-zsh.sh i.e. the line below
+# Skip compinit security check — uses cached .zcompdump (~350ms faster)
+ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 # User configuration

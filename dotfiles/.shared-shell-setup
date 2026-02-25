@@ -4,13 +4,16 @@ if command -v go &> /dev/null; then
   export PATH="$PATH:$GOPATH/bin"
 fi
 
-# Load nvm on demand to increase shell start-up (https://github.com/lukechilds/zsh-nvm#lazy-loading)
-export NVM_LAZY_LOAD=true
-# https://github.com/lukechilds/zsh-nvm#extra-commands-to-trigger-lazy-loading
-export NVM_LAZY_LOAD_EXTRA_COMMANDS=('nvim' 'vi' 'vim' 'which')
-
-# Source zsh-nvm
-source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+# Lazy-load nvm — only initialises when first invoked (~400ms faster than zsh-nvm)
+export NVM_DIR="$HOME/.nvm"
+_lazy_load_nvm() {
+  unset -f nvm node npm npx
+  [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
+}
+for _cmd in nvm node npm npx nvim which; do
+  eval "${_cmd}() { _lazy_load_nvm; ${_cmd} \"\$@\" }"
+done
+unset _cmd
 
 # Add Deno to PATH
 if [[ "$OSTYPE" != darwin* ]]; then
