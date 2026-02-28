@@ -27,6 +27,13 @@ ln -nfsv "$GIT_DIR/.git-completion.bash" ~
 ln -nfsv "$GIT_DIR/.gitconfig" ~
 ln -nfsv "$GIT_DIR/.gitignore" ~
 
+# OS-specific git configuration
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  ln -nfsv "$GIT_DIR/.mac.gitconfig" ~/.gitconfig-os
+else
+  ln -nfsv "$GIT_DIR/.pc.gitconfig" ~/.gitconfig-os
+fi
+
 printf "${GREEN}Installing ctags configuration...${NC}\\n"
 mkdir -p ~/.ctags.d
 ln -nfsv "$REPO_DIR/ctags/exclude.ctags" ~/.ctags.d

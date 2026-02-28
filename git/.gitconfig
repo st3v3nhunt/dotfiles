@@ -48,9 +48,9 @@
 	allowed = AKIAIOSFODNN7EXAMPLE
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
-# includeIf logic requires path update based on pc/mac use
+# OS-specific configuration included for all repositories in ~/code/
 [includeIf "gitdir:~/code/"]
-	path = ~/.mac.gitconfig
+	path = ~/.gitconfig-os
 
 [includeIf "gitdir:~/code/dvla/"]
 	path = ~/.gitconfig-work
