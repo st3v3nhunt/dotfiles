@@ -16,7 +16,6 @@ nvm alias default lts
 echo "Installing global npm packages (serverless, snyk, yarn)..."
 npm install -g @commitlint/cli
 npm install -g @commitlint/config-conventional
-npm install -g @google/gemini-cli
 npm install -g @vue/cli
 npm install -g eslint_d
 npm install -g firebase-tools
