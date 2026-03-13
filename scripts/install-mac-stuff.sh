@@ -18,7 +18,7 @@ ln -nfsv "$GIT_DIR/.mac.gitconfig" ~
 
 printf "${GREEN}Installing GnuPG configuration...${NC}\\n"
 mkdir -p ~/.gnupg
-ln -nfsv "$REPO_DIR/.config/gpg-agent.conf" ~/.gnupg/gpg-agent.conf
+ln -nfsv "$REPO_DIR/.config/gnupg/gpg-agent.conf" ~/.gnupg/gpg-agent.conf
 printf "${GREEN}Finished installing GnuPG configuration...${NC}\\n"
 
 printf "${GREEN}Installing Karabiner-Elements configuration...${NC}\\n"
