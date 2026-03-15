@@ -103,8 +103,6 @@ brew "stern"
 
 # Databases
 brew "beekeeper-studio"
-brew "pgadmin4"
-brew "postgresql@16"
 brew "redis"
 brew "sqlite"
 
