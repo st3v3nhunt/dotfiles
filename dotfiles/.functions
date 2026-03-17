@@ -1,17 +1,22 @@
 # Git rebase function
 grbh() { git rebase -i HEAD~"$1"; }
 
-# Search text across all tmux panes/windows/sessions with fzf, then jump to the matching pane
+# Search text across tmux panes with fzf, then jump to the matching pane
+# Usage: tmux-pane-search [window] - 'window' limits to current window with deeper scrollback
 tmux-pane-search() {
+  local list_flag='-a' scrollback=1000 prompt="Search all panes> "
+  if [ "$1" = "window" ]; then
+    list_flag='' scrollback=10000 prompt="Search window panes> "
+  fi
   local result
   result=$(
-    tmux list-panes -a -F '#{session_name}:#{window_index}.#{pane_index} #{session_name}|#{window_index}(#{window_name})|#{pane_index}' |
+    tmux list-panes $list_flag -F '#{session_name}:#{window_index}.#{pane_index} #{session_name}|#{window_index}(#{window_name})|#{pane_index}' |
     while IFS=' ' read -r target label; do
-      { tmux capture-pane -t "$target" -p -S -1000 2>/dev/null
+      { tmux capture-pane -t "$target" -p -S -"$scrollback" 2>/dev/null
         tmux capture-pane -t "$target" -p -a 2>/dev/null
       } | nl -ba -w4 -s'  ' | sed -n '/..*/{s/^/'"$target"'	['"$label"'] /;p;}'
     done |
-    fzf --ansi --no-sort --with-nth=2.. --delimiter='	' --prompt="Search panes> " \
+    fzf --exact --ansi --no-sort --with-nth=2.. --delimiter='	' --prompt="$prompt" \
       --color='hl:underline:bold:red,hl+:underline:reverse:red'
   ) || return
   local target text

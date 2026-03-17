@@ -155,6 +155,14 @@ Tmux plugin manager is installed along with the following plugins:
 In order to have the plugins installed, reload the config with `prefix + I`.
 This can also fix problems with the plugins not working.
 
+### Pane text search
+
+Search text across tmux panes using fzf. Selecting a match switches to the pane
+and scrolls to the matching line.
+
+- `prefix + f` — search across all panes in all sessions (1000 lines scrollback)
+- `prefix + F` — search panes in the current window only (10000 lines scrollback)
+
 ## FAQ
 
 - No linting in Vim and no lint warning or error symbols in the margin?
