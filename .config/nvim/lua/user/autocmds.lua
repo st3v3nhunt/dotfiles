@@ -30,9 +30,17 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
 -- Set filetype for Elixir templates
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   group = augroup,
-  pattern = { "*.eex", "*.heex", "*.leex", "*.sface", "*.lexs" },
+  pattern = { "*.eex", "*.leex", "*.sface", "*.lexs" },
   callback = function()
     vim.bo.filetype = "eelixir"
+  end,
+})
+
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  group = augroup,
+  pattern = { "*.heex" },
+  callback = function()
+    vim.bo.filetype = "heex"
   end,
 })
 
