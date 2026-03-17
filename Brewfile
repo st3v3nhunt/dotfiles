@@ -53,7 +53,7 @@ brew "wget"
 brew "wireguard-tools"
 brew "yq"
 
-# Terminal
+# Terminal utils
 brew "bash"
 brew "btop"
 brew "cmatrix"
@@ -117,6 +117,7 @@ cask "another-redis-desktop-manager"
 cask "caffeine"
 cask "db-browser-for-sqlite"
 cask "dotnet-sdk"
+cask "font-jetbrains-mono"
 cask "gimp"
 cask "google-drive"
 cask "google-cloud-sdk"
