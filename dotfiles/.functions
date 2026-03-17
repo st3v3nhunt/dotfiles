@@ -1,2 +1,36 @@
 # Git rebase function
 grbh() { git rebase -i HEAD~"$1"; }
+
+# Search text across tmux panes with fzf, then jump to the matching pane
+# Usage: tmux-pane-search [window] - 'window' limits to current window with deeper scrollback
+tmux-pane-search() {
+  local list_flag='-a' scrollback=1000 prompt="Search all panes> "
+  if [ "$1" = "window" ]; then
+    list_flag='' scrollback=10000 prompt="Search window panes> "
+  fi
+  local preview_cmd='
+    target=$(echo {} | cut -f1)
+    line=$(echo {} | cut -f3 | sed "s/^ *\([0-9]*\).*/\1/")
+    { tmux capture-pane -t "$target" -p -S -'"$scrollback"' 2>/dev/null
+      tmux capture-pane -t "$target" -p -a 2>/dev/null
+    } | nl -ba -w4 -s"  " | awk -v l="$line" "NR>=l-10 && NR<=l+10 { if(NR==l) printf \"\033[1;32m>> %s\033[0m\n\", \$0; else print \"   \" \$0 }"
+  '
+  local result
+  result=$(
+    tmux list-panes $list_flag -F '#{session_name}:#{window_index}.#{pane_index} #{session_name}|#{window_index}(#{window_name})|#{pane_index}' |
+    while IFS=' ' read -r target label; do
+      { tmux capture-pane -t "$target" -p -S -"$scrollback" 2>/dev/null
+        tmux capture-pane -t "$target" -p -a 2>/dev/null
+      } | nl -ba -w4 -s'  ' | sed -n '/..*/{s/^/'"$target"'	['"$label"']	/;p;}'
+    done |
+    fzf --exact --ansi --no-sort --with-nth=2.. --nth=2.. --delimiter='	' --prompt="$prompt" \
+      --color='hl:underline:bold:green,hl+:underline:reverse:green' \
+      --preview="$preview_cmd" --preview-window='right:50%:hidden' \
+      --bind='ctrl-/:toggle-preview,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-f:page-down,ctrl-b:page-up,ctrl-g:first,G:last,ctrl-y:execute-silent(echo -n {3..} | pbcopy),ctrl-w:transform-nth[test "$FZF_NTH" = "2.." && echo ".." || echo "2.."]+transform-prompt[test "$FZF_NTH" = ".." && echo "Search window names only> " || echo "'"$prompt"'"]'
+  ) || return
+  local target text
+  target=$(printf '%s' "$result" | cut -f1)
+  text=$(printf '%s' "$result" | cut -f3- | sed 's/^ *[0-9]*  //')
+  tmux switch-client -t "$target" \; select-window -t "$target" \; select-pane -t "$target"
+  tmux copy-mode -t "$target" \; send-keys -t "$target" -X search-backward "$text"
+}
