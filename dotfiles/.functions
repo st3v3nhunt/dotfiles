@@ -17,7 +17,8 @@ tmux-pane-search() {
       } | nl -ba -w4 -s'  ' | sed -n '/..*/{s/^/'"$target"'	['"$label"'] /;p;}'
     done |
     fzf --exact --ansi --no-sort --with-nth=2.. --delimiter='	' --prompt="$prompt" \
-      --color='hl:underline:bold:red,hl+:underline:reverse:red'
+      --color='hl:underline:bold:red,hl+:underline:reverse:red' \
+      --bind='ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-f:page-down,ctrl-b:page-up,ctrl-g:first,shift-g:last,ctrl-y:execute-silent(echo -n {2..} | pbcopy)'
   ) || return
   local target text
   target=$(printf '%s' "$result" | cut -f1)
