@@ -163,6 +163,17 @@ and scrolls to the matching line.
 - `prefix + f` — search across all panes in all sessions (1000 lines scrollback)
 - `prefix + F` — search panes in the current window only (10000 lines scrollback)
 
+Within the search popup:
+
+| Key | Action |
+| --- | --- |
+| `ctrl-w` | Toggle searching window/session names |
+| `ctrl-/` | Toggle preview (surrounding context) |
+| `ctrl-d` / `ctrl-u` | Half page down/up |
+| `ctrl-f` / `ctrl-b` | Full page down/up |
+| `ctrl-g` / `G` | Jump to first/last result |
+| `ctrl-y` | Copy selected line to clipboard |
+
 ## FAQ
 
 - No linting in Vim and no lint warning or error symbols in the margin?
