@@ -1,2 +1,22 @@
 # Git rebase function
 grbh() { git rebase -i HEAD~"$1"; }
+
+# Search text across all tmux panes/windows/sessions with fzf, then jump to the matching pane
+tmux-pane-search() {
+  local result
+  result=$(
+    tmux list-panes -a -F '#{session_name}:#{window_index}.#{pane_index} #{session_name}|#{window_index}(#{window_name})|#{pane_index}' |
+    while IFS=' ' read -r target label; do
+      { tmux capture-pane -t "$target" -p -S -1000 2>/dev/null
+        tmux capture-pane -t "$target" -p -a 2>/dev/null
+      } | nl -ba -w4 -s'  ' | sed -n '/..*/{s/^/'"$target"'	['"$label"'] /;p;}'
+    done |
+    fzf --ansi --no-sort --with-nth=2.. --delimiter='	' --prompt="Search panes> " \
+      --color='hl:underline:bold:red,hl+:underline:reverse:red'
+  ) || return
+  local target text
+  target=$(printf '%s' "$result" | cut -f1)
+  text=$(printf '%s' "$result" | cut -f2- | sed 's/^\[[^]]*\] //')
+  tmux switch-client -t "$target" \; select-window -t "$target" \; select-pane -t "$target"
+  tmux copy-mode -t "$target" \; send-keys -t "$target" -X search-backward "$text"
+}
