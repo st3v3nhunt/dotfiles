@@ -158,7 +158,7 @@ This can also fix problems with the plugins not working.
 ### Pane text search
 
 Search text across tmux panes using fzf. Selecting a match switches to the pane
-and scrolls to the matching line.
+and scrolls to the matching line. Requires `fzf` and `tmux` to be installed.
 
 - `prefix + f` — search across all panes in all sessions (1000 lines scrollback)
 - `prefix + F` — search panes in the current window only (10000 lines scrollback)
