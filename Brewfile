@@ -62,6 +62,7 @@ brew "htop"
 brew "ripgrep"
 brew "tldr"
 brew "tmux"
+brew "watch"
 
 # Git
 brew "gh"
