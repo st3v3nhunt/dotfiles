@@ -11,7 +11,7 @@ _lazy_load_nvm() {
   [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
 }
 for _cmd in nvm node npm npx nvim which; do
-  eval "${_cmd}() { _lazy_load_nvm; ${_cmd} \"\$@\" }"
+  eval "${_cmd}() { _lazy_load_nvm; ${_cmd} \"\$@\"; }"
 done
 unset _cmd
 
