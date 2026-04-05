@@ -1,4 +1,4 @@
-# ~/.codex/AGENTS.md
+# Global AGENTS.md
 
 ## Working agreements
 
