@@ -8,6 +8,7 @@ if is_wsl; then
 fi
 
 ./scripts/install-dotfiles.sh
+./scripts/install-codex-stuff.sh
 ./scripts/install-oh-my-zsh.sh
 ./scripts/install-brew.sh
 brew bundle --file=Brewfile
