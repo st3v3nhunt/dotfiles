@@ -75,7 +75,11 @@ If sharing a key across machines is not desirable, the git config also supports 
 
 The Neovim configuration lives in [.config/nvim](.config/nvim) and is linked into `~/.config/nvim` by [scripts/install-vim-stuff.sh](scripts/install-vim-stuff.sh).
 
-Additional editor tooling is installed by [scripts/install-nvim-tooling.sh](scripts/install-nvim-tooling.sh), including language servers and CLI tools such as `gopls`, `lua-language-server`, `rust-analyzer`, `eslint_d`, `prettierd`, and markdown linters.
+Additional editor tooling is installed by
+[scripts/install-nvim-tooling.sh](scripts/install-nvim-tooling.sh), including
+language servers and command-line tools such as `gopls`,
+`lua-language-server`, `rust-analyzer`, `eslint_d`, `prettierd`, and Markdown
+linters.
 
 If plugins or plugin-managed keybindings look out of sync, run:
 
@@ -87,9 +91,10 @@ If plugins or plugin-managed keybindings look out of sync, run:
 
 Go support uses `vim-go` together with `gopls`. The required tooling is installed by [scripts/install-nvim-tooling.sh](scripts/install-nvim-tooling.sh).
 
-### C#
+### C Sharp
 
-C# support uses OmniSharp via Neovim's built-in LSP configuration. The repo expects the OmniSharp binary at:
+C# support uses OmniSharp via Neovim's built-in LSP configuration. The
+repository expects the OmniSharp binary at:
 
 ```text
 ~/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp
