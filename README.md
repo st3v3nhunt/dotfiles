@@ -1,30 +1,43 @@
-# Dot files
+# Dotfiles
 
 [![Release Build Status](https://github.com/st3v3nhunt/dotfiles/workflows/Release/badge.svg)](https://github.com/st3v3nhunt/dotfiles/actions?workflow=Release)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Known Vulnerabilities](https://snyk.io/test/github/st3v3nhunt/dotfiles/badge.svg)](https://snyk.io/test/github/st3v3nhunt/dotfiles)
 
-> Dotfiles repository for macOS and Linux WSL distros
+> Dotfiles for macOS and WSL environments
 
-Clone the repository somewhere on the local disk and run `./install.sh`. This
-will do most of the following but some installation steps are OS dependent. The
-details can be seen in [install.sh](install.sh).:
+This repository keeps shell, git, editor, terminal, and tool configuration under version control and installs it by symlinking repo-managed files into place.
 
-- Symlink all dotfiles into the user's home directory
-- Install [Oh My Zsh](https://ohmyz.sh/) and some plugins
-- Install [Homebrew](https://brew.sh/) packages via [Brewfile](Brewfile)
-- Install some [Gems](https://rubygems.org)
-- Install some [Pips](https://pypi.org/)
-- Install some [Node.js](https://nodejs.org/en/) stuff including
-  [nvm](https://github.com/nvm-sh/nvm) and globally installed npm packages
-  including [Yarn](https://yarnpkg.com/)
-- Install and setup [tmux](https://github.com/tmux/tmux) related stuff
-- Install and setup [Neovim](https://neovim.io/) with pure Lua configuration
-- Install .Net tooling
-- Install [Nerd Fonts](https://www.nerdfonts.com/)
-- Install [Rust](https://www.rust-lang.org/)
+## Installation
 
-At several stages during the running of the installation scripts your password will be prompted for.
+Clone the repository somewhere on the local disk and run:
+
+```sh
+./install.sh
+```
+
+The install script orchestrates the current setup in [install.sh](install.sh):
+
+- On WSL, runs [scripts/install-wsl-stuff.sh](scripts/install-wsl-stuff.sh) first for distro and Windows integration setup
+- Symlinks shell and git dotfiles from [dotfiles](dotfiles) and [git](git) into the home directory
+- Symlinks global Claude and Codex instructions from [.config/claude](.config/claude) and [.config/codex](.config/codex)
+- Installs Homebrew packages from [Brewfile](Brewfile)
+- Applies macOS-specific defaults and app configuration on macOS
+- Installs language runtimes and tooling for Node.js, Python, Go, Rust, .NET, tmux, Neovim, AWS CLI, gcloud, and more
+
+Some steps require network access and some will prompt for your password.
+
+## Repository Layout
+
+- [dotfiles](dotfiles): shell and tmux configuration
+- [git](git): git configuration and helper scripts
+- [.config/nvim](.config/nvim): Neovim configuration
+- [.config/ghostty](.config/ghostty): Ghostty configuration
+- [.config/claude](.config/claude): Claude global agent instructions
+- [.config/codex](.config/codex): Codex global agent instructions
+- [scripts](scripts): installation and setup scripts
+- [wsl](wsl): WSL and Windows-side terminal configuration
+- [doc/adr](doc/adr): architecture decision records
 
 ## Homebrew Packages
 
@@ -37,204 +50,94 @@ brew bundle cleanup      # Remove packages not in Brewfile
 brew bundle dump --force # Regenerate Brewfile from installed packages
 ```
 
-## Git Config
+## Git
 
-### Machine specific Git signing key
+### Machine-specific signing key
 
-In order to
-[sign commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits)
-(a good idea) a signing key needs to be associated to your Git profile.
+To [sign commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits), associate a signing key with the local git profile.
 
-The easiest way to manage this is to use the same key on each machine where the
-signing needs to happen. Once a key has been generated it can be exported and
-imported
-([details](https://makandracards.com/makandra-orga/37763-gpg-extract-private-key-and-import-on-different-machine)).
+The simplest approach is usually to reuse the same key on each machine where signing should happen:
 
 ```sh
-# List the keys and get id of the one of interest (in braces in the output)
-gpg --list-secret-keys [--keyid-format=long]
-# Export the key of interest to a file called `private.key`
+# List secret keys and note the key id
+gpg --list-secret-keys --keyid-format=long
+
+# Export the key you want to move
 gpg --export-secret-keys <key-id> > private.key
-# Move the file to the machine where it is to be imported
+
+# Import it on the destination machine
 gpg --import private.key
 ```
 
-If this isn't possible (or desirable) there are other ways around this, most
-notably using Git's
-[`includeIf`](https://git-scm.com/docs/git-config#_includes). However, this
-would likely introduce additional complexity and worse ergonomics (e.g. using a
-specifically named directory to determine which key to use).
+If sharing a key across machines is not desirable, the git config also supports machine-specific configuration via `includeIf`.
 
-## WSL/Windows
+## Neovim
 
-[Windows Terminal](https://github.com/microsoft/terminal/blob/master/doc/user-docs/index.md)
-is used, settings are available in [WSL/profiles.json](WSL/profiles.json). See
-[install-wsl-stuff](./scripts/install-wsl-stuff.sh) for details.
+The Neovim configuration lives in [.config/nvim](.config/nvim) and is linked into `~/.config/nvim` by [scripts/install-vim-stuff.sh](scripts/install-vim-stuff.sh).
+
+Additional editor tooling is installed by [scripts/install-nvim-tooling.sh](scripts/install-nvim-tooling.sh), including language servers and CLI tools such as `gopls`, `lua-language-server`, `rust-analyzer`, `eslint_d`, `prettierd`, and markdown linters.
+
+If plugins or plugin-managed keybindings look out of sync, run:
+
+```vim
+:Lazy sync
+```
+
+### Go
+
+Go support uses `vim-go` together with `gopls`. The required tooling is installed by [scripts/install-nvim-tooling.sh](scripts/install-nvim-tooling.sh).
+
+### C#
+
+C# support uses OmniSharp via Neovim's built-in LSP configuration. The repo expects the OmniSharp binary at:
+
+```text
+~/.cache/omnisharp-vim/omnisharp-roslyn/OmniSharp
+```
+
+If it is missing, download a release from the [OmniSharp releases page](https://github.com/OmniSharp/omnisharp-roslyn/releases) and unpack it there.
+
+## Tmux
+
+[scripts/install-tmux-stuff.sh](scripts/install-tmux-stuff.sh) installs the [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm). The tmux config enables:
+
+- `tmux-resurrect` for saving and restoring sessions
+- `tmux-continuum` for automatic session persistence
+- pane text search via `prefix + f` across all sessions and `prefix + F` within the current window
+
+If tmux plugins are not installed yet, reload tmux and run `prefix + I`.
+
+## WSL / Windows
+
+[scripts/install-wsl-stuff.sh](scripts/install-wsl-stuff.sh) handles the WSL-specific setup. In addition to installing distro packages, it:
+
+- links [wsl/wsl.conf](wsl/wsl.conf) into `/etc/wsl.conf`
+- links [wsl/alacritty.toml](wsl/alacritty.toml) into the Windows Alacritty config location
+- links [wsl/windows-terminal.settings.json](wsl/windows-terminal.settings.json) into the Windows Terminal config location
+- links [wsl/windows-terminal-preview.settings.json](wsl/windows-terminal-preview.settings.json) into the Windows Terminal Preview config location
+
+The script uses `cmd.exe /c mklink`, so the Windows username, WSL distro name, and WSL username must resolve correctly. If needed, override them with `WINDOWS_USER`, `WSL_OS`, and `WSL_USER`.
+
+Additional Windows-side notes live in [wsl/wsl-specific-instructions.md](wsl/wsl-specific-instructions.md).
 
 ## macOS
 
-### Manual steps
+[scripts/install-mac-stuff.sh](scripts/install-mac-stuff.sh) applies macOS-specific setup, including symlinks for:
 
-- Set Resolution of display (System Preferences -> Displays -> Display Settings...)
-- Set Text shortcuts (System Preferences -> Keyboard -> Text). Useful shortcuts:
+- [.config/gnupg/gpg-agent.conf](.config/gnupg/gpg-agent.conf)
+- [.config/karabiner/karabiner.json](.config/karabiner/karabiner.json)
+- [.config/k9s/config.yml](.config/k9s/config.yml)
+- [.config/lazygit/config.yml](.config/lazygit/config.yml)
+- [.config/ghostty/config](.config/ghostty/config)
 
-| Replace | With                   |
-| ------- | ---------------------- |
-| @p      | personal email address |
-| @w      | work email address     |
-| mob     | mobile phone number    |
+If you use iTerm2, preferences are stored in [plists/com.googlecode.iterm2.plist](plists/com.googlecode.iterm2.plist). In iTerm2, set `Preferences -> General -> Preferences` to load preferences from the repository's `plists` directory.
 
-### iTerm2
+For Powerlevel10k glyphs, install a Nerd Font. [JetBrains Mono](https://www.jetbrains.com/lp/mono/) is a good default.
 
-#### Preferences
+## Releases
 
-iTerm2 preferences are stored @ `/plists/com.googlecode.iterm2.plist`. Within
-iTerm2 this setting will need to be entered before these will be used.
-Go to `Preferences->General->Preferences` and enter `~/code/dotfiles/plists`
-into the option for `Load preferences from a custom folder or URL:`.
-
-#### Themes
-
-The iterm preference file uses `Monokai-Dark` for the theme. This can be
-downloaded from
-[iterm2colorschemes](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Molokai.itermcolors)
-
-#### Installing Docker for Mac
-
-At the time of writing [Docker for Mac](https://www.docker.com/docker-mac) is
-not available via Homebrew. It can be downloaded from the
-[Docker Store](https://store.docker.com/editions/community/docker-ce-desktop-mac).
-
-## Language specifics
-
-### Deno setup in Neovim
-
-Deno is configured via LSP (denols) automatically. No additional setup needed.
-
-### Go language support in Vim
-
-Install [vim-go](https://github.com/fatih/vim-go).
-The plugin will be installed when running `./install-vim-stuff`. Once the
-plugin is installed `:GoInstallBinaries` needs to be run from within Neovim.
-
-### C# IDE like abilities
-
-[OmniSharp](https://github.com/OmniSharp/omnisharp-roslyn) provides IDE
-capabilities within Neovim via the built-in LSP using the
-[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) plugin.
-
-OmniSharp needs to be downloaded from the
-[OmniSharp GitHub releases](https://github.com/OmniSharp/omnisharp-roslyn/releases).
-Unpack the download and add it to `~/.cache/omnisharp-vim/omnisharp-roslyn/` as
-specified in [lsp.lua](.config/nvim/lua/plugins/lsp.lua).
-
-#### Install gt
-
-## Terminal
-
-### Nerd Fonts for Powerline
-
-In order to get the icons (glyphs) working for the Powerline theme for Oh My
-Zsh follow these
-[instructions](https://github.com/romkatv/powerlevel10k#manual-font-installation).
-It involves downloading and installing your favourite Nerd Font from
-[font-downloads](https://www.nerdfonts.com/font-downloads).
-Use [JetBrains Mono](https://www.jetbrains.com/lp/mono/), it is a very good
-choice and the configuration within this repository has been setup expecting it
-to be installed. Once installed the terminal(s) will need to be restarted.
-
-### [Tmux plugin manager](https://github.com/tmux-plugins/tpm)
-
-Tmux plugin manager is installed along with the following plugins:
-
-- [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) - enables
-  session saving and restoration via `prefix + Ctrl-s` and `prefix + Ctrl-r`
-- [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum) - automates
-  session the actions of `tmux-resurrect`
-
-In order to have the plugins installed, reload the config with `prefix + I`.
-This can also fix problems with the plugins not working.
-
-### Pane text search
-
-Search text across tmux panes using fzf. Selecting a match switches to the pane
-and scrolls to the matching line. Requires `fzf` and `tmux` to be installed.
-
-- `prefix + f` — search across all panes in all sessions (1000 lines scrollback)
-- `prefix + F` — search panes in the current window only (10000 lines scrollback)
-
-Within the search popup:
-
-| Key | Action |
-| --- | --- |
-| `ctrl-w` | Toggle searching window/session names |
-| `ctrl-/` | Toggle preview (surrounding context) |
-| `ctrl-d` / `ctrl-u` | Half page down/up |
-| `ctrl-f` / `ctrl-b` | Full page down/up |
-| `ctrl-g` / `G` | Jump to first/last result |
-| `ctrl-y` | Copy selected line to clipboard |
-
-## FAQ
-
-- No linting in Vim and no lint warning or error symbols in the margin?
-  - Check the repository's packages have been installed
-  - Try restarting the ESLint server. At the terminal run `eslint_d restart`
-- No completion in VIM?
-- Command failed and error reported `...can't decompress data; zlib not available`
-  - Run `sudo installer -pkg
-/Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
--target /`
-- If an error like this occurs - `Warning: Unexpected method 'license' called
-on Cask <cask_name>.` it might be because the cask is old and out of date, try:
-  - Removing the cask via `rm -rf $(brew --prefix)/Caskroom/<cask_name>`
-- Want to fetch all PRs from GitHub or MRs from GitLab locally?
-
-  - Add the following to the repository's `.git/config`:
-
-  ```ini
-  [remote "origin"]
-  fetch = +refs/pull/*:refs/remotes/origin/pull/*
-  fetch = +refs/merge-requests/*/head:refs/remotes/origin/merge-requests/*
-  ```
-
-- Reload Neovim config without restarting - `:so $MYVIMRC` or `<leader>sv`
-- Sort Vim's dictionary in place (`-o`) and case insensitively (`-f`) -
-  `sort -f -o vim/en.utf-8.add vim/en-utf-8.add`
-- Errors like `nvm is not compatible with the npm config "prefix" option`
-  - Try running `nvm unalias default`
-- No `deno` shell autocompletion?
-  - They probably failed to be created after `deno` had been installed. Re-run
-    the commands as shown in the
-    [docs](https://deno.land/manual/getting_started/setup_your_environment#shell-autocomplete)
-    and re-source the shell
-- Problems with Neovim plugins? Try updating them with `:Lazy sync`
-- Missing formatters or linters? Check `:Mason` to see installed tools
-- Toggle Windows Terminal focus mode with `Ctrl+Shift+Enter`
-- Open Windows Terminal settings with `Ctrl+,`
-
-### Key bindings to remember
-
-#### Diagnostics
-
-[source](https://neovim.io/doc/user/diagnostic.html#diagnostic-defaults)
-
-- `]d` jumps to the next diagnostic in the buffer
-- `[d` jumps to the previous diagnostic in the buffer
-- `]D` jumps to the last diagnostic in the buffer
-- `[D` jumps to the first diagnostic in the buffer
-- `<C-w>d` shows diagnostic at cursor in a floating window
-
-#### NvimTree
-
-- `g?` shows help/keybindings menu
-
-#### Ghostty
-
-- `Cmd+Shift+,` reload config
+This repository uses semantic-release with conventional commits. Release automation is defined in [.github/workflows/release.yml](.github/workflows/release.yml).
 
 ## Architecture Decision Records
 
-This repository uses
-[Architecture Decision Records](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
-to record architectural decisions for this project.
-They are stored in [doc/architecture/decisions](doc/architecture/decisions).
+Architecture decisions for the repository are recorded in [doc/adr](doc/adr).
