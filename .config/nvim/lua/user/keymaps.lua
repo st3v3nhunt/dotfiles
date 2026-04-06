@@ -49,12 +49,6 @@ setKeyMap("n", "<leader>jq", ":%! jq<CR>")
 setKeyMap("n", "<leader>ev", ":vsplit $MYVIMRC<CR>")
 setKeyMap("n", "<leader>sv", ":source $MYVIMRC<CR>")
 
--- GitHub Copilot mappings
-setKeyMap("i", "<C-J>", 'copilot#Accept("\\<CR>")', {
-  expr = true,
-  replace_keycodes = false,
-})
-
 -- WSL clipboard paste mapping
 setKeyMap("n", "<leader>p", ":r !powershell.exe -Command Get-Clipboard<CR>", { silent = true })
 

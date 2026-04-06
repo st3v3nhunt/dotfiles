@@ -7,5 +7,6 @@
     "lua-lsp@claude-plugins-official": true
   },
   "alwaysThinkingEnabled": true,
-  "effortLevel": "medium"
+  "effortLevel": "medium",
+  "model": "opus"
 }
