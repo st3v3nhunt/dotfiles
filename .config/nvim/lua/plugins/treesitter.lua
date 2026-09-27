@@ -1,40 +1,40 @@
 return {
   {
+    -- The `main` branch is required for Neovim 0.12+ and does not support
+    -- lazy-loading. Building parsers requires the `tree-sitter` CLI.
     "nvim-treesitter/nvim-treesitter",
+    branch = "main",
+    lazy = false,
     build = ":TSUpdate",
-    event = { "BufReadPost", "BufNewFile" },
     config = function()
-      require("nvim-treesitter.configs").setup({
-        ensure_installed = {
-          "bash",
-          "c_sharp",
-          "css",
-          "dockerfile",
-          "eex",
-          "elixir",
-          "heex",
-          "html",
-          "javascript",
-          "lua",
-          "markdown",
-          "python",
-          "ruby",
-          "rust",
-          "toml",
-          "typescript",
-          "vim",
-          "yaml",
-        },
+      require("nvim-treesitter").install({
+        "bash",
+        "c_sharp",
+        "css",
+        "dockerfile",
+        "eex",
+        "elixir",
+        "heex",
+        "html",
+        "javascript",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "python",
+        "ruby",
+        "rust",
+        "toml",
+        "typescript",
+        "vim",
+        "yaml",
+      })
 
-        sync_install = false,
-        auto_install = true,
-        ignore_install = {},
-
-        highlight = {
-          enable = true,
-          disable = {},
-          additional_vim_regex_highlighting = false,
-        },
+      vim.api.nvim_create_autocmd("FileType", {
+        group = vim.api.nvim_create_augroup("user_treesitter", { clear = true }),
+        callback = function(args)
+          -- Silently skip filetypes without an installed parser
+          pcall(vim.treesitter.start, args.buf)
+        end,
       })
     end,
   },
