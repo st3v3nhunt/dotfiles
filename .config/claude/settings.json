@@ -1,4 +1,5 @@
 {
+  "model": "opus",
   "statusLine": {
     "type": "command",
     "command": "bash ~/.claude/statusline-command.sh"
@@ -8,5 +9,8 @@
   },
   "alwaysThinkingEnabled": true,
   "effortLevel": "medium",
-  "model": "opus"
+  "tui": "fullscreen",
+  "autoMemoryEnabled": true,
+  "editorMode": "vim",
+  "autoCompactEnabled": false
 }

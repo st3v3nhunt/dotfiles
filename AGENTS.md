@@ -9,7 +9,7 @@ Keep this file short and operational. If information is obvious from the tree, r
 - This repository is install-script driven. When adding or moving managed
   config, make sure the relevant script under `scripts/` installs or symlinks
   it.
-- Most shell and git dotfiles are linked by `scripts/install-dotfiles.sh`. macOS-only app and `.config` setup is mostly handled in `scripts/install-mac-stuff.sh`. Codex's global agent config is linked by `scripts/install-codex-stuff.sh`.
+- Most shell and git dotfiles are linked by `scripts/install-dotfiles.sh`. macOS-only app and `.config` setup is mostly handled in `scripts/install-mac-stuff.sh`. Claude Code config (`.config/claude/`) is linked by `scripts/install-claude-stuff.sh`, and Codex's global agent config by `scripts/install-codex-stuff.sh`.
 - Prefer editing an existing config file over creating a new one. New top-level config should follow the existing repo-managed symlink pattern rather than assuming the file will be discovered automatically.
 - Neovim config is split by responsibility: plugin specs in `.config/nvim/lua/plugins/`, shared user config in `.config/nvim/lua/user/`, and filetype-specific settings in `.config/nvim/ftplugin/`.
 - Keep Neovim plugin configuration minimal. Prefer lazy-loading and override
