@@ -30,12 +30,18 @@ jobs:
   superlinter:
     name: Lint Code Base
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      statuses: write
     steps:
     - name: Checkout
       uses: actions/checkout@v7
+      with:
+        fetch-depth: 0
 
     - name: Lint Code Base
-      uses: docker://ghcr.io/github/super-linter:slim-v4
+      uses: super-linter/super-linter/slim@v8.7.0
       env:
         FILTER_REGEX_EXCLUDE: (CHANGELOG.md|.git-completion.bash|.git-prompt.sh)
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
