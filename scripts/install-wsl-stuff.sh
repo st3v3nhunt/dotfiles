@@ -26,9 +26,6 @@ WINDOWS_USER="${WINDOWS_USER:-$USER}"
 WSL_OS="${WSL_OS:-$(lsb_release -d | cut -f2 | tr ' ' '-')}"
 WSL_USER="${WSL_USER:-$USER}"
 
-echo "Linking alacritty.toml"
-cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Roaming\\alacritty\\alacritty.toml" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\alacritty.toml"
-
 echo "Linking Windows Terminal settings.json"
 cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\settings.json" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\windows-terminal.settings.json"
 
