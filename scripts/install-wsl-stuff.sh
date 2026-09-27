@@ -13,7 +13,7 @@ echo "https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager
 echo "Installing Deno..."
 curl -fsSL https://deno.land/x/install/install.sh | sh
 
-REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
+REPO_DIR="$(cd "$(dirname "$(dirname "${BASH_SOURCE[0]}")")" && pwd)"
 GIT_DIR="$REPO_DIR/git"
 
 ln -nfsv "$GIT_DIR/.pc.gitconfig" ~
@@ -25,9 +25,6 @@ echo "Linking files in Windows to those in the dotfiles repo on the specific WSL
 WINDOWS_USER="${WINDOWS_USER:-$USER}"
 WSL_OS="${WSL_OS:-$(lsb_release -d | cut -f2 | tr ' ' '-')}"
 WSL_USER="${WSL_USER:-$USER}"
-
-echo "Linking alacritty.toml"
-cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Roaming\\alacritty\\alacritty.toml" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\alacritty.toml"
 
 echo "Linking Windows Terminal settings.json"
 cmd.exe /c mklink "C:\\Users\\$WINDOWS_USER\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\settings.json" "\\\\wsl$\\$WSL_OS\\home\\$WSL_USER\\code\\dotfiles\\wsl\\windows-terminal.settings.json"

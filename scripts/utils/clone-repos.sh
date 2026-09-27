@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 REPO_PATTERNS=(
-ffc-sfi
+  ffc-sfi
 )
 
 CODE_DIR=~/code
@@ -17,10 +17,10 @@ for PATTERN in "${REPO_PATTERNS[@]}"; do
     REPO_DIR=$(echo "$REPO" | cut -d/ -f2)
     if [ ! -d "$REPO_DIR" ]; then
       echo "$REPO will be cloned"
-      cd "$CODE_DIR" && gh repo clone "$REPO" && cd - > /dev/null || return
+      cd "$CODE_DIR" && gh repo clone "$REPO" && cd - >/dev/null || return
     else
       echo "$REPO already exists"
-      cd "$REPO_DIR" && gh repo sync && cd - > /dev/null || return
+      cd "$REPO_DIR" && gh repo sync && cd - >/dev/null || return
     fi
   done
 done

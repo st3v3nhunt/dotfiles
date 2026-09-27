@@ -11,8 +11,7 @@ function ResetColor() {
   tput sgr0
 }
 
-last_exit_code ()
-{
+last_exit_code() {
   local last_status=$?
 
   if [[ $last_status != 0 ]]; then

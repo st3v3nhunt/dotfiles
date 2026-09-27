@@ -36,11 +36,11 @@ ctx_part=""
 if [ -n "$used_pct" ]; then
   used_int=$(printf '%.0f' "$used_pct")
   if [ "$used_int" -ge 75 ]; then
-    ctx_color="38;5;196"  # red
+    ctx_color="38;5;196" # red
   elif [ "$used_int" -ge 50 ]; then
-    ctx_color="38;5;214"  # orange
+    ctx_color="38;5;214" # orange
   else
-    ctx_color="38;5;243"  # dim grey
+    ctx_color="38;5;243" # dim grey
   fi
   ctx_part=" \033[${ctx_color}mctx:${used_int}%\033[0m"
 fi
@@ -50,11 +50,11 @@ rate_part=""
 if [ -n "$five_pct" ]; then
   five_int=$(printf '%.0f' "$five_pct")
   if [ "$five_int" -ge 75 ]; then
-    five_color="38;5;196"  # red
+    five_color="38;5;196" # red
   elif [ "$five_int" -ge 50 ]; then
-    five_color="38;5;214"  # orange
+    five_color="38;5;214" # orange
   else
-    five_color="38;5;243"  # dim grey
+    five_color="38;5;243" # dim grey
   fi
   five_reset_fmt=""
   if [ -n "$five_reset" ]; then
@@ -66,11 +66,11 @@ fi
 if [ -n "$week_pct" ]; then
   week_int=$(printf '%.0f' "$week_pct")
   if [ "$week_int" -ge 75 ]; then
-    week_color="38;5;196"  # red
+    week_color="38;5;196" # red
   elif [ "$week_int" -ge 50 ]; then
-    week_color="38;5;214"  # orange
+    week_color="38;5;214" # orange
   else
-    week_color="38;5;243"  # dim grey
+    week_color="38;5;243" # dim grey
   fi
   week_reset_fmt=""
   if [ -n "$week_reset" ]; then

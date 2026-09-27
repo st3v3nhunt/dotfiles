@@ -1,0 +1,3 @@
+[codespell]
+# AKS = Azure Kubernetes Service (vim spell file)
+ignore-words-list = aks

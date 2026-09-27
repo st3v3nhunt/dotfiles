@@ -115,7 +115,6 @@ cask "firefox"
 cask "google-chrome"
 
 # Casks - Utils
-cask "alacritty"
 cask "another-redis-desktop-manager"
 cask "caffeine"
 cask "db-browser-for-sqlite"

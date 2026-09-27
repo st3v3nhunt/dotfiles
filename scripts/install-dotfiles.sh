@@ -9,7 +9,6 @@ GIT_DIR="$REPO_DIR/git"
 
 printf "${GREEN}Starting to symlink...${NC}\\n"
 
-ln -nfsv "$DOTFILES_DIR/.alacritty.yml" ~
 ln -nfsv "$DOTFILES_DIR/.aliases" ~
 ln -nfsv "$DOTFILES_DIR/.bash_profile" ~
 ln -nfsv "$DOTFILES_DIR/.bashrc" ~

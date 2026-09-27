@@ -8,7 +8,7 @@ if [[ ! -d ~/.vim/tmp/ ]]; then
   mkdir -p ~/.vim/tmp/{backup,swap,undo}
 fi
 
-REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
+REPO_DIR="$(cd "$(dirname "$(dirname "${BASH_SOURCE[0]}")")" && pwd)"
 
 printf "${GREEN}Installing Neovim configuration...${NC}\\n"
 CONFIG_DIR=".config"

@@ -123,7 +123,6 @@ If tmux plugins are not installed yet, reload tmux and run `prefix + I`.
 distro packages, it:
 
 - links [wsl/wsl.conf](wsl/wsl.conf) into `/etc/wsl.conf`
-- links [wsl/alacritty.toml](wsl/alacritty.toml) into the Windows Alacritty config location
 - links [wsl/windows-terminal.settings.json](wsl/windows-terminal.settings.json) into the Windows Terminal config
   location
 - links [wsl/windows-terminal-preview.settings.json](wsl/windows-terminal-preview.settings.json) into the Windows

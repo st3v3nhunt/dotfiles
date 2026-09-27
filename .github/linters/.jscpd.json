@@ -1,6 +1,16 @@
 {
   "threshold": 0,
   "reporters": ["consoleFull"],
-  "ignore": ["**/karabiner.json", "**/__snapshots__/**"],
+  "ignore": [
+    "**/__snapshots__/**",
+    "**/.git-completion.bash",
+    "**/.github/workflows/**",
+    "**/.p10k.zsh",
+    "**/CHANGELOG.md",
+    "**/karabiner.json",
+    "**/lazy-lock.json",
+    "**/package-lock.json",
+    "**/windows-terminal*.json"
+  ],
   "absolute": true
 }
