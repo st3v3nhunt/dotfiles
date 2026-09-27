@@ -3,29 +3,33 @@ name: Release
 on:
   push:
     branches:
-    - '[0-9]+.x'
-    - '[0-9]+.[0-9]+.x'
+      - "[0-9]+.x"
+      - "[0-9]+.[0-9]+.x"
+
+permissions:
+  contents: read
 
 jobs:
   commitlint:
     name: Commitlint
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v7
-      with:
-        fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v7
-      with:
-        node-version: 24
+      - name: Setup Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Run commitlint
-      run: npx commitlint --from origin/main --to HEAD --verbose
+      - name: Run commitlint
+        run: npx commitlint --from origin/main --to HEAD --verbose
 
   superlinter:
     name: Lint Code Base
@@ -35,33 +39,45 @@ jobs:
       packages: read
       statuses: write
     steps:
-    - name: Checkout
-      uses: actions/checkout@v7
-      with:
-        fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
 
-    - name: Lint Code Base
-      uses: super-linter/super-linter/slim@v8.7.0
-      env:
-        FILTER_REGEX_EXCLUDE: (CHANGELOG.md|.git-completion.bash|.git-prompt.sh)
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Lint Code Base
+        uses: super-linter/super-linter/slim@4ce20838b8ab83717e78138c5b3a1407148e0918 # v8.7.0
+        env:
+          # Generated or vendored files that shouldn't be linted
+          FILTER_REGEX_EXCLUDE: (CHANGELOG\.md|\.git-completion\.bash|\.git-prompt\.sh|\.p10k\.zsh|karabiner\.json|windows-terminal.*\.json|lazy-lock\.json|package-lock\.json)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Prettier handles JSON formatting; wording checks are too opinionated
+          VALIDATE_BIOME_FORMAT: false
+          VALIDATE_NATURAL_LANGUAGE: false
 
   release:
     name: Create semantic-release
     runs-on: ubuntu-latest
+    # Needed to push release commits/tags and comment on released issues/PRs
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
     steps:
-    - name: Checkout
-      uses: actions/checkout@v7
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v7
-      with:
-        node-version: 24
+      - name: Setup Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Release
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: npx semantic-release
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release

@@ -22,7 +22,7 @@ k9s:
         active: default
         lockFavorites: false
         favorites:
-        - default
+          - default
       view:
         active: po
       featureGates:

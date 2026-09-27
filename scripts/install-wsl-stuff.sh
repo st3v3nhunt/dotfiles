@@ -13,7 +13,7 @@ echo "https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager
 echo "Installing Deno..."
 curl -fsSL https://deno.land/x/install/install.sh | sh
 
-REPO_DIR="$( cd "$( dirname "$(dirname "${BASH_SOURCE[0]}" )" )" && pwd )"
+REPO_DIR="$(cd "$(dirname "$(dirname "${BASH_SOURCE[0]}")")" && pwd)"
 GIT_DIR="$REPO_DIR/git"
 
 ln -nfsv "$GIT_DIR/.pc.gitconfig" ~

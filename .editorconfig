@@ -1,0 +1,6 @@
+root = true
+
+# Shell scripts, also used by shfmt in super-linter
+[{*.sh,*.bash,*.zsh,.prompt,commit-msg,run-github-super-linter}]
+indent_style = space
+indent_size = 2

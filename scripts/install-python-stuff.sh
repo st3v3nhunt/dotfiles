@@ -9,14 +9,14 @@ echo "Installing latest version of pip3"
 python3 -m pip install --upgrade pip
 
 pips=(
-detect-secrets
-pre-commit
-pylint
-pynvim
-pytest
-pytest-cache
-pytest-pep8
-pytest-watch
+  detect-secrets
+  pre-commit
+  pylint
+  pynvim
+  pytest
+  pytest-cache
+  pytest-pep8
+  pytest-watch
 )
 
 for pip in "${pips[@]}"; do
