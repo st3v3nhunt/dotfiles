@@ -75,6 +75,7 @@ brew "lazygit"
 
 # Editors
 brew "neovim"
+brew "tree-sitter-cli"
 brew "vim"
 
 # Languages
