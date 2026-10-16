@@ -17,7 +17,7 @@ vim.opt.runtimepath:prepend(lazypath)
 
 -- VS Code specific configuration
 if vim.g.vscode then
-  require("vscode.settings")
+  require("user.vscode")
 else
   -- Load plugins with lazy.nvim
   require("lazy").setup("plugins", {
