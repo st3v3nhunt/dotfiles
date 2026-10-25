@@ -185,9 +185,6 @@ complete -o nospace -C $HOMEBREW_PREFIX/bin/vault vault
 # Enable (and configure) zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# asdf
-source $(brew --prefix asdf)/libexec/asdf.sh
-
 # tabtab source for packages
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/__tabtab.zsh ]] && source ~/.config/tabtab/__tabtab.zsh || true
