@@ -1,0 +1,48 @@
+# Symlinks created by scripts/install-links.sh
+#
+# Format: <os> <source in repo> <destination relative to $HOME>
+# <os> is one of: all, mac, wsl. The destination may contain spaces.
+
+# Shell
+all dotfiles/.aliases .aliases
+all dotfiles/.bash_profile .bash_profile
+all dotfiles/.bashrc .bashrc
+all dotfiles/.functions .functions
+all dotfiles/.p10k.zsh .p10k.zsh
+all dotfiles/.prompt .prompt
+all dotfiles/.shared-shell-setup .shared-shell-setup
+all dotfiles/.zprofile .zprofile
+all dotfiles/.zshrc .zshrc
+
+# Tmux
+all dotfiles/.tmux.conf .tmux.conf
+all dotfiles/.tmux.macos.conf .tmux.macos.conf
+all dotfiles/.tmux.wsl.conf .tmux.wsl.conf
+
+# Git
+all git/.git-completion.bash .git-completion.bash
+all git/.git-prompt.sh .git-prompt.sh
+all git/.gitconfig .gitconfig
+all git/.gitignore .gitignore
+mac git/.mac.gitconfig .gitconfig-os
+wsl git/.pc.gitconfig .gitconfig-os
+
+# Editors
+all .config/nvim .config/nvim
+all vim/spell .vim/spell
+all ctags/exclude.ctags .ctags.d/exclude.ctags
+all omnisharp/omnisharp.json .omnisharp/omnisharp.json
+
+# AI agents
+all .config/claude/CLAUDE.md .claude/CLAUDE.md
+all .config/claude/keybindings.json .claude/keybindings.json
+all .config/claude/settings.json .claude/settings.json
+all .config/claude/statusline-command.sh .claude/statusline-command.sh
+all .config/codex/AGENTS.md .codex/AGENTS.md
+
+# macOS apps
+mac .config/ghostty/config .config/ghostty/config
+mac .config/gnupg/gpg-agent.conf .gnupg/gpg-agent.conf
+mac .config/k9s/config.yml Library/Application Support/k9s/config.yml
+mac .config/karabiner/karabiner.json .config/karabiner/karabiner.json
+mac .config/lazygit/config.yml .config/lazygit/config.yml

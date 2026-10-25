@@ -7,9 +7,7 @@ if is_wsl; then
   ./scripts/install-wsl-stuff.sh
 fi
 
-./scripts/install-dotfiles.sh
-./scripts/install-claude-stuff.sh
-./scripts/install-codex-stuff.sh
+./scripts/install-links.sh --prune
 ./scripts/install-oh-my-zsh.sh
 ./scripts/install-brew.sh
 brew bundle --file=Brewfile
@@ -30,4 +28,4 @@ fi
 ./scripts/install-rust-stuff.sh
 ./scripts/install-or-upgrade-aws-cli.sh
 ./scripts/install-wasm-stuff.sh
-./scripts/install-vim-stuff.sh
+./scripts/install-nvim-tooling.sh

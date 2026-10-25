@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# shellcheck disable=2059
 if [ "$(
   /usr/bin/pgrep oahd >/dev/null 2>&1
   echo $?
@@ -7,48 +6,6 @@ if [ "$(
   echo "Installing Rosetta..."
   softwareupdate --install-rosetta --agree-to-license
 fi
-
-GREEN='\033[0;32m'
-NC='\033[0m'
-
-REPO_DIR="$(cd "$(dirname "$(dirname "${BASH_SOURCE[0]}")")" && pwd)"
-GIT_DIR="$REPO_DIR/git"
-
-ln -nfsv "$GIT_DIR/.mac.gitconfig" ~
-
-printf "${GREEN}Installing GnuPG configuration...${NC}\\n"
-mkdir -p ~/.gnupg
-ln -nfsv "$REPO_DIR/.config/gnupg/gpg-agent.conf" ~/.gnupg/gpg-agent.conf
-printf "${GREEN}Finished installing GnuPG configuration...${NC}\\n"
-
-printf "${GREEN}Installing Karabiner-Elements configuration...${NC}\\n"
-KARABINER_CONFIG_DIR=".config/karabiner"
-KARABINER_CONFIG="$KARABINER_CONFIG_DIR/karabiner.json"
-mkdir -p ~/"$KARABINER_CONFIG_DIR"
-ln -nfsv "$REPO_DIR/$KARABINER_CONFIG" ~/"$KARABINER_CONFIG_DIR"
-printf "${GREEN}Finished installing Karabiner-Elements configuration...${NC}\\n"
-echo "If there are problems with karabiner settings not being loaded try turning on the setting for 'system default configuration'"
-
-printf "${GREEN}k9s configuration...${NC}\\n"
-K9S_CONFIG_DIR=~/"Library/Application Support/k9s"
-K9S_CONFIG=".config/k9s/config.yml"
-mkdir -p ~/"$K9S_CONFIG_DIR"
-ln -nfsv "$REPO_DIR/$K9S_CONFIG" "$K9S_CONFIG_DIR"
-printf "${GREEN}Finished installing k9s configuration...${NC}\\n"
-
-printf "${GREEN}Installing lazygit configuration...${NC}\\n"
-LAZYGIT_CONFIG_DIR=".config/lazygit"
-LAZYGIT_CONFIG="$LAZYGIT_CONFIG_DIR/config.yml"
-mkdir -p ~/"$LAZYGIT_CONFIG_DIR"
-ln -nfsv "$REPO_DIR/$LAZYGIT_CONFIG" ~/"$LAZYGIT_CONFIG_DIR"
-printf "${GREEN}Finished installing lazygit configuration...${NC}\\n"
-
-printf "${GREEN}Installing Ghostty configuration...${NC}\\n"
-GHOSTTY_CONFIG_DIR=".config/ghostty"
-GHOSTTY_CONFIG="$GHOSTTY_CONFIG_DIR/config"
-mkdir -p ~/"$GHOSTTY_CONFIG_DIR"
-ln -nfsv "$REPO_DIR/$GHOSTTY_CONFIG" ~/"$GHOSTTY_CONFIG_DIR"
-printf "${GREEN}Finished installing Ghostty configuration...${NC}\\n"
 
 brews=(
   deno
