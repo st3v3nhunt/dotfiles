@@ -14,7 +14,7 @@ STEPS=(
   "links:all:./scripts/install-links.sh --prune"
   "oh-my-zsh:all:./scripts/install-oh-my-zsh.sh"
   "brew:all:./scripts/install-brew.sh"
-  "brew-bundle:all:brew bundle --file=Brewfile"
+  "brew-bundle:all:./scripts/install-brew-bundle.sh"
   "macos-defaults:mac:./scripts/defaults.sh"
   "mac:mac:./scripts/install-mac-stuff.sh"
   "gems:all:./scripts/install-gems.sh"

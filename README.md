@@ -72,6 +72,10 @@ brew bundle cleanup      # Remove packages not in Brewfile
 brew bundle dump --force # Regenerate Brewfile from installed packages
 ```
 
+Homebrew only loads formulae from third-party taps once they are [trusted](https://docs.brew.sh/Tap-Trust). Write
+those formulae in the Brewfile with their full `<user>/<tap>/<name>`: the `brew-bundle` step
+([scripts/install-brew-bundle.sh](scripts/install-brew-bundle.sh)) trusts each one before running `brew bundle`.
+
 ## Git
 
 ### Machine-specific signing key
