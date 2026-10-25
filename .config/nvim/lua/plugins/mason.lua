@@ -37,13 +37,14 @@ return {
         "eslint_d", -- JS/TS (daemon version)
         "markdownlint", -- Markdown linter
 
-        -- LSP servers (optional, can also be managed separately)
-        "lua_ls",
-        "ts_ls",
-        "jsonls",
-        "yamlls",
-        "bashls",
-        "dockerls",
+        -- LSP servers (Mason package names, not lspconfig names)
+        "lua-language-server",
+        "typescript-language-server",
+        "json-lsp",
+        "yaml-language-server",
+        "basedpyright",
+        "bash-language-server",
+        "dockerfile-language-server",
       },
       auto_update = false,
       run_on_start = true,
