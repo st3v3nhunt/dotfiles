@@ -40,7 +40,7 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 defaults -currentHost write com.apple.screensaver idleTime -int 0
 
 # Save screen captures in location of my choosing
-mkdir "$HOME/screenshots"
+mkdir -p "$HOME/screenshots"
 defaults write com.apple.screencapture location "$HOME/screenshots"
 
 # Finder: show all filename extensions
