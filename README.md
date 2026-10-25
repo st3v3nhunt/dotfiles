@@ -17,17 +17,37 @@ Clone the repository somewhere on the local disk and run:
 ./install.sh
 ```
 
-The install script orchestrates the current setup in [install.sh](install.sh):
+The install script runs a series of named steps, defined in [install.sh](install.sh):
 
 - On WSL, runs [scripts/install-wsl-stuff.sh](scripts/install-wsl-stuff.sh) first for distro and Windows integration
   setup
-- Symlinks shell and git dotfiles from [dotfiles](dotfiles) and [git](git) into the home directory
-- Symlinks global Claude and Codex instructions from [.config/claude](.config/claude) and [.config/codex](.config/codex)
+- Symlinks everything listed in [links.txt](links.txt) into the home directory
 - Installs Homebrew packages from [Brewfile](Brewfile)
 - Applies macOS-specific defaults and app configuration on macOS
 - Installs language runtimes and tooling for Node.js, Python, Go, Rust, .NET, tmux, Neovim, AWS CLI, gcloud, and more
 
+The script can be run from any directory and is safe to re-run. If a step fails the remaining steps still run, and the
+failed steps are listed at the end. To run specific steps only:
+
+```sh
+./install.sh --list        # Show the available steps
+./install.sh links node    # Run only the named steps
+```
+
 Some steps require network access and some will prompt for your password.
+
+### Symlinks
+
+[links.txt](links.txt) lists every symlink the repository manages, one per line, as
+`<os> <source in repo> <destination relative to $HOME>`, where `<os>` is `all`, `mac` or `wsl`. To manage a new
+config file, add a line there and run `./install.sh links`.
+
+The `links` step runs [scripts/install-links.sh](scripts/install-links.sh) with `--prune`:
+
+- An existing real file at a destination is moved to `<file>.backup.<timestamp>` rather than overwritten
+- Symlinks into this repository that are dangling or no longer listed are removed
+
+Preview the changes without making them with `./scripts/install-links.sh --prune --dry-run`.
 
 ## Repository Layout
 
@@ -77,8 +97,8 @@ If sharing a key across machines is not desirable, the git config also supports 
 
 ## Neovim
 
-The Neovim configuration lives in [.config/nvim](.config/nvim) and is linked into `~/.config/nvim` by
-[scripts/install-vim-stuff.sh](scripts/install-vim-stuff.sh).
+The Neovim configuration lives in [.config/nvim](.config/nvim) and is linked into `~/.config/nvim` by the `links`
+step.
 
 Additional editor tooling is installed by [scripts/install-nvim-tooling.sh](scripts/install-nvim-tooling.sh), including
 language servers and command-line tools such as `gopls`, `lua-language-server`, `rust-analyzer`, `eslint_d`,
@@ -135,13 +155,14 @@ Additional Windows-side notes live in [wsl/wsl-specific-instructions.md](wsl/wsl
 
 ## macOS
 
-[scripts/install-mac-stuff.sh](scripts/install-mac-stuff.sh) applies macOS-specific setup, including symlinks for:
+[scripts/defaults.sh](scripts/defaults.sh) applies macOS system preferences and
+[scripts/install-mac-stuff.sh](scripts/install-mac-stuff.sh) installs Rosetta and some macOS-only packages. App
+configuration (Ghostty, GnuPG, Karabiner-Elements, k9s, lazygit) is linked by the `links` step using the `mac` entries
+in [links.txt](links.txt).
 
-- [.config/gnupg/gpg-agent.conf](.config/gnupg/gpg-agent.conf)
-- [.config/karabiner/karabiner.json](.config/karabiner/karabiner.json)
-- [.config/k9s/config.yml](.config/k9s/config.yml)
-- [.config/lazygit/config.yml](.config/lazygit/config.yml)
-- [.config/ghostty/config](.config/ghostty/config)
+Karabiner-Elements and lazygit can replace their config symlink with a real file when they save settings. If that
+happens, re-run `./install.sh links`; the app's version is kept as a `.backup.<timestamp>` file. If Karabiner settings
+are not being loaded, try turning on its "system default configuration" setting.
 
 If you use iTerm2, preferences are stored in [plists/com.googlecode.iterm2.plist](plists/com.googlecode.iterm2.plist).
 In iTerm2, set `Preferences -> General -> Preferences` to load preferences from the repository's `plists` directory.
