@@ -61,4 +61,4 @@ npm i -g markdownlint-cli2
 # https://github.com/mantoni/eslint_d.js
 npm i -g eslint_d
 # https://github.com/Riverside-Healthcare/djLint
-pip3 install djlint
+uv tool install --upgrade djlint
