@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 
-echo "Installing zsh-nvm (https://github.com/lukechilds/zsh-nvm.git)..."
-ZSH_NVM_DIR=~/.zsh-nvm
-if [[ ! -d $ZSH_NVM_DIR ]]; then
-  git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
-elif [[ -d $ZSH_NVM_DIR ]]; then
-  pushd $ZSH_NVM_DIR && git pull
-  popd || exit
+echo "Installing nvm (https://github.com/nvm-sh/nvm)..."
+export NVM_DIR="$HOME/.nvm"
+if [[ ! -d "$NVM_DIR/.git" ]]; then
+  git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
+else
+  git -C "$NVM_DIR" fetch --tags --quiet
 fi
+# Check out the latest release rather than the development branch
+git -C "$NVM_DIR" checkout --quiet "$(git -C "$NVM_DIR" describe --abbrev=0 --tags --match "v[0-9]*" "$(git -C "$NVM_DIR" rev-list --tags --max-count=1)")"
+# nvm is a shell function, so load it into this script
+# shellcheck source=/dev/null
+source "$NVM_DIR/nvm.sh"
 
 echo "Install latest Node LTS version and set to default version..."
 nvm install --lts
@@ -32,7 +36,7 @@ npm install -g typescript
 npm install -g yarn
 
 echo "Installing Deno autocompletion. Reload shell once complete..."
-mkdir -pm~/.oh-my-zsh/custom/plugins/deno
+mkdir -p ~/.zfunc "$(brew --prefix)/etc/bash_completion.d"
 deno completions zsh >~/.zfunc/_deno
 
 deno completions bash >"$(brew --prefix)/etc/bash_completion.d/deno.bash"
