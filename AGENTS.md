@@ -16,7 +16,8 @@ Keep this file short and operational. If information is obvious from the tree, r
   defaults only when the repository needs a non-default behavior.
 - Shell scripts should follow the local conventions already used in the surrounding file: `#!/usr/bin/env bash`, 2-space indentation, and `REPO_DIR` for repo-relative paths when needed.
 - When changing install behavior, setup steps, or user-facing keybindings, update `README.md` if the change would matter to someone using these dotfiles.
-- Prefer validating shell changes with `shellcheck` when it is available.
+- Prefer validating shell changes with `shellcheck -x` when it is available.
+- Test link changes against a throwaway home, e.g. `HOME=$(mktemp -d) ./install.sh links`.
 
 ## What Not To Put Here
 
