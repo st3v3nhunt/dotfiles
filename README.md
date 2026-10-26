@@ -48,6 +48,12 @@ The `links` step runs [scripts/install-links.sh](scripts/install-links.sh) with 
 
 Preview the changes without making them with `./scripts/install-links.sh --prune --dry-run`.
 
+### Machine-specific shell settings
+
+Settings that only apply to one machine, such as work-specific environment variables or lines a tool's installer wants
+to append, belong in `~/.zshrc.local` or `~/.bashrc.local`. These files are sourced at the end of `.zshrc` and
+`.bashrc` if they exist, and are not part of this repository.
+
 ## Repository Layout
 
 - [dotfiles](dotfiles): shell and tmux configuration
