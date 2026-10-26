@@ -1,24 +1,16 @@
+# mise puts the runtimes and tools in ~/.config/mise/config.toml on PATH
+if command -v mise &> /dev/null; then
+  if [[ -n "$ZSH_VERSION" ]]; then
+    eval "$(mise activate zsh)"
+  else
+    eval "$(mise activate bash)"
+  fi
+fi
+
 # Go PATH setup
 if command -v go &> /dev/null; then
   export GOPATH="$(go env GOPATH)"
   export PATH="$PATH:$GOPATH/bin"
-fi
-
-# Lazy-load nvm — only initialises when first invoked (~400ms faster than zsh-nvm)
-export NVM_DIR="$HOME/.nvm"
-_lazy_load_nvm() {
-  unset -f _lazy_load_nvm nvm node npm npx nvim 2>/dev/null
-  [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
-}
-for _cmd in nvm node npm npx nvim; do
-  eval "${_cmd}() { _lazy_load_nvm; ${_cmd} \"\$@\"; }"
-done
-unset _cmd
-
-# Add Deno to PATH
-if [[ "$OSTYPE" != darwin* ]]; then
-  export DENO_INSTALL="$HOME/.deno"
-  export PATH="$DENO_INSTALL/bin:$PATH"
 fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -36,13 +28,8 @@ export HOMEBREW_PREFIX="$(brew --prefix)"
 # avoids need for `sudo`
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
-# Add uv tools and Poetry to PATH
+# Add user-installed binaries to PATH
 export PATH="$HOME/.local/bin:$PATH"
-
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-command -v pyenv &>/dev/null && eval "$(pyenv init -)"
 
 # Fix error 'gpg: signing failed: Inappropriate ioctl for device'
 GPG_TTY=$(tty)

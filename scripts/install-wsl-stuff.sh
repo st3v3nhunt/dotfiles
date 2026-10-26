@@ -10,9 +10,6 @@ sudo apt-get install -y python3
 echo "If there are problems with installing, checkout the troubleshooting on this page"
 echo "https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-2004#install-the-net-core-sdk"
 
-echo "Installing Deno..."
-curl -fsSL https://deno.land/x/install/install.sh | sh
-
 REPO_DIR="$(cd "$(dirname "$(dirname "${BASH_SOURCE[0]}")")" && pwd)"
 echo "Copying 'wsl.conf' into /etc/. Password will be required"
 sudo ln -nfsv "$REPO_DIR/wsl/wsl.conf" /etc/

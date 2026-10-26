@@ -23,14 +23,16 @@ The install script runs a series of named steps, defined in [install.sh](install
 - Symlinks everything listed in [links.txt](links.txt) into the home directory
 - Installs Homebrew packages from [Brewfile](Brewfile)
 - Applies macOS-specific defaults and app configuration on macOS
-- Installs language runtimes and tooling for Node.js, Python, Go, Rust, .NET, tmux, Neovim, AWS CLI, gcloud, and more
+- Installs language runtimes and global CLI tools with [mise](https://mise.jdx.dev) from
+  [.config/mise/config.toml](.config/mise/config.toml)
+- Installs tooling for Rust, .NET, tmux, Neovim, AWS CLI, gcloud, and more
 
 The script can be run from any directory and is safe to re-run. If a step fails the remaining steps still run, and the
 failed steps are listed at the end. To run specific steps only:
 
 ```sh
 ./install.sh --list        # Show the available steps
-./install.sh links node    # Run only the named steps
+./install.sh links mise    # Run only the named steps
 ```
 
 Some steps require network access and some will prompt for your password.
@@ -81,6 +83,37 @@ Homebrew only loads formulae from third-party taps once they are [trusted](https
 those formulae in the Brewfile with their full `<user>/<tap>/<name>`: the `brew-bundle` step
 ([scripts/install-brew-bundle.sh](scripts/install-brew-bundle.sh)) trusts each one before running `brew bundle`.
 
+## Runtimes and Tools (mise)
+
+[mise](https://mise.jdx.dev) manages Node.js, Python, Go, Deno and Terraform, plus the global npm, cargo, go and PyPI
+tools (language servers, linters, CLIs). They are declared in [.config/mise/config.toml](.config/mise/config.toml),
+which is linked to `~/.config/mise/config.toml`, and installed by the `mise` step
+([scripts/install-mise.sh](scripts/install-mise.sh)). Rust toolchains stay with rustup. Common commands:
+
+```sh
+mise ls                  # Show the installed tools and the versions in use
+mise upgrade             # Upgrade every tool within its configured version
+mise use -g npm:<pkg>    # Add a tool to the global config (then commit the change)
+./install.sh mise        # Install anything missing and upgrade the rest
+```
+
+`mise use -g` writes to the linked file, so new tools land in this repository. Projects can pin their own versions
+with a `mise.toml`; `.python-version` and `.terraform-version` files are also read.
+
+### Removing the tools mise replaced
+
+Machines set up before mise have their own copies of these tools from nvm, pyenv, tfenv, Homebrew, `npm -g`,
+`cargo install`, `go install` and `uv tool install`. Once `./install.sh links mise` has run, remove them with:
+
+```sh
+./scripts/uninstall-pre-mise-tools.sh --dry-run  # Show what would be removed
+./scripts/uninstall-pre-mise-tools.sh            # Remove it, after a confirmation prompt
+```
+
+The script reads the tool list from the mise config and refuses to run while any mise tool is still missing.
+Homebrew formulae that other formulae depend on, such as `node`, are kept. It also warns about lines in files
+such as `~/.zshrc.local` that still load nvm or pyenv.
+
 ## Git
 
 ### Machine-specific signing key
@@ -109,9 +142,11 @@ If sharing a key across machines is not desirable, the git config also supports 
 The Neovim configuration lives in [.config/nvim](.config/nvim) and is linked into `~/.config/nvim` by the `links`
 step.
 
-Additional editor tooling is installed by [scripts/install-nvim-tooling.sh](scripts/install-nvim-tooling.sh), including
-language servers and command-line tools such as `gopls`, `lua-language-server`, `rust-analyzer`, `eslint_d`,
-`prettierd`, and Markdown linters.
+Additional editor tooling, including language servers and command-line tools such as `gopls`, `eslint_d`,
+`prettierd`, and Markdown linters, is installed by mise from [.config/mise/config.toml](.config/mise/config.toml).
+`lua-language-server` and `rust-analyzer` come from the [Brewfile](Brewfile) and `luacheck` from
+[scripts/install-nvim-tooling.sh](scripts/install-nvim-tooling.sh). The Python provider uses a venv with `pynvim`
+created by the `mise` step.
 
 If plugins or plugin-managed keybindings look out of sync, run:
 
@@ -121,8 +156,7 @@ If plugins or plugin-managed keybindings look out of sync, run:
 
 ### Go
 
-Go support uses `vim-go` together with `gopls`. The required tooling is installed by
-[scripts/install-nvim-tooling.sh](scripts/install-nvim-tooling.sh).
+Go support uses `vim-go` together with `gopls`. Both Go and `gopls` are installed by mise.
 
 ### C Sharp
 
