@@ -17,18 +17,22 @@ repos:
         entry: commitlint --edit
         language: system
         stages: [commit-msg]
-      # super-linter skips the bash dotfiles, which have no shebang or extension
+      # .sh files are tagged only `shell`, so match that rather than bash/sh.
+      # shellcheck doesn't support zsh, and super-linter skips the bash
+      # dotfiles, which have no shebang or extension
       - id: shellcheck
         name: shellcheck
         entry: shellcheck --rcfile .github/linters/.shellcheckrc
         language: system
-        types_or: [bash, sh]
+        types: [shell]
+        exclude_types: [zsh]
         exclude: ^dotfiles/\.bash(rc|_profile)$
       - id: shfmt
         name: shfmt
         entry: shfmt -d
         language: system
-        types_or: [bash, sh]
+        types: [shell]
+        exclude_types: [zsh]
         exclude: ^dotfiles/\.bash(rc|_profile)$
       - id: markdownlint
         name: markdownlint
