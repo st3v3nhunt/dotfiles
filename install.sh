@@ -65,8 +65,8 @@ for step in "${STEPS[@]}"; do
     continue
   fi
   case "$os" in
-    mac) is_macos || continue ;;
-    wsl) is_wsl || continue ;;
+  mac) is_macos || continue ;;
+  wsl) is_wsl || continue ;;
   esac
 
   info "==> $name"

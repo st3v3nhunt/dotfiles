@@ -14,24 +14,24 @@ DRY_RUN=false
 
 for arg in "$@"; do
   case "$arg" in
-    --prune) PRUNE=true ;;
-    --dry-run) DRY_RUN=true ;;
-    *)
-      error "Unknown argument: $arg"
-      exit 1
-      ;;
+  --prune) PRUNE=true ;;
+  --dry-run) DRY_RUN=true ;;
+  *)
+    error "Unknown argument: $arg"
+    exit 1
+    ;;
   esac
 done
 
 os_matches() {
   case "$1" in
-    all) return 0 ;;
-    mac) is_macos ;;
-    wsl) is_wsl ;;
-    *)
-      warn "Unknown os '$1' in $MANIFEST"
-      return 1
-      ;;
+  all) return 0 ;;
+  mac) is_macos ;;
+  wsl) is_wsl ;;
+  *)
+    warn "Unknown os '$1' in $MANIFEST"
+    return 1
+    ;;
   esac
 }
 
