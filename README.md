@@ -211,6 +211,22 @@ Karabiner settings are not being loaded, try turning on its "system default conf
 
 For Powerlevel10k glyphs, install a Nerd Font. [JetBrains Mono](https://www.jetbrains.com/lp/mono/) is a good default.
 
+## Checks Before Committing
+
+[pre-commit](https://pre-commit.com) hooks in [.pre-commit-config.yaml](.pre-commit-config.yaml) run the checks CI
+runs, so problems show up before pushing: commitlint on the commit message, and shellcheck, shfmt, markdownlint and
+stylua on the staged files. They use the tools installed by mise and the Brewfile, and read the same rules as
+super-linter from [.github/linters](.github/linters). The `python` step installs them; to do it by hand, or to check
+every file:
+
+```sh
+pre-commit install            # Install the hooks
+pre-commit run --all-files    # Run every check on every file
+```
+
+PR titles become the commit message on `main` when squash merging, so check one before opening a PR with
+`echo "<title>" | commitlint`.
+
 ## Architecture Decision Records
 
 Architecture decisions for the repository are recorded in [doc/adr](doc/adr).

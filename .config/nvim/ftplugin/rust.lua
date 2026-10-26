@@ -1,1 +1,1 @@
-vim.b.ale_linters = { 'analyzer' }
+vim.b.ale_linters = { "analyzer" }

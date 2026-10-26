@@ -18,6 +18,9 @@ terraform = "latest"
 # Lets the cargo tools below use prebuilt binaries instead of compiling
 cargo-binstall = "latest"
 
+# Shell formatter, used by this repo's pre-commit hooks and Neovim
+shfmt = "latest"
+
 # Go tools
 air = "latest"
 "go:golang.org/x/tools/gopls" = "latest"

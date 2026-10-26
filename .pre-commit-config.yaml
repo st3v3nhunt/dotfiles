@@ -1,0 +1,42 @@
+# Run the checks CI runs (super-linter and commitlint) before committing.
+# The hooks use the tools mise and the Brewfile already install, so nothing is
+# downloaded, and read the same config files as super-linter in
+# .github/linters. Installed by the python step of install.sh.
+
+default_install_hook_types: [pre-commit, commit-msg]
+default_stages: [pre-commit]
+
+# Keep in step with FILTER_REGEX_EXCLUDE in .github/workflows/main.yml
+exclude: (\.git-completion\.bash|\.git-prompt\.sh|\.p10k\.zsh|karabiner\.json|windows-terminal.*\.json|lazy-lock\.json|package-lock\.json)
+
+repos:
+  - repo: local
+    hooks:
+      - id: commitlint
+        name: commitlint
+        entry: commitlint --edit
+        language: system
+        stages: [commit-msg]
+      # super-linter skips the bash dotfiles, which have no shebang or extension
+      - id: shellcheck
+        name: shellcheck
+        entry: shellcheck --rcfile .github/linters/.shellcheckrc
+        language: system
+        types_or: [bash, sh]
+        exclude: ^dotfiles/\.bash(rc|_profile)$
+      - id: shfmt
+        name: shfmt
+        entry: shfmt -d
+        language: system
+        types_or: [bash, sh]
+        exclude: ^dotfiles/\.bash(rc|_profile)$
+      - id: markdownlint
+        name: markdownlint
+        entry: markdownlint -c .github/linters/.markdown-lint.yml
+        language: system
+        types: [markdown]
+      - id: stylua
+        name: stylua
+        entry: stylua --check
+        language: system
+        types: [lua]
