@@ -1,7 +1,6 @@
 # Dotfiles
 
-[![Release Build Status](https://github.com/st3v3nhunt/dotfiles/workflows/Release/badge.svg)](https://github.com/st3v3nhunt/dotfiles/actions?workflow=Release)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![CI](https://github.com/st3v3nhunt/dotfiles/actions/workflows/main.yml/badge.svg)](https://github.com/st3v3nhunt/dotfiles/actions/workflows/main.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/st3v3nhunt/dotfiles/badge.svg)](https://snyk.io/test/github/st3v3nhunt/dotfiles)
 
 > Dotfiles for macOS and WSL environments
@@ -172,11 +171,6 @@ If you use iTerm2, preferences are stored in [plists/com.googlecode.iterm2.plist
 In iTerm2, set `Preferences -> General -> Preferences` to load preferences from the repository's `plists` directory.
 
 For Powerlevel10k glyphs, install a Nerd Font. [JetBrains Mono](https://www.jetbrains.com/lp/mono/) is a good default.
-
-## Releases
-
-This repository uses semantic-release with conventional commits. Release automation is defined in
-[.github/workflows/release.yml](.github/workflows/release.yml).
 
 ## Architecture Decision Records
 

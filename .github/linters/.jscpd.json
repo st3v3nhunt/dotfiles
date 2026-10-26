@@ -6,7 +6,6 @@
     "**/.git-completion.bash",
     "**/.github/workflows/**",
     "**/.p10k.zsh",
-    "**/CHANGELOG.md",
     "**/karabiner.json",
     "**/lazy-lock.json",
     "**/package-lock.json",
