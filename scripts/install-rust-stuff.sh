@@ -11,13 +11,7 @@ fi
 # shellcheck source=/dev/null
 source "$HOME/.cargo/env"
 
-echo "Installing Rustlings..."
-cargo install rustlings
-
-echo "Installing some useful cargo based utils..."
-cargo install cargo-watch
-cargo install cargo-generate
-cargo install cargo-benchcmp
+# Cargo tools are installed by mise (.config/mise/config.toml)
 
 echo "Install additional toolchain versions..."
 rustup toolchain install beta

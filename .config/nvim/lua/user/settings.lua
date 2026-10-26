@@ -15,7 +15,8 @@ g.loaded_ruby_provider = 0
 g.markdown_folding = 1
 g.markdown_fenced_languages = { "bash=sh", "javascript" }
 g.markdown_syntax_conceal = 0
-g.python3_host_prog = "~/.pyenv/shims/python3"
+-- venv with pynvim, created by scripts/install-mise.sh
+g.python3_host_prog = vim.fn.stdpath("data") .. "/venv/bin/python"
 g.vim_json_conceal = 0
 
 -- Set options

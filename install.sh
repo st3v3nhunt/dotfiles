@@ -19,15 +19,13 @@ STEPS=(
   "mac:mac:./scripts/install-mac-stuff.sh"
   "gems:all:./scripts/install-gems.sh"
   "gcloud:all:./scripts/install-gcloud.sh"
-  "go:all:./scripts/install-go-stuff.sh"
   "misc:all:./scripts/install-misc.sh"
-  "node:all:./scripts/install-node-stuff.sh"
+  "rust:all:./scripts/install-rust-stuff.sh"
+  "mise:all:./scripts/install-mise.sh"
   "python:all:./scripts/install-python-stuff.sh"
   "tmux:all:./scripts/install-tmux-stuff.sh"
   "dotnet:all:./scripts/install-dotnet-tools.sh"
-  "rust:all:./scripts/install-rust-stuff.sh"
   "aws:all:./scripts/install-or-upgrade-aws-cli.sh"
-  "wasm:all:./scripts/install-wasm-stuff.sh"
   "nvim-tooling:all:./scripts/install-nvim-tooling.sh"
 )
 
@@ -52,7 +50,7 @@ done
 
 # Make tools installed by earlier steps available to later ones
 load_brew_env
-export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+export PATH="${MISE_DATA_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/mise}/shims:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 
 failed=()
 for step in "${STEPS[@]}"; do

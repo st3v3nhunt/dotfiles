@@ -1,0 +1,73 @@
+# Global mise config: language runtimes and the CLI tools installed with them.
+# Installed by the `mise` step of install.sh; upgrade with `mise upgrade`.
+# scripts/uninstall-pre-mise-tools.sh removes the copies installed before mise
+# by reading this file, so add tools here rather than in install scripts.
+
+[settings]
+# Keep reading the version files pyenv and tfenv used in projects
+idiomatic_version_file_enable_tools = ["python", "terraform"]
+
+[tools]
+# Runtimes
+deno = "latest"
+go = "latest"
+node = "lts"
+python = "3.12"
+terraform = "latest"
+
+# Lets the cargo tools below use prebuilt binaries instead of compiling
+cargo-binstall = "latest"
+
+# Go tools
+air = "latest"
+"go:golang.org/x/tools/gopls" = "latest"
+
+# Rust tools. Rust itself stays with rustup (scripts/install-rust-stuff.sh)
+"cargo:cargo-benchcmp" = "latest"
+"cargo:cargo-generate" = "latest"
+"cargo:cargo-watch" = "latest"
+"cargo:rustlings" = "latest"
+"cargo:selene" = "latest"
+"cargo:taplo-cli" = { version = "latest", features = ["lsp"], locked = true }
+"cargo:wasm-pack" = "latest"
+
+# Node tools
+"npm:@commitlint/cli" = "latest"
+"npm:@commitlint/config-conventional" = "latest"
+"npm:@fsouza/prettierd" = "latest"
+"npm:@google/gemini-cli" = "latest"
+"npm:@tailwindcss/language-server" = "latest"
+"npm:@vue/cli" = "latest"
+"npm:bash-language-server" = "latest"
+"npm:dockerfile-language-server-nodejs" = "latest"
+"npm:eslint_d" = "latest"
+"npm:firebase-tools" = "latest"
+"npm:markdownlint-cli" = "latest"
+"npm:markdownlint-cli2" = "latest"
+"npm:neovim" = "latest"
+"npm:pnpm" = "latest"
+"npm:prettier" = "latest"
+"npm:serve" = "latest"
+"npm:serverless" = "latest"
+"npm:snyk" = "latest"
+"npm:standard" = "latest"
+# svelte 4.x was never published with provenance (5.x is), so mise's
+# no-downgrade trust policy rejects the 4.2.20 backport this depends on.
+# Checked against the upstream svelte@4.2.20 tag and release
+"npm:svelte-language-server" = { version = "latest", trust_policy_excludes = ["svelte@4.2.20"] }
+"npm:ts-standard" = "latest"
+"npm:typescript" = "latest"
+"npm:typescript-language-server" = "latest"
+"npm:vls" = "latest"
+"npm:vscode-langservers-extracted" = "latest"
+"npm:yaml-language-server" = "latest"
+"npm:yarn" = "latest"
+
+# Python tools, each in its own environment (installed with uv)
+"pypi:ansible" = { version = "latest", expose = ["ansible-core"] }
+"pypi:detect-secrets" = "latest"
+"pypi:djlint" = "latest"
+"pypi:poetry" = "latest"
+"pypi:pre-commit" = "latest"
+"pypi:pylint" = "latest"
+"pypi:pytest-watch" = "latest"

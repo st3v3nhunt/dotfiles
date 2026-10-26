@@ -40,6 +40,9 @@ all .config/claude/settings.json .claude/settings.json
 all .config/claude/statusline-command.sh .claude/statusline-command.sh
 all .config/codex/AGENTS.md .codex/AGENTS.md
 
+# Runtimes and tools
+all .config/mise/config.toml .config/mise/config.toml
+
 # macOS apps
 mac .config/ghostty/config .config/ghostty/config
 mac .config/gnupg/gpg-agent.conf .gnupg/gpg-agent.conf
