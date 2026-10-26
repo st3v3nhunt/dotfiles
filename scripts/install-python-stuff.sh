@@ -9,6 +9,9 @@ source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 # Install pre-commit hook script
 pre-commit init-templatedir ~/.git-template
 
+# Install this repo's hooks (.pre-commit-config.yaml)
+pre-commit install
+
 if is_macos; then
   echo "Increase the max number of file handles to fix 'Too many open files' error."
   echo "Password will be required"
