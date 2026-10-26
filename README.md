@@ -173,9 +173,6 @@ Karabiner-Elements and lazygit can replace their config symlink with a real file
 happens, re-run `./install.sh links`; the app's version is kept as a `.backup.<timestamp>` file. If Karabiner settings
 are not being loaded, try turning on its "system default configuration" setting.
 
-If you use iTerm2, preferences are stored in [plists/com.googlecode.iterm2.plist](plists/com.googlecode.iterm2.plist).
-In iTerm2, set `Preferences -> General -> Preferences` to load preferences from the repository's `plists` directory.
-
 For Powerlevel10k glyphs, install a Nerd Font. [JetBrains Mono](https://www.jetbrains.com/lp/mono/) is a good default.
 
 ## Architecture Decision Records
