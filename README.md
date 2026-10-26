@@ -203,9 +203,11 @@ Additional Windows-side notes live in [wsl/wsl-specific-instructions.md](wsl/wsl
 configuration (Ghostty, GnuPG, Karabiner-Elements, k9s, lazygit) is linked by the `links` step using the `mac` entries
 in [links.txt](links.txt).
 
-Karabiner-Elements and lazygit can replace their config symlink with a real file when they save settings. If that
-happens, re-run `./install.sh links`; the app's version is kept as a `.backup.<timestamp>` file. If Karabiner settings
-are not being loaded, try turning on its "system default configuration" setting.
+Karabiner-Elements replaces a symlinked `karabiner.json` with a real file when it saves settings, so the whole
+`~/.config/karabiner` directory is linked instead, as its [docs](https://karabiner-elements.pqrs.org/docs/manual/misc/configuration-file-path/)
+recommend. Settings changed in the app then show up as changes in this repository. lazygit can still replace its config
+symlink; if that happens, re-run `./install.sh links` and the app's version is kept as a `.backup.<timestamp>` file. If
+Karabiner settings are not being loaded, try turning on its "system default configuration" setting.
 
 For Powerlevel10k glyphs, install a Nerd Font. [JetBrains Mono](https://www.jetbrains.com/lp/mono/) is a good default.
 

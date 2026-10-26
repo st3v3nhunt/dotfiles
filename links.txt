@@ -47,5 +47,5 @@ all .config/mise/config.toml .config/mise/config.toml
 mac .config/ghostty/config .config/ghostty/config
 mac .config/gnupg/gpg-agent.conf .gnupg/gpg-agent.conf
 mac .config/k9s/config.yml Library/Application Support/k9s/config.yml
-mac .config/karabiner/karabiner.json .config/karabiner/karabiner.json
+mac .config/karabiner .config/karabiner
 mac .config/lazygit/config.yml .config/lazygit/config.yml
