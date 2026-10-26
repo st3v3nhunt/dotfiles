@@ -49,7 +49,7 @@ return {
       })
 
       -- enable the language servers
-      vim.lsp.enable({ "basedpyright", "bashls","dockerls", "eslint", "gopls", "rubocop", "svelte", "vuels", "yamlls" })
+      vim.lsp.enable({ "basedpyright", "bashls", "dockerls", "eslint", "gopls", "rubocop", "svelte", "vuels", "yamlls" })
 
       vim.lsp.config("denols", {
         single_file_support = false,
