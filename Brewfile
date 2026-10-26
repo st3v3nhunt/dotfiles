@@ -1,5 +1,6 @@
 # Formulae from third-party taps use their full <user>/<tap>/<name> so
-# scripts/install-brew-bundle.sh can trust them before running brew bundle
+# scripts/install-brew-bundle.sh can trust them before running brew bundle.
+# Anything macOS-only goes in the `if OS.mac?` block at the end.
 
 # Utils
 brew "actionlint"
@@ -65,6 +66,12 @@ brew "neovim"
 brew "tree-sitter-cli"
 brew "vim"
 
+# Neovim language servers and formatters not installed by Mason
+brew "elixir-ls"
+brew "lua-language-server"
+brew "rust-analyzer"
+brew "stylua"
+
 # Languages
 brew "elixir"
 brew "erlang"
@@ -95,24 +102,34 @@ brew "stern"
 brew "redis"
 brew "sqlite"
 
-# Casks - Browsers
-cask "firefox"
-cask "google-chrome"
+if OS.mac?
+  brew "deno"
+  brew "python"
+  brew "reattach-to-user-namespace"
+  brew "wifi-password"
 
-# Casks - Utils
-cask "azure-cli"
-cask "caffeine"
-cask "codex"
-cask "dotnet-sdk"
-cask "drawio"
-cask "font-jetbrains-mono"
-cask "gpg-suite-no-mail"
-cask "iterm2"
-cask "karabiner-elements"
-cask "keycastr"
-cask "lens"
-cask "ngrok"
-cask "powershell"
-cask "rectangle"
-cask "wireshark-app"
-cask "xcodes-app"
+  # Casks - Browsers
+  cask "firefox"
+  cask "google-chrome"
+
+  # Casks - Utils
+  cask "azure-cli"
+  cask "caffeine"
+  cask "codex"
+  cask "dotnet-sdk"
+  cask "drawio"
+  cask "font-jetbrains-mono"
+  cask "gpg-suite-no-mail"
+  cask "iterm2"
+  cask "karabiner-elements"
+  cask "keycastr"
+  cask "lens"
+  cask "ngrok"
+  cask "powershell"
+  cask "rectangle"
+  cask "wireshark-app"
+  cask "xcodes-app"
+
+  # Casks - Terminals
+  cask "ghostty"
+end

@@ -9,10 +9,3 @@ else
 fi
 
 # install.sh puts brew on PATH for later steps once this script finishes
-
-if [[ -n "$WSL_DISTRO_NAME" && "$OSTYPE" == "linux-gnu" ]]; then
-  # shellcheck source=lib.sh
-  source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
-  load_brew_env
-  brew install gcc
-fi

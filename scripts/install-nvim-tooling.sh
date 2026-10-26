@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # NOTE: This needs to be called once all the tooling has been installed for the
-# package management duties
+# package management duties. Homebrew packages are in the Brewfile.
 
 echo "Install Language Servers"
 # https://github.com/mads-hartmann/bash-language-server
@@ -9,9 +9,6 @@ npm i -g bash-language-server
 # https://github.com/rcjsuen/dockerfile-language-server-nodejs
 npm i -g dockerfile-language-server-nodejs
 
-# https://github.com/elixir-lsp/elixir-ls
-brew install elixir-ls
-
 # https://github.com/golang/tools/tree/master/gopls
 go install golang.org/x/tools/gopls@latest
 
@@ -19,22 +16,14 @@ go install golang.org/x/tools/gopls@latest
 # https://github.com/hrsh7th/vscode-langservers-extracted
 npm i -g vscode-langservers-extracted
 
-# https://github.com/sumneko/lua-language-server
-brew install lua-language-server
-# luarock should be installed during install-brews.sh, but just in case
-brew install luarocks
+# luarocks is installed from the Brewfile
 luarocks install luacheck
 
 # https://github.com/fsouza/prettierd
 npm install -g @fsouza/prettierd
 
-# https://github.com/rust-analyzer/lsp-server
-brew install rust-analyzer
-
 # https://kampfkarren.github.io/selene/
 cargo install selene
-# https://github.com/JohnnyMorganz/StyLua
-brew install stylua
 
 # https://github.com/sveltejs/language-tools/tree/master/packages/language-server
 npm i -g svelte-language-server
