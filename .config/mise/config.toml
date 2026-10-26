@@ -51,7 +51,10 @@ air = "latest"
 "npm:serverless" = "latest"
 "npm:snyk" = "latest"
 "npm:standard" = "latest"
-"npm:svelte-language-server" = "latest"
+# svelte 4.x was never published with provenance (5.x is), so mise's
+# no-downgrade trust policy rejects the 4.2.20 backport this depends on.
+# Checked against the upstream svelte@4.2.20 tag and release
+"npm:svelte-language-server" = { version = "latest", trust_policy_excludes = ["svelte@4.2.20"] }
 "npm:ts-standard" = "latest"
 "npm:typescript" = "latest"
 "npm:typescript-language-server" = "latest"
