@@ -12,3 +12,5 @@ node_modules
 .config/gpg-agent.conf
 # Claude Code local settings
 .claude/
+# Karabiner-Elements writes these into the linked config directory
+.config/karabiner/automatic_backups/
