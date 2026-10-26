@@ -209,9 +209,6 @@ are not being loaded, try turning on its "system default configuration" setting.
 
 For Powerlevel10k glyphs, install a Nerd Font. [JetBrains Mono](https://www.jetbrains.com/lp/mono/) is a good default.
 
-If Ansible fails with `Too many open files`, raise the limit until the next reboot with
-`sudo launchctl limit maxfiles unlimited`.
-
 ## Checks Before Committing
 
 [pre-commit](https://pre-commit.com) hooks in [.pre-commit-config.yaml](.pre-commit-config.yaml) run the checks CI
