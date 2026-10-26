@@ -9,14 +9,14 @@ source ~/.shared-shell-setup
 __git_complete g __git_main
 
 # bash completion
-[[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && source "$(brew --prefix)/etc/profile.d/bash_completion.sh"
+[[ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ]] && source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
 
-# tmux completion
-source "$(brew --prefix tmux)/etc/bash_completion.d/tmux"
-
-# Kubernetes and minikube autocompletion
-source <(kubectl completion bash)
-source <(minikube completion bash)
+# Completions shipped by Homebrew formulae. Sourcing these files is much
+# faster than generating them with e.g. `kubectl completion bash` on each start
+for _completion in kubectl minikube tmux; do
+  [[ -r "$HOMEBREW_PREFIX/etc/bash_completion.d/$_completion" ]] && source "$HOMEBREW_PREFIX/etc/bash_completion.d/$_completion"
+done
+unset _completion
 
 # Set vi keybindings for use in prompt
 set -o vi
