@@ -67,7 +67,6 @@ air = "latest"
 "npm:yarn" = "latest"
 
 # Python tools, each in its own environment (installed with uv)
-"pypi:ansible" = { version = "latest", expose = ["ansible-core"] }
 "pypi:detect-secrets" = "latest"
 "pypi:djlint" = "latest"
 "pypi:poetry" = "latest"
