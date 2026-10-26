@@ -50,7 +50,7 @@ done
 
 # Make tools installed by earlier steps available to later ones
 load_brew_env
-export PATH="$HOME/.local/share/mise/shims:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+export PATH="${MISE_DATA_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/mise}/shims:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 
 failed=()
 for step in "${STEPS[@]}"; do

@@ -41,7 +41,10 @@ if [[ "$(readlink "$HOME/.config/mise/config.toml")" != "$MISE_CONFIG" ]]; then
   exit 1
 fi
 
-missing="$(mise ls --global --missing --no-header)"
+if ! missing="$(mise ls --global --missing --no-header)"; then
+  error "mise ls failed, fix the mise config before removing anything"
+  exit 1
+fi
 if [[ -n "$missing" ]]; then
   error "These mise tools are not installed yet, run ./install.sh mise first:"
   error "$missing"
@@ -127,11 +130,14 @@ remove_dir "${PYENV_ROOT:-$HOME/.pyenv}"
 remove_dir "$HOME/.deno"
 
 # Homebrew formulae now provided by mise. One that another installed formula
-# depends on is kept; mise's copy comes first on PATH in interactive shells
+# depends on is kept; mise's copy comes first on PATH in interactive shells.
+# Dependents in this list are ignored, as they are removed first
 if command -v brew &>/dev/null; then
-  for formula in node go deno hashicorp/tap/terraform tfenv pyenv-virtualenv pyenv; do
+  formulae=(node go deno hashicorp/tap/terraform tfenv pyenv-virtualenv pyenv)
+  for formula in "${formulae[@]}"; do
     brew list --formula "$formula" &>/dev/null || continue
-    dependents="$(brew uses --installed "$formula" | tr '\n' ' ')"
+    dependents="$(brew uses --installed "$formula" |
+      grep -vxF -f <(printf '%s\n' "${formulae[@]##*/}") | tr '\n' ' ')"
     if [[ -n "$dependents" ]]; then
       warn "Keeping $formula, needed by: $dependents"
     else

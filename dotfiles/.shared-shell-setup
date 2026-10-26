@@ -1,18 +1,3 @@
-# mise puts the runtimes and tools in ~/.config/mise/config.toml on PATH
-if command -v mise &> /dev/null; then
-  if [[ -n "$ZSH_VERSION" ]]; then
-    eval "$(mise activate zsh)"
-  else
-    eval "$(mise activate bash)"
-  fi
-fi
-
-# Go PATH setup
-if command -v go &> /dev/null; then
-  export GOPATH="$(go env GOPATH)"
-  export PATH="$PATH:$GOPATH/bin"
-fi
-
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # Explicitly set path
@@ -39,3 +24,19 @@ export GPG_TTY
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 export GROOVY_HOME=/opt/homebrew/opt/groovy/libexec
+
+# mise goes last so its runtimes and tools come before the ~/.local/bin and
+# ~/.cargo/bin copies added above
+if command -v mise &> /dev/null; then
+  if [[ -n "$ZSH_VERSION" ]]; then
+    eval "$(mise activate zsh)"
+  else
+    eval "$(mise activate bash)"
+  fi
+fi
+
+# Go PATH setup
+if command -v go &> /dev/null; then
+  export GOPATH="$(go env GOPATH)"
+  export PATH="$PATH:$GOPATH/bin"
+fi
