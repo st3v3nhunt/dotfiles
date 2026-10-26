@@ -199,7 +199,6 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/google
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-export GPG_TTY=$(tty)
 export PATH="/usr/local/sbin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -210,14 +209,6 @@ HEROKU_AC_ZSH_SETUP_PATH=~/Library/Caches/heroku/autocomplete/zsh_setup && test 
 # Export postgresql path
 export PATH=$HOMEBREW_PREFIX/opt/postgresql@16/bin:$PATH
 
-# TODO: prevent errors when no pyenv available
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-command -v pyenv &> /dev/null && eval "$(pyenv init -)"
-
-# Poetry
-[[ -f "$HOME/.local/bin/env" ]] && . "$HOME/.local/bin/env"
 
 # Export AWS config
 export AWS_SDK_LOAD_CONFIG=true

@@ -18,10 +18,6 @@ source "$(brew --prefix tmux)/etc/bash_completion.d/tmux"
 source <(kubectl completion bash)
 source <(minikube completion bash)
 
-# Fix error 'gpg: signing failed: Inappropriate ioctl for device'
-GPG_TTY=$(tty)
-export GPG_TTY
-
 # Set vi keybindings for use in prompt
 set -o vi
 
@@ -55,12 +51,6 @@ source "$HOME/.cargo/env"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-[[ -f "$HOME/.local/bin/env" ]] && . "$HOME/.local/bin/env"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
