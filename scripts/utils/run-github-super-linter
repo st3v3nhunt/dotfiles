@@ -9,6 +9,7 @@ docker run --rm \
   -e DEFAULT_BRANCH=main \
   -e FILTER_REGEX_EXCLUDE='(\.git-completion\.bash|\.git-prompt\.sh|\.p10k\.zsh|karabiner\.json|windows-terminal.*\.json|lazy-lock\.json|package-lock\.json)' \
   -e VALIDATE_BIOME_FORMAT=false \
+  -e VALIDATE_GIT_COMMITLINT=false \
   -e VALIDATE_NATURAL_LANGUAGE=false \
   "$@" \
   -v "$(pwd)":/tmp/lint \

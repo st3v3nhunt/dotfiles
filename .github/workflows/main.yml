@@ -50,4 +50,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Prettier handles JSON formatting; wording checks are too opinionated
           VALIDATE_BIOME_FORMAT: false
+          # Commits are linted by the Commitlint job
+          VALIDATE_GIT_COMMITLINT: false
           VALIDATE_NATURAL_LANGUAGE: false
