@@ -36,7 +36,12 @@ repository:
 
   # Either `true` to allow squash-merging pull requests, or `false` to prevent
   # squash-merging.
-  allow_squash_merge: false
+  allow_squash_merge: true
+
+  # Use the PR title (checked by the PR title workflow) as the squash commit
+  # title, and the list of the PR's commits as its body.
+  squash_merge_commit_title: PR_TITLE
+  squash_merge_commit_message: COMMIT_MESSAGES
 
   # Either `true` to allow merging pull requests with a merge commit, or `false`
   # to prevent merging pull requests with merge commits.
@@ -44,7 +49,7 @@ repository:
 
   # Either `true` to allow rebase-merging pull requests, or `false` to prevent
   # rebase-merging.
-  allow_rebase_merge: true
+  allow_rebase_merge: false
 
 # Labels: define labels for Issues and Pull Requests
 labels:
