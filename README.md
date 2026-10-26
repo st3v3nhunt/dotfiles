@@ -146,7 +146,7 @@ Additional editor tooling, including language servers and command-line tools suc
 `prettierd`, and Markdown linters, is installed by mise from [.config/mise/config.toml](.config/mise/config.toml).
 `lua-language-server` and `rust-analyzer` come from the [Brewfile](Brewfile) and `luacheck` from
 [scripts/install-nvim-tooling.sh](scripts/install-nvim-tooling.sh). The Python provider uses a venv with `pynvim`
-created by the `mise` step.
+created by the `mise` step, and the Node.js provider uses the `neovim` package installed by mise.
 
 If plugins or plugin-managed keybindings look out of sync, run:
 
