@@ -27,7 +27,7 @@ complete -C "$(which aws_completer)" aws
 complete -C "$(which terraform)" terraform
 
 # Deno autocomplete
-source "$(brew --prefix)/etc/bash_completion.d/deno.bash"
+[[ -r "$HOMEBREW_PREFIX/etc/bash_completion.d/deno.bash" ]] && source "$HOMEBREW_PREFIX/etc/bash_completion.d/deno.bash"
 
 # bash parameter completion for the dotnet CLI
 _dotnet_bash_complete()
@@ -47,7 +47,7 @@ _dotnet_bash_complete()
 complete -f -F _dotnet_bash_complete dotnet
 
 # Rust (Cargo)
-source "$HOME/.cargo/env"
+[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
