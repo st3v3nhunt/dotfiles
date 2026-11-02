@@ -6,8 +6,11 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export VISUAL=nvim
 export EDITOR=$VISUAL
 
-# Ensure HOMEBREW_PREFIX is set (differs by OS and processor)
-export HOMEBREW_PREFIX="$(brew --prefix)"
+# Ensure HOMEBREW_PREFIX is set (differs by OS and processor). Homebrew is
+# optional, e.g. Linux machines that use apt instead
+if [[ -z "$HOMEBREW_PREFIX" ]] && command -v brew &> /dev/null; then
+  export HOMEBREW_PREFIX="$(brew --prefix)"
+fi
 
 # Install HOMEBREW casks (apps) into user specific application directory,
 # avoids need for `sudo`

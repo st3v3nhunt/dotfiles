@@ -7,7 +7,7 @@
 source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
 
 if ! command -v mise &>/dev/null; then
-  error "mise not found, run ./install.sh brew-bundle first"
+  error "mise not found, run ./install.sh brew-bundle first (on Linux without Homebrew see https://mise.jdx.dev)"
   exit 1
 fi
 
@@ -24,6 +24,7 @@ uv venv --clear --python "$(mise which python)" "$NVIM_VENV" || exit 1
 uv pip install --python "$NVIM_VENV/bin/python" --upgrade pynvim || exit 1
 
 info "Installing Deno shell completion..."
-mkdir -p ~/.zfunc "$(brew --prefix)/etc/bash_completion.d"
+deno_bash_completion="$(bash_completion_file deno deno.bash)"
+mkdir -p ~/.zfunc "$(dirname "$deno_bash_completion")"
 mise exec -- deno completions zsh >~/.zfunc/_deno
-mise exec -- deno completions bash >"$(brew --prefix)/etc/bash_completion.d/deno.bash"
+mise exec -- deno completions bash >"$deno_bash_completion"
