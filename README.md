@@ -3,7 +3,7 @@
 [![CI](https://github.com/st3v3nhunt/dotfiles/actions/workflows/main.yml/badge.svg)](https://github.com/st3v3nhunt/dotfiles/actions/workflows/main.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/st3v3nhunt/dotfiles/badge.svg)](https://snyk.io/test/github/st3v3nhunt/dotfiles)
 
-> Dotfiles for macOS and WSL environments
+> Dotfiles for macOS, WSL and Linux environments
 
 This repository keeps shell, git, editor, terminal, and tool configuration under version control and installs it by
 symlinking repo-managed files into place.
@@ -21,7 +21,8 @@ The install script runs a series of named steps, defined in [install.sh](install
 - On WSL, runs [scripts/install-wsl-stuff.sh](scripts/install-wsl-stuff.sh) first for distro and Windows integration
   setup
 - Symlinks everything listed in [links.txt](links.txt) into the home directory
-- Installs Homebrew packages from [Brewfile](Brewfile)
+- Installs Homebrew packages from [Brewfile](Brewfile) on macOS and WSL. Other Linux machines are expected to use
+  their own package manager, so the Homebrew steps are skipped there
 - Applies macOS-specific defaults and app configuration on macOS
 - Installs language runtimes and global CLI tools with [mise](https://mise.jdx.dev) from
   [.config/mise/config.toml](.config/mise/config.toml)

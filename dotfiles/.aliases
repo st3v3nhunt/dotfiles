@@ -41,7 +41,7 @@ alias tf=terraform
 alias tm=tmux
 alias vi=vim
 
-if type nvim >/dev/null; then
+if command -v nvim &>/dev/null; then
   alias vim=nvim
 fi
 

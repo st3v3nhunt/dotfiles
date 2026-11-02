@@ -29,6 +29,19 @@ load_brew_env() {
   return 1
 }
 
+# Path to write a bash completion file to. With Homebrew it goes in Homebrew's
+# bash_completion.d as <brew file name>, which is loaded on shell start.
+# Without it, e.g. Linux using apt, it goes in the per-user directory that
+# bash-completion loads on demand, which needs the file named after <command>.
+# Usage: bash_completion_file <command> <brew file name>
+bash_completion_file() {
+  if command -v brew &>/dev/null; then
+    echo "$(brew --prefix)/etc/bash_completion.d/$2"
+  else
+    echo "${XDG_DATA_HOME:-$HOME/.local/share}/bash-completion/completions/$1"
+  fi
+}
+
 # Symlink a repo file to a path relative to $HOME.
 # Existing links are replaced; a real file or directory in the way is moved
 # aside to <dest>.backup.<timestamp> rather than deleted.

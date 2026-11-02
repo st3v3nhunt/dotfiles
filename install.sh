@@ -8,13 +8,14 @@
 source "$(dirname "${BASH_SOURCE[0]}")/scripts/lib.sh"
 cd "$REPO_DIR" || exit 1
 
-# <step name>:<os>:<command>, where <os> is all, mac or wsl
+# <step name>:<os>:<command>, where <os> is all, or a comma-separated list of
+# mac, wsl and linux (Linux other than WSL)
 STEPS=(
   "wsl:wsl:./scripts/install-wsl-stuff.sh"
   "links:all:./scripts/install-links.sh --prune"
   "oh-my-zsh:all:./scripts/install-oh-my-zsh.sh"
-  "brew:all:./scripts/install-brew.sh"
-  "brew-bundle:all:./scripts/install-brew-bundle.sh"
+  "brew:mac,wsl:./scripts/install-brew.sh"
+  "brew-bundle:mac,wsl:./scripts/install-brew-bundle.sh"
   "macos-defaults:mac:./scripts/defaults.sh"
   "mac:mac:./scripts/install-mac-stuff.sh"
   "gems:all:./scripts/install-gems.sh"
@@ -52,6 +53,19 @@ done
 load_brew_env
 export PATH="${MISE_DATA_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/mise}/shims:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 
+# True when the current OS is in the comma-separated list
+runs_on() {
+  local target
+  for target in ${1//,/ }; do
+    case "$target" in
+    mac) is_macos && return 0 ;;
+    wsl) is_wsl && return 0 ;;
+    linux) is_linux && return 0 ;;
+    esac
+  done
+  return 1
+}
+
 failed=()
 for step in "${STEPS[@]}"; do
   name="${step%%:*}"
@@ -62,10 +76,9 @@ for step in "${STEPS[@]}"; do
   if [[ $# -gt 0 ]] && ! printf '%s\n' "$@" | grep -Fxq "$name"; then
     continue
   fi
-  case "$os" in
-  mac) is_macos || continue ;;
-  wsl) is_wsl || continue ;;
-  esac
+  if [[ "$os" != "all" ]] && ! runs_on "$os"; then
+    continue
+  fi
 
   info "==> $name"
   # shellcheck disable=2086

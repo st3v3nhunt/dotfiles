@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# shellcheck source=lib.sh
+source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
+
 if ! command -v rustup &>/dev/null; then
   echo "Installing rust..."
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --no-modify-path
@@ -18,9 +21,11 @@ rustup toolchain install beta
 rustup toolchain install nightly
 
 echo "Install rustup and cargo shell completion for bash..."
-mkdir -p "$(brew --prefix)/etc/bash_completion.d"
-rustup completions bash >"$(brew --prefix)/etc/bash_completion.d/rustup.bash-completion"
-rustup completions bash cargo >"$(brew --prefix)/etc/bash_completion.d/cargo.bash-completion"
+rustup_bash_completion="$(bash_completion_file rustup rustup.bash-completion)"
+cargo_bash_completion="$(bash_completion_file cargo cargo.bash-completion)"
+mkdir -p "$(dirname "$rustup_bash_completion")"
+rustup completions bash >"$rustup_bash_completion"
+rustup completions bash cargo >"$cargo_bash_completion"
 
 echo "Install rustup and cargo shell completion for zsh..."
 mkdir -p ~/.zfunc
