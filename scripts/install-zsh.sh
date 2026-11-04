@@ -25,7 +25,7 @@ if ! grep -Fxq "$zsh_path" /etc/shells; then
   echo "$zsh_path" | sudo tee -a /etc/shells >/dev/null
 fi
 
-login_shell="$(getent passwd "$USER" | cut -d: -f7)"
+login_shell="$(getent passwd "$(id -un)" | cut -d: -f7)"
 if [[ "$login_shell" == "$zsh_path" ]]; then
   info "zsh is already the login shell, skipping..."
   exit 0
