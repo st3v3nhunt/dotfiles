@@ -13,6 +13,7 @@ cd "$REPO_DIR" || exit 1
 STEPS=(
   "wsl:wsl:./scripts/install-wsl-stuff.sh"
   "links:all:./scripts/install-links.sh --prune"
+  "zsh:wsl,linux:./scripts/install-zsh.sh"
   "oh-my-zsh:all:./scripts/install-oh-my-zsh.sh"
   "brew:mac,wsl:./scripts/install-brew.sh"
   "brew-bundle:mac,wsl:./scripts/install-brew-bundle.sh"
