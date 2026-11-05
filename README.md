@@ -21,6 +21,8 @@ The install script runs a series of named steps, defined in [install.sh](install
 - On WSL, runs [scripts/install-wsl-stuff.sh](scripts/install-wsl-stuff.sh) first for distro and Windows integration
   setup
 - Symlinks everything listed in [links.txt](links.txt) into the home directory
+- On WSL and Linux, installs zsh with apt if it is missing and makes it the login shell, using
+  [scripts/install-zsh.sh](scripts/install-zsh.sh)
 - Installs Homebrew packages from [Brewfile](Brewfile) on macOS and WSL. Other Linux machines are expected to use
   their own package manager, so the Homebrew steps are skipped there
 - Applies macOS-specific defaults and app configuration on macOS
